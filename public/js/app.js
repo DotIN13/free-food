@@ -1,4 +1,4 @@
-// Free Food Hub: home (with an event opened in place), event page, campus page, campuses, saved, take me there.
+// free.food: home (with an event opened in place), event page, campus page, campuses, saved, take me there.
 import { esc, icon, fmt, ago, km, distText, walkMin, minText, FOODS, foodsOf, catOf, highlight, quoteOf, perkOf, platformOf, shortUrl, isStudentFeed, timeParts, range, status, dayLabel, inWindow } from "./util.js";
 
 const $ = (s, el = document) => el.querySelector(s);
@@ -173,7 +173,7 @@ const homePage = {
 		const next = scoped.filter((e) => !status(e).ended).sort((a, b) => a.start.localeCompare(b.start))[0];
 		const head = onNow.length
 			? `Hungry? ${onNow.length} free meal${onNow.length === 1 ? "" : "s"}<span>${onNow.length === 1 ? "is" : "are"} on right now.</span>`
-			: next ? `Hungry? The next free meal<span>is ${/^(Today|Tomorrow)$/.test(dayLabel(next, tzOf(next))) ? dayLabel(next, tzOf(next)).toLowerCase() : `on ${dayLabel(next, tzOf(next)).replace(/,.*/, "")}`} at${timeParts(next, tzOf(next)).t} ${timeParts(next, tzOf(next)).ap}.</span>` : `Hungry?<span>Nothing listed yet.</span>`;
+			: next ? `Hungry? The next free meal<span>is ${/^(Today|Tomorrow)$/.test(dayLabel(next, tzOf(next))) ? dayLabel(next, tzOf(next)).toLowerCase() : `on ${dayLabel(next, tzOf(next)).replace(/,.*/, "")}`} at ${timeParts(next, tzOf(next)).t} ${timeParts(next, tzOf(next)).ap}.</span>` : `Hungry?<span>Nothing listed yet.</span>`;
 		const week = scoped.filter((e) => inWindow(e, "week", tzOf(e)));
 		const chips = FOODS.map((f) => ({ ...f, n: week.filter((e) => foodsOf(e).some((x) => x.key === f.key)).length })).filter((f) => f.n).sort((a, b) => b.n - a.n).slice(0, 7);
 		view.innerHTML = `

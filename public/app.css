@@ -126,7 +126,7 @@ main { outline: none; }
 .spot .next .dot { background: #fff; }
 .spot h2 { margin: 12px 0 6px; font: 800 32px/1.08 var(--head); padding-right: 70px; }
 .spot .place { color: rgba(255, 255, 255, 0.9); font-size: 14.5px; font-weight: 500; }
-.spot .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 16px 0; }
+.spot .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 16px 0; }
 .spot .stat { padding: 12px 14px; border-radius: 14px; background: rgba(255, 255, 255, 0.18); }
 .spot .stat b { display: block; font: 800 21px/1.1 var(--head); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .spot .stat small { font-size: 12.5px; color: rgba(255, 255, 255, 0.88); }
@@ -432,3 +432,6 @@ body { overflow-x: hidden; }
 	.title-xl { font-size: 28px; }
 	.spot h2 { font-size: 22px; }
 }
+.spot .stat { min-width: 0; }
+.spot .stat small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 760px) { .spot .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

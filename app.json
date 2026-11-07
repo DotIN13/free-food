@@ -1,5 +1,5 @@
 {
-	"title": "Free Food Hub",
+	"title": "free.food",
 	"kind": "server",
 	"start": "node server.js"
 }
