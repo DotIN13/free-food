@@ -47,15 +47,27 @@ async function loadBase() {
 		b.innerHTML = `Couldn't reach the server (${esc(err.message)}). <button class="btn sm" id="retry">Try again</button>`;
 		$("#retry").onclick = () => loadBase().then(route);
 	}
-	fillScope();
 	health();
 }
-function fillScope() {
-	const sel = $("#scope");
-	const opt = (u) => `<option value="${u.id}">${esc(u.short ?? u.name)}</option>`;
+// ---------- where: near you, one campus, or everywhere
+const NEAR_KM = 40;
+const nearestUnis = (p, n = 3) => S.unis.filter((u) => u.lat && u.sources.length).map((u) => ({ u, d: km(p, u) })).sort((a, b) => a.d - b.d).slice(0, n);
+function scopeOptions() {
+	const opt = (u) => `<option value="${u.id}" ${S.scope === u.id ? "selected" : ""}>${esc(u.short ?? u.name)}</option>`;
 	const us = S.unis.filter((u) => u.country === "US"), world = S.unis.filter((u) => u.country !== "US");
-	sel.innerHTML = `<option value="">All campuses</option><optgroup label="United States">${us.map(opt).join("")}</optgroup><optgroup label="Rest of the world">${world.map(opt).join("")}</optgroup>`;
-	sel.value = S.scope;
+	return `<option value="near" ${S.scope === "near" ? "selected" : ""}>Near you</option><option value="" ${!S.scope ? "selected" : ""}>All campuses</option><optgroup label="United States">${us.map(opt).join("")}</optgroup><optgroup label="Rest of the world">${world.map(opt).join("")}</optgroup>`;
+}
+// With no location, the campus in the browser's own time zone with the most free food this week.
+function guessScope() {
+	const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+	const c = S.counts ?? {};
+	return S.unis.filter((u) => u.tz === tz && u.sources.length).sort((a, b) => (c[b.id] ?? 0) - (c[a.id] ?? 0))[0]?.id ?? "";
+}
+function setScope(v, { why = null, save = true } = {}) {
+	S.scope = v;
+	S.scopeWhy = why;
+	S.sel = null;
+	if (save) store.setItem("scope", v);
 }
 function health() {
 	const el = $("#live"), txt = $("#liveText");
@@ -151,8 +163,45 @@ const homePage = {
 	alive: false, map: null, cluster: null, markers: new Map(), meMarker: null,
 	scoped() {
 		const q = S.q.trim().toLowerCase();
-		return S.events.filter((e) => sure(e) && (!S.scope || e.uni === S.scope)
-			&& (!q || `${e.title} ${e.location} ${e.org ?? ""} ${e.desc} ${shortOf(e.uni)}`.toLowerCase().includes(q)));
+		const base = S.events.filter((e) => sure(e) && (!q || `${e.title} ${e.location} ${e.org ?? ""} ${e.desc} ${shortOf(e.uni)}`.toLowerCase().includes(q)));
+		this.fallbackUni = null;
+		if (S.scope === "near" && S.me) {
+			const near = base.filter((e) => !e.online && (distOf(e) ?? 1e9) <= NEAR_KM);
+			if (near.length) return near;
+			// Nothing within reach: show the closest campus that has free food, and say how far it is.
+			const up = new Set(base.filter((e) => !status(e).ended).map((e) => e.uni));
+			const u = nearestUnis(S.me, 70).find((x) => up.has(x.u.id));
+			this.fallbackUni = u ?? null;
+			return u ? base.filter((e) => e.uni === u.u.id) : [];
+		}
+		return base.filter((e) => !S.scope || S.scope === "near" || e.uni === S.scope);
+	},
+	// Rank what is worth going to now: the walk, the wait after arriving, and whether it is still on when you get there.
+	recommend(list) {
+		const now = Date.now();
+		return list.map((e) => {
+			const s = status(e);
+			if (s.ended || e.online) return null;
+			const start = Date.parse(e.start), end = e.end ? Date.parse(e.end) : start + 36e5;
+			if (start > now + 7 * 864e5) return null; // the coming week; the wait below ranks sooner ones first
+			const d = distOf(e), w = d == null ? null : walkMin(d);
+			const travel = w ?? 25;
+			if (s.live && (end - now) / 6e4 < travel + 10) return null; // over (or the food gone) before you'd get there
+			const until = Math.max(0, (start - now) / 6e4);
+			const wait = s.live ? 0 : Math.max(0, until - travel);
+			const score = (w != null && w > 60 ? 60 + (w - 60) * 0.2 : travel) + wait * 0.2 + (e.allDay ? 90 : 0) - (perkOf(e) ? 6 : 0) - (e.where === "feed" ? 4 : 0);
+			const why = [];
+			if (w != null && w <= 60) why.push(`🚶 ${w} min walk`);
+			else if (d != null) why.push(`📍 ${distText(d)} away`);
+			if (s.live) why.push(`on now, ${minText((end - now) / 6e4)} left`);
+			else if (until < 12 * 60) why.push(`starts ${s.text}`);
+			else why.push(`${dayLabel(e, tzOf(e)).replace(/,.*/, "")} ${timeParts(e, tzOf(e)).t} ${timeParts(e, tzOf(e)).ap}`);
+			if (w != null && !s.live && until > travel && until < 6 * 60) why.push(`leave by ${fmt(new Date(start - travel * 6e4).toISOString(), tzOf(e), { hour: "numeric", minute: "2-digit" })}`);
+			if (perkOf(e)) why.push("“Free Food” ticked");
+			return { e, score, why };
+		}).filter(Boolean).sort((a, b) => a.score - b.score)
+			// A series (the same event on several days) counts once: its best day.
+			.filter((r, i, all) => all.findIndex((x) => x.e.title === r.e.title && x.e.uni === r.e.uni) === i);
 	},
 	list() {
 		const cat = S.cat && FOODS.find((f) => f.key === S.cat);
@@ -166,43 +215,86 @@ const homePage = {
 			view.innerHTML = `<div class="wrap"><div class="hero"><div><div class="sk" style="height:250px"></div></div><div class="sk" style="height:300px"></div></div><div class="main"><div class="list">${'<div class="sk" style="height:120px"></div>'.repeat(4)}</div><div class="sk" style="height:470px"></div></div></div>`;
 			return;
 		}
-		const scoped = this.scoped();
-		const tz = S.scope ? S.byUni[S.scope]?.tz : undefined;
-		const now = Date.now();
-		const onNow = scoped.filter((e) => { const s = Date.parse(e.start), end = e.end ? Date.parse(e.end) : s + 36e5; return !e.allDay && s <= now + 3 * 36e5 && end >= now; });
-		const next = scoped.filter((e) => !status(e).ended).sort((a, b) => a.start.localeCompare(b.start))[0];
-		const head = onNow.length
-			? `Hungry? ${onNow.length} free meal${onNow.length === 1 ? "" : "s"}<span>${onNow.length === 1 ? "is" : "are"} on right now.</span>`
-			: next ? `Hungry? The next free meal<span>is ${/^(Today|Tomorrow)$/.test(dayLabel(next, tzOf(next))) ? dayLabel(next, tzOf(next)).toLowerCase() : `on ${dayLabel(next, tzOf(next)).replace(/,.*/, "")}`} at ${timeParts(next, tzOf(next)).t} ${timeParts(next, tzOf(next)).ap}.</span>` : `Hungry?<span>Nothing listed yet.</span>`;
-		const week = scoped.filter((e) => inWindow(e, "week", tzOf(e)));
-		const chips = FOODS.map((f) => ({ ...f, n: week.filter((e) => foodsOf(e).some((x) => x.key === f.key)).length })).filter((f) => f.n).sort((a, b) => b.n - a.n).slice(0, 7);
+		// The page is drawn once; the hero, picks, list and map are then refilled in place by update().
 		view.innerHTML = `
 			<div class="wrap">
-				<section class="hero">
-					<div>
-						<span class="pill kicker">🔥 ${fmt(new Date().toISOString(), tz, { weekday: "long" })} · ${fmt(new Date().toISOString(), tz, { hour: "numeric", minute: "2-digit" })} ${S.scope ? `at ${esc(shortOf(S.scope))}` : "your time"}</span>
-						<h1 class="headline">${head}</h1>
-						<p class="sub">We read the event calendars of ${S.unis.length} top universities every 3 hours and keep the ones that feed you.</p>
-						<div class="chips">${chips.map((c) => `<button class="chip ${S.cat === c.key ? "on" : ""}" data-cat="${c.key}"><span>${c.em}</span>${c.label}<span class="n">${c.n}</span></button>`).join("")}</div>
-					</div>
-					<div id="spotWrap">${next ? this.spot(this.pickSpot(scoped) ?? next) : ""}</div>
-				</section>
+				<section class="hero"><div id="heroText"></div><div id="spotWrap"></div></section>
+				<div id="picksWrap"></div>
 				<section class="main">
 					<div class="listcol">
-						<div class="listhead"><h2>${S.scope ? `Coming up at ${esc(shortOf(S.scope))}` : S.me ? "Coming up near you" : "Coming up"}</h2>
+						<div class="listhead"><h2 id="listTitle"></h2>
 							<div class="seg" id="when">${[["soon", "Soon"], ["today", "Today"], ["week", "This week"], ["all", "3 weeks"]].map(([v, l]) => `<button data-v="${v}" class="${S.when === v ? "on" : ""}">${l}</button>`).join("")}</div></div>
 						<div class="list" id="list"></div>
 					</div>
 					<div class="side">
 						<div class="mapbox"><div class="map" id="homeMap"></div><div id="mapNote"></div><button class="locate" id="locate" title="Show where I am">${icon("locate-fixed")}</button><div id="peekWrap"></div></div>
-						${this.board()}
+						<div id="boardWrap">${this.board()}</div>
 					</div>
 				</section>
 			</div>`;
-		this.drawList();
 		this.drawMap();
+		this.update({ recenter: true });
 		this.wire();
 		if (openId) this.select(openId);
+	},
+	update({ recenter = false } = {}) {
+		if (!$("#heroText")) return;
+		const scoped = this.scoped();
+		const near = S.scope === "near" && S.me;
+		const around = near ? (this.fallbackUni ?? nearestUnis(S.me, 1)[0]) : null;
+		const tz = near ? around?.u.tz : S.scope && S.scope !== "near" ? S.byUni[S.scope]?.tz : undefined;
+		const now = Date.now();
+		const onNow = scoped.filter((e) => { const s = Date.parse(e.start), end = e.end ? Date.parse(e.end) : s + 36e5; return !e.allDay && s <= now + 3 * 36e5 && end >= now; });
+		const next = scoped.filter((e) => !status(e).ended).sort((a, b) => a.start.localeCompare(b.start))[0];
+		const recs = (this.recs = this.recommend(scoped));
+		const walkable = recs.filter((r) => { const w = walkOf(r.e); return w != null && w <= 20 && Date.parse(r.e.start) < now + 3 * 36e5; });
+		const first = recs[0]?.e;
+		const when = (e) => `${/^(Today|Tomorrow)$/.test(dayLabel(e, tzOf(e))) ? dayLabel(e, tzOf(e)).toLowerCase() : `on ${dayLabel(e, tzOf(e)).replace(/,.*/, "")}`} at ${timeParts(e, tzOf(e)).t} ${timeParts(e, tzOf(e)).ap}`;
+		const head = near && this.fallbackUni
+			? `Hungry? The closest free food<span>is at ${esc(this.fallbackUni.u.short ?? this.fallbackUni.u.name)}, ${distText(this.fallbackUni.d)} away.</span>`
+			: near && walkable.length
+			? `Hungry? ${walkable.length} free meal${walkable.length === 1 ? "" : "s"}<span>within a 20-minute walk.</span>`
+			: near && first
+			? `Hungry? Your closest free meal<span>is ${walkOf(first) && walkOf(first) <= 60 ? `a ${walkOf(first)}-minute walk` : `${distText(distOf(first))} away`}, ${when(first).replace(/^on /, "")}.</span>`
+			: onNow.length
+			? `Hungry? ${onNow.length} free meal${onNow.length === 1 ? "" : "s"}<span>${onNow.length === 1 ? "is" : "are"} on right now.</span>`
+			: next ? `Hungry? The next free meal<span>is ${when(next)}.</span>` : `Hungry?<span>Nothing listed here yet.</span>`;
+		const week = scoped.filter((e) => inWindow(e, "week", tzOf(e)));
+		const chips = FOODS.map((f) => ({ ...f, n: week.filter((e) => foodsOf(e).some((x) => x.key === f.key)).length })).filter((f) => f.n).sort((a, b) => b.n - a.n).slice(0, 7);
+		$("#heroText").innerHTML = `
+			<span class="pill kicker">${near ? `📍 Near you${around ? ` · around ${esc(around.u.short ?? around.u.name)}` : ""}` : `🔥 ${fmt(new Date().toISOString(), tz, { weekday: "long" })}`} · ${fmt(new Date().toISOString(), tz, { hour: "numeric", minute: "2-digit" })} ${tz ? "local" : "your time"}</span>
+			<h1 class="headline">${head}</h1>
+			<p class="sub">We read the event calendars of ${S.unis.length} top universities every 3 hours and keep the ones that feed you.</p>
+			${this.locbar()}
+			<div class="chips">
+				<label class="chip scope-chip">${icon("map-pin")}<select id="scope" aria-label="Campus">${scopeOptions()}</select></label>
+				${chips.map((c) => `<button class="chip ${S.cat === c.key ? "on" : ""}" data-cat="${c.key}"><span>${c.em}</span>${c.label}<span class="n">${c.n}</span></button>`).join("")}
+			</div>`;
+		$("#spotWrap").innerHTML = first ? this.spot(first, near ? recs[0].why : null) : next ? this.spot(this.pickSpot(scoped) ?? next) : "";
+		$("#picksWrap").innerHTML = (near || S.scope) && recs.length > 1 ? `<section class="picks"><div class="listhead"><h2>${near ? "Picked for you" : `Picked at ${esc(shortOf(S.scope))}`}</h2><span class="aside-note">ranked by ${near ? "walk, wait, and whether it's still on when you arrive" : "how soon it starts"}</span></div>
+			<div class="pickrow">${recs.slice(1, 4).map((r) => this.pick(r)).join("")}</div></section>` : "";
+		$("#listTitle").textContent = near ? (this.fallbackUni ? `Coming up at ${this.fallbackUni.u.short ?? this.fallbackUni.u.name}` : "Coming up near you") : S.scope ? `Coming up at ${shortOf(S.scope)}` : "Coming up everywhere";
+		this.drawList();
+		if (recenter) this.recenter();
+		refreshIcons();
+	},
+	recenter() {
+		if (!this.map) return;
+		const u = S.scope && S.scope !== "near" && S.byUni[S.scope];
+		if (S.scope === "near" && S.me) this.map.setView([S.me.lat, S.me.lng], this.fallbackUni ? 12 : 14);
+		else if (u?.lat) this.map.setView([u.lat, u.lng], 14);
+		else this.map.setView([32, -40], 3);
+		if (this.meMarker) { this.map.removeLayer(this.meMarker); this.meMarker = null; }
+		if (S.me) this.meMarker = L.marker([S.me.lat, S.me.lng], { icon: meIcon(), zIndexOffset: 1000 }).addTo(this.map);
+	},
+	locbar() {
+		if (S.me && S.scope === "near") return "";
+		const why = S.scopeWhy === "timezone" && S.scope ? `Showing ${esc(shortOf(S.scope))} because your clock is on its time zone.` : "Share where you are to see what's close, with walking times.";
+		return `<div class="locbar">${icon("locate")}<span>${why}</span><button class="btn sm primary" data-loc="gps">Use my location</button><button class="btn sm" data-loc="map">Pick on map</button></div>`;
+	},
+	pick(r) {
+		const e = r.e, c = catOf(e);
+		return `<button class="pick" data-open="${e.id}"><span class="tile" style="background:${c.soft}">${c.em}</span><span class="w"><b>${esc(e.title)}</b><small>${esc(shortOf(e.uni))}${e.location ? ` · ${esc(e.location)}` : ""}</small><span class="why">${r.why.slice(0, 3).map((x) => `<span class="tag t-plain">${esc(x)}</span>`).join("")}</span></span></button>`;
 	},
 	pickSpot(list) {
 		const up = list.filter((e) => !status(e).ended && Date.parse(e.start) < Date.now() + 12 * 36e5);
@@ -212,10 +304,10 @@ const homePage = {
 		}
 		return up.filter((e) => !e.allDay).sort((a, b) => a.start.localeCompare(b.start))[0];
 	},
-	spot(e) {
+	spot(e, why) {
 		const st = status(e), w = walkOf(e), c = catOf(e), tz = tzOf(e), tp = timeParts(e, tz);
 		return `<article class="spot" data-open="${e.id}">
-			<span class="pill next"><span class="dot"></span>${st.live ? "HAPPENING NOW" : `NEXT UP · STARTS ${st.text.toUpperCase()}`}</span>
+			<span class="pill next"><span class="dot"></span>${why ? `PICKED FOR YOU · ${st.live ? "ON NOW" : `STARTS ${st.text.toUpperCase()}`}` : st.live ? "HAPPENING NOW" : `NEXT UP · STARTS ${st.text.toUpperCase()}`}</span>
 			<h2>${esc(e.title)}</h2>
 			<div class="place">${esc(shortOf(e.uni))}${e.location ? ` · ${esc(e.location)}` : ""}${e.org ? ` · ${esc(e.org)}` : ""}</div>
 			<div class="stats">
@@ -280,14 +372,10 @@ const homePage = {
 			if (!this.picking) return;
 			this.picking = false;
 			setMe(ev.latlng.lat, ev.latlng.lng);
-			toast("Got it: distances are from here now");
-			this.render(S.sel);
+			setScope("near");
+			toast("Got it: showing free food near here");
+			this.update({ recenter: true });
 		});
-		if (S.me) this.meMarker = L.marker([S.me.lat, S.me.lng], { icon: meIcon(), zIndexOffset: 1000 }).addTo(map);
-		const u = S.scope && S.byUni[S.scope];
-		if (u?.lat) map.setView([u.lat, u.lng], 14);
-		else if (S.me) map.setView([S.me.lat, S.me.lng], 13);
-		this.drawPins(this.list());
 	},
 	drawPins(list) {
 		if (!this.map) return;
@@ -356,22 +444,42 @@ const homePage = {
 			if (save) { ev.preventDefault(); ev.stopPropagation(); const e = S.events.find((x) => x.id === save.dataset.save); if (e) toggleSave(e); return; }
 			if (ev.target.closest("a")) return;
 			const cat = ev.target.closest("[data-cat]");
-			if (cat) { S.cat = S.cat === cat.dataset.cat ? null : cat.dataset.cat; this.limit = 40; this.render(S.sel); refreshIcons(); return; }
+			if (cat) { S.cat = S.cat === cat.dataset.cat ? null : cat.dataset.cat; this.limit = 40; this.update(); return; }
+			const loc = ev.target.closest("[data-loc]");
+			if (loc) { loc.dataset.loc === "gps" ? this.locateMe() : this.pickOnMap(); return; }
+			if (ev.target.closest(".scope-chip")) return;
 			const w = ev.target.closest("#when button");
 			if (w) { this.picked = true; S.when = w.dataset.v; store.setItem("when", S.when); $$("#when button").forEach((b) => b.classList.toggle("on", b === w)); this.limit = 40; this.drawList(); return; }
-			if (ev.target.closest("[data-widen]")) { S.when = "all"; store.setItem("when", "all"); this.render(S.sel); refreshIcons(); return; }
+			if (ev.target.closest("[data-widen]")) { this.picked = true; S.when = "all"; $$("#when button").forEach((b) => b.classList.toggle("on", b.dataset.v === "all")); this.drawList(); return; }
 			if (ev.target.closest("[data-more]")) { this.limit = (this.limit ?? 40) + 40; this.drawList(); return; }
 			if (ev.target.closest("[data-close]")) { location.hash = "#/"; return; }
 			if (ev.target.closest("#locate")) { this.locateMe(); return; }
 			const open = ev.target.closest("[data-open]");
 			if (open) this.open(open.dataset.open);
 		};
+		// The campus filter beside the food chips: refills the hero, picks, list and map in place.
+		view.onchange = async (ev) => {
+			if (ev.target.id !== "scope") return;
+			const v = ev.target.value;
+			if (v === "near" && !S.me && !(await locate())) { this.pickOnMap(); ev.target.value = S.scope; return; }
+			setScope(v);
+			if (location.hash.startsWith("#/e/")) history.replaceState(null, "", "#/");
+			this.select(null);
+			this.limit = 40;
+			this.update({ recenter: true });
+		};
 		$("#crumb").onclick = (ev) => { if (ev.target.closest("[data-close]")) location.hash = "#/"; };
-		onLeave(() => { view.onclick = null; $("#crumb").onclick = null; });
+		onLeave(() => { view.onclick = null; view.onchange = null; $("#crumb").onclick = null; });
 	},
 	async locateMe() {
-		if (await locate()) { toast("Using your location"); this.render(S.sel); refreshIcons(); this.map?.setView([S.me.lat, S.me.lng], 15); }
-		else { this.picking = true; toast("Location is off here: tap the map where you are", 5000); }
+		if (await locate()) { setScope("near"); toast("Showing free food near you"); this.update({ recenter: true }); }
+		else this.pickOnMap();
+	},
+	pickOnMap() {
+		this.picking = true;
+		if (narrow() && current?.name !== "map") location.hash = "#/map";
+		toast("Tap the map where you are", 5000);
+		$(".mapbox")?.scrollIntoView({ behavior: "smooth", block: "center" });
 	},
 };
 
@@ -546,7 +654,7 @@ async function campusPage(id) {
 	refreshIcons();
 	view.onclick = (ev) => {
 		const sc = ev.target.closest("[data-scope]");
-		if (sc) { S.scope = sc.dataset.scope; store.setItem("scope", S.scope); $("#scope").value = S.scope; }
+		if (sc) setScope(sc.dataset.scope);
 	};
 	$("#suggest").onsubmit = async (ev) => {
 		ev.preventDefault();
@@ -677,14 +785,6 @@ async function goPage(id) {
 }
 
 // ---------- header wiring
-$("#scope").addEventListener("change", (ev) => {
-	S.scope = ev.target.value;
-	store.setItem("scope", S.scope);
-	S.sel = null;
-	if (current?.name === "campus" && S.scope) location.hash = `#/campus/${S.scope}`;
-	else if (["", "e", "map"].includes(current?.name ?? "")) { homePage.alive = false; route(); }
-	else location.hash = "#/";
-});
 let qt;
 $("#q").addEventListener("input", (ev) => {
 	clearTimeout(qt);
@@ -693,20 +793,30 @@ $("#q").addEventListener("input", (ev) => {
 		if (current?.name === "campuses") return campusesPage.redraw?.();
 		if (!["", "e", "map"].includes(current?.name ?? "")) { location.hash = "#/"; return; }
 		homePage.limit = 40;
-		homePage.render(S.sel);
-		refreshIcons();
+		homePage.update();
 	}, 160);
 });
 document.addEventListener("keydown", (ev) => {
-	if (ev.key === "/" && document.activeElement !== $("#q") && !/input|textarea/i.test(document.activeElement?.tagName)) { ev.preventDefault(); $("#q").focus(); }
+	if (ev.key === "/" && document.activeElement !== $("#q") && !/input|textarea|select/i.test(document.activeElement?.tagName)) { ev.preventDefault(); $("#q").focus(); }
 	if (ev.key === "Escape" && current?.name === "e") location.hash = "#/";
 });
 window.addEventListener("hashchange", route);
 
-// ---------- start
+// ---------- start: near you when the browser already lets us know where, else the campus in this time zone
+async function startScope() {
+	if (store.getItem("scope") !== null) {
+		if (S.scope === "near" && !S.me) setScope(guessScope(), { why: "timezone", save: false });
+		return;
+	}
+	let granted = false;
+	try { granted = (await navigator.permissions?.query({ name: "geolocation" }))?.state === "granted"; } catch {}
+	if ((granted && (await locate())) || S.me) setScope("near", { save: false });
+	else setScope(guessScope(), { why: "timezone", save: false });
+}
 refreshIcons();
 route();
 await loadBase();
+await startScope();
 homePage.alive = false;
 route();
 poll();
