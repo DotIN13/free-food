@@ -26,6 +26,13 @@ The build writes:
 | `data/state.json` | the scraper's memory, read back by the next build from the live site |
 | `bot/index.html` | who we are, for the sites we read |
 
+The deploy token is one you make, limited to this project:
+
+    vercel tokens create "free-food GitHub Actions deploy" --project free-food
+    gh secret set VERCEL_TOKEN --repo DotIN13/free-food      # paste the token when asked
+
+Until it is set, runs still scrape and list failing feeds, and skip the deploy with a warning.
+
 Repository settings it needs:
 
 - secrets `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`
