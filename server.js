@@ -4,12 +4,18 @@ import { gzipSync } from "node:zlib";
 import { readFile, stat } from "node:fs/promises";
 import { extname, resolve, sep } from "node:path";
 import { config, BOT_UA } from "./lib/config.js";
-import { run, state, registry, loadEvents, loadStatus } from "./lib/pipeline.js";
+import { run, state, registry, useStore } from "./lib/pipeline.js";
 import { kindOf } from "./lib/scrape.js";
 import * as db from "./lib/db.js";
+import { writeSite } from "./lib/site.js";
+const { loadEvents, loadStatus } = db;
+useStore({ ...db, saveScrape: async (events, status) => { db.saveScrape(events, status); await writeSite({ events, status, at: Date.now(), out: SITE_DIR }); } });
 import { clientIp, visitorId, limit, headers, readJson, isAdmin, HttpError } from "./lib/security.js";
 
 const PUBLIC = resolve(new URL("./public/", import.meta.url).pathname);
+// The static site the page reads (data/*.json, bot/), rewritten after every scrape: the same files a CI build deploys.
+const SITE_DIR = new URL("site/", config.dataDir);
+const SITE = resolve(SITE_DIR.pathname);
 const TYPES = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".json": "application/json", ".svg": "image/svg+xml", ".png": "image/png", ".ico": "image/x-icon", ".webmanifest": "application/manifest+json" };
 const ID = /^[a-z0-9]{1,16}$/;
 
@@ -49,28 +55,17 @@ setInterval(maybeRefresh, 10 * 60e3).unref();
 setInterval(daily, 6 * 36e5).unref();
 maybeRefresh();
 daily();
+// First start after an upgrade: write the static files from what the database already holds.
+stat(new URL("data/meta.json", SITE_DIR)).catch(async () => {
+	const { at, events: list } = loadEvents();
+	if (list.length) await writeSite({ events: list, status: loadStatus(), at, out: SITE_DIR }).catch((e) => console.error("site write failed:", e));
+});
 
 // ---------- routes
 async function api(req, res, url) {
 	const p = url.pathname, method = req.method;
 	const q = url.searchParams;
 
-	if (p === "/bot" || p === "/bot/") {
-		// Who we are, for the sites we read: linked from every request's User-Agent.
-		const unis = await registry();
-		const escape = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
-		const contact = config.contactEmail
-			? `Write to <a href="mailto:${escape(config.contactEmail)}">${escape(config.contactEmail)}</a> to ask us to stop, slow down, or read a different feed. We answer every message.`
-			: "Contact details are being set up. Until then, a robots.txt rule for <code>free.food-bot</code> (above) stops us at the next check.";
-		const html = (await readFile(resolve(PUBLIC, "bot.html"), "utf8"))
-			.replace("{{FEEDS}}", String(unis.reduce((a, u) => a + u.sources.length, 0)))
-			.replace("{{CAMPUSES}}", String(unis.filter((u) => u.sources.length).length))
-			.replace("{{HOURS}}", String(config.refreshHours))
-			.replace("{{UA}}", escape(BOT_UA))
-			.replace("{{CONTACT}}", contact);
-		res.writeHead(200, { ...headers(req), "content-type": "text/html; charset=utf-8", "cache-control": "no-cache" });
-		return res.end(html);
-	}
 	if (p === "/healthz") {
 		const { at, events: list } = loadEvents();
 		const age = at ? Math.round((Date.now() - at) / 6e4) : null;
@@ -173,8 +168,12 @@ async function file(req, res, url) {
 	let rel;
 	try { rel = decodeURIComponent(url.pathname); } catch { fail(400, "Bad path"); }
 	if (rel.includes("\0")) fail(400, "Bad path");
-	const full = resolve(PUBLIC, "." + (rel === "/" ? "/index.html" : rel));
-	if (full !== PUBLIC && !full.startsWith(PUBLIC + sep)) fail(404, "Not found");
+	// /data/* and /bot come from the generated site; everything else from public/.
+	const fromSite = rel.startsWith("/data/") || /^\/bot\/?$/.test(rel);
+	const base = fromSite ? SITE : PUBLIC;
+	const want = /^\/bot\/?$/.test(rel) ? "/bot/index.html" : rel === "/" ? "/index.html" : rel;
+	const full = resolve(base, "." + want);
+	if (full !== base && !full.startsWith(base + sep)) fail(404, "Not found");
 	const info = await stat(full).catch(() => null);
 	if (!info?.isFile()) fail(404, "Not found");
 	const etag = `"${info.size.toString(36)}-${Math.round(info.mtimeMs).toString(36)}"`;
@@ -194,7 +193,7 @@ const server = createServer(async (req, res) => {
 	try { url = new URL(req.url, "http://app"); } catch { res.writeHead(400).end(); return; }
 	try {
 		rate(req, "all", 600, 5 * 60e3);
-		if (url.pathname.startsWith("/api/") || url.pathname === "/healthz" || /^\/bot\/?$/.test(url.pathname)) {
+		if (url.pathname.startsWith("/api/") || url.pathname === "/healthz") {
 			const handled = await api(req, res, url);
 			if (handled === null && !res.headersSent) fail(404, "Not found");
 			return;

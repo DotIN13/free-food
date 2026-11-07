@@ -1,0 +1,12 @@
+{
+	"name": "free-food-site",
+	"private": true,
+	"type": "module",
+	"description": "What the CI build deploys to Vercel: the static site plus two functions (api/).",
+	"dependencies": {
+		"@neondatabase/serverless": "^1.0.2"
+	},
+	"engines": {
+		"node": "24.x"
+	}
+}

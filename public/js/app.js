@@ -14,6 +14,7 @@ const S = {
 	cat: null, q: "", sel: null,
 	me: JSON.parse(store.getItem("me") || "null"),
 	saved: JSON.parse(store.getItem("saved") || "{}"),
+	campus: new Map(),
 	mode: "foot",
 };
 const tzOf = (e) => S.byUni[e.uni]?.tz;
@@ -40,10 +41,11 @@ async function getJson(url, opts = {}) {
 }
 async function loadBase() {
 	try {
-		const [unis, ev] = await Promise.all([getJson("api/universities"), getJson("api/events?food=food")]);
+		// Static files, rebuilt with every scrape: the same on Vercel and on the Node server.
+		const [unis, home, meta] = await Promise.all([getJson("data/universities.json"), getJson("data/home.json"), getJson("data/meta.json")]);
 		S.unis = unis;
 		S.byUni = Object.fromEntries(unis.map((u) => [u.id, u]));
-		Object.assign(S, { events: ev.events, counts: ev.counts, at: ev.at, total: ev.all, loaded: true, error: null });
+		Object.assign(S, { events: home.events, counts: home.counts, at: home.at, meta, loaded: true, error: null });
 		$("#banner").hidden = true;
 	} catch (err) {
 		S.error = err;
@@ -80,17 +82,52 @@ function health() {
 	const el = $("#live"), txt = $("#liveText");
 	const feeds = S.unis.flatMap((u) => u.sources), ok = feeds.filter((f) => f.status?.ok).length;
 	el.className = "live";
-	if (S.status?.running) { el.classList.add("busy"); txt.innerHTML = `Updating ${S.status.done}/${S.status.total}<span class="long"> feeds</span>`; return; }
 	if (S.error) { el.classList.add("warn"); txt.textContent = "Offline"; return; }
 	if (!S.at) { txt.textContent = "Connecting…"; return; }
 	if (Date.now() - S.at > 6 * 36e5) el.classList.add("warn");
 	txt.innerHTML = `Live · updated ${ago(S.at)}<span class="long"> · ${ok}/${feeds.length} feeds</span>`;
 }
+// Every 10 minutes: has a newer build landed? Then reload the data in place.
 async function poll() {
-	try { S.status = await getJson("api/status"); } catch { S.status = null; }
+	try {
+		const meta = await getJson(`data/meta.json?t=${Date.now()}`);
+		if (meta?.at && meta.at !== S.at) { S.campus.clear(); await loadBase(); homePage.alive = false; route(); }
+	} catch {}
 	health();
-	if (S.status?.running) setTimeout(poll, 3000);
-	else if (S.status && S.status.at && S.status.at !== S.at) { await loadBase(); route(); }
+}
+// Every upcoming event at one campus, in full: what event and campus pages read. Kept for the visit.
+async function campusEvents(uni) {
+	if (!S.campus.has(uni)) S.campus.set(uni, getJson(`data/campus/${encodeURIComponent(uni)}.json`).then((d) => d.events).catch((e) => { S.campus.delete(uni); throw e; }));
+	return S.campus.get(uni);
+}
+// An event by its reference: "uni/id" in links; a bare id is looked up in what is already loaded.
+async function findEvent(ref) {
+	let [uni, id] = String(ref).includes("/") ? String(ref).split("/") : [null, ref];
+	const known = S.events.find((x) => x.id === id) ?? S.saved[id];
+	uni ??= known?.uni;
+	if (uni) { try { const full = (await campusEvents(uni)).find((x) => x.id === id); if (full) return full; } catch {} }
+	return known ?? null;
+}
+const ref = (e) => `${e.uni}/${e.id}`;
+// Votes and suggestions need a database; when there is none the server answers "off", and those parts hide.
+let writesOn = null;
+async function writesAvailable() {
+	if (writesOn !== null) return writesOn;
+	const r = await fetch("api/feedback?id=probe0", { headers: { "x-visitor": visitor } }).catch(() => null);
+	return (writesOn = !!r && r.status !== 503 && r.status !== 404);
+}
+// A calendar file, made in the browser.
+function downloadIcs(e) {
+	const d = (s) => s.replace(/[-:]/g, "").replace(/\.\d+/, "");
+	const x = (s = "") => String(s).replace(/[\r\n]+/g, " ").replace(/([,;\\])/g, "\\$1");
+	const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//free.food//EN", "BEGIN:VEVENT", `UID:${e.id}@free.food`, `DTSTAMP:${d(new Date().toISOString())}`,
+		`DTSTART:${d(e.start)}`, `DTEND:${d(e.end ?? new Date(Date.parse(e.start) + 36e5).toISOString())}`, `SUMMARY:${x("🍕 " + e.title)}`, `LOCATION:${x(e.location)}`,
+		`DESCRIPTION:${x((e.food?.why ?? "") + "  " + (e.url ?? ""))}`, /^https?:\/\//.test(e.url ?? "") ? `URL:${x(e.url)}` : "", "END:VEVENT", "END:VCALENDAR"].filter(Boolean).join("\r\n");
+	const a = document.createElement("a");
+	a.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar" }));
+	a.download = `free-food-${e.id}.ics`;
+	document.body.append(a); a.click(); a.remove();
+	setTimeout(() => URL.revokeObjectURL(a.href), 5000);
 }
 
 // ---------- saved and location
@@ -145,8 +182,8 @@ const meIcon = () => L.divIcon({ className: "", html: '<div class="me"></div>', 
 // ---------- router
 function parse() {
 	const h = location.hash.replace(/^#\/?/, "");
-	const [name = "", id] = h.split("/");
-	return { name, id: id && decodeURIComponent(id) };
+	const [name = "", ...rest] = h.split("/");
+	return { name, id: rest.length ? rest.map(decodeURIComponent).join("/") : undefined };
 }
 let current = null;
 function route() {
@@ -333,7 +370,7 @@ const homePage = {
 				<div class="stat"><b>${tp.t}${tp.ap ? ` ${tp.ap}` : ""}</b><small>${e.end ? `to ${fmt(e.end, tz, { hour: "numeric", minute: "2-digit" })}` : dayLabel(e, tz)}</small></div>
 			</div>
 			<div class="buttons">
-				<a class="spot-go" href="#/go/${e.id}">${icon("navigation")}Take me there</a>
+				<a class="spot-go" href="#/go/${ref(e)}">${icon("navigation")}Take me there</a>
 				<button class="save ${isSaved(e.id) ? "on" : ""}" data-save="${e.id}">${icon("heart")}Save</button>
 			</div>
 			<div class="sticker"><div><b>FREE</b><small>really!</small></div></div>
@@ -409,7 +446,7 @@ const homePage = {
 		this.cluster.addLayers(layers);
 	},
 	open(id) {
-		if (narrow() && current?.name !== "map") { location.hash = `#/event/${id}`; return; }
+		if (narrow() && current?.name !== "map") { const e = S.events.find((x) => x.id === id); location.hash = `#/event/${e ? ref(e) : id}`; return; }
 		location.hash = current?.name === "map" ? `#/map` : `#/e/${id}`;
 		if (current?.name === "map") this.select(id);
 	},
@@ -435,8 +472,8 @@ const homePage = {
 			<div class="head"><span class="tile" style="background:${c.soft}">${c.em}</span>
 				<div class="names"><b>${esc(e.title)}</b><small>${tp.t}${tp.ap ? ` ${tp.ap}` : ""}${w ? ` · 🚶 ${w} min` : ` · ${esc(shortOf(e.uni))}`} · free food</small></div>
 				<button class="x" data-close aria-label="Close">${icon("x")}</button></div>
-			${!e.online && e.lat ? `<a class="btn primary" href="#/go/${e.id}">${icon("navigation")}Take me there</a>` : ""}
-			<div class="row"><a class="btn" href="#/event/${e.id}">${icon("info")}More info</a><a class="btn" href="#/campus/${e.uni}">${icon("school")}More from ${esc(shortOf(e.uni))}</a></div>
+			${!e.online && e.lat ? `<a class="btn primary" href="#/go/${ref(e)}">${icon("navigation")}Take me there</a>` : ""}
+			<div class="row"><a class="btn" href="#/event/${ref(e)}">${icon("info")}More info</a><a class="btn" href="#/campus/${e.uni}">${icon("school")}More from ${esc(shortOf(e.uni))}</a></div>
 		</div>`;
 		if (S.me && e.lat && w) {
 			note.innerHTML = `<div class="map-note"><b>🚶 ${w} min · ${distText(distOf(e))}</b><span class="ok">${(() => { const lv = Date.parse(e.start) - w * 6e4; return lv > Date.now() ? `Leave by ${fmt(new Date(lv).toISOString(), tzOf(e), { hour: "numeric", minute: "2-digit" })} to be there at the start` : "Go now: it has started"; })()}</span></div>`;
@@ -506,7 +543,7 @@ const homePage = {
 async function eventPage(id) {
 	view.innerHTML = `<div class="wrap"><div class="detail"><div class="col"><div class="sk" style="height:220px"></div><div class="sk" style="height:300px"></div></div><div class="col"><div class="sk" style="height:420px"></div></div></div></div>`;
 	let e;
-	try { e = await getJson(`api/raw/${encodeURIComponent(id)}`); } catch { e = S.events.find((x) => x.id === id) ?? S.saved[id]; }
+	e = await findEvent(id);
 	if (current?.name !== "event" || current.id !== id) return;
 	if (!e) { view.innerHTML = `<div class="wrap"><div class="empty"><div class="e">🫥</div><b>This event is no longer listed</b>It may have ended or been taken off its calendar. <a class="btn sm" href="#/">Back to events</a></div></div>`; return; }
 	const u = uniOf(e), src = srcOf(e), plat = platformOf(src), st = src?.status, tz = tzOf(e), mine = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -549,8 +586,8 @@ async function eventPage(id) {
 					<blockquote>“${highlight(quote, (f.words ?? []).filter((x) => x !== "free food"))}”</blockquote>
 					<div class="sig">${perkOf(e) ? `<span class="tag">${icon("badge-check")}“Free Food” perk ticked by organisers</span>` : ""}<span class="tag">Matched: ${esc((f.words ?? []).slice(0, 3).join(" · "))}</span></div></div>` : ""}
 				<div class="actions">
-					${!e.online && e.lat ? `<a class="btn primary" href="#/go/${e.id}">${icon("navigation")}Take me there${w ? ` · ${w} min` : ""}</a>` : ""}
-					<a class="btn" href="api/ics/${e.id}">${icon("calendar-plus")}Add to calendar</a>
+					${!e.online && e.lat ? `<a class="btn primary" href="#/go/${ref(e)}">${icon("navigation")}Take me there${w ? ` · ${w} min` : ""}</a>` : ""}
+					<button class="btn" data-ics>${icon("calendar-plus")}Add to calendar</button>
 					${e.url ? `<a class="btn" href="${esc(e.url)}" target="_blank" rel="noopener">${icon("external-link")}Open on ${esc(src?.label?.split(/[(·]/)[0].trim() ?? plat.name)}</a>` : ""}
 					<button class="btn" data-save="${e.id}" style="width:52px;padding:0">${icon("heart")}</button>
 				</div>
@@ -581,15 +618,16 @@ async function eventPage(id) {
 		if (c.yes + c.no) fbText.textContent = `${c.yes} said yes · ${c.no} said it ran out${c.mine ? ` · you said ${c.mine === "yes" ? "yes" : "it ran out"}` : ""}`;
 		$$("[data-fb]").forEach((b) => { b.disabled = false; b.classList.toggle("on", (b.dataset.fb === "1") === (c.mine === "yes") && !!c.mine); });
 	};
-	getJson(`api/feedback?id=${e.id}`).then(showFb, () => {});
+	writesAvailable().then((on) => { if (!on) { $(".report")?.remove(); return; } getJson(`api/feedback?id=${e.id}`).then(showFb, () => {}); });
 	$(".banner-art img")?.addEventListener("error", (ev) => ev.target.remove());
 	view.onclick = async (ev) => {
 		const sv = ev.target.closest("[data-save]");
 		if (sv) { toggleSave(e); return; }
+		if (ev.target.closest("[data-ics]")) { downloadIcs(e); return; }
 		const fb = ev.target.closest("[data-fb]");
 		if (fb) {
 			$$("[data-fb]").forEach((b) => (b.disabled = true));
-			try { showFb(await getJson("api/feedback", { method: "POST", body: JSON.stringify({ id: e.id, yes: fb.dataset.fb === "1" }) })); toast("Thanks, that helps the next person"); }
+			try { showFb(await getJson("api/feedback", { method: "POST", body: JSON.stringify({ id: e.id, uni: e.uni, yes: fb.dataset.fb === "1" }) })); toast("Thanks, that helps the next person"); }
 			catch (err) { toast(err.message); $$("[data-fb]").forEach((b) => (b.disabled = false)); }
 		}
 	};
@@ -606,7 +644,7 @@ async function campusPage(id) {
 	if (!u) { view.innerHTML = S.loaded ? `<div class="wrap"><div class="empty"><b>No such campus</b><a class="btn sm" href="#/campuses">All campuses</a></div></div>` : ""; return; }
 	view.innerHTML = `<div class="chero"><div class="inner"><h1>${esc(u.name)}</h1></div></div><div class="wrap"><div class="cbody"><div class="col"><div class="sk" style="height:220px"></div></div><div class="col"><div class="sk" style="height:300px"></div></div></div></div>`;
 	let all = [];
-	try { all = (await getJson(`api/events?food=all&uni=${id}`)).events; } catch {}
+	try { all = await campusEvents(id); } catch {}
 	if (current?.name !== "campus" || current.id !== id) return;
 	const now = Date.now(), wk = all.filter((e) => Date.parse(e.start) >= now - 36e5 && Date.parse(e.start) < now + 7 * 864e5);
 	const food = wk.filter(sure);
@@ -668,7 +706,7 @@ async function campusPage(id) {
 			</div>
 			<div class="col">
 				<div class="card"><h3>🍽️ Next up at ${esc(u.short ?? u.name)}<a class="aside" href="#/" data-scope="${id}" style="color:var(--tomato);font-weight:800">See all ${food.length} →</a></h3>
-					${nextUp.map((e) => { const c = catOf(e); return `<a class="nrow" href="#/event/${e.id}"><span class="tile" style="background:${c.soft}">${c.em}</span><span class="w"><small>${dayLabel(e, tz).replace(/,.*/, "")} ${timeParts(e, tz).t} ${timeParts(e, tz).ap}</small><b>${esc(e.title)}</b></span>${icon("chevron-right")}</a>`; }).join("") || `<div class="empty" style="padding:12px">Nothing confirmed this week yet.</div>`}</div>
+					${nextUp.map((e) => { const c = catOf(e); return `<a class="nrow" href="#/event/${ref(e)}"><span class="tile" style="background:${c.soft}">${c.em}</span><span class="w"><small>${dayLabel(e, tz).replace(/,.*/, "")} ${timeParts(e, tz).t} ${timeParts(e, tz).ap}</small><b>${esc(e.title)}</b></span>${icon("chevron-right")}</a>`; }).join("") || `<div class="empty" style="padding:12px">Nothing confirmed this week yet.</div>`}</div>
 				<div class="card"><h3>Free food this week<span class="aside">events per day</span></h3>
 					<div class="week">${days.map((d) => `<div class="d ${d.n === maxDay && d.n ? "max" : ""}"><b>${d.n}</b><i style="height:${Math.max(4, (110 * d.n) / maxDay)}px"></i><small>${d.label}</small></div>`).join("")}</div></div>
 				${hosts.length ? `<div class="card"><h3>🎁 Most generous hosts</h3>${hosts.map(([n, c]) => `<div class="kv"><span>${esc(n)}</span><span class="tag t-tomato">${c} event${c === 1 ? "" : "s"}</span></div>`).join("")}</div>` : ""}
@@ -682,6 +720,7 @@ async function campusPage(id) {
 		const sc = ev.target.closest("[data-scope]");
 		if (sc) setScope(sc.dataset.scope);
 	};
+	writesAvailable().then((on) => { if (!on) $(".suggest")?.remove(); });
 	$("#suggest").onsubmit = async (ev) => {
 		ev.preventDefault();
 		const url = new FormData(ev.target).get("url");
@@ -727,7 +766,7 @@ function savedPage() {
 		const sv = ev.target.closest("[data-save]");
 		if (sv) { ev.stopPropagation(); toggleSave(S.saved[sv.dataset.save] ?? { id: sv.dataset.save }); savedPage(); refreshIcons(); return; }
 		const o = ev.target.closest("[data-open]");
-		if (o) location.hash = `#/event/${o.dataset.open}`;
+		if (o) { const e = S.saved[o.dataset.open]; location.hash = `#/event/${e ? ref(e) : o.dataset.open}`; }
 	};
 	onLeave(() => (view.onclick = null));
 }
@@ -736,19 +775,18 @@ function savedPage() {
 // Take me there
 // =====================================================================
 async function goPage(id) {
-	let e = S.events.find((x) => x.id === id);
-	if (!e) try { e = await getJson(`api/raw/${encodeURIComponent(id)}`); } catch {}
+	const e = await findEvent(id);
 	if (!e || !e.lat) { view.innerHTML = `<div class="wrap"><div class="empty"><b>No place to go to for this event</b><a class="btn sm" href="#/event/${esc(id)}">Back to the event</a></div></div>`; return; }
 	const src = srcOf(e), tz = tzOf(e), c = catOf(e);
 	$("#crumb").hidden = false;
-	$("#crumb").innerHTML = `${icon("navigation")}<a href="#/">Events</a><span class="sep">›</span><a href="#/event/${e.id}">${esc(e.title)}</a><span class="sep">›</span><b>Take me there</b>`;
+	$("#crumb").innerHTML = `${icon("navigation")}<a href="#/">Events</a><span class="sep">›</span><a href="#/event/${ref(e)}">${esc(e.title)}</a><span class="sep">›</span><b>Take me there</b>`;
 	view.innerHTML = `<div class="wrap"><div class="go">
 		<div class="map" id="goMap"></div>
 		<div class="panel" id="goPanel"><div class="eta"><div><b>…</b><small>Finding a route</small></div></div></div>
 		<div class="evcard"><div class="head"><span class="tile" style="background:${c.soft}">${c.em}</span><div><b>${esc(e.title)}</b><small>${range(e, tz)} · free ${c.label.toLowerCase()}</small></div></div>
 			<div class="ok"><span class="dot"></span>Still on ${esc(src?.label?.split(/[(·]/)[0].trim() ?? "its calendar")} · checked ${src?.status?.at ? ago(src.status.at) : "recently"}</div>
 			<div class="ping">${icon("refresh-cw")}The calendar is read again every 3 hours</div></div>
-		<div class="bar">${[["foot", "footprints", "Walk"], ["bike", "bike", "Bike"], ["car", "car", "Drive"]].map(([m, ic, l]) => `<button data-mode="${m}" class="${S.mode === m ? "on" : ""}">${icon(ic)}${l}</button>`).join("")}<span class="div"></span><a class="btn sm dark end" href="#/event/${e.id}">${icon("x")}End</a></div>
+		<div class="bar">${[["foot", "footprints", "Walk"], ["bike", "bike", "Bike"], ["car", "car", "Drive"]].map(([m, ic, l]) => `<button data-mode="${m}" class="${S.mode === m ? "on" : ""}">${icon(ic)}${l}</button>`).join("")}<span class="div"></span><a class="btn sm dark end" href="#/event/${ref(e)}">${icon("x")}End</a></div>
 		<div id="goHint"></div>
 	</div></div>`;
 	refreshIcons();

@@ -1,0 +1,41 @@
+# Every 3 hours (and on every push to main, or by hand): read every campus calendar, build the static site,
+# and deploy it to Vercel. The scraper's memory is read back from the live site, so no state lives here.
+name: Scrape and deploy
+
+on:
+  schedule:
+    - cron: "17 */3 * * *" # off the hour: GitHub delays top-of-the-hour schedules most
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths-ignore: ["**.md", "Dockerfile", ".env.example"]
+
+concurrency:
+  group: scrape-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      SITE_URL: ${{ vars.SITE_URL }}
+      CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Scrape and build
+        run: node scripts/build.mjs --out dist
+        env:
+          DATA_DIR: ${{ runner.temp }}/free-food-data
+      - name: Deploy to Vercel
+        run: npx --yes vercel@latest deploy dist --prod --yes --token "$VERCEL_TOKEN"
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
