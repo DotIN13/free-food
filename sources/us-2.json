@@ -1,0 +1,224 @@
+[
+  {
+    "id": "uva", "name": "University of Virginia", "short": "UVA", "country": "US", "city": "Charlottesville, VA", "rank": 26,
+    "lat": 38.0336, "lng": -78.5080,
+    "sources": [
+      { "type": "ical", "url": "https://www.trumba.com/calendars/university-of-virginia-events.ics", "label": "UVA University Events (Trumba)", "events": 175 },
+      { "type": "json", "url": "https://virginia.campuslabs.com/engage/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100", "label": "UVA Engage (student orgs)", "events": 51, "note": "Anthology Engage discovery API. Add endsAfter=<ISO now>. Array at value[]; name, startsOn, endsOn, location, description (HTML), benefitNames (may include 'Free Food'); total in @odata.count." },
+      { "type": "ical", "url": "https://www.trumba.com/calendars/uva-darden.ics", "label": "Darden School of Business", "institute": true, "events": 9 }
+    ],
+    "notes": "calendar.virginia.edu and events.virginia.edu do not resolve; the www.virginia.edu/calendar page embeds Trumba webName university-of-virginia-events."
+  },
+  {
+    "id": "unc", "name": "University of North Carolina at Chapel Hill", "short": "UNC", "country": "US", "city": "Chapel Hill, NC", "rank": 27,
+    "lat": 35.9049, "lng": -79.0469,
+    "sources": [
+      { "type": "localist", "url": "https://calendar.unc.edu", "label": "UNC Calendar", "events": 125 },
+      { "type": "json", "url": "https://heellife.unc.edu/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100", "label": "HeelLife (Engage, student orgs)", "events": 515, "note": "Anthology Engage discovery API. Add endsAfter=<ISO now>. Array at value[]; name, startsOn, endsOn, location, description (HTML), benefitNames; total in @odata.count." }
+    ],
+    "notes": "Localist total is for days=30."
+  },
+  {
+    "id": "usc", "name": "University of Southern California", "short": "USC", "country": "US", "city": "Los Angeles, CA", "rank": 28,
+    "lat": 34.0224, "lng": -118.2851,
+    "sources": [
+      { "type": "localist", "url": "https://calendar.usc.edu", "label": "USC Calendar", "events": 304 },
+      { "type": "rss", "url": "https://engage.usc.edu/rss_events", "label": "EngageSC (CampusGroups, student orgs)", "events": 363, "note": "CampusGroups RSS: <item> with title, description/fullDescription, group, eventDate/eventEndDate (M/D/YYYY), eventTime, location. All items upcoming." }
+    ],
+    "notes": "events.usc.edu is a custom site, not Localist; calendar.usc.edu is the Localist instance. EngageSC is CampusGroups (not Anthology), also at usc.campusgroups.com."
+  },
+  {
+    "id": "ucsd", "name": "University of California, San Diego", "short": "UC San Diego", "country": "US", "city": "La Jolla, CA", "rank": 29,
+    "lat": 32.8801, "lng": -117.2340,
+    "sources": [
+      { "type": "localist", "url": "https://calendar.ucsd.edu", "label": "UC San Diego Calendar", "events": 758 }
+    ],
+    "notes": "No public Engage (ucsd.campuslabs.com) or CampusGroups (ucsd.campusgroups.com 500) tenant found; Localist is large and includes many student/department events."
+  },
+  {
+    "id": "nyu", "name": "New York University", "short": "NYU", "country": "US", "city": "New York, NY", "rank": 30,
+    "lat": 40.7295, "lng": -73.9965,
+    "sources": [
+      { "type": "livewhale", "url": "https://events.nyu.edu/live/json/events", "label": "NYU Calendar (LiveWhale)", "events": 1343, "note": "Shape {meta:{total_results,total_pages}, data:[...]}, 100 per page; fields title, date_iso, date2_iso, location, summary, url. RSS also at /live/rss/events." },
+      { "type": "json", "url": "https://engage.nyu.edu/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100", "label": "NYU Engage (student orgs)", "events": 1061, "note": "Anthology Engage discovery API. Add endsAfter=<ISO now>. Array at value[]; name, startsOn, endsOn, location, description, benefitNames; total in @odata.count." }
+    ],
+    "notes": "events.nyu.edu is LiveWhale, not Localist."
+  },
+  {
+    "id": "uf", "name": "University of Florida", "short": "UF", "country": "US", "city": "Gainesville, FL", "rank": 31,
+    "lat": 29.6436, "lng": -82.3549,
+    "sources": [
+      { "type": "livewhale", "url": "https://calendar.ufl.edu/live/json/events", "label": "UF Calendar (LiveWhale)", "events": 1000, "note": "Plain JSON array (capped at 1000); fields title, date_iso, date2_iso, location, summary, group_title, url. First request can take 30 s+ (uncached); use a long timeout. RSS at /live/rss/events." },
+      { "type": "json", "url": "https://gatorconnect.ufl.edu/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100", "label": "GatorConnect (Engage, student orgs)", "events": 337, "note": "Anthology Engage discovery API (same tenant as ufl.campuslabs.com/engage). Add endsAfter=<ISO now>. Array at value[]; name, startsOn, endsOn, location, description, benefitNames." }
+    ],
+    "notes": "calendar.ufl.edu is LiveWhale (Localist API path 404s)."
+  },
+  {
+    "id": "utexas", "name": "University of Texas at Austin", "short": "UT Austin", "country": "US", "city": "Austin, TX", "rank": 32,
+    "lat": 30.2849, "lng": -97.7341,
+    "sources": [
+      { "type": "localist", "url": "https://calendar.utexas.edu", "label": "Texas Today Events Calendar", "events": 770 },
+      { "type": "json", "url": "https://utexas.campuslabs.com/engage/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100", "label": "HornsLink (Engage, student orgs)", "events": 780, "note": "Anthology Engage discovery API. Add endsAfter=<ISO now>. Array at value[]; name, startsOn, endsOn, location, description, benefitNames." }
+    ],
+    "notes": "events.utexas.edu is not Localist; calendar.utexas.edu is."
+  },
+  {
+    "id": "gatech", "name": "Georgia Institute of Technology", "short": "Georgia Tech", "country": "US", "city": "Atlanta, GA", "rank": 33,
+    "lat": 33.7756, "lng": -84.3963,
+    "sources": [
+      { "type": "json", "url": "https://engage.gatech.edu/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100", "label": "GT Engage (student orgs)", "events": 548, "note": "Anthology Engage discovery API. Add endsAfter=<ISO now>. Array at value[]; name, startsOn, endsOn, location, description, benefitNames." },
+      { "type": "rss", "url": "https://calendar.gatech.edu/taxonomy/term/13/feed", "label": "GT Campus Calendar: Career/Professional development", "events": 37, "note": "Drupal term feed ordered by posting date, mixes past and future (460 items, 37 upcoming); event date is in the link path /event/YYYY/MM/DD and in <time> tags inside the description." },
+      { "type": "rss", "url": "https://calendar.gatech.edu/taxonomy/term/20/feed", "label": "GT Campus Calendar: Training/Workshop", "events": 44, "note": "Same Drupal shape as term 13 (477 items, 44 upcoming). Other terms on /rss-feeds: 12 arts, 14 seminars, 15 misc, 18 sports; 19 'Student sponsored' crashes (PHP memory error)." }
+    ],
+    "notes": "calendar.gatech.edu is Drupal (no Localist); its 'Student sponsored' feed errors, so Engage covers student orgs."
+  },
+  {
+    "id": "ucdavis", "name": "University of California, Davis", "short": "UC Davis", "country": "US", "city": "Davis, CA", "rank": 34,
+    "lat": 38.5382, "lng": -121.7617,
+    "sources": [
+      { "type": "rss", "url": "https://aggielife.ucdavis.edu/rss_events", "label": "Aggie Life (CampusGroups, campus-wide + student orgs)", "events": 225, "note": "CampusGroups RSS: <item> with title, description/fullDescription, group, eventDate/eventEndDate (M/D/YYYY), eventTime, location. School-wide ICS also offered at /ics_helper." }
+    ],
+    "notes": "events.ucdavis.edu is behind a Cloudflare challenge (403); calendar.ucdavis.edu redirects to a Drupal page with no feed; old Trumba calendar names removed."
+  },
+  {
+    "id": "uci", "name": "University of California, Irvine", "short": "UC Irvine", "country": "US", "city": "Irvine, CA", "rank": 35,
+    "lat": 33.6405, "lng": -117.8443,
+    "sources": [
+      { "type": "rss", "url": "https://zotspot.uci.edu/rss_events", "label": "ZotSpot (CampusGroups, UCI Calendar of Events)", "events": 399, "note": "CampusGroups RSS: <item> with title, description/fullDescription, group, eventDate/eventEndDate (M/D/YYYY), eventTime, location. Some long-running items started years ago but end in the future." }
+    ],
+    "notes": "events.uci.edu does not resolve; today.uci.edu is a Cascade page with no feed. ZotSpot is the official campus-wide calendar (also campusgroups.uci.edu)."
+  },
+  {
+    "id": "uiuc", "name": "University of Illinois Urbana-Champaign", "short": "UIUC", "country": "US", "city": "Urbana-Champaign, IL", "rank": 36,
+    "lat": 40.1020, "lng": -88.2272,
+    "sources": [
+      { "type": "ical", "url": "https://calendars.illinois.edu/icalGmail/7.ics?hourOffset=0&timeZone=America%2FChicago", "label": "Illinois General Events (Webtools)", "events": 1437 },
+      { "type": "ical", "url": "https://calendars.illinois.edu/icalGmail/2654.ics?hourOffset=0&timeZone=America%2FChicago", "label": "Siebel School of Computing Master Calendar", "institute": true, "events": 97 }
+    ],
+    "notes": "Webtools calendars: any calendar id N exports at /icalGmail/N.ics (found via /export/N). calendar.illinois.edu does not respond. No public Engage/CampusGroups tenant found."
+  },
+  {
+    "id": "bc", "name": "Boston College", "short": "BC", "country": "US", "city": "Chestnut Hill, MA", "rank": 37,
+    "lat": 42.3355, "lng": -71.1685,
+    "sources": [
+      { "type": "localist", "url": "https://events.bc.edu", "label": "BC Events", "events": 415 },
+      { "type": "json", "url": "https://bc.campuslabs.com/engage/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100", "label": "BC Engage (student orgs)", "events": 415, "note": "Anthology Engage discovery API. Add endsAfter=<ISO now>. Array at value[]; name, startsOn, endsOn, location, description, benefitNames." }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tufts", "name": "Tufts University", "short": "Tufts", "country": "US", "city": "Medford, MA", "rank": 38,
+    "lat": 42.4075, "lng": -71.1190,
+    "sources": [
+      { "type": "ical", "url": "https://www.trumba.com/calendars/tufts.ics", "label": "Tufts Events (Trumba)", "events": 315 },
+      { "type": "rss", "url": "https://tufts.campusgroups.com/rss_events", "label": "Tufts CampusGroups (student orgs)", "events": 306, "note": "CampusGroups RSS: <item> with title, description/fullDescription, group, eventDate/eventEndDate (M/D/YYYY), eventTime, location." }
+    ],
+    "notes": "events.tufts.edu embeds Trumba webName tufts."
+  },
+  {
+    "id": "ucsb", "name": "University of California, Santa Barbara", "short": "UCSB", "country": "US", "city": "Santa Barbara, CA", "rank": 39,
+    "lat": 34.4140, "lng": -119.8489,
+    "sources": [
+      { "type": "rss", "url": "https://shoreline.ucsb.edu/rss_events", "label": "Shoreline (CampusGroups, student orgs)", "events": 444, "note": "CampusGroups RSS: <item> with title, description/fullDescription, group, eventDate/eventEndDate (M/D/YYYY), eventTime, location." }
+    ],
+    "notes": "events.ucsb.edu answers 403 to plain requests (bot protection), so its central calendar is not usable; not bypassed."
+  },
+  {
+    "id": "uw-madison", "name": "University of Wisconsin-Madison", "short": "UW-Madison", "country": "US", "city": "Madison, WI", "rank": 40,
+    "lat": 43.0766, "lng": -89.4125,
+    "sources": [
+      { "type": "ical", "url": "https://today.wisc.edu/events.ics?per_page=500", "label": "UW-Madison Events Calendar", "events": 194, "note": "Default is 20 events; per_page raises it (about 200 max). JSON at /events.json?per_page=100 (array with title, description, location, start/end)." },
+      { "type": "rss", "url": "https://win.wisc.edu/rss_events", "label": "WIN (CampusGroups, student orgs)", "events": 162, "note": "CampusGroups RSS: <item> with title, description/fullDescription, group, eventDate/eventEndDate (M/D/YYYY), eventTime, location." }
+    ],
+    "notes": "events.wisc.edu redirects to today.wisc.edu (custom, not Localist)."
+  },
+  {
+    "id": "bu", "name": "Boston University", "short": "BU", "country": "US", "city": "Boston, MA", "rank": 41,
+    "lat": 42.3505, "lng": -71.1054,
+    "sources": [
+      { "type": "json", "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=17&days=31", "label": "BU University Events (phpbin API)", "events": 328, "note": "Open API (spec at /phpbin/calendar/rpc/openapi.yaml). Shape {num_events, events:[{starts (unix), ends, summary, location, url, topics, id}]}; no description in the list; details via rpc/event.php. days up to 365. cid=17 is University Events; other cids are unit calendars (e.g. 20 = College of Fine Arts)." },
+      { "type": "rss", "url": "https://questromcommon.bu.edu/rss_events", "label": "Questrom Common (CampusGroups, business school)", "institute": true, "events": 20, "note": "CampusGroups RSS shape." }
+    ],
+    "notes": "The calendar page's RSS link (phpbin/calendar/rss.php) returns HTML. bu.campuslabs.com Engage tenant exists but shows 0 events; bu.campusgroups.com 500."
+  },
+  {
+    "id": "osu", "name": "Ohio State University", "short": "Ohio State", "country": "US", "city": "Columbus, OH", "rank": 42,
+    "lat": 40.0067, "lng": -83.0305,
+    "sources": [
+      { "type": "rss", "url": "https://studentlife.osu.edu/CentralCalendar/StudentLife.EventCalendar.Web.Service.RssHandler.ashx?d=9", "label": "Office of Student Life calendar (incl. student orgs)", "events": 50, "note": "RSS 1.0 (RDF) with ev: event module; 50 upcoming items per fetch." }
+    ],
+    "notes": "www.osu.edu/events is a 301 redirect loop; events.osu.edu / calendar.osu.edu do not resolve. No Engage/CampusGroups tenant (activities.osu.edu is OSU's own system); the student-org calendar posts into the Student Life calendar above."
+  },
+  {
+    "id": "rutgers", "name": "Rutgers University-New Brunswick", "short": "Rutgers", "country": "US", "city": "New Brunswick, NJ", "rank": 43,
+    "lat": 40.5008, "lng": -74.4474,
+    "sources": [
+      { "type": "tribe", "url": "https://ifh.rutgers.edu/wp-json/tribe/events/v1/events?per_page=50", "label": "Institute for Health, Health Care Policy and Aging Research", "institute": true, "events": 5 }
+    ],
+    "notes": "No university-wide feed: www.rutgers.edu/events is Drupal with no feed (/events/feed returns HTML); newbrunswick.rutgers.edu is behind a Cloudflare challenge; events.rutgers.edu goes to Cooperative Extension. getINVOLVED moved to 'The Arc' (Suitable app, no public feed). rutgers.campusgroups.com is Rutgers-Newark RaiderLink (151 events), not New Brunswick."
+  },
+  {
+    "id": "umd", "name": "University of Maryland, College Park", "short": "UMD", "country": "US", "city": "College Park, MD", "rank": 44,
+    "lat": 38.9869, "lng": -76.9426,
+    "sources": [
+      { "type": "json", "url": "https://terplink.umd.edu/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100", "label": "TerpLink (Engage, student orgs)", "events": 789, "note": "Anthology Engage discovery API. Add endsAfter=<ISO now>. Array at value[]; name, startsOn, endsOn, location, description, benefitNames." },
+      { "type": "ical", "url": "https://calendar.umd.edu/category/export/current-students", "label": "UMD Calendar: Current Students", "events": 155 },
+      { "type": "ical", "url": "https://calendar.umd.edu/category/export/graduate-students", "label": "UMD Calendar: Graduate Students", "events": 173 }
+    ],
+    "notes": "calendar.umd.edu (Craft/Solspace) has no all-events export; each category exports at /category/export/<slug> (student-life, academics, research ... also work). ICS has SUMMARY and dates only, no description."
+  },
+  {
+    "id": "rochester", "name": "University of Rochester", "short": "Rochester", "country": "US", "city": "Rochester, NY", "rank": 45,
+    "lat": 43.1306, "lng": -77.6260,
+    "sources": [
+      { "type": "localist", "url": "https://events.rochester.edu", "label": "Rochester Events", "events": 393 },
+      { "type": "rss", "url": "https://ccc.rochester.edu/rss_events", "label": "CCC (CampusGroups, student orgs)", "events": 450, "note": "CampusGroups RSS: <item> with title, description/fullDescription, group, eventDate/eventEndDate (M/D/YYYY), eventTime, location." }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "lehigh", "name": "Lehigh University", "short": "Lehigh", "country": "US", "city": "Bethlehem, PA", "rank": 46,
+    "lat": 40.6069, "lng": -75.3783,
+    "sources": [
+      { "type": "localist", "url": "https://eventscalendar.lehigh.edu", "label": "Lehigh Events Calendar", "events": 276 },
+      { "type": "rss", "url": "https://lehigh.campusgroups.com/rss_events", "label": "Lehigh CampusGroups (student orgs)", "events": 369, "note": "CampusGroups RSS: <item> with title, description/fullDescription, group, eventDate/eventEndDate (M/D/YYYY), eventTime, location." }
+    ],
+    "notes": "Localist lives at eventscalendar.lehigh.edu (events./calendar.lehigh.edu do not resolve)."
+  },
+  {
+    "id": "purdue", "name": "Purdue University", "short": "Purdue", "country": "US", "city": "West Lafayette, IN", "rank": 47,
+    "lat": 40.4237, "lng": -86.9212,
+    "sources": [
+      { "type": "localist", "url": "https://events.purdue.edu", "label": "Purdue Events", "events": 311 },
+      { "type": "json", "url": "https://boilerlink.purdue.edu/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100", "label": "BoilerLink (Engage, student orgs)", "events": 930, "note": "Anthology Engage discovery API. Add endsAfter=<ISO now>. Array at value[]; name, startsOn, endsOn, location, description, benefitNames." }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "uga", "name": "University of Georgia", "short": "UGA", "country": "US", "city": "Athens, GA", "rank": 48,
+    "lat": 33.9480, "lng": -83.3773,
+    "sources": [
+      { "type": "localist", "url": "https://calendar.uga.edu", "label": "UGA Calendar", "events": 701 },
+      { "type": "json", "url": "https://uga.campuslabs.com/engage/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100", "label": "UGA Engage (student orgs)", "events": 183, "note": "Anthology Engage discovery API. Add endsAfter=<ISO now>. Array at value[]; name, startsOn, endsOn, location, description, benefitNames." }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "uw", "name": "University of Washington", "short": "UW", "country": "US", "city": "Seattle, WA", "rank": 49,
+    "lat": 47.6553, "lng": -122.3035,
+    "sources": [
+      { "type": "ical", "url": "https://www.trumba.com/calendars/sea_campus.ics", "label": "UW Seattle Campus Calendar (Trumba)", "events": 693 },
+      { "type": "rss", "url": "https://huskylink.washington.edu/rss_events", "label": "HuskyLink (CampusGroups, student orgs)", "events": 122, "note": "CampusGroups RSS: <item> with title, description/fullDescription, group, eventDate/eventEndDate (M/D/YYYY), eventTime, location." },
+      { "type": "ical", "url": "https://www.trumba.com/calendars/sea_cse.ics", "label": "Paul G. Allen School of Computer Science & Engineering", "institute": true, "events": 54 }
+    ],
+    "notes": "events.uw.edu is not Localist; www.washington.edu/calendar embeds Trumba webName sea_campus."
+  },
+  {
+    "id": "cwru", "name": "Case Western Reserve University", "short": "Case Western", "country": "US", "city": "Cleveland, OH", "rank": 50,
+    "lat": 41.5043, "lng": -81.6084,
+    "sources": [
+      { "type": "rss", "url": "https://community.case.edu/rss_events", "label": "CWRU Community (CampusGroups, student orgs + departments)", "events": 788, "note": "CampusGroups RSS: <item> with title, description/fullDescription, group, groupType, eventDate/eventEndDate (M/D/YYYY), eventTime, location." }
+    ],
+    "notes": "case.edu/events is Drupal with no feed found; events.case.edu does not resolve."
+  }
+]

@@ -1,0 +1,261 @@
+[
+  {
+    "id": "imperial",
+    "name": "Imperial College London",
+    "short": "Imperial",
+    "country": "GB",
+    "city": "London",
+    "rank": 1,
+    "lat": 51.4988, "lng": -0.1749,
+    "sources": [
+      { "type": "json", "url": "https://www.imperial.ac.uk/events/feed/json/?quantity=100&show=future", "label": "Imperial What's On (JSON)", "events": 365, "note": "Events API behind imperial.ac.uk/events-api-explorer. Array at data.events; fields title, summary, description (HTML), starts.iso8601, ends.iso8601, venue, displayAddress, categories, groups, cost, url.absolute. Paginate with start=100,200... (meta.page.total = 365 upcoming)." },
+      { "type": "rss", "url": "https://www.imperial.ac.uk/events/feed/rss/", "label": "Imperial What's On (RSS)", "events": 30, "note": "Same feed as RSS, 30 per page; /events/feed/atom/ also works." },
+      { "type": "ical", "url": "https://ibconnect.imperial.ac.uk/ical/imperial/ical_imperial.ics", "label": "IB Connect (Business School, CampusGroups)", "institute": true, "events": 20, "note": "CampusGroups school-wide feed; RSS with structured fields at https://ibconnect.imperial.ac.uk/rss_events" }
+    ],
+    "notes": "Imperial College Union (imperialcollegeunion.org, Next.js) exposes no feed. talks.ee.ic.ac.uk (talks.cam clone) found but no lists linked from its home page."
+  },
+  {
+    "id": "oxford",
+    "name": "University of Oxford",
+    "short": "Oxford",
+    "country": "GB",
+    "city": "Oxford",
+    "rank": 2,
+    "lat": 51.7548, "lng": -1.2544,
+    "sources": [
+      { "type": "rss", "url": "https://www.cs.ox.ac.uk/feeds/SeminarSeries-All.xml", "label": "Oxford Computer Science seminars", "institute": true, "events": 13 }
+    ],
+    "notes": "talks.ox.ac.uk now redirects to events.ox.ac.uk (Oxford Events, the 2026 replacement for OxTalks); both return CloudFront 403/429 to plain GETs, so its API is not usable from a server. Oxford SU (MSL) feed https://www.oxfordsu.org/ents/rss/0/subtree/ works but had 0 events. Maths Institute advertises RSS but no URL found."
+  },
+  {
+    "id": "cambridge",
+    "name": "University of Cambridge",
+    "short": "Cambridge",
+    "country": "GB",
+    "city": "Cambridge",
+    "rank": 3,
+    "lat": 52.2043, "lng": 0.1149,
+    "sources": [
+      { "type": "ical", "url": "https://talks.cam.ac.uk/show/ics/5607/", "label": "talks.cam: Featured lists", "events": 199 },
+      { "type": "ical", "url": "https://talks.cam.ac.uk/show/ics/6330/", "label": "talks.cam: Computer Science and Technology", "institute": true, "events": 52 },
+      { "type": "ical", "url": "https://talks.cam.ac.uk/show/ics/15626/", "label": "talks.cam: Department of Chemistry", "institute": true, "events": 22 },
+      { "type": "rss", "url": "https://www.cambridgesu.co.uk/ents/rss/0/subtree/", "label": "Cambridge SU events (MSL)", "events": 15 }
+    ],
+    "notes": "talks.cam.ac.uk: every list has /show/ics/<id>/ (trailing slash required) and /show/rss/<id>/; no JSON. Any list id works, so more departments can be added. MSL student unions share the /ents/rss/0/subtree/ pattern."
+  },
+  {
+    "id": "eth",
+    "name": "ETH Zurich",
+    "short": "ETH",
+    "country": "CH",
+    "city": "Zurich",
+    "rank": 4,
+    "lat": 47.3763, "lng": 8.5480,
+    "sources": [
+      { "type": "json", "url": "https://idapps.ethz.ch/pcm-pub-services/v2/entries?rs-first=0&rs-size=9999&filters%5B0%5D.min-till-end=0&filters%5B0%5D.max-till-start=999&lang=en&client-id=wcms&filters%5B0%5D.cals=1&comp-ext=true", "label": "ETH event calendar (PCM API)", "events": 391, "note": "API behind ethz.ch/en/news-and-events/events.html. Array at entry-array; title content.title, description content.description, dates date-time-indication.date-with-times-array[].date/time-from/time-to, location location.internal (building/addition) and location.address, organizers. ~2 MB response." }
+    ],
+    "notes": "Events are in English (188) and German (113, plus untagged); match German food words too (Apéro, Essen, Verpflegung, Pizza, Snacks, Imbiss, kostenlos)."
+  },
+  {
+    "id": "nus",
+    "name": "National University of Singapore",
+    "short": "NUS",
+    "country": "SG",
+    "city": "Singapore",
+    "rank": 5,
+    "lat": 1.2966, "lng": 103.7764,
+    "sources": [
+      { "type": "ical", "url": "https://nusync.nus.edu.sg/ical/nusg/ical_nusg.ics", "label": "NUSync (student orgs, CampusGroups)", "events": 171, "note": "973 VEVENTs in the file, 171 upcoming." },
+      { "type": "rss", "url": "https://nusync.nus.edu.sg/rss_events", "label": "NUSync RSS (CampusGroups)", "events": 182, "note": "CampusGroups RSS with structured fields per item: group, groupType, eventDate, eventTime, title, fullDescription, location, eventLink." }
+    ],
+    "notes": "NUSync is CampusGroups, school code nusg: student-org events, prime free-food territory. www.nus.edu.sg/events returned a near-empty page; no university-wide feed found."
+  },
+  {
+    "id": "ucl",
+    "name": "University College London",
+    "short": "UCL",
+    "country": "GB",
+    "city": "London",
+    "rank": 6,
+    "lat": 51.5246, "lng": -0.1340,
+    "sources": [],
+    "notes": "www.ucl.ac.uk (events, /events/feed, /events/rss) is behind a Cloudflare challenge (403). Students' Union UCL (studentsunionucl.org, Drupal) exposes no feed; ucl.libcal.com not reachable. Only timetable ics found."
+  },
+  {
+    "id": "ntu",
+    "name": "Nanyang Technological University",
+    "short": "NTU",
+    "country": "SG",
+    "city": "Singapore",
+    "rank": 7,
+    "lat": 1.3483, "lng": 103.6831,
+    "sources": [
+      { "type": "ical", "url": "https://sphere.ntu.edu.sg/ical/ntu/ical_ntu.ics", "label": "NTU Sphere (student orgs, CampusGroups)", "events": 47, "note": "133 VEVENTs, 47 upcoming." },
+      { "type": "rss", "url": "https://sphere.ntu.edu.sg/rss_events", "label": "NTU Sphere RSS (CampusGroups)", "events": 40 }
+    ],
+    "notes": "NTU Sphere (soms.ntu.edu.sg / sphere.ntu.edu.sg) is CampusGroups. Main ntu.edu.sg events page has no feed."
+  },
+  {
+    "id": "tsinghua",
+    "name": "Tsinghua University",
+    "short": "Tsinghua",
+    "country": "CN",
+    "city": "Beijing",
+    "rank": 8,
+    "lat": 40.0000, "lng": 116.3264,
+    "sources": [],
+    "notes": "tsinghua.edu.cn runs the VSB/博达 CMS (static .htm lists, /system/resource/js/ajax.js), no RSS/ics/JSON for 讲座/学生活动 pages. Content is Chinese. No feed found."
+  },
+  {
+    "id": "pku",
+    "name": "Peking University",
+    "short": "PKU",
+    "country": "CN",
+    "city": "Beijing",
+    "rank": 9,
+    "lat": 39.9869, "lng": 116.3059,
+    "sources": [],
+    "notes": "pku.edu.cn/dat/campusLife.json is open JSON but holds 2 news items, not events. 学术预告 (news.pku.edu.cn/xywh/xxyg.htm) and hall.pku.edu.cn are HTML only (VSB CMS). Content is Chinese. No feed found."
+  },
+  {
+    "id": "melbourne",
+    "name": "University of Melbourne",
+    "short": "Melbourne",
+    "country": "AU",
+    "city": "Melbourne",
+    "rank": 10,
+    "lat": -37.7963, "lng": 144.9614,
+    "sources": [
+      { "type": "livewhale", "url": "https://events.unimelb.edu.au/live/json/events/", "label": "UniMelb Events (LiveWhale)", "events": 1000, "note": "Returned 1000 (likely capped); RSS at /live/rss/events. Fields include title, date_iso, location, cost, group_title, event_types, tags." },
+      { "type": "rss", "url": "https://umsu.unimelb.edu.au/ents/rss/0/subtree/", "label": "UMSU events (MSL)", "events": 3 }
+    ],
+    "notes": "www.unimelb.edu.au/events returns 403; events.unimelb.edu.au is open."
+  },
+  {
+    "id": "hku",
+    "name": "University of Hong Kong",
+    "short": "HKU",
+    "country": "HK",
+    "city": "Hong Kong",
+    "rank": 11,
+    "lat": 22.2830, "lng": 114.1371,
+    "sources": [],
+    "notes": "hku.hk/en/news-events/events is AEM with server-rendered cards, no feed (/bin/hku/api/search needs params, 400). hkuems1.hku.hk event system is an old frameset. No libcal found. Content in English and Chinese."
+  },
+  {
+    "id": "toronto",
+    "name": "University of Toronto",
+    "short": "Toronto",
+    "country": "CA",
+    "city": "Toronto",
+    "rank": 12,
+    "lat": 43.6629, "lng": -79.3957,
+    "sources": [
+      { "type": "ical", "url": "https://libcal.library.utoronto.ca/ical_subscribe.php?src=p&cid=2020", "label": "U of T Libraries tri-campus workshops (LibCal)", "institute": true, "events": 27 },
+      { "type": "tribe", "url": "https://sop.utoronto.ca/wp-json/tribe/events/v1/events?per_page=50&start_date=now", "label": "Student Organization Portal (Ulife)", "events": 1 }
+    ],
+    "notes": "www.utoronto.ca/events is a Drupal aggregator of department sites with no ics/rss/jsonapi. Student Life (WordPress) has no events feed; engineering WP sites deny access. No Localist or Engage found. Other LibCal calendars: cid 8501 (special events), 8054."
+  },
+  {
+    "id": "sydney",
+    "name": "University of Sydney",
+    "short": "Sydney",
+    "country": "AU",
+    "city": "Sydney",
+    "rank": 13,
+    "lat": -33.8886, "lng": 151.1873,
+    "sources": [
+      { "type": "ical", "url": "https://clubs.usu.edu.au/ical/usu/ical_usu.ics", "label": "USU clubs & societies (CampusGroups)", "events": 103, "note": "2015 VEVENTs in the file, 103 upcoming." },
+      { "type": "rss", "url": "https://clubs.usu.edu.au/rss_events", "label": "USU clubs RSS (CampusGroups)", "events": 70 }
+    ],
+    "notes": "University What's On (whatson.sydney.edu.au) is a React app on AWS AppSync GraphQL, not a plain GET. USU = University of Sydney Union, student clubs: good for free food."
+  },
+  {
+    "id": "kcl",
+    "name": "King's College London",
+    "short": "KCL",
+    "country": "GB",
+    "city": "London",
+    "rank": 14,
+    "lat": 51.5115, "lng": -0.1160,
+    "sources": [],
+    "notes": "kcl.ac.uk/events is a Contensis React site (data in window.REDUX_DATA, no public feed). KCLSU (kclsu.org, MSL) is behind Cloudflare (403), including /ents/rss/0/subtree/. libcal.kcl.ac.uk 'Events' calendar (cid 9044) had 0 events."
+  },
+  {
+    "id": "mcgill",
+    "name": "McGill University",
+    "short": "McGill",
+    "country": "CA",
+    "city": "Montreal",
+    "rank": 15,
+    "lat": 45.5048, "lng": -73.5772,
+    "sources": [
+      { "type": "ical", "url": "https://libraryrooms.mcgill.ca/ical_subscribe.php?src=p&cid=8219", "label": "McGill University Libraries (LibCal)", "institute": true, "events": 45 }
+    ],
+    "notes": "www.mcgill.ca (channels events and its RSS) is behind an Azure WAF JS challenge (403). SSMU calendar ics (https://ssmu.ca/events/?ical=1) works but only holds 2019 events. No Engage/CampusGroups found. Events may be in French: match French food words (nourriture, repas, collation, gratuit, pizza, café)."
+  },
+  {
+    "id": "epfl",
+    "name": "EPFL",
+    "short": "EPFL",
+    "country": "CH",
+    "city": "Lausanne",
+    "rank": 16,
+    "lat": 46.5191, "lng": 6.5668,
+    "sources": [
+      { "type": "json", "url": "https://memento.epfl.ch/api/v1/events/?format=json&limit=100", "label": "EPFL Memento", "events": 251, "note": "Paginated: count, next, results[]. Fields title, description (HTML), start_date, start_time, end_date, place_and_room, organizer, registration.en_label, keywords, lang, event_url, icalendar_url. Returns upcoming events." }
+    ],
+    "notes": "Events in English and French (lang field); match French food words (apéro, apéritif, repas, collation, buffet, verrée, gratuit)."
+  },
+  {
+    "id": "tum",
+    "name": "Technical University of Munich",
+    "short": "TUM",
+    "country": "DE",
+    "city": "Munich",
+    "rank": 17,
+    "lat": 48.1497, "lng": 11.5679,
+    "sources": [
+      { "type": "rss", "url": "https://www.tum.de/en/news-and-events/events.rss", "label": "TUM events", "events": 30, "note": "pubDate is the event start time." }
+    ],
+    "notes": "English feed; the German site has the same events. Some events are German-language: match German food words (Essen, Verpflegung, Imbiss, Snacks, Brezn, Freibier, kostenlos)."
+  },
+  {
+    "id": "utokyo",
+    "name": "University of Tokyo",
+    "short": "UTokyo",
+    "country": "JP",
+    "city": "Tokyo",
+    "rank": 18,
+    "lat": 35.7126, "lng": 139.7620,
+    "sources": [
+      { "type": "rss", "url": "https://www.u-tokyo.ac.jp/focus/ja/events/feed.rdf", "label": "UTokyo events (Japanese)", "events": 57, "note": "pubDate is the posting date, not the event date; title and organizing unit only, details on the linked page." },
+      { "type": "rss", "url": "https://www.u-tokyo.ac.jp/focus/en/events/feed.rdf", "label": "UTokyo events (English)", "events": 15 }
+    ],
+    "notes": "Main feed is Japanese: match Japanese food words (軽食, 食事, 懇親会, ランチ, 弁当, お菓子, 無料, 茶話会)."
+  },
+  {
+    "id": "fudan",
+    "name": "Fudan University",
+    "short": "Fudan",
+    "country": "CN",
+    "city": "Shanghai",
+    "rank": 19,
+    "lat": 31.2989, "lng": 121.5015,
+    "sources": [
+      { "type": "rss", "url": "https://news.fudan.edu.cn/_wp3services/rssoffer?siteId=3&columnId=45", "label": "Fudan news: 通知公告 (announcements)", "events": 20, "note": "WebPlus CMS RSS; announcements incl. events, job fairs and performances; pubDate is the posting date." }
+    ],
+    "notes": "Chinese only: match Chinese food words (免费, 餐, 午餐, 晚餐, 茶歇, 披萨, 零食, 食物, 自助). Any WebPlus column has RSS at /_wp3services/rssoffer?siteId=<n>&columnId=<n>; no dedicated lecture/events column found that is current."
+  },
+  {
+    "id": "unsw",
+    "name": "UNSW Sydney",
+    "short": "UNSW",
+    "country": "AU",
+    "city": "Sydney",
+    "rank": 20,
+    "lat": -33.9173, "lng": 151.2313,
+    "sources": [],
+    "notes": "www.events.unsw.edu.au (Drupal 9) has no rss/ics/jsonapi. Arc UNSW clubs use Rubric (campus.hellorubric.com), no open feed found. Only academic key-date ics on student.unsw.edu.au."
+  }
+]

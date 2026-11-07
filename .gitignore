@@ -1,8 +1,2 @@
+data/
 node_modules/
-dist/
-.next/
-build/
-.env
-.env.*
-*.log
-.DS_Store
