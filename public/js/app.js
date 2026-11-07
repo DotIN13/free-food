@@ -48,6 +48,7 @@ async function loadBase() {
 		$("#retry").onclick = () => loadBase().then(route);
 	}
 	health();
+	updateWhere();
 }
 // ---------- where: near you, one campus, or everywhere
 const NEAR_KM = 40;
@@ -68,6 +69,7 @@ function setScope(v, { why = null, save = true } = {}) {
 	S.scopeWhy = why;
 	S.sel = null;
 	if (save) store.setItem("scope", v);
+	updateWhere();
 }
 function health() {
 	const el = $("#live"), txt = $("#liveText");
@@ -98,6 +100,16 @@ function toggleSave(e) {
 function setMe(lat, lng) {
 	S.me = { lat, lng };
 	store.setItem("me", JSON.stringify(S.me));
+	updateWhere();
+}
+// "Near NYU" on the top right, once the person has said where they are: the closest campus, or just "Near you".
+function updateWhere() {
+	const el = $("#where");
+	if (!S.me || !S.unis.length) { el.hidden = true; return; }
+	const n = nearestUnis(S.me, 1)[0];
+	$("#whereText").textContent = n && n.d <= NEAR_KM ? `Near ${n.u.short ?? n.u.name}` : "Near you";
+	el.classList.toggle("on", S.scope === "near");
+	el.hidden = false;
 }
 function locate() {
 	return new Promise((resolve) => {
@@ -785,6 +797,16 @@ async function goPage(id) {
 }
 
 // ---------- header wiring
+$("#where").addEventListener("click", (ev) => {
+	ev.preventDefault();
+	setScope("near");
+	if (["", "e", "map"].includes(current?.name ?? "") && homePage.alive) {
+		if (location.hash.startsWith("#/e/")) history.replaceState(null, "", "#/");
+		homePage.select(null);
+		homePage.update({ recenter: true });
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	} else location.hash = "#/";
+});
 let qt;
 $("#q").addEventListener("input", (ev) => {
 	clearTimeout(qt);
