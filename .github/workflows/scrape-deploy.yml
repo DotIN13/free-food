@@ -35,7 +35,15 @@ jobs:
         run: node scripts/build.mjs --out dist
         env:
           DATA_DIR: ${{ runner.temp }}/free-food-data
+      - name: Feeds that failed
+        run: node -e 'const s=require("./dist/data/state.json").status;const bad=Object.entries(s).filter(([,v])=>!v.ok);console.log(`${Object.keys(s).length-bad.length}/${Object.keys(s).length} feeds ok`);for(const [u,v] of bad)console.log(`::warning::${v.uni}: ${v.error} (${u})`)'
       - name: Deploy to Vercel
+        if: env.VERCEL_TOKEN != ''
         run: npx --yes vercel@latest deploy dist --prod --yes --token "$VERCEL_TOKEN"
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      - name: No deploy token yet
+        if: env.VERCEL_TOKEN == ''
+        run: echo "::warning::VERCEL_TOKEN is not set, so this run scraped but did not deploy. See the README."
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
