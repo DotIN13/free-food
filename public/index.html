@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Free Food Hub</title>
+	<style>:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0 auto; max-width: 960px; padding: clamp(16px, 4vw, 32px); line-height: 1.5; }
+h1 { font-size: clamp(22px, 5vw, 28px); margin: 0 0 12px; }
+img, video, canvas, svg { max-width: 100%; height: auto; }
+button, input, select, textarea { font: inherit; min-height: 44px; }
+button { padding: 0 16px; }
+@media (max-width: 600px) { form { display: flex; flex-direction: column; gap: 8px; } button, input, select { width: 100%; } }
+</style>
+</head>
+<body>
+	<h1>Free Food Hub</h1>
+	<form id="add"><input name="text" placeholder="Something to keep" /> <button>Add</button></form>
+	<ul id="items"></ul>
+	<script>
+		// Relative to the app's own address, so it works under /app/<name>/.
+		const draw = (items) => (document.getElementById("items").innerHTML = items.map((one) => `<li>${one.text.replace(/</g, "&lt;")}</li>`).join(""));
+		fetch("api/items").then((r) => r.json()).then(draw);
+		document.getElementById("add").onsubmit = async (event) => {
+			event.preventDefault();
+			const text = event.target.text.value.trim();
+			if (!text) return;
+			event.target.reset();
+			draw(await (await fetch("api/items", { method: "POST", body: JSON.stringify({ text }) })).json());
+		};
+	</script>
+</body>
+</html>
