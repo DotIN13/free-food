@@ -465,5 +465,6 @@ body { overflow-x: hidden; }
 /* "Near NYU": shown once the person has said where they are */
 .where { padding: 0 13px 0 11px; font-weight: 600; font-size: 13.5px; color: var(--ink); white-space: nowrap; }
 .where svg { color: var(--tomato); }
-.where.on { border-color: var(--tomato); background: var(--tomato-soft); }
+.where.on { border-color: var(--tomato); background: var(--paper); }
+@media (prefers-color-scheme: dark) { .where.on { background: var(--tomato-soft); } }
 @media (max-width: 760px) { .where { height: 34px; } }
