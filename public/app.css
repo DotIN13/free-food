@@ -131,7 +131,7 @@ main { outline: none; }
 .spot .stat b { display: block; font: 800 21px/1.1 var(--head); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .spot .stat small { font-size: 12.5px; color: rgba(255, 255, 255, 0.88); }
 .spot .buttons { display: flex; gap: 8px; }
-.spot .go { flex: 1; height: 48px; border: 0; border-radius: 14px; background: #fff; color: #e8433a; font-weight: 800; font-size: 15.5px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+.spot .spot-go { flex: 1; height: 48px; border: 0; border-radius: 14px; background: #fff; color: #e8433a; font-weight: 800; font-size: 15.5px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
 .spot .save { width: 120px; height: 48px; border-radius: 14px; border: 1.5px solid rgba(255, 255, 255, 0.7); background: none; color: #fff; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
 .spot .save.on { background: rgba(255, 255, 255, 0.22); }
 .sticker { position: absolute; right: -10px; top: -18px; width: 86px; height: 86px; border-radius: 50%; background: var(--sun); border: 3px solid #fff; transform: rotate(-14deg); display: grid; place-items: center; text-align: center; color: #5a3b00; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); line-height: 1; }

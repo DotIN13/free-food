@@ -224,7 +224,7 @@ const homePage = {
 				<div class="stat"><b>${tp.t}${tp.ap ? ` ${tp.ap}` : ""}</b><small>${e.end ? `to ${fmt(e.end, tz, { hour: "numeric", minute: "2-digit" })}` : dayLabel(e, tz)}</small></div>
 			</div>
 			<div class="buttons">
-				<a class="go" href="#/go/${e.id}">${icon("navigation")}Take me there</a>
+				<a class="spot-go" href="#/go/${e.id}">${icon("navigation")}Take me there</a>
 				<button class="save ${isSaved(e.id) ? "on" : ""}" data-save="${e.id}">${icon("heart")}Save</button>
 			</div>
 			<div class="sticker"><div><b>FREE</b><small>really!</small></div></div>
