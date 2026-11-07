@@ -1,235 +1,722 @@
 [
- {
-  "id": "princeton", "name": "Princeton University", "short": "Princeton", "country": "US", "city": "Princeton, NJ", "rank": 1,
-  "lat": 40.3431, "lng": -74.6551,
-  "sources": [
-   { "type": "ical", "url": "https://www.princeton.edu/feed/events.ics", "label": "Princeton University Events", "events": 200, "note": "capped at the next 200 events" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/princeton/ical_princeton.ics", "label": "Princeton student orgs (CampusGroups)", "events": 965, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" },
-   { "type": "ical", "url": "https://ecs.princeton.edu/events/?ical=1", "label": "Princeton ECS", "events": 3, "institute": true }
-  ],
-  "notes": "calendar.princeton.edu (Localist) and www.princeton.edu/events* are behind a Cloudflare challenge (403). https://www.princeton.edu/feed/events is an RSS twin of the ics (200 items) but carries the event start only in <pubDate>, which lib/scrape.js rss() does not read; use the ics."
- },
- {
-  "id": "mit", "name": "Massachusetts Institute of Technology", "short": "MIT", "country": "US", "city": "Cambridge, MA", "rank": 2,
-  "lat": 42.3601, "lng": -71.0942,
-  "sources": [
-   { "type": "localist", "url": "https://calendar.mit.edu", "label": "MIT Events", "events": 309 },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/mit/ical_mit.ics", "label": "MIT student orgs (Engage / CampusGroups)", "events": 86, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/mitsloan/ical_mitsloan.ics", "label": "MIT Sloan", "events": 173, "institute": true, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": "engage.mit.edu is CampusGroups, not Anthology Engage; its public ics redirects to the static campusgroups host used here."
- },
- {
-  "id": "harvard", "name": "Harvard University", "short": "Harvard", "country": "US", "city": "Cambridge, MA", "rank": 3,
-  "lat": 42.377, "lng": -71.1167,
-  "sources": [
-   { "type": "ical", "url": "https://www.trumba.com/calendars/gazette.ics", "label": "Harvard Gazette events (Trumba)", "events": 490 },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/harvard/ical_harvard.ics", "label": "Harvard College student orgs (CampusGroups)", "events": 62, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/hms/ical_hms.ics", "label": "Harvard Medical School SOHO (student orgs)", "events": 3, "institute": true, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": "events.harvard.edu returns Akamai 'Access Denied' and redirects to hfc.harvard.edu; calendar.college.harvard.edu is Localist but login-gated (API 404). LOCATION in the Gazette ics contains <br> tags."
- },
- {
-  "id": "stanford", "name": "Stanford University", "short": "Stanford", "country": "US", "city": "Stanford, CA", "rank": 4,
-  "lat": 37.4275, "lng": -122.1697,
-  "sources": [
-   { "type": "localist", "url": "https://events.stanford.edu", "label": "Stanford Events", "events": 873 }
-  ],
-  "notes": "Localist also exposes https://events.stanford.edu/calendar/1.ics (1378 upcoming). No public student-org platform found (no CampusGroups or Engage tenant); department/institute feeds tried (cs.stanford.edu, hoover.org, SLAC) 404."
- },
- {
-  "id": "yale", "name": "Yale University", "short": "Yale", "country": "US", "city": "New Haven, CT", "rank": 5,
-  "lat": 41.3163, "lng": -72.9223,
-  "sources": [
-   { "type": "localist", "url": "https://events.yale.edu", "label": "Yale Events", "events": 791 },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/yale/ical_yale.ics", "label": "Yale Connect student orgs (CampusGroups)", "events": 1541, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/yalesom/ical_yalesom.ics", "label": "Yale School of Management", "events": 147, "institute": true, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": "calendar.yale.edu redirects to events.yale.edu, which is Localist."
- },
- {
-  "id": "caltech", "name": "California Institute of Technology", "short": "Caltech", "country": "US", "city": "Pasadena, CA", "rank": 6,
-  "lat": 34.1377, "lng": -118.1253,
-  "sources": [
-   { "type": "ical", "url": "https://www.caltech.edu/campus-life-events/calendar/ical", "label": "Caltech Institute Calendar", "events": 412 }
-  ],
-  "notes": "Found by guessing from per-event webcal links on www.caltech.edu/campus-life-events/calendar. An RSS at .../calendar/rss has only 20 items. No CampusGroups/Engage tenant found."
- },
- {
-  "id": "duke", "name": "Duke University", "short": "Duke", "country": "US", "city": "Durham, NC", "rank": 7,
-  "lat": 36.0014, "lng": -78.9382,
-  "sources": [
-   { "type": "ical", "url": "https://calendar.duke.edu/events/index.ics?future_days=30", "label": "Duke Calendar", "events": 401 },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/duke/ical_duke.ics", "label": "DukeGroups student orgs (CampusGroups)", "events": 881, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": "calendar.duke.edu also has JSON at /events/index.json?future_days=30 ({events:[{event:{...}}]}). events.duke.edu redirects to students.duke.edu (WordPress)."
- },
- {
-  "id": "jhu", "name": "Johns Hopkins University", "short": "Johns Hopkins", "country": "US", "city": "Baltimore, MD", "rank": 8,
-  "lat": 39.3299, "lng": -76.6205,
-  "sources": [
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/jhu/ical_jhu.ics", "label": "Hopkins Groups student orgs (CampusGroups)", "events": 1399, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": "hub.jhu.edu, www.jhu.edu/events, calendar.jhu.edu, sustainability.jhu.edu and events.hopkinsmedicine.org are all behind Cloudflare (403). events.jhu.edu is Drupal; its rss.xml only lists landing pages."
- },
- {
-  "id": "northwestern", "name": "Northwestern University", "short": "Northwestern", "country": "US", "city": "Evanston, IL", "rank": 9,
-  "lat": 42.0565, "lng": -87.6753,
-  "sources": [
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/northwestern/ical_northwestern.ics", "label": "Northwestern student orgs (CampusGroups)", "events": 87, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/kellogg/ical_kellogg.ics", "label": "Kellogg School of Management", "events": 129, "institute": true, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" },
-   { "type": "ical", "url": "https://planitpurple.northwestern.edu/feed/ical/2229", "label": "Northwestern Math seminars (PlanIt Purple)", "events": 44, "institute": true }
-  ],
-  "notes": "The main calendar PlanIt Purple has only per-feed ics (/feed/ical/<id>, ids made by group admins) and a legacy /xmlfeed?cal=<ids>&days=N (custom XML, needs calendar ids). No campus-wide feed id found."
- },
- {
-  "id": "upenn", "name": "University of Pennsylvania", "short": "Penn", "country": "US", "city": "Philadelphia, PA", "rank": 10,
-  "lat": 39.9522, "lng": -75.1932,
-  "sources": [
-   { "type": "json", "url": "https://pennclubs.com/api/events/?format=json", "label": "Penn Clubs (student orgs)", "events": 34,
-     "fields": { "title": "name", "start": "earliest_start_time", "end": "earliest_end_time", "desc": "description", "url": "url" },
-     "note": "Top-level array of ~3500 events, mostly past; each has name, description (HTML), club_name, url and showings[] {start_time,end_time,location}. 14 events / 34 showings upcoming; recurring events need showings[] expanded (earliest_start_time may be past)." },
-   { "type": "livewhale", "url": "https://events.med.upenn.edu/live/json/events/max/500", "label": "Penn Medicine events", "events": 395, "institute": true },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/wharton/ical_wharton.ics", "label": "The Wharton School", "events": 191, "institute": true, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": "penntoday.upenn.edu/events and www.upenn.edu/events are behind Cloudflare/403. No campus-wide CampusGroups or Engage tenant."
- },
- {
-  "id": "cornell", "name": "Cornell University", "short": "Cornell", "country": "US", "city": "Ithaca, NY", "rank": 11,
-  "lat": 42.4534, "lng": -76.4735,
-  "sources": [
-   { "type": "localist", "url": "https://events.cornell.edu", "label": "Cornell Events", "events": 772 },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/cornell/ical_cornell.ics", "label": "CampusGroups student orgs", "events": 1461, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/johnson/ical_johnson.ics", "label": "Johnson at Cornell", "events": 197, "institute": true, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": ""
- },
- {
-  "id": "uchicago", "name": "University of Chicago", "short": "UChicago", "country": "US", "city": "Chicago, IL", "rank": 12,
-  "lat": 41.7886, "lng": -87.5987,
-  "sources": [
-   { "type": "livewhale", "url": "https://events.uchicago.edu/live/json/events/max/500", "label": "UChicago Events", "events": 100, "note": "server caps a request at 100 events" },
-   { "type": "engage", "url": "https://uchicago.campuslabs.com/engage", "label": "Blueprint student orgs (Engage)", "events": 52, "note": "25 of 52 upcoming carry the Free Food benefit" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/booth/ical_booth.ics", "label": "Chicago Booth", "events": 151, "institute": true, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": ""
- },
- {
-  "id": "brown", "name": "Brown University", "short": "Brown", "country": "US", "city": "Providence, RI", "rank": 13,
-  "lat": 41.8268, "lng": -71.4025,
-  "sources": [
-   { "type": "livewhale", "url": "https://events.brown.edu/live/json/events/max/500", "label": "Events@Brown", "events": 500 }
-  ],
-  "notes": "No CampusGroups or Engage tenant found."
- },
- {
-  "id": "columbia", "name": "Columbia University", "short": "Columbia", "country": "US", "city": "New York, NY", "rank": 14,
-  "lat": 40.8075, "lng": -73.9626,
-  "sources": [
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/columbia/ical_columbia.ics", "label": "Columbia student orgs (CampusGroups)", "events": 727, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/cbs/ical_cbs.ics", "label": "Columbia Business School", "events": 144, "institute": true, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/sipa/ical_sipa.ics", "label": "Columbia SIPA", "events": 47, "institute": true, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": "events.columbia.edu is behind a Cloudflare challenge on every path tried (/, /api/2/events, /live/json) even with a browser user-agent."
- },
- {
-  "id": "dartmouth", "name": "Dartmouth College", "short": "Dartmouth", "country": "US", "city": "Hanover, NH", "rank": 15,
-  "lat": 43.7044, "lng": -72.2887,
-  "sources": [
-   { "type": "json", "url": "https://events.dartmouth.edu/api/search.json", "label": "Dartmouth Events", "events": 276,
-     "fields": { "title": "title", "start": "time_start", "end": "end", "location": "location", "desc": "description" },
-     "note": "Top-level array; title, time_start/end (ISO with offset), all_day, location (string), summary, description (HTML), groups, categories. Feeds home.dartmouth.edu/events." },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/dartmouth/ical_dartmouth.ics", "label": "Dartmouth Groups student orgs (CampusGroups)", "events": 369, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": "events.dartmouth.edu/api/search.ics only works with group_ids and 500s otherwise; the JSON is unfiltered."
- },
- {
-  "id": "ucla", "name": "University of California, Los Angeles", "short": "UCLA", "country": "US", "city": "Los Angeles, CA", "rank": 16,
-  "lat": 34.0689, "lng": -118.4452,
-  "sources": [
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/uclaanderson/ical_uclaanderson.ics", "label": "UCLA Anderson", "events": 86, "institute": true, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": "No campus-wide feed found: www.ucla.edu/events is a curated page, happenings.ucla.edu redirects to community.ucla.edu (no feed paths), events.ucla.edu is Drupal (filming info). CampusGroups 'ucla' tenant has 0 upcoming; no Engage tenant."
- },
- {
-  "id": "berkeley", "name": "University of California, Berkeley", "short": "UC Berkeley", "country": "US", "city": "Berkeley, CA", "rank": 17,
-  "lat": 37.8719, "lng": -122.2585,
-  "sources": [
-   { "type": "livewhale", "url": "https://events.berkeley.edu/live/json/events/max/100", "label": "Events at UC Berkeley", "events": 100, "note": "server caps at 100 events per request (~2 days); /page/N does not page" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/haas/ical_haas.ics", "label": "Berkeley Haas", "events": 40, "institute": true, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": "CalLink (callink.berkeley.edu, Engage) requires login: the discovery API redirects to the CampusLabs identity page."
- },
- {
-  "id": "rice", "name": "Rice University", "short": "Rice", "country": "US", "city": "Houston, TX", "rank": 18,
-  "lat": 29.7174, "lng": -95.4018,
-  "sources": [
-   { "type": "livewhale", "url": "https://events.rice.edu/live/json/events/max/500", "label": "Rice Events", "events": 500 },
-   { "type": "engage", "url": "https://rice.campuslabs.com/engage", "label": "OwlNest student orgs (Engage)", "events": 125, "note": "33 of the first 100 upcoming carry the Free Food benefit" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/jones/ical_jones.ics", "label": "Rice Business (Jones)", "events": 34, "institute": true, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": ""
- },
- {
-  "id": "notre-dame", "name": "University of Notre Dame", "short": "Notre Dame", "country": "US", "city": "Notre Dame, IN", "rank": 19,
-  "lat": 41.7052, "lng": -86.2353,
-  "sources": [
-   { "type": "ical", "url": "https://events.nd.edu/events.ics", "label": "Notre Dame Events", "events": 131 },
-   { "type": "engage", "url": "https://nd.campuslabs.com/engage", "label": "Notre Dame student orgs (Engage)", "events": 583 }
-  ],
-  "notes": ""
- },
- {
-  "id": "vanderbilt", "name": "Vanderbilt University", "short": "Vanderbilt", "country": "US", "city": "Nashville, TN", "rank": 20,
-  "lat": 36.1447, "lng": -86.8027,
-  "sources": [
-   { "type": "livewhale", "url": "https://events.vanderbilt.edu/live/json/events/max/500", "label": "Events@Vanderbilt", "events": 500 },
-   { "type": "engage", "url": "https://vanderbilt.campuslabs.com/engage", "label": "Anchor Link student orgs (Engage)", "events": 848 }
-  ],
-  "notes": ""
- },
- {
-  "id": "cmu", "name": "Carnegie Mellon University", "short": "Carnegie Mellon", "country": "US", "city": "Pittsburgh, PA", "rank": 21,
-  "lat": 40.4433, "lng": -79.9436,
-  "sources": [
-   { "type": "livewhale", "url": "https://events.cmu.edu/live/json/events/max/500", "label": "CMU Events Calendar", "events": 100, "note": "server caps a request at 100 events" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/tepper/ical_tepper.ics", "label": "TartanConnect student orgs (CampusGroups)", "events": 597, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'; tenant slug is 'tepper' but the calendar is CMU-wide TartanConnect" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/heinz/ical_heinz.ics", "label": "Heinz College", "events": 16, "institute": true, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": "CampusGroups slug 'cmu' is CMU Qatar, left out. thebridge.cmu.edu (old Engage) no longer answers."
- },
- {
-  "id": "umich", "name": "University of Michigan", "short": "Michigan", "country": "US", "city": "Ann Arbor, MI", "rank": 22,
-  "lat": 42.278, "lng": -83.7382,
-  "sources": [
-   { "type": "engage", "url": "https://umich.campuslabs.com/engage", "label": "Maize Pages student orgs (Engage)", "events": 106 }
-  ],
-  "notes": "events.umich.edu (Happening @ Michigan, has /list/json) is behind a Cloudflare challenge on every path, browser UA included. CampusGroups 'ross' tenant has 0 upcoming events."
- },
- {
-  "id": "washu", "name": "Washington University in St. Louis", "short": "WashU", "country": "US", "city": "St. Louis, MO", "rank": 23,
-  "lat": 38.6488, "lng": -90.3108,
-  "sources": [
-   { "type": "localist", "url": "https://happenings.washu.edu", "label": "Happenings at WashU", "events": 400 }
-  ],
-  "notes": "calendar.wustl.edu redirects to happenings.washu.edu (Localist). No Engage tenant; CampusGroups 'washu' has no events."
- },
- {
-  "id": "emory", "name": "Emory University", "short": "Emory", "country": "US", "city": "Atlanta, GA", "rank": 24,
-  "lat": 33.7925, "lng": -84.324,
-  "sources": [
-   { "type": "ical", "url": "https://www.trumba.com/calendars/emory-events.ics", "label": "Emory Events (Trumba)", "events": 198 },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/emory/ical_emory.ics", "label": "The Hub @ Emory student orgs (CampusGroups)", "events": 917, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": "calendar.emory.edu redirects to www.emory.edu/events (Drupal over Trumba). Trumba .rss returned no items."
- },
- {
-  "id": "georgetown", "name": "Georgetown University", "short": "Georgetown", "country": "US", "city": "Washington, DC", "rank": 25,
-  "lat": 38.9076, "lng": -77.0723,
-  "sources": [
-   { "type": "livewhale", "url": "https://events.georgetown.edu/live/json/events/max/500", "label": "Georgetown Events", "events": 100, "note": "server caps a request at 100 events" },
-   { "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/georgetown/ical_georgetown.ics", "label": "Georgetown student orgs (CampusGroups)", "events": 155, "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'" }
-  ],
-  "notes": "events.georgetown.edu is LiveWhale (the /api/2 Localist path 404s)."
- }
+  {
+    "id": "princeton",
+    "name": "Princeton University",
+    "short": "Princeton",
+    "country": "US",
+    "city": "Princeton, NJ",
+    "rank": 1,
+    "lat": 40.3431,
+    "lng": -74.6551,
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://www.princeton.edu/feed/events.ics",
+        "label": "Princeton University Events",
+        "events": 200,
+        "note": "capped at the next 200 events"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/princeton/ical_princeton.ics",
+        "label": "Princeton student orgs (CampusGroups)",
+        "events": 965,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      },
+      {
+        "type": "ical",
+        "url": "https://ecs.princeton.edu/events/?ical=1",
+        "label": "Princeton ECS",
+        "events": 3,
+        "institute": true
+      }
+    ],
+    "notes": "calendar.princeton.edu (Localist) and www.princeton.edu/events* are behind a Cloudflare challenge (403). https://www.princeton.edu/feed/events is an RSS twin of the ics (200 items) but carries the event start only in <pubDate>, which lib/scrape.js rss() does not read; use the ics."
+  },
+  {
+    "id": "mit",
+    "name": "Massachusetts Institute of Technology",
+    "short": "MIT",
+    "country": "US",
+    "city": "Cambridge, MA",
+    "rank": 2,
+    "lat": 42.3601,
+    "lng": -71.0942,
+    "sources": [
+      {
+        "type": "localist",
+        "url": "https://calendar.mit.edu",
+        "label": "MIT Events",
+        "events": 309
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/mit/ical_mit.ics",
+        "label": "MIT student orgs (Engage / CampusGroups)",
+        "events": 86,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/mitsloan/ical_mitsloan.ics",
+        "label": "MIT Sloan",
+        "events": 173,
+        "institute": true,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": "engage.mit.edu is CampusGroups, not Anthology Engage; its public ics redirects to the static campusgroups host used here."
+  },
+  {
+    "id": "harvard",
+    "name": "Harvard University",
+    "short": "Harvard",
+    "country": "US",
+    "city": "Cambridge, MA",
+    "rank": 3,
+    "lat": 42.377,
+    "lng": -71.1167,
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/gazette.ics",
+        "label": "Harvard Gazette events (Trumba)",
+        "events": 490
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/harvard/ical_harvard.ics",
+        "label": "Harvard College student orgs (CampusGroups)",
+        "events": 62,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/hms/ical_hms.ics",
+        "label": "Harvard Medical School SOHO (student orgs)",
+        "events": 3,
+        "institute": true,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": "events.harvard.edu returns Akamai 'Access Denied' and redirects to hfc.harvard.edu; calendar.college.harvard.edu is Localist but login-gated (API 404). LOCATION in the Gazette ics contains <br> tags."
+  },
+  {
+    "id": "stanford",
+    "name": "Stanford University",
+    "short": "Stanford",
+    "country": "US",
+    "city": "Stanford, CA",
+    "rank": 4,
+    "lat": 37.4275,
+    "lng": -122.1697,
+    "sources": [
+      {
+        "type": "localist",
+        "url": "https://events.stanford.edu",
+        "label": "Stanford Events",
+        "events": 873
+      }
+    ],
+    "notes": "Localist also exposes https://events.stanford.edu/calendar/1.ics (1378 upcoming). No public student-org platform found (no CampusGroups or Engage tenant); department/institute feeds tried (cs.stanford.edu, hoover.org, SLAC) 404."
+  },
+  {
+    "id": "yale",
+    "name": "Yale University",
+    "short": "Yale",
+    "country": "US",
+    "city": "New Haven, CT",
+    "rank": 5,
+    "lat": 41.3163,
+    "lng": -72.9223,
+    "sources": [
+      {
+        "type": "localist",
+        "url": "https://events.yale.edu",
+        "label": "Yale Events",
+        "events": 791,
+        "robots": "read despite robots.txt: owner decision, 2026-11-07"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/yale/ical_yale.ics",
+        "label": "Yale Connect student orgs (CampusGroups)",
+        "events": 1541,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/yalesom/ical_yalesom.ics",
+        "label": "Yale School of Management",
+        "events": 147,
+        "institute": true,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": "calendar.yale.edu redirects to events.yale.edu, which is Localist."
+  },
+  {
+    "id": "caltech",
+    "name": "California Institute of Technology",
+    "short": "Caltech",
+    "country": "US",
+    "city": "Pasadena, CA",
+    "rank": 6,
+    "lat": 34.1377,
+    "lng": -118.1253,
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://www.caltech.edu/campus-life-events/calendar/ical",
+        "label": "Caltech Institute Calendar",
+        "events": 412
+      }
+    ],
+    "notes": "Found by guessing from per-event webcal links on www.caltech.edu/campus-life-events/calendar. An RSS at .../calendar/rss has only 20 items. No CampusGroups/Engage tenant found."
+  },
+  {
+    "id": "duke",
+    "name": "Duke University",
+    "short": "Duke",
+    "country": "US",
+    "city": "Durham, NC",
+    "rank": 7,
+    "lat": 36.0014,
+    "lng": -78.9382,
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.duke.edu/events/index.ics?future_days=30",
+        "label": "Duke Calendar",
+        "events": 401
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/duke/ical_duke.ics",
+        "label": "DukeGroups student orgs (CampusGroups)",
+        "events": 881,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": "calendar.duke.edu also has JSON at /events/index.json?future_days=30 ({events:[{event:{...}}]}). events.duke.edu redirects to students.duke.edu (WordPress)."
+  },
+  {
+    "id": "jhu",
+    "name": "Johns Hopkins University",
+    "short": "Johns Hopkins",
+    "country": "US",
+    "city": "Baltimore, MD",
+    "rank": 8,
+    "lat": 39.3299,
+    "lng": -76.6205,
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/jhu/ical_jhu.ics",
+        "label": "Hopkins Groups student orgs (CampusGroups)",
+        "events": 1399,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": "hub.jhu.edu, www.jhu.edu/events, calendar.jhu.edu, sustainability.jhu.edu and events.hopkinsmedicine.org are all behind Cloudflare (403). events.jhu.edu is Drupal; its rss.xml only lists landing pages."
+  },
+  {
+    "id": "northwestern",
+    "name": "Northwestern University",
+    "short": "Northwestern",
+    "country": "US",
+    "city": "Evanston, IL",
+    "rank": 9,
+    "lat": 42.0565,
+    "lng": -87.6753,
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/northwestern/ical_northwestern.ics",
+        "label": "Northwestern student orgs (CampusGroups)",
+        "events": 87,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/kellogg/ical_kellogg.ics",
+        "label": "Kellogg School of Management",
+        "events": 129,
+        "institute": true,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      },
+      {
+        "type": "ical",
+        "url": "https://planitpurple.northwestern.edu/feed/ical/2229",
+        "label": "Northwestern Math seminars (PlanIt Purple)",
+        "events": 44,
+        "institute": true
+      }
+    ],
+    "notes": "The main calendar PlanIt Purple has only per-feed ics (/feed/ical/<id>, ids made by group admins) and a legacy /xmlfeed?cal=<ids>&days=N (custom XML, needs calendar ids). No campus-wide feed id found."
+  },
+  {
+    "id": "upenn",
+    "name": "University of Pennsylvania",
+    "short": "Penn",
+    "country": "US",
+    "city": "Philadelphia, PA",
+    "rank": 10,
+    "lat": 39.9522,
+    "lng": -75.1932,
+    "sources": [
+      {
+        "type": "json",
+        "url": "https://pennclubs.com/api/events/?format=json",
+        "label": "Penn Clubs (student orgs)",
+        "events": 34,
+        "fields": {
+          "title": "name",
+          "start": "earliest_start_time",
+          "end": "earliest_end_time",
+          "desc": "description",
+          "url": "url"
+        },
+        "note": "Top-level array of ~3500 events, mostly past; each has name, description (HTML), club_name, url and showings[] {start_time,end_time,location}. 14 events / 34 showings upcoming; recurring events need showings[] expanded (earliest_start_time may be past)."
+      },
+      {
+        "type": "livewhale",
+        "url": "https://events.med.upenn.edu/live/json/events/max/500",
+        "label": "Penn Medicine events",
+        "events": 395,
+        "institute": true
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/wharton/ical_wharton.ics",
+        "label": "The Wharton School",
+        "events": 191,
+        "institute": true,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": "penntoday.upenn.edu/events and www.upenn.edu/events are behind Cloudflare/403. No campus-wide CampusGroups or Engage tenant."
+  },
+  {
+    "id": "cornell",
+    "name": "Cornell University",
+    "short": "Cornell",
+    "country": "US",
+    "city": "Ithaca, NY",
+    "rank": 11,
+    "lat": 42.4534,
+    "lng": -76.4735,
+    "sources": [
+      {
+        "type": "localist",
+        "url": "https://events.cornell.edu",
+        "label": "Cornell Events",
+        "events": 772
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/cornell/ical_cornell.ics",
+        "label": "CampusGroups student orgs",
+        "events": 1461,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/johnson/ical_johnson.ics",
+        "label": "Johnson at Cornell",
+        "events": 197,
+        "institute": true,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "uchicago",
+    "name": "University of Chicago",
+    "short": "UChicago",
+    "country": "US",
+    "city": "Chicago, IL",
+    "rank": 12,
+    "lat": 41.7886,
+    "lng": -87.5987,
+    "sources": [
+      {
+        "type": "livewhale",
+        "url": "https://events.uchicago.edu/live/json/events/max/500",
+        "label": "UChicago Events",
+        "events": 100,
+        "note": "server caps a request at 100 events"
+      },
+      {
+        "type": "engage",
+        "url": "https://uchicago.campuslabs.com/engage",
+        "label": "Blueprint student orgs (Engage)",
+        "events": 52,
+        "note": "25 of 52 upcoming carry the Free Food benefit",
+        "robots": "read despite robots.txt: owner decision, 2026-11-07"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/booth/ical_booth.ics",
+        "label": "Chicago Booth",
+        "events": 151,
+        "institute": true,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "brown",
+    "name": "Brown University",
+    "short": "Brown",
+    "country": "US",
+    "city": "Providence, RI",
+    "rank": 13,
+    "lat": 41.8268,
+    "lng": -71.4025,
+    "sources": [
+      {
+        "type": "livewhale",
+        "url": "https://events.brown.edu/live/json/events/max/500",
+        "label": "Events@Brown",
+        "events": 500
+      }
+    ],
+    "notes": "No CampusGroups or Engage tenant found."
+  },
+  {
+    "id": "columbia",
+    "name": "Columbia University",
+    "short": "Columbia",
+    "country": "US",
+    "city": "New York, NY",
+    "rank": 14,
+    "lat": 40.8075,
+    "lng": -73.9626,
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/columbia/ical_columbia.ics",
+        "label": "Columbia student orgs (CampusGroups)",
+        "events": 727,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/cbs/ical_cbs.ics",
+        "label": "Columbia Business School",
+        "events": 144,
+        "institute": true,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/sipa/ical_sipa.ics",
+        "label": "Columbia SIPA",
+        "events": 47,
+        "institute": true,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": "events.columbia.edu is behind a Cloudflare challenge on every path tried (/, /api/2/events, /live/json) even with a browser user-agent."
+  },
+  {
+    "id": "dartmouth",
+    "name": "Dartmouth College",
+    "short": "Dartmouth",
+    "country": "US",
+    "city": "Hanover, NH",
+    "rank": 15,
+    "lat": 43.7044,
+    "lng": -72.2887,
+    "sources": [
+      {
+        "type": "json",
+        "url": "https://events.dartmouth.edu/api/search.json",
+        "label": "Dartmouth Events",
+        "events": 276,
+        "fields": {
+          "title": "title",
+          "start": "time_start",
+          "end": "end",
+          "location": "location",
+          "desc": "description"
+        },
+        "note": "Top-level array; title, time_start/end (ISO with offset), all_day, location (string), summary, description (HTML), groups, categories. Feeds home.dartmouth.edu/events."
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/dartmouth/ical_dartmouth.ics",
+        "label": "Dartmouth Groups student orgs (CampusGroups)",
+        "events": 369,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": "events.dartmouth.edu/api/search.ics only works with group_ids and 500s otherwise; the JSON is unfiltered."
+  },
+  {
+    "id": "ucla",
+    "name": "University of California, Los Angeles",
+    "short": "UCLA",
+    "country": "US",
+    "city": "Los Angeles, CA",
+    "rank": 16,
+    "lat": 34.0689,
+    "lng": -118.4452,
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/uclaanderson/ical_uclaanderson.ics",
+        "label": "UCLA Anderson",
+        "events": 86,
+        "institute": true,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": "No campus-wide feed found: www.ucla.edu/events is a curated page, happenings.ucla.edu redirects to community.ucla.edu (no feed paths), events.ucla.edu is Drupal (filming info). CampusGroups 'ucla' tenant has 0 upcoming; no Engage tenant."
+  },
+  {
+    "id": "berkeley",
+    "name": "University of California, Berkeley",
+    "short": "UC Berkeley",
+    "country": "US",
+    "city": "Berkeley, CA",
+    "rank": 17,
+    "lat": 37.8719,
+    "lng": -122.2585,
+    "sources": [
+      {
+        "type": "livewhale",
+        "url": "https://events.berkeley.edu/live/json/events/max/100",
+        "label": "Events at UC Berkeley",
+        "events": 100,
+        "note": "server caps at 100 events per request (~2 days); /page/N does not page"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/haas/ical_haas.ics",
+        "label": "Berkeley Haas",
+        "events": 40,
+        "institute": true,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": "CalLink (callink.berkeley.edu, Engage) requires login: the discovery API redirects to the CampusLabs identity page."
+  },
+  {
+    "id": "rice",
+    "name": "Rice University",
+    "short": "Rice",
+    "country": "US",
+    "city": "Houston, TX",
+    "rank": 18,
+    "lat": 29.7174,
+    "lng": -95.4018,
+    "sources": [
+      {
+        "type": "livewhale",
+        "url": "https://events.rice.edu/live/json/events/max/500",
+        "label": "Rice Events",
+        "events": 500
+      },
+      {
+        "type": "engage",
+        "url": "https://rice.campuslabs.com/engage",
+        "label": "OwlNest student orgs (Engage)",
+        "events": 125,
+        "note": "33 of the first 100 upcoming carry the Free Food benefit",
+        "robots": "read despite robots.txt: owner decision, 2026-11-07"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/jones/ical_jones.ics",
+        "label": "Rice Business (Jones)",
+        "events": 34,
+        "institute": true,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "notre-dame",
+    "name": "University of Notre Dame",
+    "short": "Notre Dame",
+    "country": "US",
+    "city": "Notre Dame, IN",
+    "rank": 19,
+    "lat": 41.7052,
+    "lng": -86.2353,
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://events.nd.edu/events.ics",
+        "label": "Notre Dame Events",
+        "events": 131
+      },
+      {
+        "type": "engage",
+        "url": "https://nd.campuslabs.com/engage",
+        "label": "Notre Dame student orgs (Engage)",
+        "events": 583,
+        "robots": "read despite robots.txt: owner decision, 2026-11-07"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "vanderbilt",
+    "name": "Vanderbilt University",
+    "short": "Vanderbilt",
+    "country": "US",
+    "city": "Nashville, TN",
+    "rank": 20,
+    "lat": 36.1447,
+    "lng": -86.8027,
+    "sources": [
+      {
+        "type": "livewhale",
+        "url": "https://events.vanderbilt.edu/live/json/events/max/500",
+        "label": "Events@Vanderbilt",
+        "events": 500
+      },
+      {
+        "type": "engage",
+        "url": "https://vanderbilt.campuslabs.com/engage",
+        "label": "Anchor Link student orgs (Engage)",
+        "events": 848,
+        "robots": "read despite robots.txt: owner decision, 2026-11-07"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cmu",
+    "name": "Carnegie Mellon University",
+    "short": "Carnegie Mellon",
+    "country": "US",
+    "city": "Pittsburgh, PA",
+    "rank": 21,
+    "lat": 40.4433,
+    "lng": -79.9436,
+    "sources": [
+      {
+        "type": "livewhale",
+        "url": "https://events.cmu.edu/live/json/events/max/500",
+        "label": "CMU Events Calendar",
+        "events": 100,
+        "note": "server caps a request at 100 events"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/tepper/ical_tepper.ics",
+        "label": "TartanConnect student orgs (CampusGroups)",
+        "events": 597,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'; tenant slug is 'tepper' but the calendar is CMU-wide TartanConnect"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/heinz/ical_heinz.ics",
+        "label": "Heinz College",
+        "events": 16,
+        "institute": true,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": "CampusGroups slug 'cmu' is CMU Qatar, left out. thebridge.cmu.edu (old Engage) no longer answers."
+  },
+  {
+    "id": "umich",
+    "name": "University of Michigan",
+    "short": "Michigan",
+    "country": "US",
+    "city": "Ann Arbor, MI",
+    "rank": 22,
+    "lat": 42.278,
+    "lng": -83.7382,
+    "sources": [
+      {
+        "type": "engage",
+        "url": "https://umich.campuslabs.com/engage",
+        "label": "Maize Pages student orgs (Engage)",
+        "events": 106,
+        "robots": "read despite robots.txt: owner decision, 2026-11-07"
+      }
+    ],
+    "notes": "events.umich.edu (Happening @ Michigan, has /list/json) is behind a Cloudflare challenge on every path, browser UA included. CampusGroups 'ross' tenant has 0 upcoming events."
+  },
+  {
+    "id": "washu",
+    "name": "Washington University in St. Louis",
+    "short": "WashU",
+    "country": "US",
+    "city": "St. Louis, MO",
+    "rank": 23,
+    "lat": 38.6488,
+    "lng": -90.3108,
+    "sources": [
+      {
+        "type": "localist",
+        "url": "https://happenings.washu.edu",
+        "label": "Happenings at WashU",
+        "events": 400
+      }
+    ],
+    "notes": "calendar.wustl.edu redirects to happenings.washu.edu (Localist). No Engage tenant; CampusGroups 'washu' has no events."
+  },
+  {
+    "id": "emory",
+    "name": "Emory University",
+    "short": "Emory",
+    "country": "US",
+    "city": "Atlanta, GA",
+    "rank": 24,
+    "lat": 33.7925,
+    "lng": -84.324,
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/emory-events.ics",
+        "label": "Emory Events (Trumba)",
+        "events": 198
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/emory/ical_emory.ics",
+        "label": "The Hub @ Emory student orgs (CampusGroups)",
+        "events": 917,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": "calendar.emory.edu redirects to www.emory.edu/events (Drupal over Trumba). Trumba .rss returned no items."
+  },
+  {
+    "id": "georgetown",
+    "name": "Georgetown University",
+    "short": "Georgetown",
+    "country": "US",
+    "city": "Washington, DC",
+    "rank": 25,
+    "lat": 38.9076,
+    "lng": -77.0723,
+    "sources": [
+      {
+        "type": "livewhale",
+        "url": "https://events.georgetown.edu/live/json/events/max/500",
+        "label": "Georgetown Events",
+        "events": 100,
+        "note": "server caps a request at 100 events"
+      },
+      {
+        "type": "ical",
+        "url": "https://static-prod-us-east-1.campusgroups.com/ical/georgetown/ical_georgetown.ics",
+        "label": "Georgetown student orgs (CampusGroups)",
+        "events": 155,
+        "note": "CampusGroups public ics (student orgs); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params, many LOCATIONs read 'Sign in to download the location'"
+      }
+    ],
+    "notes": "events.georgetown.edu is LiveWhale (the /api/2 Localist path 404s)."
+  }
 ]

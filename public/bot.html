@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>free.food-bot · who we are</title>
+	<style>
+		body { margin: 0; background: #f6f7fb; color: #141821; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+		main { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
+		h1 { font-size: 34px; line-height: 1.15; margin: 0 0 8px; }
+		h2 { font-size: 20px; margin: 32px 0 8px; }
+		p, li { color: #3a4150; }
+		code { font: 15px ui-monospace, "SF Mono", Menlo, monospace; background: #eceef4; padding: 2px 6px; border-radius: 5px; word-break: break-all; }
+		pre { background: #141821; color: #f2f4f8; padding: 14px 16px; border-radius: 10px; overflow-x: auto; font-size: 14px; }
+		.lead { font-size: 19px; }
+		.box { background: #fff; border: 1px solid #e7e9f0; border-radius: 14px; padding: 16px 20px; }
+		a { color: #e8433a; }
+		@media (prefers-color-scheme: dark) { body { background: #0f1116; color: #f2f4f8; } p, li { color: #b6bdc9; } .box { background: #181b22; border-color: #2a2f3a; } code { background: #232733; } }
+	</style>
+</head>
+<body>
+<main>
+	<h1>🍕 free.food-bot</h1>
+	<p class="lead">We run <a href="./">free.food</a>, a site that helps students find campus events that offer free food. This is the bot that reads the public event calendars it lists.</p>
+
+	<h2>What it reads</h2>
+	<ul>
+		<li>Public event calendars only: {{FEEDS}} feeds at {{CAMPUSES}} universities, as iCal, RSS or the calendar's own public JSON. No logins, no private pages, no personal data.</li>
+		<li>Each feed at most once every {{HOURS}} hours, a few pages at a time, with long pauses on failure.</li>
+		<li>Every event we show links back to its page on your site, and names the calendar it came from.</li>
+	</ul>
+
+	<h2>How to recognise it</h2>
+	<p>Every request it makes carries this User-Agent:</p>
+	<pre>{{UA}}</pre>
+
+	<h2>robots.txt</h2>
+	<p>We follow robots.txt. For a small number of student-organisation calendars whose events are published for students to find, we read the public event feed even though the site's rule for <em>all</em> bots discourages it. A rule written for us by name is always obeyed:</p>
+	<pre>User-agent: free.food-bot
+Disallow: /</pre>
+	<p>Add that, and we stop reading your site at our next check.</p>
+
+	<h2>Talk to us</h2>
+	<div class="box">{{CONTACT}}</div>
+</main>
+</body>
+</html>

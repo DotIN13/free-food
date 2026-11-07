@@ -3,7 +3,7 @@ import { createServer } from "node:http";
 import { gzipSync } from "node:zlib";
 import { readFile, stat } from "node:fs/promises";
 import { extname, resolve, sep } from "node:path";
-import { config } from "./lib/config.js";
+import { config, BOT_UA } from "./lib/config.js";
 import { run, state, registry, loadEvents, loadStatus } from "./lib/pipeline.js";
 import { kindOf } from "./lib/scrape.js";
 import * as db from "./lib/db.js";
@@ -55,6 +55,22 @@ async function api(req, res, url) {
 	const p = url.pathname, method = req.method;
 	const q = url.searchParams;
 
+	if (p === "/bot" || p === "/bot/") {
+		// Who we are, for the sites we read: linked from every request's User-Agent.
+		const unis = await registry();
+		const escape = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+		const contact = config.contactEmail
+			? `Write to <a href="mailto:${escape(config.contactEmail)}">${escape(config.contactEmail)}</a> to ask us to stop, slow down, or read a different feed. We answer every message.`
+			: "Contact details are being set up. Until then, a robots.txt rule for <code>free.food-bot</code> (above) stops us at the next check.";
+		const html = (await readFile(resolve(PUBLIC, "bot.html"), "utf8"))
+			.replace("{{FEEDS}}", String(unis.reduce((a, u) => a + u.sources.length, 0)))
+			.replace("{{CAMPUSES}}", String(unis.filter((u) => u.sources.length).length))
+			.replace("{{HOURS}}", String(config.refreshHours))
+			.replace("{{UA}}", escape(BOT_UA))
+			.replace("{{CONTACT}}", contact);
+		res.writeHead(200, { ...headers(req), "content-type": "text/html; charset=utf-8", "cache-control": "no-cache" });
+		return res.end(html);
+	}
 	if (p === "/healthz") {
 		const { at, events: list } = loadEvents();
 		const age = at ? Math.round((Date.now() - at) / 6e4) : null;
@@ -178,7 +194,7 @@ const server = createServer(async (req, res) => {
 	try { url = new URL(req.url, "http://app"); } catch { res.writeHead(400).end(); return; }
 	try {
 		rate(req, "all", 600, 5 * 60e3);
-		if (url.pathname.startsWith("/api/") || url.pathname === "/healthz") {
+		if (url.pathname.startsWith("/api/") || url.pathname === "/healthz" || /^\/bot\/?$/.test(url.pathname)) {
 			const handled = await api(req, res, url);
 			if (handled === null && !res.headersSent) fail(404, "Not found");
 			return;

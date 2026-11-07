@@ -708,7 +708,7 @@ function campusesPage() {
 		</a>`).join("");
 	};
 	view.innerHTML = `<div class="wrap">
-		<div class="page-head"><div><h1>Campuses</h1><p>${S.unis.filter((u) => u.sources.length).length} of ${S.unis.length} campuses read live · ${ok} of ${feeds.length} calendars working · checked ${S.at ? ago(S.at) : "never"}</p></div>
+		<div class="page-head"><div><h1>Campuses</h1><p>${S.unis.filter((u) => u.sources.length).length} of ${S.unis.length} campuses read live · ${ok} of ${feeds.length} calendars working · checked ${S.at ? ago(S.at) : "never"} · <a href="bot" target="_blank" style="color:var(--tomato);font-weight:700">About our bot</a></p></div>
 			<div class="seg" id="region">${[["all", "All"], ["US", "United States"], ["world", "Rest of the world"]].map(([v, l]) => `<button data-v="${v}" class="${region === v ? "on" : ""}">${l}</button>`).join("")}</div></div>
 		<div class="grid" id="grid"></div></div>`;
 	draw();
