@@ -15,7 +15,12 @@ export const km = (a, b) => {
 export const distText = (d) => (d < 1 ? `${Math.round((d * 1000) / 10) * 10} m` : d < 100 ? `${d.toFixed(1)} km` : `${Math.round(d).toLocaleString()} km`);
 // Walking time over streets: straight-line distance times 1.3, at 4.8 km/h.
 export const walkMin = (d) => Math.max(1, Math.round(((d * 1.3) / 4.8) * 60));
-export const minText = (m) => (m < 60 ? `${Math.round(m)} min` : m < 600 ? `${Math.floor(m / 60)} h ${Math.round(m % 60)} min` : `${Math.round(m / 60)} h`);
+export const minText = (m) => {
+	const r = Math.round(m);
+	if (r < 60) return `${r} min`;
+	if (r >= 600) return `${Math.round(r / 60)} h`;
+	return r % 60 ? `${Math.floor(r / 60)} h ${r % 60} min` : `${r / 60} h`;
+};
 
 // ---------- food
 export const FOODS = [

@@ -28,8 +28,13 @@ let cleanups = [];
 const onLeave = (fn) => cleanups.push(fn);
 
 // ---------- data
-async function getJson(url, opts) {
-	const r = await fetch(url, opts);
+// A random id this browser keeps, so the server can count one vote per visitor without knowing who anyone is.
+const visitor = store.getItem("visitor") || (() => { const v = crypto.randomUUID(); store.setItem("visitor", v); return v; })();
+async function getJson(url, opts = {}) {
+	// Our own API gets the visitor id; outside services (routing) get nothing extra, or they refuse the request.
+	const own = !/^https?:\/\//.test(url);
+	const headers = { ...(own ? { "x-visitor": visitor } : {}), ...(opts.body ? { "content-type": "application/json" } : {}), ...(opts.headers ?? {}) };
+	const r = await fetch(url, { ...opts, headers });
 	if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error ?? `${r.status} ${r.statusText}`);
 	return r.json();
 }
@@ -528,7 +533,7 @@ async function eventPage(id) {
 			<a class="link" href="#/">Events</a><span class="sep">›</span><a class="link" href="#/campus/${e.uni}">${esc(u?.name ?? e.uni)}</a><span class="sep">›</span><span>${esc(e.title)}</span></div>
 		<div class="detail">
 			<div class="col">
-				<div class="banner-art">${e.image ? `<img src="${esc(e.image)}" alt="" onerror="this.remove()">` : ""}
+				<div class="banner-art">${e.image ? `<img src="${esc(e.image)}" alt="">` : ""}
 					${e.image ? "" : emos.map((x, i) => `<span class="emo" style="left:${60 + i * 160}px;top:${[50, 90, 36][i]}px;transform:rotate(${[12, -10, 6][i]}deg)">${x}</span>`).join("")}
 					${s.ended ? `<span class="pill">Ended</span>` : `<span class="pill">● ${s.live ? "Happening now" : `Starts ${s.text}`}</span>`}
 					${e.image ? `<span class="pill src">${icon("image")}Flyer from ${esc(src?.label ?? plat.name)}</span>` : ""}</div>
@@ -570,15 +575,22 @@ async function eventPage(id) {
 	$$(`[data-save="${e.id}"]`).forEach((b) => b.classList.toggle("on", isSaved(e.id)));
 	refreshIcons();
 	const fbText = $("#fbText");
-	const showFb = (c) => { if (c && c.yes + c.no) fbText.textContent = `${c.yes} said yes · ${c.no} said it ran out`; };
+	// One answer per visitor: yours is marked, and tapping the other one changes it.
+	const showFb = (c) => {
+		if (!c) return;
+		if (c.yes + c.no) fbText.textContent = `${c.yes} said yes · ${c.no} said it ran out${c.mine ? ` · you said ${c.mine === "yes" ? "yes" : "it ran out"}` : ""}`;
+		$$("[data-fb]").forEach((b) => { b.disabled = false; b.classList.toggle("on", (b.dataset.fb === "1") === (c.mine === "yes") && !!c.mine); });
+	};
 	getJson(`api/feedback?id=${e.id}`).then(showFb, () => {});
+	$(".banner-art img")?.addEventListener("error", (ev) => ev.target.remove());
 	view.onclick = async (ev) => {
 		const sv = ev.target.closest("[data-save]");
 		if (sv) { toggleSave(e); return; }
 		const fb = ev.target.closest("[data-fb]");
 		if (fb) {
 			$$("[data-fb]").forEach((b) => (b.disabled = true));
-			try { showFb(await getJson("api/feedback", { method: "POST", body: JSON.stringify({ id: e.id, yes: fb.dataset.fb === "1" }) })); toast("Thanks, that helps the next person"); } catch (err) { toast(err.message); }
+			try { showFb(await getJson("api/feedback", { method: "POST", body: JSON.stringify({ id: e.id, yes: fb.dataset.fb === "1" }) })); toast("Thanks, that helps the next person"); }
+			catch (err) { toast(err.message); $$("[data-fb]").forEach((b) => (b.disabled = false)); }
 		}
 	};
 	onLeave(() => (view.onclick = null));
@@ -620,7 +632,7 @@ async function campusPage(id) {
 			<div class="head"><span class="logo-sq" style="width:46px;height:46px;background:${p.color}">${p.letter}</span>
 				<div class="names"><b>${esc(f.label ?? p.name)}</b><small>${esc(p.desc)}${f.institute ? " · institute" : ""}</small></div>
 				${top ? `<span class="pill" style="background:var(--grape);color:#fff">Most free food</span>` : ""}
-				${st ? (st.ok ? `<span class="pill t-mint"><span class="dot"></span>Live</span>` : `<span class="pill t-live">Failing</span>`) : `<span class="pill t-plain">Not checked yet</span>`}</div>
+				${st ? (st.ok ? `<span class="pill t-mint"><span class="dot"></span>Live</span>` : /robots/.test(st.error ?? "") ? `<span class="pill t-sun">Paused</span>` : `<span class="pill t-live">Failing</span>`) : `<span class="pill t-plain">Not checked yet</span>`}</div>
 			<a class="url" href="${esc(f.url)}" target="_blank" rel="noopener">${icon("radio-tower")}<span>${esc(shortUrl(f.url))}</span>${icon("copy", "out")}</a>
 			<div class="nums">
 				<div class="num"><b>${st?.events ?? "–"}</b><small>events read</small></div>
@@ -629,7 +641,9 @@ async function campusPage(id) {
 				<div class="num"><b>${st?.at ? ago(st.at) : "–"}</b><small>last checked</small></div>
 				${hist.length ? `<div class="spark"><div class="bars">${hist.map((h, i) => `<i class="${!h.ok ? "bad" : i === hist.length - 1 ? "last" : ""}" style="height:${h.ok ? 25 + (75 * h.events) / max : 100}%;background:${p.color}"></i>`).join("")}</div><small>${hist.length === 1 ? "first check" : `last ${hist.length} checks`}</small></div>` : ""}
 			</div>
-			${st && !st.ok ? `<div class="note bad">${icon("alert-triangle")}Last check failed: ${esc(st.error)}. We keep showing its last good events.</div>` : ""}
+			${st && !st.ok ? (/robots/.test(st.error ?? "")
+				? `<div class="note">${icon("pause-circle")}Paused: this site asks bots not to read this calendar, so we stopped. Events we already had stay up until they end.</div>`
+				: `<div class="note bad">${icon("alert-triangle")}Last check failed: ${esc(st.error)}. We keep showing its last good events.</div>`) : ""}
 		</div>`;
 	};
 	view.innerHTML = `
@@ -688,7 +702,7 @@ function campusesPage() {
 		const q = S.q.trim().toLowerCase();
 		const list = S.unis.filter((u) => (region === "all" || (region === "US") === (u.country === "US")) && (!q || `${u.name} ${u.short} ${u.city}`.toLowerCase().includes(q)));
 		$("#grid").innerHTML = list.map((u) => `<a class="ccard ${u.sources.length ? "" : "none"}" href="#/campus/${u.id}">
-			<div class="r1"><span class="rk">${u.country === "US" ? "US" : u.country} #${u.rank}</span><span class="feeds">${u.sources.map((f) => `<span class="dot" style="background:${f.status ? (f.status.ok ? "var(--mint)" : "var(--live)") : "var(--faint)"}" title="${esc(f.label ?? "")}"></span>`).join("")}</span></div>
+			<div class="r1"><span class="rk">${u.country === "US" ? "US" : u.country} #${u.rank}</span><span class="feeds">${u.sources.map((f) => `<span class="dot" style="background:${f.status ? (f.status.ok ? "var(--mint)" : /robots/.test(f.status.error ?? "") ? "var(--sun)" : "var(--live)") : "var(--faint)"}" title="${esc(f.label ?? "")}"></span>`).join("")}</span></div>
 			<h4>${esc(u.name)}</h4><span class="city">${esc(u.city ?? "")}</span>
 			${u.sources.length ? `<div class="big">${c[u.id] ?? 0}<small>with free food this week</small></div><span class="city">${u.sources.length} source${u.sources.length === 1 ? "" : "s"}: ${[...new Set(u.sources.map((f) => platformOf(f).name))].join(", ")}</span>` : `<span class="city">No open calendar found yet</span>`}
 		</a>`).join("");

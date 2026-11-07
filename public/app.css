@@ -468,3 +468,4 @@ body { overflow-x: hidden; }
 .where.on { border-color: var(--tomato); background: var(--paper); }
 @media (prefers-color-scheme: dark) { .where.on { background: var(--tomato-soft); } }
 @media (max-width: 760px) { .where { height: 34px; } }
+.report button.on { background: var(--ink); color: var(--paper); }
