@@ -1,7 +1,7 @@
 // Free Food Hub: scrapes university event feeds every few hours and serves the free-food ones.
 import { createServer } from "node:http";
 import { gzipSync } from "node:zlib";
-import { readFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import { extname, join, normalize } from "node:path";
 import { run, state, registry, loadEvents, loadStatus } from "./lib/pipeline.js";
 import { kindOf } from "./lib/scrape.js";
@@ -27,6 +27,12 @@ async function maybeRefresh() {
 }
 setInterval(maybeRefresh, 10 * 60e3);
 maybeRefresh();
+
+async function body(req) {
+	let text = "";
+	for await (const chunk of req) { text += chunk; if (text.length > 1e5) break; }
+	return text;
+}
 
 createServer(async (req, res) => {
 	const url = new URL(req.url, "http://app");
@@ -61,6 +67,31 @@ createServer(async (req, res) => {
 			const { events } = await loadEvents();
 			const e = events.find((x) => x.id === p.slice(9));
 			return e ? send(res, 200, e) : send(res, 404, { error: "no such event" });
+		}
+		if (p === "/api/feedback") {
+			// "Was there food?" answers, per event: { id: { yes, no } }.
+			const file = new URL("./data/feedback.json", import.meta.url);
+			const all = JSON.parse(await readFile(file, "utf8").catch(() => "{}"));
+			if (req.method === "POST") {
+				const { id, yes } = JSON.parse((await body(req)) || "{}");
+				if (!/^[a-z0-9]{1,16}$/.test(String(id))) return send(res, 400, { error: "bad id" });
+				const c = (all[id] ??= { yes: 0, no: 0 });
+				yes ? c.yes++ : c.no++;
+				await writeFile(file, JSON.stringify(all));
+				return send(res, 200, c);
+			}
+			const id = url.searchParams.get("id");
+			return send(res, 200, id ? all[id] ?? { yes: 0, no: 0 } : all);
+		}
+		if (p === "/api/suggest" && req.method === "POST") {
+			// "Know a calendar we're missing?": kept for a person to look at; never fetched automatically.
+			const file = new URL("./data/suggestions.json", import.meta.url);
+			const all = JSON.parse(await readFile(file, "utf8").catch(() => "[]"));
+			const { uni, url: link } = JSON.parse((await body(req)) || "{}");
+			if (!/^https?:\/\/\S{4,300}$/.test(String(link))) return send(res, 400, { error: "That doesn't look like a web address" });
+			all.push({ uni: String(uni ?? "").slice(0, 40), url: String(link), at: Date.now() });
+			await writeFile(file, JSON.stringify(all, null, 1));
+			return send(res, 200, { ok: true, count: all.length });
 		}
 		if (p === "/api/status") return send(res, 200, { ...state, at: (await loadEvents()).at });
 		if (p === "/api/refresh" && req.method === "POST") {
