@@ -17,7 +17,11 @@ const S = {
 	mode: "foot",
 	events: [], unis: [], byUni: {}, counts: {}, at: 0, total: 0,
 	loaded: false, error: null, status: null,
+	admin: new URLSearchParams(location.search).has("admin") || store.getItem("admin") === "1",
+	feed: null, // admin: show only the events of one feed (its URL)
 };
+const srcOf = (e) => S.byUni[e.uni]?.sources.find((x) => x.url === e.srcUrl);
+const feedLabel = (url) => { for (const u of S.unis) { const f = u.sources.find((x) => x.url === url); if (f) return `${u.short ?? u.name} · ${f.label ?? f.kind}`; } return url; };
 
 // ---------- map
 const map = L.map("map", { zoomControl: false, worldCopyJump: true, attributionControl: true }).setView([32, -40], 3);
@@ -124,6 +128,7 @@ function matches(e) {
 	if (S.region === "US" && u?.country !== "US") return false;
 	if (S.region === "world" && u?.country === "US") return false;
 	if (S.uni && e.uni !== S.uni) return false;
+	if (S.feed && e.srcUrl !== S.feed) return false;
 	const q = S.q.trim().toLowerCase();
 	if (q && !`${e.title} ${e.location} ${e.org ?? ""} ${e.desc} ${u?.short ?? ""} ${u?.name ?? ""}`.toLowerCase().includes(q)) return false;
 	return true;
@@ -160,7 +165,7 @@ async function loadUnis() {
 	drawCampuses();
 }
 async function loadEvents() {
-	const r = await getJson(`api/events?food=${S.food === "all" ? "all" : "food"}`);
+	const r = await getJson(`api/events?food=${S.food === "all" || S.feed ? "all" : "food"}${S.feed ? `&src=${encodeURIComponent(S.feed)}` : ""}`);
 	Object.assign(S, { events: r.events, counts: r.counts, at: r.at, total: r.all, loaded: true, error: null });
 }
 async function loadAll() {
@@ -187,6 +192,8 @@ function render() {
 	const list = visible();
 	const box = $("#list");
 	const n = list.length;
+	$("#feedChip").hidden = !S.feed;
+	if (S.feed) $("#feedChip span").textContent = `Feed: ${feedLabel(S.feed)}`;
 	$("#count").textContent = !S.loaded ? "Loading…" : `${n.toLocaleString()} ${n === 1 ? "event" : "events"}${S.food === "all" ? "" : " with free food"}${S.sortNear ? ", nearest first" : ""}`;
 	if (!S.loaded) {
 		box.innerHTML = Array.from({ length: 5 }, () => `<div class="sk"></div>`).join("");
@@ -227,6 +234,7 @@ function card(e) {
 				${S.me && e._d < Infinity ? `<span class="tag dist">${e.where === "campus" ? "≈ " : ""}${distText(e._d)}</span>` : ""}
 			</div>
 			${f ? `<div class="quote">${highlight(f.why, f.words)}</div>` : ""}
+			${S.admin ? `<div class="adm-line"><span class="kind">${esc(srcOf(e)?.kind ?? "?")}</span><span>${esc(e.src)}</span><span class="adm-id">${f ? f.level : "no food"} · ${e.where ?? "no pin"}</span></div>` : ""}
 		</div>
 	</article>`;
 }
@@ -283,10 +291,35 @@ function openDetail(id) {
 			</div>
 			${e.desc ? `<div class="desc"><h4>About</h4>${esc(e.desc)}${e.desc.length >= 590 ? "…" : ""}</div>` : ""}
 			<div class="provenance">From ${esc(e.src)}, checked ${ago(S.at)}. Food is detected from the event's own words: check the event page before you go.</div>
+			${S.admin ? adminBlock(e) : ""}
 		</div>`;
 	d.hidden = false;
 	d.dataset.id = id;
 	$(".scroll", d).scrollTop = 0;
+}
+function adminBlock(e) {
+	const src = srcOf(e), st = src?.status;
+	const row = (k, v) => `<tr><th>${k}</th><td>${v}</td></tr>`;
+	const link = (u) => u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a> <button class="copy" data-copy="${esc(u)}" title="Copy">Copy</button>` : "<i>none</i>";
+	return `<section class="admin-box">
+		<h4><span class="adm-badge">Admin</span>Where this event came from</h4>
+		<table>
+			${row("Feed", `${esc(src?.label ?? e.src)} <span class="kind">${esc(src?.kind ?? "?")}</span>${e.institute ? ` <span class="kind">institute</span>` : ""}`)}
+			${row("Feed URL", link(e.srcUrl))}
+			${row("Feed status", st ? (st.ok ? `ok · ${st.events} events · ${st.food} with food · ${(st.ms / 1000).toFixed(1)} s · checked ${ago(st.at)}` : `<span class="bad">failed: ${esc(st.error)}</span>`) : "not checked yet")}
+			${row("Event URL", link(e.url))}
+			${e.ics ? row("Calendar file", link(e.ics)) : ""}
+			${row("Food", e.food ? `${e.food.level} · matched: ${e.food.words.map((w) => `<code>${esc(w)}</code>`).join(" ")}` : "none found")}
+			${row("Pin", e.online ? "online, no pin" : `${e.where === "feed" ? "from the feed" : e.where === "osm" ? "found by OpenStreetMap search" : e.where === "campus" ? "campus centre (no building found)" : "none"}${e.lat ? ` · <code>${e.lat.toFixed(5)}, ${e.lng.toFixed(5)}</code>` : ""}`)}
+			${row("Start / end", `<code>${esc(e.start)}</code>${e.end ? ` → <code>${esc(e.end)}</code>` : ""}${e.allDay ? " · all day" : ""}`)}
+			${row("Event id", `<code>${esc(e.id)}</code>`)}
+		</table>
+		<div class="admin-actions">
+			<button class="btn" data-feed="${esc(e.srcUrl ?? "")}">Show every event from this feed</button>
+			<button class="btn" data-raw="${esc(e.id)}">Raw JSON</button>
+		</div>
+		<pre class="raw" hidden></pre>
+	</section>`;
 }
 const closeDetail = () => { $("#detail").hidden = true; };
 
@@ -454,6 +487,7 @@ function renderSources() {
 	const ok = feeds.filter((s) => s.status?.ok).length;
 	const live = S.unis.filter((u) => u.sources.some((s) => s.status?.ok)).length;
 	$("#srcSummary").textContent = `${live} of ${S.unis.length} universities live · ${ok} of ${feeds.length} feeds working · checked ${S.at ? ago(S.at) : "never"}`;
+	if (S.admin) return renderSourcesAdmin();
 	const shown = S.unis.filter((u) => srcFilter === "all" || (srcFilter === "none" ? !u.sources.length : u.sources.some((s) => s.status && !s.status.ok)));
 	$("#srcList").innerHTML = shown.map((u) => `
 		<div class="src">
@@ -463,6 +497,63 @@ function renderSources() {
 				return `<div class="feed ${st && !st.ok ? "bad" : ""}" title="${esc(s.url)}"><span class="dot ${st ? (st.ok ? "ok" : "warn") : ""}"></span><span class="lb">${esc(s.label ?? s.type)}</span><span class="st">${st ? (st.ok ? `${st.events} events` : `failed: ${esc(st.error)}`) : "not checked yet"}</span></div>`;
 			}).join("")}</div>` : `<div class="none">No open calendar found${u.notes ? `. ${esc(u.notes.slice(0, 140))}${u.notes.length > 140 ? "…" : ""}` : ""}</div>`}
 		</div>`).join("") || `<div class="empty"><b>Nothing to show</b>Every source in this group is working.</div>`;
+}
+function renderSourcesAdmin() {
+	const feeds = S.unis.flatMap((u) => u.sources);
+	const kinds = {};
+	for (const f of feeds) kinds[f.kind] = (kinds[f.kind] ?? 0) + 1;
+	$("#srcKinds").innerHTML = Object.entries(kinds).sort((a, b) => b[1] - a[1]).map(([k, n]) => `<span class="kind">${esc(k)} ${n}</span>`).join("");
+	const shown = S.unis.filter((u) => srcFilter === "all" || (srcFilter === "none" ? !u.sources.length : u.sources.some((s) => s.status && !s.status.ok)));
+	$("#srcList").innerHTML = shown.map((u) => `
+		<div class="src admin">
+			<div class="r1"><button class="nm" data-uni="${u.id}"><span class="rk">${u.country === "US" ? "US" : u.country} #${u.rank}</span>${esc(u.name)}</button>
+				<button class="mini" data-recheck="${u.id}" title="Read this school's feeds again now">Re-check</button></div>
+			<div class="meta-line"><code>${esc(u.id)}</code> · ${esc(u.city ?? "")} · ${esc(u.tz ?? "")} · ${u.lat ? `<code>${u.lat}, ${u.lng}</code>` : "no campus point"} · ${S.counts[u.id] ?? 0} with food</div>
+			${u.sources.length ? u.sources.map((f) => {
+				const st = f.status;
+				return `<div class="afeed ${st && !st.ok ? "bad" : ""}">
+					<div class="af1"><span class="dot ${st ? (st.ok ? "ok" : "warn") : ""}"></span><b>${esc(f.label ?? f.type)}</b><span class="kind">${esc(f.kind)}</span>${f.institute ? `<span class="kind">institute</span>` : ""}</div>
+					<a class="url" href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.url)}</a>
+					<div class="af2">${st ? (st.ok ? `${st.events} events · ${st.food} with food · ${(st.ms / 1000).toFixed(1)} s · checked ${ago(st.at)}` : `<span class="err">failed ${ago(st.at)}: ${esc(st.error)}</span>`) : "not checked yet"}</div>
+					${f.note ? `<div class="af2">${esc(f.note)}</div>` : ""}
+					<div class="af3"><button class="mini" data-feed="${esc(f.url)}">Show its events</button><button class="mini" data-copy="${esc(f.url)}">Copy URL</button></div>
+				</div>`;
+			}).join("") : ""}
+			${u.notes ? `<div class="notes">${esc(u.notes)}</div>` : ""}
+		</div>`).join("") || `<div class="empty"><b>Nothing to show</b>Every source in this group is working.</div>`;
+}
+function setAdmin(on) {
+	S.admin = on;
+	store.setItem("admin", on ? "1" : "0");
+	document.body.classList.toggle("is-admin", on);
+	$("#adminToggle").setAttribute("aria-pressed", String(on));
+	$("#srcKinds").hidden = !on;
+	if (!on && S.feed) { S.feed = null; loadEvents().then(render); }
+	renderSources();
+	render();
+	if (!$("#detail").hidden) openDetail($("#detail").dataset.id);
+}
+async function showFeed(url) {
+	S.feed = url;
+	S.food = "all"; // a feed's own events, with food or not
+	store.setItem("food", "all");
+	closeSources();
+	if (narrow()) tab("list");
+	closeDetail();
+	S.loaded = false;
+	render();
+	await loadEvents().catch((e) => toast(e.message));
+	if (!S.events.some((e) => inWindow(e))) setWhen("all");
+	const u = S.unis.find((x) => x.sources.some((f) => f.url === url));
+	if (u?.lat) map.flyTo([u.lat, u.lng], 14, { duration: 0.8 });
+	render();
+}
+async function clearFeed() {
+	S.feed = null;
+	S.loaded = false;
+	render();
+	await loadEvents().catch((e) => toast(e.message));
+	render();
 }
 function openSources() {
 	renderSources();
@@ -542,6 +633,16 @@ $("#list").addEventListener("keydown", (ev) => { if (ev.key === "Enter" && ev.ta
 $("#detail").addEventListener("click", (ev) => {
 	if (ev.target.closest("[data-close]")) return closeDetail();
 	if (ev.target.closest("[data-route]")) route(S.events.find((x) => x.id === $("#detail").dataset.id));
+	const cp = ev.target.closest("[data-copy]");
+	if (cp) { navigator.clipboard?.writeText(cp.dataset.copy).then(() => toast("Copied"), () => toast(cp.dataset.copy)); return; }
+	const fd = ev.target.closest("[data-feed]");
+	if (fd && fd.dataset.feed) return showFeed(fd.dataset.feed);
+	const raw = ev.target.closest("[data-raw]");
+	if (raw) {
+		const pre = $("#detail .raw");
+		if (!pre.hidden) { pre.hidden = true; return; }
+		getJson(`api/raw/${raw.dataset.raw}`).then((j) => { pre.textContent = JSON.stringify(j, null, 2); pre.hidden = false; }, (err) => toast(err.message));
+	}
 });
 $("#route").addEventListener("click", (ev) => {
 	if (ev.target.closest("[data-close]")) return closeRoute();
@@ -573,7 +674,22 @@ $("#srcFilter").addEventListener("click", (ev) => {
 	$$("#srcFilter button").forEach((x) => x.classList.toggle("on", x === b));
 	renderSources();
 });
-$("#srcList").addEventListener("click", (ev) => { const n = ev.target.closest("[data-uni]"); if (n) { closeSources(); tab("list"); setUni(n.dataset.uni, true); } });
+$("#srcList").addEventListener("click", async (ev) => {
+	const fd = ev.target.closest("[data-feed]");
+	if (fd) return showFeed(fd.dataset.feed);
+	const cp = ev.target.closest("[data-copy]");
+	if (cp) { navigator.clipboard?.writeText(cp.dataset.copy).then(() => toast("Copied"), () => toast(cp.dataset.copy)); return; }
+	const rc = ev.target.closest("[data-recheck]");
+	if (rc) {
+		const r = await fetch(`api/refresh?uni=${rc.dataset.recheck}`, { method: "POST" }).then((x) => x.json()).catch(() => null);
+		toast(r?.running && r.total > 0 && r.total < 10 ? `Re-checking ${S.byUni[rc.dataset.recheck]?.short}…` : "Re-check started");
+		return poll();
+	}
+	const n = ev.target.closest("[data-uni]");
+	if (n) { closeSources(); tab("list"); setUni(n.dataset.uni, true); }
+});
+$("#adminToggle").addEventListener("click", () => setAdmin(!S.admin));
+$("#feedChip").addEventListener("click", clearFeed);
 $("#refresh").addEventListener("click", async () => {
 	await fetch("api/refresh", { method: "POST" }).catch(() => {});
 	toast("Checking every feed again. This takes a few minutes.");
@@ -601,6 +717,9 @@ async function poll() {
 }
 
 // ---------- start
+document.body.classList.toggle("is-admin", S.admin);
+$("#adminToggle").setAttribute("aria-pressed", String(S.admin));
+$("#srcKinds").hidden = !S.admin;
 renderQuick();
 render();
 if (S.me) setMe(S.me.lat, S.me.lng);

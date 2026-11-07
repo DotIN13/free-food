@@ -4,6 +4,7 @@ import { gzipSync } from "node:zlib";
 import { readFile } from "node:fs/promises";
 import { extname, join, normalize } from "node:path";
 import { run, state, registry, loadEvents, loadStatus } from "./lib/pipeline.js";
+import { kindOf } from "./lib/scrape.js";
 
 const PORT = Number(process.env.PORT ?? 3000);
 const PUBLIC = new URL("./public/", import.meta.url).pathname;
@@ -33,25 +34,33 @@ createServer(async (req, res) => {
 	try {
 		if (p === "/api/universities") {
 			const [unis, status] = await Promise.all([registry(), loadStatus()]);
-			return send(res, 200, unis.map((u) => ({ ...u, sources: u.sources.map((s) => ({ ...s, status: status[s.url] ?? null })) })));
+			return send(res, 200, unis.map((u) => ({ ...u, sources: u.sources.map((s) => ({ ...s, kind: kindOf(s), status: status[s.url] ?? null })) })));
 		}
 		if (p === "/api/events") {
 			const { at, events } = await loadEvents();
 			const q = url.searchParams;
 			const mode = q.get("food") ?? "food"; // food | all
 			const unis = q.get("uni")?.split(",").filter(Boolean);
+			const src = q.get("src");
 			const text = q.get("q")?.toLowerCase();
 			const limit = Math.min(+(q.get("limit") ?? 8000), 8000);
 			const now = Date.now() - 2 * 36e5;
 			let list = events.filter((e) => Date.parse(e.end ?? e.start) >= now || Date.parse(e.start) >= now);
 			if (mode === "food") list = list.filter((e) => e.food && e.food.level !== "maybe");
 			if (unis?.length) list = list.filter((e) => unis.includes(e.uni));
+			if (src) list = list.filter((e) => e.srcUrl === src);
 			if (text) list = list.filter((e) => `${e.title} ${e.location} ${e.org ?? ""} ${e.desc}`.toLowerCase().includes(text));
 			const total = list.length;
-			list = list.map(({ desc, srcUrl, ...e }) => ({ ...e, desc: desc.slice(0, mode === "food" ? 600 : 160) }));
+			list = list.map(({ desc, ...e }) => ({ ...e, desc: desc.slice(0, mode === "food" ? 600 : 160) }));
 			const counts = {};
 			for (const e of events) if (e.food && e.food.level !== "maybe" && Date.parse(e.start) >= now) counts[e.uni] = (counts[e.uni] ?? 0) + 1;
 			return send(res, 200, { at, total, all: events.length, counts, events: list.slice(0, limit) });
+		}
+		if (p.startsWith("/api/raw/")) {
+			// Admin: the event exactly as stored, full description included.
+			const { events } = await loadEvents();
+			const e = events.find((x) => x.id === p.slice(9));
+			return e ? send(res, 200, e) : send(res, 404, { error: "no such event" });
 		}
 		if (p === "/api/status") return send(res, 200, { ...state, at: (await loadEvents()).at });
 		if (p === "/api/refresh" && req.method === "POST") {

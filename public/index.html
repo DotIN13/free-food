@@ -80,6 +80,7 @@
 
 				<div class="list-head">
 					<span id="count" class="count"></span>
+					<button id="feedChip" class="chip feed-chip" hidden title="Stop filtering by feed"><span></span><svg class="ic"><use href="#i-x" /></svg></button>
 					<button id="near" class="chip"><svg class="ic"><use href="#i-locate" /></svg><span>Nearest first</span></button>
 				</div>
 
@@ -102,10 +103,14 @@
 	<section class="sources" id="sources" hidden aria-label="Sources">
 		<header>
 			<div><h2>Sources</h2><p id="srcSummary"></p></div>
-			<button class="icon-btn" id="srcClose" aria-label="Close"><svg class="ic"><use href="#i-x" /></svg></button>
+			<div class="src-head-actions">
+				<button class="admin-toggle" id="adminToggle" aria-pressed="false" title="Show every feed's URL, type and status, and where each event came from"><span class="sw"></span>Admin</button>
+				<button class="icon-btn" id="srcClose" aria-label="Close"><svg class="ic"><use href="#i-x" /></svg></button>
+			</div>
 		</header>
 		<div class="src-tools">
 			<div class="seg" id="srcFilter" role="group" aria-label="Filter sources"><button data-v="all" class="on">All</button><button data-v="issues">Issues</button><button data-v="none">No feed</button></div>
+			<div class="src-kinds" id="srcKinds" hidden></div>
 			<p class="src-note"><svg class="ic"><use href="#i-info" /></svg>Every feed is an open calendar the university publishes. It is read again every 3 hours.</p>
 		</div>
 		<div class="src-list" id="srcList"></div>
