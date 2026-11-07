@@ -190,7 +190,8 @@ main { outline: none; }
 .peek .x { width: 28px; height: 28px; border-radius: 50%; border: 0; background: var(--bg); color: var(--muted); display: grid; place-items: center; }
 .peek .x svg { width: 14px; height: 14px; }
 .peek .row { display: flex; gap: 8px; }
-.peek .btn { height: 40px; font-size: 13.5px; flex: 1; border-radius: 11px; padding: 0 10px; }
+.peek .btn { height: 40px; min-height: 40px; font-size: 13.5px; flex: none; border-radius: 11px; padding: 0 10px; }
+.peek .row .btn { flex: 1; }
 .peek .btn svg { width: 15px; height: 15px; }
 .board .rank { display: grid; grid-template-columns: 26px 120px 1fr 40px; gap: 12px; align-items: center; padding: 5px 0; cursor: pointer; border-radius: 8px; }
 .board .rank:hover b { color: var(--tomato); }
