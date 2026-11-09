@@ -70,7 +70,8 @@ Admin calls take `Authorization: Bearer <token>` (from `ADMIN_TOKEN` or `DATA_DI
 
 ## Sources and robots.txt
 
-Feeds are listed in `sources/*.json`. The scraper names itself `free.food-bot` and honours robots.txt
-(`RESPECT_ROBOTS=1`), except for feeds marked `"robots"` in their entry, which are read despite a rule for all bots
+Feeds are listed in `sources/*.json`. The scraper names itself `free.food-bot` in every request. Since 2026-11-09
+robots.txt is not checked, by the owner's decision to make the data complete first; `RESPECT_ROBOTS=1` turns the
+check back on. With it on, robots.txt is honoured except for feeds marked `"robots"` in their entry, which are read despite a rule for all bots
 by the owner's decision. A rule written for `free.food-bot` by name is always obeyed. When a university gives
 permission for a feed, add `"permission": "who agreed, and when"` to its entry.

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "stanford",
+    "name": "Stanford University",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://law.stanford.edu/wp-json/tribe/events/v1/events",
+        "label": "Stanford Law School",
+        "institute": true,
+        "robots": "read despite robots.txt: owner decision, 2026-11-09",
+        "events": 64,
+        "food": 24
+      }
+    ]
+  },
+  {
+    "id": "uiuc",
+    "name": "University of Illinois Urbana-Champaign",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/2568.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Grainger College of Engineering",
+        "institute": true,
+        "robots": "read despite robots.txt: owner decision, 2026-11-09",
+        "events": 123
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/7097.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "NCSA",
+        "institute": true,
+        "robots": "read despite robots.txt: owner decision, 2026-11-09",
+        "events": 30
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/1233.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Molecular and Cellular Biology",
+        "institute": true,
+        "robots": "read despite robots.txt: owner decision, 2026-11-09",
+        "events": 28
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/1968.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Physics",
+        "institute": true,
+        "robots": "read despite robots.txt: owner decision, 2026-11-09",
+        "events": 29
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/1381.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Chemistry",
+        "institute": true,
+        "robots": "read despite robots.txt: owner decision, 2026-11-09",
+        "events": 10
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/4862.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Economics",
+        "institute": true,
+        "robots": "read despite robots.txt: owner decision, 2026-11-09",
+        "events": 6
+      }
+    ]
+  },
+  {
+    "id": "utexas",
+    "name": "The University of Texas at Austin",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://apps.cs.utexas.edu/calendar/events/ical",
+        "label": "UT Computer Science",
+        "institute": true,
+        "robots": "read despite robots.txt: owner decision, 2026-11-09",
+        "events": 35,
+        "food": 3
+      }
+    ]
+  },
+  {
+    "id": "uci",
+    "name": "University of California, Irvine",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/ucisocsci%40gmail.com/public/basic.ics",
+        "label": "UCI School of Social Sciences",
+        "institute": true,
+        "robots": "read despite robots.txt: owner decision, 2026-11-09",
+        "events": 10
+      }
+    ]
+  },
+  {
+    "id": "mit",
+    "name": "Massachusetts Institute of Technology",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/db07c1d60d3545a66a2babee49948f58082ce09baa8f0a6eef0d5ea113641e43%40group.calendar.google.com/public/basic.ics",
+        "label": "MIT LIDS (Information and Decision Systems)",
+        "institute": true,
+        "robots": "read despite robots.txt: owner decision, 2026-11-09",
+        "events": 6
+      }
+    ]
+  },
+  {
+    "id": "duke",
+    "name": "Duke University",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://kenan.ethics.duke.edu/wp-json/tribe/events/v1/events",
+        "label": "Kenan Institute for Ethics",
+        "institute": true,
+        "robots": "read despite robots.txt: owner decision, 2026-11-09",
+        "events": 1
+      }
+    ]
+  }
+]
