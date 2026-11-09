@@ -1,56 +1,396 @@
 {
   "id": "ucdavis",
   "name": "University of California, Davis",
-  "wide": ["https://aggielife.ucdavis.edu/rss_events"],
+  "wide": [
+    "https://aggielife.ucdavis.edu/rss_events"
+  ],
   "units": [
-    { "id": "caes", "name": "College of Agricultural and Environmental Sciences", "kind": "school", "url": "https://caes.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "cbs", "name": "College of Biological Sciences", "kind": "school", "url": "https://biology.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "engineering", "name": "College of Engineering", "kind": "school", "url": "https://engineering.ucdavis.edu", "status": "blocked", "note": "403 to the bot" },
-    { "id": "ls", "name": "College of Letters and Science", "kind": "school", "url": "https://lettersandscience.ucdavis.edu", "status": "blocked", "note": "403 to the bot" },
-    { "id": "education", "name": "School of Education", "kind": "school", "url": "https://education.ucdavis.edu", "status": "unchecked", "note": "/events 404" },
-    { "id": "gsm", "name": "Graduate School of Management", "kind": "school", "url": "https://gsm.ucdavis.edu", "feeds": ["https://gsm.ucdavis.edu/ical/522"], "status": "feed" },
-    { "id": "law", "name": "School of Law (King Hall)", "kind": "school", "url": "https://law.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "medicine", "name": "School of Medicine", "kind": "school", "url": "https://health.ucdavis.edu/medicalschool", "status": "no-feed", "note": "UC Davis Health has no events feed" },
-    { "id": "nursing", "name": "Betty Irene Moore School of Nursing", "kind": "school", "url": "https://health.ucdavis.edu/nursing", "status": "no-feed", "note": "UC Davis Health has no events feed" },
-    { "id": "vetmed", "name": "School of Veterinary Medicine", "kind": "school", "url": "https://vetmed.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "grad", "name": "Graduate Studies", "kind": "school", "url": "https://grad.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-
-    { "id": "cs", "name": "Computer Science", "kind": "department", "parent": "engineering", "url": "https://cs.ucdavis.edu", "status": "blocked", "note": "403 to the bot" },
-    { "id": "ece", "name": "Electrical and Computer Engineering", "kind": "department", "parent": "engineering", "url": "https://ece.ucdavis.edu", "status": "blocked", "note": "engineering sites 403 to the bot" },
-    { "id": "mae", "name": "Mechanical and Aerospace Engineering", "kind": "department", "parent": "engineering", "url": "https://mae.ucdavis.edu", "status": "blocked", "note": "engineering sites 403 to the bot" },
-    { "id": "bme", "name": "Biomedical Engineering", "kind": "department", "parent": "engineering", "url": "https://bme.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "math", "name": "Mathematics", "kind": "department", "parent": "ls", "url": "https://www.math.ucdavis.edu", "status": "no-feed", "note": "seminars page is HTML" },
-    { "id": "statistics", "name": "Statistics", "kind": "department", "parent": "ls", "url": "https://statistics.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "physics", "name": "Physics and Astronomy", "kind": "department", "parent": "ls", "url": "https://physics.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "chemistry", "name": "Chemistry", "kind": "department", "parent": "ls", "url": "https://chemistry.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "economics", "name": "Economics", "kind": "department", "parent": "ls", "url": "https://economics.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "psychology", "name": "Psychology", "kind": "department", "parent": "ls", "url": "https://psychology.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "polisci", "name": "Political Science", "kind": "department", "parent": "ls", "url": "https://polisci.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "history", "name": "History", "kind": "department", "parent": "ls", "url": "https://history.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "english", "name": "English", "kind": "department", "parent": "ls", "url": "https://english.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "philosophy", "name": "Philosophy", "kind": "department", "parent": "ls", "url": "https://philosophy.ucdavis.edu", "status": "unchecked" },
-    { "id": "sociology", "name": "Sociology", "kind": "department", "parent": "ls", "url": "https://sociology.ucdavis.edu", "status": "unchecked" },
-    { "id": "mcb", "name": "Molecular and Cellular Biology", "kind": "department", "parent": "cbs", "url": "https://mcb.ucdavis.edu", "status": "unchecked" },
-    { "id": "evolution-ecology", "name": "Evolution and Ecology", "kind": "department", "parent": "cbs", "url": "https://eve.ucdavis.edu", "status": "unchecked" },
-    { "id": "ag-econ", "name": "Agricultural and Resource Economics", "kind": "department", "parent": "caes", "url": "https://are.ucdavis.edu", "status": "unchecked" },
-
-    { "id": "datalab", "name": "DataLab: Data Science and Informatics", "kind": "center", "parent": "library", "url": "https://datalab.ucdavis.edu", "status": "in-wide", "note": "its workshops are on the Library Localist feed we read (events.library.ucdavis.edu)" },
-    { "id": "energy", "name": "Energy and Efficiency Institute", "kind": "institute", "url": "https://energy.ucdavis.edu", "status": "no-feed", "note": "events page is HTML" },
-    { "id": "dhi", "name": "Davis Humanities Institute", "kind": "institute", "parent": "ls", "url": "https://dhi.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "its", "name": "Institute of Transportation Studies", "kind": "institute", "url": "https://its.ucdavis.edu", "status": "unchecked" },
-    { "id": "wfc", "name": "World Food Center", "kind": "center", "url": "https://worldfoodcenter.ucdavis.edu", "status": "unchecked" },
-    { "id": "jmie", "name": "John Muir Institute of the Environment", "kind": "institute", "url": "https://johnmuir.ucdavis.edu", "status": "unchecked" },
-    { "id": "ccrs", "name": "Center for Child and Family Studies / CRS", "kind": "center", "url": "https://ccrs.ucdavis.edu", "status": "unchecked", "note": "fetch failed" },
-    { "id": "mind", "name": "MIND Institute", "kind": "institute", "parent": "medicine", "url": "https://health.ucdavis.edu/mind-institute", "status": "no-feed", "note": "UC Davis Health has no events feed" },
-    { "id": "icc", "name": "Internship and Career Center", "kind": "other", "url": "https://icc.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-
-    { "id": "asucd", "name": "Associated Students of UC Davis (ASUCD)", "kind": "student", "url": "https://asucd.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403); student-org events on Aggie Life" },
-    { "id": "gsa", "name": "Graduate Student Association", "kind": "student", "url": "https://gsa.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-
-    { "id": "library", "name": "UC Davis Library", "kind": "library", "url": "https://www.library.ucdavis.edu", "feeds": ["https://events.library.ucdavis.edu"], "status": "feed" },
-    { "id": "manetti-shrem", "name": "Jan Shrem and Maria Manetti Shrem Museum of Art", "kind": "museum", "url": "https://manettishremmuseum.ucdavis.edu", "status": "blocked", "note": "Cloudflare challenge (403)" },
-    { "id": "mondavi", "name": "Mondavi Center for the Performing Arts", "kind": "other", "url": "https://www.mondaviarts.org", "status": "blocked", "note": "403 to the bot" },
-    { "id": "athletics", "name": "UC Davis Athletics", "kind": "other", "url": "https://ucdavisaggies.com", "status": "unchecked" },
-    { "id": "campus-events", "name": "UC Davis Events (www.ucdavis.edu/events)", "kind": "other", "url": "https://www.ucdavis.edu/events", "status": "no-feed", "note": "Drupal HTML with no feed; events.ucdavis.edu Cloudflare 403" }
+    {
+      "id": "caes",
+      "name": "College of Agricultural and Environmental Sciences",
+      "kind": "school",
+      "url": "https://caes.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "cbs",
+      "name": "College of Biological Sciences",
+      "kind": "school",
+      "url": "https://biology.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "engineering",
+      "name": "College of Engineering",
+      "kind": "school",
+      "url": "https://engineering.ucdavis.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "ls",
+      "name": "College of Letters and Science",
+      "kind": "school",
+      "url": "https://lettersandscience.ucdavis.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "education",
+      "name": "School of Education",
+      "kind": "school",
+      "url": "https://education.ucdavis.edu",
+      "status": "no-feed",
+      "note": "calendar page is HTML only (info sessions), no feed; /events 404"
+    },
+    {
+      "id": "gsm",
+      "name": "Graduate School of Management",
+      "kind": "school",
+      "url": "https://gsm.ucdavis.edu",
+      "feeds": [
+        "https://gsm.ucdavis.edu/ical/522"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "law",
+      "name": "School of Law (King Hall)",
+      "kind": "school",
+      "url": "https://law.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "medicine",
+      "name": "School of Medicine",
+      "kind": "school",
+      "url": "https://health.ucdavis.edu/medicalschool",
+      "status": "no-feed",
+      "note": "UC Davis Health has no events feed"
+    },
+    {
+      "id": "nursing",
+      "name": "Betty Irene Moore School of Nursing",
+      "kind": "school",
+      "url": "https://health.ucdavis.edu/nursing",
+      "status": "no-feed",
+      "note": "UC Davis Health has no events feed"
+    },
+    {
+      "id": "vetmed",
+      "name": "School of Veterinary Medicine",
+      "kind": "school",
+      "url": "https://vetmed.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "grad",
+      "name": "Graduate Studies",
+      "kind": "school",
+      "url": "https://grad.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cs.ucdavis.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://ece.ucdavis.edu",
+      "status": "blocked",
+      "note": "engineering sites 403 to the bot"
+    },
+    {
+      "id": "mae",
+      "name": "Mechanical and Aerospace Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://mae.ucdavis.edu",
+      "status": "blocked",
+      "note": "engineering sites 403 to the bot"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://bme.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.math.ucdavis.edu",
+      "status": "no-feed",
+      "note": "seminars page is HTML"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://statistics.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "physics",
+      "name": "Physics and Astronomy",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://physics.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://chemistry.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://economics.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://psychology.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://polisci.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://history.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://english.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://philosophy.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://sociology.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "mcb",
+      "name": "Molecular and Cellular Biology",
+      "kind": "department",
+      "parent": "cbs",
+      "url": "https://mcb.ucdavis.edu",
+      "status": "blocked",
+      "note": "mcb.ucdavis.edu does not answer; biology.ucdavis.edu answers a Cloudflare challenge"
+    },
+    {
+      "id": "evolution-ecology",
+      "name": "Evolution and Ecology",
+      "kind": "department",
+      "parent": "cbs",
+      "url": "https://eve.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "ag-econ",
+      "name": "Agricultural and Resource Economics",
+      "kind": "department",
+      "parent": "caes",
+      "url": "https://are.ucdavis.edu",
+      "status": "feed",
+      "feeds": [
+        "https://are.ucdavis.edu/department/seminars/ical/all.ics"
+      ]
+    },
+    {
+      "id": "datalab",
+      "name": "DataLab: Data Science and Informatics",
+      "kind": "center",
+      "parent": "library",
+      "url": "https://datalab.ucdavis.edu",
+      "status": "in-wide",
+      "note": "its workshops are on the Library Localist feed we read (events.library.ucdavis.edu)"
+    },
+    {
+      "id": "energy",
+      "name": "Energy and Efficiency Institute",
+      "kind": "institute",
+      "url": "https://energy.ucdavis.edu",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "dhi",
+      "name": "Davis Humanities Institute",
+      "kind": "institute",
+      "parent": "ls",
+      "url": "https://dhi.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "its",
+      "name": "Institute of Transportation Studies",
+      "kind": "institute",
+      "url": "https://its.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "wfc",
+      "name": "World Food Center",
+      "kind": "center",
+      "url": "https://worldfoodcenter.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "jmie",
+      "name": "John Muir Institute of the Environment",
+      "kind": "institute",
+      "url": "https://johnmuir.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "ccrs",
+      "name": "Center for Child and Family Studies / CRS",
+      "kind": "center",
+      "url": "https://ccrs.ucdavis.edu",
+      "status": "no-feed",
+      "note": "ccrs.ucdavis.edu does not answer"
+    },
+    {
+      "id": "mind",
+      "name": "MIND Institute",
+      "kind": "institute",
+      "parent": "medicine",
+      "url": "https://health.ucdavis.edu/mind-institute",
+      "status": "no-feed",
+      "note": "UC Davis Health has no events feed"
+    },
+    {
+      "id": "icc",
+      "name": "Internship and Career Center",
+      "kind": "other",
+      "url": "https://icc.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "asucd",
+      "name": "Associated Students of UC Davis (ASUCD)",
+      "kind": "student",
+      "url": "https://asucd.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403); student-org events on Aggie Life"
+    },
+    {
+      "id": "gsa",
+      "name": "Graduate Student Association",
+      "kind": "student",
+      "url": "https://gsa.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "library",
+      "name": "UC Davis Library",
+      "kind": "library",
+      "url": "https://www.library.ucdavis.edu",
+      "feeds": [
+        "https://events.library.ucdavis.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "manetti-shrem",
+      "name": "Jan Shrem and Maria Manetti Shrem Museum of Art",
+      "kind": "museum",
+      "url": "https://manettishremmuseum.ucdavis.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "mondavi",
+      "name": "Mondavi Center for the Performing Arts",
+      "kind": "other",
+      "url": "https://www.mondaviarts.org",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "athletics",
+      "name": "UC Davis Athletics",
+      "kind": "other",
+      "url": "https://ucdavisaggies.com",
+      "status": "blocked",
+      "note": "Incapsula in front of ucdavisaggies.com"
+    },
+    {
+      "id": "campus-events",
+      "name": "UC Davis Events (www.ucdavis.edu/events)",
+      "kind": "other",
+      "url": "https://www.ucdavis.edu/events",
+      "status": "no-feed",
+      "note": "Drupal HTML with no feed; events.ucdavis.edu Cloudflare 403"
+    }
   ]
 }

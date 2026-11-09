@@ -10,15 +10,17 @@
       "id": "arts-humanities",
       "name": "School of Arts and Humanities",
       "kind": "school",
-      "url": "https://www.cam.ac.uk/schools/arts-and-humanities",
-      "status": "unchecked"
+      "url": "https://www.csah.cam.ac.uk",
+      "status": "no-feed",
+      "note": "school site has no events listing or feed; its faculties post talks to talks.cam lists"
     },
     {
       "id": "hss",
       "name": "School of the Humanities and Social Sciences",
       "kind": "school",
-      "url": "https://www.hsps.cam.ac.uk",
-      "status": "unchecked"
+      "url": "https://www.hss.cam.ac.uk",
+      "status": "no-feed",
+      "note": "school site timed out; HSPS (www.hsps.cam.ac.uk/events) lists events as HTML only"
     },
     {
       "id": "biology-school",
@@ -41,14 +43,16 @@
       "name": "School of the Physical Sciences",
       "kind": "school",
       "url": "https://www.physsci.cam.ac.uk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only, no feed"
     },
     {
       "id": "technology",
       "name": "School of Technology",
       "kind": "school",
       "url": "https://www.tech.cam.ac.uk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only, no feed"
     },
     {
       "id": "jbs",
@@ -56,9 +60,10 @@
       "kind": "school",
       "parent": "technology",
       "url": "https://www.jbs.cam.ac.uk",
-      "status": "unchecked",
-      "note": "WordPress events RSS (pubDate is the posting date)",
-      "found": "https://www.jbs.cam.ac.uk/events/feed/"
+      "status": "feed",
+      "feeds": [
+        "https://www.jbs.cam.ac.uk/events/feed/"
+      ]
     },
     {
       "id": "cst",
@@ -77,8 +82,8 @@
       "kind": "department",
       "parent": "technology",
       "url": "https://www.eng.cam.ac.uk",
-      "status": "unchecked",
-      "note": "its talks are on talks.cam lists we do not read yet"
+      "status": "no-feed",
+      "note": "no department events page; talks spread over many small talks.cam lists, the 'Department of Engineering' list (63416) is empty"
     },
     {
       "id": "chemeng",
@@ -86,7 +91,8 @@
       "kind": "department",
       "parent": "technology",
       "url": "https://www.ceb.cam.ac.uk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress events page without a feed; its talks.cam seminar lists (6687, 8214) have nothing upcoming"
     },
     {
       "id": "dpmms",
@@ -105,8 +111,10 @@
       "kind": "department",
       "parent": "physical",
       "url": "https://www.damtp.cam.ac.uk",
-      "status": "unchecked",
-      "note": "its talks are on talks.cam lists we do not read yet"
+      "status": "feed",
+      "feeds": [
+        "https://talks.cam.ac.uk/show/ics/14596/"
+      ]
     },
     {
       "id": "statslab",
@@ -114,8 +122,10 @@
       "kind": "department",
       "parent": "physical",
       "url": "https://www.statslab.cam.ac.uk",
-      "status": "unchecked",
-      "note": "seminars page links talks.cam lists (e.g. Probability, show/index/9938)"
+      "status": "feed",
+      "feeds": [
+        "https://talks.cam.ac.uk/show/ics/9938/"
+      ]
     },
     {
       "id": "physics",
@@ -123,8 +133,10 @@
       "kind": "department",
       "parent": "physical",
       "url": "https://www.phy.cam.ac.uk",
-      "status": "unchecked",
-      "note": "its talks are on talks.cam lists we do not read yet"
+      "status": "feed",
+      "feeds": [
+        "https://talks.cam.ac.uk/show/ics/5444/"
+      ]
     },
     {
       "id": "chemistry",
@@ -143,7 +155,10 @@
       "kind": "department",
       "parent": "physical",
       "url": "https://www.ast.cam.ac.uk",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://talks.cam.ac.uk/show/ics/188890/"
+      ]
     },
     {
       "id": "earth",
@@ -151,7 +166,10 @@
       "kind": "department",
       "parent": "physical",
       "url": "https://www.esc.cam.ac.uk",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://talks.cam.ac.uk/show/ics/15125/"
+      ]
     },
     {
       "id": "biochem",
@@ -159,7 +177,10 @@
       "kind": "department",
       "parent": "biology-school",
       "url": "https://www.bioc.cam.ac.uk",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://talks.cam.ac.uk/show/ics/34453/"
+      ]
     },
     {
       "id": "genetics",
@@ -167,7 +188,8 @@
       "kind": "department",
       "parent": "biology-school",
       "url": "https://www.gen.cam.ac.uk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only, no feed"
     },
     {
       "id": "psychology",
@@ -184,7 +206,10 @@
       "kind": "department",
       "parent": "biology-school",
       "url": "https://www.pdn.cam.ac.uk",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://talks.cam.ac.uk/show/ics/6140/"
+      ]
     },
     {
       "id": "economics",
@@ -192,7 +217,8 @@
       "kind": "department",
       "parent": "hss",
       "url": "https://www.econ.cam.ac.uk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "seminars listed as HTML pages under /seminars; no events feed"
     },
     {
       "id": "polis",
@@ -254,7 +280,8 @@
       "kind": "department",
       "parent": "arts-humanities",
       "url": "https://www.mmll.cam.ac.uk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only, no feed"
     },
     {
       "id": "medicine",
@@ -270,8 +297,9 @@
       "name": "MRC Epidemiology Unit / Institute of Public Health",
       "kind": "center",
       "parent": "clinical",
-      "url": "https://www.mrc-epid.cam.ac.uk",
-      "status": "unchecked"
+      "url": "https://www.epi.ims.cam.ac.uk",
+      "status": "no-feed",
+      "note": "The Events Calendar site, but its REST API answers 401 and ?ical=1 returns no events"
     },
     {
       "id": "mrc-cbu",
@@ -279,7 +307,10 @@
       "kind": "center",
       "parent": "clinical",
       "url": "https://www.mrc-cbu.cam.ac.uk",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://talks.cam.ac.uk/show/ics/182458/"
+      ]
     },
     {
       "id": "crassh",
@@ -294,23 +325,24 @@
       "name": "Bennett School of Public Policy",
       "kind": "institute",
       "url": "https://www.bennettschool.cam.ac.uk",
-      "status": "unchecked",
-      "note": "WordPress events RSS (pubDate is the posting date)",
-      "found": "https://www.bennettschool.cam.ac.uk/events/feed/"
+      "status": "no-feed",
+      "note": "WordPress /events/feed/ (12 items) gives no upcoming events, even reading each event page; tickets via Eventbrite"
     },
     {
       "id": "lcfi",
       "name": "Leverhulme Centre for the Future of Intelligence",
       "kind": "center",
       "url": "https://www.lcfi.ac.uk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "news & events pages are HTML only"
     },
     {
       "id": "ai-cam",
       "name": "ai@cam",
       "kind": "institute",
-      "url": "https://ai.cam.ac.uk",
-      "status": "unchecked"
+      "url": "https://www.ai.cam.ac.uk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
     },
     {
       "id": "energy",
@@ -325,7 +357,8 @@
       "name": "Cambridge Institute for Sustainability Leadership",
       "kind": "institute",
       "url": "https://www.cisl.cam.ac.uk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only, no feed"
     },
     {
       "id": "cses",
@@ -333,7 +366,8 @@
       "kind": "center",
       "parent": "hss",
       "url": "https://www.s-asian.cam.ac.uk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page; its talks.cam seminar lists (37100, 42081) have nothing upcoming"
     },
     {
       "id": "entrepreneurship",
@@ -341,8 +375,8 @@
       "kind": "center",
       "parent": "jbs",
       "url": "https://www.jbs.cam.ac.uk/entrepreneurship",
-      "status": "unchecked",
-      "note": "likely in the JBS events feed"
+      "status": "in-wide",
+      "note": "no events page of its own; its events are in the Judge events feed (read on jbs)"
     },
     {
       "id": "su",
@@ -357,55 +391,60 @@
       "name": "Trinity College",
       "kind": "student",
       "url": "https://www.trin.cam.ac.uk",
-      "status": "unchecked",
-      "note": "college events (formal halls, talks) on its own site"
+      "status": "feed",
+      "feeds": [
+        "https://www.trin.cam.ac.uk/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "kings",
       "name": "King's College",
       "kind": "student",
       "url": "https://www.kings.cam.ac.uk",
-      "status": "unchecked",
-      "note": "college events (formal halls, talks) on its own site"
+      "status": "no-feed",
+      "note": "no public events listing (/events goes to private-events conferencing)"
     },
     {
       "id": "stjohns",
       "name": "St John's College",
       "kind": "student",
       "url": "https://www.joh.cam.ac.uk",
-      "status": "unchecked",
-      "note": "college events (formal halls, talks) on its own site"
+      "status": "no-feed",
+      "note": "events as HTML pages under /about-us/events-and-services"
     },
     {
       "id": "churchill",
       "name": "Churchill College",
       "kind": "student",
       "url": "https://www.chu.cam.ac.uk",
-      "status": "unchecked",
-      "note": "college events (formal halls, talks) on its own site"
+      "status": "feed",
+      "feeds": [
+        "https://www.chu.cam.ac.uk/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "darwin",
       "name": "Darwin College",
       "kind": "student",
       "url": "https://www.darwin.cam.ac.uk",
-      "status": "unchecked",
-      "note": "college events (formal halls, talks) on its own site"
+      "status": "no-feed",
+      "note": "WordPress events page, HTML only"
     },
     {
       "id": "clare-hall",
       "name": "Clare Hall",
       "kind": "student",
       "url": "https://www.clarehall.cam.ac.uk",
-      "status": "unchecked",
-      "note": "college events (formal halls, talks) on its own site"
+      "status": "no-feed",
+      "note": "WordPress events archive, HTML only; /events/feed/ is not a feed"
     },
     {
       "id": "library",
       "name": "Cambridge University Libraries",
       "kind": "library",
       "url": "https://www.lib.cam.ac.uk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "/events redirects to an exhibition page; no feed"
     },
     {
       "id": "fitzwilliam",
@@ -420,14 +459,16 @@
       "name": "Kettle's Yard",
       "kind": "museum",
       "url": "https://www.kettlesyard.co.uk",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "site did not answer (connection timed out twice)"
     },
     {
       "id": "museums",
       "name": "University of Cambridge Museums",
       "kind": "museum",
       "url": "https://www.museums.cam.ac.uk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "site answers 503 (technical issue page)"
     },
     {
       "id": "careers",
@@ -442,7 +483,8 @@
       "name": "Cambridge Festival",
       "kind": "other",
       "url": "https://www.festival.cam.ac.uk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events page for the spring festival, HTML only"
     }
   ]
 }

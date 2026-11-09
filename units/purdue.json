@@ -43,31 +43,36 @@
       "name": "College of Agriculture",
       "kind": "school",
       "url": "https://ag.purdue.edu",
-      "status": "unchecked",
-      "found": "https://ag.purdue.edu/events/_data/current.ics",
-      "note": "events page uses its own ics (180 events)"
+      "status": "feed",
+      "feeds": [
+        "https://ag.purdue.edu/events/_data/current-live.json"
+      ]
     },
     {
       "id": "hhs",
       "name": "College of Health and Human Sciences",
       "kind": "school",
       "url": "https://hhs.purdue.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://hhs.purdue.edu/hhs-events/feed/"
+      ]
     },
     {
       "id": "pharmacy",
       "name": "College of Pharmacy",
       "kind": "school",
       "url": "https://pharmacy.purdue.edu",
-      "status": "unchecked",
-      "note": "WordPress; only a site /feed/ seen"
+      "status": "no-feed",
+      "note": "events page is WordPress HTML; no tribe route, /feed/ is news"
     },
     {
       "id": "vet",
       "name": "College of Veterinary Medicine",
       "kind": "school",
       "url": "https://vet.purdue.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page (/events 404); only alumni events HTML"
     },
     {
       "id": "polytechnic",
@@ -100,8 +105,10 @@
       "name": "Graduate School",
       "kind": "school",
       "url": "https://www.purdue.edu/academics/ogsps",
-      "status": "unchecked",
-      "note": "page embeds several Google calendars"
+      "status": "feed",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/gradschoolprodev%40gmail.com/public/basic.ics"
+      ]
     },
     {
       "id": "cs",
@@ -177,8 +184,8 @@
       "kind": "department",
       "parent": "science",
       "url": "https://www.stat.purdue.edu",
-      "status": "unchecked",
-      "note": "College of Science Google calendars mostly empty"
+      "status": "no-feed",
+      "note": "seminars link College of Science event pages (HTML); its Google calendars mostly empty"
     },
     {
       "id": "physics",
@@ -197,8 +204,8 @@
       "kind": "department",
       "parent": "science",
       "url": "https://www.chem.purdue.edu",
-      "status": "unchecked",
-      "note": "College of Science Google calendars mostly empty"
+      "status": "no-feed",
+      "note": "/events redirects home; College of Science Google calendars mostly empty"
     },
     {
       "id": "biology",
@@ -215,7 +222,8 @@
       "kind": "department",
       "parent": "daniels",
       "url": "https://business.purdue.edu/academics/economics",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "department page has no events listing or feed"
     },
     {
       "id": "psychology",
@@ -223,7 +231,8 @@
       "kind": "department",
       "parent": "hhs",
       "url": "https://hhs.purdue.edu/psy",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page of its own; links HHS Events (found on hhs)"
     },
     {
       "id": "polsci",
@@ -283,28 +292,32 @@
       "name": "Institute for Physical Artificial Intelligence (IPAI)",
       "kind": "institute",
       "url": "https://www.purdue.edu/research/ipai",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "purdue.edu/research/ipai answers 404; no current site found"
     },
     {
       "id": "energy",
       "name": "Purdue Institute for a Sustainable Future",
       "kind": "institute",
       "url": "https://www.purdue.edu/research/sustainable-future",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "purdue.edu/research/sustainable-future answers 404; no current site found"
     },
     {
       "id": "pcrc",
       "name": "Institute for Cancer Research",
       "kind": "institute",
-      "url": "https://www.purdue.edu/cancer-research",
-      "status": "unchecked"
+      "url": "https://cancer.research.purdue.edu",
+      "status": "no-feed",
+      "note": "events page is WordPress HTML; no tribe route or ical"
     },
     {
       "id": "foundry",
       "name": "Purdue Innovates / Foundry (entrepreneurship)",
       "kind": "center",
       "url": "https://purdueinnovates.org",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Purdue Innovates runs The Events Calendar but its REST and ?ical=1 return 0 events"
     },
     {
       "id": "psg",
@@ -327,9 +340,10 @@
       "name": "Purdue Libraries",
       "kind": "library",
       "url": "https://lib.purdue.edu",
-      "status": "unchecked",
-      "found": "https://calendar.lib.purdue.edu",
-      "note": "events are on LibCal (calendar.lib.purdue.edu), which has RSS/ics exports"
+      "status": "feed",
+      "feeds": [
+        "https://calendar.lib.purdue.edu/ical_subscribe.php?src=p&cid=17492"
+      ]
     },
     {
       "id": "convocations",
@@ -346,7 +360,8 @@
       "name": "Center for Career Opportunities",
       "kind": "other",
       "url": "https://www.cco.purdue.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "calendar page is HTML, no feed"
     }
   ]
 }

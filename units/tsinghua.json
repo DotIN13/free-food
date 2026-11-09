@@ -16,49 +16,56 @@
    "name": "School of Civil Engineering (土木水利学院)",
    "kind": "school",
    "url": "https://www.civil.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "env",
    "name": "School of Environment (环境学院)",
    "kind": "school",
    "url": "https://www.env.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "mech",
    "name": "School of Mechanical Engineering (机械工程学院)",
    "kind": "school",
    "url": "https://www.mech.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "did not answer within 12 s (https and http)"
   },
   {
    "id": "aero",
    "name": "School of Aerospace Engineering (航天航空学院)",
    "kind": "school",
    "url": "https://www.hy.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "sist",
    "name": "School of Information Science and Technology (信息科学技术学院)",
    "kind": "school",
    "url": "https://www.sist.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "mse",
    "name": "School of Materials Science and Engineering (材料学院)",
    "kind": "school",
    "url": "https://www.mse.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "science",
    "name": "School of Science (理学院)",
    "kind": "school",
    "url": "https://www.tsinghua.edu.cn/yxsz.htm",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "life",
@@ -105,7 +112,8 @@
    "name": "School of Marxism (马克思主义学院)",
    "kind": "school",
    "url": "https://www.smarx.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "law",
@@ -120,14 +128,16 @@
    "name": "School of Journalism and Communication (新闻与传播学院)",
    "kind": "school",
    "url": "https://www.tsjc.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "design",
    "name": "Academy of Arts & Design (美术学院)",
    "kind": "school",
    "url": "https://www.ad.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "medicine",
@@ -142,14 +152,16 @@
    "name": "School of Pharmaceutical Sciences (药学院)",
    "kind": "school",
    "url": "https://www.sps.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "vanke",
    "name": "Vanke School of Public Health (万科公共卫生与健康学院)",
    "kind": "school",
    "url": "https://www.sph.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "did not answer within 12 s (https and http)"
   },
   {
    "id": "pbcsf",
@@ -180,28 +192,32 @@
    "name": "School of Integrated Circuits (集成电路学院)",
    "kind": "school",
    "url": "https://www.sic.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "vehicle",
    "name": "School of Vehicle and Mobility (车辆与运载学院)",
    "kind": "school",
    "url": "https://www.svm.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "学术活动 list is HTML only, no feed"
   },
   {
    "id": "sigs",
    "name": "Tsinghua Shenzhen International Graduate School (深圳国际研究生院)",
    "kind": "school",
    "url": "https://www.sigs.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "讲座 list is HTML only, no feed"
   },
   {
    "id": "xinya",
    "name": "Xinya College (新雅书院)",
    "kind": "school",
    "url": "https://www.xyc.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "cs",
@@ -236,14 +252,16 @@
    "kind": "department",
    "parent": "sist",
    "url": "https://www.thss.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "Nuxt site, HTML/JS only, no feed"
   },
   {
    "id": "eea",
    "name": "Department of Electrical Engineering (电机系)",
    "kind": "department",
    "url": "https://www.eea.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "me",
@@ -259,14 +277,16 @@
    "name": "Department of Engineering Physics (工程物理系)",
    "kind": "department",
    "url": "https://www.ep.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "chemeng",
    "name": "Department of Chemical Engineering (化学工程系)",
    "kind": "department",
    "url": "https://www.chemeng.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "bme",
@@ -274,7 +294,8 @@
    "kind": "department",
    "parent": "medicine",
    "url": "https://www.bme.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "did not answer within 12 s (https and http)"
   },
   {
    "id": "math",
@@ -291,7 +312,8 @@
    "kind": "department",
    "parent": "science",
    "url": "https://www.stat.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "physics",
@@ -317,7 +339,8 @@
    "kind": "department",
    "parent": "sem",
    "url": "https://www.sem.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "psychology",
@@ -325,7 +348,8 @@
    "kind": "department",
    "parent": "sss",
    "url": "https://www.psych.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "did not answer within 12 s (https and http)"
   },
   {
    "id": "polisci",
@@ -333,7 +357,8 @@
    "kind": "department",
    "parent": "sss",
    "url": "https://www.sss.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "sociology",
@@ -341,7 +366,8 @@
    "kind": "department",
    "parent": "sss",
    "url": "https://www.sss.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "history",
@@ -349,7 +375,8 @@
    "kind": "department",
    "parent": "humanities",
    "url": "https://www.rwxy.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "chinese",
@@ -357,7 +384,8 @@
    "kind": "department",
    "parent": "humanities",
    "url": "https://www.rwxy.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "philosophy",
@@ -365,7 +393,8 @@
    "kind": "department",
    "parent": "humanities",
    "url": "https://www.rwxy.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "foreign",
@@ -373,7 +402,8 @@
    "kind": "department",
    "parent": "humanities",
    "url": "https://www.rwxy.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "air",
@@ -388,63 +418,72 @@
    "name": "Institute for Artificial Intelligence (人工智能研究院)",
    "kind": "institute",
    "url": "https://ai.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "ai.tsinghua.edu.cn: http redirects to https, which does not answer"
   },
   {
    "id": "climate",
    "name": "Institute of Climate Change and Sustainable Development (气候变化与可持续发展研究院)",
    "kind": "institute",
    "url": "https://www.iccsd.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "did not answer within 12 s (https and http)"
   },
   {
    "id": "energy",
    "name": "Institute of Energy, Environment and Economy (能源环境经济研究所)",
    "kind": "institute",
    "url": "https://www.3e.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "活动预告 list is HTML only, no feed"
   },
   {
    "id": "ciss",
    "name": "Center for International Security and Strategy (战略与安全研究中心)",
    "kind": "center",
    "url": "https://ciss.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "活动预告 list is HTML only, no feed"
   },
   {
    "id": "ias",
    "name": "Institute for Advanced Study (高等研究院)",
    "kind": "institute",
    "url": "https://www.ias.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "ymsc",
    "name": "Yau Mathematical Sciences Center (丘成桐数学科学中心)",
    "kind": "institute",
    "url": "https://ymsc.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "xlab",
    "name": "Tsinghua x-lab (创意创新创业教育平台)",
    "kind": "center",
    "url": "https://www.x-lab.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "site shows no events feed"
   },
   {
    "id": "su",
    "name": "Tsinghua University Student Union (学生会)",
    "kind": "student",
    "url": "https://www.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "no site of its own found; tsinghua.edu.cn is VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "gsu",
    "name": "Graduate Student Union (研究生会)",
    "kind": "student",
    "url": "https://www.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "no site of its own found; tsinghua.edu.cn is VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   },
   {
    "id": "library",
@@ -475,7 +514,8 @@
    "name": "Tsinghua Arts Education Center / New Tsinghua Xuetang (新清华学堂)",
    "kind": "other",
    "url": "https://www.tsinghua.edu.cn",
-   "status": "unchecked"
+   "status": "no-feed",
+   "note": "programme pages on tsinghua.edu.cn are VSB/博达 CMS static pages (讲座/学术报告 lists), no RSS/ics/JSON"
   }
  ]
 }

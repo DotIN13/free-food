@@ -26,7 +26,8 @@
       "name": "Department of Biology (D-BIOL)",
       "kind": "school",
       "url": "https://biol.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "D-BIOL and its institutes (Microbiology, Molecular Plant Biology) post to the PCM calendar we read"
     },
     {
       "id": "bsse",
@@ -49,21 +50,24 @@
       "name": "Department of Earth and Planetary Sciences (D-EAPS)",
       "kind": "school",
       "url": "https://eaps.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page is a view of the ETH PCM calendar (cals=1); 14 upcoming there"
     },
     {
       "id": "gess",
       "name": "Department of Humanities, Social and Political Sciences (D-GESS)",
       "kind": "school",
       "url": "https://gess.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "D-GESS and its centers (e.g. CIS) post to the PCM calendar we read"
     },
     {
       "id": "hest",
       "name": "Department of Health Sciences and Technology (D-HEST)",
       "kind": "school",
       "url": "https://hest.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "posts to the ETH PCM calendar (7 upcoming there)"
     },
     {
       "id": "infk",
@@ -94,7 +98,8 @@
       "name": "Department of Materials (D-MATL)",
       "kind": "school",
       "url": "https://mat.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "posts to the ETH PCM calendar (4 upcoming there)"
     },
     {
       "id": "mavt",
@@ -109,14 +114,16 @@
       "name": "Department of Management, Technology and Economics (D-MTEC)",
       "kind": "school",
       "url": "https://mtec.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "D-MTEC and its chairs post to the ETH PCM calendar we read"
     },
     {
       "id": "phys",
       "name": "Department of Physics (D-PHYS)",
       "kind": "school",
       "url": "https://phys.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "D-PHYS and IPA post to the ETH PCM calendar we read"
     },
     {
       "id": "usys",
@@ -131,7 +138,8 @@
       "name": "ETH AI Center",
       "kind": "center",
       "url": "https://ai.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "posts to the ETH PCM calendar (7 upcoming there)"
     },
     {
       "id": "esc",
@@ -147,21 +155,24 @@
       "kind": "institute",
       "parent": "mtec",
       "url": "https://kof.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "posts to the ETH PCM calendar we read"
     },
     {
       "id": "istp",
       "name": "Institute of Science, Technology and Policy (ISTP)",
       "kind": "institute",
-      "url": "https://istp.ethz.ch",
-      "status": "unchecked"
+      "url": "https://einstein-school.ethz.ch",
+      "status": "no-feed",
+      "note": "istp.ethz.ch now redirects to the Einstein School site; no events page or feed found, nothing in PCM"
     },
     {
       "id": "collegium",
       "name": "Collegium Helveticum",
       "kind": "institute",
       "url": "https://collegium.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page pulls the ETH PCM calendar"
     },
     {
       "id": "css",
@@ -169,14 +180,16 @@
       "kind": "center",
       "parent": "gess",
       "url": "https://css.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page is a view of the ETH PCM calendar (cals=1)"
     },
     {
       "id": "its",
       "name": "ETH Institute for Theoretical Studies",
       "kind": "institute",
       "url": "https://eth-its.ethz.ch",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "activities page is HTML, not the PCM calendar"
     },
     {
       "id": "vseth",
@@ -192,43 +205,49 @@
       "id": "avethz",
       "name": "AVETH (academic staff association)",
       "kind": "student",
-      "url": "https://aveth.ethz.ch",
-      "status": "unchecked"
+      "url": "https://www.aveth.ethz.ch",
+      "status": "no-feed",
+      "note": "Events Calendar plugin holds 0 events; AVETH announces by newsletter"
     },
     {
       "id": "library",
       "name": "ETH Library",
       "kind": "library",
       "url": "https://library.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "ETH-Bibliothek posts to the ETH PCM calendar (24 upcoming there)"
     },
     {
       "id": "gs",
       "name": "Graphische Sammlung ETH Zurich",
       "kind": "museum",
       "url": "https://gs.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "its agenda is HTML, but ETH collections (Sammlungen und Archive) post to the PCM calendar"
     },
     {
       "id": "focusterra",
       "name": "focusTerra",
       "kind": "museum",
       "url": "https://focusterra.ethz.ch",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "posts to the ETH PCM calendar (9 upcoming there)"
     },
     {
       "id": "career",
       "name": "ETH Career Center",
       "kind": "other",
       "url": "https://ethz.ch/en/the-eth-zurich/education/career-center.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "career-center page has moved (old URL 404); its events are not in the PCM calendar"
     },
     {
       "id": "asvz",
       "name": "ASVZ (academic sports)",
       "kind": "other",
       "url": "https://www.asvz.ch",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
     }
   ]
 }

@@ -1,53 +1,359 @@
 {
   "id": "fudan",
   "name": "Fudan University",
-  "wide": ["https://news.fudan.edu.cn/_wp3services/rssoffer?siteId=3&columnId=45"],
+  "wide": [
+    "https://news.fudan.edu.cn/_wp3services/rssoffer?siteId=3&columnId=45"
+  ],
   "units": [
-    { "id": "chinese", "name": "中国语言文学系 (Department of Chinese Language and Literature)", "kind": "school", "url": "https://chinese.fudan.edu.cn", "status": "unchecked", "found": "https://chinese.fudan.edu.cn/_wp3services/rssoffer?siteId=285&columnId=12527", "note": "讲座论坛 column RSS, current (Nov 2026)" },
-    { "id": "dfll", "name": "外国语言文学学院 (College of Foreign Languages and Literature)", "kind": "school", "url": "https://dfll.fudan.edu.cn", "status": "unchecked" },
-    { "id": "journalism", "name": "新闻学院 (School of Journalism)", "kind": "school", "url": "https://xwxy.fudan.edu.cn", "status": "no-feed", "note": "讲座 column last updated 2023" },
-    { "id": "history", "name": "历史学系 (Department of History)", "kind": "school", "url": "https://history.fudan.edu.cn", "status": "no-feed", "note": "学术活动 is static HTML, not WebPlus" },
-    { "id": "philosophy", "name": "哲学学院 (School of Philosophy)", "kind": "school", "url": "https://philosophy.fudan.edu.cn", "status": "no-feed", "note": "讲座会议 column RSS exists but last item Nov 2025" },
-    { "id": "sirpa", "name": "国际关系与公共事务学院 (School of International Relations and Public Affairs)", "kind": "school", "url": "https://sirpa.fudan.edu.cn", "status": "unchecked", "found": "https://sirpa.fudan.edu.cn/_wp3services/rssoffer?siteId=836&columnId=35122", "note": "讲座论坛 column RSS, current (Nov 2026)" },
-    { "id": "law", "name": "法学院 (Law School)", "kind": "school", "url": "https://law.fudan.edu.cn", "status": "unchecked" },
-    { "id": "economics", "name": "经济学院 (School of Economics)", "kind": "school", "url": "https://econ.fudan.edu.cn", "status": "no-feed", "note": "讲座会议预告 is static HTML, not WebPlus" },
-    { "id": "fdsm", "name": "管理学院 (School of Management)", "kind": "school", "url": "https://www.fdsm.fudan.edu.cn", "status": "unchecked", "note": "home page is a redirect stub" },
-    { "id": "math", "name": "数学科学学院 (School of Mathematical Sciences)", "kind": "school", "url": "https://math.fudan.edu.cn", "status": "unchecked", "found": "https://math.fudan.edu.cn/_wp3services/rssoffer?siteId=629&columnId=30472", "note": "学术报告 column RSS, current (Nov 2026)" },
-    { "id": "physics", "name": "物理学系 (Department of Physics)", "kind": "school", "url": "https://phys.fudan.edu.cn", "status": "unchecked", "note": "WebPlus site; lecture column not located" },
-    { "id": "chemistry", "name": "化学系 (Department of Chemistry)", "kind": "school", "url": "https://chemistry.fudan.edu.cn", "status": "no-feed", "note": "centenary lecture column RSS last item Aug 2026" },
-    { "id": "life", "name": "生命科学学院 (School of Life Sciences)", "kind": "school", "url": "https://life.fudan.edu.cn", "status": "unchecked", "note": "WebPlus site; lecture column not located" },
-    { "id": "cs", "name": "计算与智能创新学院 (College of Computer Science and Artificial Intelligence)", "kind": "school", "url": "https://cs.fudan.edu.cn", "status": "unchecked", "note": "WebPlus site; lecture column not located" },
-    { "id": "sme", "name": "微电子学院 (School of Microelectronics)", "kind": "school", "url": "https://sme.fudan.edu.cn", "status": "no-feed", "note": "讲座信息 column last updated 2020" },
-    { "id": "sist", "name": "信息科学与工程学院 (School of Information Science and Technology)", "kind": "school", "url": "https://sist.fudan.edu.cn", "status": "unchecked", "note": "fetch failed" },
-    { "id": "mse", "name": "材料科学系 (Department of Materials Science)", "kind": "school", "url": "https://mse.fudan.edu.cn", "status": "unchecked" },
-    { "id": "polymer", "name": "高分子科学系 (Department of Macromolecular Science)", "kind": "school", "url": "https://polymer.fudan.edu.cn", "status": "unchecked" },
-    { "id": "env", "name": "环境科学与工程系 (Department of Environmental Science and Engineering)", "kind": "school", "url": "https://env.fudan.edu.cn", "status": "unchecked", "note": "fetch failed" },
-    { "id": "ssdpp", "name": "社会发展与公共政策学院 (School of Social Development and Public Policy)", "kind": "school", "url": "https://ssdpp.fudan.edu.cn", "status": "no-feed", "note": "活动预告 column last updated 2019" },
-    { "id": "marx", "name": "马克思主义学院 (School of Marxism)", "kind": "school", "url": "https://marx.fudan.edu.cn", "status": "unchecked", "note": "fetch failed" },
-    { "id": "sds", "name": "大数据学院 (School of Data Science)", "kind": "school", "url": "https://sds.fudan.edu.cn", "status": "no-feed", "note": "学术活动 column last item Jun 2025" },
-    { "id": "aero", "name": "航空航天系 (Department of Aeronautics and Astronautics)", "kind": "school", "url": "https://aero.fudan.edu.cn", "status": "unchecked" },
-    { "id": "shmc", "name": "上海医学院 (Shanghai Medical College)", "kind": "school", "url": "https://shmc.fudan.edu.cn", "status": "unchecked" },
-    { "id": "basic-med", "name": "基础医学院 (School of Basic Medical Sciences)", "kind": "school", "parent": "shmc", "url": "https://basic.fudan.edu.cn", "status": "unchecked" },
-    { "id": "sph", "name": "公共卫生学院 (School of Public Health)", "kind": "school", "parent": "shmc", "url": "https://sph.fudan.edu.cn", "status": "unchecked", "note": "home page is a small stub" },
-    { "id": "pharmacy", "name": "药学院 (School of Pharmacy)", "kind": "school", "parent": "shmc", "url": "https://pharm.fudan.edu.cn", "status": "unchecked", "note": "fetch failed" },
-    { "id": "nursing", "name": "护理学院 (School of Nursing)", "kind": "school", "parent": "shmc", "url": "https://nursing.fudan.edu.cn", "status": "unchecked" },
-    { "id": "gs", "name": "研究生院 (Graduate School)", "kind": "school", "url": "https://gs.fudan.edu.cn", "status": "unchecked" },
-
-    { "id": "ias", "name": "复旦大学高等学术研究院 / 中国研究院 (Institute for Advanced Study)", "kind": "institute", "url": "https://ias.fudan.edu.cn", "status": "no-feed", "note": "学术讲座 is a JavaScript app, no feed" },
-    { "id": "fddi", "name": "发展研究院 (Fudan Development Institute)", "kind": "institute", "url": "https://fddi.fudan.edu.cn", "status": "unchecked", "note": "WebPlus 活动预告 column; its RSS column id not confirmed" },
-    { "id": "iaes", "name": "国际问题研究院 (Institute of International Studies)", "kind": "institute", "url": "https://iis.fudan.edu.cn", "status": "unchecked" },
-    { "id": "ccs", "name": "美国研究中心 (Center for American Studies)", "kind": "center", "url": "https://cas.fudan.edu.cn", "status": "unchecked" },
-    { "id": "ai3", "name": "人工智能创新与产业研究院 (AI³ Institute)", "kind": "institute", "url": "https://ai3.fudan.edu.cn", "status": "unchecked" },
-    { "id": "brain", "name": "类脑智能科学与技术研究院 (Institute of Science and Technology for Brain-Inspired Intelligence)", "kind": "institute", "url": "https://istbi.fudan.edu.cn", "status": "unchecked" },
-    { "id": "ias-chinese", "name": "文史研究院 (National Institute for Advanced Humanistic Studies)", "kind": "institute", "url": "https://iahs.fudan.edu.cn", "status": "unchecked" },
-
-    { "id": "youth", "name": "共青团复旦大学委员会 (Fudan Youth League)", "kind": "student", "url": "https://youth.fudan.edu.cn", "status": "no-feed", "note": "活动预告 column RSS has 2 items from 2023" },
-    { "id": "su", "name": "复旦大学学生会 (Student Union)", "kind": "student", "url": "https://www.fudan.edu.cn", "status": "unchecked", "note": "posts on WeChat, no website calendar found" },
-    { "id": "gsu", "name": "复旦大学研究生会 (Graduate Student Union)", "kind": "student", "url": "https://www.fudan.edu.cn", "status": "unchecked", "note": "posts on WeChat, no website calendar found" },
-
-    { "id": "library", "name": "复旦大学图书馆 (Library)", "kind": "library", "url": "https://www.library.fudan.edu.cn", "status": "unchecked", "note": "fetch failed" },
-    { "id": "museum", "name": "复旦大学博物馆 (Fudan University Museum)", "kind": "museum", "url": "https://museum.fudan.edu.cn", "status": "unchecked" },
-    { "id": "career", "name": "学生职业发展教育服务中心 (Career Center)", "kind": "other", "url": "https://career.fudan.edu.cn", "status": "unchecked" },
-    { "id": "jwc", "name": "本科生院 / 教务处 (Undergraduate School)", "kind": "other", "url": "https://jwc.fudan.edu.cn", "status": "unchecked" }
+    {
+      "id": "chinese",
+      "name": "中国语言文学系 (Department of Chinese Language and Literature)",
+      "kind": "school",
+      "url": "https://chinese.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "讲座论坛 RSS (siteId=285&columnId=12527) is current but items carry posting dates only; our reader finds 0 upcoming"
+    },
+    {
+      "id": "dfll",
+      "name": "外国语言文学学院 (College of Foreign Languages and Literature)",
+      "kind": "school",
+      "url": "https://dfll.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "学术活动 RSS (siteId=715&columnId=27753) last item Jun 2026; posting dates only"
+    },
+    {
+      "id": "journalism",
+      "name": "新闻学院 (School of Journalism)",
+      "kind": "school",
+      "url": "https://xwxy.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "讲座 column last updated 2023"
+    },
+    {
+      "id": "history",
+      "name": "历史学系 (Department of History)",
+      "kind": "school",
+      "url": "https://history.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "学术活动 is static HTML, not WebPlus"
+    },
+    {
+      "id": "philosophy",
+      "name": "哲学学院 (School of Philosophy)",
+      "kind": "school",
+      "url": "https://philosophy.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "讲座会议 column RSS exists but last item Nov 2025"
+    },
+    {
+      "id": "sirpa",
+      "name": "国际关系与公共事务学院 (School of International Relations and Public Affairs)",
+      "kind": "school",
+      "url": "https://sirpa.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "讲座论坛 RSS (siteId=836&columnId=35122) is current but posting dates only; our reader finds 0 upcoming"
+    },
+    {
+      "id": "law",
+      "name": "法学院 (Law School)",
+      "kind": "school",
+      "url": "https://law.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "WebPlus site with no lecture or events column on the home page"
+    },
+    {
+      "id": "economics",
+      "name": "经济学院 (School of Economics)",
+      "kind": "school",
+      "url": "https://econ.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "讲座会议预告 is static HTML, not WebPlus"
+    },
+    {
+      "id": "fdsm",
+      "name": "管理学院 (School of Management)",
+      "kind": "school",
+      "url": "https://www.fdsm.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "home redirects to an old ASP.NET site (AboutUs/index.aspx); no events feed"
+    },
+    {
+      "id": "math",
+      "name": "数学科学学院 (School of Mathematical Sciences)",
+      "kind": "school",
+      "url": "https://math.fudan.edu.cn",
+      "status": "feed",
+      "feeds": [
+        "https://math.fudan.edu.cn/_wp3services/rssoffer?siteId=629&columnId=30472"
+      ]
+    },
+    {
+      "id": "physics",
+      "name": "物理学系 (Department of Physics)",
+      "kind": "school",
+      "url": "https://phys.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "邀请报告日历 is a single page; column 7453 RSS last item Apr 2024"
+    },
+    {
+      "id": "chemistry",
+      "name": "化学系 (Department of Chemistry)",
+      "kind": "school",
+      "url": "https://chemistry.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "centenary lecture column RSS last item Aug 2026"
+    },
+    {
+      "id": "life",
+      "name": "生命科学学院 (School of Life Sciences)",
+      "kind": "school",
+      "url": "https://life.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "WebPlus site with no lecture or events column on the home page"
+    },
+    {
+      "id": "cs",
+      "name": "计算与智能创新学院 (College of Computer Science and Artificial Intelligence)",
+      "kind": "school",
+      "url": "https://cs.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "WebPlus site with no lecture or events column on the home page"
+    },
+    {
+      "id": "sme",
+      "name": "微电子学院 (School of Microelectronics)",
+      "kind": "school",
+      "url": "https://sme.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "讲座信息 column last updated 2020"
+    },
+    {
+      "id": "sist",
+      "name": "未来信息创新学院 (College of Future Information Technology, formerly School of Information Science and Technology)",
+      "kind": "school",
+      "url": "https://fit.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "School became the College of Future Information Technology (fit.fudan.edu.cn); no lecture column or feed on its home page"
+    },
+    {
+      "id": "mse",
+      "name": "材料科学系 (Department of Materials Science)",
+      "kind": "school",
+      "url": "https://mse.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "WebPlus site with no lecture or events column on the home page"
+    },
+    {
+      "id": "polymer",
+      "name": "高分子科学系 (Department of Macromolecular Science)",
+      "kind": "school",
+      "url": "https://polymer.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "WebPlus site with no lecture or events column on the home page"
+    },
+    {
+      "id": "env",
+      "name": "环境科学与工程系 (Department of Environmental Science and Engineering)",
+      "kind": "school",
+      "url": "https://environment.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "WebPlus news site; no lecture or events column on the home page"
+    },
+    {
+      "id": "ssdpp",
+      "name": "社会发展与公共政策学院 (School of Social Development and Public Policy)",
+      "kind": "school",
+      "url": "https://ssdpp.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "活动预告 column last updated 2019"
+    },
+    {
+      "id": "marx",
+      "name": "马克思主义学院 (School of Marxism)",
+      "kind": "school",
+      "url": "https://som.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "WebPlus site; columns are reports and calls for papers, no lecture listings"
+    },
+    {
+      "id": "sds",
+      "name": "大数据学院 (School of Data Science)",
+      "kind": "school",
+      "url": "https://sds.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "学术活动 column last item Jun 2025"
+    },
+    {
+      "id": "aero",
+      "name": "航空航天系 (Department of Aeronautics and Astronautics)",
+      "kind": "school",
+      "url": "https://aero-mech.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "光华青年学者论坛 RSS (siteId=420&columnId=34698) last item Dec 2025"
+    },
+    {
+      "id": "shmc",
+      "name": "上海医学院 (Shanghai Medical College)",
+      "kind": "school",
+      "url": "https://shmc.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "news site; lectures appear only as news posts"
+    },
+    {
+      "id": "basic-med",
+      "name": "基础医学院 (School of Basic Medical Sciences)",
+      "kind": "school",
+      "parent": "shmc",
+      "url": "https://basicmed.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "WebPlus site with no lecture or events column on the home page"
+    },
+    {
+      "id": "sph",
+      "name": "公共卫生学院 (School of Public Health)",
+      "kind": "school",
+      "parent": "shmc",
+      "url": "https://sph.fudan.edu.cn",
+      "status": "blocked",
+      "note": "answers 403 (campus WebVPN gateway)"
+    },
+    {
+      "id": "pharmacy",
+      "name": "药学院 (School of Pharmacy)",
+      "kind": "school",
+      "parent": "shmc",
+      "url": "https://spfdu.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "学术报告 RSS (siteId=622&columnId=41399) is current, but titles give the day without a year; our reader finds 0 upcoming"
+    },
+    {
+      "id": "nursing",
+      "name": "护理学院 (School of Nursing)",
+      "kind": "school",
+      "parent": "shmc",
+      "url": "https://nursing.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "WebPlus site with no lecture or events column on the home page"
+    },
+    {
+      "id": "gs",
+      "name": "研究生院 (Graduate School)",
+      "kind": "school",
+      "url": "https://gs.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "会议论坛 RSS (siteId=74&columnId=2769) last item 2017"
+    },
+    {
+      "id": "ias",
+      "name": "复旦大学高等学术研究院 / 中国研究院 (Institute for Advanced Study)",
+      "kind": "institute",
+      "url": "https://ias.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "学术讲座 is a JavaScript app, no feed"
+    },
+    {
+      "id": "fddi",
+      "name": "发展研究院 (Fudan Development Institute)",
+      "kind": "institute",
+      "url": "https://fddi.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "报告 column RSS (siteId=477&columnId=19047) is posting dates only; 论坛 column RSS is empty"
+    },
+    {
+      "id": "iaes",
+      "name": "国际问题研究院 (Institute of International Studies)",
+      "kind": "institute",
+      "url": "https://iis.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "forum and lecture-series RSS columns are posting dates only and rarely updated"
+    },
+    {
+      "id": "ccs",
+      "name": "美国研究中心 (Center for American Studies)",
+      "kind": "center",
+      "url": "https://cas.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "not a WebPlus site; events as HTML only"
+    },
+    {
+      "id": "ai3",
+      "name": "人工智能创新与产业研究院 (AI³ Institute)",
+      "kind": "institute",
+      "url": "https://ai3.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "not a WebPlus site; no events listing or feed found"
+    },
+    {
+      "id": "brain",
+      "name": "类脑智能科学与技术研究院 (Institute of Science and Technology for Brain-Inspired Intelligence)",
+      "kind": "institute",
+      "url": "https://istbi.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "学术报告 page (ky/xsbg.htm) is static HTML"
+    },
+    {
+      "id": "ias-chinese",
+      "name": "文史研究院 (National Institute for Advanced Humanistic Studies)",
+      "kind": "institute",
+      "url": "https://iahs.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "讲座预告 page (jzxl/jzyg.htm) is static HTML"
+    },
+    {
+      "id": "youth",
+      "name": "共青团复旦大学委员会 (Fudan Youth League)",
+      "kind": "student",
+      "url": "https://youth.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "活动预告 column RSS has 2 items from 2023"
+    },
+    {
+      "id": "su",
+      "name": "复旦大学学生会 (Student Union)",
+      "kind": "student",
+      "url": "https://www.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "posts on WeChat, no website calendar"
+    },
+    {
+      "id": "gsu",
+      "name": "复旦大学研究生会 (Graduate Student Union)",
+      "kind": "student",
+      "url": "https://www.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "posts on WeChat, no website calendar"
+    },
+    {
+      "id": "library",
+      "name": "复旦大学图书馆 (Library)",
+      "kind": "library",
+      "url": "https://library.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "培训讲座 column RSS (siteId=928&columnId=29) returns an error; listings are HTML"
+    },
+    {
+      "id": "museum",
+      "name": "复旦大学博物馆 (Fudan University Museum)",
+      "kind": "museum",
+      "url": "https://museum.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "museum.fudan.edu.cn does not resolve; no website calendar found"
+    },
+    {
+      "id": "career",
+      "name": "学生职业发展教育服务中心 (Career Center)",
+      "kind": "other",
+      "url": "https://career.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "career site lists job fairs as HTML; no feed"
+    },
+    {
+      "id": "jwc",
+      "name": "本科生院 / 教务处 (Undergraduate School)",
+      "kind": "other",
+      "url": "https://jwc.fudan.edu.cn",
+      "status": "no-feed",
+      "note": "WebPlus notices site, no events column"
+    }
   ]
 }

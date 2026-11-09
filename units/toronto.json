@@ -76,7 +76,8 @@
       "name": "Faculty of Music",
       "kind": "school",
       "url": "https://music.utoronto.ca",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "concerts page is HTML; no tribe route"
     },
     {
       "id": "nursing",
@@ -117,7 +118,8 @@
       "name": "Ontario Institute for Studies in Education (OISE)",
       "kind": "school",
       "url": "https://www.oise.utoronto.ca",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "about/events page is Drupal HTML, no feed"
     },
     {
       "id": "rotman",
@@ -132,8 +134,8 @@
       "name": "School of Graduate Studies",
       "kind": "school",
       "url": "https://www.sgs.utoronto.ca",
-      "status": "unchecked",
-      "note": "/events 404"
+      "status": "no-feed",
+      "note": "no events page (/events 404); links the academic calendar only"
     },
     {
       "id": "munk",
@@ -185,7 +187,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://www.mie.utoronto.ca",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML; no tribe route"
     },
     {
       "id": "ibbme",
@@ -193,7 +196,10 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://bme.utoronto.ca",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://bme.utoronto.ca/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "math",
@@ -236,8 +242,9 @@
       "name": "Ecology & Evolutionary Biology",
       "kind": "department",
       "parent": "artsci",
-      "url": "https://www.eeb.utoronto.ca",
-      "status": "unchecked"
+      "url": "https://eeb.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is HTML; no tribe route"
     },
     {
       "id": "economics",
@@ -263,7 +270,8 @@
       "kind": "department",
       "parent": "artsci",
       "url": "https://politics.utoronto.ca",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "JavaScript bot challenge"
     },
     {
       "id": "history",
@@ -289,7 +297,10 @@
       "kind": "department",
       "parent": "artsci",
       "url": "https://philosophy.utoronto.ca",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://philosophy.utoronto.ca/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "sociology",
@@ -297,7 +308,8 @@
       "kind": "department",
       "parent": "artsci",
       "url": "https://sociology.utoronto.ca",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "JavaScript bot challenge"
     },
     {
       "id": "vector",
@@ -331,7 +343,8 @@
       "name": "Data Sciences Institute",
       "kind": "institute",
       "url": "https://datasciences.utoronto.ca",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "403 to the bot"
     },
     {
       "id": "climate",
@@ -339,7 +352,8 @@
       "kind": "department",
       "parent": "artsci",
       "url": "https://www.environment.utoronto.ca",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "JavaScript bot challenge"
     },
     {
       "id": "asian",
@@ -356,8 +370,8 @@
       "kind": "center",
       "parent": "rotman",
       "url": "https://creativedestructionlab.com",
-      "status": "unchecked",
-      "note": "/events 404"
+      "status": "no-feed",
+      "note": "no events page (/events 404), no feed"
     },
     {
       "id": "entrepreneurship",
@@ -396,7 +410,8 @@
       "name": "Victoria College",
       "kind": "student",
       "url": "https://www.vic.utoronto.ca",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML with Eventbrite links, no feed"
     },
     {
       "id": "studentlife",
@@ -422,14 +437,16 @@
       "name": "Hart House",
       "kind": "other",
       "url": "https://harthouse.ca",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
     },
     {
       "id": "art-museum",
       "name": "Art Museum at the University of Toronto",
       "kind": "museum",
       "url": "https://artmuseum.utoronto.ca",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "403 to the bot"
     },
     {
       "id": "uoft-events",
@@ -444,7 +461,10 @@
       "name": "Varsity Blues Athletics",
       "kind": "other",
       "url": "https://varsityblues.ca",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://varsityblues.ca/calendar.ashx/calendar.ics"
+      ]
     }
   ]
 }

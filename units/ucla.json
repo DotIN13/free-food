@@ -8,7 +8,7 @@
       "name": "UCLA College (Letters and Science)",
       "kind": "school",
       "url": "https://college.ucla.edu",
-      "status": "unchecked",
+      "status": "no-feed",
       "note": "no campus-wide calendar to be in; its divisions are listed below"
     },
     {
@@ -37,7 +37,8 @@
       "kind": "school",
       "parent": "college",
       "url": "https://physicalsciences.ucla.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress events page HTML, no tribe API"
     },
     {
       "id": "socsci",
@@ -103,7 +104,8 @@
       "name": "School of Dentistry",
       "kind": "school",
       "url": "https://dentistry.ucla.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events search page HTML, no feed"
     },
     {
       "id": "nursing",
@@ -143,9 +145,9 @@
       "id": "arts",
       "name": "School of the Arts and Architecture",
       "kind": "school",
-      "url": "https://www.arts.ucla.edu",
-      "status": "unchecked",
-      "note": "site did not answer"
+      "url": "https://arts.ucla.edu",
+      "status": "no-feed",
+      "note": "site HTML, no event feed"
     },
     {
       "id": "cs",
@@ -191,7 +193,8 @@
       "kind": "department",
       "parent": "physci",
       "url": "https://www.math.ucla.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "My Calendar page and seminar pages HTML, no feed"
     },
     {
       "id": "statistics",
@@ -228,7 +231,8 @@
       "kind": "department",
       "parent": "lifesci",
       "url": "https://www.eeb.ucla.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "The Events Calendar API holds no upcoming events"
     },
     {
       "id": "mcdb",
@@ -236,7 +240,8 @@
       "kind": "department",
       "parent": "lifesci",
       "url": "https://www.mcdb.ucla.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "The Events Calendar API holds no upcoming events"
     },
     {
       "id": "psychology",
@@ -253,8 +258,8 @@
       "kind": "department",
       "parent": "socsci",
       "url": "https://economics.ucla.edu",
-      "status": "unchecked",
-      "note": "site did not answer"
+      "status": "no-feed",
+      "note": "Simple Calendar plugin renders a Google calendar server-side; id not exposed"
     },
     {
       "id": "polisci",
@@ -369,7 +374,8 @@
       "name": "DataX / Data Science initiative",
       "kind": "institute",
       "url": "https://datax.ucla.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events page HTML, no feed"
     },
     {
       "id": "jonsson",
@@ -377,7 +383,8 @@
       "kind": "center",
       "parent": "geffen",
       "url": "https://cancer.ucla.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "uclahealth.org events calendar HTML, no feed"
     },
     {
       "id": "uclahealth",
@@ -393,14 +400,16 @@
       "kind": "center",
       "parent": "anderson",
       "url": "https://www.anderson.ucla.edu/about/centers/price-center-for-entrepreneurship-and-innovation",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Anderson Drupal page HTML, no feed"
     },
     {
       "id": "cnsi",
       "name": "California NanoSystems Institute",
       "kind": "institute",
       "url": "https://cnsi.ucla.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "The Events Calendar API and ?ical=1 hold no upcoming events"
     },
     {
       "id": "usac",
@@ -447,14 +456,16 @@
       "name": "Fowler Museum",
       "kind": "museum",
       "url": "https://fowler.ucla.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Modern Events Calendar Lite, no feed exposed"
     },
     {
       "id": "cap",
       "name": "Center for the Art of Performance (CAP UCLA)",
       "kind": "other",
       "url": "https://cap.ucla.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "calendar page HTML, no feed"
     },
     {
       "id": "career",

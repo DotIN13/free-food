@@ -46,6 +46,66 @@
         "events": 47,
         "food": 0,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "bu",
+        "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=596&days=31",
+        "label": "History",
+        "institute": true,
+        "unit": "history",
+        "events": 1,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "bu",
+        "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=376&days=31",
+        "label": "School of Theology",
+        "institute": true,
+        "unit": "sth",
+        "events": 14,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "bu",
+        "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=484&days=31",
+        "label": "Sargent College of Health & Rehabilitation Sciences",
+        "institute": true,
+        "unit": "sargent",
+        "events": 3,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "bu",
+        "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=517&days=31",
+        "label": "Kilachand Honors College",
+        "institute": true,
+        "unit": "khc",
+        "events": 4,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "bu",
+        "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=470&days=31",
+        "label": "Political Science",
+        "institute": true,
+        "unit": "polisci",
+        "events": 17,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "bu",
+        "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=57&days=31",
+        "label": "College of Arts & Sciences",
+        "institute": true,
+        "unit": "cas",
+        "events": 35,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -71,6 +131,106 @@
         "eventPages": true,
         "events": 5,
         "note": "dates read from each event's page"
+      },
+      {
+        "type": "ical",
+        "url": "https://talks.cam.ac.uk/show/ics/9938/",
+        "label": "Statistical Laboratory",
+        "institute": true,
+        "unit": "statslab",
+        "events": 1,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://talks.cam.ac.uk/show/ics/15125/",
+        "label": "Department of Earth Sciences",
+        "institute": true,
+        "unit": "earth",
+        "events": 11,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://talks.cam.ac.uk/show/ics/34453/",
+        "label": "Department of Biochemistry",
+        "institute": true,
+        "unit": "biochem",
+        "events": 1,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://talks.cam.ac.uk/show/ics/5444/",
+        "label": "Department of Physics (Cavendish Laboratory)",
+        "institute": true,
+        "unit": "physics",
+        "events": 17,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://talks.cam.ac.uk/show/ics/188890/",
+        "label": "Institute of Astronomy",
+        "institute": true,
+        "unit": "astronomy",
+        "events": 22,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://talks.cam.ac.uk/show/ics/6140/",
+        "label": "Department of Physiology, Development and Neuroscience",
+        "institute": true,
+        "unit": "pdn",
+        "events": 2,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://talks.cam.ac.uk/show/ics/14596/",
+        "label": "Department of Applied Mathematics and Theoretical Physics",
+        "institute": true,
+        "unit": "damtp",
+        "events": 55,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://talks.cam.ac.uk/show/ics/182458/",
+        "label": "MRC Cognition and Brain Sciences Unit",
+        "institute": true,
+        "unit": "mrc-cbu",
+        "events": 3,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://www.trin.cam.ac.uk/wp-json/tribe/events/v1/events",
+        "label": "Trinity College",
+        "institute": true,
+        "unit": "trinity",
+        "events": 3,
+        "food": 2,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://www.chu.cam.ac.uk/wp-json/tribe/events/v1/events",
+        "label": "Churchill College",
+        "institute": true,
+        "unit": "churchill",
+        "events": 3,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -106,6 +266,76 @@
         "events": 22,
         "food": 5,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/Emory_Grad_School_Main.ics",
+        "label": "Laney Graduate School",
+        "institute": true,
+        "unit": "laney",
+        "events": 16,
+        "food": 5,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/emory-economics.ics",
+        "label": "Department of Economics",
+        "institute": true,
+        "unit": "economics",
+        "events": 18,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/emory-history-events.ics",
+        "label": "Department of History",
+        "institute": true,
+        "unit": "history",
+        "events": 7,
+        "food": 2,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/emory-chemistry.ics",
+        "label": "Department of Chemistry",
+        "institute": true,
+        "unit": "chemistry",
+        "events": 11,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/emory_nursing_events.ics",
+        "label": "Nell Hodgson Woodruff School of Nursing",
+        "institute": true,
+        "unit": "nursing",
+        "events": 10,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/arts-mix-in.ics",
+        "label": "Schwartz Center for Performing Arts",
+        "institute": true,
+        "unit": "schwartz",
+        "events": 42,
+        "food": 2,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://sustainability.emory.edu/wp-json/tribe/events/v1/events",
+        "label": "Emory Climate Talks / Office of Sustainability Initiatives",
+        "institute": true,
+        "unit": "climate",
+        "events": 70,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -136,6 +366,26 @@
         "events": 86,
         "food": 4,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://ai.cornell.edu/wp-json/tribe/events/v1/events",
+        "label": "Cornell AI initiative",
+        "institute": true,
+        "unit": "cis-ai",
+        "events": 5,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://eship.cornell.edu/wp-json/tribe/events/v1/events",
+        "label": "Entrepreneurship at Cornell",
+        "institute": true,
+        "unit": "entrepreneurship",
+        "events": 4,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -176,6 +426,62 @@
         "events": 15,
         "food": 0,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "livewhale",
+        "url": "https://events.college.harvard.edu/live/json/events/",
+        "label": "Harvard College",
+        "institute": true,
+        "unit": "college",
+        "events": 282,
+        "food": 21,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/ra0jlcdm907d6s45g63dm4914k%40group.calendar.google.com/public/basic.ics",
+        "label": "Department of Molecular and Cellular Biology",
+        "institute": true,
+        "unit": "mcb",
+        "events": 5,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://gocrimson.com/calendar.ashx/calendar.ics",
+        "label": "Harvard Athletics",
+        "institute": true,
+        "unit": "athletics",
+        "events": 64,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://events.seas.harvard.edu/calendar/1.ics",
+        "label": "John A. Paulson School of Engineering and Applied Sciences",
+        "institute": true,
+        "unit": "seas",
+        "events": 22,
+        "food": 3,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "json",
+        "url": "https://shorensteincenter.org/wp-json/wp/v2/event?per_page=50",
+        "fields": {
+          "title": "title.rendered",
+          "start": "acf.details.dates.0.start_date_and_time",
+          "url": "link",
+          "desc": "content.rendered"
+        },
+        "label": "Shorenstein Center on Media, Politics and Public Policy",
+        "institute": true,
+        "unit": "shorenstein",
+        "events": 6,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -211,6 +517,26 @@
         "events": 24,
         "food": 10,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://orbit.mit.edu/api/events/feed.ics",
+        "label": "Martin Trust Center for MIT Entrepreneurship",
+        "institute": true,
+        "unit": "trust",
+        "events": 35,
+        "food": 11,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://lit.mit.edu/wp-json/tribe/events/v1/events",
+        "label": "Literature",
+        "institute": true,
+        "unit": "literature",
+        "events": 5,
+        "food": 4,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -316,6 +642,26 @@
         "events": 2,
         "food": 0,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://energy.nd.edu/about/events.ics",
+        "label": "Notre Dame Energy",
+        "institute": true,
+        "unit": "ndenergy",
+        "events": 2,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://raclinmurphymuseum.nd.edu/visit/events.ics",
+        "label": "Raclin Murphy Museum of Art",
+        "institute": true,
+        "unit": "raclin-murphy",
+        "events": 9,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -331,6 +677,16 @@
         "events": 26,
         "food": 6,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://uofrathletics.com/calendar.ashx/calendar.ics",
+        "label": "Rochester Athletics (Yellowjackets)",
+        "institute": true,
+        "unit": "athletics",
+        "events": 33,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -356,6 +712,54 @@
         "events": 4,
         "food": 0,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "json",
+        "url": "https://ag.purdue.edu/events/_data/current-live.json",
+        "fields": {
+          "list": "events",
+          "title": "title",
+          "start": "startDate",
+          "end": "endDate",
+          "desc": "description",
+          "url": "url"
+        },
+        "label": "College of Agriculture",
+        "institute": true,
+        "unit": "ag",
+        "events": 53,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "rss",
+        "url": "https://hhs.purdue.edu/hhs-events/feed/",
+        "label": "College of Health and Human Sciences",
+        "institute": true,
+        "unit": "hhs",
+        "events": 6,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendar.lib.purdue.edu/ical_subscribe.php?src=p&cid=17492",
+        "label": "Purdue Libraries",
+        "institute": true,
+        "unit": "library",
+        "events": 16,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/gradschoolprodev%40gmail.com/public/basic.ics",
+        "label": "Graduate School",
+        "institute": true,
+        "unit": "grad",
+        "events": 1,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -371,6 +775,16 @@
         "events": 5,
         "food": 0,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://mathematical-research-institute.sydney.edu.au/wp-json/tribe/events/v1/events",
+        "label": "Sydney Mathematical Research Institute",
+        "institute": true,
+        "unit": "mri",
+        "events": 4,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -416,6 +830,36 @@
         "events": 21,
         "food": 10,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://philosophy.utoronto.ca/wp-json/tribe/events/v1/events",
+        "label": "Philosophy",
+        "institute": true,
+        "unit": "philosophy",
+        "events": 7,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://bme.utoronto.ca/wp-json/tribe/events/v1/events",
+        "label": "Institute of Biomedical Engineering",
+        "institute": true,
+        "unit": "ibbme",
+        "events": 13,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://varsityblues.ca/calendar.ashx/calendar.ics",
+        "label": "Varsity Blues Athletics",
+        "institute": true,
+        "unit": "athletics",
+        "events": 52,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -481,6 +925,36 @@
         "events": 7,
         "food": 3,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://libcal.uflib.ufl.edu/ical_subscribe.php?src=p&cid=22582",
+        "label": "George A. Smathers Libraries",
+        "institute": true,
+        "unit": "library",
+        "events": 14,
+        "food": 2,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://performingarts.ufl.edu/?ec3_ical",
+        "label": "UF Performing Arts",
+        "institute": true,
+        "unit": "pac",
+        "events": 9,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/ufmathematics%40gmail.com/public/basic.ics",
+        "label": "Department of Mathematics",
+        "institute": true,
+        "unit": "math",
+        "events": 7,
+        "food": 2,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -526,6 +1000,16 @@
         "events": 6,
         "food": 0,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://medicalpartnership.usg.edu/wp-json/tribe/events/v1/events",
+        "label": "AU/UGA Medical Partnership",
+        "institute": true,
+        "unit": "medical",
+        "events": 2,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -591,6 +1075,126 @@
         "events": 2,
         "food": 0,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/8303.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "College of Applied Health Sciences",
+        "institute": true,
+        "unit": "ahs",
+        "events": 10,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/5988.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Carle Illinois College of Medicine",
+        "institute": true,
+        "unit": "carle",
+        "events": 8,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/3695.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Graduate College",
+        "institute": true,
+        "unit": "grad",
+        "events": 4,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/169.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Department of Sociology",
+        "institute": true,
+        "unit": "sociology",
+        "events": 1,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/5259.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "School of Integrative Biology",
+        "institute": true,
+        "unit": "ib",
+        "events": 23,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/1439.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Department of Statistics",
+        "institute": true,
+        "unit": "stat",
+        "events": 2,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/6831.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Institute for Sustainability, Energy, and Environment (iSEE)",
+        "institute": true,
+        "unit": "iste",
+        "events": 3,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/4193.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Illinois International",
+        "institute": true,
+        "unit": "ciaa",
+        "events": 6,
+        "food": 3,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/5115.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Research Park / EnterpriseWorks",
+        "institute": true,
+        "unit": "research-park",
+        "events": 5,
+        "food": 2,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/6545.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Department of English",
+        "institute": true,
+        "unit": "english",
+        "events": 3,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/8645.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Illinois Student Government",
+        "institute": true,
+        "unit": "isg",
+        "events": 2,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/4092.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "University Library",
+        "institute": true,
+        "unit": "library",
+        "events": 36,
+        "food": 3,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -616,6 +1220,26 @@
         "events": 3,
         "food": 2,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/c_7f068c7d190a655e033f59e393632668718a5a1f5504649bfc015b8d444eefd6%40group.calendar.google.com/public/basic.ics",
+        "label": "Artificial Intelligence Interdisciplinary Institute at Maryland (AIM)",
+        "institute": true,
+        "unit": "aim",
+        "events": 2,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "rss",
+        "url": "https://essic.umd.edu/events/feed/",
+        "label": "Earth System Science Interdisciplinary Center",
+        "institute": true,
+        "unit": "essic",
+        "events": 3,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -656,6 +1280,36 @@
         "events": 9,
         "food": 0,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://www.cpc.unc.edu/wp-json/tribe/events/v1/events",
+        "label": "Carolina Population Center",
+        "institute": true,
+        "unit": "cpc",
+        "events": 2,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://moreheadplanetarium.org/wp-json/tribe/events/v1/events",
+        "label": "Morehead Planetarium and Science Center",
+        "institute": true,
+        "unit": "morehead",
+        "events": 22,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://careerhub.unc.edu/wp-json/tribe/events/v1/events",
+        "label": "University Career Services",
+        "institute": true,
+        "unit": "careers",
+        "events": 9,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -671,6 +1325,37 @@
         "events": 5,
         "food": 0,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://cal.lib.virginia.edu/ical_subscribe.php?src=p&cid=4299",
+        "label": "UVA Library",
+        "institute": true,
+        "unit": "library",
+        "events": 21,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "localist",
+        "url": "https://events.mcintire.virginia.edu",
+        "label": "McIntire School of Commerce",
+        "institute": true,
+        "unit": "mcintire",
+        "events": 39,
+        "food": 4,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "rss",
+        "url": "https://career.virginia.edu/events/feed/",
+        "eventPages": true,
+        "label": "Career Center",
+        "institute": true,
+        "unit": "career",
+        "events": 5,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -716,6 +1401,43 @@
         "eventPages": true,
         "events": 2,
         "note": "dates read from each event's page"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.physics.wisc.edu/events/ical.php",
+        "label": "Department of Physics",
+        "institute": true,
+        "unit": "physics",
+        "events": 27,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/8hf649mbr9puv5b7sqek8sg1e0%40group.calendar.google.com/public/basic.ics",
+        "label": "Department of Sociology",
+        "institute": true,
+        "unit": "sociology",
+        "events": 4,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "json",
+        "url": "https://lafollette.wisc.edu/wp-json/uw-events/v3/events",
+        "fields": {
+          "title": "title",
+          "start": "start_timestamp",
+          "end": "end_timestamp",
+          "url": "link",
+          "desc": "description"
+        },
+        "label": "La Follette School of Public Affairs",
+        "institute": true,
+        "unit": "lafollette",
+        "events": 3,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -866,6 +1588,96 @@
         "events": 3,
         "food": 0,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_education.ics",
+        "label": "College of Education",
+        "institute": true,
+        "unit": "education",
+        "events": 2,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/uwchem.ics",
+        "label": "Department of Chemistry",
+        "institute": true,
+        "unit": "chem",
+        "events": 6,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_bio.ics",
+        "label": "Department of Biology",
+        "institute": true,
+        "unit": "biology",
+        "events": 10,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_csde.ics",
+        "label": "Center for Studies in Demography and Ecology",
+        "institute": true,
+        "unit": "csde",
+        "events": 6,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://www.gpss.uw.edu/wp-json/tribe/events/v1/events",
+        "label": "Graduate and Professional Student Senate",
+        "institute": true,
+        "unit": "gpss",
+        "events": 5,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_engr-me.ics",
+        "label": "Mechanical Engineering",
+        "institute": true,
+        "unit": "me",
+        "events": 12,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_hist.ics",
+        "label": "Department of History",
+        "institute": true,
+        "unit": "history",
+        "events": 4,
+        "food": 2,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_engl.ics",
+        "label": "Department of English",
+        "institute": true,
+        "unit": "english",
+        "events": 3,
+        "food": 2,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_grad.ics",
+        "label": "Graduate School",
+        "institute": true,
+        "unit": "grad",
+        "events": 32,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -881,6 +1693,16 @@
         "events": 3,
         "food": 0,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "localist",
+        "url": "https://events.law.usc.edu",
+        "label": "USC Gould School of Law",
+        "institute": true,
+        "unit": "gould",
+        "events": 35,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -1056,6 +1878,36 @@
         "events": 11,
         "food": 1,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://sds.washu.edu/calendar.ics",
+        "label": "Department of Statistics and Data Science",
+        "institute": true,
+        "unit": "statistics",
+        "events": 5,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://ctl.wustl.edu/wp-json/tribe/events/v1/events",
+        "label": "Center for Teaching and Learning",
+        "institute": true,
+        "unit": "ctl",
+        "events": 3,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://wc.washu.edu/calendar.ics",
+        "label": "Weidenbaum Center on the Economy, Government, and Public Policy",
+        "institute": true,
+        "unit": "publicpolicy",
+        "events": 1,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -1130,6 +1982,36 @@
         "unit": "umag",
         "events": 3,
         "note": "dates read from each event's page"
+      },
+      {
+        "type": "tribe",
+        "url": "https://tec.hku.hk/wp-json/tribe/events/v1/events",
+        "label": "HKU Techno-Entrepreneurship Core (TEC, formerly iDendron)",
+        "institute": true,
+        "unit": "hkuie",
+        "events": 2,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://ihss.hku.hk/wp-json/tribe/events/v1/events",
+        "label": "Hong Kong Institute for the Humanities and Social Sciences",
+        "institute": true,
+        "unit": "hkihss",
+        "events": 5,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://www.arch.hku.hk/wp-json/tribe/events/v1/events",
+        "label": "Faculty of Architecture",
+        "institute": true,
+        "unit": "arch",
+        "events": 12,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
       }
     ]
   },
@@ -1168,6 +2050,589 @@
         "eventPages": true,
         "events": 1,
         "note": "dates read from each event's page"
+      },
+      {
+        "type": "rss",
+        "url": "https://www.law.ox.ac.uk/events/feed",
+        "eventPages": true,
+        "label": "Faculty of Law",
+        "institute": true,
+        "unit": "law",
+        "events": 35,
+        "food": 13,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "cwru",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/biologycalendar%40case.edu/public/basic.ics",
+        "label": "Department of Biology",
+        "institute": true,
+        "unit": "biology",
+        "events": 2,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/ia8f1e1c2h9tjj1c7fc7jpkea8%40group.calendar.google.com/public/basic.ics",
+        "label": "Department of Chemistry",
+        "institute": true,
+        "unit": "chemistry",
+        "events": 2,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/case.edu_5pqnv99ph0gh9bpfkcbir4cruk%40group.calendar.google.com/public/basic.ics",
+        "label": "Department of Mathematics, Applied Mathematics and Statistics",
+        "institute": true,
+        "unit": "math",
+        "events": 3,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "columbia",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://entrepreneurship.columbia.edu/wp-json/tribe/events/v1/events",
+        "label": "Columbia Entrepreneurship",
+        "institute": true,
+        "unit": "entrepreneurship",
+        "events": 3,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "dartmouth",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://dartmouthsports.com/calendar.ashx/calendar.ics",
+        "label": "Dartmouth Athletics",
+        "institute": true,
+        "unit": "athletics",
+        "events": 35,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "georgetown",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://guhoyas.com/calendar.ashx/calendar.ics",
+        "label": "Georgetown Hoyas Athletics",
+        "institute": true,
+        "unit": "athletics",
+        "events": 27,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.qatar.georgetown.edu/events/?ical=1",
+        "label": "Georgetown University in Qatar",
+        "institute": true,
+        "unit": "qatar",
+        "events": 2,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "jhu",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://hopkinssports.com/calendar.ashx/calendar.ics",
+        "label": "Johns Hopkins Athletics",
+        "institute": true,
+        "unit": "athletics",
+        "events": 33,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "lehigh",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://lehighsports.com/calendar.ashx/calendar.ics",
+        "label": "Lehigh Mountain Hawks Athletics",
+        "institute": true,
+        "unit": "athletics",
+        "events": 30,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "mcgill",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://mcgill-cdsi.libcal.com/ical_subscribe.php?src=p&cid=8167",
+        "label": "Computational and Data Systems Initiative",
+        "institute": true,
+        "unit": "cdsi",
+        "events": 6,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://mcgillathletics.ca/calendar.ashx/calendar.ics",
+        "label": "McGill Athletics and Recreation",
+        "institute": true,
+        "unit": "athletics",
+        "events": 31,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "nyu",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://isaw.nyu.edu/events/icalendar",
+        "label": "Institute for the Study of the Ancient World",
+        "institute": true,
+        "unit": "isaw",
+        "events": 2,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://nyu.libcal.com/ical_subscribe.php?src=p&cid=1564",
+        "label": "NYU Libraries",
+        "institute": true,
+        "unit": "library",
+        "events": 24,
+        "food": 3,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "livewhale",
+        "url": "https://events.shanghai.nyu.edu/live/json/events/",
+        "label": "NYU Shanghai",
+        "institute": true,
+        "unit": "shanghai",
+        "events": 47,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "rice",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://api.lu.ma/ics/get?entity=calendar&id=cal-FuzJHUEh2u5M3AW",
+        "label": "Rice Business Lab / Liu Idea Lab for Innovation and Entrepreneurship (Lilie)",
+        "institute": true,
+        "unit": "rbl",
+        "events": 1,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "rss",
+        "url": "https://moody.rice.edu/rss.xml",
+        "label": "Moody Center for the Arts",
+        "institute": true,
+        "unit": "moody",
+        "events": 2,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/rice.edu_h01fntiq1d747tsf0skcg0ni60%40group.calendar.google.com/public/basic.ics",
+        "label": "Mathematics",
+        "institute": true,
+        "unit": "math",
+        "events": 18,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "rutgers",
+    "sources": [
+      {
+        "type": "json",
+        "url": "https://socialwork.rutgers.edu/jsonapi/node/event?page%5Blimit%5D=50&sort=-field_event_datetime_range.value",
+        "fields": {
+          "list": "data",
+          "title": "attributes.title",
+          "start": "attributes.field_event_datetime_range.value",
+          "end": "attributes.field_event_datetime_range.end_value",
+          "location": "attributes.field_location_plain",
+          "desc": "attributes.field_rich_text.value",
+          "url": "attributes.path.alias"
+        },
+        "label": "School of Social Work",
+        "institute": true,
+        "unit": "ssw",
+        "events": 9,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "json",
+        "url": "https://gsapp.rutgers.edu/jsonapi/node/event?page%5Blimit%5D=50&sort=-field_event_datetime_range.value",
+        "fields": {
+          "list": "data",
+          "title": "attributes.title",
+          "start": "attributes.field_event_datetime_range.value",
+          "end": "attributes.field_event_datetime_range.end_value",
+          "location": "attributes.field_location_plain",
+          "desc": "attributes.field_rich_text.value",
+          "url": "attributes.path.alias"
+        },
+        "label": "Graduate School of Applied and Professional Psychology",
+        "institute": true,
+        "unit": "gsapp",
+        "events": 10,
+        "food": 2,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://libcal.rutgers.edu/ical_subscribe.php?src=p&cid=13045",
+        "label": "Rutgers University Libraries",
+        "institute": true,
+        "unit": "library",
+        "events": 24,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://scarletknights.com/calendar.ashx/calendar.ics",
+        "label": "Rutgers Athletics",
+        "institute": true,
+        "unit": "athletics",
+        "events": 30,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "princeton",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://environment.princeton.edu/wp-json/tribe/events/v1/events",
+        "label": "High Meadows Environmental Institute",
+        "institute": true,
+        "unit": "hmei",
+        "events": 2,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "stanford",
+    "sources": [
+      {
+        "type": "json",
+        "url": "https://biology.stanford.edu/jsonapi/node/hs_event?sort=-field_hs_event_date.value&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path",
+        "fields": {
+          "list": "data",
+          "title": "attributes.title",
+          "start": "attributes.field_hs_event_date.value",
+          "end": "attributes.field_hs_event_date.end_value",
+          "location": "attributes.field_hs_event_location",
+          "desc": "attributes.body.value",
+          "url": "attributes.path.alias"
+        },
+        "label": "Biology",
+        "institute": true,
+        "unit": "biology",
+        "events": 4,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "tufts",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/gsbs.ics",
+        "label": "Graduate School of Biomedical Sciences",
+        "institute": true,
+        "unit": "gsbs",
+        "events": 11,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/smfa.ics",
+        "label": "School of the Museum of Fine Arts (SMFA)",
+        "institute": true,
+        "unit": "smfa",
+        "events": 6,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/soe-ece.ics",
+        "label": "Department of Electrical and Computer Engineering",
+        "institute": true,
+        "unit": "ece",
+        "events": 7,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/soe-me.ics",
+        "label": "Department of Mechanical Engineering",
+        "institute": true,
+        "unit": "me",
+        "events": 7,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/soe-bme.ics",
+        "label": "Department of Biomedical Engineering",
+        "institute": true,
+        "unit": "bme",
+        "events": 9,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/tts-wms-managed-physics.ics",
+        "label": "Department of Physics and Astronomy",
+        "institute": true,
+        "unit": "physics",
+        "events": 4,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/tts-wms-managed-economics.ics",
+        "label": "Department of Economics",
+        "institute": true,
+        "unit": "economics",
+        "events": 3,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/tts-wms-managed-chemistry.ics",
+        "label": "Department of Chemistry",
+        "institute": true,
+        "unit": "chemistry",
+        "events": 1,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://derbyecenter.tufts.edu/wp-json/tribe/events/v1/events",
+        "label": "Derby Entrepreneurship Center",
+        "institute": true,
+        "unit": "derby",
+        "events": 7,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://tufts.libcal.com/ical_subscribe.php?src=p&cid=3142",
+        "label": "Tisch Library",
+        "institute": true,
+        "unit": "library",
+        "events": 5,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/tts-wms-managed-english.ics",
+        "label": "Department of English",
+        "institute": true,
+        "unit": "english",
+        "events": 3,
+        "food": 3,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "ucsb",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/ucsb.edu_bb8u4lq16gtcndkikgv9nt0he0%40group.calendar.google.com/public/basic.ics",
+        "label": "Molecular, Cellular, and Developmental Biology",
+        "institute": true,
+        "unit": "mcdb",
+        "events": 4,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://ucsbgauchos.com/calendar.ashx/calendar.ics",
+        "label": "UCSB Gauchos Athletics",
+        "institute": true,
+        "unit": "athletics",
+        "events": 28,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "ucsd",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/pharmacy-site%40ucsd.edu/public/basic.ics",
+        "label": "Skaggs School of Pharmacy and Pharmaceutical Sciences",
+        "institute": true,
+        "unit": "pharmacy",
+        "events": 2,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "tum",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/cgbb309dpe9jqha4evpm9te7lo%40group.calendar.google.com/public/basic.ics",
+        "label": "Munich Center for Machine Learning (MCML)",
+        "institute": true,
+        "unit": "mcml",
+        "events": 4,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://api.srv.nat.tum.de/api/v1/course/events/ical?catalog_tag=colloquia_nat&language=de&show_empty=false&include_description=true&include_html=false&limit=50&offset=0",
+        "label": "TUM School of Natural Sciences",
+        "institute": true,
+        "unit": "nat",
+        "events": 11,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "uchicago",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://smartmuseum.uchicago.edu/?mec-ical-feed=1",
+        "label": "Smart Museum of Art",
+        "institute": true,
+        "unit": "smart",
+        "events": 5,
+        "food": 1,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "upenn",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://pennathletics.com/calendar.ashx/calendar.ics",
+        "label": "Penn Athletics",
+        "institute": true,
+        "unit": "athletics",
+        "events": 46,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "ucdavis",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://are.ucdavis.edu/department/seminars/ical/all.ics",
+        "label": "Agricultural and Resource Economics",
+        "institute": true,
+        "unit": "ag-econ",
+        "events": 7,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "utokyo",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://www.careersupport.adm.u-tokyo.ac.jp/wp-json/tribe/events/v1/events",
+        "label": "Career Support Office",
+        "institute": true,
+        "unit": "career",
+        "events": 7,
+        "food": 0,
+        "note": "found in the units sweep, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "fudan",
+    "sources": [
+      {
+        "type": "rss",
+        "url": "https://math.fudan.edu.cn/_wp3services/rssoffer?siteId=629&columnId=30472",
+        "eventPages": true,
+        "label": "数学科学学院 (School of Mathematical Sciences)",
+        "institute": true,
+        "unit": "math",
+        "events": 6,
+        "note": "lecture column; dates from each talk's page (报告日期)"
       }
     ]
   }

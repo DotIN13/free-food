@@ -1,57 +1,404 @@
 {
   "id": "vanderbilt",
   "name": "Vanderbilt University",
-  "wide": ["https://events.vanderbilt.edu/live/json/events/max/500", "https://vanderbilt.campuslabs.com/engage"],
+  "wide": [
+    "https://events.vanderbilt.edu/live/json/events/max/500",
+    "https://vanderbilt.campuslabs.com/engage"
+  ],
   "units": [
-    { "id": "as", "name": "College of Arts and Science", "kind": "school", "url": "https://as.vanderbilt.edu", "status": "in-wide", "note": "department event pages embed Events@Vanderbilt (LiveWhale)" },
-    { "id": "blair", "name": "Blair School of Music", "kind": "school", "url": "https://blair.vanderbilt.edu", "status": "in-wide", "note": "events page embeds Events@Vanderbilt" },
-    { "id": "computing", "name": "College of Connected Computing", "kind": "school", "url": "https://www.vanderbilt.edu/connected-computing", "status": "unchecked" },
-    { "id": "divinity", "name": "Divinity School", "kind": "school", "url": "https://divinity.vanderbilt.edu", "status": "no-feed", "note": "events page is HTML (admissions events)" },
-    { "id": "engineering", "name": "School of Engineering", "kind": "school", "url": "https://engineering.vanderbilt.edu", "status": "in-wide", "note": "its Events@Vanderbilt group is almost all on the main feed" },
-    { "id": "gradschool", "name": "Graduate School", "kind": "school", "url": "https://gradschool.vanderbilt.edu", "status": "in-wide", "note": "events page embeds Events@Vanderbilt" },
-    { "id": "law", "name": "Vanderbilt Law School", "kind": "school", "url": "https://law.vanderbilt.edu", "status": "in-wide", "note": "its Events@Vanderbilt group is almost all on the main feed" },
-    { "id": "medicine", "name": "School of Medicine", "kind": "school", "url": "https://medschool.vanderbilt.edu", "status": "no-feed", "note": "medschool and VUMC sites have no events feed" },
-    { "id": "nursing", "name": "School of Nursing", "kind": "school", "url": "https://nursing.vanderbilt.edu", "status": "in-wide", "note": "upcoming events page embeds Events@Vanderbilt" },
-    { "id": "owen", "name": "Owen Graduate School of Management", "kind": "school", "url": "https://business.vanderbilt.edu", "feeds": ["https://events.vanderbilt.edu/live/json/events/group/Owen/max/100"], "status": "feed" },
-    { "id": "peabody", "name": "Peabody College of Education and Human Development", "kind": "school", "url": "https://peabody.vanderbilt.edu", "status": "in-wide", "note": "site embeds Events@Vanderbilt" },
-
-    { "id": "cs", "name": "Computer Science", "kind": "department", "parent": "engineering", "url": "https://engineering.vanderbilt.edu/eecs", "status": "unchecked" },
-    { "id": "ece", "name": "Electrical and Computer Engineering", "kind": "department", "parent": "engineering", "url": "https://engineering.vanderbilt.edu/eecs", "status": "unchecked" },
-    { "id": "me", "name": "Mechanical Engineering", "kind": "department", "parent": "engineering", "url": "https://engineering.vanderbilt.edu/me", "status": "unchecked" },
-    { "id": "bme", "name": "Biomedical Engineering", "kind": "department", "parent": "engineering", "url": "https://engineering.vanderbilt.edu/bme", "status": "unchecked" },
-    { "id": "math", "name": "Mathematics", "kind": "department", "parent": "as", "url": "https://as.vanderbilt.edu/math", "status": "unchecked" },
-    { "id": "physics", "name": "Physics and Astronomy", "kind": "department", "parent": "as", "url": "https://as.vanderbilt.edu/physics", "status": "unchecked" },
-    { "id": "chemistry", "name": "Chemistry", "kind": "department", "parent": "as", "url": "https://as.vanderbilt.edu/chemistry", "status": "in-wide", "note": "site embeds Events@Vanderbilt" },
-    { "id": "biology", "name": "Biological Sciences", "kind": "department", "parent": "as", "url": "https://as.vanderbilt.edu/biosci", "status": "unchecked" },
-    { "id": "economics", "name": "Economics", "kind": "department", "parent": "as", "url": "https://as.vanderbilt.edu/economics", "status": "unchecked" },
-    { "id": "psychology", "name": "Psychology", "kind": "department", "parent": "as", "url": "https://www.vanderbilt.edu/psychological_sciences", "status": "blocked", "note": "403 to the bot" },
-    { "id": "polisci", "name": "Political Science", "kind": "department", "parent": "as", "url": "https://as.vanderbilt.edu/political-science", "status": "unchecked" },
-    { "id": "history", "name": "History", "kind": "department", "parent": "as", "url": "https://as.vanderbilt.edu/history", "status": "unchecked" },
-    { "id": "english", "name": "English", "kind": "department", "parent": "as", "url": "https://as.vanderbilt.edu/english", "status": "in-wide", "note": "events page embeds Events@Vanderbilt" },
-    { "id": "philosophy", "name": "Philosophy", "kind": "department", "parent": "as", "url": "https://as.vanderbilt.edu/philosophy", "status": "unchecked" },
-    { "id": "sociology", "name": "Sociology", "kind": "department", "parent": "as", "url": "https://as.vanderbilt.edu/sociology", "status": "unchecked" },
-    { "id": "biostat", "name": "Biostatistics", "kind": "department", "parent": "medicine", "url": "https://www.vumc.org/biostatistics", "status": "unchecked" },
-
-    { "id": "rpw", "name": "Robert Penn Warren Center for the Humanities", "kind": "center", "parent": "as", "url": "https://www.vanderbilt.edu/rpw_center", "feeds": ["https://events.vanderbilt.edu/live/json/events/group/Robert%20Penn%20Warren%20Center%20for%20the%20Humanities/max/100"], "status": "feed" },
-    { "id": "dsi", "name": "Data Science Institute", "kind": "institute", "url": "https://www.vanderbilt.edu/datascience", "status": "unchecked" },
-    { "id": "vise", "name": "Vanderbilt Institute for Surgery and Engineering", "kind": "institute", "parent": "engineering", "url": "https://www.vanderbilt.edu/vise", "status": "unchecked" },
-    { "id": "isis", "name": "Institute for Software Integrated Systems", "kind": "institute", "parent": "engineering", "url": "https://www.isis.vanderbilt.edu", "status": "unchecked" },
-    { "id": "wondry", "name": "Wond'ry Innovation Center", "kind": "center", "url": "https://wondry.vanderbilt.edu", "status": "unchecked", "note": "fetch failed" },
-    { "id": "csdi", "name": "Center for the Study of Democratic Institutions", "kind": "center", "url": "https://www.vanderbilt.edu/csdi", "status": "in-wide", "note": "events page links to Events@Vanderbilt" },
-    { "id": "vipp", "name": "Vanderbilt Policy Accelerator", "kind": "center", "url": "https://www.vanderbilt.edu/vpa", "status": "unchecked" },
-    { "id": "clacs", "name": "Center for Latin American, Caribbean, and Latinx Studies", "kind": "center", "parent": "as", "url": "https://as.vanderbilt.edu/clacx", "status": "unchecked" },
-    { "id": "mechanobiology", "name": "Center for Mechanobiology", "kind": "center", "parent": "engineering", "url": "https://engineering.vanderbilt.edu/research/centers-institutes/mechanobiology", "status": "in-wide", "note": "events page links Events@Vanderbilt" },
-    { "id": "brain", "name": "Vanderbilt Brain Institute", "kind": "institute", "url": "https://www.vanderbilt.edu/brain-institute", "status": "unchecked" },
-    { "id": "provost", "name": "Office of the Provost", "kind": "other", "url": "https://www.vanderbilt.edu/provost", "status": "in-wide", "note": "its Events@Vanderbilt group is almost all on the main feed" },
-    { "id": "bret", "name": "Biomedical Research Education and Training (BRET)", "kind": "other", "parent": "medicine", "url": "https://medschool.vanderbilt.edu/bret", "status": "in-wide", "note": "its Events@Vanderbilt group is almost all on the main feed" },
-
-    { "id": "vsg", "name": "Vanderbilt Student Government", "kind": "student", "url": "https://vsg.vanderbilt.edu", "status": "in-wide", "note": "student-org events are on Anchor Link (Engage)" },
-    { "id": "gsc", "name": "Graduate Student Council", "kind": "student", "url": "https://gradschool.vanderbilt.edu/gsc", "status": "in-wide", "note": "posts events on Anchor Link (Engage)" },
-    { "id": "ccollege", "name": "Residential Colleges (The Commons)", "kind": "student", "url": "https://www.vanderbilt.edu/residentialexperience", "status": "unchecked" },
-
-    { "id": "library", "name": "Jean and Alexander Heard Libraries", "kind": "library", "url": "https://www.library.vanderbilt.edu", "status": "unchecked" },
-    { "id": "fine-arts-gallery", "name": "Vanderbilt University Fine Arts Gallery", "kind": "museum", "url": "https://www.vanderbilt.edu/gallery", "status": "unchecked" },
-    { "id": "career", "name": "Career Center", "kind": "other", "url": "https://www.vanderbilt.edu/career", "status": "unchecked" },
-    { "id": "athletics", "name": "Vanderbilt Athletics", "kind": "other", "url": "https://vucommodores.com", "status": "unchecked" }
+    {
+      "id": "as",
+      "name": "College of Arts and Science",
+      "kind": "school",
+      "url": "https://as.vanderbilt.edu",
+      "status": "in-wide",
+      "note": "department event pages embed Events@Vanderbilt (LiveWhale)"
+    },
+    {
+      "id": "blair",
+      "name": "Blair School of Music",
+      "kind": "school",
+      "url": "https://blair.vanderbilt.edu",
+      "status": "in-wide",
+      "note": "events page embeds Events@Vanderbilt"
+    },
+    {
+      "id": "computing",
+      "name": "College of Connected Computing",
+      "kind": "school",
+      "url": "https://computing.vanderbilt.edu",
+      "status": "no-feed",
+      "note": "new college site has no events listing or feed (only an admitted-students events page)"
+    },
+    {
+      "id": "divinity",
+      "name": "Divinity School",
+      "kind": "school",
+      "url": "https://divinity.vanderbilt.edu",
+      "status": "no-feed",
+      "note": "events page is HTML (admissions events)"
+    },
+    {
+      "id": "engineering",
+      "name": "School of Engineering",
+      "kind": "school",
+      "url": "https://engineering.vanderbilt.edu",
+      "status": "in-wide",
+      "note": "its Events@Vanderbilt group is almost all on the main feed"
+    },
+    {
+      "id": "gradschool",
+      "name": "Graduate School",
+      "kind": "school",
+      "url": "https://gradschool.vanderbilt.edu",
+      "status": "in-wide",
+      "note": "events page embeds Events@Vanderbilt"
+    },
+    {
+      "id": "law",
+      "name": "Vanderbilt Law School",
+      "kind": "school",
+      "url": "https://law.vanderbilt.edu",
+      "status": "in-wide",
+      "note": "its Events@Vanderbilt group is almost all on the main feed"
+    },
+    {
+      "id": "medicine",
+      "name": "School of Medicine",
+      "kind": "school",
+      "url": "https://medschool.vanderbilt.edu",
+      "status": "no-feed",
+      "note": "medschool and VUMC sites have no events feed"
+    },
+    {
+      "id": "nursing",
+      "name": "School of Nursing",
+      "kind": "school",
+      "url": "https://nursing.vanderbilt.edu",
+      "status": "in-wide",
+      "note": "upcoming events page embeds Events@Vanderbilt"
+    },
+    {
+      "id": "owen",
+      "name": "Owen Graduate School of Management",
+      "kind": "school",
+      "url": "https://business.vanderbilt.edu",
+      "feeds": [
+        "https://events.vanderbilt.edu/live/json/events/group/Owen/max/100"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "peabody",
+      "name": "Peabody College of Education and Human Development",
+      "kind": "school",
+      "url": "https://peabody.vanderbilt.edu",
+      "status": "in-wide",
+      "note": "site embeds Events@Vanderbilt"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.vanderbilt.edu/departments/computer-science/",
+      "status": "in-wide",
+      "note": "School of Engineering events are posted to events.vanderbilt.edu (Engineering group); department page has no feed"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.vanderbilt.edu/departments/electrical-computer-engineering/",
+      "status": "in-wide",
+      "note": "School of Engineering events are posted to events.vanderbilt.edu (Engineering group); department page has no feed"
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.vanderbilt.edu/departments/mechanical-engineering/",
+      "status": "in-wide",
+      "note": "School of Engineering events are posted to events.vanderbilt.edu (Engineering group); department page has no feed"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.vanderbilt.edu/departments/biomedical-engineering/",
+      "status": "in-wide",
+      "note": "School of Engineering events are posted to events.vanderbilt.edu (Engineering group); department page has no feed"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://as.vanderbilt.edu/math/",
+      "status": "no-feed",
+      "note": "events page is a WordPress list of HTML posts"
+    },
+    {
+      "id": "physics",
+      "name": "Physics and Astronomy",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://as.vanderbilt.edu/physics-astronomy/",
+      "status": "no-feed",
+      "note": "no events listing of its own; links to the A&S events page (HTML)"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://as.vanderbilt.edu/chemistry",
+      "status": "in-wide",
+      "note": "site embeds Events@Vanderbilt"
+    },
+    {
+      "id": "biology",
+      "name": "Biological Sciences",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://as.vanderbilt.edu/biological-sciences/",
+      "status": "no-feed",
+      "note": "no events listing or feed on the department site"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://as.vanderbilt.edu/economics",
+      "status": "no-feed",
+      "note": "events page is empty ('will be populated by a feed'); seminars as HTML"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://www.vanderbilt.edu/psychological_sciences",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://as.vanderbilt.edu/political-science",
+      "status": "no-feed",
+      "note": "WordPress events page, HTML only"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://as.vanderbilt.edu/history",
+      "status": "no-feed",
+      "note": "events page embeds a Google Calendar (no public .ics link found) and HTML posts"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://as.vanderbilt.edu/english",
+      "status": "in-wide",
+      "note": "events page embeds Events@Vanderbilt"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://as.vanderbilt.edu/philosophy",
+      "status": "no-feed",
+      "note": "colloquium page is HTML only"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://as.vanderbilt.edu/sociology",
+      "status": "no-feed",
+      "note": "WordPress events page, HTML only"
+    },
+    {
+      "id": "biostat",
+      "name": "Biostatistics",
+      "kind": "department",
+      "parent": "medicine",
+      "url": "https://www.vumc.org/biostatistics",
+      "status": "no-feed",
+      "note": "VUMC Drupal site, no events page or feed"
+    },
+    {
+      "id": "rpw",
+      "name": "Robert Penn Warren Center for the Humanities",
+      "kind": "center",
+      "parent": "as",
+      "url": "https://www.vanderbilt.edu/rpw_center",
+      "feeds": [
+        "https://events.vanderbilt.edu/live/json/events/group/Robert%20Penn%20Warren%20Center%20for%20the%20Humanities/max/100"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "dsi",
+      "name": "Data Science Institute",
+      "kind": "institute",
+      "url": "https://www.vanderbilt.edu/datascience",
+      "status": "no-feed",
+      "note": "resources & events page is HTML only"
+    },
+    {
+      "id": "vise",
+      "name": "Vanderbilt Institute for Surgery and Engineering",
+      "kind": "institute",
+      "parent": "engineering",
+      "url": "https://www.vanderbilt.edu/vise",
+      "status": "no-feed",
+      "note": "no events page or feed"
+    },
+    {
+      "id": "isis",
+      "name": "Institute for Software Integrated Systems",
+      "kind": "institute",
+      "parent": "engineering",
+      "url": "https://www.isis.vanderbilt.edu",
+      "status": "blocked",
+      "note": "redirects to www.icons.vanderbilt.edu, which does not answer"
+    },
+    {
+      "id": "wondry",
+      "name": "Wond'ry Innovation Center",
+      "kind": "center",
+      "url": "https://wondry.vanderbilt.edu",
+      "status": "blocked",
+      "note": "site does not answer (timed out twice)"
+    },
+    {
+      "id": "csdi",
+      "name": "Center for the Study of Democratic Institutions",
+      "kind": "center",
+      "url": "https://www.vanderbilt.edu/csdi",
+      "status": "in-wide",
+      "note": "events page links to Events@Vanderbilt"
+    },
+    {
+      "id": "vipp",
+      "name": "Vanderbilt Policy Accelerator",
+      "kind": "center",
+      "url": "https://www.vanderbilt.edu/policy-accelerator/",
+      "status": "no-feed",
+      "note": "no site found: /vpa is the Postdoctoral Association, /policy-accelerator is 404"
+    },
+    {
+      "id": "clacs",
+      "name": "Center for Latin American, Caribbean, and Latinx Studies",
+      "kind": "center",
+      "parent": "as",
+      "url": "https://as.vanderbilt.edu/clacx",
+      "status": "in-wide",
+      "note": "events page embeds events.vanderbilt.edu (tag clacx)"
+    },
+    {
+      "id": "mechanobiology",
+      "name": "Center for Mechanobiology",
+      "kind": "center",
+      "parent": "engineering",
+      "url": "https://engineering.vanderbilt.edu/research/centers-institutes/mechanobiology",
+      "status": "in-wide",
+      "note": "events page links Events@Vanderbilt"
+    },
+    {
+      "id": "brain",
+      "name": "Vanderbilt Brain Institute",
+      "kind": "institute",
+      "url": "https://medschool.vanderbilt.edu/brain-institute/",
+      "status": "in-wide",
+      "note": "events page embeds a LiveWhale widget from events.vanderbilt.edu"
+    },
+    {
+      "id": "provost",
+      "name": "Office of the Provost",
+      "kind": "other",
+      "url": "https://www.vanderbilt.edu/provost",
+      "status": "in-wide",
+      "note": "its Events@Vanderbilt group is almost all on the main feed"
+    },
+    {
+      "id": "bret",
+      "name": "Biomedical Research Education and Training (BRET)",
+      "kind": "other",
+      "parent": "medicine",
+      "url": "https://medschool.vanderbilt.edu/bret",
+      "status": "in-wide",
+      "note": "its Events@Vanderbilt group is almost all on the main feed"
+    },
+    {
+      "id": "vsg",
+      "name": "Vanderbilt Student Government",
+      "kind": "student",
+      "url": "https://vsg.vanderbilt.edu",
+      "status": "in-wide",
+      "note": "student-org events are on Anchor Link (Engage)"
+    },
+    {
+      "id": "gsc",
+      "name": "Graduate Student Council",
+      "kind": "student",
+      "url": "https://gradschool.vanderbilt.edu/gsc",
+      "status": "in-wide",
+      "note": "posts events on Anchor Link (Engage)"
+    },
+    {
+      "id": "ccollege",
+      "name": "Residential Colleges (The Commons)",
+      "kind": "student",
+      "url": "https://www.vanderbilt.edu/residentialcolleges/",
+      "status": "in-wide",
+      "note": "no events page; residential college events (Ingram Commons, Moore College) appear on events.vanderbilt.edu"
+    },
+    {
+      "id": "library",
+      "name": "Jean and Alexander Heard Libraries",
+      "kind": "library",
+      "url": "https://www.library.vanderbilt.edu",
+      "status": "in-wide",
+      "note": "links to events.vanderbilt.edu tag 'library'"
+    },
+    {
+      "id": "fine-arts-gallery",
+      "name": "Vanderbilt University Fine Arts Gallery",
+      "kind": "museum",
+      "url": "https://www.vanderbilt.edu/art-museum/",
+      "status": "no-feed",
+      "note": "now the Museum of Art; no events page or feed (links to the main calendar)"
+    },
+    {
+      "id": "career",
+      "name": "Career Center",
+      "kind": "other",
+      "url": "https://www.vanderbilt.edu/career",
+      "status": "no-feed",
+      "note": "events are on Handshake (login)"
+    },
+    {
+      "id": "athletics",
+      "name": "Vanderbilt Athletics",
+      "kind": "other",
+      "url": "https://vucommodores.com",
+      "status": "no-feed",
+      "note": "Sidearm athletics site; schedules as HTML, not campus events"
+    }
   ]
 }

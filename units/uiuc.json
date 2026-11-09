@@ -20,8 +20,8 @@
       "name": "College of Liberal Arts & Sciences",
       "kind": "school",
       "url": "https://las.illinois.edu",
-      "status": "unchecked",
-      "note": "departments run their own Webtools calendars"
+      "status": "no-feed",
+      "note": "no college calendar; departments run their own Webtools calendars"
     },
     {
       "id": "gies",
@@ -70,8 +70,10 @@
       "name": "College of Applied Health Sciences",
       "kind": "school",
       "url": "https://ahs.illinois.edu",
-      "status": "unchecked",
-      "note": "site references Webtools calendars 8303 and 1387"
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/8303.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
     },
     {
       "id": "ischool",
@@ -86,7 +88,8 @@
       "name": "College of Law",
       "kind": "school",
       "url": "https://law.illinois.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "calendar on pages.law.illinois.edu is HTML, no feed"
     },
     {
       "id": "socialwork",
@@ -103,8 +106,10 @@
       "name": "Carle Illinois College of Medicine",
       "kind": "school",
       "url": "https://medicine.illinois.edu",
-      "status": "unchecked",
-      "note": "timed out"
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/5988.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
     },
     {
       "id": "vetmed",
@@ -121,7 +126,10 @@
       "name": "Graduate College",
       "kind": "school",
       "url": "https://grad.illinois.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/3695.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
     },
     {
       "id": "siebel",
@@ -189,7 +197,10 @@
       "kind": "department",
       "parent": "las",
       "url": "https://stat.illinois.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/1439.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
     },
     {
       "id": "chemistry",
@@ -219,7 +230,10 @@
       "kind": "department",
       "parent": "las",
       "url": "https://sib.illinois.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/5259.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
     },
     {
       "id": "economics",
@@ -238,7 +252,8 @@
       "kind": "department",
       "parent": "las",
       "url": "https://psychology.illinois.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Webtools calendar 6421 has nothing upcoming"
     },
     {
       "id": "polisci",
@@ -246,7 +261,8 @@
       "kind": "department",
       "parent": "las",
       "url": "https://pol.illinois.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "department calendar is behind a Microsoft login; no public feed"
     },
     {
       "id": "history",
@@ -265,7 +281,10 @@
       "kind": "department",
       "parent": "las",
       "url": "https://english.illinois.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/6545.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
     },
     {
       "id": "philosophy",
@@ -284,7 +303,10 @@
       "kind": "department",
       "parent": "las",
       "url": "https://sociology.illinois.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/169.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
     },
     {
       "id": "ncsa",
@@ -317,58 +339,74 @@
       "name": "Institute for Sustainability, Energy, and Environment (iSEE)",
       "kind": "institute",
       "url": "https://sustainability.illinois.edu",
-      "status": "unchecked",
-      "note": "timed out"
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/6831.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
     },
     {
       "id": "humanities",
       "name": "Humanities Research Institute",
       "kind": "institute",
       "url": "https://hri.illinois.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Webtools calendar 6807 has nothing upcoming"
     },
     {
       "id": "cas",
       "name": "Center for Advanced Study",
       "kind": "center",
       "url": "https://cas.illinois.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Webtools calendar 25 has nothing upcoming"
     },
     {
       "id": "ciaa",
-      "name": "Illinois Global Institute",
+      "name": "Illinois International",
       "kind": "institute",
-      "url": "https://global.illinois.edu",
-      "status": "unchecked"
+      "url": "https://www.international.illinois.edu",
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/4193.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
     },
     {
       "id": "research-park",
       "name": "Research Park / EnterpriseWorks",
       "kind": "center",
       "url": "https://researchpark.illinois.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/5115.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
     },
     {
       "id": "isg",
       "name": "Illinois Student Government",
       "kind": "student",
-      "url": "https://illinoisstudentgov.org",
-      "status": "unchecked",
-      "note": "timed out"
+      "url": "https://isg.illinois.edu",
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/8645.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
     },
     {
       "id": "gsac",
       "name": "Graduate Student Advisory Committee",
       "kind": "student",
       "url": "https://grad.illinois.edu/gsac",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "grad.illinois.edu/gsac is gone (404); no calendar of its own"
     },
     {
       "id": "library",
       "name": "University Library",
       "kind": "library",
       "url": "https://www.library.illinois.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/4092.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
     },
     {
       "id": "kam",
@@ -391,14 +429,16 @@
       "name": "The Career Center",
       "kind": "other",
       "url": "https://www.careercenter.illinois.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events calendar is a Drupal HTML view, no feed"
     },
     {
       "id": "athletics",
       "name": "Fighting Illini Athletics",
       "kind": "other",
       "url": "https://fightingillini.com",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "Incapsula challenge"
     }
   ]
 }

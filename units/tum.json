@@ -18,16 +18,18 @@
       "name": "TUM School of Engineering and Design",
       "kind": "school",
       "url": "https://www.ed.tum.de",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page shows events from the central tum.de calendar"
     },
     {
       "id": "nat",
       "name": "TUM School of Natural Sciences",
       "kind": "school",
       "url": "https://www.nat.tum.de",
-      "status": "unchecked",
-      "note": "colloquia iCal from its events page, 29 events",
-      "found": "https://api.srv.nat.tum.de/api/v1/course/events/ical?catalog_tag=colloquia_nat&language=de&show_empty=false&include_description=true&include_html=false&limit=50&offset=0"
+      "status": "feed",
+      "feeds": [
+        "https://api.srv.nat.tum.de/api/v1/course/events/ical?catalog_tag=colloquia_nat&language=de&show_empty=false&include_description=true&include_html=false&limit=50&offset=0"
+      ]
     },
     {
       "id": "ls",
@@ -42,7 +44,8 @@
       "name": "TUM School of Medicine and Health",
       "kind": "school",
       "url": "https://www.mh.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "TYPO3 site, no events list or feed"
     },
     {
       "id": "mgt",
@@ -65,14 +68,16 @@
       "name": "TUM Campus Straubing for Biotechnology and Sustainability",
       "kind": "school",
       "url": "https://www.cs.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events on cs.tum.de are HTML pages, no feed"
     },
     {
       "id": "heilbronn",
       "name": "TUM Campus Heilbronn",
       "kind": "school",
       "url": "https://www.chn.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events list on chn.tum.de is HTML (Solr search), no feed"
     },
     {
       "id": "informatics",
@@ -80,7 +85,8 @@
       "kind": "department",
       "parent": "cit",
       "url": "https://www.cs.cit.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "TYPO3 site, no events list or feed"
     },
     {
       "id": "ece",
@@ -88,7 +94,8 @@
       "kind": "department",
       "parent": "cit",
       "url": "https://www.ee.cit.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "TYPO3 site, no events list or feed"
     },
     {
       "id": "math",
@@ -96,7 +103,8 @@
       "kind": "department",
       "parent": "cit",
       "url": "https://www.math.cit.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page HTML; links the TUM registration portal only"
     },
     {
       "id": "me",
@@ -104,7 +112,8 @@
       "kind": "department",
       "parent": "ed",
       "url": "https://www.mec.ed.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "TYPO3 site, no events list or feed"
     },
     {
       "id": "aerospace",
@@ -112,7 +121,8 @@
       "kind": "department",
       "parent": "ed",
       "url": "https://www.asg.ed.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "TYPO3 site, no events list or feed"
     },
     {
       "id": "architecture",
@@ -120,7 +130,8 @@
       "kind": "department",
       "parent": "ed",
       "url": "https://www.arc.ed.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Termine page HTML; links the TUM registration portal only"
     },
     {
       "id": "physics",
@@ -128,8 +139,8 @@
       "kind": "department",
       "parent": "nat",
       "url": "https://www.ph.nat.tum.de",
-      "status": "unchecked",
-      "note": "likely in the NAT colloquia iCal"
+      "status": "no-feed",
+      "note": "no own feed; its colloquia are in the NAT colloquia iCal (see nat)"
     },
     {
       "id": "chemistry",
@@ -137,8 +148,8 @@
       "kind": "department",
       "parent": "nat",
       "url": "https://www.ch.nat.tum.de",
-      "status": "unchecked",
-      "note": "likely in the NAT colloquia iCal"
+      "status": "no-feed",
+      "note": "no own feed; its colloquia are in the NAT colloquia iCal (see nat)"
     },
     {
       "id": "bioscience",
@@ -146,7 +157,8 @@
       "kind": "department",
       "parent": "nat",
       "url": "https://www.bio.nat.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "TYPO3 site, no events list or feed"
     },
     {
       "id": "economics",
@@ -154,7 +166,8 @@
       "kind": "department",
       "parent": "mgt",
       "url": "https://www.mgt.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page HTML (Drupal), no feed"
     },
     {
       "id": "governance",
@@ -162,7 +175,8 @@
       "kind": "department",
       "parent": "sot",
       "url": "https://www.sot.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "SOT Veranstaltungen page HTML, no feed"
     },
     {
       "id": "stsdept",
@@ -170,7 +184,8 @@
       "kind": "department",
       "parent": "sot",
       "url": "https://www.sot.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "SOT Veranstaltungen page HTML, no feed"
     },
     {
       "id": "mdsi",
@@ -185,15 +200,16 @@
       "name": "Munich Institute of Robotics and Machine Intelligence (MIRMI)",
       "kind": "institute",
       "url": "https://www.mirmi.tum.de",
-      "status": "unchecked",
-      "note": "has rss.xml (news, not checked for events)"
+      "status": "no-feed",
+      "note": "Veranstaltungen page HTML; rss.xml is news"
     },
     {
       "id": "ias",
       "name": "TUM Institute for Advanced Study (IAS)",
       "kind": "institute",
       "url": "https://www.ias.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "event pages HTML, no feed"
     },
     {
       "id": "hfp",
@@ -217,21 +233,26 @@
       "name": "Munich Institute of Integrated Materials, Energy and Processes (MEP)",
       "kind": "institute",
       "url": "https://www.mep.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Termine page HTML, no feed"
     },
     {
       "id": "tumcs",
       "name": "TUM Center for Sustainability",
       "kind": "center",
       "url": "https://www.sustainability.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "TYPO3 site, no events list or feed"
     },
     {
       "id": "mcml",
       "name": "Munich Center for Machine Learning (MCML)",
       "kind": "center",
       "url": "https://mcml.ai",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/cgbb309dpe9jqha4evpm9te7lo%40group.calendar.google.com/public/basic.ics"
+      ]
     },
     {
       "id": "ai-ethics",
@@ -239,7 +260,8 @@
       "kind": "institute",
       "parent": "sot",
       "url": "https://www.ieai.sot.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "The Events Calendar API holds 1 event, none upcoming"
     },
     {
       "id": "venturelabs",
@@ -262,21 +284,24 @@
       "name": "Studentische Vertretung (student representation)",
       "kind": "student",
       "url": "https://www.sv.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Veranstaltungen pages HTML, no feed"
     },
     {
       "id": "fsmpi",
       "name": "Fachschaft Mathematik/Physik/Informatik",
       "kind": "student",
-      "url": "https://mpi.fs.tum.de",
-      "status": "unchecked"
+      "url": "https://mpic.fs.tum.de",
+      "status": "no-feed",
+      "note": "events page HTML, no feed"
     },
     {
       "id": "library",
       "name": "University Library (Universitätsbibliothek)",
       "kind": "library",
       "url": "https://www.ub.tum.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "courses page HTML, no feed"
     },
     {
       "id": "architekturmuseum",
@@ -291,14 +316,16 @@
       "name": "TUM Career Service",
       "kind": "other",
       "url": "https://www.community.tum.de/en/career-service/",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "JavaScript app, no feed"
     },
     {
       "id": "zhs",
       "name": "University Sports (ZHS)",
       "kind": "other",
       "url": "https://www.zhs-muenchen.de",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "sports courses only, no events feed"
     }
   ]
 }

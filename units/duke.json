@@ -91,8 +91,8 @@
       "name": "Duke Kunshan University",
       "kind": "school",
       "url": "https://dukekunshan.edu.cn",
-      "status": "unchecked",
-      "note": "campus in China; out of scope for Durham food"
+      "status": "no-feed",
+      "note": "campus in Kunshan, China; its own calendar.dukekunshan.edu.cn, out of scope for Durham"
     },
     {
       "id": "cs",
@@ -138,7 +138,8 @@
       "kind": "department",
       "parent": "pratt",
       "url": "https://cee.duke.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page links each event to calendar.duke.edu"
     },
     {
       "id": "math",
@@ -173,7 +174,8 @@
       "kind": "department",
       "parent": "trinity",
       "url": "https://chem.duke.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page is fed from calendar.duke.edu (images and links point there)"
     },
     {
       "id": "biology",
@@ -310,22 +312,24 @@
       "name": "Master in Interdisciplinary Data Science",
       "kind": "center",
       "url": "https://datascience.duke.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "no-feed",
+      "note": "no events page (/events is 404); WordPress news feed only"
     },
     {
       "id": "ssri",
       "name": "Social Science Research Institute",
       "kind": "institute",
       "url": "https://ssri.duke.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "duke_events pages are the Duke calendar plugin, fed from calendar.duke.edu"
     },
     {
       "id": "dcri",
       "name": "Duke Clinical Research Institute",
       "kind": "institute",
       "url": "https://dcri.org",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page links to calendar.duke.edu"
     },
     {
       "id": "dsg",

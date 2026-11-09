@@ -43,7 +43,8 @@
       "name": "McCourt School of Public Policy",
       "kind": "school",
       "url": "https://mccourt.georgetown.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page lists events.georgetown.edu events"
     },
     {
       "id": "nursing",
@@ -58,7 +59,8 @@
       "name": "School of Health",
       "kind": "school",
       "url": "https://health.georgetown.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "news-and-events page lists events.georgetown.edu/soh events"
     },
     {
       "id": "medicine",
@@ -73,21 +75,26 @@
       "name": "Graduate School of Arts & Sciences",
       "kind": "school",
       "url": "https://grad.georgetown.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "links its events to georgetown.edu/events/calendar/grad (events.georgetown.edu)"
     },
     {
       "id": "scs",
       "name": "School of Continuing Studies",
       "kind": "school",
       "url": "https://scs.georgetown.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events are HTML pages under /news-and-events/event/, no feed"
     },
     {
       "id": "qatar",
       "name": "Georgetown University in Qatar",
       "kind": "school",
       "url": "https://www.qatar.georgetown.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://www.qatar.georgetown.edu/events/?ical=1"
+      ]
     },
     {
       "id": "cs",
@@ -140,7 +147,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://economics.georgetown.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "economics.georgetown.edu did not answer (timeout)"
     },
     {
       "id": "psychology",
@@ -148,7 +156,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://psychology.georgetown.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page lists events.georgetown.edu/psychology events"
     },
     {
       "id": "government",
@@ -165,7 +174,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://history.georgetown.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page lists events.georgetown.edu/history events"
     },
     {
       "id": "english",
@@ -173,7 +183,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://english.georgetown.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page lists events.georgetown.edu events"
     },
     {
       "id": "philosophy",
@@ -190,7 +201,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://sociology.georgetown.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page lists events.georgetown.edu/sociology events"
     },
     {
       "id": "linguistics",
@@ -198,7 +210,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://linguistics.georgetown.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is WordPress series pages, no dated feed"
     },
     {
       "id": "cset",
@@ -241,7 +254,8 @@
       "kind": "center",
       "parent": "sfs",
       "url": "https://ccas.georgetown.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events link to georgetown.edu/events/calendar/ccas"
     },
     {
       "id": "crees",
@@ -249,15 +263,17 @@
       "kind": "center",
       "parent": "sfs",
       "url": "https://ceres.georgetown.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events link to georgetown.edu/events/calendar/ceres"
     },
     {
       "id": "asian",
       "name": "Asian Studies Program",
       "kind": "center",
       "parent": "sfs",
-      "url": "https://asia.georgetown.edu",
-      "status": "unchecked"
+      "url": "https://asianstudies.georgetown.edu",
+      "status": "in-wide",
+      "note": "events link to georgetown.edu/events/calendar/asianstudies"
     },
     {
       "id": "clas",
@@ -272,15 +288,17 @@
       "name": "Massive Data Institute",
       "kind": "institute",
       "parent": "mccourt",
-      "url": "https://mccourt.georgetown.edu/research/the-massive-data-institute",
-      "status": "unchecked"
+      "url": "https://mdi.georgetown.edu",
+      "status": "in-wide",
+      "note": "events page lists events.georgetown.edu/mccourt events"
     },
     {
       "id": "ethics-lab",
       "name": "Ethics Lab / Kennedy Institute of Ethics",
       "kind": "institute",
       "url": "https://kennedyinstitute.georgetown.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page lists events.georgetown.edu/kennedyinstitute events"
     },
     {
       "id": "lombardi",
@@ -288,7 +306,8 @@
       "kind": "center",
       "parent": "medicine",
       "url": "https://lombardi.georgetown.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page lists events.georgetown.edu/lombardi events"
     },
     {
       "id": "oneill",
@@ -296,7 +315,8 @@
       "kind": "institute",
       "parent": "law",
       "url": "https://oneill.law.georgetown.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events are WordPress event-time posts; the RSS has post dates, not event dates"
     },
     {
       "id": "pyle",
@@ -304,7 +324,8 @@
       "kind": "center",
       "parent": "msb",
       "url": "https://entrepreneurship.georgetown.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "entrepreneurship.georgetown.edu now redirects to an MSB news story; no events page found"
     },
     {
       "id": "gu-politics",
@@ -312,7 +333,8 @@
       "kind": "institute",
       "parent": "mccourt",
       "url": "https://politics.georgetown.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "lists events.georgetown.edu/politics events (also a public Google calendar)"
     },
     {
       "id": "gusa",
@@ -343,21 +365,26 @@
       "name": "Cawley Career Education Center",
       "kind": "other",
       "url": "https://careercenter.georgetown.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "career events are on Handshake (login); site has HTML only"
     },
     {
       "id": "davis",
       "name": "Davis Performing Arts Center",
       "kind": "other",
       "url": "https://performingarts.georgetown.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page lists events.georgetown.edu/performingarts events"
     },
     {
       "id": "athletics",
       "name": "Georgetown Hoyas Athletics",
       "kind": "other",
       "url": "https://guhoyas.com",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://guhoyas.com/calendar.ashx/calendar.ics"
+      ]
     }
   ]
 }

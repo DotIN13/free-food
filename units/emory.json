@@ -29,8 +29,10 @@
       "name": "Laney Graduate School",
       "kind": "school",
       "url": "https://gs.emory.edu",
-      "status": "unchecked",
-      "note": "/events/ is 404"
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/Emory_Grad_School_Main.ics"
+      ]
     },
     {
       "id": "goizueta",
@@ -65,8 +67,10 @@
       "name": "Nell Hodgson Woodruff School of Nursing",
       "kind": "school",
       "url": "https://www.nursing.emory.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/emory_nursing_events.ics"
+      ]
     },
     {
       "id": "rollins",
@@ -101,7 +105,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://mathematics.emory.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "seminar page embeds Trumba EmoryMath, which has no events"
     },
     {
       "id": "qtm",
@@ -109,7 +114,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://quantitative.emory.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "quantitative.emory.edu answers 404 (empty S3 site); no events page found"
     },
     {
       "id": "physics",
@@ -117,7 +123,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://physics.emory.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "no events page; its journal club and talks are on ec-events/emory-events"
     },
     {
       "id": "chemistry",
@@ -125,7 +132,10 @@
       "kind": "department",
       "parent": "college",
       "url": "https://chemistry.emory.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/emory-chemistry.ics"
+      ]
     },
     {
       "id": "biology",
@@ -133,7 +143,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://biology.emory.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "calendar page embeds the Trumba ec-events calendar, whose events are on emory-events (15 of 19 shared)"
     },
     {
       "id": "economics",
@@ -141,7 +152,10 @@
       "kind": "department",
       "parent": "college",
       "url": "https://economics.emory.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/emory-economics.ics"
+      ]
     },
     {
       "id": "psychology",
@@ -149,7 +163,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://psychology.emory.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "calendar embeds Trumba ec-events and ec-cmbc, both on emory-events"
     },
     {
       "id": "polisci",
@@ -157,7 +172,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://polisci.emory.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "calendar page embeds the Trumba ec-events calendar, whose events are on emory-events (15 of 19 shared)"
     },
     {
       "id": "history",
@@ -165,7 +181,10 @@
       "kind": "department",
       "parent": "college",
       "url": "https://history.emory.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/emory-history-events.ics"
+      ]
     },
     {
       "id": "english",
@@ -173,7 +192,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://english.emory.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "calendar page embeds the Trumba ec-events calendar, whose events are on emory-events (15 of 19 shared)"
     },
     {
       "id": "philosophy",
@@ -181,7 +201,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://philosophy.emory.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "colloquia-events page lists talks as HTML, no Trumba embed or feed"
     },
     {
       "id": "sociology",
@@ -189,7 +210,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://sociology.emory.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "calendar page embeds the Trumba ec-events calendar, whose events are on emory-events (15 of 19 shared)"
     },
     {
       "id": "bme",
@@ -205,15 +227,17 @@
       "name": "Department of Biostatistics and Bioinformatics",
       "kind": "department",
       "parent": "rollins",
-      "url": "https://sph.emory.edu/departments/bios",
-      "status": "unchecked"
+      "url": "https://sph.emory.edu/departments/biostatistics-bioinformatics",
+      "status": "no-feed",
+      "note": "Rollins Drupal site, events as HTML"
     },
     {
       "id": "cail",
       "name": "Center for AI Learning",
       "kind": "center",
       "url": "https://ailearning.emory.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "Trumba ai-learning calendar; its events are on emory-events (2 of 3)"
     },
     {
       "id": "fox",
@@ -221,35 +245,42 @@
       "kind": "center",
       "parent": "college",
       "url": "https://foxcenter.emory.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "foxcenter.emory.edu does not resolve; no events page found"
     },
     {
       "id": "halle",
       "name": "Halle Institute for Global Research",
       "kind": "institute",
-      "url": "https://halleinstitute.emory.edu",
-      "status": "unchecked"
+      "url": "https://halle.emory.edu",
+      "status": "no-feed",
+      "note": "calendar embeds Trumba Emory-Halle-Institute, which has no upcoming events"
     },
     {
       "id": "winship",
       "name": "Winship Cancer Institute",
       "kind": "institute",
       "url": "https://winshipcancer.emory.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events.php is HTML with no feed"
     },
     {
       "id": "eghi",
       "name": "Emory Global Health Institute",
       "kind": "institute",
-      "url": "https://globalhealth.emory.edu",
-      "status": "unchecked"
+      "url": "https://sph.emory.edu/departments/global-health",
+      "status": "no-feed",
+      "note": "globalhealth.emory.edu now redirects into Rollins' Drupal site, events as HTML"
     },
     {
       "id": "climate",
       "name": "Emory Climate Talks / Office of Sustainability Initiatives",
       "kind": "center",
       "url": "https://sustainability.emory.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://sustainability.emory.edu/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "sga",
@@ -264,7 +295,8 @@
       "name": "Graduate Student Government Association",
       "kind": "student",
       "url": "https://gsga.emory.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "site has no events calendar"
     },
     {
       "id": "library",
@@ -295,14 +327,18 @@
       "name": "Schwartz Center for Performing Arts",
       "kind": "other",
       "url": "https://schwartz.emory.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/arts-mix-in.ics"
+      ]
     },
     {
       "id": "athletics",
       "name": "Emory Athletics",
       "kind": "other",
       "url": "https://emoryathletics.com",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Sidearm composite schedule (games), no event feed worth reading"
     }
   ]
 }

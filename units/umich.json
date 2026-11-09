@@ -148,7 +148,8 @@
       "name": "School of Kinesiology",
       "kind": "school",
       "url": "https://www.kines.umich.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
     },
     {
       "id": "rackham",
@@ -333,8 +334,8 @@
       "name": "Institute for Social Research",
       "kind": "institute",
       "url": "https://isr.umich.edu",
-      "status": "unchecked",
-      "note": "/events/ is 404"
+      "status": "blocked",
+      "note": "answers 403 'Security Challenge'"
     },
     {
       "id": "ii",
@@ -377,7 +378,8 @@
       "kind": "center",
       "parent": "medicine",
       "url": "https://www.rogelcancercenter.org",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "redirects to uofmhealth.org, which answers a Cloudflare challenge"
     },
     {
       "id": "csg",
@@ -416,7 +418,8 @@
       "name": "University Musical Society",
       "kind": "other",
       "url": "https://ums.org",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "calendar is HTML; its linked Google Calendar has nothing upcoming"
     },
     {
       "id": "career",
@@ -431,7 +434,8 @@
       "name": "Michigan Athletics",
       "kind": "other",
       "url": "https://mgoblue.com",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "Incapsula in front of mgoblue.com"
     }
   ]
 }

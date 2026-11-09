@@ -92,7 +92,8 @@
       "name": "School of Pharmacy & Pharmaceutical Sciences",
       "kind": "school",
       "url": "https://pharmsci.uci.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress events page as HTML; its advertised events feed is 404, tribe API 404"
     },
     {
       "id": "physsci",
@@ -170,7 +171,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://engineering.uci.edu/dept/mae",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Samueli engineering events page (engineering.uci.edu/news/events) is static HTML"
     },
     {
       "id": "bme",
@@ -178,7 +180,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://engineering.uci.edu/dept/bme",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Samueli engineering events page (engineering.uci.edu/news/events) is static HTML"
     },
     {
       "id": "math",
@@ -195,8 +198,8 @@
       "kind": "department",
       "parent": "physsci",
       "url": "https://www.physics.uci.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "no-feed",
+      "note": "seminars page links a Google calendar whose public ics is 404 (private)"
     },
     {
       "id": "chem",
@@ -212,8 +215,9 @@
       "name": "Department of Earth System Science",
       "kind": "department",
       "parent": "physsci",
-      "url": "https://ess.uci.edu",
-      "status": "unchecked"
+      "url": "https://www.ess.uci.edu",
+      "status": "no-feed",
+      "note": "Drupal events list, HTML only"
     },
     {
       "id": "econ",
@@ -221,8 +225,8 @@
       "kind": "department",
       "parent": "socsci",
       "url": "https://www.economics.uci.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "in-wide",
+      "note": "events page lists School of Social Sciences events, which the socsci Google calendar we read carries"
     },
     {
       "id": "polisci",
@@ -230,7 +234,8 @@
       "kind": "department",
       "parent": "socsci",
       "url": "https://www.polisci.uci.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page lists School of Social Sciences events (socsci Google calendar we read)"
     },
     {
       "id": "cogsci",
@@ -238,7 +243,8 @@
       "kind": "department",
       "parent": "socsci",
       "url": "https://www.cogsci.uci.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page lists School of Social Sciences events (socsci Google calendar we read)"
     },
     {
       "id": "sociology",
@@ -246,7 +252,8 @@
       "kind": "department",
       "parent": "socsci",
       "url": "https://www.sociology.uci.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page lists School of Social Sciences events (socsci Google calendar we read)"
     },
     {
       "id": "psych",
@@ -263,7 +270,8 @@
       "kind": "department",
       "parent": "humanities",
       "url": "https://www.humanities.uci.edu/history",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events are on the Humanities Drupal list (humanities.uci.edu/events), HTML only"
     },
     {
       "id": "english",
@@ -271,7 +279,8 @@
       "kind": "department",
       "parent": "humanities",
       "url": "https://www.humanities.uci.edu/english",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events are on the Humanities Drupal list (humanities.uci.edu/events), HTML only"
     },
     {
       "id": "philosophy",
@@ -279,7 +288,8 @@
       "kind": "department",
       "parent": "humanities",
       "url": "https://www.humanities.uci.edu/philosophy",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events are on the Humanities Drupal list (humanities.uci.edu/events), HTML only"
     },
     {
       "id": "ecology",
@@ -287,7 +297,8 @@
       "kind": "department",
       "parent": "biosci",
       "url": "https://ecoevo.bio.uci.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "403 Cloudflare challenge, like bio.uci.edu"
     },
     {
       "id": "humcenter",
@@ -295,14 +306,16 @@
       "kind": "center",
       "parent": "humanities",
       "url": "https://www.humanities.uci.edu/humanitiescenter",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events are on the Humanities Drupal list (humanities.uci.edu/events), HTML only"
     },
     {
       "id": "beall",
       "name": "Beall Applied Innovation",
       "kind": "center",
       "url": "https://innovation.uci.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress events page as HTML; events/feed is empty, tribe API 404"
     },
     {
       "id": "cml",
@@ -319,7 +332,8 @@
       "kind": "center",
       "parent": "socsci",
       "url": "https://www.cgpacs.uci.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "Social Sciences center site; events are the school's (socsci Google calendar we read)"
     },
     {
       "id": "csd",
@@ -327,16 +341,16 @@
       "kind": "center",
       "parent": "socsci",
       "url": "https://www.democracy.uci.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "Social Sciences center site; events are the school's (socsci Google calendar we read)"
     },
     {
       "id": "asuci",
       "name": "Associated Students of UC Irvine (ASUCI)",
       "kind": "student",
       "url": "https://asuci.uci.edu",
-      "status": "unchecked",
-      "found": "https://calendar.google.com/calendar/ical/studentgov.uci.edu_74fsueopi9261vp1s43kf7uqhg%40group.calendar.google.com/public/basic.ics",
-      "note": "public Google calendar linked from the site (Google robots.txt applies, like Social Sciences)"
+      "status": "no-feed",
+      "note": "its public Google calendar (studentgov.uci.edu) has 893 old events, none upcoming"
     },
     {
       "id": "agsu",
@@ -351,8 +365,8 @@
       "name": "UC Irvine Libraries",
       "kind": "library",
       "url": "https://www.lib.uci.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "no-feed",
+      "note": "LibCal (spaces.lib.uci.edu, cid 12385) ical has 0 upcoming events"
     },
     {
       "id": "career",
@@ -366,17 +380,19 @@
     },
     {
       "id": "imcuci",
-      "name": "Institute and Museum of California Art (IMCA)",
+      "name": "Langson Institute and Museum of California Art (Langson IMCA)",
       "kind": "museum",
-      "url": "https://imca.uci.edu",
-      "status": "unchecked"
+      "url": "https://langson.uci.edu",
+      "status": "no-feed",
+      "note": "Events Calendar plugin, but its REST API is 404 and ?ical=1 returns HTML"
     },
     {
       "id": "barclay",
       "name": "Irvine Barclay Theatre",
       "kind": "other",
       "url": "https://www.thebarclay.org",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "ticketing site serves a bot challenge"
     }
   ]
 }

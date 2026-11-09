@@ -6,40 +6,299 @@
     "https://sphere.ntu.edu.sg/rss_events"
   ],
   "units": [
-    { "id": "coe", "name": "College of Engineering", "kind": "school", "url": "https://www.ntu.edu.sg/engineering", "status": "no-feed", "note": "Sitecore site, events (if any) as HTML; main events page has no feed" },
-    { "id": "cos", "name": "College of Science", "kind": "school", "url": "https://www.ntu.edu.sg/science", "status": "no-feed", "note": "Sitecore site, events as HTML" },
-    { "id": "cohass", "name": "College of Humanities, Arts and Social Sciences", "kind": "school", "url": "https://www.ntu.edu.sg/cohass", "status": "no-feed", "note": "Sitecore site, events as HTML" },
-    { "id": "nbs", "name": "Nanyang Business School", "kind": "school", "url": "https://www.ntu.edu.sg/business", "status": "no-feed", "note": "events page in HTML, no feed" },
-    { "id": "lkcmedicine", "name": "Lee Kong Chian School of Medicine", "kind": "school", "url": "https://www.ntu.edu.sg/medicine", "status": "no-feed", "note": "events page in HTML, no feed" },
-    { "id": "nie", "name": "National Institute of Education", "kind": "school", "url": "https://www.ntu.edu.sg/nie", "status": "unchecked" },
-    { "id": "rsis", "name": "S. Rajaratnam School of International Studies", "kind": "school", "url": "https://www.rsis.edu.sg", "status": "unchecked" },
-    { "id": "gc", "name": "Graduate College", "kind": "school", "url": "https://www.ntu.edu.sg/graduate-college", "status": "unchecked" },
-    { "id": "ccds", "name": "College of Computing and Data Science", "kind": "school", "url": "https://www.ntu.edu.sg/computing", "status": "unchecked" },
-    { "id": "eee", "name": "School of Electrical and Electronic Engineering", "kind": "department", "parent": "coe", "url": "https://www.ntu.edu.sg/eee", "status": "unchecked" },
-    { "id": "mae", "name": "School of Mechanical and Aerospace Engineering", "kind": "department", "parent": "coe", "url": "https://www.ntu.edu.sg/mae", "status": "no-feed", "note": "events page in HTML, no feed" },
-    { "id": "cee", "name": "School of Civil and Environmental Engineering", "kind": "department", "parent": "coe", "url": "https://www.ntu.edu.sg/cee", "status": "unchecked" },
-    { "id": "cceb", "name": "School of Chemistry, Chemical Engineering and Biotechnology", "kind": "department", "parent": "coe", "url": "https://www.ntu.edu.sg/cceb", "status": "unchecked" },
-    { "id": "mse", "name": "School of Materials Science and Engineering", "kind": "department", "parent": "coe", "url": "https://www.ntu.edu.sg/mse", "status": "unchecked" },
-    { "id": "spms", "name": "School of Physical and Mathematical Sciences", "kind": "department", "parent": "cos", "url": "https://www.ntu.edu.sg/spms", "status": "no-feed", "note": "Sitecore pages, no feed" },
-    { "id": "sbs", "name": "School of Biological Sciences", "kind": "department", "parent": "cos", "url": "https://www.ntu.edu.sg/sbs", "status": "no-feed", "note": "Sitecore pages, no feed" },
-    { "id": "ase", "name": "Asian School of the Environment", "kind": "department", "parent": "cos", "url": "https://www.ntu.edu.sg/ase", "status": "unchecked" },
-    { "id": "soh", "name": "School of Humanities", "kind": "department", "parent": "cohass", "url": "https://www.ntu.edu.sg/soh", "status": "no-feed", "note": "events page in HTML, no feed" },
-    { "id": "sss", "name": "School of Social Sciences (economics, psychology, sociology, public policy)", "kind": "department", "parent": "cohass", "url": "https://www.ntu.edu.sg/sss", "status": "no-feed", "note": "events page in HTML, no feed" },
-    { "id": "adm", "name": "School of Art, Design and Media", "kind": "department", "parent": "cohass", "url": "https://www.ntu.edu.sg/adm", "status": "no-feed", "note": "Sitecore pages, no feed" },
-    { "id": "wkwsci", "name": "Wee Kim Wee School of Communication and Information", "kind": "department", "parent": "cohass", "url": "https://www.ntu.edu.sg/wkwsci", "status": "no-feed", "note": "Sitecore pages, no feed" },
-    { "id": "ias", "name": "Institute of Advanced Studies", "kind": "institute", "url": "https://www.ntu.edu.sg/ias", "status": "no-feed", "note": "events page in HTML, no feed" },
-    { "id": "erian", "name": "Energy Research Institute @ NTU (ERI@N)", "kind": "institute", "url": "https://www.ntu.edu.sg/erian", "status": "no-feed", "note": "Sitecore pages, no feed" },
-    { "id": "eos", "name": "Earth Observatory of Singapore", "kind": "institute", "url": "https://www.earthobservatory.sg", "status": "unchecked" },
-    { "id": "slab", "name": "S-Lab for Advanced Intelligence", "kind": "center", "parent": "ccds", "url": "https://www.ntu.edu.sg/s-lab", "status": "no-feed", "note": "Sitecore pages, no feed" },
-    { "id": "cnysc", "name": "Centre for Chinese Language and Culture", "kind": "center", "parent": "cohass", "url": "https://www.ntu.edu.sg/cclc", "status": "unchecked" },
-    { "id": "scelse", "name": "Singapore Centre for Environmental Life Sciences Engineering", "kind": "center", "url": "https://www.scelse.sg", "status": "unchecked" },
-    { "id": "innovation", "name": "NTUitive / Innovation and Entrepreneurship", "kind": "center", "url": "https://www.ntuitive.sg", "status": "unchecked" },
-    { "id": "ntusu", "name": "NTU Students' Union", "kind": "student", "url": "https://ntusu.org.sg", "status": "unchecked", "note": "timed out; student clubs post on NTU Sphere" },
-    { "id": "gsc", "name": "Graduate Students' Association", "kind": "student", "url": "https://www.ntu.edu.sg/life-at-ntu/student-life", "status": "in-wide", "note": "student bodies post on NTU Sphere (CampusGroups)" },
-    { "id": "halls", "name": "Halls of Residence", "kind": "student", "url": "https://www.ntu.edu.sg/life-at-ntu/accommodation", "status": "in-wide", "note": "hall committees post on NTU Sphere (CampusGroups)" },
-    { "id": "library", "name": "NTU Library", "kind": "library", "url": "https://www.ntu.edu.sg/education/libraries", "status": "unchecked" },
-    { "id": "museum", "name": "NTU Museum / CCA Singapore", "kind": "museum", "url": "https://www.ntu.ccasingapore.org", "status": "unchecked" },
-    { "id": "career", "name": "Career & Attachment Office", "kind": "other", "url": "https://www.ntu.edu.sg/life-at-ntu/career-development", "status": "unchecked" },
-    { "id": "sports", "name": "NTU Sports and Recreation Centre", "kind": "other", "url": "https://www.ntu.edu.sg/life-at-ntu/sports", "status": "unchecked" }
+    {
+      "id": "coe",
+      "name": "College of Engineering",
+      "kind": "school",
+      "url": "https://www.ntu.edu.sg/engineering",
+      "status": "no-feed",
+      "note": "Sitecore site, events (if any) as HTML; main events page has no feed"
+    },
+    {
+      "id": "cos",
+      "name": "College of Science",
+      "kind": "school",
+      "url": "https://www.ntu.edu.sg/science",
+      "status": "no-feed",
+      "note": "Sitecore site, events as HTML"
+    },
+    {
+      "id": "cohass",
+      "name": "College of Humanities, Arts and Social Sciences",
+      "kind": "school",
+      "url": "https://www.ntu.edu.sg/cohass",
+      "status": "no-feed",
+      "note": "Sitecore site, events as HTML"
+    },
+    {
+      "id": "nbs",
+      "name": "Nanyang Business School",
+      "kind": "school",
+      "url": "https://www.ntu.edu.sg/business",
+      "status": "no-feed",
+      "note": "events page in HTML, no feed"
+    },
+    {
+      "id": "lkcmedicine",
+      "name": "Lee Kong Chian School of Medicine",
+      "kind": "school",
+      "url": "https://www.ntu.edu.sg/medicine",
+      "status": "no-feed",
+      "note": "events page in HTML, no feed"
+    },
+    {
+      "id": "nie",
+      "name": "National Institute of Education",
+      "kind": "school",
+      "url": "https://www.ntu.edu.sg/nie/news-events/events",
+      "status": "no-feed",
+      "note": "Sitefinity events listing on ntu.edu.sg, HTML only (per-event add-to-calendar, no feed)"
+    },
+    {
+      "id": "rsis",
+      "name": "S. Rajaratnam School of International Studies",
+      "kind": "school",
+      "url": "https://www.rsis.edu.sg",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403 'Just a moment...')"
+    },
+    {
+      "id": "gc",
+      "name": "Graduate College",
+      "kind": "school",
+      "url": "https://www.ntu.edu.sg/graduate-college/news-events",
+      "status": "no-feed",
+      "note": "Sitefinity events listing on ntu.edu.sg, HTML only (per-event add-to-calendar, no feed)"
+    },
+    {
+      "id": "ccds",
+      "name": "College of Computing and Data Science",
+      "kind": "school",
+      "url": "https://www.ntu.edu.sg/computing/news-events/events",
+      "status": "no-feed",
+      "note": "Sitefinity events listing on ntu.edu.sg, HTML only (per-event add-to-calendar, no feed)"
+    },
+    {
+      "id": "eee",
+      "name": "School of Electrical and Electronic Engineering",
+      "kind": "department",
+      "parent": "coe",
+      "url": "https://www.ntu.edu.sg/eee",
+      "status": "no-feed",
+      "note": "no events listing found on the school site (/events 404)"
+    },
+    {
+      "id": "mae",
+      "name": "School of Mechanical and Aerospace Engineering",
+      "kind": "department",
+      "parent": "coe",
+      "url": "https://www.ntu.edu.sg/mae",
+      "status": "no-feed",
+      "note": "events page in HTML, no feed"
+    },
+    {
+      "id": "cee",
+      "name": "School of Civil and Environmental Engineering",
+      "kind": "department",
+      "parent": "coe",
+      "url": "https://www.ntu.edu.sg/cee/events",
+      "status": "no-feed",
+      "note": "Sitefinity events listing on ntu.edu.sg, HTML only (per-event add-to-calendar, no feed)"
+    },
+    {
+      "id": "cceb",
+      "name": "School of Chemistry, Chemical Engineering and Biotechnology",
+      "kind": "department",
+      "parent": "coe",
+      "url": "https://www.ntu.edu.sg/cceb/news-and-events/events",
+      "status": "no-feed",
+      "note": "Sitefinity events listing on ntu.edu.sg, HTML only (per-event add-to-calendar, no feed)"
+    },
+    {
+      "id": "mse",
+      "name": "School of Materials Science and Engineering",
+      "kind": "department",
+      "parent": "coe",
+      "url": "https://www.ntu.edu.sg/mse/news-events/events",
+      "status": "no-feed",
+      "note": "Sitefinity events listing on ntu.edu.sg, HTML only (per-event add-to-calendar, no feed)"
+    },
+    {
+      "id": "spms",
+      "name": "School of Physical and Mathematical Sciences",
+      "kind": "department",
+      "parent": "cos",
+      "url": "https://www.ntu.edu.sg/spms",
+      "status": "no-feed",
+      "note": "Sitecore pages, no feed"
+    },
+    {
+      "id": "sbs",
+      "name": "School of Biological Sciences",
+      "kind": "department",
+      "parent": "cos",
+      "url": "https://www.ntu.edu.sg/sbs",
+      "status": "no-feed",
+      "note": "Sitecore pages, no feed"
+    },
+    {
+      "id": "ase",
+      "name": "Asian School of the Environment",
+      "kind": "department",
+      "parent": "cos",
+      "url": "https://www.ntu.edu.sg/ase/news-events/events",
+      "status": "no-feed",
+      "note": "Sitefinity events listing on ntu.edu.sg, HTML only (per-event add-to-calendar, no feed)"
+    },
+    {
+      "id": "soh",
+      "name": "School of Humanities",
+      "kind": "department",
+      "parent": "cohass",
+      "url": "https://www.ntu.edu.sg/soh",
+      "status": "no-feed",
+      "note": "events page in HTML, no feed"
+    },
+    {
+      "id": "sss",
+      "name": "School of Social Sciences (economics, psychology, sociology, public policy)",
+      "kind": "department",
+      "parent": "cohass",
+      "url": "https://www.ntu.edu.sg/sss",
+      "status": "no-feed",
+      "note": "events page in HTML, no feed"
+    },
+    {
+      "id": "adm",
+      "name": "School of Art, Design and Media",
+      "kind": "department",
+      "parent": "cohass",
+      "url": "https://www.ntu.edu.sg/adm",
+      "status": "no-feed",
+      "note": "Sitecore pages, no feed"
+    },
+    {
+      "id": "wkwsci",
+      "name": "Wee Kim Wee School of Communication and Information",
+      "kind": "department",
+      "parent": "cohass",
+      "url": "https://www.ntu.edu.sg/wkwsci",
+      "status": "no-feed",
+      "note": "Sitecore pages, no feed"
+    },
+    {
+      "id": "ias",
+      "name": "Institute of Advanced Studies",
+      "kind": "institute",
+      "url": "https://www.ntu.edu.sg/ias",
+      "status": "no-feed",
+      "note": "events page in HTML, no feed"
+    },
+    {
+      "id": "erian",
+      "name": "Energy Research Institute @ NTU (ERI@N)",
+      "kind": "institute",
+      "url": "https://www.ntu.edu.sg/erian",
+      "status": "no-feed",
+      "note": "Sitecore pages, no feed"
+    },
+    {
+      "id": "eos",
+      "name": "Earth Observatory of Singapore",
+      "kind": "institute",
+      "url": "https://www.earthobservatory.sg/news/events",
+      "status": "no-feed",
+      "note": "Sitefinity events page, HTML only"
+    },
+    {
+      "id": "slab",
+      "name": "S-Lab for Advanced Intelligence",
+      "kind": "center",
+      "parent": "ccds",
+      "url": "https://www.ntu.edu.sg/s-lab",
+      "status": "no-feed",
+      "note": "Sitecore pages, no feed"
+    },
+    {
+      "id": "cnysc",
+      "name": "Centre for Chinese Language and Culture",
+      "kind": "center",
+      "parent": "cohass",
+      "url": "https://www.ntu.edu.sg/cclc/events",
+      "status": "no-feed",
+      "note": "Sitefinity events listing on ntu.edu.sg, HTML only (per-event add-to-calendar, no feed)"
+    },
+    {
+      "id": "scelse",
+      "name": "Singapore Centre for Environmental Life Sciences Engineering",
+      "kind": "center",
+      "url": "https://scelse.sg",
+      "status": "no-feed",
+      "note": "WordPress (Divi) events page, HTML only, no events feed"
+    },
+    {
+      "id": "innovation",
+      "name": "NTUitive / Innovation and Entrepreneurship",
+      "kind": "center",
+      "url": "https://www.ntuitive.sg",
+      "status": "no-feed",
+      "note": "NTUitive site has no events listing or feed"
+    },
+    {
+      "id": "ntusu",
+      "name": "NTU Students' Union",
+      "kind": "student",
+      "url": "https://ntusu.org.sg",
+      "status": "blocked",
+      "note": "ntusu.org.sg does not answer (timed out); student clubs post on NTU Sphere"
+    },
+    {
+      "id": "gsc",
+      "name": "Graduate Students' Association",
+      "kind": "student",
+      "url": "https://www.ntu.edu.sg/life-at-ntu/student-life",
+      "status": "in-wide",
+      "note": "student bodies post on NTU Sphere (CampusGroups)"
+    },
+    {
+      "id": "halls",
+      "name": "Halls of Residence",
+      "kind": "student",
+      "url": "https://www.ntu.edu.sg/life-at-ntu/accommodation",
+      "status": "in-wide",
+      "note": "hall committees post on NTU Sphere (CampusGroups)"
+    },
+    {
+      "id": "library",
+      "name": "NTU Library",
+      "kind": "library",
+      "url": "https://www.ntu.edu.sg/education/libraries",
+      "status": "no-feed",
+      "note": "libraries site has no events listing or feed"
+    },
+    {
+      "id": "museum",
+      "name": "NTU Museum / CCA Singapore",
+      "kind": "museum",
+      "url": "https://ntu.ccasingapore.org",
+      "status": "no-feed",
+      "note": "WordPress programme pages, HTML only (no Events Calendar API)"
+    },
+    {
+      "id": "career",
+      "name": "Career & Attachment Office",
+      "kind": "other",
+      "url": "https://www.ntu.edu.sg/education/career-guidance-industry-collaborations",
+      "status": "no-feed",
+      "note": "old URL 404; career office site has no events feed"
+    },
+    {
+      "id": "sports",
+      "name": "NTU Sports and Recreation Centre",
+      "kind": "other",
+      "url": "https://www.ntu.edu.sg/life-at-ntu",
+      "status": "no-feed",
+      "note": "old URL 404; no sports events listing or feed found"
+    }
   ]
 }

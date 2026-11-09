@@ -10,8 +10,8 @@
       "name": "College of Letters & Science",
       "kind": "school",
       "url": "https://ls.berkeley.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "in-wide",
+      "note": "home page links its events.berkeley.edu calendar (sn/ls)"
     },
     {
       "id": "engineering",
@@ -112,8 +112,8 @@
       "name": "School of Social Welfare",
       "kind": "school",
       "url": "https://socialwelfare.berkeley.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "in-wide",
+      "note": "home page links its events.berkeley.edu calendar (sn/socwel)"
     },
     {
       "id": "optometry",
@@ -156,7 +156,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://me.berkeley.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page embeds events.berkeley.edu (LiveWhale widget)"
     },
     {
       "id": "bioeng",
@@ -209,7 +210,8 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://ib.berkeley.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page lists events.berkeley.edu/ib events"
     },
     {
       "id": "economics",
@@ -244,7 +246,8 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://history.berkeley.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "news & events links its events.berkeley.edu calendar (sn/history)"
     },
     {
       "id": "english",
@@ -252,7 +255,8 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://english.berkeley.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page links its events.berkeley.edu calendar (sn/english)"
     },
     {
       "id": "philosophy",
@@ -269,7 +273,8 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://sociology.berkeley.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "colloquia and news-and-events pages are HTML; no feed or events.berkeley.edu link"
     },
     {
       "id": "simons",
@@ -336,15 +341,16 @@
       "name": "Institute of Governmental Studies",
       "kind": "institute",
       "url": "https://igs.berkeley.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page links events.berkeley.edu (sn/igs); registration through Eventbrite"
     },
     {
       "id": "energy",
       "name": "Berkeley Energy & Climate Institute",
       "kind": "institute",
       "url": "https://energy.berkeley.edu",
-      "status": "unchecked",
-      "note": "did not answer within 15 s"
+      "status": "blocked",
+      "note": "energy.berkeley.edu does not answer (timed out twice)"
     },
     {
       "id": "citris",
@@ -368,7 +374,8 @@
       "kind": "center",
       "parent": "engineering",
       "url": "https://scet.berkeley.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "single-page JS app; events are /event/<slug> pages, no feed"
     },
     {
       "id": "asuc",
@@ -383,8 +390,8 @@
       "name": "Graduate Assembly",
       "kind": "student",
       "url": "https://ga.berkeley.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "no-feed",
+      "note": "calendar page embeds a Google Calendar (berkeley.edu_u7u87h8t91v03rgas6hnb76b1s) of internal meetings (4 upcoming), not public events"
     },
     {
       "id": "callink",
@@ -417,7 +424,8 @@
       "name": "Phoebe A. Hearst Museum of Anthropology",
       "kind": "museum",
       "url": "https://hearstmuseum.berkeley.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress events page, tickets on Eventbrite; no feed"
     },
     {
       "id": "career",
@@ -432,14 +440,16 @@
       "name": "Cal Performances",
       "kind": "other",
       "url": "https://calperformances.org",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress with Events Calendar markup but REST API 404, ?ical=1 empty, /events/feed/ nothing upcoming"
     },
     {
       "id": "athletics",
       "name": "Cal Athletics",
       "kind": "other",
       "url": "https://calbears.com",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Sidearm site behind Incapsula; game schedules only"
     }
   ]
 }

@@ -39,8 +39,8 @@
       "name": "College of Dentistry",
       "kind": "school",
       "url": "https://dental.ufl.edu",
-      "status": "unchecked",
-      "note": "/events/ is 404"
+      "status": "no-feed",
+      "note": "only alumni events, as HTML; no events API"
     },
     {
       "id": "dcp",
@@ -113,8 +113,8 @@
       "name": "College of Nursing",
       "kind": "school",
       "url": "https://nursing.ufl.edu",
-      "status": "unchecked",
-      "note": "/events/ is 404"
+      "status": "no-feed",
+      "note": "WordPress events pages as HTML; tribe API is 404"
     },
     {
       "id": "pharmacy",
@@ -129,23 +129,24 @@
       "name": "College of Public Health and Health Professions",
       "kind": "school",
       "url": "https://phhp.ufl.edu",
-      "status": "unchecked",
-      "note": "/events/ is 404"
+      "status": "no-feed",
+      "note": "WordPress events pages as HTML; tribe API is 404"
     },
     {
       "id": "vetmed",
       "name": "College of Veterinary Medicine",
       "kind": "school",
       "url": "https://www.vetmed.ufl.edu",
-      "status": "unchecked",
-      "note": "/events/ is 404"
+      "status": "no-feed",
+      "note": "events are alumni events on givingandalumni.vetmed.ufl.edu, HTML only"
     },
     {
       "id": "graduate",
       "name": "Graduate School",
       "kind": "school",
-      "url": "https://graduateschool.ufl.edu",
-      "status": "unchecked"
+      "url": "https://grad.ufl.edu",
+      "status": "in-wide",
+      "note": "site links and embeds calendar.ufl.edu"
     },
     {
       "id": "cise",
@@ -189,7 +190,10 @@
       "kind": "department",
       "parent": "clas",
       "url": "https://math.ufl.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/ufmathematics%40gmail.com/public/basic.ics"
+      ]
     },
     {
       "id": "stat",
@@ -197,7 +201,8 @@
       "kind": "department",
       "parent": "clas",
       "url": "https://stat.ufl.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "CLAS WordPress site with the calendar.ufl.edu widget; events page is HTML"
     },
     {
       "id": "physics",
@@ -223,7 +228,8 @@
       "kind": "department",
       "parent": "clas",
       "url": "https://biology.ufl.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "calendar page embeds calendar.ufl.edu/clas_biology"
     },
     {
       "id": "economics",
@@ -231,7 +237,8 @@
       "kind": "department",
       "parent": "warrington",
       "url": "https://warrington.ufl.edu/economics",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "part of Warrington, whose Events Calendar feed we read"
     },
     {
       "id": "psychology",
@@ -239,15 +246,17 @@
       "kind": "department",
       "parent": "clas",
       "url": "https://psych.ufl.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events link to calendar.ufl.edu/clas"
     },
     {
       "id": "polisci",
       "name": "Department of Political Science",
       "kind": "department",
       "parent": "clas",
-      "url": "https://polisci.clas.ufl.edu",
-      "status": "unchecked"
+      "url": "https://polisci.ufl.edu",
+      "status": "in-wide",
+      "note": "site embeds the calendar.ufl.edu LiveWhale widget"
     },
     {
       "id": "history",
@@ -255,7 +264,8 @@
       "kind": "department",
       "parent": "clas",
       "url": "https://history.ufl.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "calendar page embeds calendar.ufl.edu"
     },
     {
       "id": "english",
@@ -263,15 +273,17 @@
       "kind": "department",
       "parent": "clas",
       "url": "https://english.ufl.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "CLAS site with the calendar.ufl.edu widget; news-events page is HTML"
     },
     {
       "id": "philosophy",
       "name": "Department of Philosophy",
       "kind": "department",
       "parent": "clas",
-      "url": "https://philosophy.ufl.edu",
-      "status": "unchecked"
+      "url": "https://phil.ufl.edu",
+      "status": "in-wide",
+      "note": "site embeds calendar.ufl.edu/clas_philosophy"
     },
     {
       "id": "sociology",
@@ -279,7 +291,8 @@
       "kind": "department",
       "parent": "clas",
       "url": "https://soccrim.clas.ufl.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "news-events page embeds calendar.ufl.edu/clas_soccrim"
     },
     {
       "id": "ai",
@@ -303,7 +316,8 @@
       "kind": "center",
       "parent": "clas",
       "url": "https://www.latam.ufl.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "calendar page links calendar.ufl.edu"
     },
     {
       "id": "ces",
@@ -311,7 +325,8 @@
       "kind": "center",
       "parent": "clas",
       "url": "https://ces.ufl.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "site shows the calendar.ufl.edu widget; its own Events Calendar feed and ?ical=1 hold 0 events"
     },
     {
       "id": "humanities",
@@ -319,14 +334,16 @@
       "kind": "center",
       "parent": "clas",
       "url": "https://humanities.ufl.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events link to calendar.ufl.edu/clas"
     },
     {
       "id": "ifas",
       "name": "UF/IFAS (Institute of Food and Agricultural Sciences)",
       "kind": "institute",
       "url": "https://ifas.ufl.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page on ifas.ufl.edu (/events/ is 404)"
     },
     {
       "id": "ufhcc",
@@ -334,14 +351,16 @@
       "kind": "center",
       "parent": "medicine",
       "url": "https://cancer.ufl.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress events page as HTML; tribe API is 404"
     },
     {
       "id": "innovate",
       "name": "UF Innovate",
       "kind": "center",
       "url": "https://innovate.research.ufl.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML; tribe API is 404"
     },
     {
       "id": "sg",
@@ -364,8 +383,10 @@
       "name": "George A. Smathers Libraries",
       "kind": "library",
       "url": "https://uflib.ufl.edu",
-      "status": "unchecked",
-      "note": "/events/ is 404"
+      "status": "feed",
+      "feeds": [
+        "https://libcal.uflib.ufl.edu/ical_subscribe.php?src=p&cid=22582"
+      ]
     },
     {
       "id": "flmnh",
@@ -400,14 +421,18 @@
       "name": "UF Performing Arts",
       "kind": "other",
       "url": "https://performingarts.ufl.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://performingarts.ufl.edu/?ec3_ical"
+      ]
     },
     {
       "id": "athletics",
       "name": "Florida Gators Athletics",
       "kind": "other",
       "url": "https://floridagators.com",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "floridagators.com serves a bot challenge"
     }
   ]
 }

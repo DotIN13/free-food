@@ -8,11 +8,11 @@
   "units": [
     {
       "id": "abp",
-      "name": "Faculty of Architecture, Building and Planning",
+      "name": "Faculty of Architecture, Building and Planning (Melbourne School of Design)",
       "kind": "school",
-      "url": "https://abp.unimelb.edu.au",
-      "status": "unchecked",
-      "note": "abp.unimelb.edu.au did not answer"
+      "url": "https://msd.unimelb.edu.au",
+      "status": "blocked",
+      "note": "abp.unimelb.edu.au no longer answers; msd.unimelb.edu.au answers a Cloudflare challenge"
     },
     {
       "id": "arts",
@@ -91,7 +91,8 @@
       "name": "Melbourne School of Graduate Research",
       "kind": "school",
       "url": "https://gradresearch.unimelb.edu.au",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
     },
     {
       "id": "cis",
@@ -265,10 +266,11 @@
     },
     {
       "id": "msi",
-      "name": "Melbourne Sustainable Society Institute",
+      "name": "Melbourne Climate Futures (formerly Melbourne Sustainable Society Institute)",
       "kind": "institute",
-      "url": "https://sustainable.unimelb.edu.au",
-      "status": "unchecked"
+      "url": "https://www.unimelb.edu.au/climate",
+      "status": "blocked",
+      "note": "sustainable.unimelb.edu.au is gone; its successor sits on www.unimelb.edu.au, which answers a Cloudflare challenge"
     },
     {
       "id": "mbi",
@@ -335,28 +337,32 @@
       "name": "Asialink",
       "kind": "center",
       "url": "https://asialink.unimelb.edu.au",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events are a site search (Algolia-style) page, no feed"
     },
     {
       "id": "doherty",
       "name": "Peter Doherty Institute for Infection and Immunity",
       "kind": "institute",
       "url": "https://www.doherty.edu.au",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "site answers a bot challenge"
     },
     {
       "id": "florey",
       "name": "Florey Institute of Neuroscience and Mental Health",
       "kind": "institute",
       "url": "https://florey.edu.au",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress site; /events redirects to news, no Events Calendar API"
     },
     {
       "id": "mfi",
       "name": "Melbourne Entrepreneurial Centre",
       "kind": "center",
-      "url": "https://mec.unimelb.edu.au",
-      "status": "unchecked"
+      "url": "https://www.unimelb.edu.au/mec",
+      "status": "blocked",
+      "note": "mec.unimelb.edu.au does not resolve; the centre's page on www.unimelb.edu.au answers a Cloudflare challenge"
     },
     {
       "id": "umsu",
@@ -371,15 +377,16 @@
       "name": "Graduate Student Association (GSA)",
       "kind": "student",
       "url": "https://gsa.unimelb.edu.au",
-      "status": "unchecked",
-      "note": "home page is a 1 KB shell"
+      "status": "blocked",
+      "note": "site answers a bot challenge"
     },
     {
       "id": "colleges",
       "name": "Residential colleges (Ormond, Trinity, Queen's, Ridley, ...)",
       "kind": "student",
       "url": "https://www.unimelb.edu.au/accommodation/residential-colleges",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "www.unimelb.edu.au answers a Cloudflare challenge; each college runs its own site"
     },
     {
       "id": "library",
@@ -401,15 +408,17 @@
       "id": "careers",
       "name": "Careers and Employability",
       "kind": "other",
-      "url": "https://careers.unimelb.edu.au",
-      "status": "unchecked"
+      "url": "https://students.unimelb.edu.au/careers",
+      "status": "blocked",
+      "note": "answers a Cloudflare challenge"
     },
     {
       "id": "sport",
       "name": "Melbourne University Sport",
       "kind": "other",
       "url": "https://sport.unimelb.edu.au",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "news/events page is HTML only"
     }
   ]
 }

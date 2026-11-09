@@ -6,103 +6,411 @@
     "https://static-prod-us-east-1.campusgroups.com/ical/princeton/ical_princeton.ics"
   ],
   "units": [
-    { "id": "engineering", "name": "School of Engineering and Applied Science", "kind": "school", "url": "https://engineering.princeton.edu",
-      "status": "no-feed", "note": "WordPress events archive in HTML, no events API (only a news RSS)" },
-    { "id": "spia", "name": "Princeton School of Public and International Affairs", "kind": "school", "url": "https://spia.princeton.edu",
-      "status": "in-wide", "note": "spia.princeton.edu answers 504; its program events (criminaljustice.spia) appear on the main calendar" },
-    { "id": "architecture", "name": "School of Architecture", "kind": "school", "url": "https://soa.princeton.edu",
-      "status": "blocked", "note": "soa.princeton.edu answers 403 (Cloudflare)" },
-    { "id": "gradschool", "name": "The Graduate School", "kind": "school", "url": "https://gradschool.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "cs", "name": "Department of Computer Science", "kind": "department", "parent": "engineering", "url": "https://www.cs.princeton.edu",
-      "status": "no-feed", "note": "Drupal events list in HTML, rss.xml empty, no jsonapi" },
-    { "id": "ece", "name": "Department of Electrical and Computer Engineering", "kind": "department", "parent": "engineering", "url": "https://ece.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "mae", "name": "Department of Mechanical and Aerospace Engineering", "kind": "department", "parent": "engineering", "url": "https://mae.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "cbe", "name": "Department of Chemical and Biological Engineering", "kind": "department", "parent": "engineering", "url": "https://cbe.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "cee", "name": "Department of Civil and Environmental Engineering", "kind": "department", "parent": "engineering", "url": "https://cee.princeton.edu",
-      "status": "unchecked" },
-    { "id": "orfe", "name": "Department of Operations Research and Financial Engineering", "kind": "department", "parent": "engineering", "url": "https://orfe.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "math", "name": "Department of Mathematics", "kind": "department", "url": "https://www.math.princeton.edu",
-      "status": "in-wide", "note": "Drupal with no feed; its seminars appear on the main calendar" },
-    { "id": "physics", "name": "Department of Physics", "kind": "department", "url": "https://phy.princeton.edu",
-      "status": "blocked", "note": "phy.princeton.edu answers 403 (Cloudflare)" },
-    { "id": "chemistry", "name": "Department of Chemistry", "kind": "department", "url": "https://chemistry.princeton.edu",
-      "status": "unchecked", "note": "/events is 404; events page not found" },
-    { "id": "molbio", "name": "Department of Molecular Biology", "kind": "department", "url": "https://molbio.princeton.edu",
-      "status": "in-wide", "note": "site 403, but its talks appear on the main calendar" },
-    { "id": "eeb", "name": "Department of Ecology and Evolutionary Biology", "kind": "department", "url": "https://eeb.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "economics", "name": "Department of Economics", "kind": "department", "url": "https://economics.princeton.edu",
-      "status": "no-feed", "note": "WordPress with no events API; HTML list" },
-    { "id": "psychology", "name": "Department of Psychology", "kind": "department", "url": "https://psych.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "politics", "name": "Department of Politics", "kind": "department", "url": "https://politics.princeton.edu",
-      "status": "no-feed", "note": "Drupal events list in HTML, no feed link" },
-    { "id": "history", "name": "Department of History", "kind": "department", "url": "https://history.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "english", "name": "Department of English", "kind": "department", "url": "https://english.princeton.edu",
-      "status": "in-wide", "note": "site 403, but its events appear on the main calendar" },
-    { "id": "philosophy", "name": "Department of Philosophy", "kind": "department", "url": "https://philosophy.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "sociology", "name": "Department of Sociology", "kind": "department", "url": "https://sociology.princeton.edu",
-      "status": "no-feed", "note": "Drupal events list in HTML, no feed link" },
-    { "id": "music", "name": "Department of Music", "kind": "department", "url": "https://music.princeton.edu",
-      "status": "in-wide", "note": "concerts appear on the main calendar" },
-    { "id": "artarch", "name": "Department of Art and Archaeology", "kind": "department", "url": "https://artandarchaeology.princeton.edu",
-      "status": "in-wide", "note": "seen on the main calendar" },
-    { "id": "ecs", "name": "European Cultural Studies", "kind": "center", "url": "https://ecs.princeton.edu",
-      "feeds": ["https://ecs.princeton.edu/events/?ical=1"], "status": "feed" },
-    { "id": "humanities", "name": "Humanities Council", "kind": "center", "url": "https://humanities.princeton.edu",
-      "feeds": ["https://humanities.princeton.edu"], "status": "feed" },
-    { "id": "arts", "name": "Lewis Center for the Arts", "kind": "center", "url": "https://arts.princeton.edu",
-      "status": "in-wide", "note": "site 403 to the bot, but its events are a large share of the main calendar" },
-    { "id": "ai", "name": "Princeton Language and Intelligence / AI at Princeton", "kind": "institute", "url": "https://ai.princeton.edu",
-      "status": "blocked", "note": "ai.princeton.edu and pli.princeton.edu answer 403 (Cloudflare)" },
-    { "id": "csml", "name": "Center for Statistics and Machine Learning", "kind": "center", "url": "https://csml.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "citp", "name": "Center for Information Technology Policy", "kind": "center", "url": "https://citp.princeton.edu",
-      "status": "in-wide", "note": "site 403, but its talks appear on the main calendar" },
-    { "id": "pni", "name": "Princeton Neuroscience Institute", "kind": "institute", "url": "https://pni.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "hmei", "name": "High Meadows Environmental Institute", "kind": "institute", "url": "https://hmei.princeton.edu",
-      "status": "unchecked", "note": "timed out" },
-    { "id": "andlinger", "name": "Andlinger Center for Energy and the Environment", "kind": "center", "parent": "engineering", "url": "https://acee.princeton.edu",
-      "status": "in-wide", "note": "WP events type with dates only in meta; its events appear on the main calendar" },
-    { "id": "keller", "name": "Keller Center for Innovation in Engineering Education", "kind": "center", "parent": "engineering", "url": "https://kellercenter.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare), as is entrepreneurship.princeton.edu" },
-    { "id": "bcf", "name": "Bendheim Center for Finance", "kind": "center", "url": "https://bcf.princeton.edu",
-      "status": "no-feed", "note": "WordPress with no events API" },
-    { "id": "piirs", "name": "Princeton Institute for International and Regional Studies", "kind": "institute", "url": "https://piirs.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "davisic", "name": "Davis International Center", "kind": "center", "url": "https://davisic.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "plas", "name": "Program in Latin American Studies", "kind": "center", "url": "https://plas.princeton.edu",
-      "status": "in-wide", "note": "seen on the main calendar" },
-    { "id": "judaic", "name": "Program in Judaic Studies", "kind": "center", "url": "https://judaic.princeton.edu",
-      "status": "in-wide", "note": "seen on the main calendar" },
-    { "id": "mcgraw", "name": "McGraw Center for Teaching and Learning", "kind": "center", "url": "https://mcgraw.princeton.edu",
-      "status": "in-wide", "note": "workshops appear on the main calendar" },
-    { "id": "religion", "name": "Office of Religious Life", "kind": "other", "url": "https://religiouslife.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "lectures", "name": "Public Lectures", "kind": "other", "url": "https://lectures.princeton.edu",
-      "status": "in-wide", "note": "seen on the main calendar" },
-    { "id": "usg", "name": "Undergraduate Student Government", "kind": "student", "url": "https://usg.princeton.edu",
-      "status": "no-feed", "note": "Squarespace site; events through student orgs on CampusGroups" },
-    { "id": "gsg", "name": "Graduate Student Government", "kind": "student", "url": "https://www.gsg.princeton.edu",
-      "status": "no-feed", "note": "no events feed on its site" },
-    { "id": "rescolleges", "name": "Residential Colleges", "kind": "student", "url": "https://www.princeton.edu/campus-life/residential-colleges",
-      "status": "unchecked" },
-    { "id": "library", "name": "Princeton University Library", "kind": "library", "url": "https://library.princeton.edu",
-      "status": "in-wide", "note": "site 403, but its LibCal events appear on the main calendar" },
-    { "id": "artmuseum", "name": "Princeton University Art Museum", "kind": "museum", "url": "https://artmuseum.princeton.edu",
-      "status": "in-wide", "note": "site 403, but its events appear on the main calendar" },
-    { "id": "career", "name": "Center for Career Development", "kind": "other", "url": "https://careerdevelopment.princeton.edu",
-      "status": "blocked", "note": "403 (Cloudflare)" },
-    { "id": "athletics", "name": "Princeton Athletics", "kind": "other", "url": "https://goprincetontigers.com",
-      "status": "in-wide", "note": "games appear on the main calendar" }
+    {
+      "id": "engineering",
+      "name": "School of Engineering and Applied Science",
+      "kind": "school",
+      "url": "https://engineering.princeton.edu",
+      "status": "no-feed",
+      "note": "WordPress events archive in HTML, no events API (only a news RSS)"
+    },
+    {
+      "id": "spia",
+      "name": "Princeton School of Public and International Affairs",
+      "kind": "school",
+      "url": "https://spia.princeton.edu",
+      "status": "in-wide",
+      "note": "spia.princeton.edu answers 504; its program events (criminaljustice.spia) appear on the main calendar"
+    },
+    {
+      "id": "architecture",
+      "name": "School of Architecture",
+      "kind": "school",
+      "url": "https://soa.princeton.edu",
+      "status": "blocked",
+      "note": "soa.princeton.edu answers 403 (Cloudflare)"
+    },
+    {
+      "id": "gradschool",
+      "name": "The Graduate School",
+      "kind": "school",
+      "url": "https://gradschool.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "cs",
+      "name": "Department of Computer Science",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.cs.princeton.edu",
+      "status": "no-feed",
+      "note": "Drupal events list in HTML, rss.xml empty, no jsonapi"
+    },
+    {
+      "id": "ece",
+      "name": "Department of Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://ece.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "mae",
+      "name": "Department of Mechanical and Aerospace Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://mae.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "cbe",
+      "name": "Department of Chemical and Biological Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cbe.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "cee",
+      "name": "Department of Civil and Environmental Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cee.princeton.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403 'Just a moment...')"
+    },
+    {
+      "id": "orfe",
+      "name": "Department of Operations Research and Financial Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://orfe.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "url": "https://www.math.princeton.edu",
+      "status": "in-wide",
+      "note": "Drupal with no feed; its seminars appear on the main calendar"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "url": "https://phy.princeton.edu",
+      "status": "blocked",
+      "note": "phy.princeton.edu answers 403 (Cloudflare)"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "url": "https://chemistry.princeton.edu",
+      "status": "no-feed",
+      "note": "seminars & events page (/department/seminars-events/) is HTML only"
+    },
+    {
+      "id": "molbio",
+      "name": "Department of Molecular Biology",
+      "kind": "department",
+      "url": "https://molbio.princeton.edu",
+      "status": "in-wide",
+      "note": "site 403, but its talks appear on the main calendar"
+    },
+    {
+      "id": "eeb",
+      "name": "Department of Ecology and Evolutionary Biology",
+      "kind": "department",
+      "url": "https://eeb.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "url": "https://economics.princeton.edu",
+      "status": "no-feed",
+      "note": "WordPress with no events API; HTML list"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "url": "https://psych.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "politics",
+      "name": "Department of Politics",
+      "kind": "department",
+      "url": "https://politics.princeton.edu",
+      "status": "no-feed",
+      "note": "Drupal events list in HTML, no feed link"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "url": "https://history.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "url": "https://english.princeton.edu",
+      "status": "in-wide",
+      "note": "site 403, but its events appear on the main calendar"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "url": "https://philosophy.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "url": "https://sociology.princeton.edu",
+      "status": "no-feed",
+      "note": "Drupal events list in HTML, no feed link"
+    },
+    {
+      "id": "music",
+      "name": "Department of Music",
+      "kind": "department",
+      "url": "https://music.princeton.edu",
+      "status": "in-wide",
+      "note": "concerts appear on the main calendar"
+    },
+    {
+      "id": "artarch",
+      "name": "Department of Art and Archaeology",
+      "kind": "department",
+      "url": "https://artandarchaeology.princeton.edu",
+      "status": "in-wide",
+      "note": "seen on the main calendar"
+    },
+    {
+      "id": "ecs",
+      "name": "European Cultural Studies",
+      "kind": "center",
+      "url": "https://ecs.princeton.edu",
+      "feeds": [
+        "https://ecs.princeton.edu/events/?ical=1"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "humanities",
+      "name": "Humanities Council",
+      "kind": "center",
+      "url": "https://humanities.princeton.edu",
+      "feeds": [
+        "https://humanities.princeton.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "arts",
+      "name": "Lewis Center for the Arts",
+      "kind": "center",
+      "url": "https://arts.princeton.edu",
+      "status": "in-wide",
+      "note": "site 403 to the bot, but its events are a large share of the main calendar"
+    },
+    {
+      "id": "ai",
+      "name": "Princeton Language and Intelligence / AI at Princeton",
+      "kind": "institute",
+      "url": "https://ai.princeton.edu",
+      "status": "blocked",
+      "note": "ai.princeton.edu and pli.princeton.edu answer 403 (Cloudflare)"
+    },
+    {
+      "id": "csml",
+      "name": "Center for Statistics and Machine Learning",
+      "kind": "center",
+      "url": "https://csml.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "citp",
+      "name": "Center for Information Technology Policy",
+      "kind": "center",
+      "url": "https://citp.princeton.edu",
+      "status": "in-wide",
+      "note": "site 403, but its talks appear on the main calendar"
+    },
+    {
+      "id": "pni",
+      "name": "Princeton Neuroscience Institute",
+      "kind": "institute",
+      "url": "https://pni.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "hmei",
+      "name": "High Meadows Environmental Institute",
+      "kind": "institute",
+      "url": "https://environment.princeton.edu",
+      "status": "feed",
+      "feeds": [
+        "https://environment.princeton.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "andlinger",
+      "name": "Andlinger Center for Energy and the Environment",
+      "kind": "center",
+      "parent": "engineering",
+      "url": "https://acee.princeton.edu",
+      "status": "in-wide",
+      "note": "WP events type with dates only in meta; its events appear on the main calendar"
+    },
+    {
+      "id": "keller",
+      "name": "Keller Center for Innovation in Engineering Education",
+      "kind": "center",
+      "parent": "engineering",
+      "url": "https://kellercenter.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare), as is entrepreneurship.princeton.edu"
+    },
+    {
+      "id": "bcf",
+      "name": "Bendheim Center for Finance",
+      "kind": "center",
+      "url": "https://bcf.princeton.edu",
+      "status": "no-feed",
+      "note": "WordPress with no events API"
+    },
+    {
+      "id": "piirs",
+      "name": "Princeton Institute for International and Regional Studies",
+      "kind": "institute",
+      "url": "https://piirs.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "davisic",
+      "name": "Davis International Center",
+      "kind": "center",
+      "url": "https://davisic.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "plas",
+      "name": "Program in Latin American Studies",
+      "kind": "center",
+      "url": "https://plas.princeton.edu",
+      "status": "in-wide",
+      "note": "seen on the main calendar"
+    },
+    {
+      "id": "judaic",
+      "name": "Program in Judaic Studies",
+      "kind": "center",
+      "url": "https://judaic.princeton.edu",
+      "status": "in-wide",
+      "note": "seen on the main calendar"
+    },
+    {
+      "id": "mcgraw",
+      "name": "McGraw Center for Teaching and Learning",
+      "kind": "center",
+      "url": "https://mcgraw.princeton.edu",
+      "status": "in-wide",
+      "note": "workshops appear on the main calendar"
+    },
+    {
+      "id": "religion",
+      "name": "Office of Religious Life",
+      "kind": "other",
+      "url": "https://religiouslife.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "lectures",
+      "name": "Public Lectures",
+      "kind": "other",
+      "url": "https://lectures.princeton.edu",
+      "status": "in-wide",
+      "note": "seen on the main calendar"
+    },
+    {
+      "id": "usg",
+      "name": "Undergraduate Student Government",
+      "kind": "student",
+      "url": "https://usg.princeton.edu",
+      "status": "no-feed",
+      "note": "Squarespace site; events through student orgs on CampusGroups"
+    },
+    {
+      "id": "gsg",
+      "name": "Graduate Student Government",
+      "kind": "student",
+      "url": "https://www.gsg.princeton.edu",
+      "status": "no-feed",
+      "note": "no events feed on its site"
+    },
+    {
+      "id": "rescolleges",
+      "name": "Residential Colleges",
+      "kind": "student",
+      "url": "https://www.princeton.edu/campus-life/residential-colleges",
+      "status": "in-wide",
+      "note": "college events (socials, study breaks) appear on the campus calendar and CampusGroups; the page itself answers 403 to us"
+    },
+    {
+      "id": "library",
+      "name": "Princeton University Library",
+      "kind": "library",
+      "url": "https://library.princeton.edu",
+      "status": "in-wide",
+      "note": "site 403, but its LibCal events appear on the main calendar"
+    },
+    {
+      "id": "artmuseum",
+      "name": "Princeton University Art Museum",
+      "kind": "museum",
+      "url": "https://artmuseum.princeton.edu",
+      "status": "in-wide",
+      "note": "site 403, but its events appear on the main calendar"
+    },
+    {
+      "id": "career",
+      "name": "Center for Career Development",
+      "kind": "other",
+      "url": "https://careerdevelopment.princeton.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "athletics",
+      "name": "Princeton Athletics",
+      "kind": "other",
+      "url": "https://goprincetontigers.com",
+      "status": "in-wide",
+      "note": "games appear on the main calendar"
+    }
   ]
 }

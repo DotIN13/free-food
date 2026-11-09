@@ -116,7 +116,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://msande.stanford.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page embeds the events.stanford.edu Localist widget"
     },
     {
       "id": "mse",
@@ -124,7 +125,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://mse.stanford.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page embeds the events.stanford.edu Localist widget"
     },
     {
       "id": "chemeng",
@@ -132,7 +134,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://cheme.stanford.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page embeds the events.stanford.edu Localist widget"
     },
     {
       "id": "aa",
@@ -140,7 +143,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://aa.stanford.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page embeds the events.stanford.edu Localist widget"
     },
     {
       "id": "math",
@@ -190,7 +194,10 @@
       "kind": "department",
       "parent": "humsci",
       "url": "https://biology.stanford.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://biology.stanford.edu/jsonapi/node/hs_event?sort=-field_hs_event_date.value&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path"
+      ]
     },
     {
       "id": "economics",
@@ -348,7 +355,8 @@
       "kind": "institute",
       "parent": "sustainability",
       "url": "https://woods.stanford.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page embeds the events.stanford.edu Localist widget"
     },
     {
       "id": "cddrl",
@@ -356,8 +364,8 @@
       "kind": "center",
       "parent": "fsi",
       "url": "https://cddrl.fsi.stanford.edu",
-      "status": "unchecked",
-      "note": "FSI centre; probably in the FSI feed"
+      "status": "in-wide",
+      "note": "events are in the FSI JSON:API feed we read (fsi.stanford.edu serves all centres' events)"
     },
     {
       "id": "aparc",
@@ -365,8 +373,8 @@
       "kind": "center",
       "parent": "fsi",
       "url": "https://aparc.fsi.stanford.edu",
-      "status": "unchecked",
-      "note": "FSI centre; probably in the FSI feed"
+      "status": "in-wide",
+      "note": "events are in the FSI JSON:API feed we read (fsi.stanford.edu serves all centres' events)"
     },
     {
       "id": "cisac",
@@ -374,22 +382,24 @@
       "kind": "center",
       "parent": "fsi",
       "url": "https://cisac.fsi.stanford.edu",
-      "status": "unchecked",
-      "note": "FSI centre; probably in the FSI feed"
+      "status": "in-wide",
+      "note": "events are in the FSI JSON:API feed we read (fsi.stanford.edu serves all centres' events)"
     },
     {
       "id": "bio-x",
       "name": "Stanford Bio-X",
       "kind": "institute",
       "url": "https://biox.stanford.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
     },
     {
       "id": "wu-tsai",
       "name": "Wu Tsai Neurosciences Institute",
       "kind": "institute",
       "url": "https://neuroscience.stanford.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page lists events.stanford.edu events"
     },
     {
       "id": "slac",
@@ -404,7 +414,8 @@
       "name": "Stanford Center on Longevity",
       "kind": "center",
       "url": "https://longevity.stanford.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress events page is HTML only; no Events Calendar API or ical"
     },
     {
       "id": "dschool",
@@ -412,7 +423,8 @@
       "kind": "institute",
       "parent": "engineering",
       "url": "https://dschool.stanford.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "connect/events is HTML only, no feed"
     },
     {
       "id": "ces",
@@ -427,16 +439,17 @@
       "id": "assu",
       "name": "Associated Students of Stanford University (ASSU)",
       "kind": "student",
-      "url": "https://assu.stanford.edu",
-      "status": "unchecked",
-      "note": "no public student-org platform (sources notes)"
+      "url": "https://www.assu.stanford.edu",
+      "status": "no-feed",
+      "note": "CivicPlus calendar; its iCalendar feeds return nothing upcoming"
     },
     {
       "id": "gsc",
       "name": "Graduate Student Council",
       "kind": "student",
       "url": "https://assu.stanford.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no calendar of its own on the ASSU site"
     },
     {
       "id": "library",
@@ -459,14 +472,16 @@
       "name": "Career Education",
       "kind": "other",
       "url": "https://careered.stanford.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page embeds the events.stanford.edu Localist widget (stanford_career_education)"
     },
     {
       "id": "live",
       "name": "Stanford Live (Bing Concert Hall)",
       "kind": "other",
       "url": "https://live.stanford.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML only; wp-json answers 403"
     }
   ]
 }

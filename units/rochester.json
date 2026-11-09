@@ -19,8 +19,8 @@
       "name": "Hajim School of Engineering & Applied Sciences",
       "kind": "school",
       "url": "https://www.hajim.rochester.edu",
-      "status": "unchecked",
-      "note": "/events/ is 404"
+      "status": "in-wide",
+      "note": "school events page is a Localist (events.rochester.edu) index widget"
     },
     {
       "id": "simon",
@@ -77,7 +77,8 @@
       "kind": "department",
       "parent": "hajim",
       "url": "https://www.hajim.rochester.edu/ece",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "seminars listed as hand-made HTML; not found on events.rochester.edu"
     },
     {
       "id": "me",
@@ -85,7 +86,8 @@
       "kind": "department",
       "parent": "hajim",
       "url": "https://www.hajim.rochester.edu/me",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML only"
     },
     {
       "id": "bme",
@@ -93,7 +95,8 @@
       "kind": "department",
       "parent": "hajim",
       "url": "https://www.hajim.rochester.edu/bme",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "seminars page embeds events.rochester.edu text cards"
     },
     {
       "id": "optics",
@@ -101,7 +104,8 @@
       "kind": "department",
       "parent": "hajim",
       "url": "https://www.hajim.rochester.edu/optics",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events/colloquia pages are HTML only"
     },
     {
       "id": "math",
@@ -118,7 +122,8 @@
       "kind": "department",
       "parent": "smd",
       "url": "https://www.urmc.rochester.edu/biostat",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "colloquia and seminars listed as HTML pages"
     },
     {
       "id": "physics",
@@ -162,7 +167,8 @@
       "kind": "department",
       "parent": "ase",
       "url": "https://www.sas.rochester.edu/bcs",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "colloquia are on a Brown Bear MasterCalendar (HTML); site otherwise links events.rochester.edu"
     },
     {
       "id": "psychology",
@@ -170,7 +176,8 @@
       "kind": "department",
       "parent": "ase",
       "url": "https://www.sas.rochester.edu/psy",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "no own events page; links to events.rochester.edu"
     },
     {
       "id": "polisci",
@@ -214,23 +221,25 @@
       "kind": "department",
       "parent": "ase",
       "url": "https://www.sas.rochester.edu/ant",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "embeds an events.rochester.edu widget (tags=anthropology)"
     },
     {
       "id": "goergen",
       "name": "Goergen Institute for Data Science and Artificial Intelligence",
       "kind": "institute",
       "parent": "hajim",
-      "url": "https://www.hajim.rochester.edu/dsc",
-      "status": "unchecked",
-      "note": "events link redirects to a 404"
+      "url": "https://www.hajim.rochester.edu/dsc/",
+      "status": "in-wide",
+      "note": "home page shows a Localist (events.rochester.edu) panel"
     },
     {
       "id": "lle",
       "name": "Laboratory for Laser Energetics",
       "kind": "center",
       "url": "https://www.lle.rochester.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress site with no events listing or event API"
     },
     {
       "id": "humanities",
@@ -247,21 +256,24 @@
       "kind": "institute",
       "parent": "smd",
       "url": "https://www.urmc.rochester.edu/cancer-institute",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "Wilmot events (lunch and learns, music) appear on events.rochester.edu"
     },
     {
       "id": "circ",
       "name": "Center for Integrated Research Computing",
       "kind": "center",
       "url": "https://www.circ.rochester.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress events page; The Events Calendar API answers 401"
     },
     {
       "id": "entrepreneurship",
       "name": "Ain Center for Entrepreneurship",
       "kind": "center",
-      "url": "https://www.rochester.edu/ain-center",
-      "status": "unchecked"
+      "url": "https://www.rochester.edu/aincenter/",
+      "status": "no-feed",
+      "note": "events page is HTML only"
     },
     {
       "id": "sa",
@@ -275,17 +287,17 @@
       "id": "gsa",
       "name": "Graduate Student Association",
       "kind": "student",
-      "url": "https://gsa.rochester.edu",
-      "status": "unchecked",
-      "note": "did not answer within 15 s"
+      "url": "https://ccc.rochester.edu/gsa/",
+      "status": "in-wide",
+      "note": "GSA lives on CampusGroups (ccc.rochester.edu), read by the wide CCC feed"
     },
     {
       "id": "library",
       "name": "River Campus Libraries",
       "kind": "library",
       "url": "https://www.library.rochester.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "in-wide",
+      "note": "events are the events.rochester.edu river_campus_libraries group"
     },
     {
       "id": "mag",
@@ -302,14 +314,18 @@
       "name": "Greene Center for Career Education and Connections",
       "kind": "other",
       "url": "https://careereducation.rochester.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "Greene Center events are in Handshake (login)"
     },
     {
       "id": "athletics",
       "name": "Rochester Athletics (Yellowjackets)",
       "kind": "other",
       "url": "https://uofrathletics.com",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://uofrathletics.com/calendar.ashx/calendar.ics"
+      ]
     }
   ]
 }

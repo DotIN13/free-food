@@ -19,7 +19,8 @@
       "name": "Graduate School of Arts and Sciences",
       "kind": "school",
       "url": "https://gsas.yale.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "home page lists academic dates with per-item add-to-calendar only"
     },
     {
       "id": "seas",
@@ -78,15 +79,16 @@
       "name": "Yale School of the Environment",
       "kind": "school",
       "url": "https://environment.yale.edu",
-      "status": "unchecked",
-      "note": "/events redirects to a 404"
+      "status": "in-wide",
+      "note": "home page sends events to Yale Connect (CampusGroups), which we read"
     },
     {
       "id": "nursing",
       "name": "Yale School of Nursing",
       "kind": "school",
       "url": "https://nursing.yale.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal calendar page is HTML only, no feed"
     },
     {
       "id": "architecture",
@@ -101,7 +103,8 @@
       "name": "Yale School of Art",
       "kind": "school",
       "url": "https://art.yale.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Nuxt calendar page, HTML only, no feed"
     },
     {
       "id": "music",
@@ -141,24 +144,27 @@
       "name": "Electrical & Computer Engineering",
       "kind": "department",
       "parent": "seas",
-      "url": "https://seas.yale.edu/departments/electrical-engineering",
-      "status": "unchecked"
+      "url": "https://engineering.yale.edu/academic-study/departments/electrical-and-computer-engineering",
+      "status": "no-feed",
+      "note": "department page on engineering.yale.edu (Concrete CMS), no events feed"
     },
     {
       "id": "meche",
       "name": "Mechanical Engineering & Materials Science",
       "kind": "department",
       "parent": "seas",
-      "url": "https://seas.yale.edu/departments/mechanical-engineering-and-materials-science",
-      "status": "unchecked"
+      "url": "https://engineering.yale.edu/academic-study/departments/mechanical-engineering",
+      "status": "no-feed",
+      "note": "department page on engineering.yale.edu (Concrete CMS), no events feed"
     },
     {
       "id": "bme",
       "name": "Biomedical Engineering",
       "kind": "department",
       "parent": "seas",
-      "url": "https://seas.yale.edu/departments/biomedical-engineering",
-      "status": "unchecked"
+      "url": "https://engineering.yale.edu/academic-study/departments/biomedical-engineering",
+      "status": "no-feed",
+      "note": "department page on engineering.yale.edu (Concrete CMS), no events feed"
     },
     {
       "id": "math",
@@ -166,7 +172,8 @@
       "kind": "department",
       "parent": "gsas",
       "url": "https://math.yale.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events list is HTML only; rss.xml is empty, no JSON:API"
     },
     {
       "id": "statistics",
@@ -174,7 +181,8 @@
       "kind": "department",
       "parent": "gsas",
       "url": "https://statistics.yale.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events list is HTML only; rss.xml is empty, no JSON:API"
     },
     {
       "id": "physics",
@@ -200,7 +208,8 @@
       "kind": "department",
       "parent": "gsas",
       "url": "https://mcdb.yale.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page lists events.yale.edu events (Localist .ics links)"
     },
     {
       "id": "eeb",
@@ -208,7 +217,8 @@
       "kind": "department",
       "parent": "gsas",
       "url": "https://eeb.yale.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal calendar page is HTML only, no feed"
     },
     {
       "id": "economics",
@@ -238,7 +248,8 @@
       "kind": "department",
       "parent": "gsas",
       "url": "https://politicalscience.yale.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal calendar page is HTML only, no feed"
     },
     {
       "id": "history",
@@ -246,7 +257,8 @@
       "kind": "department",
       "parent": "gsas",
       "url": "https://history.yale.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal calendar page is HTML only, no feed"
     },
     {
       "id": "english",
@@ -254,7 +266,8 @@
       "kind": "department",
       "parent": "gsas",
       "url": "https://english.yale.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal calendar page is HTML only, no feed"
     },
     {
       "id": "philosophy",
@@ -262,7 +275,8 @@
       "kind": "department",
       "parent": "gsas",
       "url": "https://philosophy.yale.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events list is HTML only; rss.xml is empty, no JSON:API"
     },
     {
       "id": "sociology",
@@ -320,14 +334,16 @@
       "name": "Yale Planetary Solutions",
       "kind": "center",
       "url": "https://planetarysolutions.yale.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events list is HTML only; rss.xml is empty, no JSON:API"
     },
     {
       "id": "isps",
       "name": "Institution for Social and Policy Studies",
       "kind": "institute",
       "url": "https://isps.yale.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events list is HTML only; rss.xml is empty, no JSON:API"
     },
     {
       "id": "cowles",
@@ -335,7 +351,8 @@
       "kind": "center",
       "parent": "gsas",
       "url": "https://cowles.yale.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "shares the Economics Drupal: its JSON:API returns the same seminars as the Economics feed we read"
     },
     {
       "id": "ycc",
@@ -358,7 +375,8 @@
       "name": "Residential colleges (14)",
       "kind": "student",
       "url": "https://college.yale.edu/residential-colleges",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "each college has its own site; no shared events feed (college events go on Yale Connect)"
     },
     {
       "id": "library",
@@ -397,7 +415,8 @@
       "name": "Office of Career Strategy",
       "kind": "other",
       "url": "https://ocs.yale.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "events page redirects to a login"
     }
   ]
 }

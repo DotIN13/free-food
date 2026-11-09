@@ -40,14 +40,16 @@
       "name": "School of Electronics 电子学院",
       "kind": "school",
       "url": "https://www.ele.pku.edu.cn",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "did not answer within 12 s (https and http)"
     },
     {
       "id": "ics",
       "name": "School of Intelligence Science and Technology 智能学院",
       "kind": "school",
       "url": "https://www.sist.pku.edu.cn",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "did not answer within 12 s (https and http)"
     },
     {
       "id": "coe",
@@ -62,8 +64,8 @@
       "name": "School of Mathematical Sciences 数学科学学院",
       "kind": "school",
       "url": "https://www.math.pku.edu.cn",
-      "status": "unchecked",
-      "note": "did not answer within 15 s"
+      "status": "no-feed",
+      "note": "answers on http only; lecture listing (讲座/学术报告) is HTML only, no feed"
     },
     {
       "id": "physics",
@@ -101,8 +103,9 @@
       "id": "urban",
       "name": "College of Urban and Environmental Sciences 城市与环境学院",
       "kind": "school",
-      "url": "https://urban.pku.edu.cn",
-      "status": "unchecked"
+      "url": "https://www.ues.pku.edu.cn",
+      "status": "no-feed",
+      "note": "urban.pku.edu.cn is the mail system; the school is ues.pku.edu.cn, lectures in HTML only"
     },
     {
       "id": "econ",
@@ -165,8 +168,8 @@
       "name": "Department of History 历史学系",
       "kind": "school",
       "url": "https://www.hist.pku.edu.cn",
-      "status": "unchecked",
-      "note": "did not answer within 15 s"
+      "status": "no-feed",
+      "note": "did not answer within 12 s (https and http)"
     },
     {
       "id": "chinese",
@@ -189,8 +192,8 @@
       "name": "Department of Sociology 社会学系",
       "kind": "school",
       "url": "https://shehui.pku.edu.cn",
-      "status": "unchecked",
-      "note": "did not answer within 15 s"
+      "status": "no-feed",
+      "note": "did not answer within 12 s (https and http)"
     },
     {
       "id": "law",
@@ -221,28 +224,32 @@
       "name": "School of Arts 艺术学院",
       "kind": "school",
       "url": "https://www.art.pku.edu.cn",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
     },
     {
       "id": "archaeology",
       "name": "School of Archaeology and Museology 考古文博学院",
       "kind": "school",
       "url": "https://archaeology.pku.edu.cn",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
     },
     {
       "id": "marxism",
       "name": "School of Marxism 马克思主义学院",
       "kind": "school",
       "url": "https://marxism.pku.edu.cn",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
     },
     {
       "id": "education",
       "name": "Graduate School of Education 教育学院",
       "kind": "school",
       "url": "https://www.gse.pku.edu.cn",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
     },
     {
       "id": "pkuhsc",
@@ -289,21 +296,24 @@
       "name": "Beijing International Center for Mathematical Research 北京国际数学研究中心",
       "kind": "center",
       "url": "https://bicmr.pku.edu.cn",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
     },
     {
       "id": "kavli",
       "name": "Kavli Institute for Astronomy and Astrophysics 科维理天文与天体物理研究所",
       "kind": "institute",
       "url": "https://kiaa.pku.edu.cn",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Activities/Events_Calendar.htm is HTML (VSB CMS), no feed"
     },
     {
       "id": "ias",
       "name": "Institute for Advanced Study in Humanities and Social Sciences 人文社会科学研究院",
       "kind": "institute",
       "url": "https://www.ihss.pku.edu.cn",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "did not answer within 12 s (https and http)"
     },
     {
       "id": "ccer",
@@ -319,15 +329,16 @@
       "name": "Peking University Student Union 北京大学学生会",
       "kind": "student",
       "url": "https://www.pkuyouth.cn",
-      "status": "unchecked",
-      "note": "did not answer within 15 s"
+      "status": "no-feed",
+      "note": "did not answer within 12 s (https and http)"
     },
     {
       "id": "gsu",
       "name": "Graduate Student Association 北京大学研究生会",
       "kind": "student",
       "url": "https://www.pku.edu.cn",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no site of its own found; pku.edu.cn notices are HTML only"
     },
     {
       "id": "library",

@@ -47,9 +47,8 @@
       "name": "Notre Dame Law School",
       "kind": "school",
       "url": "https://law.nd.edu",
-      "status": "unchecked",
-      "found": "https://law.nd.edu/news-events/events.ics",
-      "note": "events page offers a webcal ics (6 events)"
+      "status": "no-feed",
+      "note": "events.ics works (6 events) but nothing in the next three weeks"
     },
     {
       "id": "architecture",
@@ -76,7 +75,8 @@
       "name": "The Graduate School",
       "kind": "school",
       "url": "https://graduateschool.nd.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "site has no events listing"
     },
     {
       "id": "cse",
@@ -111,7 +111,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://cbe.nd.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events/feed RSS has no event dates we read"
     },
     {
       "id": "math",
@@ -386,32 +387,30 @@
       ]
     },
     {
-      "id": "ndias",
-      "name": "Notre Dame Institute for Advanced Study",
-      "kind": "institute",
-      "url": "https://ndias.nd.edu",
-      "status": "unchecked"
-    },
-    {
       "id": "idea",
       "name": "IDEA Center (innovation and entrepreneurship)",
       "kind": "center",
-      "url": "https://idea.nd.edu",
-      "status": "unchecked"
+      "url": "https://ideacenter.nd.edu",
+      "status": "blocked",
+      "note": "403"
     },
     {
       "id": "ndenergy",
       "name": "Notre Dame Energy",
       "kind": "center",
       "url": "https://energy.nd.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://energy.nd.edu/about/events.ics"
+      ]
     },
     {
       "id": "eck",
       "name": "Eck Institute for Global Health",
       "kind": "institute",
       "url": "https://globalhealth.nd.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events.ics has 1 event, none upcoming"
     },
     {
       "id": "studentgov",
@@ -450,21 +449,26 @@
       "name": "Raclin Murphy Museum of Art",
       "kind": "museum",
       "url": "https://raclinmurphymuseum.nd.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://raclinmurphymuseum.nd.edu/visit/events.ics"
+      ]
     },
     {
       "id": "dpac",
       "name": "DeBartolo Performing Arts Center",
       "kind": "other",
       "url": "https://performingarts.nd.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events pages HTML, no feed"
     },
     {
       "id": "career",
       "name": "Center for Career Development",
       "kind": "other",
-      "url": "https://careercenter.nd.edu",
-      "status": "unchecked"
+      "url": "https://careerdevelopment.nd.edu",
+      "status": "in-wide",
+      "note": "links events.nd.edu; employer events on Handshake"
     }
   ]
 }

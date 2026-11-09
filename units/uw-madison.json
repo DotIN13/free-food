@@ -91,7 +91,8 @@
       "name": "College of Agricultural and Life Sciences",
       "kind": "school",
       "url": "https://cals.wisc.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page lists today.wisc.edu events and links its today.wisc.edu feed"
     },
     {
       "id": "sohe",
@@ -114,8 +115,8 @@
       "name": "Graduate School",
       "kind": "school",
       "url": "https://grad.wisc.edu",
-      "status": "unchecked",
-      "note": "events at info.grad.wisc.edu/calendar"
+      "status": "in-wide",
+      "note": "events link to events.wisc.edu / today.wisc.edu"
     },
     {
       "id": "lafollette",
@@ -123,7 +124,10 @@
       "kind": "school",
       "parent": "ls",
       "url": "https://lafollette.wisc.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://lafollette.wisc.edu/wp-json/uw-events/v3/events"
+      ]
     },
     {
       "id": "cs",
@@ -141,24 +145,27 @@
       "name": "Electrical & Computer Engineering",
       "kind": "department",
       "parent": "engineering",
-      "url": "https://ece.wisc.edu",
-      "status": "unchecked"
+      "url": "https://engineering.wisc.edu/departments/electrical-computer-engineering/",
+      "status": "blocked",
+      "note": "ece.wisc.edu redirects to engineering.wisc.edu, which answers a Cloudflare challenge"
     },
     {
       "id": "me",
       "name": "Mechanical Engineering",
       "kind": "department",
       "parent": "engineering",
-      "url": "https://me.wisc.edu",
-      "status": "unchecked"
+      "url": "https://engineering.wisc.edu/departments/mechanical-engineering/",
+      "status": "blocked",
+      "note": "engineering.wisc.edu answers a Cloudflare challenge (403)"
     },
     {
       "id": "bme",
       "name": "Biomedical Engineering",
       "kind": "department",
       "parent": "engineering",
-      "url": "https://bme.wisc.edu",
-      "status": "unchecked"
+      "url": "https://engineering.wisc.edu/departments/biomedical-engineering/",
+      "status": "blocked",
+      "note": "bme.wisc.edu does not resolve; engineering.wisc.edu answers a Cloudflare challenge"
     },
     {
       "id": "math",
@@ -186,8 +193,10 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://www.physics.wisc.edu",
-      "status": "unchecked",
-      "note": "WordPress events page; only a site /feed/ seen"
+      "status": "feed",
+      "feeds": [
+        "https://www.physics.wisc.edu/events/ical.php"
+      ]
     },
     {
       "id": "chemistry",
@@ -195,17 +204,19 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://chem.wisc.edu",
-      "status": "unchecked",
-      "found": "https://chem.wisc.edu/events/feed/",
-      "note": "RSS of event posts, pubDate is the posting date"
+      "status": "feed",
+      "feeds": [
+        "https://chem.wisc.edu/events/feed/"
+      ]
     },
     {
       "id": "biology",
       "name": "Integrative Biology",
       "kind": "department",
       "parent": "ls",
-      "url": "https://integrativebiology.wisc.edu",
-      "status": "unchecked"
+      "url": "https://biology.wisc.edu",
+      "status": "in-wide",
+      "note": "home page lists today.wisc.edu events (feed 679)"
     },
     {
       "id": "economics",
@@ -222,9 +233,8 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://psych.wisc.edu",
-      "status": "unchecked",
-      "found": "https://psych.wisc.edu/wp-json/tribe/events/v1/events",
-      "note": "The Events Calendar REST API answers (1 upcoming now)"
+      "status": "no-feed",
+      "note": "tribe API has 1 upcoming, and its TLS chain is incomplete so our fetch fails"
     },
     {
       "id": "polisci",
@@ -241,9 +251,10 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://history.wisc.edu",
-      "status": "unchecked",
-      "found": "https://history.wisc.edu/events/feed/",
-      "note": "RSS of event posts, pubDate is the posting date"
+      "status": "feed",
+      "feeds": [
+        "https://history.wisc.edu/events/feed/"
+      ]
     },
     {
       "id": "english",
@@ -269,7 +280,10 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://sociology.wisc.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/8hf649mbr9puv5b7sqek8sg1e0%40group.calendar.google.com/public/basic.ics"
+      ]
     },
     {
       "id": "dsi",
@@ -304,7 +318,8 @@
       "name": "Center for the Humanities",
       "kind": "center",
       "url": "https://humanities.wisc.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "/events/feed/ is posting dates (1 item); wiscweb/v2/events gives only the next 3"
     },
     {
       "id": "iris",
@@ -319,7 +334,8 @@
       "name": "Wisconsin Energy Institute",
       "kind": "institute",
       "url": "https://energy.wisc.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events page HTML; /rss.xml is news"
     },
     {
       "id": "carbone",
@@ -327,7 +343,8 @@
       "kind": "center",
       "parent": "smph",
       "url": "https://cancer.wisc.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events go to wiscmedicine.org/events (HTML); uw-events JSON on cancer.wisc.edu is empty"
     },
     {
       "id": "asm",
@@ -342,28 +359,32 @@
       "name": "Wisconsin Union",
       "kind": "other",
       "url": "https://union.wisc.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events and activities pages are HTML only"
     },
     {
       "id": "library",
       "name": "UW-Madison Libraries",
       "kind": "library",
       "url": "https://www.library.wisc.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page lists today.wisc.edu events"
     },
     {
       "id": "chazen",
       "name": "Chazen Museum of Art",
       "kind": "museum",
       "url": "https://chazen.wisc.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress chazen_event posts carry no dates in the API; events page HTML"
     },
     {
       "id": "career",
       "name": "SuccessWorks / career services",
       "kind": "other",
       "url": "https://careers.wisc.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "career events are in Handshake (login)"
     }
   ]
 }

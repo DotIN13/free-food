@@ -11,7 +11,8 @@
       "name": "College of Letters and Science",
       "kind": "school",
       "url": "https://www.ls.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "www.ls.ucsb.edu no longer resolves; no college-level events, its departments list their own"
     },
     {
       "id": "engineering",
@@ -26,7 +27,8 @@
       "name": "College of Creative Studies",
       "kind": "school",
       "url": "https://ccs.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML; career items go to Handshake"
     },
     {
       "id": "bren",
@@ -41,14 +43,16 @@
       "name": "Gevirtz Graduate School of Education",
       "kind": "school",
       "url": "https://education.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page (/events 404); news only"
     },
     {
       "id": "graddiv",
       "name": "Graduate Division",
       "kind": "school",
       "url": "https://www.graddiv.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "outreach-events page is Drupal HTML"
     },
     {
       "id": "cs",
@@ -83,7 +87,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://chemengr.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML; /rss.xml is news"
     },
     {
       "id": "materials",
@@ -91,7 +96,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://www.materials.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML; /rss.xml is news"
     },
     {
       "id": "math",
@@ -99,7 +105,8 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://www.math.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page (/events 404); seminars page is HTML"
     },
     {
       "id": "pstat",
@@ -107,7 +114,8 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://www.pstat.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page embeds a Google Calendar with 1 upcoming item; big events go on calendar.ucsb.edu"
     },
     {
       "id": "physics",
@@ -133,7 +141,10 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://www.mcdb.ucsb.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/ucsb.edu_bb8u4lq16gtcndkikgv9nt0he0%40group.calendar.google.com/public/basic.ics"
+      ]
     },
     {
       "id": "eemb",
@@ -141,7 +152,8 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://www.eemb.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "seminars embed a room resource Google Calendar that is not public (ical 404)"
     },
     {
       "id": "economics",
@@ -167,7 +179,8 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://www.polsci.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page (/events 404); events posted as news"
     },
     {
       "id": "history",
@@ -193,7 +206,8 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://www.philosophy.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page (/events 404)"
     },
     {
       "id": "sociology",
@@ -201,7 +215,8 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://www.soc.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page (/events 404)"
     },
     {
       "id": "geography",
@@ -209,7 +224,8 @@
       "kind": "department",
       "parent": "ls",
       "url": "https://geog.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events-outreach page is HTML only"
     },
     {
       "id": "ihc",
@@ -224,7 +240,8 @@
       "name": "Kavli Institute for Theoretical Physics",
       "kind": "institute",
       "url": "https://www.kitp.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "iCal exports (kitp/programs/conferences.ics) list multi-week programs, none starting soon; talks schedule is HTML"
     },
     {
       "id": "cnsi",
@@ -239,21 +256,24 @@
       "name": "Materials Research Laboratory",
       "kind": "center",
       "url": "https://www.mrl.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page (/events 404)"
     },
     {
       "id": "isber",
       "name": "Institute for Social, Behavioral and Economic Research",
       "kind": "institute",
       "url": "https://www.isber.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page (/events 404)"
     },
     {
       "id": "orfalea",
       "name": "Orfalea Center for Global and International Studies",
       "kind": "center",
       "url": "https://orfaleacenter.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress events page; no tribe API, ?ical=1 empty"
     },
     {
       "id": "mlai",
@@ -261,7 +281,8 @@
       "kind": "center",
       "parent": "engineering",
       "url": "https://ml.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events are Drupal HTML pages"
     },
     {
       "id": "ieeinst",
@@ -269,7 +290,8 @@
       "kind": "institute",
       "parent": "engineering",
       "url": "https://iee.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "site answers 503 'under maintenance'"
     },
     {
       "id": "tmp",
@@ -277,21 +299,24 @@
       "kind": "center",
       "parent": "engineering",
       "url": "https://tmp.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "lecture series and events as Drupal HTML"
     },
     {
       "id": "nceas",
       "name": "National Center for Ecological Analysis and Synthesis",
       "kind": "center",
       "url": "https://www.nceas.ucsb.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "public events link to calendar.ucsb.edu entries"
     },
     {
       "id": "carsey-wolf",
       "name": "Carsey-Wolf Center",
       "kind": "center",
       "url": "https://www.carseywolf.ucsb.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "WordPress events; The Events Calendar API answers 401, ?ical=1 empty"
     },
     {
       "id": "as",
@@ -314,7 +339,8 @@
       "name": "UCSB Library",
       "kind": "library",
       "url": "https://www.library.ucsb.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events and exhibitions are Drupal HTML; LibCal calendar list loads by script only"
     },
     {
       "id": "agsm",
@@ -337,14 +363,18 @@
       "name": "Career Services",
       "kind": "other",
       "url": "https://career.ucsb.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "career events are in Handshake (login)"
     },
     {
       "id": "athletics",
       "name": "UCSB Gauchos Athletics",
       "kind": "other",
       "url": "https://ucsbgauchos.com",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://ucsbgauchos.com/calendar.ashx/calendar.ics"
+      ]
     }
   ]
 }

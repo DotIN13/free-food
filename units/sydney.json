@@ -59,8 +59,8 @@
       "name": "Sydney Conservatorium of Music",
       "kind": "school",
       "url": "https://www.sydney.edu.au/music",
-      "status": "unchecked",
-      "note": "events path 404; concerts likely on What's On"
+      "status": "no-feed",
+      "note": "concerts sold on boxoffice-music.sydney.edu.au (HTML), no feed"
     },
     {
       "id": "architecture",
@@ -75,8 +75,9 @@
       "name": "Sydney Dental School",
       "kind": "school",
       "parent": "medicine-health",
-      "url": "https://www.sydney.edu.au/dentistry",
-      "status": "unchecked"
+      "url": "https://www.sydney.edu.au/medicine-health/schools/sydney-dental-school.html",
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "pharmacy",
@@ -84,15 +85,17 @@
       "kind": "school",
       "parent": "medicine-health",
       "url": "https://www.sydney.edu.au/medicine-health/schools/sydney-pharmacy-school.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "nursing",
       "name": "Susan Wakil School of Nursing and Midwifery",
       "kind": "school",
       "parent": "medicine-health",
-      "url": "https://www.sydney.edu.au/medicine-health/schools/sydney-nursing-school.html",
-      "status": "unchecked"
+      "url": "https://www.sydney.edu.au/medicine-health/schools/susan-wakil-school-of-nursing-and-midwifery.html",
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "public-health",
@@ -100,7 +103,8 @@
       "kind": "school",
       "parent": "medicine-health",
       "url": "https://www.sydney.edu.au/medicine-health/schools/sydney-school-of-public-health.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "vet",
@@ -108,7 +112,8 @@
       "kind": "school",
       "parent": "science",
       "url": "https://www.sydney.edu.au/science/schools/sydney-school-of-veterinary-science.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "education",
@@ -116,7 +121,8 @@
       "kind": "school",
       "parent": "arts",
       "url": "https://www.sydney.edu.au/arts/schools/sydney-school-of-education-and-social-work.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "cs",
@@ -124,16 +130,17 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html",
-      "status": "unchecked",
-      "note": "news-and-events path 404"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "eie",
       "name": "School of Electrical and Computer Engineering",
       "kind": "department",
       "parent": "engineering",
-      "url": "https://www.sydney.edu.au/engineering/schools/school-of-electrical-and-information-engineering.html",
-      "status": "unchecked"
+      "url": "https://www.sydney.edu.au/engineering/schools/school-of-electrical-and-computer-engineering.html",
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "amme",
@@ -141,7 +148,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://www.sydney.edu.au/engineering/schools/school-of-aerospace-mechanical-and-mechatronic-engineering.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "bme",
@@ -149,7 +157,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://www.sydney.edu.au/engineering/schools/school-of-biomedical-engineering.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "maths",
@@ -166,7 +175,8 @@
       "kind": "department",
       "parent": "science",
       "url": "https://www.sydney.edu.au/science/schools/school-of-physics.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "chemistry",
@@ -174,7 +184,8 @@
       "kind": "department",
       "parent": "science",
       "url": "https://www.sydney.edu.au/science/schools/school-of-chemistry.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "lifeenv",
@@ -182,7 +193,8 @@
       "kind": "department",
       "parent": "science",
       "url": "https://www.sydney.edu.au/science/schools/school-of-life-and-environmental-sciences.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "psychology",
@@ -190,7 +202,8 @@
       "kind": "department",
       "parent": "science",
       "url": "https://www.sydney.edu.au/science/schools/school-of-psychology.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "economics",
@@ -198,7 +211,8 @@
       "kind": "department",
       "parent": "arts",
       "url": "https://www.sydney.edu.au/arts/schools/school-of-economics.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "sspa",
@@ -215,7 +229,8 @@
       "kind": "department",
       "parent": "arts",
       "url": "https://www.sydney.edu.au/arts/schools/school-of-humanities.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "english",
@@ -223,15 +238,16 @@
       "kind": "department",
       "parent": "arts",
       "url": "https://www.sydney.edu.au/arts/schools/school-of-art-communication-and-english.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "nano",
       "name": "Sydney Nano Institute",
       "kind": "institute",
-      "url": "https://www.sydney.edu.au/sydney-nano",
-      "status": "unchecked",
-      "note": "events path 404"
+      "url": "https://www.sydney.edu.au/nano/",
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "cpc",
@@ -246,23 +262,24 @@
       "name": "Sydney Environment Institute",
       "kind": "institute",
       "url": "https://www.sydney.edu.au/sydney-environment-institute",
-      "status": "unchecked",
-      "note": "events path 404"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "bmc",
       "name": "Brain and Mind Centre",
       "kind": "institute",
-      "url": "https://www.sydney.edu.au/brain-and-mind",
-      "status": "unchecked",
-      "note": "events path 404"
+      "url": "https://www.sydney.edu.au/brain-mind/",
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "ussc",
       "name": "United States Studies Centre",
       "kind": "center",
       "url": "https://www.ussc.edu.au",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML (Next.js), no feed"
     },
     {
       "id": "china",
@@ -278,21 +295,24 @@
       "kind": "center",
       "parent": "engineering",
       "url": "https://www.sydney.edu.au/engineering/our-research/data-science-and-computer-engineering/sydney-artificial-intelligence-centre.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "centre has no events listing (old page now redirects to the research centres list)"
     },
     {
       "id": "sydney-policy-lab",
       "name": "Sydney Policy Lab",
       "kind": "center",
       "url": "https://www.sydney.edu.au/sydney-policy-lab",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "infectious",
       "name": "Sydney Infectious Diseases Institute",
       "kind": "institute",
       "url": "https://www.sydney.edu.au/infectious-diseases-institute",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its events go to What's On (AppSync GraphQL, not read)"
     },
     {
       "id": "mri",
@@ -300,14 +320,18 @@
       "kind": "institute",
       "parent": "science",
       "url": "https://mathematical-research-institute.sydney.edu.au",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://mathematical-research-institute.sydney.edu.au/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "incubate",
       "name": "INCUBATE (Startup programs)",
       "kind": "center",
-      "url": "https://www.sydney.edu.au/entrepreneurship",
-      "status": "unchecked"
+      "url": "https://incubate.org.au",
+      "status": "no-feed",
+      "note": "startup program site (Elementor), no events feed"
     },
     {
       "id": "usu",
@@ -340,14 +364,16 @@
       "name": "Residential colleges (St Andrew's, St Paul's, Wesley, Women's, St John's, Sancta Sophia)",
       "kind": "student",
       "url": "https://www.sydney.edu.au/study/accommodation.html",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "accommodation page only; colleges run their own sites"
     },
     {
       "id": "library",
       "name": "University of Sydney Library",
       "kind": "library",
       "url": "https://www.library.sydney.edu.au",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page"
     },
     {
       "id": "chau-chak",
@@ -362,14 +388,16 @@
       "name": "Careers Centre",
       "kind": "other",
       "url": "https://www.sydney.edu.au/careers",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "careers page has no events feed"
     },
     {
       "id": "susf",
       "name": "Sydney Uni Sport & Fitness",
       "kind": "other",
       "url": "https://www.susf.com.au",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
     }
   ]
 }

@@ -15,8 +15,7 @@
     { "id": "mcs", "name": "Mellon College of Science", "kind": "school", "url": "https://www.cmu.edu/mcs",
       "feeds": ["https://events.cmu.edu/live/json/events/group/Mellon%20College%20of%20Science/max/100"], "status": "feed" },
     { "id": "heinz", "name": "Heinz College of Information Systems and Public Policy", "kind": "school", "url": "https://www.heinz.cmu.edu",
-      "feeds": ["https://static-prod-us-east-1.campusgroups.com/ical/heinz/ical_heinz.ics",
-                "https://events.cmu.edu/live/json/events/group/Heinz%20College%20of%20Information%20Systems%20and%20Public%20Policy/max/100"], "status": "feed" },
+      "feeds": ["https://static-prod-us-east-1.campusgroups.com/ical/heinz/ical_heinz.ics","https://events.cmu.edu/live/json/events/group/Heinz%20College%20of%20Information%20Systems%20and%20Public%20Policy/max/100"], "status": "feed" },
     { "id": "tepper", "name": "Tepper School of Business", "kind": "school", "url": "https://www.cmu.edu/tepper",
       "status": "in-wide", "note": "group on events.cmu.edu with 0-3 events; student orgs on TartanConnect" },
     { "id": "cfa", "name": "College of Fine Arts", "kind": "school", "url": "https://www.cmu.edu/cfa",
@@ -29,7 +28,6 @@
       "status": "in-wide", "note": "group on events.cmu.edu" },
     { "id": "design", "name": "School of Design", "kind": "department", "parent": "cfa", "url": "https://design.cmu.edu",
       "status": "in-wide", "note": "group on events.cmu.edu" },
-
     { "id": "csd", "name": "Computer Science Department", "kind": "department", "parent": "scs", "url": "https://csd.cmu.edu",
       "status": "in-wide", "note": "talks on the SCS calendar we read" },
     { "id": "mld", "name": "Machine Learning Department", "kind": "department", "parent": "scs", "url": "https://www.ml.cmu.edu",
@@ -78,9 +76,8 @@
       "status": "in-wide", "note": "group on events.cmu.edu; Dietrich feed covers it" },
     { "id": "modlang", "name": "Languages, Cultures & Applied Linguistics", "kind": "department", "parent": "dietrich", "url": "https://www.cmu.edu/dietrich/modlang",
       "status": "in-wide", "note": "group on events.cmu.edu" },
-    { "id": "econ", "name": "Economics (Tepper / Dietrich)", "kind": "department", "parent": "tepper", "url": "https://www.cmu.edu/tepper/programs/phd/program/economics",
-      "status": "unchecked" },
-
+    { "id": "econ", "name": "Economics (Tepper / Dietrich)", "kind": "department", "parent": "tepper", "url": "https://www.cmu.edu/tepper/faculty-and-research/academic-areas/economics",
+      "status": "no-feed", "note": "seminars are on Tepper's Seminar Tracker (seminartracker.tepper.cmu.edu), a JavaScript grid with no feed" },
     { "id": "cylab", "name": "CyLab Security and Privacy Institute", "kind": "institute", "url": "https://www.cylab.cmu.edu",
       "status": "in-wide", "note": "group on events.cmu.edu with 0-3 events" },
     { "id": "scott", "name": "Wilton E. Scott Institute for Energy Innovation", "kind": "institute", "url": "https://www.cmu.edu/energy",
@@ -101,7 +98,6 @@
       "status": "in-wide", "note": "group on events.cmu.edu" },
     { "id": "psc", "name": "Pittsburgh Supercomputing Center", "kind": "center", "url": "https://www.psc.edu",
       "status": "in-wide", "note": "group on events.cmu.edu" },
-
     { "id": "studentaffairs", "name": "Division of Student Affairs", "kind": "other", "url": "https://www.cmu.edu/student-affairs",
       "feeds": ["https://events.cmu.edu/live/json/events/group/Student%20Affairs/max/100"], "status": "feed" },
     { "id": "stugov", "name": "Student Government (StuGov)", "kind": "student", "url": "https://www.cmu.edu/stugov",
@@ -113,7 +109,7 @@
     { "id": "miller", "name": "Miller ICA", "kind": "museum", "url": "https://miller-ica.cmu.edu",
       "status": "in-wide", "note": "ICA Pittsburgh group on events.cmu.edu" },
     { "id": "career", "name": "Career and Professional Development Center", "kind": "other", "url": "https://www.cmu.edu/career",
-      "status": "unchecked" },
+      "status": "in-wide", "note": "recruiting events calendar is on events.cmu.edu (plus Handshake)" },
     { "id": "athletics", "name": "Tartan Athletics", "kind": "other", "url": "https://athletics.cmu.edu",
       "status": "in-wide", "note": "Athletics group on events.cmu.edu" }
   ]

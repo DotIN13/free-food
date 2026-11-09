@@ -11,7 +11,8 @@
       "name": "College and Graduate School of Arts & Sciences",
       "kind": "school",
       "url": "https://as.virginia.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page (/events is 404); links to the arts calendar, a slice of the main Trumba"
     },
     {
       "id": "seas",
@@ -36,9 +37,10 @@
       "name": "McIntire School of Commerce",
       "kind": "school",
       "url": "https://www.commerce.virginia.edu",
-      "status": "unchecked",
-      "found": "https://events.mcintire.virginia.edu",
-      "note": "own Localist calendar (api/2/events answers; webcal calendar/1.ics)"
+      "status": "feed",
+      "feeds": [
+        "https://events.mcintire.virginia.edu"
+      ]
     },
     {
       "id": "law",
@@ -53,16 +55,16 @@
       "name": "School of Medicine",
       "kind": "school",
       "url": "https://med.virginia.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "no-feed",
+      "note": "event pages are HTML only (/events is 404)"
     },
     {
       "id": "nursing",
       "name": "School of Nursing",
       "kind": "school",
       "url": "https://nursing.virginia.edu",
-      "status": "unchecked",
-      "note": "/events answers 403; events.nursing.virginia.edu calendar returned an error; Trumba uva-nursing is a slice of the main calendar"
+      "status": "no-feed",
+      "note": "events.nursing.virginia.edu calendar is HTML with no feed; Trumba uva-nursing is a slice of the main calendar"
     },
     {
       "id": "education",
@@ -103,15 +105,17 @@
       "name": "School of Continuing and Professional Studies",
       "kind": "school",
       "url": "https://www.scps.virginia.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events list, HTML only"
     },
     {
       "id": "cs",
       "name": "Computer Science",
       "kind": "department",
       "parent": "seas",
-      "url": "https://www.cs.virginia.edu",
-      "status": "unchecked"
+      "url": "https://engineering.virginia.edu/departments/computer-science",
+      "status": "blocked",
+      "note": "www.cs.virginia.edu redirects to engineering.virginia.edu, behind Cloudflare"
     },
     {
       "id": "ece",
@@ -146,7 +150,8 @@
       "kind": "department",
       "parent": "as",
       "url": "https://math.virginia.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page (/events is 404); links only to Google Calendar's app"
     },
     {
       "id": "statistics",
@@ -154,7 +159,8 @@
       "kind": "department",
       "parent": "as",
       "url": "https://statistics.as.virginia.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events list, HTML only"
     },
     {
       "id": "physics",
@@ -162,7 +168,8 @@
       "kind": "department",
       "parent": "as",
       "url": "https://www.phys.virginia.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "announcements page, HTML only"
     },
     {
       "id": "chemistry",
@@ -224,15 +231,17 @@
       "kind": "department",
       "parent": "as",
       "url": "https://english.as.virginia.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal calendar page, HTML only"
     },
     {
       "id": "philosophy",
       "name": "Philosophy",
       "kind": "department",
       "parent": "as",
-      "url": "https://philosophy.as.virginia.edu",
-      "status": "unchecked"
+      "url": "https://philosophy.virginia.edu",
+      "status": "no-feed",
+      "note": "Drupal events list, HTML only"
     },
     {
       "id": "sociology",
@@ -267,14 +276,16 @@
       "name": "Environmental Institute",
       "kind": "institute",
       "url": "https://environment.virginia.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal news and events, HTML only"
     },
     {
       "id": "democracy",
       "name": "Karsh Institute of Democracy",
       "kind": "institute",
       "url": "https://karshinstitute.virginia.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events list, HTML only"
     },
     {
       "id": "studentcouncil",
@@ -297,15 +308,18 @@
       "name": "UVA Library",
       "kind": "library",
       "url": "https://library.virginia.edu",
-      "status": "unchecked",
-      "note": "Trumba uva-library is a slice of the main calendar"
+      "status": "feed",
+      "feeds": [
+        "https://cal.lib.virginia.edu/ical_subscribe.php?src=p&cid=4299"
+      ]
     },
     {
       "id": "fralin",
       "name": "The Fralin Museum of Art",
       "kind": "museum",
-      "url": "https://uvafralinmuseum.virginia.edu",
-      "status": "unchecked"
+      "url": "https://uvafralinartmuseum.virginia.edu",
+      "status": "blocked",
+      "note": "answers 403"
     },
     {
       "id": "arts",
@@ -320,7 +334,10 @@
       "name": "Career Center",
       "kind": "other",
       "url": "https://career.virginia.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://career.virginia.edu/events/feed/"
+      ]
     }
   ]
 }

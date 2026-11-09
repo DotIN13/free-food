@@ -1,62 +1,472 @@
 {
   "id": "ucsd",
   "name": "University of California, San Diego",
-  "wide": ["https://calendar.ucsd.edu"],
+  "wide": [
+    "https://calendar.ucsd.edu"
+  ],
   "units": [
-    { "id": "arts-humanities", "name": "School of Arts and Humanities", "kind": "school", "url": "https://arts-humanities.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "biology", "name": "School of Biological Sciences", "kind": "school", "url": "https://biology.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "jacobs", "name": "Jacobs School of Engineering", "kind": "school", "url": "https://jacobsschool.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "gps", "name": "School of Global Policy and Strategy", "kind": "school", "url": "https://gps.ucsd.edu", "status": "in-wide", "note": "seen on calendar.ucsd.edu" },
-    { "id": "scids", "name": "Halıcıoğlu School of Computing, Information and Data Sciences", "kind": "school", "url": "https://datascience.ucsd.edu", "status": "in-wide", "note": "publishes on calendar.ucsd.edu; its own tribe API is empty" },
-    { "id": "publichealth", "name": "Herbert Wertheim School of Public Health and Human Longevity Science", "kind": "school", "url": "https://hwsph.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "medicine", "name": "School of Medicine", "kind": "school", "url": "https://medschool.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "physical-sciences", "name": "School of Physical Sciences", "kind": "school", "url": "https://physicalsciences.ucsd.edu", "status": "unchecked" },
-    { "id": "rady", "name": "Rady School of Management", "kind": "school", "url": "https://rady.ucsd.edu", "status": "in-wide", "note": "main Localist carries Rady" },
-    { "id": "scripps", "name": "Scripps Institution of Oceanography", "kind": "school", "url": "https://scripps.ucsd.edu", "feeds": ["https://scripps.ucsd.edu/events/feed"], "status": "feed" },
-    { "id": "social-sciences", "name": "School of Social Sciences", "kind": "school", "url": "https://socialsciences.ucsd.edu", "status": "in-wide", "note": "its department event pages point to calendar.ucsd.edu" },
-    { "id": "pharmacy", "name": "Skaggs School of Pharmacy and Pharmaceutical Sciences", "kind": "school", "url": "https://pharmacy.ucsd.edu", "status": "unchecked" },
-    { "id": "cse", "name": "Computer Science and Engineering", "kind": "department", "parent": "jacobs", "url": "https://cse.ucsd.edu", "status": "no-feed", "note": "its Google calendar (a room resource) has no upcoming events; pages have no feed" },
-    { "id": "ece", "name": "Electrical and Computer Engineering", "kind": "department", "parent": "jacobs", "url": "https://www.ece.ucsd.edu", "status": "unchecked", "note": "events page answered 500" },
-    { "id": "mae", "name": "Mechanical and Aerospace Engineering", "kind": "department", "parent": "jacobs", "url": "https://mae.ucsd.edu", "status": "unchecked" },
-    { "id": "bioeng", "name": "Shu Chien-Gene Lay Department of Bioengineering", "kind": "department", "parent": "jacobs", "url": "https://be.ucsd.edu", "status": "no-feed", "note": "events listed as HTML" },
-    { "id": "math", "name": "Department of Mathematics", "kind": "department", "parent": "physical-sciences", "url": "https://math.ucsd.edu", "status": "unchecked" },
-    { "id": "physics", "name": "Department of Physics", "kind": "department", "parent": "physical-sciences", "url": "https://physics.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "chemistry", "name": "Department of Chemistry and Biochemistry", "kind": "department", "parent": "physical-sciences", "url": "https://www.chemistry.ucsd.edu", "status": "unchecked", "note": "timed out" },
-    { "id": "economics", "name": "Department of Economics", "kind": "department", "parent": "social-sciences", "url": "https://economics.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "psychology", "name": "Department of Psychology", "kind": "department", "parent": "social-sciences", "url": "https://psychology.ucsd.edu", "status": "no-feed", "note": "events listed as HTML" },
-    { "id": "polisci", "name": "Department of Political Science", "kind": "department", "parent": "social-sciences", "url": "https://polisci.ucsd.edu", "status": "in-wide", "note": "site links to calendar.ucsd.edu for events" },
-    { "id": "sociology", "name": "Department of Sociology", "kind": "department", "parent": "social-sciences", "url": "https://sociology.ucsd.edu", "status": "in-wide", "note": "site links to calendar.ucsd.edu for events" },
-    { "id": "cogsci", "name": "Department of Cognitive Science", "kind": "department", "parent": "social-sciences", "url": "https://cogsci.ucsd.edu", "status": "unchecked" },
-    { "id": "history", "name": "Department of History", "kind": "department", "parent": "arts-humanities", "url": "https://history.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "literature", "name": "Department of Literature", "kind": "department", "parent": "arts-humanities", "url": "https://literature.ucsd.edu", "status": "in-wide", "note": "seen on calendar.ucsd.edu" },
-    { "id": "philosophy", "name": "Department of Philosophy", "kind": "department", "parent": "arts-humanities", "url": "https://philosophy.ucsd.edu", "status": "in-wide", "note": "seen on calendar.ucsd.edu" },
-    { "id": "music", "name": "Department of Music", "kind": "department", "parent": "arts-humanities", "url": "https://music.ucsd.edu", "status": "in-wide", "note": "seen on calendar.ucsd.edu" },
-    { "id": "theatre", "name": "Department of Theatre and Dance", "kind": "department", "parent": "arts-humanities", "url": "https://theatre.ucsd.edu", "status": "in-wide", "note": "seen on calendar.ucsd.edu" },
-    { "id": "qi", "name": "Qualcomm Institute", "kind": "institute", "url": "https://qi.ucsd.edu", "status": "in-wide", "note": "seen on calendar.ucsd.edu" },
-    { "id": "sdsc", "name": "San Diego Supercomputer Center", "kind": "center", "url": "https://www.sdsc.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "tilos", "name": "NSF AI Institute TILOS", "kind": "institute", "url": "https://tilos.ai", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "kibm", "name": "Kavli Institute for Brain and Mind", "kind": "institute", "url": "https://kibm.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "iah", "name": "Institute of Arts and Humanities", "kind": "institute", "url": "https://iah.ucsd.edu", "status": "in-wide", "note": "seen on calendar.ucsd.edu" },
-    { "id": "igcc", "name": "UC Institute on Global Conflict and Cooperation", "kind": "institute", "url": "https://ucigcc.org", "status": "in-wide", "note": "seen on calendar.ucsd.edu" },
-    { "id": "ige", "name": "Institute for the Global Entrepreneur", "kind": "institute", "parent": "jacobs", "url": "https://ige.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "moores", "name": "Moores Cancer Center", "kind": "center", "parent": "medicine", "url": "https://health.ucsd.edu/care/cancer", "status": "in-wide", "note": "seen on calendar.ucsd.edu" },
-    { "id": "sanford-stem", "name": "Sanford Stem Cell Institute", "kind": "institute", "url": "https://stemcells.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "designlab", "name": "Design Lab", "kind": "center", "url": "https://designlab.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "latam", "name": "Latin American Studies", "kind": "center", "url": "https://latinamericanstudies.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "as", "name": "Associated Students (AS UC San Diego)", "kind": "student", "url": "https://as.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "gpsa", "name": "Graduate & Professional Student Association", "kind": "student", "url": "https://gpsa.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "revelle", "name": "Revelle College", "kind": "student", "url": "https://revelle.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "muir", "name": "John Muir College", "kind": "student", "url": "https://muir.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "marshall", "name": "Thurgood Marshall College", "kind": "student", "url": "https://marshall.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "warren", "name": "Earl Warren College", "kind": "student", "url": "https://warren.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "erc", "name": "Eleanor Roosevelt College", "kind": "student", "url": "https://roosevelt.ucsd.edu", "status": "in-wide", "note": "seen on calendar.ucsd.edu" },
-    { "id": "sixth", "name": "Sixth College", "kind": "student", "url": "https://sixth.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "seventh", "name": "Seventh College", "kind": "student", "url": "https://seventh.ucsd.edu", "status": "in-wide", "note": "seen on calendar.ucsd.edu" },
-    { "id": "eighth", "name": "Eighth College", "kind": "student", "url": "https://eighth.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "library", "name": "UC San Diego Library", "kind": "library", "url": "https://library.ucsd.edu", "status": "in-wide", "note": "largest group on calendar.ucsd.edu" },
-    { "id": "birch", "name": "Birch Aquarium at Scripps", "kind": "museum", "url": "https://aquarium.ucsd.edu", "status": "in-wide", "note": "publishes as a group on calendar.ucsd.edu" },
-    { "id": "career", "name": "Career Center", "kind": "other", "url": "https://career.ucsd.edu", "status": "in-wide", "note": "seen on calendar.ucsd.edu" },
-    { "id": "playhouse", "name": "La Jolla Playhouse", "kind": "other", "url": "https://lajollaplayhouse.org", "status": "in-wide", "note": "seen on calendar.ucsd.edu" },
-    { "id": "athletics", "name": "UC San Diego Athletics", "kind": "other", "url": "https://ucsdtritons.com", "status": "in-wide", "note": "seen on calendar.ucsd.edu" }
+    {
+      "id": "arts-humanities",
+      "name": "School of Arts and Humanities",
+      "kind": "school",
+      "url": "https://arts-humanities.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "biology",
+      "name": "School of Biological Sciences",
+      "kind": "school",
+      "url": "https://biology.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "jacobs",
+      "name": "Jacobs School of Engineering",
+      "kind": "school",
+      "url": "https://jacobsschool.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "gps",
+      "name": "School of Global Policy and Strategy",
+      "kind": "school",
+      "url": "https://gps.ucsd.edu",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    },
+    {
+      "id": "scids",
+      "name": "Halıcıoğlu School of Computing, Information and Data Sciences",
+      "kind": "school",
+      "url": "https://datascience.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes on calendar.ucsd.edu; its own tribe API is empty"
+    },
+    {
+      "id": "publichealth",
+      "name": "Herbert Wertheim School of Public Health and Human Longevity Science",
+      "kind": "school",
+      "url": "https://hwsph.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "medicine",
+      "name": "School of Medicine",
+      "kind": "school",
+      "url": "https://medschool.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "physical-sciences",
+      "name": "School of Physical Sciences",
+      "kind": "school",
+      "url": "https://physicalsciences.ucsd.edu",
+      "status": "no-feed",
+      "note": "media & events page is HTML only (news); no events feed"
+    },
+    {
+      "id": "rady",
+      "name": "Rady School of Management",
+      "kind": "school",
+      "url": "https://rady.ucsd.edu",
+      "status": "in-wide",
+      "note": "main Localist carries Rady"
+    },
+    {
+      "id": "scripps",
+      "name": "Scripps Institution of Oceanography",
+      "kind": "school",
+      "url": "https://scripps.ucsd.edu",
+      "feeds": [
+        "https://scripps.ucsd.edu/events/feed"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "social-sciences",
+      "name": "School of Social Sciences",
+      "kind": "school",
+      "url": "https://socialsciences.ucsd.edu",
+      "status": "in-wide",
+      "note": "its department event pages point to calendar.ucsd.edu"
+    },
+    {
+      "id": "pharmacy",
+      "name": "Skaggs School of Pharmacy and Pharmaceutical Sciences",
+      "kind": "school",
+      "url": "https://pharmacy.ucsd.edu",
+      "status": "feed",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/pharmacy-site%40ucsd.edu/public/basic.ics"
+      ]
+    },
+    {
+      "id": "cse",
+      "name": "Computer Science and Engineering",
+      "kind": "department",
+      "parent": "jacobs",
+      "url": "https://cse.ucsd.edu",
+      "status": "no-feed",
+      "note": "its Google calendar (a room resource) has no upcoming events; pages have no feed"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "jacobs",
+      "url": "https://ece.ucsd.edu",
+      "status": "no-feed",
+      "note": "Drupal events and seminars pages, HTML only (www. host does not answer)"
+    },
+    {
+      "id": "mae",
+      "name": "Mechanical and Aerospace Engineering",
+      "kind": "department",
+      "parent": "jacobs",
+      "url": "https://mae.ucsd.edu",
+      "status": "no-feed",
+      "note": "Drupal seminars page, HTML only"
+    },
+    {
+      "id": "bioeng",
+      "name": "Shu Chien-Gene Lay Department of Bioengineering",
+      "kind": "department",
+      "parent": "jacobs",
+      "url": "https://be.ucsd.edu",
+      "status": "no-feed",
+      "note": "events listed as HTML"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "physical-sciences",
+      "url": "https://math.ucsd.edu",
+      "status": "no-feed",
+      "note": "Drupal seminar listing (news-events/seminars/upcoming), HTML only; rss.xml is news"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "parent": "physical-sciences",
+      "url": "https://physics.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry and Biochemistry",
+      "kind": "department",
+      "parent": "physical-sciences",
+      "url": "https://chemistry.ucsd.edu",
+      "status": "no-feed",
+      "note": "seminars page is HTML only (www. host does not answer)"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "social-sciences",
+      "url": "https://economics.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "social-sciences",
+      "url": "https://psychology.ucsd.edu",
+      "status": "no-feed",
+      "note": "events listed as HTML"
+    },
+    {
+      "id": "polisci",
+      "name": "Department of Political Science",
+      "kind": "department",
+      "parent": "social-sciences",
+      "url": "https://polisci.ucsd.edu",
+      "status": "in-wide",
+      "note": "site links to calendar.ucsd.edu for events"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "social-sciences",
+      "url": "https://sociology.ucsd.edu",
+      "status": "in-wide",
+      "note": "site links to calendar.ucsd.edu for events"
+    },
+    {
+      "id": "cogsci",
+      "name": "Department of Cognitive Science",
+      "kind": "department",
+      "parent": "social-sciences",
+      "url": "https://cogsci.ucsd.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only; nothing of its on calendar.ucsd.edu"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "arts-humanities",
+      "url": "https://history.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "literature",
+      "name": "Department of Literature",
+      "kind": "department",
+      "parent": "arts-humanities",
+      "url": "https://literature.ucsd.edu",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "arts-humanities",
+      "url": "https://philosophy.ucsd.edu",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    },
+    {
+      "id": "music",
+      "name": "Department of Music",
+      "kind": "department",
+      "parent": "arts-humanities",
+      "url": "https://music.ucsd.edu",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    },
+    {
+      "id": "theatre",
+      "name": "Department of Theatre and Dance",
+      "kind": "department",
+      "parent": "arts-humanities",
+      "url": "https://theatre.ucsd.edu",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    },
+    {
+      "id": "qi",
+      "name": "Qualcomm Institute",
+      "kind": "institute",
+      "url": "https://qi.ucsd.edu",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    },
+    {
+      "id": "sdsc",
+      "name": "San Diego Supercomputer Center",
+      "kind": "center",
+      "url": "https://www.sdsc.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "tilos",
+      "name": "NSF AI Institute TILOS",
+      "kind": "institute",
+      "url": "https://tilos.ai",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "kibm",
+      "name": "Kavli Institute for Brain and Mind",
+      "kind": "institute",
+      "url": "https://kibm.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "iah",
+      "name": "Institute of Arts and Humanities",
+      "kind": "institute",
+      "url": "https://iah.ucsd.edu",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    },
+    {
+      "id": "igcc",
+      "name": "UC Institute on Global Conflict and Cooperation",
+      "kind": "institute",
+      "url": "https://ucigcc.org",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    },
+    {
+      "id": "ige",
+      "name": "Institute for the Global Entrepreneur",
+      "kind": "institute",
+      "parent": "jacobs",
+      "url": "https://ige.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "moores",
+      "name": "Moores Cancer Center",
+      "kind": "center",
+      "parent": "medicine",
+      "url": "https://health.ucsd.edu/care/cancer",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    },
+    {
+      "id": "sanford-stem",
+      "name": "Sanford Stem Cell Institute",
+      "kind": "institute",
+      "url": "https://stemcells.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "designlab",
+      "name": "Design Lab",
+      "kind": "center",
+      "url": "https://designlab.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "latam",
+      "name": "Latin American Studies",
+      "kind": "center",
+      "url": "https://latinamericanstudies.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "as",
+      "name": "Associated Students (AS UC San Diego)",
+      "kind": "student",
+      "url": "https://as.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "gpsa",
+      "name": "Graduate & Professional Student Association",
+      "kind": "student",
+      "url": "https://gpsa.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "revelle",
+      "name": "Revelle College",
+      "kind": "student",
+      "url": "https://revelle.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "muir",
+      "name": "John Muir College",
+      "kind": "student",
+      "url": "https://muir.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "marshall",
+      "name": "Thurgood Marshall College",
+      "kind": "student",
+      "url": "https://marshall.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "warren",
+      "name": "Earl Warren College",
+      "kind": "student",
+      "url": "https://warren.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "erc",
+      "name": "Eleanor Roosevelt College",
+      "kind": "student",
+      "url": "https://roosevelt.ucsd.edu",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    },
+    {
+      "id": "sixth",
+      "name": "Sixth College",
+      "kind": "student",
+      "url": "https://sixth.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "seventh",
+      "name": "Seventh College",
+      "kind": "student",
+      "url": "https://seventh.ucsd.edu",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    },
+    {
+      "id": "eighth",
+      "name": "Eighth College",
+      "kind": "student",
+      "url": "https://eighth.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "library",
+      "name": "UC San Diego Library",
+      "kind": "library",
+      "url": "https://library.ucsd.edu",
+      "status": "in-wide",
+      "note": "largest group on calendar.ucsd.edu"
+    },
+    {
+      "id": "birch",
+      "name": "Birch Aquarium at Scripps",
+      "kind": "museum",
+      "url": "https://aquarium.ucsd.edu",
+      "status": "in-wide",
+      "note": "publishes as a group on calendar.ucsd.edu"
+    },
+    {
+      "id": "career",
+      "name": "Career Center",
+      "kind": "other",
+      "url": "https://career.ucsd.edu",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    },
+    {
+      "id": "playhouse",
+      "name": "La Jolla Playhouse",
+      "kind": "other",
+      "url": "https://lajollaplayhouse.org",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    },
+    {
+      "id": "athletics",
+      "name": "UC San Diego Athletics",
+      "kind": "other",
+      "url": "https://ucsdtritons.com",
+      "status": "in-wide",
+      "note": "seen on calendar.ucsd.edu"
+    }
   ]
 }

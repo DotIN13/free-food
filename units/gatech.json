@@ -23,8 +23,8 @@
       "name": "College of Engineering",
       "kind": "school",
       "url": "https://coe.gatech.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "no-feed",
+      "note": "no events page of its own (/events 404); links to calendar.gatech.edu"
     },
     {
       "id": "sciences",
@@ -49,7 +49,8 @@
       "name": "College of Design",
       "kind": "school",
       "url": "https://design.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page or feed found (/events 404)"
     },
     {
       "id": "iac",
@@ -64,7 +65,8 @@
       "name": "College of Lifetime Learning",
       "kind": "school",
       "url": "https://pe.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "professional-education course site, no events listing or feed"
     },
     {
       "id": "scs",
@@ -72,7 +74,8 @@
       "kind": "department",
       "parent": "computing",
       "url": "https://scs.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML (Mercury events), no feed"
     },
     {
       "id": "cse",
@@ -89,7 +92,8 @@
       "kind": "department",
       "parent": "computing",
       "url": "https://ic.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML (Mercury events), no feed"
     },
     {
       "id": "ece",
@@ -115,7 +119,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://bme.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "upcoming-events page is Drupal HTML, no feed"
     },
     {
       "id": "ae",
@@ -123,7 +128,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://ae.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "ae-school-events page is Drupal HTML, no feed"
     },
     {
       "id": "isye",
@@ -131,7 +137,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://www.isye.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "own Drupal events calendar, HTML only"
     },
     {
       "id": "chbe",
@@ -139,7 +146,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://chbe.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page or feed found (/events 404)"
     },
     {
       "id": "ce",
@@ -147,7 +155,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://ce.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML (Mercury events), no feed"
     },
     {
       "id": "mse",
@@ -155,7 +164,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://mse.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "about/events page is Drupal HTML, no feed"
     },
     {
       "id": "math",
@@ -181,7 +191,8 @@
       "kind": "department",
       "parent": "sciences",
       "url": "https://chemistry.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML (Mercury events), no feed"
     },
     {
       "id": "biosciences",
@@ -189,7 +200,8 @@
       "kind": "department",
       "parent": "sciences",
       "url": "https://biosciences.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML (Mercury events), no feed"
     },
     {
       "id": "psychology",
@@ -206,7 +218,8 @@
       "kind": "department",
       "parent": "sciences",
       "url": "https://eas.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML (Mercury events), no feed"
     },
     {
       "id": "econ",
@@ -250,7 +263,8 @@
       "kind": "department",
       "parent": "iac",
       "url": "https://lmc.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events calendar page is Drupal HTML, no feed"
     },
     {
       "id": "architecture",
@@ -258,7 +272,8 @@
       "kind": "department",
       "parent": "design",
       "url": "https://arch.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page or feed found"
     },
     {
       "id": "ideas",
@@ -281,7 +296,8 @@
       "name": "Institute for People and Technology",
       "kind": "institute",
       "url": "https://peopletech.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML (Mercury events), no feed"
     },
     {
       "id": "ml",
@@ -289,21 +305,24 @@
       "kind": "center",
       "parent": "computing",
       "url": "https://ml.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events/calendar pages are Drupal HTML, no feed"
     },
     {
       "id": "ibb",
       "name": "Parker H. Petit Institute for Bioengineering and Bioscience",
       "kind": "institute",
       "url": "https://petitinstitute.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML (Mercury events), no feed"
     },
     {
       "id": "create-x",
       "name": "CREATE-X (entrepreneurship)",
       "kind": "center",
       "url": "https://create-x.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page or feed found (/events 404)"
     },
     {
       "id": "sga",
@@ -326,7 +345,8 @@
       "name": "Georgia Tech Library",
       "kind": "library",
       "url": "https://library.gatech.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events are Drupal pages, no LibCal or feed found"
     },
     {
       "id": "career",
@@ -341,8 +361,8 @@
       "name": "Arts at Georgia Tech (Ferst Center)",
       "kind": "other",
       "url": "https://arts.gatech.edu",
-      "status": "unchecked",
-      "note": "calendar.gatech.edu has an arts term feed (12) we do not read"
+      "status": "in-wide",
+      "note": "its events are on calendar.gatech.edu Arts and Performance (term 12), which we read"
     }
   ]
 }

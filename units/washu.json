@@ -44,7 +44,10 @@
       "name": "School of Medicine",
       "kind": "school",
       "url": "https://medicine.washu.edu",
-      "status": "unchecked"
+      "status": "unchecked",
+      "found": "https://calendar.med.wustl.edu/feed/eo-events/",
+      "foundEvents": 7,
+      "foundFood": 2
     },
     {
       "id": "brown",
@@ -59,7 +62,8 @@
       "name": "Sam Fox School of Design & Visual Arts",
       "kind": "school",
       "url": "https://samfoxschool.washu.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "calendar page HTML; calendar.ics answers 500"
     },
     {
       "id": "publichealth",
@@ -73,8 +77,9 @@
       "id": "scps",
       "name": "School of Continuing & Professional Studies",
       "kind": "school",
-      "url": "https://scps.washu.edu",
-      "status": "unchecked"
+      "url": "https://caps.washu.edu",
+      "status": "no-feed",
+      "note": "ICS Calendar Pro plugin; source feed not exposed"
     },
     {
       "id": "grad",
@@ -82,7 +87,7 @@
       "kind": "school",
       "url": "https://graduateschool.wustl.edu",
       "status": "unchecked",
-      "note": "site did not answer"
+      "note": "graduateschool.wustl.edu timed out twice"
     },
     {
       "id": "cse",
@@ -90,7 +95,8 @@
       "kind": "department",
       "parent": "mckelvey",
       "url": "https://cse.washu.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page lists happenings.washu.edu events"
     },
     {
       "id": "ese",
@@ -125,7 +131,8 @@
       "kind": "department",
       "parent": "mckelvey",
       "url": "https://eece.washu.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page lists happenings.washu.edu events"
     },
     {
       "id": "math",
@@ -140,12 +147,14 @@
     },
     {
       "id": "statistics",
-      "name": "Statistics and Data Science",
+      "name": "Department of Statistics and Data Science",
       "kind": "department",
       "parent": "artsci",
-      "url": "https://statistics.washu.edu",
-      "status": "unchecked",
-      "note": "site did not answer"
+      "url": "https://sds.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://sds.washu.edu/calendar.ics"
+      ]
     },
     {
       "id": "physics",
@@ -219,9 +228,8 @@
       "kind": "department",
       "parent": "artsci",
       "url": "https://history.washu.edu",
-      "status": "unchecked",
-      "found": "https://history.washu.edu/calendar.ics",
-      "note": "Drupal calendar.ics on its events page (a year of past and coming events), separate from Happenings"
+      "status": "no-feed",
+      "note": "calendar.ics works (36 events) but nothing in the next three weeks; next in 2027"
     },
     {
       "id": "english",
@@ -341,14 +349,17 @@
       "url": "https://ias.wustl.edu",
       "status": "unchecked",
       "found": "https://ias.washu.edu/calendar.ics",
-      "note": "Drupal calendar.ics on its events page (a year of past and coming events), separate from Happenings"
+      "note": "ias.wustl.edu timed out twice; its calendar.ics could not be tested"
     },
     {
       "id": "ctl",
       "name": "Center for Teaching and Learning",
       "kind": "center",
       "url": "https://ctl.wustl.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://ctl.wustl.edu/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "data",
@@ -367,26 +378,22 @@
       "note": "site HTML, no feed"
     },
     {
-      "id": "energy",
-      "name": "Center for Energy, Environment & Sustainability (InCEES)",
-      "kind": "center",
-      "url": "https://energy.wustl.edu",
-      "status": "unchecked",
-      "note": "site did not answer"
-    },
-    {
       "id": "publicpolicy",
       "name": "Weidenbaum Center on the Economy, Government, and Public Policy",
       "kind": "center",
-      "url": "https://wc.wustl.edu",
-      "status": "unchecked"
+      "url": "https://wc.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://wc.washu.edu/calendar.ics"
+      ]
     },
     {
       "id": "idea",
       "name": "Skandalaris Center for Interdisciplinary Innovation and Entrepreneurship",
       "kind": "center",
       "url": "https://skandalaris.wustl.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
     },
     {
       "id": "siteman",
@@ -442,8 +449,9 @@
       "id": "edison",
       "name": "Edison Theatre (Performing Arts)",
       "kind": "other",
-      "url": "https://edison.wustl.edu",
-      "status": "unchecked"
+      "url": "https://universityservices.washu.edu/our-services/edison-theatre/",
+      "status": "no-feed",
+      "note": "now a University Services page, no events feed"
     },
     {
       "id": "career",

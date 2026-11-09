@@ -20,8 +20,10 @@
       "kind": "school",
       "parent": "fas",
       "url": "https://college.harvard.edu",
-      "status": "blocked",
-      "note": "calendar.college.harvard.edu is Localist but login-gated (API 404)"
+      "status": "feed",
+      "feeds": [
+        "https://events.college.harvard.edu/live/json/events/"
+      ]
     },
     {
       "id": "gsas",
@@ -29,15 +31,18 @@
       "kind": "school",
       "parent": "fas",
       "url": "https://gsas.harvard.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "calendar is a Drupal views page; /rss.xml is news"
     },
     {
       "id": "seas",
       "name": "John A. Paulson School of Engineering and Applied Sciences",
       "kind": "school",
       "url": "https://seas.harvard.edu",
-      "status": "no-feed",
-      "note": "Drupal HTML events; its events.seas.harvard.edu Localist API answers but holds 1 event"
+      "status": "feed",
+      "feeds": [
+        "https://events.seas.harvard.edu/calendar/1.ics"
+      ]
     },
     {
       "id": "hbs",
@@ -146,15 +151,17 @@
       "kind": "department",
       "parent": "seas",
       "url": "https://seas.harvard.edu/electrical-engineering",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its talks are on events.seas.harvard.edu (found on the seas unit)"
     },
     {
       "id": "me",
-      "name": "Mechanical Engineering",
+      "name": "Materials Science & Mechanical Engineering",
       "kind": "department",
       "parent": "seas",
-      "url": "https://seas.harvard.edu/mechanical-engineering",
-      "status": "unchecked"
+      "url": "https://seas.harvard.edu/materials-science-mechanical-engineering",
+      "status": "no-feed",
+      "note": "no feed of its own; its talks are on events.seas.harvard.edu (found on the seas unit)"
     },
     {
       "id": "bioe",
@@ -162,7 +169,8 @@
       "kind": "department",
       "parent": "seas",
       "url": "https://seas.harvard.edu/bioengineering",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no feed of its own; its talks are on events.seas.harvard.edu (found on the seas unit)"
     },
     {
       "id": "math",
@@ -206,8 +214,10 @@
       "kind": "department",
       "parent": "fas",
       "url": "https://www.mcb.harvard.edu",
-      "status": "unchecked",
-      "note": "/events/ is 404"
+      "status": "feed",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/ra0jlcdm907d6s45g63dm4914k%40group.calendar.google.com/public/basic.ics"
+      ]
     },
     {
       "id": "oeb",
@@ -215,7 +225,8 @@
       "kind": "department",
       "parent": "fas",
       "url": "https://oeb.harvard.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "403 Access Denied (Akamai)"
     },
     {
       "id": "economics",
@@ -241,8 +252,8 @@
       "kind": "department",
       "parent": "fas",
       "url": "https://www.gov.harvard.edu",
-      "status": "unchecked",
-      "note": "/calendar is 404"
+      "status": "no-feed",
+      "note": "WordPress Calendar+ API answers but holds no events this month; events listed as HTML"
     },
     {
       "id": "history",
@@ -250,7 +261,8 @@
       "kind": "department",
       "parent": "fas",
       "url": "https://history.fas.harvard.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "403 Access Denied (Akamai)"
     },
     {
       "id": "english",
@@ -258,7 +270,8 @@
       "kind": "department",
       "parent": "fas",
       "url": "https://english.fas.harvard.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "403 Access Denied (Akamai)"
     },
     {
       "id": "philosophy",
@@ -266,7 +279,8 @@
       "kind": "department",
       "parent": "fas",
       "url": "https://philosophy.fas.harvard.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "403 Access Denied (Akamai)"
     },
     {
       "id": "sociology",
@@ -274,7 +288,8 @@
       "kind": "department",
       "parent": "fas",
       "url": "https://sociology.fas.harvard.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "403 Access Denied (Akamai)"
     },
     {
       "id": "kempner",
@@ -318,7 +333,8 @@
       "name": "Harvard University Center for the Environment",
       "kind": "center",
       "url": "https://environment.harvard.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "403 Access Denied (Akamai)"
     },
     {
       "id": "belfer",
@@ -353,16 +369,19 @@
       "kind": "center",
       "parent": "hks",
       "url": "https://shorensteincenter.org",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://shorensteincenter.org/wp-json/wp/v2/event?per_page=50"
+      ]
     },
     {
       "id": "mahindra",
       "name": "Mahindra Humanities Center",
       "kind": "center",
       "parent": "fas",
-      "url": "https://mahindrahumanities.fas.harvard.edu",
-      "status": "unchecked",
-      "note": "did not answer within 15 s"
+      "url": "https://mahindrahumanities.harvard.edu",
+      "status": "blocked",
+      "note": "mahindrahumanities.harvard.edu answers 403"
     },
     {
       "id": "wcfia",
@@ -390,7 +409,8 @@
       "kind": "center",
       "parent": "fas",
       "url": "https://daviscenter.fas.harvard.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML, no feed"
     },
     {
       "id": "reischauer",
@@ -398,7 +418,8 @@
       "kind": "institute",
       "parent": "fas",
       "url": "https://rijs.fas.harvard.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML, no feed"
     },
     {
       "id": "drclas",
@@ -414,7 +435,8 @@
       "kind": "center",
       "parent": "fas",
       "url": "https://cmes.fas.harvard.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "403 Access Denied (Akamai)"
     },
     {
       "id": "cmsa",
@@ -445,7 +467,8 @@
       "name": "Harvard Stem Cell Institute",
       "kind": "institute",
       "url": "https://hsci.harvard.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "403 Access Denied (Akamai)"
     },
     {
       "id": "hua",
@@ -460,7 +483,8 @@
       "name": "Harvard Graduate Council",
       "kind": "student",
       "url": "https://hgc.harvard.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "403 Access Denied (Akamai)"
     },
     {
       "id": "gsc",
@@ -468,15 +492,17 @@
       "kind": "student",
       "parent": "gsas",
       "url": "https://gsas.harvard.edu/student-life/student-council",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "GSAS student council page is gone (404) and no site of its own found"
     },
     {
       "id": "houses",
       "name": "Harvard College Houses",
       "kind": "student",
       "parent": "college",
-      "url": "https://college.harvard.edu/campus-life/house-life",
-      "status": "unchecked"
+      "url": "https://events.college.harvard.edu",
+      "status": "no-feed",
+      "note": "no feed of its own; house events are on events.college.harvard.edu (found on the college unit)"
     },
     {
       "id": "library",
@@ -501,7 +527,8 @@
       "name": "Harvard Museums of Science & Culture",
       "kind": "museum",
       "url": "https://hmsc.harvard.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Calendar+ REST API (/wp-json/calendar-plus/v1/events?month=&year=) has events, but start is an object our json reader cannot read; no iCal"
     },
     {
       "id": "ocs",
@@ -516,14 +543,18 @@
       "name": "Office for the Arts at Harvard",
       "kind": "other",
       "url": "https://ofa.fas.harvard.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "403 Access Denied (Akamai)"
     },
     {
       "id": "athletics",
       "name": "Harvard Athletics",
       "kind": "other",
       "url": "https://gocrimson.com",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://gocrimson.com/calendar.ashx/calendar.ics"
+      ]
     }
   ]
 }

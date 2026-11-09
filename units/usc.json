@@ -45,9 +45,10 @@
       "name": "USC Gould School of Law",
       "kind": "school",
       "url": "https://gould.usc.edu",
-      "status": "unchecked",
-      "found": "https://events.law.usc.edu",
-      "note": "own Localist instance (81 events in 60 days); also http://events.law.usc.edu/calendar/1.ics"
+      "status": "feed",
+      "feeds": [
+        "https://events.law.usc.edu"
+      ]
     },
     {
       "id": "keck",
@@ -162,14 +163,16 @@
       "name": "USC Iovine and Young Academy",
       "kind": "school",
       "url": "https://iovine-young.usc.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page (/events 404), no feed"
     },
     {
       "id": "bovard",
       "name": "USC Bovard College",
       "kind": "school",
       "url": "https://bovard.usc.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "bovard.usc.edu did not answer (timeout); online-degree college"
     },
     {
       "id": "cs",
@@ -400,7 +403,8 @@
       "kind": "center",
       "parent": "marshall",
       "url": "https://www.marshall.usc.edu/departments/lloyd-greif-center-entrepreneurial-studies",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events are on Marshall news-events HTML pages, no feed"
     },
     {
       "id": "cais",
@@ -408,7 +412,8 @@
       "kind": "center",
       "parent": "viterbi",
       "url": "https://cais.usc.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events archive is WordPress HTML; its events RSS answers 404"
     },
     {
       "id": "usg",

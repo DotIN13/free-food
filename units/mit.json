@@ -11,8 +11,8 @@
       "name": "School of Architecture and Planning",
       "kind": "school",
       "url": "https://sap.mit.edu",
-      "status": "unchecked",
-      "note": "sap.mit.edu/events answers 404"
+      "status": "in-wide",
+      "note": "home page embeds calendar.mit.edu (Localist) events"
     },
     {
       "id": "engineering",
@@ -89,7 +89,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://cheme.mit.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is a WordPress month list, no tribe route or feed"
     },
     {
       "id": "cee",
@@ -125,8 +126,9 @@
       "name": "Nuclear Science and Engineering",
       "kind": "department",
       "parent": "engineering",
-      "url": "https://web.mit.edu/nse",
-      "status": "unchecked"
+      "url": "https://nse.mit.edu",
+      "status": "no-feed",
+      "note": "no events page found (/events 404)"
     },
     {
       "id": "math",
@@ -217,8 +219,10 @@
       "kind": "department",
       "parent": "shass",
       "url": "https://lit.mit.edu",
-      "status": "unchecked",
-      "note": "site did not answer"
+      "status": "feed",
+      "feeds": [
+        "https://lit.mit.edu/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "philosophy",
@@ -235,7 +239,8 @@
       "kind": "department",
       "parent": "shass",
       "url": "https://anthropology.mit.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "upcoming events page is HTML, no feed"
     },
     {
       "id": "sts",
@@ -309,7 +314,8 @@
       "kind": "center",
       "parent": "idss",
       "url": "https://stat.mit.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "stat.mit.edu/calendar is WordPress HTML, no feed"
     },
     {
       "id": "mitei",
@@ -372,7 +378,8 @@
       "name": "Picower Institute for Learning and Memory",
       "kind": "institute",
       "url": "https://picower.mit.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML, no feed"
     },
     {
       "id": "trust",
@@ -380,29 +387,34 @@
       "kind": "center",
       "parent": "sloan",
       "url": "https://entrepreneurship.mit.edu",
-      "status": "unchecked",
-      "note": "WordPress events calendar, feed not tested"
+      "status": "feed",
+      "feeds": [
+        "https://orbit.mit.edu/api/events/feed.ics"
+      ]
     },
     {
       "id": "jameel",
       "name": "Jameel Clinic (AI and health)",
       "kind": "center",
       "url": "https://jclinic.mit.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events and programs page is HTML, no feed"
     },
     {
       "id": "mitibm",
       "name": "MIT-IBM Watson AI Lab",
       "kind": "center",
-      "url": "https://mitibmwatsonailab.mit.edu",
-      "status": "unchecked"
+      "url": "https://mitibm.mit.edu",
+      "status": "no-feed",
+      "note": "no events page found (/events 404)"
     },
     {
       "id": "ceepr",
       "name": "Center for Energy and Environmental Policy Research",
       "kind": "center",
       "url": "https://ceepr.mit.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events pages are WordPress HTML, no tribe route"
     },
     {
       "id": "ua",
@@ -433,22 +445,24 @@
       "name": "MIT Museum",
       "kind": "museum",
       "url": "https://mitmuseum.mit.edu",
-      "status": "unchecked",
-      "note": "answered 429"
+      "status": "blocked",
+      "note": "Vercel security checkpoint (429)"
     },
     {
       "id": "list",
       "name": "MIT List Visual Arts Center",
       "kind": "museum",
       "url": "https://listart.mit.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "calendar page is HTML, no feed"
     },
     {
       "id": "arts",
       "name": "Arts at MIT",
       "kind": "other",
       "url": "https://arts.mit.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "links calendar.mit.edu arts event type (Localist)"
     },
     {
       "id": "capd",

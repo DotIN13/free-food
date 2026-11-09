@@ -19,9 +19,8 @@
       "name": "Adams School of Dentistry",
       "kind": "school",
       "url": "https://dentistry.unc.edu",
-      "status": "unchecked",
-      "found": "https://dentistry.unc.edu/wp-json/tribe/events/v1/events",
-      "note": "tribe API answers, 8 upcoming"
+      "status": "blocked",
+      "note": "site and its wp-json answer 403 'Checking connection' (bot challenge); the tribe API now answers 403 too"
     },
     {
       "id": "datascience",
@@ -70,8 +69,8 @@
       "name": "School of Government",
       "kind": "school",
       "url": "https://www.sog.unc.edu",
-      "status": "unchecked",
-      "note": "courses catalogue, /events 404"
+      "status": "no-feed",
+      "note": "courses catalogue, /events 404, no feed"
     },
     {
       "id": "sils",
@@ -102,8 +101,8 @@
       "name": "School of Nursing",
       "kind": "school",
       "url": "https://nursing.unc.edu",
-      "status": "unchecked",
-      "note": "/events 404"
+      "status": "no-feed",
+      "note": "about-us/events is HTML only, no feed"
     },
     {
       "id": "pharmacy",
@@ -134,8 +133,8 @@
       "name": "School of Civic Life and Leadership",
       "kind": "school",
       "url": "https://scll.unc.edu",
-      "status": "unchecked",
-      "note": "fetch failed"
+      "status": "no-feed",
+      "note": "scll.unc.edu does not answer"
     },
     {
       "id": "cs",
@@ -161,7 +160,8 @@
       "kind": "department",
       "parent": "medicine",
       "url": "https://bme.unc.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "site and its wp-json answer 403 'Checking connection' (bot challenge)"
     },
     {
       "id": "applied-sciences",
@@ -169,7 +169,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://aps.unc.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "site and its wp-json answer 403 'Checking connection' (bot challenge)"
     },
     {
       "id": "math",
@@ -249,8 +250,8 @@
       "kind": "department",
       "parent": "college",
       "url": "https://englishcomplit.unc.edu",
-      "status": "unchecked",
-      "note": "fetch failed"
+      "status": "blocked",
+      "note": "site and its wp-json answer 403 'Checking connection' (bot challenge)"
     },
     {
       "id": "philosophy",
@@ -310,29 +311,34 @@
       "kind": "center",
       "parent": "medicine",
       "url": "https://unclineberger.org",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "site and its wp-json answer 403 'Checking connection' (bot challenge)"
     },
     {
       "id": "cpc",
       "name": "Carolina Population Center",
       "kind": "center",
       "url": "https://www.cpc.unc.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://www.cpc.unc.edu/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "global",
       "name": "UNC Global Affairs",
       "kind": "center",
       "url": "https://global.unc.edu",
-      "status": "unchecked",
-      "note": "fetch failed"
+      "status": "blocked",
+      "note": "site and its wp-json answer 403 'Checking connection' (bot challenge)"
     },
     {
       "id": "renci",
       "name": "Renaissance Computing Institute (RENCI)",
       "kind": "institute",
       "url": "https://renci.org",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "site and its wp-json answer 403 'Checking connection' (bot challenge)"
     },
     {
       "id": "parr",
@@ -340,7 +346,8 @@
       "kind": "center",
       "parent": "college",
       "url": "https://parrcenter.unc.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "site and its wp-json answer 403 'Checking connection' (bot challenge)"
     },
     {
       "id": "sg",
@@ -389,7 +396,10 @@
       "name": "Morehead Planetarium and Science Center",
       "kind": "museum",
       "url": "https://moreheadplanetarium.org",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://moreheadplanetarium.org/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "cpa",
@@ -403,15 +413,19 @@
       "id": "careers",
       "name": "University Career Services",
       "kind": "other",
-      "url": "https://careers.unc.edu",
-      "status": "unchecked"
+      "url": "https://careerhub.unc.edu",
+      "status": "feed",
+      "feeds": [
+        "https://careerhub.unc.edu/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "athletics",
       "name": "Carolina Athletics",
       "kind": "other",
       "url": "https://goheels.com",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "Incapsula in front of goheels.com"
     }
   ]
 }

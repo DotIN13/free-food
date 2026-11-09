@@ -69,14 +69,16 @@
       "name": "Graduate and Postdoctoral Studies",
       "kind": "school",
       "url": "https://graduate.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "links its events on events.rice.edu (LiveWhale)"
     },
     {
       "id": "glasscock",
       "name": "Susanne M. Glasscock School of Continuing Studies",
       "kind": "school",
       "url": "https://glasscock.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "calendar embeds events.rice.edu tags (Continuing Studies)"
     },
     {
       "id": "cs",
@@ -93,7 +95,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://eceweb.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "links its events on events.rice.edu (LiveWhale)"
     },
     {
       "id": "mech",
@@ -101,7 +104,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://mech.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "links its events on events.rice.edu (LiveWhale)"
     },
     {
       "id": "bioe",
@@ -118,7 +122,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://cmor.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "/events redirects to events.rice.edu"
     },
     {
       "id": "statistics",
@@ -135,7 +140,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://chbe.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "links its events on events.rice.edu (LiveWhale)"
     },
     {
       "id": "msne",
@@ -143,7 +149,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://msne.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page embeds events.rice.edu (LiveWhale widget)"
     },
     {
       "id": "math",
@@ -151,7 +158,10 @@
       "kind": "department",
       "parent": "natsci",
       "url": "https://math.rice.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/rice.edu_h01fntiq1d747tsf0skcg0ni60%40group.calendar.google.com/public/basic.ics"
+      ]
     },
     {
       "id": "physics",
@@ -159,7 +169,8 @@
       "kind": "department",
       "parent": "natsci",
       "url": "https://physics.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "links its events on events.rice.edu (LiveWhale)"
     },
     {
       "id": "chemistry",
@@ -167,7 +178,8 @@
       "kind": "department",
       "parent": "natsci",
       "url": "https://chemistry.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "links its events on events.rice.edu (LiveWhale)"
     },
     {
       "id": "biosci",
@@ -175,7 +187,8 @@
       "kind": "department",
       "parent": "natsci",
       "url": "https://biosciences.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "links its events on events.rice.edu (LiveWhale)"
     },
     {
       "id": "economics",
@@ -201,7 +214,8 @@
       "kind": "department",
       "parent": "socsci",
       "url": "https://politicalscience.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page embeds events.rice.edu group Political Science"
     },
     {
       "id": "sociology",
@@ -209,7 +223,8 @@
       "kind": "department",
       "parent": "socsci",
       "url": "https://sociology.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page embeds events.rice.edu group Sociology"
     },
     {
       "id": "history",
@@ -217,7 +232,8 @@
       "kind": "department",
       "parent": "humanities",
       "url": "https://history.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page embeds events.rice.edu (LiveWhale widget)"
     },
     {
       "id": "english",
@@ -225,7 +241,8 @@
       "kind": "department",
       "parent": "humanities",
       "url": "https://english.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "upcoming-events embeds events.rice.edu (LiveWhale widget)"
     },
     {
       "id": "philosophy",
@@ -233,7 +250,8 @@
       "kind": "department",
       "parent": "humanities",
       "url": "https://philosophy.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page embeds events.rice.edu (LiveWhale widget)"
     },
     {
       "id": "baker",
@@ -248,7 +266,8 @@
       "name": "Ken Kennedy Institute (AI and computing)",
       "kind": "institute",
       "url": "https://kenkennedy.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "links its events on events.rice.edu (LiveWhale)"
     },
     {
       "id": "kinder",
@@ -264,14 +283,16 @@
       "kind": "center",
       "parent": "humanities",
       "url": "https://hrc.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page embeds events.rice.edu (LiveWhale widget)"
     },
     {
       "id": "rice-energy",
       "name": "Rice Sustainability Institute / Energy Transition",
       "kind": "institute",
       "url": "https://sustainability.rice.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "sustainable-events page only, no feed"
     },
     {
       "id": "rbl",
@@ -279,14 +300,18 @@
       "kind": "center",
       "parent": "jones",
       "url": "https://entrepreneurship.rice.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://api.lu.ma/ics/get?entity=calendar&id=cal-FuzJHUEh2u5M3AW"
+      ]
     },
     {
       "id": "bioscience-research",
       "name": "Rice Biotech Launch Pad",
       "kind": "center",
       "url": "https://biotechlaunchpad.rice.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "news-events page, no event listings or feed"
     },
     {
       "id": "chao",
@@ -294,7 +319,8 @@
       "kind": "center",
       "parent": "humanities",
       "url": "https://chaocenter.rice.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page links events.rice.edu tag asian studies"
     },
     {
       "id": "sa",
@@ -413,21 +439,26 @@
       "name": "Moody Center for the Arts",
       "kind": "museum",
       "url": "https://moody.rice.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://moody.rice.edu/rss.xml"
+      ]
     },
     {
       "id": "ccd",
       "name": "Center for Career Development",
       "kind": "other",
       "url": "https://ccd.rice.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "students/events answers 403"
     },
     {
       "id": "athletics",
       "name": "Rice Owls Athletics",
       "kind": "other",
       "url": "https://riceowls.com",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "Incapsula in front of riceowls.com"
     }
   ]
 }

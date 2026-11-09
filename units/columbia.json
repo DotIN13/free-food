@@ -6,112 +6,471 @@
     "https://static-prod-us-east-1.campusgroups.com/ical/columbia/ical_columbia.ics"
   ],
   "units": [
-    { "id": "cc", "name": "Columbia College", "kind": "school", "url": "https://www.college.columbia.edu",
-      "status": "blocked", "note": "events page answers 403 (CloudFront)" },
-    { "id": "seas", "name": "Fu Foundation School of Engineering and Applied Science", "kind": "school", "url": "https://www.engineering.columbia.edu",
-      "feeds": ["https://static-prod-us-east-1.campusgroups.com/ical/columbiaengineering/ical_columbiaengineering.ics"], "status": "feed" },
-    { "id": "gsas", "name": "Graduate School of Arts and Sciences", "kind": "school", "url": "https://gsas.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "gs", "name": "School of General Studies", "kind": "school", "url": "https://gs.columbia.edu",
-      "feeds": ["https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2Fgs%22%29"], "status": "feed" },
-    { "id": "cbs", "name": "Columbia Business School", "kind": "school", "url": "https://business.columbia.edu",
-      "feeds": ["https://static-prod-us-east-1.campusgroups.com/ical/cbs/ical_cbs.ics"], "status": "feed" },
-    { "id": "law", "name": "Columbia Law School", "kind": "school", "url": "https://www.law.columbia.edu",
-      "feeds": ["https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2Flaw%22%29"], "status": "feed" },
-    { "id": "sipa", "name": "School of International and Public Affairs", "kind": "school", "url": "https://www.sipa.columbia.edu",
-      "feeds": ["https://static-prod-us-east-1.campusgroups.com/ical/sipa/ical_sipa.ics"], "status": "feed" },
-    { "id": "cuimc", "name": "Columbia University Irving Medical Center", "kind": "school", "url": "https://www.cuimc.columbia.edu",
-      "feeds": ["https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2Fcumc%22%29"], "status": "feed" },
-    { "id": "vps", "name": "Vagelos College of Physicians and Surgeons", "kind": "school", "parent": "cuimc", "url": "https://www.vagelos.columbia.edu",
-      "status": "in-wide", "note": "posts to events.columbia.edu under CUIMC" },
-    { "id": "mailman", "name": "Mailman School of Public Health", "kind": "school", "url": "https://www.publichealth.columbia.edu",
-      "feeds": ["https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FPublicHealth%22%29"], "status": "feed" },
-    { "id": "dental", "name": "College of Dental Medicine", "kind": "school", "url": "https://www.dental.columbia.edu",
-      "status": "in-wide", "note": "events page links events.columbia.edu entries" },
-    { "id": "nursing", "name": "Columbia University School of Nursing", "kind": "school", "url": "https://www.nursing.columbia.edu",
-      "status": "no-feed", "note": "/events is 404; no events page found" },
-    { "id": "gsapp", "name": "Graduate School of Architecture, Planning and Preservation", "kind": "school", "url": "https://www.arch.columbia.edu",
-      "status": "no-feed", "note": "events listed as HTML only" },
-    { "id": "arts", "name": "School of the Arts", "kind": "school", "url": "https://arts.columbia.edu",
-      "status": "unchecked", "note": "no answer from www.arts.columbia.edu" },
-    { "id": "journalism", "name": "Graduate School of Journalism", "kind": "school", "url": "https://journalism.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "socialwork", "name": "School of Social Work", "kind": "school", "url": "https://www.socialwork.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "sps", "name": "School of Professional Studies", "kind": "school", "url": "https://sps.columbia.edu",
-      "status": "no-feed", "note": "Drupal events list, HTML only" },
-    { "id": "climate", "name": "Columbia Climate School", "kind": "school", "url": "https://www.climate.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "tc", "name": "Teachers College", "kind": "school", "url": "https://www.tc.columbia.edu",
-      "status": "no-feed", "note": "events page is HTML (affiliated college)" },
-    { "id": "barnard", "name": "Barnard College", "kind": "school", "url": "https://barnard.edu",
-      "status": "unchecked", "note": "affiliated college" },
-
-    { "id": "cs", "name": "Department of Computer Science", "kind": "department", "parent": "seas", "url": "https://www.cs.columbia.edu",
-      "status": "no-feed", "note": "WordPress calendar page, no events API" },
-    { "id": "ee", "name": "Department of Electrical Engineering", "kind": "department", "parent": "seas", "url": "https://www.ee.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "mae", "name": "Mechanical Engineering", "kind": "department", "parent": "seas", "url": "https://www.me.columbia.edu",
-      "status": "unchecked" },
-    { "id": "bme", "name": "Biomedical Engineering", "kind": "department", "parent": "seas", "url": "https://bme.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "math", "name": "Department of Mathematics", "kind": "department", "parent": "gsas", "url": "https://www.math.columbia.edu",
-      "status": "no-feed", "note": "seminar pages are HTML; no Tribe route" },
-    { "id": "stat", "name": "Department of Statistics", "kind": "department", "parent": "gsas", "url": "https://stat.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "physics", "name": "Department of Physics", "kind": "department", "parent": "gsas", "url": "https://physics.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "chem", "name": "Department of Chemistry", "kind": "department", "parent": "gsas", "url": "https://www.chem.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "biology", "name": "Department of Biological Sciences", "kind": "department", "parent": "gsas", "url": "https://www.biology.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "econ", "name": "Department of Economics", "kind": "department", "parent": "gsas", "url": "https://econ.columbia.edu",
-      "status": "no-feed", "note": "Tribe API answers but holds 0 events; seminars listed as HTML" },
-    { "id": "psych", "name": "Department of Psychology", "kind": "department", "parent": "gsas", "url": "https://psychology.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "polisci", "name": "Department of Political Science", "kind": "department", "parent": "gsas", "url": "https://polisci.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "history", "name": "Department of History", "kind": "department", "parent": "gsas", "url": "https://history.columbia.edu",
-      "status": "no-feed", "note": "events/feed is a post RSS without event dates" },
-    { "id": "english", "name": "English and Comparative Literature", "kind": "department", "parent": "gsas", "url": "https://english.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "philosophy", "name": "Department of Philosophy", "kind": "department", "parent": "gsas", "url": "https://philosophy.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "sociology", "name": "Department of Sociology", "kind": "department", "parent": "gsas", "url": "https://sociology.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "neurology", "name": "Department of Neurology", "kind": "department", "parent": "vps", "url": "https://www.neurology.columbia.edu",
-      "feeds": ["https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FNeurology%22%29"], "status": "feed" },
-
-    { "id": "dsi", "name": "Data Science Institute", "kind": "institute", "url": "https://datascience.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "ldeo", "name": "Lamont-Doherty Earth Observatory", "kind": "institute", "parent": "climate", "url": "https://lamont.columbia.edu",
-      "feeds": ["https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FLDEO%22%29"], "status": "feed" },
-    { "id": "harriman", "name": "Harriman Institute", "kind": "institute", "parent": "sipa", "url": "https://harriman.columbia.edu",
-      "feeds": ["https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FSIPA_HarrimanInstitute%22%29"], "status": "feed" },
-    { "id": "zuckerman", "name": "Zuckerman Mind Brain Behavior Institute", "kind": "institute", "url": "https://zuckermaninstitute.columbia.edu",
-      "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "heyman", "name": "Heyman Center for the Humanities", "kind": "center", "url": "https://heymancenter.org",
-      "status": "unchecked" },
-    { "id": "cgep", "name": "Center on Global Energy Policy", "kind": "center", "parent": "sipa", "url": "https://www.energypolicy.columbia.edu",
-      "status": "unchecked" },
-    { "id": "weatherhead", "name": "Weatherhead East Asian Institute", "kind": "institute", "parent": "sipa", "url": "https://weai.columbia.edu",
-      "status": "unchecked" },
-    { "id": "entrepreneurship", "name": "Columbia Entrepreneurship", "kind": "center", "url": "https://entrepreneurship.columbia.edu",
-      "status": "unchecked" },
-
-    { "id": "universityevents", "name": "Office of University Events", "kind": "other", "url": "https://universityevents.columbia.edu",
-      "feeds": ["https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FUniversityEvents%22%29"], "status": "feed" },
-    { "id": "ccs", "name": "Columbia College & Columbia Engineering Career Services", "kind": "other", "url": "https://www.careereducation.columbia.edu",
-      "feeds": ["https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FCCS%22%29"], "status": "feed" },
-    { "id": "libraries", "name": "Columbia University Libraries", "kind": "library", "url": "https://library.columbia.edu",
-      "feeds": ["https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2Fcu_libraries%22%29"], "status": "feed" },
-    { "id": "ccsc", "name": "Columbia College Student Council", "kind": "student", "url": "https://www.ccscouncil.org",
-      "status": "in-wide", "note": "student councils post on CampusGroups" },
-    { "id": "gsc", "name": "Graduate Student Advisory Council", "kind": "student", "url": "https://gsas.columbia.edu/content/graduate-student-advisory-council",
-      "status": "in-wide", "note": "posts on CampusGroups" },
-    { "id": "wallach", "name": "Wallach Art Gallery", "kind": "museum", "url": "https://wallach.columbia.edu",
-      "status": "unchecked" },
-    { "id": "millertheatre", "name": "Miller Theatre", "kind": "other", "url": "https://www.millertheatre.com",
-      "status": "unchecked" }
+    {
+      "id": "cc",
+      "name": "Columbia College",
+      "kind": "school",
+      "url": "https://www.college.columbia.edu",
+      "status": "blocked",
+      "note": "events page answers 403 (CloudFront)"
+    },
+    {
+      "id": "seas",
+      "name": "Fu Foundation School of Engineering and Applied Science",
+      "kind": "school",
+      "url": "https://www.engineering.columbia.edu",
+      "feeds": [
+        "https://static-prod-us-east-1.campusgroups.com/ical/columbiaengineering/ical_columbiaengineering.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "gsas",
+      "name": "Graduate School of Arts and Sciences",
+      "kind": "school",
+      "url": "https://gsas.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "gs",
+      "name": "School of General Studies",
+      "kind": "school",
+      "url": "https://gs.columbia.edu",
+      "feeds": [
+        "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2Fgs%22%29"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "cbs",
+      "name": "Columbia Business School",
+      "kind": "school",
+      "url": "https://business.columbia.edu",
+      "feeds": [
+        "https://static-prod-us-east-1.campusgroups.com/ical/cbs/ical_cbs.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "law",
+      "name": "Columbia Law School",
+      "kind": "school",
+      "url": "https://www.law.columbia.edu",
+      "feeds": [
+        "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2Flaw%22%29"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "sipa",
+      "name": "School of International and Public Affairs",
+      "kind": "school",
+      "url": "https://www.sipa.columbia.edu",
+      "feeds": [
+        "https://static-prod-us-east-1.campusgroups.com/ical/sipa/ical_sipa.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "cuimc",
+      "name": "Columbia University Irving Medical Center",
+      "kind": "school",
+      "url": "https://www.cuimc.columbia.edu",
+      "feeds": [
+        "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2Fcumc%22%29"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "vps",
+      "name": "Vagelos College of Physicians and Surgeons",
+      "kind": "school",
+      "parent": "cuimc",
+      "url": "https://www.vagelos.columbia.edu",
+      "status": "in-wide",
+      "note": "posts to events.columbia.edu under CUIMC"
+    },
+    {
+      "id": "mailman",
+      "name": "Mailman School of Public Health",
+      "kind": "school",
+      "url": "https://www.publichealth.columbia.edu",
+      "feeds": [
+        "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FPublicHealth%22%29"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "dental",
+      "name": "College of Dental Medicine",
+      "kind": "school",
+      "url": "https://www.dental.columbia.edu",
+      "status": "in-wide",
+      "note": "events page links events.columbia.edu entries"
+    },
+    {
+      "id": "nursing",
+      "name": "Columbia University School of Nursing",
+      "kind": "school",
+      "url": "https://www.nursing.columbia.edu",
+      "status": "no-feed",
+      "note": "/events is 404; no events page found"
+    },
+    {
+      "id": "gsapp",
+      "name": "Graduate School of Architecture, Planning and Preservation",
+      "kind": "school",
+      "url": "https://www.arch.columbia.edu",
+      "status": "no-feed",
+      "note": "events listed as HTML only"
+    },
+    {
+      "id": "arts",
+      "name": "School of the Arts",
+      "kind": "school",
+      "url": "https://arts.columbia.edu",
+      "status": "blocked",
+      "note": "arts.columbia.edu answers a Cloudflare challenge (403)"
+    },
+    {
+      "id": "journalism",
+      "name": "Graduate School of Journalism",
+      "kind": "school",
+      "url": "https://journalism.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "socialwork",
+      "name": "School of Social Work",
+      "kind": "school",
+      "url": "https://www.socialwork.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "sps",
+      "name": "School of Professional Studies",
+      "kind": "school",
+      "url": "https://sps.columbia.edu",
+      "status": "no-feed",
+      "note": "Drupal events list, HTML only"
+    },
+    {
+      "id": "climate",
+      "name": "Columbia Climate School",
+      "kind": "school",
+      "url": "https://www.climate.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "tc",
+      "name": "Teachers College",
+      "kind": "school",
+      "url": "https://www.tc.columbia.edu",
+      "status": "no-feed",
+      "note": "events page is HTML (affiliated college)"
+    },
+    {
+      "id": "barnard",
+      "name": "Barnard College",
+      "kind": "school",
+      "url": "https://barnard.edu",
+      "status": "no-feed",
+      "note": "Barnard's own Drupal events page (news-events/events) is HTML only; /events answers Access denied"
+    },
+    {
+      "id": "cs",
+      "name": "Department of Computer Science",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://www.cs.columbia.edu",
+      "status": "no-feed",
+      "note": "WordPress calendar page, no events API"
+    },
+    {
+      "id": "ee",
+      "name": "Department of Electrical Engineering",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://www.ee.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "mae",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://www.me.columbia.edu",
+      "status": "blocked",
+      "note": "me.columbia.edu answers a Cloudflare challenge (403)"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://bme.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://www.math.columbia.edu",
+      "status": "no-feed",
+      "note": "seminar pages are HTML; no Tribe route"
+    },
+    {
+      "id": "stat",
+      "name": "Department of Statistics",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://stat.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://physics.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "chem",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://www.chem.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "biology",
+      "name": "Department of Biological Sciences",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://www.biology.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "econ",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://econ.columbia.edu",
+      "status": "no-feed",
+      "note": "Tribe API answers but holds 0 events; seminars listed as HTML"
+    },
+    {
+      "id": "psych",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://psychology.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "polisci",
+      "name": "Department of Political Science",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://polisci.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://history.columbia.edu",
+      "status": "no-feed",
+      "note": "events/feed is a post RSS without event dates"
+    },
+    {
+      "id": "english",
+      "name": "English and Comparative Literature",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://english.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://philosophy.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://sociology.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "neurology",
+      "name": "Department of Neurology",
+      "kind": "department",
+      "parent": "vps",
+      "url": "https://www.neurology.columbia.edu",
+      "feeds": [
+        "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FNeurology%22%29"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "dsi",
+      "name": "Data Science Institute",
+      "kind": "institute",
+      "url": "https://datascience.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "ldeo",
+      "name": "Lamont-Doherty Earth Observatory",
+      "kind": "institute",
+      "parent": "climate",
+      "url": "https://lamont.columbia.edu",
+      "feeds": [
+        "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FLDEO%22%29"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "harriman",
+      "name": "Harriman Institute",
+      "kind": "institute",
+      "parent": "sipa",
+      "url": "https://harriman.columbia.edu",
+      "feeds": [
+        "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FSIPA_HarrimanInstitute%22%29"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "zuckerman",
+      "name": "Zuckerman Mind Brain Behavior Institute",
+      "kind": "institute",
+      "url": "https://zuckermaninstitute.columbia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "heyman",
+      "name": "Heyman Center for the Humanities",
+      "kind": "center",
+      "url": "https://sofheyman.org",
+      "status": "no-feed",
+      "note": "now sofheyman.org; events/upcoming is HTML with no feed"
+    },
+    {
+      "id": "cgep",
+      "name": "Center on Global Energy Policy",
+      "kind": "center",
+      "parent": "sipa",
+      "url": "https://www.energypolicy.columbia.edu",
+      "status": "no-feed",
+      "note": "WordPress events page is HTML; /feed is news, no events API"
+    },
+    {
+      "id": "weatherhead",
+      "name": "Weatherhead East Asian Institute",
+      "kind": "institute",
+      "parent": "sipa",
+      "url": "https://weai.columbia.edu",
+      "status": "blocked",
+      "note": "weai.columbia.edu answers a Cloudflare challenge (403)"
+    },
+    {
+      "id": "entrepreneurship",
+      "name": "Columbia Entrepreneurship",
+      "kind": "center",
+      "url": "https://entrepreneurship.columbia.edu",
+      "status": "feed",
+      "feeds": [
+        "https://entrepreneurship.columbia.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "universityevents",
+      "name": "Office of University Events",
+      "kind": "other",
+      "url": "https://universityevents.columbia.edu",
+      "feeds": [
+        "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FUniversityEvents%22%29"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "ccs",
+      "name": "Columbia College & Columbia Engineering Career Services",
+      "kind": "other",
+      "url": "https://www.careereducation.columbia.edu",
+      "feeds": [
+        "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FCCS%22%29"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "libraries",
+      "name": "Columbia University Libraries",
+      "kind": "library",
+      "url": "https://library.columbia.edu",
+      "feeds": [
+        "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2Fcu_libraries%22%29"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "ccsc",
+      "name": "Columbia College Student Council",
+      "kind": "student",
+      "url": "https://www.ccscouncil.org",
+      "status": "in-wide",
+      "note": "student councils post on CampusGroups"
+    },
+    {
+      "id": "gsc",
+      "name": "Graduate Student Advisory Council",
+      "kind": "student",
+      "url": "https://gsas.columbia.edu/content/graduate-student-advisory-council",
+      "status": "in-wide",
+      "note": "posts on CampusGroups"
+    },
+    {
+      "id": "wallach",
+      "name": "Wallach Art Gallery",
+      "kind": "museum",
+      "url": "https://wallach.columbia.edu",
+      "status": "blocked",
+      "note": "wallach.columbia.edu answers a Cloudflare challenge (403)"
+    },
+    {
+      "id": "millertheatre",
+      "name": "Miller Theatre",
+      "kind": "other",
+      "url": "https://www.millertheatre.com",
+      "status": "no-feed",
+      "note": "performances listed as HTML on /events, no feed"
+    }
   ]
 }

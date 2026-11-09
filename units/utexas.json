@@ -27,7 +27,8 @@
       "name": "Moody College of Communication",
       "kind": "school",
       "url": "https://moody.utexas.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "own calendar events.moody.utexas.edu is Drupal HTML; its rss.xml lists site pages, not events"
     },
     {
       "id": "education",
@@ -141,22 +142,25 @@
       "id": "grad",
       "name": "Graduate School",
       "kind": "school",
-      "url": "https://gradschool.utexas.edu",
-      "status": "unchecked"
+      "url": "https://graduate.utexas.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
     },
     {
       "id": "ugs",
       "name": "School of Undergraduate Studies",
       "kind": "school",
-      "url": "https://ugs.utexas.edu",
-      "status": "unchecked"
+      "url": "https://undergraduates.utexas.edu",
+      "status": "no-feed",
+      "note": "now the Undergraduate College; no events page or feed"
     },
     {
       "id": "civic",
       "name": "School of Civic Leadership",
       "kind": "school",
       "url": "https://civicleadership.utexas.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML only"
     },
     {
       "id": "cs",
@@ -202,23 +206,26 @@
       "kind": "department",
       "parent": "cockrell",
       "url": "https://che.utexas.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress events page without a feed (not The Events Calendar)"
     },
     {
       "id": "caee",
       "name": "Civil, Architectural and Environmental Engineering",
       "kind": "department",
       "parent": "cockrell",
-      "url": "https://www.caee.utexas.edu",
-      "status": "unchecked"
+      "url": "https://caee.utexas.edu",
+      "status": "no-feed",
+      "note": "WordPress events page without a feed (not The Events Calendar)"
     },
     {
       "id": "ase",
       "name": "Aerospace Engineering and Engineering Mechanics",
       "kind": "department",
       "parent": "cockrell",
-      "url": "https://www.ae.utexas.edu",
-      "status": "unchecked"
+      "url": "https://ae.utexas.edu",
+      "status": "no-feed",
+      "note": "WordPress events page; /events/feed/ returns nothing"
     },
     {
       "id": "math",
@@ -262,7 +269,8 @@
       "kind": "department",
       "parent": "cns",
       "url": "https://biosciences.utexas.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "biosciences.utexas.edu does not answer (timed out twice)"
     },
     {
       "id": "economics",
@@ -270,8 +278,8 @@
       "kind": "department",
       "parent": "liberalarts",
       "url": "https://liberalarts.utexas.edu/economics",
-      "status": "unchecked",
-      "note": "site opens; only the college /events answers 403"
+      "status": "no-feed",
+      "note": "Liberal Arts department site: no events feed, seminars as HTML pages; the college /events answers 403"
     },
     {
       "id": "psychology",
@@ -279,8 +287,8 @@
       "kind": "department",
       "parent": "liberalarts",
       "url": "https://liberalarts.utexas.edu/psychology",
-      "status": "unchecked",
-      "note": "site opens; only the college /events answers 403"
+      "status": "no-feed",
+      "note": "Liberal Arts department site: no events feed, seminars as HTML pages; the college /events answers 403"
     },
     {
       "id": "government",
@@ -288,8 +296,8 @@
       "kind": "department",
       "parent": "liberalarts",
       "url": "https://liberalarts.utexas.edu/government",
-      "status": "unchecked",
-      "note": "site opens; only the college /events answers 403"
+      "status": "no-feed",
+      "note": "Liberal Arts department site: no events feed, seminars as HTML pages; the college /events answers 403"
     },
     {
       "id": "history",
@@ -297,8 +305,8 @@
       "kind": "department",
       "parent": "liberalarts",
       "url": "https://liberalarts.utexas.edu/history",
-      "status": "unchecked",
-      "note": "site opens; only the college /events answers 403"
+      "status": "no-feed",
+      "note": "Liberal Arts department site: no events feed, seminars as HTML pages; the college /events answers 403"
     },
     {
       "id": "english",
@@ -306,8 +314,8 @@
       "kind": "department",
       "parent": "liberalarts",
       "url": "https://liberalarts.utexas.edu/english",
-      "status": "unchecked",
-      "note": "site opens; only the college /events answers 403"
+      "status": "no-feed",
+      "note": "Liberal Arts department site: no events feed, seminars as HTML pages; the college /events answers 403"
     },
     {
       "id": "philosophy",
@@ -315,8 +323,8 @@
       "kind": "department",
       "parent": "liberalarts",
       "url": "https://liberalarts.utexas.edu/philosophy",
-      "status": "unchecked",
-      "note": "site opens; only the college /events answers 403"
+      "status": "no-feed",
+      "note": "Liberal Arts department site: no events feed, seminars as HTML pages; the college /events answers 403"
     },
     {
       "id": "sociology",
@@ -324,8 +332,8 @@
       "kind": "department",
       "parent": "liberalarts",
       "url": "https://liberalarts.utexas.edu/sociology",
-      "status": "unchecked",
-      "note": "site opens; only the college /events answers 403"
+      "status": "no-feed",
+      "note": "Liberal Arts department site: no events feed, seminars as HTML pages; the college /events answers 403"
     },
     {
       "id": "oden",
@@ -356,7 +364,8 @@
       "name": "Robert S. Strauss Center for International Security and Law",
       "kind": "center",
       "url": "https://www.strausscenter.org",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress /events/feed/ has 1 item and nothing upcoming; events page HTML"
     },
     {
       "id": "humanities",
@@ -382,30 +391,32 @@
       "kind": "institute",
       "parent": "liberalarts",
       "url": "https://liberalarts.utexas.edu/sai",
-      "status": "unchecked",
-      "note": "site opens; only the college /events answers 403"
+      "status": "no-feed",
+      "note": "Liberal Arts department site: no events feed, seminars as HTML pages; the college /events answers 403"
     },
     {
       "id": "texas-robotics",
       "name": "Texas Robotics",
       "kind": "center",
       "url": "https://robotics.utexas.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
     },
     {
       "id": "ic2",
       "name": "IC2 Institute / Texas Innovation Center",
       "kind": "institute",
       "url": "https://ic2.utexas.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress events page, HTML only"
     },
     {
       "id": "population",
       "name": "Population Research Center",
       "kind": "center",
       "url": "https://liberalarts.utexas.edu/prc",
-      "status": "unchecked",
-      "note": "site opens; only the college /events answers 403"
+      "status": "no-feed",
+      "note": "Liberal Arts department site: no events feed, seminars as HTML pages; the college /events answers 403"
     },
     {
       "id": "sg",
@@ -436,28 +447,32 @@
       "name": "Blanton Museum of Art",
       "kind": "museum",
       "url": "https://blantonmuseum.org",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "programs page is HTML only"
     },
     {
       "id": "hrc",
       "name": "Harry Ransom Center",
       "kind": "museum",
       "url": "https://www.hrc.utexas.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML only"
     },
     {
       "id": "career",
       "name": "Texas Career Engagement",
       "kind": "other",
-      "url": "https://careerengagement.utexas.edu",
-      "status": "unchecked"
+      "url": "https://careersuccess.utexas.edu",
+      "status": "no-feed",
+      "note": "now Career Success; events via Handshake, site has no events feed"
     },
     {
       "id": "texas-performing-arts",
       "name": "Texas Performing Arts",
       "kind": "other",
       "url": "https://texasperformingarts.org",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "ticketed shows as HTML; a few also appear on calendar.utexas.edu"
     }
   ]
 }

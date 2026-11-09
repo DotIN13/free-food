@@ -10,8 +10,10 @@
       "name": "College of Arts & Sciences",
       "kind": "school",
       "url": "https://www.bu.edu/cas",
-      "status": "unchecked",
-      "note": "no school-wide events page found"
+      "status": "feed",
+      "feeds": [
+        "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=57&days=31"
+      ]
     },
     {
       "id": "cds",
@@ -26,8 +28,8 @@
       "name": "College of Communication",
       "kind": "school",
       "url": "https://www.bu.edu/com",
-      "status": "unchecked",
-      "note": "/events 404"
+      "status": "in-wide",
+      "note": "COM calendar cid 69: 11 of 15 events also in University Events"
     },
     {
       "id": "eng",
@@ -52,29 +54,34 @@
       "name": "College of General Studies",
       "kind": "school",
       "url": "https://www.bu.edu/cgs",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "CGS calendar cid 372 has no events"
     },
     {
       "id": "sargent",
       "name": "Sargent College of Health & Rehabilitation Sciences",
       "kind": "school",
       "url": "https://www.bu.edu/sargent",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=484&days=31"
+      ]
     },
     {
       "id": "dental",
       "name": "Henry M. Goldman School of Dental Medicine",
       "kind": "school",
       "url": "https://www.bu.edu/dental",
-      "status": "unchecked",
-      "note": "/events 404"
+      "status": "no-feed",
+      "note": "dental calendars cid 51 and 663 have no events; /calendar is the academic calendar"
     },
     {
       "id": "grs",
       "name": "Graduate School of Arts & Sciences",
       "kind": "school",
-      "url": "https://www.bu.edu/grs",
-      "status": "unchecked"
+      "url": "https://www.bu.edu/cas/about/about-grs/",
+      "status": "in-wide",
+      "note": "bu.edu/grs redirects into CAS; shares the CAS/GRS calendar (cid 57, found on cas), mostly in University Events"
     },
     {
       "id": "hospitality",
@@ -156,7 +163,10 @@
       "name": "School of Theology",
       "kind": "school",
       "url": "https://www.bu.edu/sth",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=376&days=31"
+      ]
     },
     {
       "id": "wheelock",
@@ -171,8 +181,10 @@
       "name": "Kilachand Honors College",
       "kind": "school",
       "url": "https://www.bu.edu/khc",
-      "status": "unchecked",
-      "note": "/events 404"
+      "status": "feed",
+      "feeds": [
+        "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=517&days=31"
+      ]
     },
     {
       "id": "cs",
@@ -216,8 +228,8 @@
       "kind": "department",
       "parent": "cas",
       "url": "https://www.bu.edu/math",
-      "status": "unchecked",
-      "note": "/events 404"
+      "status": "no-feed",
+      "note": "Mathematics & Statistics calendar cid 601 has no events; seminars page is HTML"
     },
     {
       "id": "physics",
@@ -263,8 +275,8 @@
       "kind": "department",
       "parent": "cas",
       "url": "https://www.bu.edu/psych",
-      "status": "unchecked",
-      "note": "/events 404"
+      "status": "no-feed",
+      "note": "Psychology calendar cid 26 has no events; colloquia page is HTML"
     },
     {
       "id": "polisci",
@@ -272,7 +284,10 @@
       "kind": "department",
       "parent": "cas",
       "url": "https://www.bu.edu/polisci",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=470&days=31"
+      ]
     },
     {
       "id": "history",
@@ -280,8 +295,10 @@
       "kind": "department",
       "parent": "cas",
       "url": "https://www.bu.edu/history",
-      "status": "unchecked",
-      "note": "events page uses the BU calendar plugin; cid unknown"
+      "status": "feed",
+      "feeds": [
+        "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=596&days=31"
+      ]
     },
     {
       "id": "english",
@@ -289,7 +306,8 @@
       "kind": "department",
       "parent": "cas",
       "url": "https://www.bu.edu/english",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "English calendars cid 938 and 986 have no events"
     },
     {
       "id": "philosophy",
@@ -297,7 +315,8 @@
       "kind": "department",
       "parent": "cas",
       "url": "https://www.bu.edu/philo",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "Philosophy calendar cid 48: 11 of 13 events also in University Events"
     },
     {
       "id": "sociology",
@@ -305,7 +324,8 @@
       "kind": "department",
       "parent": "cas",
       "url": "https://www.bu.edu/sociology",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "Sociology calendar cid 486: 7 of 9 events also in University Events"
     },
     {
       "id": "hariri",
@@ -348,7 +368,8 @@
       "name": "Center for Antiracist Research",
       "kind": "center",
       "url": "https://www.bu.edu/antiracism-center",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "bu.edu/antiracism-center answers 404; no events page found"
     },
     {
       "id": "gdp",
@@ -356,14 +377,16 @@
       "kind": "center",
       "parent": "pardee",
       "url": "https://www.bu.edu/gdp",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "GDP events are on the Pardee calendar (cid 1041) we read"
     },
     {
       "id": "spark",
       "name": "BU Spark! / Innovate@BU",
       "kind": "center",
       "url": "https://www.bu.edu/innovate",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Innovate@BU events are on innovatebu.app (JavaScript app, no feed); venture accelerator cid 992 empty"
     },
     {
       "id": "isec",
@@ -371,15 +394,16 @@
       "kind": "center",
       "parent": "eng",
       "url": "https://www.bu.edu/cise",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "CISE calendar cid 297: all 3 events also in University Events"
     },
     {
       "id": "sg",
       "name": "Student Government",
       "kind": "student",
       "url": "https://www.bu.edu/sg",
-      "status": "unchecked",
-      "note": "/sg 404; Engage tenant shows 0 events"
+      "status": "no-feed",
+      "note": "bu.edu/sg answers 404; Engage tenant shows 0 events; Student Union calendar cid 49 empty"
     },
     {
       "id": "gso",
@@ -401,8 +425,9 @@
       "id": "art-galleries",
       "name": "BU Art Galleries",
       "kind": "museum",
-      "url": "https://www.bu.edu/art",
-      "status": "unchecked"
+      "url": "https://www.bu.edu/cfa/news/bu-art-galleries/",
+      "status": "in-wide",
+      "note": "gallery events are on the CFA calendar (cid 20) we read; galleries cid 583 empty"
     },
     {
       "id": "careers",
@@ -417,7 +442,8 @@
       "name": "BU Athletics",
       "kind": "other",
       "url": "https://goterriers.com",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Sidearm composite schedule (games), no event feed worth reading"
     }
   ]
 }

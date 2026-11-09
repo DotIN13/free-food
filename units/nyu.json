@@ -6,61 +6,476 @@
     "https://engage.nyu.edu/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100"
   ],
   "units": [
-    { "id": "cas", "name": "College of Arts and Science", "kind": "school", "url": "https://cas.nyu.edu", "status": "in-wide", "note": "posts to events.nyu.edu (LiveWhale); the main feed reads only its first page" },
-    { "id": "gsas", "name": "Graduate School of Arts and Science", "kind": "school", "url": "https://gsas.nyu.edu", "status": "in-wide", "note": "posts to events.nyu.edu (LiveWhale)" },
-    { "id": "stern", "name": "Leonard N. Stern School of Business", "kind": "school", "url": "https://www.stern.nyu.edu", "status": "no-feed", "note": "LiveWhale group nearly empty, site HTML only (sources note)" },
-    { "id": "tandon", "name": "Tandon School of Engineering", "kind": "school", "url": "https://engineering.nyu.edu", "feeds": ["https://events.nyu.edu/live/json/events/group/Engineering/response_fields/description,location"], "status": "feed" },
-    { "id": "law", "name": "School of Law", "kind": "school", "url": "https://www.law.nyu.edu", "status": "no-feed", "note": "LiveWhale group nearly empty, site HTML only (sources note)" },
-    { "id": "grossman", "name": "Grossman School of Medicine", "kind": "school", "url": "https://med.nyu.edu", "status": "no-feed", "note": "LiveWhale group nearly empty (sources note)" },
-    { "id": "steinhardt", "name": "Steinhardt School of Culture, Education, and Human Development", "kind": "school", "url": "https://steinhardt.nyu.edu", "feeds": ["https://events.nyu.edu/live/json/events/group/Steinhardt/response_fields/description,location"], "status": "feed" },
-    { "id": "tisch", "name": "Tisch School of the Arts", "kind": "school", "url": "https://tisch.nyu.edu", "feeds": ["https://events.nyu.edu/live/json/events/group/TSOA/response_fields/description,location"], "status": "feed" },
-    { "id": "wagner", "name": "Robert F. Wagner Graduate School of Public Service", "kind": "school", "url": "https://wagner.nyu.edu", "feeds": ["https://events.nyu.edu/live/json/events/group/Wagner-Public-Events/response_fields/description,location"], "status": "feed" },
-    { "id": "gph", "name": "School of Global Public Health", "kind": "school", "url": "https://publichealth.nyu.edu", "feeds": ["https://events.nyu.edu/live/json/events/group/GPH/response_fields/description,location"], "status": "feed" },
-    { "id": "silver", "name": "Silver School of Social Work", "kind": "school", "url": "https://socialwork.nyu.edu", "feeds": ["https://events.nyu.edu/live/json/events/group/Social-Work/response_fields/description,location"], "status": "feed" },
-    { "id": "nursing", "name": "Rory Meyers College of Nursing", "kind": "school", "url": "https://nursing.nyu.edu", "feeds": ["https://events.nyu.edu/live/json/events/group/College-of-Nursing/response_fields/description,location"], "status": "feed" },
-    { "id": "dentistry", "name": "College of Dentistry", "kind": "school", "url": "https://dental.nyu.edu", "status": "in-wide", "note": "site links events.nyu.edu" },
-    { "id": "gallatin", "name": "Gallatin School of Individualized Study", "kind": "school", "url": "https://gallatin.nyu.edu", "status": "in-wide", "note": "posts to events.nyu.edu (LiveWhale)" },
-    { "id": "sps", "name": "School of Professional Studies", "kind": "school", "url": "https://www.sps.nyu.edu", "status": "unchecked" },
-    { "id": "liberalstudies", "name": "Liberal Studies", "kind": "school", "url": "https://liberalstudies.nyu.edu", "status": "unchecked" },
-    { "id": "courant", "name": "Courant Institute of Mathematical Sciences", "kind": "school", "url": "https://cims.nyu.edu", "status": "no-feed", "note": "seminar calendars are HTML only (sources note)" },
-    { "id": "cds", "name": "Center for Data Science", "kind": "institute", "url": "https://cds.nyu.edu", "status": "blocked", "note": "403" },
-    { "id": "isaw", "name": "Institute for the Study of the Ancient World", "kind": "institute", "url": "https://isaw.nyu.edu", "status": "unchecked", "note": "has an rss.xml link, likely news" },
-    { "id": "ifa", "name": "Institute of Fine Arts", "kind": "institute", "url": "https://ifa.nyu.edu", "status": "unchecked" },
-    { "id": "abudhabi", "name": "NYU Abu Dhabi", "kind": "school", "url": "https://nyuad.nyu.edu", "status": "unchecked" },
-    { "id": "shanghai", "name": "NYU Shanghai", "kind": "school", "url": "https://shanghai.nyu.edu", "status": "unchecked" },
-
-    { "id": "cs", "name": "Computer Science", "kind": "department", "parent": "courant", "url": "https://cs.nyu.edu", "status": "no-feed", "note": "Courant seminars HTML only (sources note)" },
-    { "id": "math", "name": "Mathematics", "kind": "department", "parent": "courant", "url": "https://math.nyu.edu", "status": "no-feed", "note": "Courant seminars HTML only (sources note)" },
-    { "id": "ece", "name": "Electrical and Computer Engineering", "kind": "department", "parent": "tandon", "url": "https://engineering.nyu.edu/academics/departments/electrical-and-computer-engineering", "status": "in-wide", "note": "Tandon events come through its LiveWhale group" },
-    { "id": "mae", "name": "Mechanical and Aerospace Engineering", "kind": "department", "parent": "tandon", "url": "https://engineering.nyu.edu/academics/departments/mechanical-and-aerospace-engineering", "status": "in-wide", "note": "Tandon events come through its LiveWhale group" },
-    { "id": "bme", "name": "Biomedical Engineering", "kind": "department", "parent": "tandon", "url": "https://engineering.nyu.edu/academics/departments/biomedical-engineering", "status": "in-wide", "note": "Tandon events come through its LiveWhale group" },
-    { "id": "physics", "name": "Physics", "kind": "department", "parent": "cas", "url": "https://as.nyu.edu/departments/physics.html", "status": "blocked", "note": "as.nyu.edu answers with a JS challenge" },
-    { "id": "chemistry", "name": "Chemistry", "kind": "department", "parent": "cas", "url": "https://as.nyu.edu/departments/chemistry.html", "status": "blocked", "note": "as.nyu.edu answers with a JS challenge" },
-    { "id": "biology", "name": "Biology", "kind": "department", "parent": "cas", "url": "https://as.nyu.edu/departments/biology.html", "status": "blocked", "note": "as.nyu.edu answers with a JS challenge" },
-    { "id": "economics", "name": "Economics", "kind": "department", "parent": "cas", "url": "https://as.nyu.edu/departments/econ.html", "status": "blocked", "note": "as.nyu.edu answers with a JS challenge" },
-    { "id": "psychology", "name": "Psychology", "kind": "department", "parent": "cas", "url": "https://as.nyu.edu/departments/psychology.html", "status": "blocked", "note": "as.nyu.edu answers with a JS challenge" },
-    { "id": "politics", "name": "Politics", "kind": "department", "parent": "cas", "url": "https://as.nyu.edu/departments/politics.html", "status": "blocked", "note": "as.nyu.edu answers with a JS challenge" },
-    { "id": "history", "name": "History", "kind": "department", "parent": "cas", "url": "https://as.nyu.edu/departments/history.html", "status": "blocked", "note": "as.nyu.edu answers with a JS challenge" },
-    { "id": "english", "name": "English", "kind": "department", "parent": "cas", "url": "https://as.nyu.edu/departments/english.html", "status": "blocked", "note": "as.nyu.edu answers with a JS challenge" },
-    { "id": "philosophy", "name": "Philosophy", "kind": "department", "parent": "cas", "url": "https://as.nyu.edu/departments/philosophy.html", "status": "blocked", "note": "as.nyu.edu answers with a JS challenge" },
-    { "id": "sociology", "name": "Sociology", "kind": "department", "parent": "cas", "url": "https://as.nyu.edu/departments/sociology.html", "status": "blocked", "note": "as.nyu.edu answers with a JS challenge" },
-    { "id": "journalism", "name": "Arthur L. Carter Journalism Institute", "kind": "department", "parent": "cas", "url": "https://journalism.nyu.edu", "feeds": ["https://events.nyu.edu/live/json/events/group/Journalism/response_fields/description,location"], "status": "feed" },
-
-    { "id": "apa", "name": "Asian/Pacific/American Institute", "kind": "institute", "url": "https://apa.nyu.edu", "feeds": ["https://events.nyu.edu/live/json/events/group/APA-Institute/response_fields/description,location"], "status": "feed" },
-    { "id": "humanities", "name": "NYU Center for the Humanities", "kind": "center", "url": "https://www.nyu.edu/about/news-publications/news.html", "status": "unchecked" },
-    { "id": "kjc", "name": "King Juan Carlos I of Spain Center", "kind": "center", "url": "https://kjc.as.nyu.edu", "status": "unchecked" },
-    { "id": "remarque", "name": "Remarque Institute", "kind": "institute", "url": "https://remarque.as.nyu.edu", "status": "unchecked" },
-    { "id": "furman", "name": "Furman Center for Real Estate and Urban Policy", "kind": "center", "parent": "law", "url": "https://furmancenter.org", "status": "unchecked" },
-    { "id": "brennan", "name": "Brennan Center for Justice", "kind": "center", "parent": "law", "url": "https://www.brennancenter.org", "status": "unchecked" },
-    { "id": "berkley", "name": "Berkley Innovation Labs (entrepreneurship)", "kind": "center", "url": "https://entrepreneur.nyu.edu", "status": "unchecked" },
-    { "id": "perlmutter", "name": "Perlmutter Cancer Center", "kind": "center", "parent": "grossman", "url": "https://nyulangone.org/locations/perlmutter-cancer-center", "status": "unchecked" },
-    { "id": "ogs", "name": "Office of Global Services", "kind": "other", "url": "https://www.nyu.edu/students/student-information-and-resources/student-visa-and-immigration.html", "feeds": ["https://events.nyu.edu/live/json/events/group/OGS/response_fields/description,location"], "status": "feed" },
-
-    { "id": "sg", "name": "Student Government Assembly", "kind": "student", "url": "https://www.nyu.edu/students/student-success/student-government.html", "status": "blocked", "note": "www.nyu.edu answers with a JS challenge" },
-    { "id": "gsc", "name": "Graduate Student Council (GSAS)", "kind": "student", "url": "https://gsas.nyu.edu", "status": "unchecked" },
-    { "id": "library", "name": "NYU Libraries", "kind": "library", "url": "https://library.nyu.edu", "status": "unchecked", "note": "library.nyu.edu/events/ answers 404" },
-    { "id": "grey", "name": "Grey Art Museum", "kind": "museum", "url": "https://greyartmuseum.nyu.edu", "status": "unchecked" },
-    { "id": "skirball", "name": "NYU Skirball (performing arts)", "kind": "other", "url": "https://nyuskirball.org", "status": "unchecked" },
-    { "id": "wasserman", "name": "Wasserman Center for Career Development", "kind": "other", "url": "https://www.nyu.edu/students/student-success/career-development.html", "feeds": ["https://events.nyu.edu/live/json/events/group/Wasserman-Center/response_fields/description,location"], "status": "feed" }
+    {
+      "id": "cas",
+      "name": "College of Arts and Science",
+      "kind": "school",
+      "url": "https://cas.nyu.edu",
+      "status": "in-wide",
+      "note": "posts to events.nyu.edu (LiveWhale); the main feed reads only its first page"
+    },
+    {
+      "id": "gsas",
+      "name": "Graduate School of Arts and Science",
+      "kind": "school",
+      "url": "https://gsas.nyu.edu",
+      "status": "in-wide",
+      "note": "posts to events.nyu.edu (LiveWhale)"
+    },
+    {
+      "id": "stern",
+      "name": "Leonard N. Stern School of Business",
+      "kind": "school",
+      "url": "https://www.stern.nyu.edu",
+      "status": "no-feed",
+      "note": "LiveWhale group nearly empty, site HTML only (sources note)"
+    },
+    {
+      "id": "tandon",
+      "name": "Tandon School of Engineering",
+      "kind": "school",
+      "url": "https://engineering.nyu.edu",
+      "feeds": [
+        "https://events.nyu.edu/live/json/events/group/Engineering/response_fields/description,location"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "law",
+      "name": "School of Law",
+      "kind": "school",
+      "url": "https://www.law.nyu.edu",
+      "status": "no-feed",
+      "note": "LiveWhale group nearly empty, site HTML only (sources note)"
+    },
+    {
+      "id": "grossman",
+      "name": "Grossman School of Medicine",
+      "kind": "school",
+      "url": "https://med.nyu.edu",
+      "status": "no-feed",
+      "note": "LiveWhale group nearly empty (sources note)"
+    },
+    {
+      "id": "steinhardt",
+      "name": "Steinhardt School of Culture, Education, and Human Development",
+      "kind": "school",
+      "url": "https://steinhardt.nyu.edu",
+      "feeds": [
+        "https://events.nyu.edu/live/json/events/group/Steinhardt/response_fields/description,location"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "tisch",
+      "name": "Tisch School of the Arts",
+      "kind": "school",
+      "url": "https://tisch.nyu.edu",
+      "feeds": [
+        "https://events.nyu.edu/live/json/events/group/TSOA/response_fields/description,location"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "wagner",
+      "name": "Robert F. Wagner Graduate School of Public Service",
+      "kind": "school",
+      "url": "https://wagner.nyu.edu",
+      "feeds": [
+        "https://events.nyu.edu/live/json/events/group/Wagner-Public-Events/response_fields/description,location"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "gph",
+      "name": "School of Global Public Health",
+      "kind": "school",
+      "url": "https://publichealth.nyu.edu",
+      "feeds": [
+        "https://events.nyu.edu/live/json/events/group/GPH/response_fields/description,location"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "silver",
+      "name": "Silver School of Social Work",
+      "kind": "school",
+      "url": "https://socialwork.nyu.edu",
+      "feeds": [
+        "https://events.nyu.edu/live/json/events/group/Social-Work/response_fields/description,location"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "nursing",
+      "name": "Rory Meyers College of Nursing",
+      "kind": "school",
+      "url": "https://nursing.nyu.edu",
+      "feeds": [
+        "https://events.nyu.edu/live/json/events/group/College-of-Nursing/response_fields/description,location"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "dentistry",
+      "name": "College of Dentistry",
+      "kind": "school",
+      "url": "https://dental.nyu.edu",
+      "status": "in-wide",
+      "note": "site links events.nyu.edu"
+    },
+    {
+      "id": "gallatin",
+      "name": "Gallatin School of Individualized Study",
+      "kind": "school",
+      "url": "https://gallatin.nyu.edu",
+      "status": "in-wide",
+      "note": "posts to events.nyu.edu (LiveWhale)"
+    },
+    {
+      "id": "sps",
+      "name": "School of Professional Studies",
+      "kind": "school",
+      "url": "https://www.sps.nyu.edu",
+      "status": "no-feed",
+      "note": "about/events.html is an AEM HTML list, no feed"
+    },
+    {
+      "id": "liberalstudies",
+      "name": "Liberal Studies",
+      "kind": "school",
+      "url": "https://liberalstudies.nyu.edu",
+      "status": "blocked",
+      "note": "/events answers a bot challenge (202 ?challenge=)"
+    },
+    {
+      "id": "courant",
+      "name": "Courant Institute of Mathematical Sciences",
+      "kind": "school",
+      "url": "https://cims.nyu.edu",
+      "status": "no-feed",
+      "note": "seminar calendars are HTML only (sources note)"
+    },
+    {
+      "id": "cds",
+      "name": "Center for Data Science",
+      "kind": "institute",
+      "url": "https://cds.nyu.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "isaw",
+      "name": "Institute for the Study of the Ancient World",
+      "kind": "institute",
+      "url": "https://isaw.nyu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://isaw.nyu.edu/events/icalendar"
+      ]
+    },
+    {
+      "id": "ifa",
+      "name": "Institute of Fine Arts",
+      "kind": "institute",
+      "url": "https://ifa.nyu.edu",
+      "status": "no-feed",
+      "note": "public programs page is HTML, no feed"
+    },
+    {
+      "id": "abudhabi",
+      "name": "NYU Abu Dhabi",
+      "kind": "school",
+      "url": "https://nyuad.nyu.edu/en/",
+      "status": "no-feed",
+      "note": "events.html is an AEM HTML page, no feed"
+    },
+    {
+      "id": "shanghai",
+      "name": "NYU Shanghai",
+      "kind": "school",
+      "url": "https://shanghai.nyu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://events.shanghai.nyu.edu/live/json/events/"
+      ]
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "courant",
+      "url": "https://cs.nyu.edu",
+      "status": "no-feed",
+      "note": "Courant seminars HTML only (sources note)"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "courant",
+      "url": "https://math.nyu.edu",
+      "status": "no-feed",
+      "note": "Courant seminars HTML only (sources note)"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "tandon",
+      "url": "https://engineering.nyu.edu/academics/departments/electrical-and-computer-engineering",
+      "status": "in-wide",
+      "note": "Tandon events come through its LiveWhale group"
+    },
+    {
+      "id": "mae",
+      "name": "Mechanical and Aerospace Engineering",
+      "kind": "department",
+      "parent": "tandon",
+      "url": "https://engineering.nyu.edu/academics/departments/mechanical-and-aerospace-engineering",
+      "status": "in-wide",
+      "note": "Tandon events come through its LiveWhale group"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "tandon",
+      "url": "https://engineering.nyu.edu/academics/departments/biomedical-engineering",
+      "status": "in-wide",
+      "note": "Tandon events come through its LiveWhale group"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://as.nyu.edu/departments/physics.html",
+      "status": "blocked",
+      "note": "as.nyu.edu answers with a JS challenge"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://as.nyu.edu/departments/chemistry.html",
+      "status": "blocked",
+      "note": "as.nyu.edu answers with a JS challenge"
+    },
+    {
+      "id": "biology",
+      "name": "Biology",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://as.nyu.edu/departments/biology.html",
+      "status": "blocked",
+      "note": "as.nyu.edu answers with a JS challenge"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://as.nyu.edu/departments/econ.html",
+      "status": "blocked",
+      "note": "as.nyu.edu answers with a JS challenge"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://as.nyu.edu/departments/psychology.html",
+      "status": "blocked",
+      "note": "as.nyu.edu answers with a JS challenge"
+    },
+    {
+      "id": "politics",
+      "name": "Politics",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://as.nyu.edu/departments/politics.html",
+      "status": "blocked",
+      "note": "as.nyu.edu answers with a JS challenge"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://as.nyu.edu/departments/history.html",
+      "status": "blocked",
+      "note": "as.nyu.edu answers with a JS challenge"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://as.nyu.edu/departments/english.html",
+      "status": "blocked",
+      "note": "as.nyu.edu answers with a JS challenge"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://as.nyu.edu/departments/philosophy.html",
+      "status": "blocked",
+      "note": "as.nyu.edu answers with a JS challenge"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://as.nyu.edu/departments/sociology.html",
+      "status": "blocked",
+      "note": "as.nyu.edu answers with a JS challenge"
+    },
+    {
+      "id": "journalism",
+      "name": "Arthur L. Carter Journalism Institute",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://journalism.nyu.edu",
+      "feeds": [
+        "https://events.nyu.edu/live/json/events/group/Journalism/response_fields/description,location"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "apa",
+      "name": "Asian/Pacific/American Institute",
+      "kind": "institute",
+      "url": "https://apa.nyu.edu",
+      "feeds": [
+        "https://events.nyu.edu/live/json/events/group/APA-Institute/response_fields/description,location"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "humanities",
+      "name": "NYU Center for the Humanities",
+      "kind": "center",
+      "url": "https://as.nyu.edu/humanities-center.html",
+      "status": "blocked",
+      "note": "as.nyu.edu-style bot challenge (202 ?challenge=) on its pages"
+    },
+    {
+      "id": "kjc",
+      "name": "King Juan Carlos I of Spain Center",
+      "kind": "center",
+      "url": "https://kjc.as.nyu.edu",
+      "status": "no-feed",
+      "note": "kjc.as.nyu.edu did not answer (timeout)"
+    },
+    {
+      "id": "remarque",
+      "name": "Remarque Institute",
+      "kind": "institute",
+      "url": "https://as.nyu.edu/remarque.html",
+      "status": "blocked",
+      "note": "as.nyu.edu-style bot challenge (202 ?challenge=) on its pages"
+    },
+    {
+      "id": "furman",
+      "name": "Furman Center for Real Estate and Urban Policy",
+      "kind": "center",
+      "parent": "law",
+      "url": "https://furmancenter.org",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "brennan",
+      "name": "Brennan Center for Justice",
+      "kind": "center",
+      "parent": "law",
+      "url": "https://www.brennancenter.org",
+      "status": "no-feed",
+      "note": "events page is HTML, no feed"
+    },
+    {
+      "id": "berkley",
+      "name": "Berkley Innovation Labs (entrepreneurship)",
+      "kind": "center",
+      "url": "https://entrepreneur.nyu.edu",
+      "status": "no-feed",
+      "note": "entrepreneur.nyu.edu/calendar is HTML; no tribe route or ical"
+    },
+    {
+      "id": "perlmutter",
+      "name": "Perlmutter Cancer Center",
+      "kind": "center",
+      "parent": "grossman",
+      "url": "https://nyulangone.org/locations/perlmutter-cancer-center",
+      "status": "no-feed",
+      "note": "hospital location page, no events listing or feed"
+    },
+    {
+      "id": "ogs",
+      "name": "Office of Global Services",
+      "kind": "other",
+      "url": "https://www.nyu.edu/students/student-information-and-resources/student-visa-and-immigration.html",
+      "feeds": [
+        "https://events.nyu.edu/live/json/events/group/OGS/response_fields/description,location"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "sg",
+      "name": "Student Government Assembly",
+      "kind": "student",
+      "url": "https://www.nyu.edu/students/student-success/student-government.html",
+      "status": "blocked",
+      "note": "www.nyu.edu answers with a JS challenge"
+    },
+    {
+      "id": "gsc",
+      "name": "Graduate Student Council (GSAS)",
+      "kind": "student",
+      "url": "https://gsas.nyu.edu",
+      "status": "blocked",
+      "note": "gsas.nyu.edu/events answers a bot challenge (202 ?challenge=)"
+    },
+    {
+      "id": "library",
+      "name": "NYU Libraries",
+      "kind": "library",
+      "url": "https://library.nyu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://nyu.libcal.com/ical_subscribe.php?src=p&cid=1564"
+      ]
+    },
+    {
+      "id": "grey",
+      "name": "Grey Art Museum",
+      "kind": "museum",
+      "url": "https://greyartmuseum.nyu.edu",
+      "status": "no-feed",
+      "note": "events page is HTML, no feed"
+    },
+    {
+      "id": "skirball",
+      "name": "NYU Skirball (performing arts)",
+      "kind": "other",
+      "url": "https://nyuskirball.org",
+      "status": "no-feed",
+      "note": "shows page is HTML; WordPress /feed/ is posts, no tribe route"
+    },
+    {
+      "id": "wasserman",
+      "name": "Wasserman Center for Career Development",
+      "kind": "other",
+      "url": "https://www.nyu.edu/students/student-success/career-development.html",
+      "feeds": [
+        "https://events.nyu.edu/live/json/events/group/Wasserman-Center/response_fields/description,location"
+      ],
+      "status": "feed"
+    }
   ]
 }

@@ -27,7 +27,8 @@
       "name": "College of Education",
       "kind": "school",
       "url": "https://ed.lehigh.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "news-and-events page is Drupal HTML, no feed or calendar link"
     },
     {
       "id": "engineering",
@@ -50,7 +51,8 @@
       "name": "Creative Inquiry",
       "kind": "center",
       "url": "https://creativeinquiry.lehigh.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page (/events 404)"
     },
     {
       "id": "cse",
@@ -103,7 +105,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://engineering.lehigh.edu/chbe",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "Rossin departments link to eventscalendar.lehigh.edu"
     },
     {
       "id": "cee",
@@ -111,7 +114,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://engineering.lehigh.edu/cee",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "Rossin departments link to eventscalendar.lehigh.edu"
     },
     {
       "id": "mse",
@@ -119,7 +123,8 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://engineering.lehigh.edu/mse",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "Rossin departments link to eventscalendar.lehigh.edu"
     },
     {
       "id": "math",
@@ -162,8 +167,9 @@
       "name": "Economics",
       "kind": "department",
       "parent": "business",
-      "url": "https://business.lehigh.edu/academics/departments/economics",
-      "status": "unchecked"
+      "url": "https://business.lehigh.edu/departments/economics",
+      "status": "in-wide",
+      "note": "business school events link to calendar.lehigh.edu (college_of_business)"
     },
     {
       "id": "psychology",
@@ -180,7 +186,8 @@
       "kind": "department",
       "parent": "cas",
       "url": "https://polisci.cas.lehigh.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
     },
     {
       "id": "history",
@@ -206,7 +213,8 @@
       "kind": "department",
       "parent": "cas",
       "url": "https://philosophy.cas.lehigh.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
     },
     {
       "id": "sociology",
@@ -214,7 +222,8 @@
       "kind": "department",
       "parent": "cas",
       "url": "https://socanth.cas.lehigh.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML only; /rss.xml is news"
     },
     {
       "id": "ees",
@@ -222,7 +231,8 @@
       "kind": "department",
       "parent": "cas",
       "url": "https://ees.cas.lehigh.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML; /rss.xml is news"
     },
     {
       "id": "data-x",
@@ -230,7 +240,8 @@
       "kind": "institute",
       "parent": "engineering",
       "url": "https://idisc.lehigh.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML; /rss.xml is news, JSON:API off"
     },
     {
       "id": "energy",
@@ -238,44 +249,50 @@
       "kind": "institute",
       "parent": "engineering",
       "url": "https://icpie.lehigh.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "calendar-events page is HTML only"
     },
     {
       "id": "humanities",
       "name": "Humanities Center",
       "kind": "center",
       "parent": "cas",
-      "url": "https://humanitiescenter.lehigh.edu",
-      "status": "unchecked"
+      "url": "https://humanitiescenter.cas.lehigh.edu",
+      "status": "no-feed",
+      "note": "humanitiescenter.lehigh.edu does not resolve; the cas.lehigh.edu name shows only the CAS home"
     },
     {
       "id": "global",
       "name": "Office of International Affairs / Global Lehigh",
       "kind": "center",
       "url": "https://global.lehigh.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Global Lehigh events page is HTML only"
     },
     {
       "id": "baker",
       "name": "Baker Institute for Entrepreneurship, Creativity and Innovation",
       "kind": "center",
       "url": "https://entrepreneurship.lehigh.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page embeds a calendar.lehigh.edu widget (entrepreneurship group, Baker Institute)"
     },
     {
       "id": "iacocca",
       "name": "Iacocca Institute",
       "kind": "institute",
-      "url": "https://iacocca.lehigh.edu",
-      "status": "unchecked"
+      "url": "https://global.lehigh.edu/iacocca-institute",
+      "status": "no-feed",
+      "note": "now a page in Global Lehigh's site; no events listing of its own"
     },
     {
       "id": "atlss",
       "name": "ATLSS Engineering Research Center",
       "kind": "center",
       "parent": "engineering",
-      "url": "https://www.atlss.lehigh.edu",
-      "status": "unchecked"
+      "url": "https://atlss.lehigh.edu",
+      "status": "no-feed",
+      "note": "no events listing on the site"
     },
     {
       "id": "nano",
@@ -283,7 +300,8 @@
       "kind": "institute",
       "parent": "engineering",
       "url": "https://ifmd.lehigh.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is Drupal HTML"
     },
     {
       "id": "sg",
@@ -330,21 +348,26 @@
       "name": "Zoellner Arts Center",
       "kind": "other",
       "url": "https://zoellner.cas.lehigh.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML (ticketing), no feed"
     },
     {
       "id": "career",
       "name": "Center for Career and Professional Development",
       "kind": "other",
       "url": "https://careercenter.lehigh.edu",
-      "status": "unchecked"
+      "status": "blocked",
+      "note": "career events are in Handshake (login)"
     },
     {
       "id": "athletics",
       "name": "Lehigh Mountain Hawks Athletics",
       "kind": "other",
       "url": "https://lehighsports.com",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://lehighsports.com/calendar.ashx/calendar.ics"
+      ]
     }
   ]
 }

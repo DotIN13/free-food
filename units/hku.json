@@ -8,33 +8,38 @@
       "name": "Faculty of Architecture",
       "kind": "school",
       "url": "https://www.arch.hku.hk",
-      "status": "unchecked",
-      "note": "events page has Google Calendar links; no calendar id checked"
+      "status": "feed",
+      "feeds": [
+        "https://www.arch.hku.hk/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "arts",
       "name": "Faculty of Arts",
       "kind": "school",
       "url": "https://arts.hku.hk",
-      "status": "unchecked",
-      "found": "https://arts.hku.hk/wp-json/wp/v2/events?per_page=50",
-      "note": "WordPress 'events' post type in the REST API; event dates likely in custom fields"
+      "status": "feed",
+      "feeds": [
+        "https://arts.hku.hk/wp-json/wp/v2/events"
+      ]
     },
     {
       "id": "business",
       "name": "HKU Business School (Faculty of Business and Economics)",
       "kind": "school",
       "url": "https://www.hkubs.hku.hk",
-      "status": "unchecked",
-      "found": "https://www.hkubs.hku.hk/wp-json/wp/v2/event?per_page=50",
-      "note": "WordPress 'event' post type in the REST API, updated daily"
+      "status": "feed",
+      "feeds": [
+        "https://www.hkubs.hku.hk/wp-json/wp/v2/event"
+      ]
     },
     {
       "id": "dentistry",
       "name": "Faculty of Dentistry",
       "kind": "school",
       "url": "https://facdent.hku.hk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "events page is HTML only"
     },
     {
       "id": "education",
@@ -48,8 +53,9 @@
       "id": "engineering",
       "name": "Faculty of Engineering",
       "kind": "school",
-      "url": "https://www.engineering.hku.hk",
-      "status": "unchecked"
+      "url": "https://engg.hku.hk",
+      "status": "no-feed",
+      "note": "News-Events/Upcoming-Events is HTML only"
     },
     {
       "id": "law",
@@ -64,7 +70,8 @@
       "name": "LKS Faculty of Medicine",
       "kind": "school",
       "url": "https://www.med.hku.hk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Faculty Events page is HTML only"
     },
     {
       "id": "science",
@@ -78,23 +85,25 @@
       "id": "socsc",
       "name": "Faculty of Social Sciences",
       "kind": "school",
-      "url": "https://www.socsc.hku.hk",
-      "status": "unchecked",
-      "note": "events page answered 500"
+      "url": "https://web.socsc.hku.hk",
+      "status": "no-feed",
+      "note": "WordPress events pages as HTML; no Events Calendar API or ical"
     },
     {
       "id": "gradsch",
       "name": "Graduate School",
       "kind": "school",
       "url": "https://gradsch.hku.hk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "JavaScript-built site; no events listing or feed found"
     },
     {
       "id": "space",
       "name": "HKU SPACE (School of Professional and Continuing Education)",
       "kind": "school",
       "url": "https://hkuspace.hku.hk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "event listing is HTML only"
     },
     {
       "id": "cs",
@@ -120,33 +129,35 @@
       "kind": "department",
       "parent": "engineering",
       "url": "https://mech.hku.hk",
-      "status": "unchecked",
-      "found": "https://mech.hku.hk/wp-json/wp/v2/seminar?per_page=50",
-      "note": "WordPress 'seminar' post type in the REST API"
+      "status": "no-feed",
+      "note": "WordPress 'seminar' post type; read as wpposts it gives 0 upcoming (dates not found in posts or pages)"
     },
     {
       "id": "bme",
-      "name": "Department of Biomedical Engineering",
+      "name": "School of Biomedical Engineering",
       "kind": "department",
       "parent": "engineering",
-      "url": "https://www.bme.hku.hk",
-      "status": "unchecked"
+      "url": "https://sbme.hku.hk",
+      "status": "no-feed",
+      "note": "events page is HTML only (bme.hku.hk does not resolve)"
     },
     {
       "id": "math",
       "name": "Department of Mathematics",
       "kind": "department",
       "parent": "science",
-      "url": "https://hkumath.hku.hk",
-      "status": "unchecked"
+      "url": "https://hkumath.hku.hk/web/",
+      "status": "no-feed",
+      "note": "old frameset site, seminars as HTML"
     },
     {
       "id": "statistics",
       "name": "Department of Statistics and Actuarial Science",
       "kind": "department",
       "parent": "science",
-      "url": "https://www.saasweb.hku.hk",
-      "status": "unchecked"
+      "url": "https://saasweb.hku.hk",
+      "status": "no-feed",
+      "note": "event lists by category, HTML only"
     },
     {
       "id": "physics",
@@ -154,15 +165,17 @@
       "kind": "department",
       "parent": "science",
       "url": "https://www.physics.hku.hk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "news_and_events/upcoming is HTML only"
     },
     {
       "id": "chemistry",
       "name": "Department of Chemistry",
       "kind": "department",
       "parent": "science",
-      "url": "https://www.chemistry.hku.hk",
-      "status": "unchecked"
+      "url": "https://chemistry.hku.hk",
+      "status": "no-feed",
+      "note": "seminars and lectures pages, HTML only"
     },
     {
       "id": "biosch",
@@ -181,39 +194,44 @@
       "kind": "department",
       "parent": "business",
       "url": "https://www.hkubs.hku.hk",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "economics events are HKU Business School event posts, which we read"
     },
     {
       "id": "psychology",
       "name": "Department of Psychology",
       "kind": "department",
       "parent": "socsc",
-      "url": "https://www.psychology.hku.hk",
-      "status": "unchecked"
+      "url": "https://psychology.hku.hk",
+      "status": "no-feed",
+      "note": "The Events Calendar views, but its REST API is off and ?ical=1 is empty"
     },
     {
       "id": "politics",
       "name": "Department of Politics and Public Administration",
       "kind": "department",
       "parent": "socsc",
-      "url": "https://www.ppaweb.hku.hk",
-      "status": "unchecked"
+      "url": "https://ppa.hku.hk",
+      "status": "no-feed",
+      "note": "events page is HTML only; no Events Calendar API"
     },
     {
       "id": "sociology",
       "name": "Department of Sociology",
       "kind": "department",
       "parent": "socsc",
-      "url": "https://www.sociodep.hku.hk",
-      "status": "unchecked"
+      "url": "https://sociology.hku.hk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
     },
     {
       "id": "socialwork",
       "name": "Department of Social Work and Social Administration",
       "kind": "department",
       "parent": "socsc",
-      "url": "https://www.socialwork.hku.hk",
-      "status": "unchecked"
+      "url": "https://socialwork.hku.hk",
+      "status": "unchecked",
+      "note": "socialwork.hku.hk timed out on 2026-11-09"
     },
     {
       "id": "history",
@@ -221,15 +239,17 @@
       "kind": "department",
       "parent": "arts",
       "url": "https://www.history.hku.hk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "historyevents page is HTML only"
     },
     {
       "id": "english",
       "name": "School of English",
       "kind": "department",
       "parent": "arts",
-      "url": "https://www.english.hku.hk",
-      "status": "unchecked"
+      "url": "https://english.hku.hk",
+      "status": "no-feed",
+      "note": "event and seminar-series pages, HTML only"
     },
     {
       "id": "philosophy",
@@ -265,57 +285,53 @@
       "id": "hkihss",
       "name": "Hong Kong Institute for the Humanities and Social Sciences",
       "kind": "institute",
-      "url": "https://www.hkihss.hku.hk",
-      "status": "unchecked"
+      "url": "https://ihss.hku.hk",
+      "status": "feed",
+      "feeds": [
+        "https://ihss.hku.hk/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "hkuie",
-      "name": "HKU Institute of Entrepreneurship (iDendron)",
+      "name": "HKU Techno-Entrepreneurship Core (TEC, formerly iDendron)",
       "kind": "center",
-      "url": "https://www.hkuie.hku.hk",
-      "status": "unchecked"
+      "url": "https://tec.hku.hk",
+      "status": "feed",
+      "feeds": [
+        "https://tec.hku.hk/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "climate",
       "name": "Institute for Climate and Carbon Neutrality",
       "kind": "institute",
       "url": "https://iccn.hku.hk",
-      "status": "unchecked"
-    },
-    {
-      "id": "csa",
-      "name": "Centre of Asian Studies / Hong Kong Institute of Asia-Pacific Studies",
-      "kind": "center",
-      "url": "https://www.hkihss.hku.hk",
-      "status": "unchecked"
-    },
-    {
-      "id": "su",
-      "name": "HKU Students' Union",
-      "kind": "student",
-      "url": "https://www.hkusu.org",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "site is a JavaScript app shell; no events feed found"
     },
     {
       "id": "pgsa",
       "name": "Postgraduate Students Association",
       "kind": "student",
       "url": "https://www.hkupgsa.com",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Wix-style site with a previous-events page only"
     },
     {
       "id": "halls",
       "name": "Residential halls and colleges",
       "kind": "student",
       "url": "https://www.cedars.hku.hk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "each hall runs its own site; no shared calendar"
     },
     {
       "id": "cedars",
       "name": "CEDARS (Centre of Development and Resources for Students)",
       "kind": "other",
       "url": "https://www.cedars.hku.hk",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "CEDARS event calendar (route=event/calendar) is HTML only"
     },
     {
       "id": "library",
@@ -330,16 +346,18 @@
       "name": "University Museum and Art Gallery (UMAG)",
       "kind": "museum",
       "url": "https://umag.hku.hk",
-      "status": "unchecked",
-      "found": "https://umag.hku.hk/wp-json/wp/v2/event?per_page=50",
-      "note": "WordPress 'event' post type in the REST API"
+      "status": "feed",
+      "feeds": [
+        "https://umag.hku.hk/wp-json/wp/v2/event"
+      ]
     },
     {
       "id": "career",
       "name": "Careers and Placement (CEDARS)",
       "kind": "other",
       "url": "https://www.cedars.hku.hk/careers",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "careers events are on the CEDARS HTML calendar"
     }
   ]
 }

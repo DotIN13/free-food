@@ -446,7 +446,8 @@
       "name": "University Sports Centre (UNIL-EPFL)",
       "kind": "other",
       "url": "https://sport.unil.ch",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "timetable site with no events listing or feed"
     }
   ]
 }

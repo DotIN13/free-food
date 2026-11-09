@@ -5,57 +5,453 @@
     "https://pennclubs.com/api/events/?format=json"
   ],
   "units": [
-    { "id": "sas", "name": "School of Arts & Sciences", "kind": "school", "url": "https://www.sas.upenn.edu", "status": "blocked", "note": "403" },
-    { "id": "college", "name": "The College of Arts and Sciences", "kind": "school", "parent": "sas", "url": "https://www.college.upenn.edu", "status": "unchecked" },
-    { "id": "seas", "name": "School of Engineering and Applied Science", "kind": "school", "url": "https://www.seas.upenn.edu", "feeds": ["https://events.engineering.upenn.edu"], "status": "feed" },
-    { "id": "wharton", "name": "The Wharton School", "kind": "school", "url": "https://www.wharton.upenn.edu", "feeds": ["https://static-prod-us-east-1.campusgroups.com/ical/wharton/ical_wharton.ics"], "status": "feed" },
-    { "id": "medicine", "name": "Perelman School of Medicine", "kind": "school", "url": "https://www.med.upenn.edu", "feeds": ["https://events.med.upenn.edu/live/json/events/max/500"], "status": "feed" },
-    { "id": "nursing", "name": "School of Nursing", "kind": "school", "url": "https://www.nursing.upenn.edu", "status": "blocked", "note": "403" },
-    { "id": "law", "name": "Penn Carey Law", "kind": "school", "url": "https://www.law.upenn.edu", "status": "blocked", "note": "403" },
-    { "id": "annenberg", "name": "Annenberg School for Communication", "kind": "school", "url": "https://www.asc.upenn.edu", "status": "blocked", "note": "events page answers a Cloudflare challenge (earlier: Drupal without JSON:API)" },
-    { "id": "weitzman", "name": "Stuart Weitzman School of Design", "kind": "school", "url": "https://www.design.upenn.edu", "status": "blocked", "note": "events page answers a Cloudflare challenge (earlier: Drupal without JSON:API)" },
-    { "id": "gse", "name": "Graduate School of Education", "kind": "school", "url": "https://www.gse.upenn.edu", "status": "no-feed", "note": "Drupal events calendar without JSON:API; rss.xml is news" },
-    { "id": "dental", "name": "School of Dental Medicine", "kind": "school", "url": "https://www.dental.upenn.edu", "status": "no-feed", "note": "WordPress events page, ?ical=1 gives 0 events" },
-    { "id": "sp2", "name": "School of Social Policy & Practice", "kind": "school", "url": "https://sp2.upenn.edu", "status": "no-feed", "note": "WordPress events page, ?ical=1 gives 0 events" },
-    { "id": "vet", "name": "School of Veterinary Medicine", "kind": "school", "url": "https://www.vet.upenn.edu", "status": "no-feed", "note": "Tribe API at www.vet.upenn.edu had only 3 upcoming events; not added" },
-    { "id": "cis", "name": "Computer and Information Science", "kind": "department", "parent": "seas", "url": "https://www.cis.upenn.edu", "status": "in-wide", "note": "seminars are on events.engineering.upenn.edu, read under seas" },
-    { "id": "ese", "name": "Electrical and Systems Engineering", "kind": "department", "parent": "seas", "url": "https://www.ese.upenn.edu", "status": "in-wide", "note": "seminars are on events.engineering.upenn.edu, read under seas" },
-    { "id": "meam", "name": "Mechanical Engineering and Applied Mechanics", "kind": "department", "parent": "seas", "url": "https://www.me.upenn.edu", "status": "in-wide", "note": "seminars are on events.engineering.upenn.edu, read under seas" },
-    { "id": "be", "name": "Bioengineering", "kind": "department", "parent": "seas", "url": "https://be.seas.upenn.edu", "status": "in-wide", "note": "seminars are on events.engineering.upenn.edu, read under seas" },
-    { "id": "math", "name": "Department of Mathematics", "kind": "department", "parent": "sas", "url": "https://www.math.upenn.edu", "status": "no-feed", "note": "Drupal HTML events" },
-    { "id": "statistics", "name": "Department of Statistics and Data Science", "kind": "department", "parent": "wharton", "url": "https://statistics.wharton.upenn.edu", "status": "no-feed", "note": "seminars page is HTML only" },
-    { "id": "physics", "name": "Department of Physics and Astronomy", "kind": "department", "parent": "sas", "url": "https://www.physics.upenn.edu", "status": "blocked", "note": "403" },
-    { "id": "chemistry", "name": "Department of Chemistry", "kind": "department", "parent": "sas", "url": "https://www.chem.upenn.edu", "status": "blocked", "note": "403" },
-    { "id": "biology", "name": "Department of Biology", "kind": "department", "parent": "sas", "url": "https://www.bio.upenn.edu", "status": "blocked", "note": "403" },
-    { "id": "economics", "name": "Department of Economics", "kind": "department", "parent": "sas", "url": "https://economics.sas.upenn.edu", "status": "no-feed", "note": "Drupal without JSON:API; rss.xml is news" },
-    { "id": "psychology", "name": "Department of Psychology", "kind": "department", "parent": "sas", "url": "https://psychology.sas.upenn.edu", "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "polisci", "name": "Department of Political Science", "kind": "department", "parent": "sas", "url": "https://live-sas-www-polisci.pantheon.sas.upenn.edu", "status": "no-feed", "note": "Drupal HTML events" },
-    { "id": "history", "name": "Department of History", "kind": "department", "parent": "sas", "url": "https://www.history.upenn.edu", "status": "blocked", "note": "403" },
-    { "id": "english", "name": "Department of English", "kind": "department", "parent": "sas", "url": "https://www.english.upenn.edu", "status": "no-feed", "note": "Drupal HTML events" },
-    { "id": "philosophy", "name": "Department of Philosophy", "kind": "department", "parent": "sas", "url": "https://philosophy.sas.upenn.edu", "status": "no-feed", "note": "Drupal HTML events" },
-    { "id": "sociology", "name": "Department of Sociology", "kind": "department", "parent": "sas", "url": "https://sociology.sas.upenn.edu", "status": "no-feed", "note": "Drupal HTML events" },
-    { "id": "ai", "name": "Penn AI", "kind": "institute", "url": "https://ai.upenn.edu", "status": "no-feed", "note": "Drupal without JSON:API" },
-    { "id": "ppe", "name": "Philosophy, Politics and Economics Program", "kind": "center", "parent": "sas", "url": "https://ppe.sas.upenn.edu", "status": "no-feed", "note": "Drupal without JSON:API" },
-    { "id": "perry", "name": "Perry World House", "kind": "center", "url": "https://perryworldhouse.upenn.edu", "status": "no-feed", "note": "WordPress events page, ?ical=1 gives 0 events" },
-    { "id": "kleinman", "name": "Kleinman Center for Energy Policy", "kind": "center", "parent": "weitzman", "url": "https://kleinmanenergy.upenn.edu", "status": "no-feed", "note": "events page is HTML only" },
-    { "id": "ldi", "name": "Leonard Davis Institute of Health Economics", "kind": "institute", "url": "https://ldi.upenn.edu", "status": "blocked", "note": "Tribe events API answers 401; ?ical=1 gives 0 events" },
-    { "id": "appc", "name": "Annenberg Public Policy Center", "kind": "center", "parent": "annenberg", "url": "https://www.annenbergpublicpolicycenter.org", "status": "unchecked" },
-    { "id": "wolf", "name": "Wolf Humanities Center", "kind": "center", "parent": "sas", "url": "https://wolfhumanities.upenn.edu", "status": "no-feed", "note": "Drupal HTML events" },
-    { "id": "ceas", "name": "Center for East Asian Studies", "kind": "center", "parent": "sas", "url": "https://ceas.sas.upenn.edu", "status": "unchecked" },
-    { "id": "cscc", "name": "Penn Center for the Study of Contemporary China", "kind": "center", "url": "https://cscc.sas.upenn.edu", "status": "unchecked" },
-    { "id": "venturelab", "name": "Venture Lab", "kind": "center", "url": "https://venturelab.upenn.edu", "status": "no-feed", "note": "events page is HTML only" },
-    { "id": "pci", "name": "Penn Center for Innovation", "kind": "center", "url": "https://pci.upenn.edu", "status": "unchecked" },
-    { "id": "grasp", "name": "GRASP Laboratory", "kind": "center", "parent": "seas", "url": "https://www.grasp.upenn.edu", "status": "in-wide", "note": "GRASP seminars are on events.engineering.upenn.edu, read under seas" },
-    { "id": "abramson", "name": "Abramson Cancer Center", "kind": "center", "parent": "medicine", "url": "https://www.pennmedicine.org/cancer", "status": "in-wide", "note": "Penn Medicine events read through events.med.upenn.edu" },
-    { "id": "kwh", "name": "Kelly Writers House", "kind": "center", "url": "https://writing.upenn.edu/wh", "status": "no-feed", "note": "calendar is a static HTML page per month" },
-    { "id": "ua", "name": "Undergraduate Assembly", "kind": "student", "url": "https://www.pennua.org", "status": "in-wide", "note": "student groups post to Penn Clubs" },
-    { "id": "gapsa", "name": "Graduate and Professional Student Assembly (GAPSA)", "kind": "student", "url": "https://www.gapsa.upenn.edu", "status": "no-feed", "note": "events page is HTML only" },
-    { "id": "collegehouses", "name": "College Houses & Academic Services", "kind": "student", "url": "https://collegehouses.upenn.edu", "status": "unchecked" },
-    { "id": "library", "name": "Penn Libraries", "kind": "library", "url": "https://www.library.upenn.edu", "status": "blocked", "note": "Cloudflare challenge" },
-    { "id": "museum", "name": "Penn Museum", "kind": "museum", "url": "https://www.penn.museum", "status": "no-feed", "note": "calendar page is HTML only" },
-    { "id": "ica", "name": "Institute of Contemporary Art", "kind": "museum", "url": "https://icaphila.org", "status": "no-feed", "note": "WordPress calendar, ?ical=1 gives 0 events" },
-    { "id": "careers", "name": "Career Services", "kind": "other", "url": "https://careerservices.upenn.edu", "status": "no-feed", "note": "WordPress events page, ?ical=1 gives 0 events" },
-    { "id": "livearts", "name": "Penn Live Arts", "kind": "other", "url": "https://pennlivearts.org", "status": "no-feed", "note": "events page is HTML only" },
-    { "id": "athletics", "name": "Penn Athletics", "kind": "other", "url": "https://pennathletics.com", "status": "unchecked" }
+    {
+      "id": "sas",
+      "name": "School of Arts & Sciences",
+      "kind": "school",
+      "url": "https://www.sas.upenn.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "college",
+      "name": "The College of Arts and Sciences",
+      "kind": "school",
+      "parent": "sas",
+      "url": "https://www.college.upenn.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "seas",
+      "name": "School of Engineering and Applied Science",
+      "kind": "school",
+      "url": "https://www.seas.upenn.edu",
+      "feeds": [
+        "https://events.engineering.upenn.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "wharton",
+      "name": "The Wharton School",
+      "kind": "school",
+      "url": "https://www.wharton.upenn.edu",
+      "feeds": [
+        "https://static-prod-us-east-1.campusgroups.com/ical/wharton/ical_wharton.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "medicine",
+      "name": "Perelman School of Medicine",
+      "kind": "school",
+      "url": "https://www.med.upenn.edu",
+      "feeds": [
+        "https://events.med.upenn.edu/live/json/events/max/500"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "nursing",
+      "name": "School of Nursing",
+      "kind": "school",
+      "url": "https://www.nursing.upenn.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "law",
+      "name": "Penn Carey Law",
+      "kind": "school",
+      "url": "https://www.law.upenn.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "annenberg",
+      "name": "Annenberg School for Communication",
+      "kind": "school",
+      "url": "https://www.asc.upenn.edu",
+      "status": "blocked",
+      "note": "events page answers a Cloudflare challenge (earlier: Drupal without JSON:API)"
+    },
+    {
+      "id": "weitzman",
+      "name": "Stuart Weitzman School of Design",
+      "kind": "school",
+      "url": "https://www.design.upenn.edu",
+      "status": "blocked",
+      "note": "events page answers a Cloudflare challenge (earlier: Drupal without JSON:API)"
+    },
+    {
+      "id": "gse",
+      "name": "Graduate School of Education",
+      "kind": "school",
+      "url": "https://www.gse.upenn.edu",
+      "status": "no-feed",
+      "note": "Drupal events calendar without JSON:API; rss.xml is news"
+    },
+    {
+      "id": "dental",
+      "name": "School of Dental Medicine",
+      "kind": "school",
+      "url": "https://www.dental.upenn.edu",
+      "status": "no-feed",
+      "note": "WordPress events page, ?ical=1 gives 0 events"
+    },
+    {
+      "id": "sp2",
+      "name": "School of Social Policy & Practice",
+      "kind": "school",
+      "url": "https://sp2.upenn.edu",
+      "status": "no-feed",
+      "note": "WordPress events page, ?ical=1 gives 0 events"
+    },
+    {
+      "id": "vet",
+      "name": "School of Veterinary Medicine",
+      "kind": "school",
+      "url": "https://www.vet.upenn.edu",
+      "status": "no-feed",
+      "note": "Tribe API at www.vet.upenn.edu had only 3 upcoming events; not added"
+    },
+    {
+      "id": "cis",
+      "name": "Computer and Information Science",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://www.cis.upenn.edu",
+      "status": "in-wide",
+      "note": "seminars are on events.engineering.upenn.edu, read under seas"
+    },
+    {
+      "id": "ese",
+      "name": "Electrical and Systems Engineering",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://www.ese.upenn.edu",
+      "status": "in-wide",
+      "note": "seminars are on events.engineering.upenn.edu, read under seas"
+    },
+    {
+      "id": "meam",
+      "name": "Mechanical Engineering and Applied Mechanics",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://www.me.upenn.edu",
+      "status": "in-wide",
+      "note": "seminars are on events.engineering.upenn.edu, read under seas"
+    },
+    {
+      "id": "be",
+      "name": "Bioengineering",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://be.seas.upenn.edu",
+      "status": "in-wide",
+      "note": "seminars are on events.engineering.upenn.edu, read under seas"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "sas",
+      "url": "https://www.math.upenn.edu",
+      "status": "no-feed",
+      "note": "Drupal HTML events"
+    },
+    {
+      "id": "statistics",
+      "name": "Department of Statistics and Data Science",
+      "kind": "department",
+      "parent": "wharton",
+      "url": "https://statistics.wharton.upenn.edu",
+      "status": "no-feed",
+      "note": "seminars page is HTML only"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics and Astronomy",
+      "kind": "department",
+      "parent": "sas",
+      "url": "https://www.physics.upenn.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "sas",
+      "url": "https://www.chem.upenn.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "biology",
+      "name": "Department of Biology",
+      "kind": "department",
+      "parent": "sas",
+      "url": "https://www.bio.upenn.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "sas",
+      "url": "https://economics.sas.upenn.edu",
+      "status": "no-feed",
+      "note": "Drupal without JSON:API; rss.xml is news"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "sas",
+      "url": "https://psychology.sas.upenn.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "polisci",
+      "name": "Department of Political Science",
+      "kind": "department",
+      "parent": "sas",
+      "url": "https://live-sas-www-polisci.pantheon.sas.upenn.edu",
+      "status": "no-feed",
+      "note": "Drupal HTML events"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "sas",
+      "url": "https://www.history.upenn.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "parent": "sas",
+      "url": "https://www.english.upenn.edu",
+      "status": "no-feed",
+      "note": "Drupal HTML events"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "sas",
+      "url": "https://philosophy.sas.upenn.edu",
+      "status": "no-feed",
+      "note": "Drupal HTML events"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "sas",
+      "url": "https://sociology.sas.upenn.edu",
+      "status": "no-feed",
+      "note": "Drupal HTML events"
+    },
+    {
+      "id": "ai",
+      "name": "Penn AI",
+      "kind": "institute",
+      "url": "https://ai.upenn.edu",
+      "status": "no-feed",
+      "note": "Drupal without JSON:API"
+    },
+    {
+      "id": "ppe",
+      "name": "Philosophy, Politics and Economics Program",
+      "kind": "center",
+      "parent": "sas",
+      "url": "https://ppe.sas.upenn.edu",
+      "status": "no-feed",
+      "note": "Drupal without JSON:API"
+    },
+    {
+      "id": "perry",
+      "name": "Perry World House",
+      "kind": "center",
+      "url": "https://perryworldhouse.upenn.edu",
+      "status": "no-feed",
+      "note": "WordPress events page, ?ical=1 gives 0 events"
+    },
+    {
+      "id": "kleinman",
+      "name": "Kleinman Center for Energy Policy",
+      "kind": "center",
+      "parent": "weitzman",
+      "url": "https://kleinmanenergy.upenn.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "ldi",
+      "name": "Leonard Davis Institute of Health Economics",
+      "kind": "institute",
+      "url": "https://ldi.upenn.edu",
+      "status": "blocked",
+      "note": "Tribe events API answers 401; ?ical=1 gives 0 events"
+    },
+    {
+      "id": "appc",
+      "name": "Annenberg Public Policy Center",
+      "kind": "center",
+      "parent": "annenberg",
+      "url": "https://www.annenbergpublicpolicycenter.org",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "wolf",
+      "name": "Wolf Humanities Center",
+      "kind": "center",
+      "parent": "sas",
+      "url": "https://wolfhumanities.upenn.edu",
+      "status": "no-feed",
+      "note": "Drupal HTML events"
+    },
+    {
+      "id": "ceas",
+      "name": "Center for East Asian Studies",
+      "kind": "center",
+      "parent": "sas",
+      "url": "https://ceas.sas.upenn.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "cscc",
+      "name": "Penn Center for the Study of Contemporary China",
+      "kind": "center",
+      "url": "https://cscc.sas.upenn.edu",
+      "status": "no-feed",
+      "note": "events page is Drupal HTML, no ical or JSON:API"
+    },
+    {
+      "id": "venturelab",
+      "name": "Venture Lab",
+      "kind": "center",
+      "url": "https://venturelab.upenn.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "pci",
+      "name": "Penn Center for Innovation",
+      "kind": "center",
+      "url": "https://pci.upenn.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "grasp",
+      "name": "GRASP Laboratory",
+      "kind": "center",
+      "parent": "seas",
+      "url": "https://www.grasp.upenn.edu",
+      "status": "in-wide",
+      "note": "GRASP seminars are on events.engineering.upenn.edu, read under seas"
+    },
+    {
+      "id": "abramson",
+      "name": "Abramson Cancer Center",
+      "kind": "center",
+      "parent": "medicine",
+      "url": "https://www.pennmedicine.org/cancer",
+      "status": "in-wide",
+      "note": "Penn Medicine events read through events.med.upenn.edu"
+    },
+    {
+      "id": "kwh",
+      "name": "Kelly Writers House",
+      "kind": "center",
+      "url": "https://writing.upenn.edu/wh",
+      "status": "no-feed",
+      "note": "calendar is a static HTML page per month"
+    },
+    {
+      "id": "ua",
+      "name": "Undergraduate Assembly",
+      "kind": "student",
+      "url": "https://www.pennua.org",
+      "status": "in-wide",
+      "note": "student groups post to Penn Clubs"
+    },
+    {
+      "id": "gapsa",
+      "name": "Graduate and Professional Student Assembly (GAPSA)",
+      "kind": "student",
+      "url": "https://www.gapsa.upenn.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "collegehouses",
+      "name": "College Houses & Academic Services",
+      "kind": "student",
+      "url": "https://collegehouses.upenn.edu",
+      "status": "no-feed",
+      "note": "house events are Drupal pages with per-event calendar links only; no feed or JSON:API"
+    },
+    {
+      "id": "library",
+      "name": "Penn Libraries",
+      "kind": "library",
+      "url": "https://www.library.upenn.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "museum",
+      "name": "Penn Museum",
+      "kind": "museum",
+      "url": "https://www.penn.museum",
+      "status": "no-feed",
+      "note": "calendar page is HTML only"
+    },
+    {
+      "id": "ica",
+      "name": "Institute of Contemporary Art",
+      "kind": "museum",
+      "url": "https://icaphila.org",
+      "status": "no-feed",
+      "note": "WordPress calendar, ?ical=1 gives 0 events"
+    },
+    {
+      "id": "careers",
+      "name": "Career Services",
+      "kind": "other",
+      "url": "https://careerservices.upenn.edu",
+      "status": "no-feed",
+      "note": "WordPress events page, ?ical=1 gives 0 events"
+    },
+    {
+      "id": "livearts",
+      "name": "Penn Live Arts",
+      "kind": "other",
+      "url": "https://pennlivearts.org",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "athletics",
+      "name": "Penn Athletics",
+      "kind": "other",
+      "url": "https://pennathletics.com",
+      "status": "feed",
+      "feeds": [
+        "https://pennathletics.com/calendar.ashx/calendar.ics"
+      ]
+    }
   ]
 }

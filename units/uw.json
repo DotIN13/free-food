@@ -145,7 +145,10 @@
       "name": "College of Education",
       "kind": "school",
       "url": "https://education.uw.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_education.ics"
+      ]
     },
     {
       "id": "jsis",
@@ -163,7 +166,10 @@
       "name": "Graduate School",
       "kind": "school",
       "url": "https://grad.uw.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_grad.ics"
+      ]
     },
     {
       "id": "cse",
@@ -193,8 +199,10 @@
       "kind": "department",
       "parent": "engr",
       "url": "https://www.me.washington.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_engr-me.ics"
+      ]
     },
     {
       "id": "bioe",
@@ -251,17 +259,21 @@
       "kind": "department",
       "parent": "artsci",
       "url": "https://chem.washington.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/uwchem.ics"
+      ]
     },
     {
       "id": "biology",
       "name": "Department of Biology",
       "kind": "department",
       "parent": "artsci",
-      "url": "https://www.biology.washington.edu",
-      "status": "unchecked",
-      "note": "site did not answer"
+      "url": "https://biology.washington.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_bio.ics"
+      ]
     },
     {
       "id": "econ",
@@ -302,8 +314,10 @@
       "kind": "department",
       "parent": "artsci",
       "url": "https://history.washington.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_hist.ics"
+      ]
     },
     {
       "id": "english",
@@ -311,8 +325,10 @@
       "kind": "department",
       "parent": "artsci",
       "url": "https://english.washington.edu",
-      "status": "unchecked",
-      "note": "/events is 404"
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_engl.ics"
+      ]
     },
     {
       "id": "philosophy",
@@ -350,21 +366,24 @@
       "kind": "center",
       "parent": "artsci",
       "url": "https://simpsoncenter.org",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Trumba calendar rendered server-side, its calendar name not exposed (guesses 410); 2 of 9 listed events on sea_campus"
     },
     {
       "id": "ihme",
       "name": "Institute for Health Metrics and Evaluation",
       "kind": "institute",
       "url": "https://www.healthdata.org",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Drupal news-events/events page is HTML, no feed"
     },
     {
       "id": "cleanenergy",
       "name": "Clean Energy Institute",
       "kind": "institute",
       "url": "https://www.cei.washington.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "WordPress events pages are HTML; no tribe API (404)"
     },
     {
       "id": "buerk",
@@ -381,14 +400,18 @@
       "kind": "institute",
       "parent": "medicine",
       "url": "https://www.ipd.uw.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "site has no events page (/events 404, no tribe API)"
     },
     {
       "id": "csde",
       "name": "Center for Studies in Demography and Ecology",
       "kind": "center",
       "url": "https://csde.washington.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_csde.ics"
+      ]
     },
     {
       "id": "asuw",
@@ -402,9 +425,11 @@
       "id": "gpss",
       "name": "Graduate and Professional Student Senate",
       "kind": "student",
-      "url": "https://gpss.uw.edu",
-      "status": "unchecked",
-      "note": "site did not answer"
+      "url": "https://www.gpss.uw.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.gpss.uw.edu/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "libraries",
@@ -429,14 +454,16 @@
       "name": "Henry Art Gallery",
       "kind": "museum",
       "url": "https://henryart.org",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "site lists exhibitions and programs as HTML, /events 404, no feed"
     },
     {
       "id": "career",
       "name": "Career & Internship Center",
       "kind": "other",
       "url": "https://careers.uw.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "uConnect events pages; their RSS carries post dates, not event dates"
     }
   ]
 }

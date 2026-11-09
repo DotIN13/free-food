@@ -167,7 +167,8 @@
       "kind": "department",
       "parent": "bowers",
       "url": "https://stat.cornell.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "statistics-data-science-events page is HTML with no feed"
     },
     {
       "id": "ece",
@@ -192,32 +193,36 @@
       "name": "Biomedical Engineering",
       "kind": "department",
       "parent": "engineering",
-      "url": "https://www.bme.cornell.edu",
-      "status": "unchecked"
+      "url": "https://www.duffield.cornell.edu/bme/",
+      "status": "in-wide",
+      "note": "Duffield events come from events.cornell.edu"
     },
     {
       "id": "orie",
       "name": "Operations Research and Information Engineering",
       "kind": "department",
       "parent": "engineering",
-      "url": "https://www.orie.cornell.edu",
-      "status": "unchecked"
+      "url": "https://www.duffield.cornell.edu/orie/",
+      "status": "in-wide",
+      "note": "Duffield events come from events.cornell.edu"
     },
     {
       "id": "cbe",
       "name": "Chemical and Biomolecular Engineering",
       "kind": "department",
       "parent": "engineering",
-      "url": "https://www.cheme.cornell.edu",
-      "status": "unchecked"
+      "url": "https://www.duffield.cornell.edu/cbe/",
+      "status": "in-wide",
+      "note": "Duffield events come from events.cornell.edu"
     },
     {
       "id": "mse",
       "name": "Materials Science and Engineering",
       "kind": "department",
       "parent": "engineering",
-      "url": "https://www.mse.cornell.edu",
-      "status": "unchecked"
+      "url": "https://www.duffield.cornell.edu/mse/",
+      "status": "in-wide",
+      "note": "Duffield events come from events.cornell.edu"
     },
     {
       "id": "math",
@@ -243,7 +248,8 @@
       "kind": "department",
       "parent": "as",
       "url": "https://chemistry.cornell.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "seminars on the home page are events.cornell.edu events; /events answers Restricted access"
     },
     {
       "id": "economics",
@@ -269,7 +275,8 @@
       "kind": "department",
       "parent": "as",
       "url": "https://government.cornell.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "government-events-list is HTML; /events answers Restricted access"
     },
     {
       "id": "history",
@@ -295,7 +302,8 @@
       "kind": "department",
       "parent": "as",
       "url": "https://philosophy.cornell.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page lists events.cornell.edu events (search philcal)"
     },
     {
       "id": "sociology",
@@ -303,15 +311,17 @@
       "kind": "department",
       "parent": "as",
       "url": "https://sociology.cornell.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home page lists events.cornell.edu events (search soccal)"
     },
     {
       "id": "mbg",
       "name": "Molecular Biology and Genetics",
       "kind": "department",
       "parent": "cals",
-      "url": "https://mbg.cornell.edu",
-      "status": "unchecked"
+      "url": "https://cals.cornell.edu/molecular-biology-genetics",
+      "status": "no-feed",
+      "note": "CALS Drupal subsite; Friday seminars page is HTML with no feed"
     },
     {
       "id": "nbb",
@@ -319,7 +329,8 @@
       "kind": "department",
       "parent": "cals",
       "url": "https://nbb.cornell.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "seminars on the home page are events.cornell.edu events"
     },
     {
       "id": "einaudi",
@@ -351,21 +362,28 @@
       "name": "Cornell AI initiative",
       "kind": "institute",
       "url": "https://ai.cornell.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://ai.cornell.edu/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "entrepreneurship",
       "name": "Entrepreneurship at Cornell",
       "kind": "center",
       "url": "https://eship.cornell.edu",
-      "status": "unchecked"
+      "status": "feed",
+      "feeds": [
+        "https://eship.cornell.edu/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "cpc",
       "name": "Cornell Population Center",
       "kind": "center",
-      "url": "https://pop.cornell.edu",
-      "status": "unchecked"
+      "url": "https://publicpolicy.cornell.edu/cpc/",
+      "status": "in-wide",
+      "note": "pop.cornell.edu does not resolve; now a Brooks School page, whose events are on events.cornell.edu"
     },
     {
       "id": "sas",
@@ -413,15 +431,16 @@
       "name": "Cornell Career Services",
       "kind": "other",
       "url": "https://career.cornell.edu",
-      "status": "unchecked",
-      "note": "WordPress /feed/ is likely news, not events"
+      "status": "no-feed",
+      "note": "events/feed RSS carries post dates, not event dates; events come from Handshake"
     },
     {
       "id": "athletics",
       "name": "Cornell Big Red Athletics",
       "kind": "other",
       "url": "https://cornellbigred.com",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Sidearm composite schedule (games), no event feed worth reading"
     }
   ]
 }

@@ -6,56 +6,416 @@
     "https://planitpurple.northwestern.edu/xmlfeed"
   ],
   "units": [
-    { "id": "weinberg", "name": "Weinberg College of Arts and Sciences", "kind": "school", "url": "https://weinberg.northwestern.edu", "status": "in-wide", "note": "links its PlanIt Purple calendars (read via the xmlfeed id sweep)" },
-    { "id": "mccormick", "name": "McCormick School of Engineering", "kind": "school", "url": "https://www.mccormick.northwestern.edu", "status": "in-wide", "note": "events page is built from PlanIt Purple" },
-    { "id": "kellogg", "name": "Kellogg School of Management", "kind": "school", "url": "https://www.kellogg.northwestern.edu", "feeds": ["https://static-prod-us-east-1.campusgroups.com/ical/kellogg/ical_kellogg.ics"], "status": "feed" },
-    { "id": "medill", "name": "Medill School of Journalism, Media, Integrated Marketing Communications", "kind": "school", "url": "https://www.medill.northwestern.edu", "status": "no-feed", "note": "Cascade HTML, no feed (sources note)" },
-    { "id": "law", "name": "Pritzker School of Law", "kind": "school", "url": "https://www.law.northwestern.edu", "status": "unchecked", "note": "home page shows no calendar link" },
-    { "id": "feinberg", "name": "Feinberg School of Medicine", "kind": "school", "url": "https://www.feinberg.northwestern.edu", "status": "blocked", "note": "403 (sources note)" },
-    { "id": "sesp", "name": "School of Education and Social Policy", "kind": "school", "url": "https://sesp.northwestern.edu", "status": "in-wide", "note": "links PlanIt Purple" },
-    { "id": "communication", "name": "School of Communication", "kind": "school", "url": "https://communication.northwestern.edu", "status": "unchecked" },
-    { "id": "bienen", "name": "Bienen School of Music", "kind": "school", "url": "https://www.music.northwestern.edu", "status": "unchecked" },
-    { "id": "sps", "name": "School of Professional Studies", "kind": "school", "url": "https://sps.northwestern.edu", "status": "no-feed", "note": "events page HTML only" },
-    { "id": "tgs", "name": "The Graduate School", "kind": "school", "url": "https://www.tgs.northwestern.edu", "status": "in-wide", "note": "links PlanIt Purple" },
-    { "id": "qatar", "name": "Northwestern University in Qatar", "kind": "school", "url": "https://www.qatar.northwestern.edu", "status": "in-wide", "note": "links PlanIt Purple" },
-
-    { "id": "cs", "name": "Computer Science", "kind": "department", "parent": "mccormick", "url": "https://www.mccormick.northwestern.edu/computer-science/", "status": "in-wide", "note": "events page is built from PlanIt Purple" },
-    { "id": "ece", "name": "Electrical and Computer Engineering", "kind": "department", "parent": "mccormick", "url": "https://www.mccormick.northwestern.edu/electrical-computer/", "status": "in-wide", "note": "events page is built from PlanIt Purple" },
-    { "id": "me", "name": "Mechanical Engineering", "kind": "department", "parent": "mccormick", "url": "https://www.mccormick.northwestern.edu/mechanical/", "status": "in-wide", "note": "events page is built from PlanIt Purple" },
-    { "id": "bme", "name": "Biomedical Engineering", "kind": "department", "parent": "mccormick", "url": "https://www.mccormick.northwestern.edu/biomedical/", "status": "in-wide", "note": "events page is built from PlanIt Purple" },
-    { "id": "iems", "name": "Industrial Engineering and Management Sciences", "kind": "department", "parent": "mccormick", "url": "https://www.mccormick.northwestern.edu/industrial/", "status": "in-wide", "note": "McCormick department pages share the PlanIt Purple events template" },
-    { "id": "matsci", "name": "Materials Science and Engineering", "kind": "department", "parent": "mccormick", "url": "https://www.mccormick.northwestern.edu/materials-science/", "status": "in-wide", "note": "McCormick department pages share the PlanIt Purple events template" },
-    { "id": "math", "name": "Mathematics", "kind": "department", "parent": "weinberg", "url": "https://math.northwestern.edu", "feeds": ["https://planitpurple.northwestern.edu/feed/ical/2229"], "status": "feed" },
-    { "id": "statistics", "name": "Statistics and Data Science", "kind": "department", "parent": "weinberg", "url": "https://statistics.northwestern.edu", "status": "in-wide", "note": "links PlanIt Purple" },
-    { "id": "physics", "name": "Physics and Astronomy", "kind": "department", "parent": "weinberg", "url": "https://physics.northwestern.edu", "status": "in-wide", "note": "events page links PlanIt Purple" },
-    { "id": "chemistry", "name": "Chemistry", "kind": "department", "parent": "weinberg", "url": "https://chemistry.northwestern.edu", "status": "in-wide", "note": "links PlanIt Purple" },
-    { "id": "biology", "name": "Molecular Biosciences", "kind": "department", "parent": "weinberg", "url": "https://molbiosci.northwestern.edu", "status": "unchecked" },
-    { "id": "economics", "name": "Economics", "kind": "department", "parent": "weinberg", "url": "https://economics.northwestern.edu", "status": "no-feed", "note": "events page HTML with no PlanIt Purple link" },
-    { "id": "psychology", "name": "Psychology", "kind": "department", "parent": "weinberg", "url": "https://psychology.northwestern.edu", "status": "in-wide", "note": "links PlanIt Purple" },
-    { "id": "polisci", "name": "Political Science", "kind": "department", "parent": "weinberg", "url": "https://polisci.northwestern.edu", "status": "in-wide", "note": "links PlanIt Purple" },
-    { "id": "history", "name": "History", "kind": "department", "parent": "weinberg", "url": "https://history.northwestern.edu", "status": "in-wide", "note": "links PlanIt Purple" },
-    { "id": "english", "name": "English", "kind": "department", "parent": "weinberg", "url": "https://english.northwestern.edu", "status": "in-wide", "note": "links PlanIt Purple" },
-    { "id": "philosophy", "name": "Philosophy", "kind": "department", "parent": "weinberg", "url": "https://philosophy.northwestern.edu", "status": "in-wide", "note": "links PlanIt Purple" },
-    { "id": "sociology", "name": "Sociology", "kind": "department", "parent": "weinberg", "url": "https://sociology.northwestern.edu", "status": "in-wide", "note": "links PlanIt Purple" },
-    { "id": "anthropology", "name": "Anthropology", "kind": "department", "parent": "weinberg", "url": "https://anthropology.northwestern.edu", "status": "unchecked" },
-    { "id": "eps", "name": "Earth and Planetary Sciences", "kind": "department", "parent": "weinberg", "url": "https://eps.northwestern.edu", "status": "unchecked" },
-
-    { "id": "ipr", "name": "Institute for Policy Research", "kind": "institute", "url": "https://www.ipr.northwestern.edu", "status": "no-feed", "note": "Cascade HTML (sources note)" },
-    { "id": "buffett", "name": "Roberta Buffett Institute for Global Affairs", "kind": "institute", "url": "https://buffett.northwestern.edu", "status": "in-wide", "note": "events page built from PlanIt Purple" },
-    { "id": "trienens", "name": "Paula M. Trienens Institute for Sustainability and Energy", "kind": "institute", "url": "https://trienens-institute.northwestern.edu", "status": "in-wide", "note": "events page links PlanIt Purple" },
-    { "id": "kaplan", "name": "Alice Kaplan Institute for the Humanities", "kind": "institute", "url": "https://kaplan.northwestern.edu", "status": "unchecked", "note": "site did not answer" },
-    { "id": "nico", "name": "Northwestern Institute on Complex Systems (NICO)", "kind": "institute", "url": "https://www.nico.northwestern.edu", "status": "unchecked" },
-    { "id": "casmi", "name": "Center for Advancing Safety of Machine Intelligence (CASMI)", "kind": "center", "parent": "mccormick", "url": "https://casmi.northwestern.edu", "status": "unchecked" },
-    { "id": "garage", "name": "The Garage (entrepreneurship)", "kind": "center", "url": "https://thegarage.northwestern.edu", "status": "unchecked" },
-    { "id": "ipham", "name": "Institute for Public Health and Medicine", "kind": "institute", "parent": "feinberg", "url": "https://www.ipham.northwestern.edu", "status": "unchecked" },
-    { "id": "lurie", "name": "Robert H. Lurie Comprehensive Cancer Center", "kind": "center", "parent": "feinberg", "url": "https://www.cancer.northwestern.edu", "status": "unchecked" },
-    { "id": "iinano", "name": "International Institute for Nanotechnology", "kind": "institute", "url": "https://www.iinano.org", "status": "unchecked" },
-
-    { "id": "asg", "name": "Associated Student Government", "kind": "student", "url": "https://www.asg.northwestern.edu", "status": "no-feed", "note": "site has no calendar; student orgs come through CampusGroups" },
-    { "id": "gsa", "name": "Graduate Student Association / Graduate Leadership", "kind": "student", "url": "https://www.tgs.northwestern.edu", "status": "unchecked" },
-    { "id": "rescolleges", "name": "Residential Colleges", "kind": "student", "url": "https://www.northwestern.edu/living/", "status": "unchecked" },
-    { "id": "library", "name": "Northwestern University Libraries", "kind": "library", "url": "https://www.library.northwestern.edu", "status": "in-wide", "note": "links PlanIt Purple" },
-    { "id": "block", "name": "Block Museum of Art", "kind": "museum", "url": "https://www.blockmuseum.northwestern.edu", "status": "unchecked" },
-    { "id": "careers", "name": "Northwestern Career Advancement", "kind": "other", "url": "https://www.northwestern.edu/careers/", "status": "in-wide", "note": "links PlanIt Purple" }
+    {
+      "id": "weinberg",
+      "name": "Weinberg College of Arts and Sciences",
+      "kind": "school",
+      "url": "https://weinberg.northwestern.edu",
+      "status": "in-wide",
+      "note": "links its PlanIt Purple calendars (read via the xmlfeed id sweep)"
+    },
+    {
+      "id": "mccormick",
+      "name": "McCormick School of Engineering",
+      "kind": "school",
+      "url": "https://www.mccormick.northwestern.edu",
+      "status": "in-wide",
+      "note": "events page is built from PlanIt Purple"
+    },
+    {
+      "id": "kellogg",
+      "name": "Kellogg School of Management",
+      "kind": "school",
+      "url": "https://www.kellogg.northwestern.edu",
+      "feeds": [
+        "https://static-prod-us-east-1.campusgroups.com/ical/kellogg/ical_kellogg.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "medill",
+      "name": "Medill School of Journalism, Media, Integrated Marketing Communications",
+      "kind": "school",
+      "url": "https://www.medill.northwestern.edu",
+      "status": "no-feed",
+      "note": "Cascade HTML, no feed (sources note)"
+    },
+    {
+      "id": "law",
+      "name": "Pritzker School of Law",
+      "kind": "school",
+      "url": "https://www.law.northwestern.edu",
+      "status": "in-wide",
+      "note": "some Law student events are on PlanIt Purple; the school's own /events is WordPress HTML"
+    },
+    {
+      "id": "feinberg",
+      "name": "Feinberg School of Medicine",
+      "kind": "school",
+      "url": "https://www.feinberg.northwestern.edu",
+      "status": "blocked",
+      "note": "403 (sources note)"
+    },
+    {
+      "id": "sesp",
+      "name": "School of Education and Social Policy",
+      "kind": "school",
+      "url": "https://sesp.northwestern.edu",
+      "status": "in-wide",
+      "note": "links PlanIt Purple"
+    },
+    {
+      "id": "communication",
+      "name": "School of Communication",
+      "kind": "school",
+      "url": "https://communication.northwestern.edu",
+      "status": "in-wide",
+      "note": "news & events page lists PlanIt Purple events"
+    },
+    {
+      "id": "bienen",
+      "name": "Bienen School of Music",
+      "kind": "school",
+      "url": "https://www.music.northwestern.edu",
+      "status": "in-wide",
+      "note": "concerts are posted to PlanIt Purple (Concert Management Office); own /events is Drupal HTML"
+    },
+    {
+      "id": "sps",
+      "name": "School of Professional Studies",
+      "kind": "school",
+      "url": "https://sps.northwestern.edu",
+      "status": "no-feed",
+      "note": "events page HTML only"
+    },
+    {
+      "id": "tgs",
+      "name": "The Graduate School",
+      "kind": "school",
+      "url": "https://www.tgs.northwestern.edu",
+      "status": "in-wide",
+      "note": "links PlanIt Purple"
+    },
+    {
+      "id": "qatar",
+      "name": "Northwestern University in Qatar",
+      "kind": "school",
+      "url": "https://www.qatar.northwestern.edu",
+      "status": "in-wide",
+      "note": "links PlanIt Purple"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "mccormick",
+      "url": "https://www.mccormick.northwestern.edu/computer-science/",
+      "status": "in-wide",
+      "note": "events page is built from PlanIt Purple"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "mccormick",
+      "url": "https://www.mccormick.northwestern.edu/electrical-computer/",
+      "status": "in-wide",
+      "note": "events page is built from PlanIt Purple"
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "mccormick",
+      "url": "https://www.mccormick.northwestern.edu/mechanical/",
+      "status": "in-wide",
+      "note": "events page is built from PlanIt Purple"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "mccormick",
+      "url": "https://www.mccormick.northwestern.edu/biomedical/",
+      "status": "in-wide",
+      "note": "events page is built from PlanIt Purple"
+    },
+    {
+      "id": "iems",
+      "name": "Industrial Engineering and Management Sciences",
+      "kind": "department",
+      "parent": "mccormick",
+      "url": "https://www.mccormick.northwestern.edu/industrial/",
+      "status": "in-wide",
+      "note": "McCormick department pages share the PlanIt Purple events template"
+    },
+    {
+      "id": "matsci",
+      "name": "Materials Science and Engineering",
+      "kind": "department",
+      "parent": "mccormick",
+      "url": "https://www.mccormick.northwestern.edu/materials-science/",
+      "status": "in-wide",
+      "note": "McCormick department pages share the PlanIt Purple events template"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://math.northwestern.edu",
+      "feeds": [
+        "https://planitpurple.northwestern.edu/feed/ical/2229"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics and Data Science",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://statistics.northwestern.edu",
+      "status": "in-wide",
+      "note": "links PlanIt Purple"
+    },
+    {
+      "id": "physics",
+      "name": "Physics and Astronomy",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://physics.northwestern.edu",
+      "status": "in-wide",
+      "note": "events page links PlanIt Purple"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://chemistry.northwestern.edu",
+      "status": "in-wide",
+      "note": "links PlanIt Purple"
+    },
+    {
+      "id": "biology",
+      "name": "Molecular Biosciences",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://molbiosci.northwestern.edu",
+      "status": "in-wide",
+      "note": "home page links its PlanIt Purple calendar (4817)"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://economics.northwestern.edu",
+      "status": "no-feed",
+      "note": "events page HTML with no PlanIt Purple link"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://psychology.northwestern.edu",
+      "status": "in-wide",
+      "note": "links PlanIt Purple"
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://polisci.northwestern.edu",
+      "status": "in-wide",
+      "note": "links PlanIt Purple"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://history.northwestern.edu",
+      "status": "in-wide",
+      "note": "links PlanIt Purple"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://english.northwestern.edu",
+      "status": "in-wide",
+      "note": "links PlanIt Purple"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://philosophy.northwestern.edu",
+      "status": "in-wide",
+      "note": "links PlanIt Purple"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://sociology.northwestern.edu",
+      "status": "in-wide",
+      "note": "links PlanIt Purple"
+    },
+    {
+      "id": "anthropology",
+      "name": "Anthropology",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://anthropology.northwestern.edu",
+      "status": "in-wide",
+      "note": "home page lists PlanIt Purple events (colloquia)"
+    },
+    {
+      "id": "eps",
+      "name": "Earth, Environmental, and Planetary Sciences",
+      "kind": "department",
+      "parent": "weinberg",
+      "url": "https://eps.northwestern.edu",
+      "status": "in-wide",
+      "note": "site timed out; its DEEPS seminars are on PlanIt Purple"
+    },
+    {
+      "id": "ipr",
+      "name": "Institute for Policy Research",
+      "kind": "institute",
+      "url": "https://www.ipr.northwestern.edu",
+      "status": "no-feed",
+      "note": "Cascade HTML (sources note)"
+    },
+    {
+      "id": "buffett",
+      "name": "Roberta Buffett Institute for Global Affairs",
+      "kind": "institute",
+      "url": "https://buffett.northwestern.edu",
+      "status": "in-wide",
+      "note": "events page built from PlanIt Purple"
+    },
+    {
+      "id": "trienens",
+      "name": "Paula M. Trienens Institute for Sustainability and Energy",
+      "kind": "institute",
+      "url": "https://trienens-institute.northwestern.edu",
+      "status": "in-wide",
+      "note": "events page links PlanIt Purple"
+    },
+    {
+      "id": "kaplan",
+      "name": "Alice Kaplan Institute for the Humanities",
+      "kind": "institute",
+      "url": "https://kaplan.northwestern.edu",
+      "status": "in-wide",
+      "note": "site timed out; Kaplan Institute events are on PlanIt Purple"
+    },
+    {
+      "id": "nico",
+      "name": "Northwestern Institute on Complex Systems (NICO)",
+      "kind": "institute",
+      "url": "https://www.nico.northwestern.edu",
+      "status": "in-wide",
+      "note": "WED@NICO seminars are on PlanIt Purple; site pages are HTML"
+    },
+    {
+      "id": "casmi",
+      "name": "Center for Advancing Safety of Machine Intelligence (CASMI)",
+      "kind": "center",
+      "parent": "mccormick",
+      "url": "https://casmi.northwestern.edu",
+      "status": "no-feed",
+      "note": "events pages are HTML; nothing of its on PlanIt Purple"
+    },
+    {
+      "id": "garage",
+      "name": "The Garage (entrepreneurship)",
+      "kind": "center",
+      "url": "https://thegarage.northwestern.edu",
+      "status": "no-feed",
+      "note": "events page is a script-rendered HTML page, no feed"
+    },
+    {
+      "id": "ipham",
+      "name": "Institute for Public Health and Medicine",
+      "kind": "institute",
+      "parent": "feinberg",
+      "url": "https://www.ipham.northwestern.edu",
+      "status": "in-wide",
+      "note": "site timed out; its Public Health Seminar Series is on PlanIt Purple"
+    },
+    {
+      "id": "lurie",
+      "name": "Robert H. Lurie Comprehensive Cancer Center",
+      "kind": "center",
+      "parent": "feinberg",
+      "url": "https://www.cancer.northwestern.edu",
+      "status": "in-wide",
+      "note": "Lurie Cancer Center seminars are on PlanIt Purple"
+    },
+    {
+      "id": "iinano",
+      "name": "International Institute for Nanotechnology",
+      "kind": "institute",
+      "url": "https://www.iinano.org",
+      "status": "no-feed",
+      "note": "The Events Calendar API is live but its last events are from 2014"
+    },
+    {
+      "id": "asg",
+      "name": "Associated Student Government",
+      "kind": "student",
+      "url": "https://www.asg.northwestern.edu",
+      "status": "no-feed",
+      "note": "site has no calendar; student orgs come through CampusGroups"
+    },
+    {
+      "id": "gsa",
+      "name": "Graduate Student Association / Graduate Leadership",
+      "kind": "student",
+      "url": "https://www.tgs.northwestern.edu",
+      "status": "in-wide",
+      "note": "The Graduate School home page lists PlanIt Purple events"
+    },
+    {
+      "id": "rescolleges",
+      "name": "Residential Colleges",
+      "kind": "student",
+      "url": "https://www.northwestern.edu/living/",
+      "status": "in-wide",
+      "note": "no events page; residential college events appear on PlanIt Purple"
+    },
+    {
+      "id": "library",
+      "name": "Northwestern University Libraries",
+      "kind": "library",
+      "url": "https://www.library.northwestern.edu",
+      "status": "in-wide",
+      "note": "links PlanIt Purple"
+    },
+    {
+      "id": "block",
+      "name": "Block Museum of Art",
+      "kind": "museum",
+      "url": "https://www.blockmuseum.northwestern.edu",
+      "status": "in-wide",
+      "note": "Block Museum events are on PlanIt Purple (23 in three weeks)"
+    },
+    {
+      "id": "careers",
+      "name": "Northwestern Career Advancement",
+      "kind": "other",
+      "url": "https://www.northwestern.edu/careers/",
+      "status": "in-wide",
+      "note": "links PlanIt Purple"
+    }
   ]
 }

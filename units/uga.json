@@ -19,8 +19,8 @@
       "name": "College of Agricultural and Environmental Sciences",
       "kind": "school",
       "url": "https://www.caes.uga.edu",
-      "status": "unchecked",
-      "note": "events page not found"
+      "status": "in-wide",
+      "note": "college posts to calendar.uga.edu (department 'College of Agricultural and Environmental Sciences'); its Field Report events page is WordPress HTML"
     },
     {
       "id": "ced",
@@ -89,8 +89,8 @@
       "name": "School of Law",
       "kind": "school",
       "url": "https://www.law.uga.edu",
-      "status": "unchecked",
-      "note": "/calendar 404"
+      "status": "no-feed",
+      "note": "no events page (/events, /calendar 404); student events via Handshake"
     },
     {
       "id": "pharmacy",
@@ -125,8 +125,8 @@
       "name": "School of Social Work",
       "kind": "school",
       "url": "https://ssw.uga.edu",
-      "status": "unchecked",
-      "note": "/events 404"
+      "status": "in-wide",
+      "note": "home page links its calendar.uga.edu/socialwork group"
     },
     {
       "id": "terry",
@@ -151,8 +151,8 @@
       "name": "Graduate School",
       "kind": "school",
       "url": "https://grad.uga.edu",
-      "status": "unchecked",
-      "note": "/events 404"
+      "status": "in-wide",
+      "note": "home page lists calendar.uga.edu events (department Graduate School, 15 in 30 days)"
     },
     {
       "id": "honors",
@@ -168,8 +168,11 @@
       "id": "medical",
       "name": "AU/UGA Medical Partnership",
       "kind": "school",
-      "url": "https://medicalpartnership.usg.edu",
-      "status": "unchecked"
+      "url": "https://medicalpartnership.usg.edu/events/",
+      "status": "feed",
+      "feeds": [
+        "https://medicalpartnership.usg.edu/wp-json/tribe/events/v1/events"
+      ]
     },
     {
       "id": "cs",
@@ -185,24 +188,27 @@
       "name": "School of Electrical and Computer Engineering",
       "kind": "department",
       "parent": "engineering",
-      "url": "https://engineering.uga.edu/schools/electrical-computer",
-      "status": "unchecked"
+      "url": "https://engineering.uga.edu/schools/school-of-chemical-materials-biomedical-engineering/electrical-computer/",
+      "status": "in-wide",
+      "note": "events go on the College of Engineering events calendar (tribe feed we read) and calendar.uga.edu"
     },
     {
       "id": "me",
       "name": "School of Environmental, Civil, Agricultural and Mechanical Engineering",
       "kind": "department",
       "parent": "engineering",
-      "url": "https://engineering.uga.edu/schools/ecam",
-      "status": "unchecked"
+      "url": "https://engineering.uga.edu/schools/ecam/",
+      "status": "in-wide",
+      "note": "events go on the College of Engineering events calendar (tribe feed we read) and calendar.uga.edu"
     },
     {
       "id": "bme",
       "name": "School of Chemical, Materials, and Biomedical Engineering",
       "kind": "department",
       "parent": "engineering",
-      "url": "https://engineering.uga.edu/schools/cmbe",
-      "status": "unchecked"
+      "url": "https://engineering.uga.edu/schools/school-of-chemical-materials-biomedical-engineering/",
+      "status": "in-wide",
+      "note": "events go on the College of Engineering events calendar (tribe feed we read) and calendar.uga.edu"
     },
     {
       "id": "math",
@@ -219,7 +225,8 @@
       "kind": "department",
       "parent": "franklin",
       "url": "https://www.stat.uga.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Franklin Drupal events pages, HTML only; nothing from it on calendar.uga.edu"
     },
     {
       "id": "physics",
@@ -245,7 +252,8 @@
       "kind": "department",
       "parent": "franklin",
       "url": "https://www.genetics.uga.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "Franklin Drupal events pages (seminars), HTML only"
     },
     {
       "id": "economics",
@@ -298,7 +306,8 @@
       "kind": "department",
       "parent": "franklin",
       "url": "https://phil.uga.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "its lectures are posted to calendar.uga.edu (department Philosophy); site events pages are HTML"
     },
     {
       "id": "sociology",
@@ -306,7 +315,8 @@
       "kind": "department",
       "parent": "franklin",
       "url": "https://sociology.uga.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "calendar page embeds calendar.uga.edu (Localist) events"
     },
     {
       "id": "art",
@@ -323,7 +333,8 @@
       "kind": "department",
       "parent": "franklin",
       "url": "https://music.uga.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "concerts are on calendar.uga.edu (19 in 30 days); own performance calendar is a Wix site"
     },
     {
       "id": "iai",
@@ -339,29 +350,32 @@
       "name": "Willson Center for Humanities and Arts",
       "kind": "center",
       "url": "https://willson.uga.edu",
-      "status": "unchecked",
-      "note": "/events 404"
+      "status": "in-wide",
+      "note": "embeds its calendar.uga.edu group widget (48 events in 30 days)"
     },
     {
       "id": "ccrc",
       "name": "Complex Carbohydrate Research Center",
       "kind": "center",
-      "url": "https://www.ccrc.uga.edu",
-      "status": "unchecked"
+      "url": "https://ccrc.uga.edu",
+      "status": "no-feed",
+      "note": "no events page (/events 404)"
     },
     {
       "id": "ctegd",
       "name": "Center for Tropical and Emerging Global Diseases",
       "kind": "center",
       "url": "https://ctegd.uga.edu",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "events page embeds its calendar.uga.edu group"
     },
     {
       "id": "cviog",
       "name": "Carl Vinson Institute of Government",
       "kind": "institute",
       "url": "https://cviog.uga.edu",
-      "status": "unchecked"
+      "status": "no-feed",
+      "note": "no events page (/events 404)"
     },
     {
       "id": "innovation",
@@ -400,8 +414,8 @@
       "name": "UGA Libraries",
       "kind": "library",
       "url": "https://www.libs.uga.edu",
-      "status": "unchecked",
-      "note": "events on LibCal"
+      "status": "in-wide",
+      "note": "UGA Libraries group posts to calendar.uga.edu (20 events in 30 days)"
     },
     {
       "id": "museum",
@@ -416,15 +430,16 @@
       "name": "Career Center",
       "kind": "other",
       "url": "https://career.uga.edu",
-      "status": "unchecked",
-      "note": "/events 404"
+      "status": "in-wide",
+      "note": "Career Center group posts to calendar.uga.edu; own /calendar is HTML"
     },
     {
       "id": "athletics",
       "name": "Georgia Bulldogs Athletics",
       "kind": "other",
       "url": "https://georgiadogs.com",
-      "status": "unchecked"
+      "status": "in-wide",
+      "note": "home games are on calendar.uga.edu (sport groups); georgiadogs.com is behind Incapsula"
     }
   ]
 }

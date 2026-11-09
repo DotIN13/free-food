@@ -6,50 +6,388 @@
     "https://static-prod-us-east-1.campusgroups.com/ical/dartmouth/ical_dartmouth.ics"
   ],
   "units": [
-    { "id": "arts-sciences", "name": "Faculty of Arts and Sciences", "kind": "school", "url": "https://home.dartmouth.edu/academics/arts-sciences", "status": "in-wide", "note": "department sites embed the central events listing (dart_events_listing filtered by sponsor)" },
-    { "id": "thayer", "name": "Thayer School of Engineering", "kind": "school", "url": "https://engineering.dartmouth.edu", "status": "in-wide", "note": "its events appear on events.dartmouth.edu" },
-    { "id": "geisel", "name": "Geisel School of Medicine", "kind": "school", "url": "https://geiselmed.dartmouth.edu", "status": "in-wide", "note": "own events feed is empty; its events appear on events.dartmouth.edu" },
-    { "id": "tuck", "name": "Tuck School of Business", "kind": "school", "url": "https://www.tuck.dartmouth.edu", "status": "no-feed", "note": "events listed only as HTML" },
-    { "id": "guarini", "name": "Guarini School of Graduate and Advanced Studies", "kind": "school", "url": "https://graduate.dartmouth.edu", "status": "in-wide", "note": "MCB and other graduate programs post to events.dartmouth.edu" },
-    { "id": "cs", "name": "Department of Computer Science", "kind": "department", "parent": "arts-sciences", "url": "https://web.cs.dartmouth.edu", "status": "in-wide", "note": "events page embeds the central listing (sponsor 106)" },
-    { "id": "math", "name": "Department of Mathematics", "kind": "department", "parent": "arts-sciences", "url": "https://math.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "physics", "name": "Department of Physics and Astronomy", "kind": "department", "parent": "arts-sciences", "url": "https://physics.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "chemistry", "name": "Department of Chemistry", "kind": "department", "parent": "arts-sciences", "url": "https://chemistry.dartmouth.edu", "status": "in-wide", "note": "events page embeds the central listing" },
-    { "id": "biology", "name": "Department of Biological Sciences", "kind": "department", "parent": "arts-sciences", "url": "https://biology.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "economics", "name": "Department of Economics", "kind": "department", "parent": "arts-sciences", "url": "https://economics.dartmouth.edu", "status": "in-wide", "note": "events page embeds the central listing" },
-    { "id": "pbs", "name": "Department of Psychological and Brain Sciences", "kind": "department", "parent": "arts-sciences", "url": "https://pbs.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "government", "name": "Department of Government", "kind": "department", "parent": "arts-sciences", "url": "https://govt.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "history", "name": "Department of History", "kind": "department", "parent": "arts-sciences", "url": "https://history.dartmouth.edu", "status": "in-wide", "note": "same Drupal platform embedding the central listing" },
-    { "id": "english", "name": "Department of English and Creative Writing", "kind": "department", "parent": "arts-sciences", "url": "https://english.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "philosophy", "name": "Department of Philosophy", "kind": "department", "parent": "arts-sciences", "url": "https://philosophy.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "sociology", "name": "Department of Sociology", "kind": "department", "parent": "arts-sciences", "url": "https://sociology.dartmouth.edu", "status": "in-wide", "note": "same Drupal platform embedding the central listing" },
-    { "id": "anthropology", "name": "Department of Anthropology", "kind": "department", "parent": "arts-sciences", "url": "https://anthropology.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "theater", "name": "Department of Theater", "kind": "department", "parent": "arts-sciences", "url": "https://theater.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "film", "name": "Department of Film and Media Studies", "kind": "department", "parent": "arts-sciences", "url": "https://film.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "qbs", "name": "Quantitative Biomedical Sciences", "kind": "department", "parent": "geisel", "url": "https://geiselmed.dartmouth.edu/qbs", "status": "unchecked" },
-    { "id": "dickey", "name": "Dickey Center for International Understanding", "kind": "center", "url": "https://dickey.dartmouth.edu", "feeds": ["https://dickey.dartmouth.edu"], "status": "feed" },
-    { "id": "rockefeller", "name": "Nelson A. Rockefeller Center for Public Policy", "kind": "center", "url": "https://rockefeller.dartmouth.edu", "status": "in-wide", "note": "pulls from events.dartmouth.edu" },
-    { "id": "leslie", "name": "Leslie Center for the Humanities", "kind": "center", "url": "https://leslie.dartmouth.edu", "status": "in-wide", "note": "pulls from events.dartmouth.edu" },
-    { "id": "neukom", "name": "Neukom Institute for Computational Science", "kind": "institute", "url": "https://neukom.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "irving", "name": "Arthur L. Irving Institute for Energy and Society", "kind": "institute", "url": "https://irving.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "ethics", "name": "Ethics Institute", "kind": "institute", "url": "https://ethics.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "magnuson", "name": "Magnuson Center for Entrepreneurship", "kind": "center", "url": "https://magnuson.dartmouth.edu", "status": "unchecked" },
-    { "id": "cancer", "name": "Dartmouth Cancer Center", "kind": "center", "parent": "geisel", "url": "https://cancer.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "dcal", "name": "Dartmouth Center for the Advancement of Learning (DCAL)", "kind": "center", "url": "https://dcal.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "social-impact", "name": "Dartmouth Center for Social Impact", "kind": "center", "url": "https://socialimpact.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "climate", "name": "Dartmouth Climate Collaborative", "kind": "center", "url": "https://climate.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "ibicl", "name": "Institute for Black Intellectual and Cultural Life", "kind": "institute", "url": "https://ibicl.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "tucker", "name": "Tucker Center for Spiritual and Ethical Life", "kind": "center", "url": "https://students.dartmouth.edu/tucker", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "wellness", "name": "Student Wellness Center", "kind": "other", "url": "https://students.dartmouth.edu/wellness-center", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "hop", "name": "Hopkins Center for the Arts", "kind": "other", "url": "https://hop.dartmouth.edu", "status": "in-wide", "note": "hop.dartmouth.edu 403, but it is the biggest group on events.dartmouth.edu" },
-    { "id": "student-assembly", "name": "Dartmouth Student Government", "kind": "student", "url": "https://students.dartmouth.edu/student-government", "status": "in-wide", "note": "student org events are on Dartmouth Groups (CampusGroups)" },
-    { "id": "gsc", "name": "Graduate Student Council", "kind": "student", "url": "https://graduate.dartmouth.edu/student-life/graduate-student-council", "status": "in-wide", "note": "student org events are on Dartmouth Groups (CampusGroups)" },
-    { "id": "housecommunities", "name": "House Communities", "kind": "student", "url": "https://students.dartmouth.edu/residential-life/house-communities", "status": "unchecked" },
-    { "id": "doc", "name": "Dartmouth Outing Club", "kind": "student", "url": "https://outdoors.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "library", "name": "Dartmouth Libraries", "kind": "library", "url": "https://www.library.dartmouth.edu", "feeds": ["https://libcal.dartmouth.edu/ical_subscribe.php?src=p&cid=214"], "status": "feed" },
-    { "id": "hood", "name": "Hood Museum of Art", "kind": "museum", "url": "https://hoodmuseum.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "career", "name": "Center for Professional Development", "kind": "other", "url": "https://students.dartmouth.edu/cpd", "status": "unchecked" },
-    { "id": "dining", "name": "Dartmouth Dining", "kind": "other", "url": "https://dining.dartmouth.edu", "status": "in-wide", "note": "seen on events.dartmouth.edu" },
-    { "id": "athletics", "name": "Dartmouth Athletics", "kind": "other", "url": "https://dartmouthsports.com", "status": "unchecked" }
+    {
+      "id": "arts-sciences",
+      "name": "Faculty of Arts and Sciences",
+      "kind": "school",
+      "url": "https://home.dartmouth.edu/academics/arts-sciences",
+      "status": "in-wide",
+      "note": "department sites embed the central events listing (dart_events_listing filtered by sponsor)"
+    },
+    {
+      "id": "thayer",
+      "name": "Thayer School of Engineering",
+      "kind": "school",
+      "url": "https://engineering.dartmouth.edu",
+      "status": "in-wide",
+      "note": "its events appear on events.dartmouth.edu"
+    },
+    {
+      "id": "geisel",
+      "name": "Geisel School of Medicine",
+      "kind": "school",
+      "url": "https://geiselmed.dartmouth.edu",
+      "status": "in-wide",
+      "note": "own events feed is empty; its events appear on events.dartmouth.edu"
+    },
+    {
+      "id": "tuck",
+      "name": "Tuck School of Business",
+      "kind": "school",
+      "url": "https://www.tuck.dartmouth.edu",
+      "status": "no-feed",
+      "note": "events listed only as HTML"
+    },
+    {
+      "id": "guarini",
+      "name": "Guarini School of Graduate and Advanced Studies",
+      "kind": "school",
+      "url": "https://graduate.dartmouth.edu",
+      "status": "in-wide",
+      "note": "MCB and other graduate programs post to events.dartmouth.edu"
+    },
+    {
+      "id": "cs",
+      "name": "Department of Computer Science",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://web.cs.dartmouth.edu",
+      "status": "in-wide",
+      "note": "events page embeds the central listing (sponsor 106)"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://math.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics and Astronomy",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://physics.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://chemistry.dartmouth.edu",
+      "status": "in-wide",
+      "note": "events page embeds the central listing"
+    },
+    {
+      "id": "biology",
+      "name": "Department of Biological Sciences",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://biology.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://economics.dartmouth.edu",
+      "status": "in-wide",
+      "note": "events page embeds the central listing"
+    },
+    {
+      "id": "pbs",
+      "name": "Department of Psychological and Brain Sciences",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://pbs.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "government",
+      "name": "Department of Government",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://govt.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://history.dartmouth.edu",
+      "status": "in-wide",
+      "note": "same Drupal platform embedding the central listing"
+    },
+    {
+      "id": "english",
+      "name": "Department of English and Creative Writing",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://english.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://philosophy.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://sociology.dartmouth.edu",
+      "status": "in-wide",
+      "note": "same Drupal platform embedding the central listing"
+    },
+    {
+      "id": "anthropology",
+      "name": "Department of Anthropology",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://anthropology.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "theater",
+      "name": "Department of Theater",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://theater.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "film",
+      "name": "Department of Film and Media Studies",
+      "kind": "department",
+      "parent": "arts-sciences",
+      "url": "https://film.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "qbs",
+      "name": "Quantitative Biomedical Sciences",
+      "kind": "department",
+      "parent": "geisel",
+      "url": "https://geiselmed.dartmouth.edu/qbs",
+      "status": "no-feed",
+      "note": "calendar page is an empty JS calendar; Geisel events are on events.dartmouth.edu"
+    },
+    {
+      "id": "dickey",
+      "name": "Dickey Center for International Understanding",
+      "kind": "center",
+      "url": "https://dickey.dartmouth.edu",
+      "feeds": [
+        "https://dickey.dartmouth.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "rockefeller",
+      "name": "Nelson A. Rockefeller Center for Public Policy",
+      "kind": "center",
+      "url": "https://rockefeller.dartmouth.edu",
+      "status": "in-wide",
+      "note": "pulls from events.dartmouth.edu"
+    },
+    {
+      "id": "leslie",
+      "name": "Leslie Center for the Humanities",
+      "kind": "center",
+      "url": "https://leslie.dartmouth.edu",
+      "status": "in-wide",
+      "note": "pulls from events.dartmouth.edu"
+    },
+    {
+      "id": "neukom",
+      "name": "Neukom Institute for Computational Science",
+      "kind": "institute",
+      "url": "https://neukom.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "irving",
+      "name": "Arthur L. Irving Institute for Energy and Society",
+      "kind": "institute",
+      "url": "https://irving.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "ethics",
+      "name": "Ethics Institute",
+      "kind": "institute",
+      "url": "https://ethics.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "magnuson",
+      "name": "Magnuson Center for Entrepreneurship",
+      "kind": "center",
+      "url": "https://magnuson.dartmouth.edu",
+      "status": "no-feed",
+      "note": "Squarespace events (?format=json/rss) list no upcoming events and post dates only"
+    },
+    {
+      "id": "cancer",
+      "name": "Dartmouth Cancer Center",
+      "kind": "center",
+      "parent": "geisel",
+      "url": "https://cancer.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "dcal",
+      "name": "Dartmouth Center for the Advancement of Learning (DCAL)",
+      "kind": "center",
+      "url": "https://dcal.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "social-impact",
+      "name": "Dartmouth Center for Social Impact",
+      "kind": "center",
+      "url": "https://socialimpact.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "climate",
+      "name": "Dartmouth Climate Collaborative",
+      "kind": "center",
+      "url": "https://climate.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "ibicl",
+      "name": "Institute for Black Intellectual and Cultural Life",
+      "kind": "institute",
+      "url": "https://ibicl.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "tucker",
+      "name": "Tucker Center for Spiritual and Ethical Life",
+      "kind": "center",
+      "url": "https://students.dartmouth.edu/tucker",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "wellness",
+      "name": "Student Wellness Center",
+      "kind": "other",
+      "url": "https://students.dartmouth.edu/wellness-center",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "hop",
+      "name": "Hopkins Center for the Arts",
+      "kind": "other",
+      "url": "https://hop.dartmouth.edu",
+      "status": "in-wide",
+      "note": "hop.dartmouth.edu 403, but it is the biggest group on events.dartmouth.edu"
+    },
+    {
+      "id": "student-assembly",
+      "name": "Dartmouth Student Government",
+      "kind": "student",
+      "url": "https://students.dartmouth.edu/student-government",
+      "status": "in-wide",
+      "note": "student org events are on Dartmouth Groups (CampusGroups)"
+    },
+    {
+      "id": "gsc",
+      "name": "Graduate Student Council",
+      "kind": "student",
+      "url": "https://graduate.dartmouth.edu/student-life/graduate-student-council",
+      "status": "in-wide",
+      "note": "student org events are on Dartmouth Groups (CampusGroups)"
+    },
+    {
+      "id": "housecommunities",
+      "name": "House Communities",
+      "kind": "student",
+      "url": "https://students.dartmouth.edu/residential-life",
+      "status": "in-wide",
+      "note": "old page is 404; Residential Life links to home.dartmouth.edu/events (events.dartmouth.edu)"
+    },
+    {
+      "id": "doc",
+      "name": "Dartmouth Outing Club",
+      "kind": "student",
+      "url": "https://outdoors.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "library",
+      "name": "Dartmouth Libraries",
+      "kind": "library",
+      "url": "https://www.library.dartmouth.edu",
+      "feeds": [
+        "https://libcal.dartmouth.edu/ical_subscribe.php?src=p&cid=214"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "hood",
+      "name": "Hood Museum of Art",
+      "kind": "museum",
+      "url": "https://hoodmuseum.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "career",
+      "name": "Center for Professional Development",
+      "kind": "other",
+      "url": "https://students.dartmouth.edu/cpd",
+      "status": "in-wide",
+      "note": "cpd URL redirects to home.dartmouth.edu; career events are posted to events.dartmouth.edu"
+    },
+    {
+      "id": "dining",
+      "name": "Dartmouth Dining",
+      "kind": "other",
+      "url": "https://dining.dartmouth.edu",
+      "status": "in-wide",
+      "note": "seen on events.dartmouth.edu"
+    },
+    {
+      "id": "athletics",
+      "name": "Dartmouth Athletics",
+      "kind": "other",
+      "url": "https://dartmouthsports.com",
+      "status": "feed",
+      "feeds": [
+        "https://dartmouthsports.com/calendar.ashx/calendar.ics"
+      ]
+    }
   ]
 }
