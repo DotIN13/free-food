@@ -1,0 +1,130 @@
+[
+	{
+		"id": "princeton",
+		"name": "Princeton University",
+		"sources": [
+			{ "type": "tribe", "url": "https://humanities.princeton.edu", "label": "Princeton Humanities Council", "institute": true, "events": 31, "food": 4 }
+		],
+		"notes": "Most Princeton unit sites (pli, citp, csml, ai, pni, phy, keller, gradschool, arts, davisic, religion, entrepreneurship) and calendar.princeton.edu answer 403 (Cloudflare); spia.princeton.edu 504. cs.princeton.edu and math.princeton.edu are Drupal with no feed (rss.xml empty, no jsonapi); economics/bcf WordPress have no events API; acee.princeton.edu has a WP 'events' type but few events and dates only in meta."
+	},
+	{
+		"id": "mit",
+		"name": "Massachusetts Institute of Technology",
+		"sources": [
+			{ "type": "ical", "url": "https://www.csail.mit.edu/event_calendar.ics", "label": "MIT CSAIL", "institute": true, "events": 12, "food": 0 }
+		],
+		"notes": "LIDS has a public Google Calendar ics, but calendar.google.com/robots.txt disallows everything for all bots, so it is skipped (same for any Google Calendar feed). computing.mit.edu, physics.mit.edu, energy.mit.edu 403; Media Lab disallows /api/; economics.mit.edu, IDSS and EECS events come from calendar.mit.edu (already read) or have empty feeds; Broad, Whitehead, Koch, McGovern, CIS expose no event feed."
+	},
+	{
+		"id": "harvard",
+		"name": "Harvard University",
+		"sources": [
+			{ "type": "tribe", "url": "https://hsph.harvard.edu", "label": "Harvard T.H. Chan School of Public Health", "institute": true, "events": 26, "food": 7 },
+			{ "type": "ical", "url": "https://kempnerinstitute.harvard.edu/events-calendar/?ical=1", "label": "Kempner Institute for the Study of Natural and Artificial Intelligence", "institute": true, "events": 30, "food": 1 }
+		],
+		"notes": "Berkman Klein /events/feed RSS (10 items) writes the date as 'Date: 11/19/2026 12:00 PM' in the description, which rss() does not parse (0 read). HLS Tribe API is 401; Kempner disallows /wp-json/ (its ?ical=1 export is used instead); wcfia, hds, cmsa, physics 403; SEAS, HKS, GSE, GSD Drupal/HTML only; trumba.com/calendars/hks.ics exists but is empty; www.hbs.edu/events 202 empty."
+	},
+	{
+		"id": "stanford",
+		"name": "Stanford University",
+		"sources": [
+			{ "type": "json", "url": "https://fsi.stanford.edu/jsonapi/node/event?sort=-field_event_periods.value&page%5Blimit%5D=50&fields%5Bnode--event%5D=title,field_event_periods,field_location,path,body", "label": "Freeman Spogli Institute for International Studies (FSI)", "institute": true,
+				"fields": { "list": "data", "title": "attributes.title", "start": "attributes.field_event_periods.value", "end": "attributes.field_event_periods.end_value", "location": "attributes.field_location.value", "desc": "attributes.body.value", "url": "attributes.path.alias" },
+				"note": "Drupal JSON:API (node--event), newest event dates first, one page of 50; url is a site path", "events": 20, "food": 0 },
+			{ "type": "json", "url": "https://www.hoover.org/jsonapi/node/event?sort=-field_date&page%5Blimit%5D=50&fields%5Bnode--event%5D=title,field_date,field_end_date,field_location,body,path", "label": "Hoover Institution", "institute": true,
+				"fields": { "list": "data", "title": "attributes.title", "start": "attributes.field_date", "end": "attributes.field_end_date", "location": "attributes.field_location", "desc": "attributes.body.value", "url": "attributes.path.alias" },
+				"note": "Drupal JSON:API (node--event), latest dates first, one page of 50; url is a site path on www.hoover.org", "events": 5, "food": 0 },
+			{ "type": "json", "url": "https://ed.stanford.edu/jsonapi/node/event?sort=-created&page%5Blimit%5D=50&fields%5Bnode--event%5D=title,field_start_end_datetimes,field_location_name,body,path", "label": "Stanford Graduate School of Education", "institute": true,
+				"fields": { "list": "data", "title": "attributes.title", "start": "attributes.field_start_end_datetimes.0.value", "end": "attributes.field_start_end_datetimes.0.end_value", "location": "attributes.field_location_name", "desc": "attributes.body.value", "url": "attributes.path.alias" },
+				"note": "Drupal JSON:API (node--event), 50 most recently created; url is a site path on ed.stanford.edu", "events": 7, "food": 1 },
+			{ "type": "json", "url": "https://economics.stanford.edu/jsonapi/node/hs_event?sort=-changed&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path", "label": "Stanford Economics seminars", "institute": true,
+				"fields": { "list": "data", "title": "attributes.title", "start": "attributes.field_hs_event_date.value", "end": "attributes.field_hs_event_date.end_value", "location": "attributes.field_hs_event_location", "desc": "attributes.body.value", "url": "attributes.path.alias" },
+				"note": "H&S Drupal JSON:API (node--hs_event), 50 most recently changed (seminars are scheduled months ahead, so sorting by date misses the next weeks)", "events": 12, "food": 0 },
+			{ "type": "json", "url": "https://history.stanford.edu/jsonapi/node/hs_event?sort=-field_hs_event_date.value&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path", "label": "Stanford History", "institute": true,
+				"fields": { "list": "data", "title": "attributes.title", "start": "attributes.field_hs_event_date.value", "end": "attributes.field_hs_event_date.end_value", "location": "attributes.field_hs_event_location", "desc": "attributes.body.value", "url": "attributes.path.alias" },
+				"note": "H&S Drupal JSON:API (node--hs_event), latest dates first, one page of 50", "events": 12, "food": 3 },
+			{ "type": "json", "url": "https://mathematics.stanford.edu/jsonapi/node/hs_event?sort=-field_hs_event_date.value&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path", "label": "Stanford Mathematics seminars", "institute": true,
+				"fields": { "list": "data", "title": "attributes.title", "start": "attributes.field_hs_event_date.value", "end": "attributes.field_hs_event_date.end_value", "location": "attributes.field_hs_event_location", "desc": "attributes.body.value", "url": "attributes.path.alias" },
+				"note": "H&S Drupal JSON:API (node--hs_event), latest dates first, one page of 50", "events": 19, "food": 0 },
+			{ "type": "json", "url": "https://chemistry.stanford.edu/jsonapi/node/hs_event?sort=-field_hs_event_date.value&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path", "label": "Stanford Chemistry seminars", "institute": true,
+				"fields": { "list": "data", "title": "attributes.title", "start": "attributes.field_hs_event_date.value", "end": "attributes.field_hs_event_date.end_value", "location": "attributes.field_hs_event_location", "desc": "attributes.body.value", "url": "attributes.path.alias" },
+				"note": "H&S Drupal JSON:API (node--hs_event), latest dates first, one page of 50", "events": 9, "food": 0 },
+			{ "type": "json", "url": "https://statistics.stanford.edu/jsonapi/node/hs_event?sort=-field_hs_event_date.value&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path", "label": "Stanford Statistics seminars", "institute": true,
+				"fields": { "list": "data", "title": "attributes.title", "start": "attributes.field_hs_event_date.value", "end": "attributes.field_hs_event_date.end_value", "location": "attributes.field_hs_event_location", "desc": "attributes.body.value", "url": "attributes.path.alias" },
+				"note": "H&S Drupal JSON:API (node--hs_event), latest dates first, one page of 50", "events": 4, "food": 0 },
+			{ "type": "json", "url": "https://english.stanford.edu/jsonapi/node/hs_event?sort=-field_hs_event_date.value&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path", "label": "Stanford English", "institute": true,
+				"fields": { "list": "data", "title": "attributes.title", "start": "attributes.field_hs_event_date.value", "end": "attributes.field_hs_event_date.end_value", "location": "attributes.field_hs_event_location", "desc": "attributes.body.value", "url": "attributes.path.alias" },
+				"note": "H&S Drupal JSON:API (node--hs_event), latest dates first, one page of 50", "events": 5, "food": 2 }
+		],
+		"notes": "HAI already listed (datascience.stanford.edu/events now redirects to HAI). CS, SLAC, Engineering and Medicine events come from events.stanford.edu (already read); GSB events are a Coveo search page (no feed); law.stanford.edu robots.txt disallows /events/* and /feed for all bots, skipped; FSI is about half in the main feed; SIEPR (stanford_event JSON:API) had 1 upcoming, philosophy/physics/linguistics/sociology/psychology/politicalscience hs_event feeds had 0-2 or all duplicates. Sorting by date reads one page of the 50 latest dates, so a department that schedules more than 50 events beyond three weeks needs sort=-changed (as for Economics)."
+	},
+	{
+		"id": "yale",
+		"name": "Yale University",
+		"sources": [
+			{ "type": "ical", "url": "https://www.law.yale.edu/ylsevents.ics", "label": "Yale Law School", "institute": true, "events": 45, "food": 22 },
+			{ "type": "ical", "url": "https://fds.yale.edu/events.ics", "label": "Yale Institute for Foundations of Data Science (FDS)", "institute": true, "events": 7, "food": 0 },
+			{ "type": "json", "url": "https://economics.yale.edu/jsonapi/node/event?sort=-changed&page%5Blimit%5D=50&fields%5Bnode--event%5D=title,field_event_date,field_address_label,field_summary,path", "label": "Yale Economics seminars", "institute": true,
+				"fields": { "list": "data", "title": "attributes.title", "start": "attributes.field_event_date.value", "end": "attributes.field_event_date.end_value", "location": "attributes.field_address_label", "desc": "attributes.field_summary", "url": "attributes.path.alias" },
+				"note": "Drupal JSON:API (node--event), 50 most recently changed (seminars are created months ahead)", "events": 23, "food": 1 }
+		],
+		"notes": "Yale School of Medicine and YSPH calendars (medicine.yale.edu/calendar) only offer per-event ics downloads, no list feed; cpsc.yale.edu is Concrete CMS without a feed; Jackson, MacMillan, Wu Tsai, Tsai CITY are Drupal without JSON:API; Whitney Humanities Center embeds events.yale.edu (already read)."
+	},
+	{
+		"id": "caltech",
+		"name": "California Institute of Technology",
+		"sources": [
+			{ "type": "ical", "url": "https://www.astro.caltech.edu/calendar/ical", "label": "Caltech Astronomy", "institute": true, "events": 12, "food": 2 }
+		],
+		"notes": "Division calendars expose ical at www.eas.caltech.edu/events/seminars/ical, www.bbe.caltech.edu/calendar/ical, www.cms.caltech.edu/news-events/seminars/ical, www.ee.caltech.edu/events/ical, www.mce.caltech.edu/events/seminars/ical, mede.caltech.edu/events/seminars/ical, but every upcoming event is also on the Institute calendar, so they are skipped; galcit.caltech.edu fetch failed; IQIM, KISS, GSC WordPress have no events API; Caltech Y is Wix."
+	},
+	{
+		"id": "duke",
+		"name": "Duke University",
+		"sources": [
+			{ "type": "tribe", "url": "https://nasher.duke.edu", "label": "Nasher Museum of Art", "institute": true, "events": 5, "food": 0 }
+		],
+		"notes": "Pratt (pratt.duke.edu Tribe, 44 upcoming) duplicates calendar.duke.edu entirely; kenan.ethics.duke.edu robots.txt disallows /wp-json/ for all bots, skipped; law.duke.edu/events goes to Shibboleth login; Sanford, FHI, DIBS, Bass are Gatsby sites fed by calendar.duke.edu; Fuqua JSON:API node--events holds pages, not events."
+	},
+	{
+		"id": "upenn",
+		"name": "University of Pennsylvania",
+		"sources": [
+			{ "type": "tribe", "url": "https://events.engineering.upenn.edu", "label": "Penn Engineering (SEAS) seminars", "institute": true, "events": 27, "food": 0 }
+		],
+		"notes": "Vet (www.vet.upenn.edu Tribe) had only 3 upcoming; law, nursing, sas, physics 403; Annenberg, Economics, GSE, Weitzman, AI, PPE are Drupal without JSON:API (rss.xml is news); Engineering/CIS main sites are WordPress without an events type (events live on events.engineering.upenn.edu, used here)."
+	},
+	{
+		"id": "cornell",
+		"name": "Cornell University",
+		"sources": [
+			{ "type": "localist", "url": "https://events.weill.cornell.edu", "label": "Weill Cornell Medicine", "institute": true, "events": 117, "food": 1 },
+			{ "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/cornelltech/ical_cornelltech.ics", "label": "Cornell Tech (CampusGroups)", "institute": true, "events": 14, "food": 1 }
+		],
+		"notes": "Ithaca units (CS, Engineering, Bowers, Einaudi, A&S) embed events.cornell.edu (already read); gradschool 403; Cornell Tech's own events page has no feed (its WP REST returns HTML blobs); Cornell Law /events 404."
+	},
+	{
+		"id": "uchicago",
+		"name": "University of Chicago",
+		"sources": [
+			{ "type": "json", "url": "https://pme.uchicago.edu/jsonapi/node/event?sort=-changed&page%5Blimit%5D=50&fields%5Bnode--event%5D=title,field_event_dates,field_location,body,path", "label": "Pritzker School of Molecular Engineering", "institute": true,
+				"fields": { "list": "data", "title": "attributes.title", "start": "attributes.field_event_dates.value", "end": "attributes.field_event_dates.end_value", "location": "attributes.field_location", "desc": "attributes.body.value", "url": "attributes.path.alias" },
+				"note": "Drupal JSON:API (node--event), 50 most recently changed; url is a site path on pme.uchicago.edu", "events": 7, "food": 1 },
+			{ "type": "tribe", "url": "https://polsky.uchicago.edu", "label": "Polsky Center for Entrepreneurship and Innovation", "institute": true, "events": 12, "food": 1 },
+			{ "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/uchicagolaw/ical_uchicagolaw.ics", "label": "UChicago Law School student orgs (CampusGroups)", "institute": true, "events": 5, "food": 1 }
+		],
+		"notes": "economics.uchicago.edu JSON:API events are imported from events.uchicago.edu (duplicates); Harris 403; DSI and BFI WordPress have no events type; Law School rss.xml is news; ISAC, Institute of Politics, Neubauer, BSD Drupal without feeds; cs.uchicago.edu in maintenance."
+	},
+	{
+		"id": "jhu",
+		"name": "Johns Hopkins University",
+		"sources": [],
+		"notes": "No feed added. Nearly every JHU site (engineering, ai, carey, sais, publichealth, snfagora, krieger, physics-astronomy, econ, clsp, peabody, library, studentaffairs, hub, imagine, ventures) answers 403 to our bot; cs.jhu.edu and museums.jhu.edu run The Events Calendar but list no events."
+	},
+	{
+		"id": "northwestern",
+		"name": "Northwestern University",
+		"sources": [],
+		"notes": "No feed added. Department pages (ISEN calendar 14, Buffett 4833, Statistics) link PlanIt Purple calendars, but /feed/ical/<id> needs a user-made feed id (calendar ids 404); the legacy https://planitpurple.northwestern.edu/xmlfeed?cal=<ids>&days=N works (custom <planitpurple><event> XML with <start_datetime> epoch) and would need its own reader. McCormick, Medill, IPR are Cascade HTML; Feinberg 403."
+	}
+]
