@@ -498,7 +498,7 @@ const homePage = {
 		} else note.innerHTML = "";
 		refreshIcons();
 		const m = this.markers.get(id);
-		if (m) this.cluster.zoomToShowLayer(m, () => this.map.panTo([e.lat, e.lng]));
+		if (m) this.cluster.zoomToShowLayer(m, () => this.map?.panTo([e.lat, e.lng]));
 		else if (e.lat) this.map.flyTo([e.lat, e.lng], 16);
 	},
 	board() {
