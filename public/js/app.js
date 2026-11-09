@@ -668,8 +668,9 @@ async function campusPage(id) {
 	const u = S.byUni[id];
 	if (!u) { view.innerHTML = S.loaded ? `<div class="wrap"><div class="empty"><b>No such campus</b><a class="btn sm" href="#/campuses">All campuses</a></div></div>` : ""; return; }
 	view.innerHTML = `<div class="chero"><div class="inner"><h1>${esc(u.name)}</h1></div></div><div class="wrap"><div class="cbody"><div class="col"><div class="sk" style="height:220px"></div></div><div class="col"><div class="sk" style="height:300px"></div></div></div></div>`;
-	let all = [];
-	try { all = await campusEvents(id); } catch {}
+	let all = [], units = null;
+	await Promise.all([campusEvents(id).then((x) => (all = x)).catch(() => {}), getJson(`data/units/${id}.json`).then((x) => (units = x)).catch(() => {})]);
+	const unitById = Object.fromEntries((units?.units ?? []).map((x) => [x.id, x]));
 	if (current?.name !== "campus" || current.id !== id) return;
 	const now = Date.now(), wk = all.filter((e) => Date.parse(e.start) >= now - 36e5 && Date.parse(e.start) < now + 7 * 864e5);
 	const food = wk.filter(sure);
@@ -693,7 +694,7 @@ async function campusPage(id) {
 		const p = platformOf(f), st = f.status, hist = st?.history ?? [], max = Math.max(1, ...hist.map((h) => h.events));
 		return `<div class="entry ${top ? "best" : ""}">
 			<div class="head"><span class="logo-sq" style="width:46px;height:46px;background:${p.color}">${p.letter}</span>
-				<div class="names"><b>${esc(f.label ?? p.name)}</b><small>${esc(p.desc)}${f.institute ? " · institute" : ""}</small></div>
+				<div class="names"><b>${esc(f.label ?? p.name)}</b><small>${esc(p.desc)} · ${f.scope === "university" ? "university-wide" : unitById[f.unit] ? esc(unitById[f.unit].name) : f.institute ? "institute" : "campus"}</small></div>
 				${top ? `<span class="pill" style="background:var(--grape);color:#fff">Most free food</span>` : ""}
 				${st ? (st.ok ? `<span class="pill t-mint"><span class="dot"></span>Live</span>` : /robots/.test(st.error ?? "") ? `<span class="pill t-sun">Paused</span>` : `<span class="pill t-live">Failing</span>`) : `<span class="pill t-plain">Not checked yet</span>`}</div>
 			<a class="url" href="${esc(f.url)}" target="_blank" rel="noopener">${icon("radio-tower")}<span>${esc(shortUrl(f.url))}</span>${icon("copy", "out")}</a>
@@ -723,6 +724,7 @@ async function campusPage(id) {
 			</div></div></section>
 		<div class="wrap"><div class="cbody">
 			<div class="col">
+				${units ? unitsSection(units, u) : ""}
 				<div><h2 class="sec-title">📡 Live scraping entry points</h2><p class="sec-sub">Where we read ${esc(u.short ?? u.name)}'s events, how often, and what came back the last time we looked. Every 3 hours, public calendars only.</p></div>
 				${feeds.map((f, i) => entry(f, i === 0 && (f.status?.food ?? 0) > 0 && totalFood > 0 && feeds.length > 1)).join("") || `<div class="empty"><div class="e">🔎</div><b>No open calendar yet</b></div>`}
 				${plainNotes(u.notes) ? `<h3 class="sec-sub" style="font-weight:800;color:var(--muted);margin-top:6px">What we tried</h3><div class="tried">${icon("circle-slash")}<div>${esc(plainNotes(u.notes))}</div></div>` : ""}
@@ -744,6 +746,8 @@ async function campusPage(id) {
 	view.onclick = (ev) => {
 		const sc = ev.target.closest("[data-scope]");
 		if (sc) setScope(sc.dataset.scope);
+		const uf = ev.target.closest("#unitFilter button");
+		if (uf) { $$("#unitFilter button").forEach((b) => b.classList.toggle("on", b === uf)); $("#unitList").dataset.show = uf.dataset.v; }
 	};
 	writesAvailable().then((on) => { if (!on) $(".suggest")?.remove(); });
 	$("#suggest").onsubmit = async (ev) => {
@@ -752,6 +756,28 @@ async function campusPage(id) {
 		try { await getJson("api/suggest", { method: "POST", body: JSON.stringify({ uni: id, url }) }); ev.target.reset(); toast("Thanks: we'll take a look at it"); } catch (err) { toast(err.message); }
 	};
 	onLeave(() => (view.onclick = null));
+}
+
+// A campus's schools, departments, institutes and student bodies, and which of them we read.
+const UNIT_KINDS = [["school", "Schools"], ["department", "Departments"], ["institute", "Institutes"], ["center", "Centers and programs"], ["student", "Student bodies"], ["library", "Libraries"], ["museum", "Museums"], ["other", "Other"]];
+const UNIT_STATUS = {
+	feed: ["t-mint", "We read it"], "in-wide": ["t-sky", "On the main calendar"],
+	"no-feed": ["t-sun", "No feed"], blocked: ["t-live", "Blocks bots"], unchecked: ["t-plain", "Not checked"],
+};
+function unitsSection(units, u) {
+	const c = units.counts, read = c.feed + c["in-wide"];
+	const row = (x) => {
+		const [cls, label] = UNIT_STATUS[x.status] ?? UNIT_STATUS.unchecked;
+		const parent = x.parent && units.units.find((p) => p.id === x.parent);
+		return `<div class="unit ${["feed", "in-wide"].includes(x.status) ? "read" : "missing"}">
+			<span class="w"><b>${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>` : esc(x.name)}</b>${parent ? `<small>${esc(parent.name)}</small>` : ""}${x.note ? `<small class="why">${esc(x.note)}</small>` : ""}</span>
+			<span class="tag ${cls}">${label}</span></div>`;
+	};
+	return `<div><h2 class="sec-title">🏛️ What ${esc(u.short ?? u.name)} is made of</h2>
+		<p class="sec-sub">${c.units} schools, departments, institutes and student bodies. We read ${read}: ${c.feed} from their own feed, ${c["in-wide"]} through the university's main calendar. ${c.missing} we don't read yet.</p></div>
+		<div class="ubar"><i style="flex:${c.feed};background:var(--mint)"></i><i style="flex:${c["in-wide"]};background:var(--sky)"></i><i style="flex:${c["no-feed"]};background:var(--sun)"></i><i style="flex:${c.blocked};background:var(--live)"></i><i style="flex:${c.unchecked};background:var(--line-strong)"></i></div>
+		<div class="seg" id="unitFilter">${[["all", `All ${c.units}`], ["read", `Read ${read}`], ["missing", `Missing ${c.missing}`]].map(([v, l], i) => `<button data-v="${v}" class="${i ? "" : "on"}">${l}</button>`).join("")}</div>
+		<div class="units" id="unitList" data-show="all">${UNIT_KINDS.map(([k, l]) => { const xs = units.units.filter((x) => x.kind === k); return xs.length ? `<div class="ugroup"><h4>${l} <span>${xs.length}</span></h4>${xs.map(row).join("")}</div>` : ""; }).join("")}</div>`;
 }
 
 // =====================================================================
@@ -769,6 +795,7 @@ function campusesPage() {
 			<div class="r1"><span class="rk">${u.country === "US" ? "US" : u.country} #${u.rank}</span><span class="feeds">${u.sources.map((f) => `<span class="dot" style="background:${f.status ? (f.status.ok ? "var(--mint)" : /robots/.test(f.status.error ?? "") ? "var(--sun)" : "var(--live)") : "var(--faint)"}" title="${esc(f.label ?? "")}"></span>`).join("")}</span></div>
 			<h4>${esc(u.name)}</h4><span class="city">${esc(u.city ?? "")}</span>
 			${u.sources.length ? `<div class="big">${c[u.id] ?? 0}<small>with free food this week</small></div><span class="city">${u.sources.length} source${u.sources.length === 1 ? "" : "s"}: ${[...new Set(u.sources.map((f) => platformOf(f).name))].join(", ")}</span>` : `<span class="city">No open calendar found yet</span>`}
+			${u.coverage ? `<span class="city">${u.coverage.feed + u.coverage["in-wide"]} of ${u.coverage.units} schools, departments and institutes read</span>` : ""}
 		</a>`).join("");
 	};
 	view.innerHTML = `<div class="wrap">
