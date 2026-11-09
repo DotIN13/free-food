@@ -448,15 +448,7 @@
     "rank": 43,
     "lat": 40.5008,
     "lng": -74.4474,
-    "sources": [
-      {
-        "type": "tribe",
-        "url": "https://ifh.rutgers.edu/wp-json/tribe/events/v1/events?per_page=50",
-        "label": "Institute for Health, Health Care Policy and Aging Research",
-        "institute": true,
-        "events": 5
-      }
-    ],
+    "sources": [],
     "notes": "No university-wide feed: www.rutgers.edu/events is Drupal with no feed (/events/feed returns HTML); newbrunswick.rutgers.edu is behind a Cloudflare challenge; events.rutgers.edu goes to Cooperative Extension. getINVOLVED moved to 'The Arc' (Suitable app, no public feed). rutgers.campusgroups.com is Rutgers-Newark RaiderLink (151 events), not New Brunswick."
   },
   {
