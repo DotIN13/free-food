@@ -124,5 +124,48 @@
         "events": 1
       }
     ]
+  },
+  {
+    "id": "northwestern",
+    "name": "Northwestern University",
+    "sources": [
+      {
+        "type": "planitpurple",
+        "url": "https://planitpurple.northwestern.edu/xmlfeed",
+        "label": "PlanIt Purple (Northwestern's calendar)",
+        "maxId": 6000,
+        "note": "the legacy XML feed answers only for calendar ids it is given; ids 1-6000 are asked for in blocks",
+        "events": 732,
+        "food": 94
+      }
+    ]
+  },
+  {
+    "id": "harvard",
+    "name": "Harvard University",
+    "sources": [
+      {
+        "type": "rss",
+        "url": "https://cyber.harvard.edu/events/feed",
+        "label": "Berkman Klein Center for Internet & Society",
+        "institute": true,
+        "events": 4
+      }
+    ]
+  },
+  {
+    "id": "usc",
+    "name": "University of Southern California",
+    "sources": [
+      {
+        "type": "rss",
+        "url": "https://viterbi.usc.edu/events/admin/feed.php",
+        "label": "USC Viterbi School of Engineering",
+        "institute": true,
+        "note": "date only, as MM/DD/YYYY at the start of each title",
+        "events": 42,
+        "food": 10
+      }
+    ]
   }
 ]
