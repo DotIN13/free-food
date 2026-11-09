@@ -11,6 +11,9 @@ const S = {
 	unis: [], byUni: {}, events: [], counts: {}, at: 0, total: 0, loaded: false, error: null, status: null,
 	scope: store.getItem("scope") || "",
 	when: "soon",
+	// What the list shows: "free" (the text says the food is free), "food" (food is named), "all" (every event).
+	show: ["free", "food", "all"].includes(store.getItem("show")) ? store.getItem("show") : "free",
+	others: null,
 	cat: null, q: "", sel: null,
 	me: JSON.parse(store.getItem("me") || "null"),
 	saved: JSON.parse(store.getItem("saved") || "{}"),
@@ -24,6 +27,15 @@ const srcOf = (e) => S.byUni[e.uni]?.sources.find((x) => x.url === e.srcUrl);
 const distOf = (e) => (S.me && e.lat && !e.online ? km(S.me, e) : null);
 const walkOf = (e) => { const d = distOf(e); return d == null || d > 15 ? null : walkMin(d); };
 const sure = (e) => e.food?.level === "sure";
+const shown = (e, show = S.show) => (show === "all" ? true : show === "food" ? !!e.food : sure(e));
+const SHOWS = [["free", "Free food"], ["food", "Food mentioned"], ["all", "All events"]];
+// Every other event, fetched the first time someone picks "All events".
+async function loadOthers() {
+	if (S.others) return;
+	try { S.others = (await getJson("data/all.json")).events; }
+	catch { S.others = []; toast("Couldn't load the other events"); }
+}
+const allEvents = () => (S.others ? S.events.concat(S.others) : S.events);
 const refreshIcons = () => window.lucide?.createIcons({ attrs: { "stroke-width": 2 } });
 let cleanups = [];
 const onLeave = (fn) => cleanups.push(fn);
@@ -46,6 +58,8 @@ async function loadBase() {
 		S.unis = unis;
 		S.byUni = Object.fromEntries(unis.map((u) => [u.id, u]));
 		Object.assign(S, { events: home.events, counts: home.counts, at: home.at, meta, loaded: true, error: null });
+		S.others = null;
+		if (S.show === "all") await loadOthers();
 		$("#banner").hidden = true;
 	} catch (err) {
 		S.error = err;
@@ -103,7 +117,7 @@ async function campusEvents(uni) {
 // An event by its reference: "uni/id" in links; a bare id is looked up in what is already loaded.
 async function findEvent(ref) {
 	let [uni, id] = String(ref).includes("/") ? String(ref).split("/") : [null, ref];
-	const known = S.events.find((x) => x.id === id) ?? S.saved[id];
+	const known = allEvents().find((x) => x.id === id) ?? S.saved[id];
 	uni ??= known?.uni;
 	if (uni) { try { const full = (await campusEvents(uni)).find((x) => x.id === id); if (full) return full; } catch {} }
 	return known ?? null;
@@ -176,7 +190,7 @@ function makeMap(el, opts = {}) {
 	return map;
 }
 const pinIcon = (e, big) => L.divIcon({ className: "", iconSize: big ? [56, 56] : [44, 44], iconAnchor: big ? [28, 28] : [22, 22],
-	html: `<div class="pin ${big ? "big" : ""} ${e.where === "campus" ? "approx" : ""}" style="${big ? "" : `border-color:${sure(e) ? "var(--tomato)" : "var(--sun)"}`}">${catOf(e).em}</div>` });
+	html: `<div class="pin ${big ? "big" : ""} ${e.where === "campus" ? "approx" : ""}" style="${big ? "" : `border-color:${sure(e) ? "var(--tomato)" : e.food ? "var(--sun)" : "var(--line-strong)"}`}">${catOf(e).em}</div>` });
 const meIcon = () => L.divIcon({ className: "", html: '<div class="me"></div>', iconSize: [22, 22], iconAnchor: [11, 11] });
 
 // ---------- router
@@ -215,9 +229,9 @@ function route() {
 // =====================================================================
 const homePage = {
 	alive: false, map: null, cluster: null, markers: new Map(), meMarker: null,
-	scoped() {
+	scoped(show = S.show) {
 		const q = S.q.trim().toLowerCase();
-		const base = S.events.filter((e) => sure(e) && (!q || `${e.title} ${e.location} ${e.org ?? ""} ${e.desc} ${shortOf(e.uni)}`.toLowerCase().includes(q)));
+		const base = (show === "all" ? allEvents() : S.events).filter((e) => shown(e, show) && (!q || `${e.title} ${e.location} ${e.org ?? ""} ${e.desc} ${shortOf(e.uni)}`.toLowerCase().includes(q)));
 		this.fallbackUni = null;
 		if (S.scope === "near" && S.me) {
 			const near = base.filter((e) => !e.online && (distOf(e) ?? 1e9) <= NEAR_KM);
@@ -259,7 +273,7 @@ const homePage = {
 	},
 	list() {
 		const cat = S.cat && FOODS.find((f) => f.key === S.cat);
-		return this.scoped().filter((e) => inWindow(e, S.when, tzOf(e)) && (!cat || foodsOf(e).some((f) => f.key === cat.key)));
+		return this.scoped(S.show).filter((e) => inWindow(e, S.when, tzOf(e)) && (!cat || foodsOf(e).some((f) => f.key === cat.key)));
 	},
 	render(openId) {
 		if (this.map) { try { this.map.remove(); } catch {} this.map = null; }
@@ -293,7 +307,9 @@ const homePage = {
 	},
 	update({ recenter = false } = {}) {
 		if (!$("#heroText")) return;
-		const scoped = this.scoped();
+		// The headline, picks and spotlight are always about free food; the filter changes the list, chips and map.
+		const listed = this.scoped(S.show);
+		const scoped = this.scoped("free");
 		const near = S.scope === "near" && S.me;
 		const around = near ? (this.fallbackUni ?? nearestUnis(S.me, 1)[0]) : null;
 		const tz = near ? around?.u.tz : S.scope && S.scope !== "near" ? S.byUni[S.scope]?.tz : undefined;
@@ -313,7 +329,7 @@ const homePage = {
 			: onNow.length
 			? `Hungry? ${onNow.length} free meal${onNow.length === 1 ? "" : "s"}<span>${onNow.length === 1 ? "is" : "are"} on right now.</span>`
 			: next ? `Hungry? The next free meal<span>is ${when(next)}.</span>` : `Hungry?<span>Nothing listed here yet.</span>`;
-		const week = scoped.filter((e) => inWindow(e, "week", tzOf(e)));
+		const week = listed.filter((e) => inWindow(e, "week", tzOf(e)));
 		const chips = FOODS.map((f) => ({ ...f, n: week.filter((e) => foodsOf(e).some((x) => x.key === f.key)).length })).filter((f) => f.n).sort((a, b) => b.n - a.n).slice(0, 7);
 		$("#heroText").innerHTML = `
 			<span class="pill kicker">${near ? `📍 Near you${around ? ` · around ${esc(around.u.short ?? around.u.name)}` : ""}` : `🔥 ${fmt(new Date().toISOString(), tz, { weekday: "long" })}`} · ${fmt(new Date().toISOString(), tz, { hour: "numeric", minute: "2-digit" })} ${tz ? "local" : "your time"}</span>
@@ -322,6 +338,7 @@ const homePage = {
 			${this.locbar()}
 			<div class="chips">
 				<label class="chip scope-chip">${icon("map-pin")}<select id="scope" aria-label="Campus">${scopeOptions()}</select></label>
+				<label class="chip scope-chip show-chip ${S.show !== "free" ? "on" : ""}">${icon("utensils")}<select id="show" aria-label="Show">${SHOWS.map(([v, l]) => `<option value="${v}" ${S.show === v ? "selected" : ""}>${l}</option>`).join("")}</select></label>
 				${chips.map((c) => `<button class="chip ${S.cat === c.key ? "on" : ""}" data-cat="${c.key}"><span>${c.em}</span>${c.label}<span class="n">${c.n}</span></button>`).join("")}
 			</div>`;
 		$("#spotWrap").innerHTML = first ? this.spot(first, near ? recs[0].why : null) : next ? this.spot(this.pickSpot(scoped) ?? next) : "";
@@ -385,7 +402,7 @@ const homePage = {
 				<span class="when"><b>${tp.t}${tp.ap ? ` ${tp.ap}` : ""}</b>${st.live ? `<span class="tag t-live">● LIVE</span>` : `<span>${st.text}</span>`}${S.scope ? "" : `<span>· ${esc(shortOf(e.uni))}</span>`}</span>
 				<h4>${esc(e.title)}</h4>
 				<span class="place">${e.online ? "💻 Online" : esc(e.location || "On campus")}${e.org ? ` · ${esc(e.org)}` : ""}</span>
-				<span class="tags"><span class="tag t-mint">${icon("check")}${foods.length && foods[0].key !== "snacks" ? `${foods[0].label} provided` : "Free food"}</span>${w ? `<span class="tag t-sky">🚶 ${w} min</span>` : ""}</span>
+				<span class="tags">${sure(e) ? `<span class="tag t-mint">${icon("check")}${foods.length && foods[0].key !== "snacks" ? `${foods[0].label} provided` : "Free food"}</span>` : e.food ? `<span class="tag t-sky">${foods[0]?.em ?? "🍽️"} ${esc((e.food.words ?? [])[0] ?? "food")} mentioned</span>` : ""}${w ? `<span class="tag t-sky">🚶 ${w} min</span>` : ""}</span>
 			</span>
 			<span class="heart ${isSaved(e.id) ? "on" : ""}" data-save="${e.id}" role="button" aria-label="Save">${icon("heart")}</span>
 		</button>`;
@@ -403,7 +420,7 @@ const homePage = {
 		if (S.me && S.when === "soon") list.sort((a, b) => (distOf(a) ?? 1e9) - (distOf(b) ?? 1e9));
 		const box = $("#list");
 		if (!list.length) {
-			box.innerHTML = `<div class="empty"><div class="e">🍽️</div><b>No free food ${S.when === "soon" ? "in the next few hours" : "in this window"}</b>${S.when !== "all" ? `<button class="btn sm" data-widen>Show the next 3 weeks</button>` : "Try another campus."}</div>`;
+			box.innerHTML = `<div class="empty"><div class="e">🍽️</div><b>No ${S.show === "all" ? "events" : S.show === "food" ? "food" : "free food"} ${S.when === "soon" ? "in the next few hours" : "in this window"}</b>${S.when !== "all" ? `<button class="btn sm" data-widen>Show the next 3 weeks</button>` : "Try another campus."}</div>`;
 		} else {
 			const limit = this.limit ?? 40;
 			let html = "", day = "";
@@ -446,7 +463,7 @@ const homePage = {
 		this.cluster.addLayers(layers);
 	},
 	open(id) {
-		if (narrow() && current?.name !== "map") { const e = S.events.find((x) => x.id === id); location.hash = `#/event/${e ? ref(e) : id}`; return; }
+		if (narrow() && current?.name !== "map") { const e = allEvents().find((x) => x.id === id); location.hash = `#/event/${e ? ref(e) : id}`; return; }
 		location.hash = current?.name === "map" ? `#/map` : `#/e/${id}`;
 		if (current?.name === "map") this.select(id);
 	},
@@ -455,13 +472,13 @@ const homePage = {
 		S.sel = id;
 		$$(".ev.sel").forEach((n) => n.classList.remove("sel"));
 		for (const pid of [prev, id]) {
-			const m = this.markers.get(pid), e = S.events.find((x) => x.id === pid);
+			const m = this.markers.get(pid), e = allEvents().find((x) => x.id === pid);
 			if (m && e) m.setIcon(pinIcon(e, pid === id));
 		}
 		const crumb = $("#crumb"), peek = $("#peekWrap"), note = $("#mapNote");
 		if (this.route) { this.map?.removeLayer(this.route); this.route = null; }
 		if (!id) { crumb.hidden = true; peek.innerHTML = ""; note.innerHTML = ""; return; }
-		const e = S.events.find((x) => x.id === id);
+		const e = allEvents().find((x) => x.id === id);
 		if (!e) { location.hash = `#/event/${id}`; return; }
 		$(`.ev[data-open="${id}"]`)?.classList.add("sel");
 		$(`.ev[data-open="${id}"]`)?.scrollIntoView({ block: "nearest", behavior: "smooth" });
@@ -495,7 +512,7 @@ const homePage = {
 	wire() {
 		view.onclick = (ev) => {
 			const save = ev.target.closest("[data-save]");
-			if (save) { ev.preventDefault(); ev.stopPropagation(); const e = S.events.find((x) => x.id === save.dataset.save); if (e) toggleSave(e); return; }
+			if (save) { ev.preventDefault(); ev.stopPropagation(); const e = allEvents().find((x) => x.id === save.dataset.save); if (e) toggleSave(e); return; }
 			if (ev.target.closest("a")) return;
 			const cat = ev.target.closest("[data-cat]");
 			if (cat) { S.cat = S.cat === cat.dataset.cat ? null : cat.dataset.cat; this.limit = 40; this.update(); return; }
@@ -513,6 +530,14 @@ const homePage = {
 		};
 		// The campus filter beside the food chips: refills the hero, picks, list and map in place.
 		view.onchange = async (ev) => {
+			if (ev.target.id === "show") {
+				S.show = ev.target.value;
+				store.setItem("show", S.show);
+				if (S.show === "all" && !S.others) { $("#list").innerHTML = '<div class="sk" style="height:120px"></div>'.repeat(3); await loadOthers(); }
+				this.limit = 40;
+				this.update();
+				return;
+			}
 			if (ev.target.id !== "scope") return;
 			const v = ev.target.value;
 			if (v === "near" && !S.me && !(await locate())) { this.pickOnMap(); ev.target.value = S.scope; return; }
