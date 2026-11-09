@@ -1,0 +1,130 @@
+[
+	{
+		"id": "brown",
+		"name": "Brown University",
+		"sources": [
+			{ "type": "livewhale", "url": "https://events.brown.edu/live/json/events/group/School%20of%20Public%20Health/max/100", "label": "Brown School of Public Health", "institute": true, "events": 39, "food": 0 },
+			{ "type": "livewhale", "url": "https://events.brown.edu/live/json/events/group/Graduate%20School/max/100", "label": "Brown Graduate School", "institute": true, "events": 20, "food": 0 },
+			{ "type": "livewhale", "url": "https://events.brown.edu/live/json/events/group/Computer%20Science/max/100", "label": "Brown Computer Science", "institute": true, "events": 16, "food": 0 },
+			{ "type": "livewhale", "url": "https://events.brown.edu/live/json/events/group/Cogut%20Institute%20for%20the%20Humanities/max/100", "label": "Cogut Institute for the Humanities", "institute": true, "events": 9, "food": 0 },
+			{ "type": "livewhale", "url": "https://events.brown.edu/live/json/events/group/School%20of%20Engineering/max/100", "label": "Brown School of Engineering", "institute": true, "events": 17, "food": 0 },
+			{ "type": "livewhale", "url": "https://events.brown.edu/live/json/events/group/Nelson%20Center%20for%20Entrepreneurship/max/100", "label": "Nelson Center for Entrepreneurship", "institute": true, "events": 10, "food": 0 }
+		],
+		"notes": "Events@Brown groups only add their group-only events (Watson 46/48, DSI 8/9 already on the main feed, so skipped); cs.brown.edu/watson/dsi sites draw from events.brown.edu"
+	},
+	{
+		"id": "columbia",
+		"name": "Columbia University",
+		"sources": [
+			{ "type": "json", "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21", "label": "Columbia University Events (main calendar)", "fields": { "list": "bwEventList.events", "title": "summary", "start": "startDate", "end": "endDate", "location": "location.address", "desc": "description", "url": "eventlink" }, "note": "Columbia's main Bedework calendar (events.columbia.edu MainCal) feeder JSON, not filtered; capped at 100 events (~3 days), no paging; the org/ feeds below carry the rest. All-day events give a bare date", "institute": false, "events": 80, "food": 16 },
+			{ "type": "json", "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FUniversityEvents%22%29", "label": "Columbia University Events (University Events office)", "fields": { "list": "bwEventList.events", "title": "summary", "start": "startDate", "end": "endDate", "location": "location.address", "desc": "description", "url": "eventlink" }, "note": "Columbia Bedework feeder (events.columbia.edu MainCal) filtered to category org/UniversityEvents; 100 per request max, no paging; all-day events give a bare date (read as UTC midnight)", "institute": true, "events": 90, "food": 18 },
+			{ "type": "json", "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2Flaw%22%29", "label": "Columbia Law School", "fields": { "list": "bwEventList.events", "title": "summary", "start": "startDate", "end": "endDate", "location": "location.address", "desc": "description", "url": "eventlink" }, "note": "Columbia Bedework feeder (events.columbia.edu MainCal) filtered to category org/law; 100 per request max, no paging; all-day events give a bare date (read as UTC midnight)", "institute": true, "events": 53, "food": 16 },
+			{ "type": "json", "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2Fcumc%22%29", "label": "Columbia University Irving Medical Center", "fields": { "list": "bwEventList.events", "title": "summary", "start": "startDate", "end": "endDate", "location": "location.address", "desc": "description", "url": "eventlink" }, "note": "Columbia Bedework feeder (events.columbia.edu MainCal) filtered to category org/cumc; 100 per request max, no paging; all-day events give a bare date (read as UTC midnight)", "institute": true, "events": 48, "food": 6 },
+			{ "type": "json", "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FPublicHealth%22%29", "label": "Columbia Mailman School of Public Health", "fields": { "list": "bwEventList.events", "title": "summary", "start": "startDate", "end": "endDate", "location": "location.address", "desc": "description", "url": "eventlink" }, "note": "Columbia Bedework feeder (events.columbia.edu MainCal) filtered to category org/PublicHealth; 100 per request max, no paging; all-day events give a bare date (read as UTC midnight)", "institute": true, "events": 29, "food": 4 },
+			{ "type": "json", "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2Fgs%22%29", "label": "Columbia School of General Studies", "fields": { "list": "bwEventList.events", "title": "summary", "start": "startDate", "end": "endDate", "location": "location.address", "desc": "description", "url": "eventlink" }, "note": "Columbia Bedework feeder (events.columbia.edu MainCal) filtered to category org/gs; 100 per request max, no paging; all-day events give a bare date (read as UTC midnight)", "institute": true, "events": 32, "food": 7 },
+			{ "type": "json", "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FCCS%22%29", "label": "Columbia College & Engineering Career Services", "fields": { "list": "bwEventList.events", "title": "summary", "start": "startDate", "end": "endDate", "location": "location.address", "desc": "description", "url": "eventlink" }, "note": "Columbia Bedework feeder (events.columbia.edu MainCal) filtered to category org/CCS; 100 per request max, no paging; all-day events give a bare date (read as UTC midnight)", "institute": true, "events": 20, "food": 5 },
+			{ "type": "json", "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FLDEO%22%29", "label": "Lamont-Doherty Earth Observatory", "fields": { "list": "bwEventList.events", "title": "summary", "start": "startDate", "end": "endDate", "location": "location.address", "desc": "description", "url": "eventlink" }, "note": "Columbia Bedework feeder (events.columbia.edu MainCal) filtered to category org/LDEO; 100 per request max, no paging; all-day events give a bare date (read as UTC midnight)", "institute": true, "events": 16, "food": 1 },
+			{ "type": "json", "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FSIPA_HarrimanInstitute%22%29", "label": "Harriman Institute (SIPA)", "fields": { "list": "bwEventList.events", "title": "summary", "start": "startDate", "end": "endDate", "location": "location.address", "desc": "description", "url": "eventlink" }, "note": "Columbia Bedework feeder (events.columbia.edu MainCal) filtered to category org/SIPA_HarrimanInstitute; 100 per request max, no paging; all-day events give a bare date (read as UTC midnight)", "institute": true, "events": 8, "food": 1 },
+			{ "type": "json", "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2Fcu_libraries%22%29", "label": "Columbia University Libraries", "fields": { "list": "bwEventList.events", "title": "summary", "start": "startDate", "end": "endDate", "location": "location.address", "desc": "description", "url": "eventlink" }, "note": "Columbia Bedework feeder (events.columbia.edu MainCal) filtered to category org/cu_libraries; 100 per request max, no paging; all-day events give a bare date (read as UTC midnight)", "institute": true, "events": 22, "food": 0 },
+			{ "type": "json", "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&skinName=list-json&count=100&days=21&fexpr=%28categories.href%3D%22%2Fpublic%2F.bedework%2Fcategories%2Forg%2FNeurology%22%29", "label": "Columbia Neurology (CUIMC)", "fields": { "list": "bwEventList.events", "title": "summary", "start": "startDate", "end": "endDate", "location": "location.address", "desc": "description", "url": "eventlink" }, "note": "Columbia Bedework feeder (events.columbia.edu MainCal) filtered to category org/Neurology; 100 per request max, no paging; all-day events give a bare date (read as UTC midnight)", "institute": true, "events": 14, "food": 0 },
+			{ "type": "ical", "url": "https://static-prod-us-east-1.campusgroups.com/ical/columbiaengineering/ical_columbiaengineering.ics", "label": "Columbia Engineering (SEAS)", "note": "CampusGroups public ics (SEAS tenant: colloquia, seminars); SUMMARY/DESCRIPTION use ;ENCODING=QUOTED-PRINTABLE params", "institute": true, "events": 14, "food": 2 }
+		],
+		"notes": "events.columbia.edu web pages, Data Science Institute, Engineering, SIPA, Journalism, Zuckerman and stat sites sit behind a Cloudflare challenge; only the Bedework /feeder/ path answers"
+	},
+	{
+		"id": "dartmouth",
+		"name": "Dartmouth College",
+		"sources": [
+			{ "type": "ical", "url": "https://libcal.dartmouth.edu/ical_subscribe.php?src=p&cid=214", "label": "Dartmouth Libraries (LibCal)", "institute": true, "events": 14, "food": 0 },
+			{ "type": "tribe", "url": "https://dickey.dartmouth.edu", "label": "Dickey Center for International Understanding", "institute": true, "events": 4, "food": 0 }
+		],
+		"notes": "Tuck, Thayer (engineering.dartmouth.edu), Rockefeller and Leslie Center list events only as HTML or pull from events.dartmouth.edu; Geisel events feed empty; hop.dartmouth.edu 403"
+	},
+	{
+		"id": "ucla",
+		"name": "University of California, Los Angeles",
+		"sources": [
+			{ "type": "tribe", "url": "https://humanities.ucla.edu", "label": "UCLA Humanities Division", "institute": true, "events": 10, "food": 2 },
+			{ "type": "tribe", "url": "https://english.ucla.edu", "label": "UCLA English Department", "institute": true, "events": 8, "food": 2 },
+			{ "type": "tribe", "url": "https://www.history.ucla.edu", "label": "UCLA History Department", "institute": true, "events": 13, "food": 0 },
+			{ "type": "tribe", "url": "https://linguistics.ucla.edu", "label": "UCLA Linguistics", "institute": true, "events": 14, "food": 0 },
+			{ "type": "tribe", "url": "https://www.chemistry.ucla.edu", "label": "UCLA Chemistry & Biochemistry", "institute": true, "events": 8, "food": 0 },
+			{ "type": "tribe", "url": "https://seis.ucla.edu", "label": "UCLA School of Education & Information Studies", "institute": true, "events": 5, "food": 1 },
+			{ "type": "tribe", "url": "https://ccpr.ucla.edu", "label": "California Center for Population Research", "institute": true, "events": 3, "food": 2 },
+			{ "type": "tribe", "url": "https://comm.ucla.edu", "label": "UCLA Communication", "institute": true, "events": 3, "food": 1 },
+			{ "type": "ical", "url": "https://www.ee.ucla.edu/events.ics", "label": "UCLA Electrical & Computer Engineering", "institute": true, "events": 3, "food": 0 }
+		],
+		"notes": "No campus-wide calendar (ucla.edu/events is curated HTML); Luskin tribe API 403s after a few requests; Law, Anderson, Fielding, Geffen/medschool, Hammer are Drupal HTML only; Samueli/CS Events Manager ics nearly empty; uclahealth.org Cloudflare; Music tribe has no UTC times; ucla CampusGroups tenant stale"
+	},
+	{
+		"id": "berkeley",
+		"name": "University of California, Berkeley",
+		"sources": [
+			{ "type": "tribe", "url": "https://www.law.berkeley.edu", "label": "Berkeley Law", "institute": true, "events": 49, "food": 28 }
+		],
+		"notes": "events.berkeley.edu groups (EECS, Economics, Townsend, Haas, Chemistry...) are all already in the main LiveWhale feed (it returns ~4000 events with Accept: json); Simons, BAIR, CDSS, BIDS, Goldman, Matrix have no feed; haas.berkeley.edu tribe is mostly off-campus alumni events; CalLink needs login"
+	},
+	{
+		"id": "notre-dame",
+		"name": "University of Notre Dame",
+		"sources": [
+			{ "type": "ical", "url": "https://global.nd.edu/news-events/events.ics", "label": "Notre Dame Global (international students and scholars)", "institute": true, "events": 46, "food": 2 },
+			{ "type": "ical", "url": "https://physics.nd.edu/news-events/events.ics", "label": "Notre Dame Physics & Astronomy", "institute": true, "events": 12, "food": 1 },
+			{ "type": "ical", "url": "https://asia.nd.edu/events.ics", "label": "Liu Institute for Asia and Asian Studies", "institute": true, "events": 12, "food": 1 },
+			{ "type": "ical", "url": "https://math.nd.edu/events.ics", "label": "Notre Dame Mathematics", "institute": true, "events": 11, "food": 0 },
+			{ "type": "ical", "url": "https://nanovic.nd.edu/events.ics", "label": "Nanovic Institute for European Studies", "institute": true, "events": 10, "food": 0 },
+			{ "type": "ical", "url": "https://romancelanguages.nd.edu/news-events/events.ics", "label": "Notre Dame Romance Languages", "institute": true, "events": 10, "food": 1 },
+			{ "type": "ical", "url": "https://economics.nd.edu/events.ics", "label": "Notre Dame Economics", "institute": true, "events": 9, "food": 2 },
+			{ "type": "ical", "url": "https://theology.nd.edu/events.ics", "label": "Notre Dame Theology", "institute": true, "events": 9, "food": 3 },
+			{ "type": "ical", "url": "https://chemistry.nd.edu/events.ics", "label": "Notre Dame Chemistry & Biochemistry", "institute": true, "events": 7, "food": 0 },
+			{ "type": "ical", "url": "https://irishstudies.nd.edu/events.ics", "label": "Keough-Naughton Institute for Irish Studies", "institute": true, "events": 7, "food": 2 },
+			{ "type": "ical", "url": "https://architecture.nd.edu/events.ics", "label": "Notre Dame School of Architecture", "institute": true, "events": 6, "food": 0 },
+			{ "type": "ical", "url": "https://psychology.nd.edu/news-events/events.ics", "label": "Notre Dame Psychology", "institute": true, "events": 6, "food": 1 },
+			{ "type": "ical", "url": "https://latinostudies.nd.edu/news-events/events.ics", "label": "Institute for Latino Studies", "institute": true, "events": 6, "food": 1 },
+			{ "type": "ical", "url": "https://english.nd.edu/news-events/events.ics", "label": "Notre Dame English", "institute": true, "events": 5, "food": 0 },
+			{ "type": "ical", "url": "https://kroc.nd.edu/news-events/events.ics", "label": "Kroc Institute for International Peace Studies", "institute": true, "events": 4, "food": 0 }
+		],
+		"notes": "ND department sites expose /events.ics or /news-events/events.ics (most events not on events.nd.edu); events.nd.edu/events/calendar/<cat>.ics exist but all repeat the main feed; Mendoza Cloudflare; Keough School, Kellogg, Lucy, CSE, Engineering have no feed"
+	},
+	{
+		"id": "vanderbilt",
+		"name": "Vanderbilt University",
+		"sources": [
+			{ "type": "livewhale", "url": "https://events.vanderbilt.edu/live/json/events/group/Owen/max/100", "label": "Owen Graduate School of Management", "institute": true, "events": 29, "food": 3 },
+			{ "type": "livewhale", "url": "https://events.vanderbilt.edu/live/json/events/group/Robert%20Penn%20Warren%20Center%20for%20the%20Humanities/max/100", "label": "Robert Penn Warren Center for the Humanities", "institute": true, "events": 8, "food": 2 }
+		],
+		"notes": "other Events@Vanderbilt groups (Law, Engineering, Provost, BRET) are almost all on the main feed; VUMC and medschool sites have no events feed; no tribe on vanderbilt.edu sites"
+	},
+	{
+		"id": "cmu",
+		"name": "Carnegie Mellon University",
+		"sources": [
+			{ "type": "ical", "url": "https://www.cs.cmu.edu/calendar/export.ics", "label": "CMU School of Computer Science", "institute": true, "events": 49, "food": 7 },
+			{ "type": "livewhale", "url": "https://events.cmu.edu/live/json/events/group/Dietrich%20College%20of%20Humanities%20and%20Social%20Sciences/max/100", "label": "Dietrich College of Humanities and Social Sciences", "institute": true, "events": 84, "food": 0 },
+			{ "type": "livewhale", "url": "https://events.cmu.edu/live/json/events/group/Student%20Affairs/max/100", "label": "CMU Student Affairs", "institute": true, "events": 75, "food": 1 },
+			{ "type": "livewhale", "url": "https://events.cmu.edu/live/json/events/group/Mathematical%20Sciences%20Department/max/100", "label": "CMU Mathematical Sciences", "institute": true, "events": 20, "food": 0 },
+			{ "type": "livewhale", "url": "https://events.cmu.edu/live/json/events/group/Physics%20Department/max/100", "label": "CMU Physics", "institute": true, "events": 14, "food": 0 },
+			{ "type": "livewhale", "url": "https://events.cmu.edu/live/json/events/group/Civil%20and%20Environmental%20Engineering%20Department/max/100", "label": "CMU Civil & Environmental Engineering", "institute": true, "events": 7, "food": 0 },
+			{ "type": "livewhale", "url": "https://events.cmu.edu/live/json/events/group/Chemistry%20Department/max/100", "label": "CMU Chemistry", "institute": true, "events": 6, "food": 0 },
+			{ "type": "livewhale", "url": "https://events.cmu.edu/live/json/events/group/Mellon%20College%20of%20Science/max/100", "label": "Mellon College of Science", "institute": true, "events": 6, "food": 0 },
+			{ "type": "livewhale", "url": "https://events.cmu.edu/live/json/events/group/Heinz%20College%20of%20Information%20Systems%20and%20Public%20Policy/max/100", "label": "Heinz College (events.cmu.edu)", "institute": true, "events": 21, "food": 0 }
+		],
+		"notes": "Tepper, College of Engineering, CyLab, ECE groups have 0-3 events; RI tribe has 1; ML/LTI/HCII event pages are HTML only"
+	},
+	{
+		"id": "washu",
+		"name": "Washington University in St. Louis",
+		"sources": [
+			{ "type": "tribe", "url": "https://law.washu.edu", "label": "WashU Law", "institute": true, "events": 24, "food": 0 }
+		],
+		"notes": "Olin, McKelvey, Brown School, Arts & Sciences sites have no tribe/ics and show Happenings (Localist) events; publichealth and Kemper 403"
+	},
+	{
+		"id": "emory",
+		"name": "Emory University",
+		"sources": [
+			{ "type": "ical", "url": "https://www.trumba.com/calendars/tyling-test-calendar.ics", "label": "Goizueta Business School", "note": "Trumba calendar named 'All Goizueta Events' (web name tyling-test-calendar, found on goizueta.emory.edu/events)", "institute": true, "events": 35, "food": 5 }
+		],
+		"notes": "Rollins (sph.emory.edu) events are Drupal HTML, rss.xml is faculty profiles; Emory Law Trumba calendar emory-school-of-law-school-of-law-events-general is empty; College and CS use emory-events"
+	}
+]

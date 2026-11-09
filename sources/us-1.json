@@ -116,6 +116,13 @@
         "url": "https://events.stanford.edu",
         "label": "Stanford Events",
         "events": 873
+      },
+      {
+        "type": "statamic",
+        "url": "https://hai.stanford.edu/cms/api/collections/events/entries",
+        "label": "Stanford HAI (Human-Centered AI)",
+        "institute": true,
+        "events": 14
       }
     ],
     "notes": "Localist also exposes https://events.stanford.edu/calendar/1.ics (1378 upcoming). No public student-org platform found (no CampusGroups or Engage tenant); department/institute feeds tried (cs.stanford.edu, hoover.org, SLAC) 404."

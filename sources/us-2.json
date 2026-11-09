@@ -375,10 +375,11 @@
     "sources": [
       {
         "type": "ical",
-        "url": "https://today.wisc.edu/events.ics?per_page=500",
+        "url": "https://today.wisc.edu/events.ics?per_page=200",
         "label": "UW-Madison Events Calendar",
         "events": 194,
-        "note": "Default is 20 events; per_page raises it (about 200 max). JSON at /events.json?per_page=100 (array with title, description, location, start/end)."
+        "note": "Default is 20 events; per_page raises it (about 200 max). JSON at /events.json?per_page=100 (array with title, description, location, start/end).",
+        "pages": 8
       },
       {
         "type": "rss",

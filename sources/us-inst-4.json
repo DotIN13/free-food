@@ -1,0 +1,468 @@
+[
+  {
+    "id": "ucsb",
+    "name": "University of California, Santa Barbara",
+    "sources": [
+      {
+        "type": "localist",
+        "url": "https://www.campuscalendar.ucsb.edu",
+        "label": "UCSB Campus Calendar (Localist, all departments)",
+        "note": "The Localist behind events.ucsb.edu; this host answers the API without the 403.",
+        "events": 215,
+        "food": 20
+      }
+    ],
+    "notes": "Engineering/CS/Bren sites have no event feed (Drupal rss.xml is news; bren.ucsb.edu/events 500); IHC tribe feed duplicates the Localist; Physics Google Calendar only 3 upcoming."
+  },
+  {
+    "id": "uw-madison",
+    "name": "University of Wisconsin-Madison",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://today.wisc.edu/events/feed/387.ics?per_page=200",
+        "label": "Department of Computer Sciences",
+        "institute": true,
+        "tz": "America/Chicago",
+        "note": "today.wisc.edu group feed; runs weeks ahead, while the main events.ics stops at 200 events (about 5 days).",
+        "events": 20,
+        "food": 3
+      },
+      {
+        "type": "ical",
+        "url": "https://today.wisc.edu/events/feed/462.ics?per_page=200",
+        "label": "Department of Mathematics seminars",
+        "institute": true,
+        "tz": "America/Chicago",
+        "note": "today.wisc.edu group feed; runs weeks ahead, while the main events.ics stops at 200 events (about 5 days).",
+        "events": 57,
+        "food": 1
+      },
+      {
+        "type": "ical",
+        "url": "https://today.wisc.edu/events/feed/404.ics?per_page=200",
+        "label": "Data Science Institute / Data Science Hub",
+        "institute": true,
+        "tz": "America/Chicago",
+        "note": "today.wisc.edu group feed; runs weeks ahead, while the main events.ics stops at 200 events (about 5 days).",
+        "events": 11,
+        "food": 0
+      },
+      {
+        "type": "ical",
+        "url": "https://today.wisc.edu/events/feed/425.ics?per_page=200",
+        "label": "School of Education",
+        "institute": true,
+        "tz": "America/Chicago",
+        "note": "today.wisc.edu group feed; runs weeks ahead, while the main events.ics stops at 200 events (about 5 days).",
+        "events": 28,
+        "food": 15
+      },
+      {
+        "type": "ical",
+        "url": "https://today.wisc.edu/events/feed/429.ics?per_page=200",
+        "label": "School of Medicine and Public Health",
+        "institute": true,
+        "tz": "America/Chicago",
+        "note": "today.wisc.edu group feed; runs weeks ahead, while the main events.ics stops at 200 events (about 5 days).",
+        "events": 8,
+        "food": 3
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/uwlaw.ics",
+        "label": "UW Law School",
+        "institute": true,
+        "tz": "America/Chicago",
+        "events": 13,
+        "food": 0
+      }
+    ],
+    "notes": "business.wisc.edu, engineering.wisc.edu and morgridge.org answer 403 to bots (not bypassed); today.wisc.edu tag feeds (/events/tag/<tag>.ics) exist but are thin; group feed ids are numeric, found from department pages (360-480 scanned)."
+  },
+  {
+    "id": "bu",
+    "name": "Boston University",
+    "sources": [
+      {
+        "type": "json",
+        "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=1022&days=31",
+        "label": "School of Public Health",
+        "institute": true,
+        "note": "BU phpbin calendar API, cid=1022; no descriptions in the list.",
+        "events": 46,
+        "food": 1
+      },
+      {
+        "type": "json",
+        "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=44&days=31",
+        "label": "School of Law",
+        "institute": true,
+        "note": "BU phpbin calendar API, cid=44; no descriptions in the list.",
+        "events": 44,
+        "food": 1
+      },
+      {
+        "type": "json",
+        "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=591&days=31",
+        "label": "Hariri Institute for Computing",
+        "institute": true,
+        "note": "BU phpbin calendar API, cid=591; no descriptions in the list.",
+        "events": 23,
+        "food": 0
+      },
+      {
+        "type": "json",
+        "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=1041&days=31",
+        "label": "Pardee School of Global Studies",
+        "institute": true,
+        "note": "BU phpbin calendar API, cid=1041; no descriptions in the list.",
+        "events": 17,
+        "food": 0
+      },
+      {
+        "type": "json",
+        "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=264&days=31",
+        "label": "BU Medical Campus",
+        "institute": true,
+        "note": "BU phpbin calendar API, cid=264; no descriptions in the list.",
+        "events": 26,
+        "food": 1
+      },
+      {
+        "type": "json",
+        "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=87&days=31",
+        "label": "Biology Department seminars",
+        "institute": true,
+        "note": "BU phpbin calendar API, cid=87; no descriptions in the list.",
+        "events": 9,
+        "food": 0
+      }
+    ],
+    "notes": "Calendar ids found via rpc/calendars.php; Questrom (22), Engineering (25, mostly in University Events), CDS (1044), CS (353) have no upcoming events or duplicate cid 17. Lists carry no descriptions, so food counts are low."
+  },
+  {
+    "id": "rutgers",
+    "name": "Rutgers University-New Brunswick",
+    "sources": [
+      {
+        "type": "json",
+        "url": "https://www.rutgers.edu/jsonapi/node/event?page%5Blimit%5D=50&sort=-field_event_datetime_range.value",
+        "label": "Rutgers University events (rutgers.edu)",
+        "fields": {
+          "list": "data",
+          "title": "attributes.title",
+          "start": "attributes.field_event_datetime_range.value",
+          "end": "attributes.field_event_datetime_range.end_value",
+          "location": "attributes.field_location_plain",
+          "desc": "attributes.field_rich_text.value",
+          "url": "attributes.path.alias"
+        },
+        "note": "Rutgers Drupal JSON:API (shared RU web platform). Sorted newest start first, 50 per page, so it holds every future event while a site has under 50; url is a site-relative path.",
+        "events": 6,
+        "food": 3
+      },
+      {
+        "type": "json",
+        "url": "https://studentaffairs.rutgers.edu/jsonapi/node/event?page%5Blimit%5D=50&sort=-field_event_datetime_range.value",
+        "label": "Student Affairs (New Brunswick)",
+        "institute": true,
+        "fields": {
+          "list": "data",
+          "title": "attributes.title",
+          "start": "attributes.field_event_datetime_range.value",
+          "end": "attributes.field_event_datetime_range.end_value",
+          "location": "attributes.field_location_plain",
+          "desc": "attributes.field_rich_text.value",
+          "url": "attributes.path.alias"
+        },
+        "note": "Rutgers Drupal JSON:API (shared RU web platform). Sorted newest start first, 50 per page, so it holds every future event while a site has under 50; url is a site-relative path.",
+        "events": 17,
+        "food": 3
+      },
+      {
+        "type": "json",
+        "url": "https://global.rutgers.edu/jsonapi/node/event?page%5Blimit%5D=50&sort=-field_event_datetime_range.value",
+        "label": "Rutgers Global",
+        "institute": true,
+        "fields": {
+          "list": "data",
+          "title": "attributes.title",
+          "start": "attributes.field_event_datetime_range.value",
+          "end": "attributes.field_event_datetime_range.end_value",
+          "location": "attributes.field_location_plain",
+          "desc": "attributes.field_rich_text.value",
+          "url": "attributes.path.alias"
+        },
+        "note": "Rutgers Drupal JSON:API (shared RU web platform). Sorted newest start first, 50 per page, so it holds every future event while a site has under 50; url is a site-relative path.",
+        "events": 12,
+        "food": 2
+      },
+      {
+        "type": "json",
+        "url": "https://sph.rutgers.edu/jsonapi/node/event?page%5Blimit%5D=50&sort=-field_event_datetime_range.value",
+        "label": "School of Public Health",
+        "institute": true,
+        "fields": {
+          "list": "data",
+          "title": "attributes.title",
+          "start": "attributes.field_event_datetime_range.value",
+          "end": "attributes.field_event_datetime_range.end_value",
+          "location": "attributes.field_location_plain",
+          "desc": "attributes.field_rich_text.value",
+          "url": "attributes.path.alias"
+        },
+        "note": "Rutgers Drupal JSON:API (shared RU web platform). Sorted newest start first, 50 per page, so it holds every future event while a site has under 50; url is a site-relative path.",
+        "events": 9,
+        "food": 1
+      },
+      {
+        "type": "json",
+        "url": "https://comminfo.rutgers.edu/jsonapi/node/event?page%5Blimit%5D=50&sort=-field_event_datetime_range.value",
+        "label": "School of Communication and Information",
+        "institute": true,
+        "fields": {
+          "list": "data",
+          "title": "attributes.title",
+          "start": "attributes.field_event_datetime_range.value",
+          "end": "attributes.field_event_datetime_range.end_value",
+          "location": "attributes.field_location_plain",
+          "desc": "attributes.field_rich_text.value",
+          "url": "attributes.path.alias"
+        },
+        "note": "Rutgers Drupal JSON:API (shared RU web platform). Sorted newest start first, 50 per page, so it holds every future event while a site has under 50; url is a site-relative path.",
+        "events": 6,
+        "food": 1
+      },
+      {
+        "type": "json",
+        "url": "https://zimmerli.rutgers.edu/jsonapi/node/event?page%5Blimit%5D=50&sort=-field_event_datetime_range.value",
+        "label": "Zimmerli Art Museum",
+        "institute": true,
+        "fields": {
+          "list": "data",
+          "title": "attributes.title",
+          "start": "attributes.field_event_datetime_range.value",
+          "end": "attributes.field_event_datetime_range.end_value",
+          "location": "attributes.field_location_plain",
+          "desc": "attributes.field_rich_text.value",
+          "url": "attributes.path.alias"
+        },
+        "note": "Rutgers Drupal JSON:API (shared RU web platform). Sorted newest start first, 50 per page, so it holds every future event while a site has under 50; url is a site-relative path.",
+        "events": 10,
+        "food": 2
+      },
+      {
+        "type": "tribe",
+        "url": "https://bloustein.rutgers.edu/wp-json/tribe/events/v1/events",
+        "label": "Bloustein School of Planning and Public Policy",
+        "institute": true,
+        "events": 24,
+        "food": 3
+      },
+      {
+        "type": "tribe",
+        "url": "https://gse.rutgers.edu/wp-json/tribe/events/v1/events",
+        "label": "Graduate School of Education",
+        "institute": true,
+        "events": 6,
+        "food": 1
+      }
+    ],
+    "notes": "Most Rutgers units run one Drupal platform with JSON:API (also soe, mae, ece, cbe, research, careers, douglass: thin, duplicate, or careers has 50+ far-future events; douglass times are off by the zone); CS (Joomla JEvents) RSS puts dates in titles our RSS reader cannot read and its ical export is behind human verification; events.law.rutgers.edu Localist is Newark/Camden; business.rutgers.edu, DIMACS, RWJMS (403) have no feed."
+  },
+  {
+    "id": "umd",
+    "name": "University of Maryland, College Park",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://www.cs.umd.edu/events/ical/umdcs_calendar.ics",
+        "label": "Department of Computer Science",
+        "institute": true,
+        "tz": "America/New_York",
+        "events": 5,
+        "food": 0
+      }
+    ],
+    "notes": "Smith, SPP, UMIACS, BSOS Drupal sites have no event feed (rss.xml is news); iSchool wp/v2/events has dates as YYYYMMDD ACF fields (not parseable by the json reader); other calendar.umd.edu category exports almost all repeat the two already listed."
+  },
+  {
+    "id": "purdue",
+    "name": "Purdue University",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/256h9v68bnbnponkp0upmfq07s%40group.calendar.google.com/public/basic.ics",
+        "label": "Computer Science departmental events",
+        "institute": true,
+        "tz": "America/Indiana/Indianapolis",
+        "events": 4,
+        "food": 0
+      },
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/7sehoe8o6e82k0ni0qee9ofojk%40group.calendar.google.com/public/basic.ics",
+        "label": "Computer Science corporate events",
+        "institute": true,
+        "tz": "America/Indiana/Indianapolis",
+        "events": 1,
+        "food": 1
+      },
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/kqg4qj395hdblj7f4rn5rlne70%40group.calendar.google.com/public/basic.ics",
+        "label": "Department of Physics and Astronomy events",
+        "institute": true,
+        "tz": "America/Indiana/Indianapolis",
+        "events": 19,
+        "food": 0
+      },
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/86i1iirjfrsg7j32n0388ekvl4%40group.calendar.google.com/public/basic.ics",
+        "label": "Department of Mathematics seminars",
+        "institute": true,
+        "tz": "America/Indiana/Indianapolis",
+        "events": 16,
+        "food": 0
+      }
+    ],
+    "notes": "Krannert and CLA embed events.purdue.edu (already listed); Discovery Park 403; College of Science Google calendars are mostly empty this month except Physics and Math; Engineering event pages are HTML only."
+  },
+  {
+    "id": "uga",
+    "name": "University of Georgia",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://engineering.uga.edu/wp-json/tribe/events/v1/events",
+        "label": "College of Engineering",
+        "institute": true,
+        "events": 5,
+        "food": 0
+      },
+      {
+        "type": "tribe",
+        "url": "https://publichealth.uga.edu/wp-json/tribe/events/v1/events",
+        "label": "College of Public Health",
+        "institute": true,
+        "events": 6,
+        "food": 1
+      },
+      {
+        "type": "tribe",
+        "url": "https://grady.uga.edu/wp-json/tribe/events/v1/events",
+        "label": "Grady College of Journalism",
+        "institute": true,
+        "events": 3,
+        "food": 0
+      }
+    ],
+    "notes": "Terry 403; SPIA tribe feed has 3 upcoming but its site time zone is UTC+0, so times are 5 h off (left out); College of Education uses calendar.uga.edu; Franklin/CS/IAI Drupal sites have no event feed."
+  },
+  {
+    "id": "uw",
+    "name": "University of Washington",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_foster.ics",
+        "label": "Foster School of Business",
+        "institute": true,
+        "tz": "America/Los_Angeles",
+        "events": 61,
+        "food": 11
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_sph.ics",
+        "label": "School of Public Health",
+        "institute": true,
+        "tz": "America/Los_Angeles",
+        "events": 15,
+        "food": 0
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_artsci.ics",
+        "label": "College of Arts and Sciences",
+        "institute": true,
+        "tz": "America/Los_Angeles",
+        "events": 38,
+        "food": 6
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_engr.ics",
+        "label": "College of Engineering",
+        "institute": true,
+        "tz": "America/Los_Angeles",
+        "events": 22,
+        "food": 3
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_ee.ics",
+        "label": "Electrical & Computer Engineering",
+        "institute": true,
+        "tz": "America/Los_Angeles",
+        "events": 17,
+        "food": 0
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_econ.ics",
+        "label": "Department of Economics",
+        "institute": true,
+        "tz": "America/Los_Angeles",
+        "events": 13,
+        "food": 0
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_jsis.ics",
+        "label": "Jackson School of International Studies",
+        "institute": true,
+        "tz": "America/Los_Angeles",
+        "events": 11,
+        "food": 0
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_evans-websitecalendar.ics",
+        "label": "Evans School of Public Policy",
+        "institute": true,
+        "tz": "America/Los_Angeles",
+        "events": 6,
+        "food": 1
+      }
+    ],
+    "notes": "Trumba webNames found on unit pages (sea_foster, sea_evans-websitecalendar, sea_law, sea_jsis, sea_hcde) plus guesses that resolved (sea_sph, sea_econ, sea_artsci, sea_engr, sea_ee); left out sea_hcde (half in sea_engr), sea_law (5), sea_stat (4); eScience, UW Medicine and iSchool have no Trumba calendar found."
+  },
+  {
+    "id": "cwru",
+    "name": "Case Western Reserve University",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/artscience%40case.edu/public/basic.ics",
+        "label": "College of Arts and Sciences",
+        "institute": true,
+        "tz": "America/New_York",
+        "events": 4,
+        "food": 2
+      },
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/case.edu_1h08pncc3f9mp0tro6linpbg9g%40group.calendar.google.com/public/basic.ics",
+        "label": "Case Comprehensive Cancer Center seminars",
+        "institute": true,
+        "tz": "America/New_York",
+        "events": 2,
+        "food": 0
+      }
+    ],
+    "notes": "case.edu/events is a Drupal page pointing to community.case.edu (already listed); Weatherhead, Engineering, Medicine, Law and Nursing event pages are HTML only, no JSON:API."
+  }
+]

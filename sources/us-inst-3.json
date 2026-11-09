@@ -1,0 +1,121 @@
+[
+  {
+    "id": "uva",
+    "name": "University of Virginia",
+    "sources": [
+      { "type": "ical", "url": "https://www.trumba.com/calendars/batten-school-events.ics", "label": "Batten School of Leadership and Public Policy", "institute": true, "events": 12, "food": 1 }
+    ],
+    "notes": "Batten mostly repeats the main Trumba (9 of 12); Trumba uva-seas/uva-law/uva-library/uva-arts/uva-nursing are mislabelled slices of the main calendar; engineering.virginia.edu and law.virginia.edu answer 403 (Cloudflare); School of Data Science is a Nuxt app with no feed."
+  },
+  {
+    "id": "unc",
+    "name": "University of North Carolina at Chapel Hill",
+    "sources": [],
+    "notes": "No feed added: cs.unc.edu, sph.unc.edu (Gillings), law.unc.edu, med.unc.edu, stat-or and datascience.unc.edu all return 403 to a bot user-agent (200 to a browser), so their tribe/ical endpoints are closed to us; Kenan-Flagler events are WordPress HTML with no events API."
+  },
+  {
+    "id": "usc",
+    "name": "University of Southern California",
+    "sources": [
+      { "type": "tribe", "url": "https://keck.usc.edu/calendar", "label": "Keck School of Medicine", "institute": true, "events": 12, "food": 1 }
+    ],
+    "notes": "Viterbi's RSS (viterbi.usc.edu/events/admin/feed.php) puts the date only as MM/DD/YYYY in the title, which our rss reader cannot parse; Annenberg (Drupal) and Marshall have no feed; Price School's CNDPS ?ical=1 has 1 event."
+  },
+  {
+    "id": "ucsd",
+    "name": "University of California, San Diego",
+    "sources": [
+      { "type": "rss", "url": "https://scripps.ucsd.edu/events/feed", "label": "Scripps Institution of Oceanography", "institute": true, "events": 5, "food": 0 }
+    ],
+    "notes": "Main Localist already carries Rady, HDSI and Jacobs; HDSI's own tribe API is empty, CSE's Google calendar (a room resource) has no upcoming events, Jacobs/CSE/Rady/UCSD Health pages have no feed."
+  },
+  {
+    "id": "nyu",
+    "name": "New York University",
+    "sources": [
+      { "type": "livewhale", "url": "https://events.nyu.edu/live/json/events/group/Engineering/response_fields/description,location", "label": "NYU Tandon School of Engineering", "institute": true, "events": 20, "food": 0 },
+      { "type": "livewhale", "url": "https://events.nyu.edu/live/json/events/group/GPH/response_fields/description,location", "label": "NYU School of Global Public Health", "institute": true, "events": 8, "food": 0 },
+      { "type": "livewhale", "url": "https://events.nyu.edu/live/json/events/group/Wagner-Public-Events/response_fields/description,location", "label": "NYU Wagner Graduate School of Public Service", "institute": true, "events": 10, "food": 3 },
+      { "type": "livewhale", "url": "https://events.nyu.edu/live/json/events/group/Social-Work/response_fields/description,location", "label": "NYU Silver School of Social Work", "institute": true, "events": 12, "food": 1 },
+      { "type": "livewhale", "url": "https://events.nyu.edu/live/json/events/group/TSOA/response_fields/description,location", "label": "NYU Tisch School of the Arts", "institute": true, "events": 13, "food": 1 },
+      { "type": "livewhale", "url": "https://events.nyu.edu/live/json/events/group/APA-Institute/response_fields/description,location", "label": "NYU Asian/Pacific/American Institute", "institute": true, "events": 10, "food": 0 },
+      { "type": "livewhale", "url": "https://events.nyu.edu/live/json/events/group/OGS/response_fields/description,location", "label": "NYU Office of Global Services", "institute": true, "events": 36, "food": 0 },
+      { "type": "livewhale", "url": "https://events.nyu.edu/live/json/events/group/College-of-Nursing/response_fields/description,location", "label": "NYU Rory Meyers College of Nursing", "institute": true, "events": 22, "food": 21 },
+      { "type": "livewhale", "url": "https://events.nyu.edu/live/json/events/group/Steinhardt/response_fields/description,location", "label": "NYU Steinhardt School", "institute": true, "events": 88, "food": 1 },
+      { "type": "livewhale", "url": "https://events.nyu.edu/live/json/events/group/Wasserman-Center/response_fields/description,location", "label": "NYU Wasserman Center for Career Development", "institute": true, "events": 6, "food": 0 },
+      { "type": "livewhale", "url": "https://events.nyu.edu/live/json/events/group/Journalism/response_fields/description,location", "label": "NYU Carter Journalism Institute", "institute": true, "events": 6, "food": 0 }
+    ],
+    "notes": "Important: the main NYU feed (/live/json/events) reads only page 1 = 100 events (about 2 days) because the livewhale reader does not page; group feeds use the group's fullname (/group/Engineering, not the title) and add /response_fields/description for food words. Student-Life group repeats the main feed's first page, and with /response_fields/description it threw 'Invalid code point' in strip() (an &#NNNN; entity beyond Unicode). Stern, Law and Medicine groups are nearly empty; Courant seminars, Stern and Law sites are HTML only; Wagner and CDS sites 403."
+  },
+  {
+    "id": "uf",
+    "name": "University of Florida",
+    "sources": [
+      { "type": "tribe", "url": "https://warrington.ufl.edu", "label": "Warrington College of Business", "institute": true, "events": 38, "food": 1 },
+      { "type": "ical", "url": "https://www.eng.ufl.edu/events/?ical=1", "label": "Herbert Wertheim College of Engineering", "institute": true, "events": 21, "food": 0 }
+    ],
+    "notes": "Engineering and CISE WordPress REST is login-only (401) but /events/?ical=1 works for eng.ufl.edu (CISE returns 0); ai.ufl.edu uses the main LiveWhale; UF Health and Law have no feed."
+  },
+  {
+    "id": "utexas",
+    "name": "University of Texas at Austin",
+    "sources": [
+      { "type": "ical", "url": "https://law.utexas.edu/calendar/feed/ical/", "label": "Texas Law (School of Law)", "institute": true, "events": 61, "food": 33 }
+    ],
+    "notes": "CS calendar ical (apps.cs.utexas.edu/calendar/events/ical, 34 upcoming) is disallowed by robots.txt (Disallow: /calendar/), needs an owner decision; McCombs REST is 401, Cockrell posts to the main Localist, LBJ (Drupal utevent) and Oden have no feed."
+  },
+  {
+    "id": "gatech",
+    "name": "Georgia Institute of Technology",
+    "sources": [
+      {
+        "type": "json", "url": "https://www.scheller.gatech.edu/events/_data/current-live.json", "label": "Scheller College of Business", "institute": true, "events": 11, "food": 0,
+        "fields": { "list": "events", "title": "title", "start": "startDate", "end": "endDate", "desc": "description", "url": "url" },
+        "note": "The JSON behind scheller.gatech.edu/events/calendar.html: {events:[{title,startDate,endDate ('2026-11-18T12:00-0500'),description,url,filter1..}]}, no location field; about 70 events, past and upcoming."
+      }
+    ],
+    "notes": "The existing GT taxonomy term feeds (13, 20) now read 0 upcoming: their dates come from the posting time; the event time is in a second <time> tag after 'Event time', so they need a reader fix. College of Computing, IDEaS and calendar.gatech.edu have no all-events feed (no JSON:API, no ical)."
+  },
+  {
+    "id": "ucdavis",
+    "name": "University of California, Davis",
+    "sources": [
+      { "type": "localist", "url": "https://events.library.ucdavis.edu", "label": "UC Davis Library (incl. DataLab)", "institute": true, "events": 11, "food": 2 },
+      { "type": "ical", "url": "https://gsm.ucdavis.edu/ical/522", "label": "Graduate School of Management", "institute": true, "events": 9, "food": 0 }
+    ],
+    "notes": "www.ucdavis.edu/events is Drupal HTML with no feed; engineering, cs, letters-and-science and Mondavi sites 403 to the bot; UC Davis Health has no events feed."
+  },
+  {
+    "id": "uci",
+    "name": "University of California, Irvine",
+    "sources": [
+      { "type": "tribe", "url": "https://ics.uci.edu", "label": "Donald Bren School of Information & Computer Sciences", "institute": true, "events": 8, "food": 1 }
+    ],
+    "notes": "Social Sciences Google calendar (ucisocsci@gmail.com public ics, 10 upcoming) is disallowed by Google's robots.txt, needs an owner decision; Merage's event-json.js has start/end as epoch milliseconds, which the json reader cannot use; Law uses CampusGroups (already covered by ZotSpot); Humanities Drupal has no feed."
+  },
+  {
+    "id": "uiuc",
+    "name": "University of Illinois Urbana-Champaign",
+    "sources": [],
+    "notes": "Not added because calendars.illinois.edu robots.txt disallows /ical (the existing UIUC feeds carry an owner decision): Webtools icalGmail ids 2568 Grainger All Events (119 upcoming, 5 food, 71 not in main), 7097 NCSA (18), 1233 MCB (25), 1968 Physics (24), 1381 Chemistry (9), 4862 Economics (4); also Webtools ics times are floating (no TZID param) so our parser reads them as UTC, 6 h off, existing UIUC feeds included."
+  },
+  {
+    "id": "bc",
+    "name": "Boston College",
+    "sources": [],
+    "notes": "No feed added: Carroll School, Law and centres publish into events.bc.edu (their pages call the same Localist API), which is already the main feed."
+  },
+  {
+    "id": "tufts",
+    "name": "Tufts University",
+    "sources": [
+      { "type": "ical", "url": "https://www.trumba.com/calendars/school-of-engineering.ics", "label": "Tufts School of Engineering", "institute": true, "events": 19, "food": 0 },
+      { "type": "ical", "url": "https://www.trumba.com/calendars/TUSM.ics", "label": "Tufts University School of Medicine", "institute": true, "events": 14, "food": 2 },
+      { "type": "ical", "url": "https://www.trumba.com/calendars/cummings-vet-school.ics", "label": "Cummings School of Veterinary Medicine", "institute": true, "events": 76, "food": 10 },
+      { "type": "ical", "url": "https://www.trumba.com/calendars/friedman-school.ics", "label": "Friedman School of Nutrition Science and Policy", "institute": true, "events": 10, "food": 1 },
+      { "type": "ical", "url": "https://www.trumba.com/calendars/tusdm.ics", "label": "Tufts School of Dental Medicine", "institute": true, "events": 6, "food": 1 },
+      { "type": "ical", "url": "https://www.trumba.com/calendars/fletcher.ics", "label": "The Fletcher School", "institute": true, "events": 4, "food": 2 }
+    ],
+    "notes": "soe-cs and tisch-college Trumba calendars repeat the main Tufts Trumba; arts-sciences has only holidays; careers.tufts.edu has no events API."
+  }
+]
