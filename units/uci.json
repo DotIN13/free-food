@@ -1,0 +1,382 @@
+{
+  "id": "uci",
+  "name": "University of California, Irvine",
+  "wide": [
+    "https://zotspot.uci.edu/rss_events"
+  ],
+  "units": [
+    {
+      "id": "arts",
+      "name": "Claire Trevor School of the Arts",
+      "kind": "school",
+      "url": "https://www.arts.uci.edu",
+      "status": "no-feed",
+      "note": "Drupal events list, HTML only"
+    },
+    {
+      "id": "biosci",
+      "name": "Francisco J. Ayala School of Biological Sciences",
+      "kind": "school",
+      "url": "https://www.bio.uci.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "merage",
+      "name": "Paul Merage School of Business",
+      "kind": "school",
+      "url": "https://merage.uci.edu",
+      "status": "no-feed",
+      "note": "event-json.js gives start/end as epoch ms, which the json reader cannot use"
+    },
+    {
+      "id": "education",
+      "name": "School of Education",
+      "kind": "school",
+      "url": "https://education.uci.edu",
+      "status": "no-feed",
+      "note": "events page is static HTML"
+    },
+    {
+      "id": "engineering",
+      "name": "Henry Samueli School of Engineering",
+      "kind": "school",
+      "url": "https://engineering.uci.edu",
+      "status": "no-feed",
+      "note": "no events page found (/events is 404); news only"
+    },
+    {
+      "id": "ics",
+      "name": "Donald Bren School of Information & Computer Sciences",
+      "kind": "school",
+      "url": "https://ics.uci.edu",
+      "feeds": [
+        "https://ics.uci.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "humanities",
+      "name": "School of Humanities",
+      "kind": "school",
+      "url": "https://www.humanities.uci.edu",
+      "status": "no-feed",
+      "note": "Drupal events list has no feed"
+    },
+    {
+      "id": "law",
+      "name": "UC Irvine School of Law",
+      "kind": "school",
+      "url": "https://www.law.uci.edu",
+      "status": "in-wide",
+      "note": "events page lists ZotSpot (CampusGroups) events"
+    },
+    {
+      "id": "medicine",
+      "name": "School of Medicine",
+      "kind": "school",
+      "url": "https://medschool.uci.edu",
+      "status": "no-feed",
+      "note": "Drupal events list, HTML only"
+    },
+    {
+      "id": "nursing",
+      "name": "Sue & Bill Gross School of Nursing",
+      "kind": "school",
+      "url": "https://nursing.uci.edu",
+      "status": "no-feed",
+      "note": "WordPress events page; ?feed=rss2 returns HTML"
+    },
+    {
+      "id": "pharmacy",
+      "name": "School of Pharmacy & Pharmaceutical Sciences",
+      "kind": "school",
+      "url": "https://pharmsci.uci.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "physsci",
+      "name": "School of Physical Sciences",
+      "kind": "school",
+      "url": "https://ps.uci.edu",
+      "status": "no-feed",
+      "note": "no school events page found; departments list their own"
+    },
+    {
+      "id": "publichealth",
+      "name": "Joe C. Wen School of Population & Public Health",
+      "kind": "school",
+      "url": "https://publichealth.uci.edu",
+      "status": "no-feed",
+      "note": "WordPress events page, no events API"
+    },
+    {
+      "id": "socialecology",
+      "name": "School of Social Ecology",
+      "kind": "school",
+      "url": "https://socialecology.uci.edu",
+      "status": "no-feed",
+      "note": "Drupal events list, HTML only"
+    },
+    {
+      "id": "socsci",
+      "name": "School of Social Sciences",
+      "kind": "school",
+      "url": "https://www.socsci.uci.edu",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/ucisocsci%40gmail.com/public/basic.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "cs",
+      "name": "Department of Computer Science",
+      "kind": "department",
+      "parent": "ics",
+      "url": "https://cs.ics.uci.edu",
+      "status": "in-wide",
+      "note": "talks on the ICS calendar we read"
+    },
+    {
+      "id": "stat",
+      "name": "Department of Statistics",
+      "kind": "department",
+      "parent": "ics",
+      "url": "https://stat.ics.uci.edu",
+      "status": "in-wide",
+      "note": "its events page is a filter of the ICS calendar we read"
+    },
+    {
+      "id": "informatics",
+      "name": "Department of Informatics",
+      "kind": "department",
+      "parent": "ics",
+      "url": "https://www.informatics.uci.edu",
+      "status": "in-wide",
+      "note": "talks on the ICS calendar"
+    },
+    {
+      "id": "eecs",
+      "name": "Electrical Engineering and Computer Science",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.uci.edu/dept/eecs",
+      "status": "no-feed",
+      "note": "no events listing, news only"
+    },
+    {
+      "id": "mae",
+      "name": "Mechanical and Aerospace Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.uci.edu/dept/mae",
+      "status": "unchecked"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.uci.edu/dept/bme",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "physsci",
+      "url": "https://math.uci.edu",
+      "status": "no-feed",
+      "note": "custom calendar_event posts, no events feed"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics and Astronomy",
+      "kind": "department",
+      "parent": "physsci",
+      "url": "https://www.physics.uci.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "chem",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "physsci",
+      "url": "https://www.chem.uci.edu",
+      "status": "no-feed",
+      "note": "Drupal events list, HTML only"
+    },
+    {
+      "id": "ess",
+      "name": "Department of Earth System Science",
+      "kind": "department",
+      "parent": "physsci",
+      "url": "https://ess.uci.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "econ",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "socsci",
+      "url": "https://www.economics.uci.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "polisci",
+      "name": "Department of Political Science",
+      "kind": "department",
+      "parent": "socsci",
+      "url": "https://www.polisci.uci.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cogsci",
+      "name": "Department of Cognitive Sciences",
+      "kind": "department",
+      "parent": "socsci",
+      "url": "https://www.cogsci.uci.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "socsci",
+      "url": "https://www.sociology.uci.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "psych",
+      "name": "Department of Psychological Science",
+      "kind": "department",
+      "parent": "socialecology",
+      "url": "https://www.psychology.uci.edu",
+      "status": "no-feed",
+      "note": "WordPress site with no events feed"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "humanities",
+      "url": "https://www.humanities.uci.edu/history",
+      "status": "unchecked"
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "parent": "humanities",
+      "url": "https://www.humanities.uci.edu/english",
+      "status": "unchecked"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "humanities",
+      "url": "https://www.humanities.uci.edu/philosophy",
+      "status": "unchecked"
+    },
+    {
+      "id": "ecology",
+      "name": "Department of Ecology and Evolutionary Biology",
+      "kind": "department",
+      "parent": "biosci",
+      "url": "https://ecoevo.bio.uci.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "humcenter",
+      "name": "UCI Humanities Center",
+      "kind": "center",
+      "parent": "humanities",
+      "url": "https://www.humanities.uci.edu/humanitiescenter",
+      "status": "unchecked"
+    },
+    {
+      "id": "beall",
+      "name": "Beall Applied Innovation",
+      "kind": "center",
+      "url": "https://innovation.uci.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cml",
+      "name": "Center for Machine Learning and Intelligent Systems",
+      "kind": "center",
+      "parent": "ics",
+      "url": "https://cml.ics.uci.edu",
+      "status": "in-wide",
+      "note": "seminars on the ICS calendar"
+    },
+    {
+      "id": "cgpc",
+      "name": "Center for Global Peace and Conflict Studies",
+      "kind": "center",
+      "parent": "socsci",
+      "url": "https://www.cgpacs.uci.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "csd",
+      "name": "Center for the Study of Democracy",
+      "kind": "center",
+      "parent": "socsci",
+      "url": "https://www.democracy.uci.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "asuci",
+      "name": "Associated Students of UC Irvine (ASUCI)",
+      "kind": "student",
+      "url": "https://asuci.uci.edu",
+      "status": "unchecked",
+      "found": "https://calendar.google.com/calendar/ical/studentgov.uci.edu_74fsueopi9261vp1s43kf7uqhg%40group.calendar.google.com/public/basic.ics",
+      "note": "public Google calendar linked from the site (Google robots.txt applies, like Social Sciences)"
+    },
+    {
+      "id": "agsu",
+      "name": "Associated Graduate Students (AGS)",
+      "kind": "student",
+      "url": "https://ags.uci.edu",
+      "status": "in-wide",
+      "note": "student bodies post on ZotSpot"
+    },
+    {
+      "id": "libraries",
+      "name": "UC Irvine Libraries",
+      "kind": "library",
+      "url": "https://www.lib.uci.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "career",
+      "name": "Division of Career Pathways",
+      "kind": "other",
+      "url": "https://career.uci.edu",
+      "status": "feed",
+      "feeds": [
+        "https://career.uci.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "imcuci",
+      "name": "Institute and Museum of California Art (IMCA)",
+      "kind": "museum",
+      "url": "https://imca.uci.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "barclay",
+      "name": "Irvine Barclay Theatre",
+      "kind": "other",
+      "url": "https://www.thebarclay.org",
+      "status": "unchecked"
+    }
+  ]
+}

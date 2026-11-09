@@ -1,0 +1,415 @@
+{
+  "id": "melbourne",
+  "name": "University of Melbourne",
+  "wide": [
+    "https://events.unimelb.edu.au/live/json/events/",
+    "https://umsu.unimelb.edu.au/ents/rss/0/subtree/"
+  ],
+  "units": [
+    {
+      "id": "abp",
+      "name": "Faculty of Architecture, Building and Planning",
+      "kind": "school",
+      "url": "https://abp.unimelb.edu.au",
+      "status": "unchecked",
+      "note": "abp.unimelb.edu.au did not answer"
+    },
+    {
+      "id": "arts",
+      "name": "Faculty of Arts",
+      "kind": "school",
+      "url": "https://arts.unimelb.edu.au",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "fbe",
+      "name": "Faculty of Business and Economics",
+      "kind": "school",
+      "url": "https://fbe.unimelb.edu.au",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "education",
+      "name": "Faculty of Education",
+      "kind": "school",
+      "url": "https://education.unimelb.edu.au",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "eng",
+      "name": "Faculty of Engineering and Information Technology",
+      "kind": "school",
+      "url": "https://eng.unimelb.edu.au",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "fineartsmusic",
+      "name": "Faculty of Fine Arts and Music",
+      "kind": "school",
+      "url": "https://finearts-music.unimelb.edu.au",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "law",
+      "name": "Melbourne Law School",
+      "kind": "school",
+      "url": "https://law.unimelb.edu.au",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "mdhs",
+      "name": "Faculty of Medicine, Dentistry and Health Sciences",
+      "kind": "school",
+      "url": "https://mdhs.unimelb.edu.au",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "science",
+      "name": "Faculty of Science",
+      "kind": "school",
+      "url": "https://science.unimelb.edu.au",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "mbs",
+      "name": "Melbourne Business School",
+      "kind": "school",
+      "url": "https://mbs.edu",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "graduate",
+      "name": "Melbourne School of Graduate Research",
+      "kind": "school",
+      "url": "https://gradresearch.unimelb.edu.au",
+      "status": "unchecked"
+    },
+    {
+      "id": "cis",
+      "name": "School of Computing and Information Systems",
+      "kind": "department",
+      "parent": "eng",
+      "url": "https://cis.unimelb.edu.au",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "eee",
+      "name": "Department of Electrical and Electronic Engineering",
+      "kind": "department",
+      "parent": "eng",
+      "url": "https://eng.unimelb.edu.au/about/join-melbourne-engineering/departments/electrical-electronic-engineering",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "mech",
+      "name": "Department of Mechanical Engineering",
+      "kind": "department",
+      "parent": "eng",
+      "url": "https://eng.unimelb.edu.au/about/join-melbourne-engineering/departments/mechanical-engineering",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "bme",
+      "name": "Department of Biomedical Engineering",
+      "kind": "department",
+      "parent": "eng",
+      "url": "https://eng.unimelb.edu.au/about/join-melbourne-engineering/departments/biomedical-engineering",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "ms",
+      "name": "School of Mathematics and Statistics",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://ms.unimelb.edu.au",
+      "status": "in-wide",
+      "note": "its seminars are on events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "scc",
+      "name": "Statistical Consulting Centre",
+      "kind": "center",
+      "parent": "ms",
+      "url": "https://scc.ms.unimelb.edu.au",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "physics",
+      "name": "School of Physics",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://physics.unimelb.edu.au",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "chemistry",
+      "name": "School of Chemistry",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://chemistry.unimelb.edu.au",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "biosciences",
+      "name": "School of BioSciences",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://biosciences.unimelb.edu.au",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "biomedsci",
+      "name": "School of Biomedical Sciences",
+      "kind": "department",
+      "parent": "mdhs",
+      "url": "https://biomedicalsciences.unimelb.edu.au",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "psych",
+      "name": "Melbourne School of Psychological Sciences",
+      "kind": "department",
+      "parent": "mdhs",
+      "url": "https://psychologicalsciences.unimelb.edu.au",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "mspgh",
+      "name": "Melbourne School of Population and Global Health",
+      "kind": "department",
+      "parent": "mdhs",
+      "url": "https://mspgh.unimelb.edu.au",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "fbe",
+      "url": "https://fbe.unimelb.edu.au/economics",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "ssps",
+      "name": "School of Social and Political Sciences",
+      "kind": "department",
+      "parent": "arts",
+      "url": "https://arts.unimelb.edu.au/school-of-social-and-political-sciences",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "shaps",
+      "name": "School of Historical and Philosophical Studies",
+      "kind": "department",
+      "parent": "arts",
+      "url": "https://arts.unimelb.edu.au/school-of-historical-and-philosophical-studies",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "culture",
+      "name": "School of Culture and Communication (English)",
+      "kind": "department",
+      "parent": "arts",
+      "url": "https://arts.unimelb.edu.au/school-of-culture-and-communication",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "caide",
+      "name": "Centre for Artificial Intelligence and Digital Ethics (CAIDE)",
+      "kind": "center",
+      "parent": "law",
+      "url": "https://law.unimelb.edu.au/centres/caide",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "cdth",
+      "name": "Centre for Digital Transformation of Health",
+      "kind": "center",
+      "parent": "mdhs",
+      "url": "https://mdhs.unimelb.edu.au/digitalhealth",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "mei",
+      "name": "Melbourne Energy Institute",
+      "kind": "institute",
+      "url": "https://energy.unimelb.edu.au",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "msi",
+      "name": "Melbourne Sustainable Society Institute",
+      "kind": "institute",
+      "url": "https://sustainable.unimelb.edu.au",
+      "status": "unchecked"
+    },
+    {
+      "id": "mbi",
+      "name": "Melbourne Biodiversity Institute",
+      "kind": "institute",
+      "url": "https://biodiversity.unimelb.edu.au",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "moi",
+      "name": "Melbourne Oceania Institute",
+      "kind": "institute",
+      "url": "https://oceania.unimelb.edu.au",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "msei",
+      "name": "Melbourne Social Equity Institute",
+      "kind": "institute",
+      "url": "https://socialequity.unimelb.edu.au",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "mcd",
+      "name": "Melbourne Centre for Data Science",
+      "kind": "center",
+      "parent": "science",
+      "url": "https://science.unimelb.edu.au/mcds",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "cilis",
+      "name": "Centre for Indonesian Law, Islam and Society (CILIS)",
+      "kind": "center",
+      "parent": "law",
+      "url": "https://law.unimelb.edu.au/centres/cilis",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "hlen",
+      "name": "Health Law and Ethics Network (HLEN)",
+      "kind": "center",
+      "parent": "law",
+      "url": "https://law.unimelb.edu.au/centres/hlen",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "contemplative",
+      "name": "Contemplative Studies Centre",
+      "kind": "center",
+      "parent": "mdhs",
+      "url": "https://www.contemplativestudies.org.au",
+      "status": "in-wide",
+      "note": "posts to events.unimelb.edu.au (seen in the feed)"
+    },
+    {
+      "id": "asialink",
+      "name": "Asialink",
+      "kind": "center",
+      "url": "https://asialink.unimelb.edu.au",
+      "status": "unchecked"
+    },
+    {
+      "id": "doherty",
+      "name": "Peter Doherty Institute for Infection and Immunity",
+      "kind": "institute",
+      "url": "https://www.doherty.edu.au",
+      "status": "unchecked"
+    },
+    {
+      "id": "florey",
+      "name": "Florey Institute of Neuroscience and Mental Health",
+      "kind": "institute",
+      "url": "https://florey.edu.au",
+      "status": "unchecked"
+    },
+    {
+      "id": "mfi",
+      "name": "Melbourne Entrepreneurial Centre",
+      "kind": "center",
+      "url": "https://mec.unimelb.edu.au",
+      "status": "unchecked"
+    },
+    {
+      "id": "umsu",
+      "name": "University of Melbourne Student Union (UMSU)",
+      "kind": "student",
+      "url": "https://umsu.unimelb.edu.au",
+      "status": "in-wide",
+      "note": "its MSL events RSS is a wide feed we read (only a few events)"
+    },
+    {
+      "id": "gsa",
+      "name": "Graduate Student Association (GSA)",
+      "kind": "student",
+      "url": "https://gsa.unimelb.edu.au",
+      "status": "unchecked",
+      "note": "home page is a 1 KB shell"
+    },
+    {
+      "id": "colleges",
+      "name": "Residential colleges (Ormond, Trinity, Queen's, Ridley, ...)",
+      "kind": "student",
+      "url": "https://www.unimelb.edu.au/accommodation/residential-colleges",
+      "status": "unchecked"
+    },
+    {
+      "id": "library",
+      "name": "University Library",
+      "kind": "library",
+      "url": "https://library.unimelb.edu.au",
+      "status": "blocked",
+      "note": "site answers a Cloudflare challenge"
+    },
+    {
+      "id": "museums",
+      "name": "Museums and Collections (Potter, Ian Potter Museum, Grainger)",
+      "kind": "museum",
+      "url": "https://museumsandcollections.unimelb.edu.au",
+      "status": "in-wide",
+      "note": "fills most of events.unimelb.edu.au"
+    },
+    {
+      "id": "careers",
+      "name": "Careers and Employability",
+      "kind": "other",
+      "url": "https://careers.unimelb.edu.au",
+      "status": "unchecked"
+    },
+    {
+      "id": "sport",
+      "name": "Melbourne University Sport",
+      "kind": "other",
+      "url": "https://sport.unimelb.edu.au",
+      "status": "unchecked"
+    }
+  ]
+}

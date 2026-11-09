@@ -1,0 +1,357 @@
+{
+  "id": "pku",
+  "name": "Peking University",
+  "wide": [],
+  "units": [
+    {
+      "id": "pkunews",
+      "name": "PKU News 学术预告 (campus lecture notices)",
+      "kind": "other",
+      "url": "https://news.pku.edu.cn/xywh/xxyg.htm",
+      "status": "no-feed",
+      "note": "campus-wide lecture notices are HTML only (VSB CMS)"
+    },
+    {
+      "id": "hall",
+      "name": "Peking University Hall 北京大学百周年纪念讲堂",
+      "kind": "other",
+      "url": "https://hall.pku.edu.cn",
+      "status": "no-feed",
+      "note": "programme is HTML only"
+    },
+    {
+      "id": "eecs",
+      "name": "School of Electronics Engineering and Computer Science 信息科学技术学院",
+      "kind": "school",
+      "url": "https://eecs.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "cs",
+      "name": "School of Computer Science 计算机学院",
+      "kind": "school",
+      "url": "https://cs.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "ece",
+      "name": "School of Electronics 电子学院",
+      "kind": "school",
+      "url": "https://www.ele.pku.edu.cn",
+      "status": "unchecked"
+    },
+    {
+      "id": "ics",
+      "name": "School of Intelligence Science and Technology 智能学院",
+      "kind": "school",
+      "url": "https://www.sist.pku.edu.cn",
+      "status": "unchecked"
+    },
+    {
+      "id": "coe",
+      "name": "College of Engineering 工学院",
+      "kind": "school",
+      "url": "https://www.coe.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "math",
+      "name": "School of Mathematical Sciences 数学科学学院",
+      "kind": "school",
+      "url": "https://www.math.pku.edu.cn",
+      "status": "unchecked",
+      "note": "did not answer within 15 s"
+    },
+    {
+      "id": "physics",
+      "name": "School of Physics 物理学院",
+      "kind": "school",
+      "url": "https://www.phy.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "chemistry",
+      "name": "College of Chemistry and Molecular Engineering 化学与分子工程学院",
+      "kind": "school",
+      "url": "https://www.chem.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "life",
+      "name": "School of Life Sciences 生命科学学院",
+      "kind": "school",
+      "url": "https://www.bio.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "cese",
+      "name": "College of Environmental Sciences and Engineering 环境科学与工程学院",
+      "kind": "school",
+      "url": "https://cese.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "urban",
+      "name": "College of Urban and Environmental Sciences 城市与环境学院",
+      "kind": "school",
+      "url": "https://urban.pku.edu.cn",
+      "status": "unchecked"
+    },
+    {
+      "id": "econ",
+      "name": "School of Economics 经济学院",
+      "kind": "school",
+      "url": "https://econ.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "gsm",
+      "name": "Guanghua School of Management 光华管理学院",
+      "kind": "school",
+      "url": "https://www.gsm.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "nsd",
+      "name": "National School of Development 国家发展研究院",
+      "kind": "school",
+      "url": "https://www.nsd.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "phbs",
+      "name": "Peking University HSBC Business School 汇丰商学院",
+      "kind": "school",
+      "url": "https://www.phbs.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "psy",
+      "name": "School of Psychological and Cognitive Sciences 心理与认知科学学院",
+      "kind": "school",
+      "url": "https://www.psy.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "sis",
+      "name": "School of International Studies 国际关系学院",
+      "kind": "school",
+      "url": "https://www.sis.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "sg",
+      "name": "School of Government 政府管理学院",
+      "kind": "school",
+      "url": "https://www.sg.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "history",
+      "name": "Department of History 历史学系",
+      "kind": "school",
+      "url": "https://www.hist.pku.edu.cn",
+      "status": "unchecked",
+      "note": "did not answer within 15 s"
+    },
+    {
+      "id": "chinese",
+      "name": "Department of Chinese Language and Literature 中国语言文学系",
+      "kind": "school",
+      "url": "https://chinese.pku.edu.cn",
+      "status": "no-feed",
+      "note": "news pages in HTML; no event feed"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy 哲学系",
+      "kind": "school",
+      "url": "https://phil.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology 社会学系",
+      "kind": "school",
+      "url": "https://shehui.pku.edu.cn",
+      "status": "unchecked",
+      "note": "did not answer within 15 s"
+    },
+    {
+      "id": "law",
+      "name": "Peking University Law School 法学院",
+      "kind": "school",
+      "url": "https://www.law.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "sjc",
+      "name": "School of Journalism and Communication 新闻与传播学院",
+      "kind": "school",
+      "url": "https://sjc.pku.edu.cn",
+      "status": "no-feed",
+      "note": "HTML only"
+    },
+    {
+      "id": "sfl",
+      "name": "School of Foreign Languages 外国语学院",
+      "kind": "school",
+      "url": "https://sfl.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "arts",
+      "name": "School of Arts 艺术学院",
+      "kind": "school",
+      "url": "https://www.art.pku.edu.cn",
+      "status": "unchecked"
+    },
+    {
+      "id": "archaeology",
+      "name": "School of Archaeology and Museology 考古文博学院",
+      "kind": "school",
+      "url": "https://archaeology.pku.edu.cn",
+      "status": "unchecked"
+    },
+    {
+      "id": "marxism",
+      "name": "School of Marxism 马克思主义学院",
+      "kind": "school",
+      "url": "https://marxism.pku.edu.cn",
+      "status": "unchecked"
+    },
+    {
+      "id": "education",
+      "name": "Graduate School of Education 教育学院",
+      "kind": "school",
+      "url": "https://www.gse.pku.edu.cn",
+      "status": "unchecked"
+    },
+    {
+      "id": "pkuhsc",
+      "name": "Peking University Health Science Center 医学部",
+      "kind": "school",
+      "url": "https://www.bjmu.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "sph",
+      "name": "School of Public Health 公共卫生学院",
+      "kind": "school",
+      "url": "https://sph.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "yenching",
+      "name": "Yenching Academy 燕京学堂",
+      "kind": "school",
+      "url": "https://yenchingacademy.pku.edu.cn",
+      "status": "no-feed",
+      "note": "HTML only"
+    },
+    {
+      "id": "ai",
+      "name": "Institute for Artificial Intelligence 人工智能研究院",
+      "kind": "institute",
+      "url": "https://www.ai.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "aais",
+      "name": "Academy for Advanced Interdisciplinary Studies 前沿交叉学科研究院",
+      "kind": "institute",
+      "url": "https://www.aais.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "bicmr",
+      "name": "Beijing International Center for Mathematical Research 北京国际数学研究中心",
+      "kind": "center",
+      "url": "https://bicmr.pku.edu.cn",
+      "status": "unchecked"
+    },
+    {
+      "id": "kavli",
+      "name": "Kavli Institute for Astronomy and Astrophysics 科维理天文与天体物理研究所",
+      "kind": "institute",
+      "url": "https://kiaa.pku.edu.cn",
+      "status": "unchecked"
+    },
+    {
+      "id": "ias",
+      "name": "Institute for Advanced Study in Humanities and Social Sciences 人文社会科学研究院",
+      "kind": "institute",
+      "url": "https://www.ihss.pku.edu.cn",
+      "status": "unchecked"
+    },
+    {
+      "id": "ccer",
+      "name": "China Center for Economic Research 中国经济研究中心",
+      "kind": "center",
+      "parent": "nsd",
+      "url": "https://www.nsd.pku.edu.cn",
+      "status": "no-feed",
+      "note": "part of the National School of Development, HTML only"
+    },
+    {
+      "id": "su",
+      "name": "Peking University Student Union 北京大学学生会",
+      "kind": "student",
+      "url": "https://www.pkuyouth.cn",
+      "status": "unchecked",
+      "note": "did not answer within 15 s"
+    },
+    {
+      "id": "gsu",
+      "name": "Graduate Student Association 北京大学研究生会",
+      "kind": "student",
+      "url": "https://www.pku.edu.cn",
+      "status": "unchecked"
+    },
+    {
+      "id": "library",
+      "name": "Peking University Library 北京大学图书馆",
+      "kind": "library",
+      "url": "https://www.lib.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "sackler",
+      "name": "Arthur M. Sackler Museum of Art and Archaeology 赛克勒考古与艺术博物馆",
+      "kind": "museum",
+      "url": "https://amsm.pku.edu.cn",
+      "status": "no-feed",
+      "note": "lecture listing (讲座/学术报告) is HTML only, no feed"
+    },
+    {
+      "id": "career",
+      "name": "Student Career Center 学生就业指导服务中心",
+      "kind": "other",
+      "url": "https://scc.pku.edu.cn",
+      "status": "no-feed",
+      "note": "job fairs listed in HTML only"
+    }
+  ]
+}

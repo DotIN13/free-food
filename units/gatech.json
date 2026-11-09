@@ -1,0 +1,348 @@
+{
+  "id": "gatech",
+  "name": "Georgia Institute of Technology",
+  "wide": [
+    "https://engage.gatech.edu/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100",
+    "https://calendar.gatech.edu/taxonomy/term/13/feed",
+    "https://calendar.gatech.edu/taxonomy/term/20/feed",
+    "https://calendar.gatech.edu/taxonomy/term/12/feed",
+    "https://calendar.gatech.edu/taxonomy/term/14/feed",
+    "https://calendar.gatech.edu/taxonomy/term/15/feed"
+  ],
+  "units": [
+    {
+      "id": "computing",
+      "name": "College of Computing",
+      "kind": "school",
+      "url": "https://www.cc.gatech.edu",
+      "status": "no-feed",
+      "note": "events page is Drupal HTML with no all-events feed (no JSON:API, no ical)"
+    },
+    {
+      "id": "engineering",
+      "name": "College of Engineering",
+      "kind": "school",
+      "url": "https://coe.gatech.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "sciences",
+      "name": "College of Sciences",
+      "kind": "school",
+      "url": "https://cos.gatech.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "scheller",
+      "name": "Scheller College of Business",
+      "kind": "school",
+      "url": "https://www.scheller.gatech.edu",
+      "feeds": [
+        "https://www.scheller.gatech.edu/events/_data/current-live.json"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "design",
+      "name": "College of Design",
+      "kind": "school",
+      "url": "https://design.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "iac",
+      "name": "Ivan Allen College of Liberal Arts",
+      "kind": "school",
+      "url": "https://iac.gatech.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "lifetime",
+      "name": "College of Lifetime Learning",
+      "kind": "school",
+      "url": "https://pe.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "scs",
+      "name": "School of Computer Science",
+      "kind": "department",
+      "parent": "computing",
+      "url": "https://scs.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cse",
+      "name": "School of Computational Science and Engineering",
+      "kind": "department",
+      "parent": "computing",
+      "url": "https://cse.gatech.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "ic",
+      "name": "School of Interactive Computing",
+      "kind": "department",
+      "parent": "computing",
+      "url": "https://ic.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ece",
+      "name": "School of Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://ece.gatech.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "me",
+      "name": "George W. Woodruff School of Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.me.gatech.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "bme",
+      "name": "Wallace H. Coulter Department of Biomedical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://bme.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ae",
+      "name": "Daniel Guggenheim School of Aerospace Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://ae.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "isye",
+      "name": "H. Milton Stewart School of Industrial and Systems Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.isye.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "chbe",
+      "name": "School of Chemical and Biomolecular Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://chbe.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ce",
+      "name": "School of Civil and Environmental Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://ce.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "mse",
+      "name": "School of Materials Science and Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://mse.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "School of Mathematics",
+      "kind": "department",
+      "parent": "sciences",
+      "url": "https://math.gatech.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "physics",
+      "name": "School of Physics",
+      "kind": "department",
+      "parent": "sciences",
+      "url": "https://physics.gatech.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "chemistry",
+      "name": "School of Chemistry and Biochemistry",
+      "kind": "department",
+      "parent": "sciences",
+      "url": "https://chemistry.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "biosciences",
+      "name": "School of Biological Sciences",
+      "kind": "department",
+      "parent": "sciences",
+      "url": "https://biosciences.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "psychology",
+      "name": "School of Psychology",
+      "kind": "department",
+      "parent": "sciences",
+      "url": "https://psychology.gatech.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "eas",
+      "name": "School of Earth and Atmospheric Sciences",
+      "kind": "department",
+      "parent": "sciences",
+      "url": "https://eas.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "econ",
+      "name": "School of Economics",
+      "kind": "department",
+      "parent": "iac",
+      "url": "https://econ.gatech.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "spp",
+      "name": "Jimmy and Rosalynn Carter School of Public Policy",
+      "kind": "department",
+      "parent": "iac",
+      "url": "https://spp.gatech.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "inta",
+      "name": "Sam Nunn School of International Affairs",
+      "kind": "department",
+      "parent": "iac",
+      "url": "https://inta.gatech.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "hsoc",
+      "name": "School of History and Sociology",
+      "kind": "department",
+      "parent": "iac",
+      "url": "https://hsoc.gatech.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "lmc",
+      "name": "School of Literature, Media, and Communication",
+      "kind": "department",
+      "parent": "iac",
+      "url": "https://lmc.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "architecture",
+      "name": "School of Architecture",
+      "kind": "department",
+      "parent": "design",
+      "url": "https://arch.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ideas",
+      "name": "Institute for Data Engineering and Science (IDEaS)",
+      "kind": "institute",
+      "url": "https://ideas.gatech.edu",
+      "status": "no-feed",
+      "note": "Drupal without an events feed"
+    },
+    {
+      "id": "energy",
+      "name": "Strategic Energy Institute",
+      "kind": "institute",
+      "url": "https://energy.gatech.edu",
+      "status": "no-feed",
+      "note": "upcoming-events page is HTML only"
+    },
+    {
+      "id": "ipat",
+      "name": "Institute for People and Technology",
+      "kind": "institute",
+      "url": "https://peopletech.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ml",
+      "name": "Machine Learning Center (ML@GT)",
+      "kind": "center",
+      "parent": "computing",
+      "url": "https://ml.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ibb",
+      "name": "Parker H. Petit Institute for Bioengineering and Bioscience",
+      "kind": "institute",
+      "url": "https://petitinstitute.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "create-x",
+      "name": "CREATE-X (entrepreneurship)",
+      "kind": "center",
+      "url": "https://create-x.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sga",
+      "name": "Student Government Association",
+      "kind": "student",
+      "url": "https://www.sga.gatech.edu",
+      "status": "in-wide",
+      "note": "student org events are on GT Engage, which we read"
+    },
+    {
+      "id": "gsg",
+      "name": "Graduate Student Government",
+      "kind": "student",
+      "url": "https://www.sga.gatech.edu",
+      "status": "in-wide",
+      "note": "graduate student org events are on GT Engage"
+    },
+    {
+      "id": "library",
+      "name": "Georgia Tech Library",
+      "kind": "library",
+      "url": "https://library.gatech.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "career",
+      "name": "Career Center",
+      "kind": "other",
+      "url": "https://career.gatech.edu",
+      "status": "in-wide",
+      "note": "career events are on calendar.gatech.edu's career/professional development term, which we read"
+    },
+    {
+      "id": "arts",
+      "name": "Arts at Georgia Tech (Ferst Center)",
+      "kind": "other",
+      "url": "https://arts.gatech.edu",
+      "status": "unchecked",
+      "note": "calendar.gatech.edu has an arts term feed (12) we do not read"
+    }
+  ]
+}

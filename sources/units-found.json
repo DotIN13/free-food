@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "berkeley",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://bampfa.org/events/upcoming.ics",
+        "label": "Berkeley Art Museum and Pacific Film Archive (BAMPFA)",
+        "institute": true,
+        "unit": "bampfa",
+        "events": 39,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.ischool.berkeley.edu/events/128/calendar.ics",
+        "label": "School of Information",
+        "institute": true,
+        "unit": "ischool",
+        "events": 3,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://grad.berkeley.edu/about/events/?ical=1",
+        "label": "Graduate Division",
+        "institute": true,
+        "unit": "grad",
+        "events": 12,
+        "food": 5,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "bu",
+    "sources": [
+      {
+        "type": "bu",
+        "url": "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=20&days=31",
+        "label": "College of Fine Arts",
+        "institute": true,
+        "unit": "cfa",
+        "events": 47,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "cambridge",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://talks.cam.ac.uk/show/ics/6660/",
+        "label": "Department of Pure Mathematics and Mathematical Statistics",
+        "institute": true,
+        "unit": "dpmms",
+        "events": 15,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "emory",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/oxford-college.ics",
+        "label": "Oxford College",
+        "institute": true,
+        "unit": "oxford",
+        "events": 4,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/som-main.ics",
+        "label": "Emory University School of Medicine",
+        "institute": true,
+        "unit": "medicine",
+        "events": 70,
+        "food": 5,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://candler.emory.edu/about-candler/events/?ical=1",
+        "label": "Candler School of Theology",
+        "institute": true,
+        "unit": "candler",
+        "events": 22,
+        "food": 5,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "duke",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "http://outlook.office365.com/owa/calendar/dept-compsci@win.duke.edu/Calendar/calendar.ics",
+        "label": "Department of Computer Science",
+        "institute": true,
+        "unit": "cs",
+        "events": 1,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "cornell",
+    "sources": [
+      {
+        "type": "livewhale",
+        "url": "https://events.business.cornell.edu/live/json/events/",
+        "label": "Cornell SC Johnson College of Business",
+        "institute": true,
+        "unit": "business",
+        "events": 86,
+        "food": 4,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "eth",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/c_24roegaf5ajabucmibbdeijkts%40group.calendar.google.com/public/basic.ics",
+        "label": "VSETH (student union)",
+        "institute": true,
+        "unit": "vseth",
+        "events": 5,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "harvard",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://libcal.library.harvard.edu/ical_subscribe.php?src=p&cid=15049",
+        "label": "Harvard Library",
+        "institute": true,
+        "unit": "library",
+        "events": 24,
+        "food": 2,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://fairbank.fas.harvard.edu/events/?ical=1",
+        "label": "Fairbank Center for Chinese Studies",
+        "institute": true,
+        "unit": "fairbank",
+        "events": 15,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "mit",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://aeroastro.mit.edu/wp-json/tribe/events/v1/events",
+        "label": "Aeronautics and Astronautics",
+        "institute": true,
+        "unit": "aeroastro",
+        "events": 1,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://sts-program.mit.edu/wp-json/tribe/events/v1/events",
+        "label": "Program in Science, Technology, and Society",
+        "institute": true,
+        "unit": "sts",
+        "events": 1,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://eaps.mit.edu/wp-json/tribe/events/v1/events",
+        "label": "Earth, Atmospheric and Planetary Sciences",
+        "institute": true,
+        "unit": "eaps",
+        "events": 24,
+        "food": 10,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "notre-dame",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://al.nd.edu/events.ics",
+        "label": "College of Arts and Letters",
+        "institute": true,
+        "unit": "al",
+        "events": 62,
+        "food": 13,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://science.nd.edu/events.ics",
+        "label": "College of Science",
+        "institute": true,
+        "unit": "science",
+        "events": 22,
+        "food": 4,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://keough.nd.edu/news-and-events/events.ics",
+        "label": "Keough School of Global Affairs",
+        "institute": true,
+        "unit": "keough",
+        "events": 3,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://acms.nd.edu/events.ics",
+        "label": "Applied and Computational Mathematics and Statistics",
+        "institute": true,
+        "unit": "acms",
+        "events": 3,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://politicalscience.nd.edu/news-and-events/events.ics",
+        "label": "Political Science",
+        "institute": true,
+        "unit": "polisci",
+        "events": 14,
+        "food": 4,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://history.nd.edu/news-events/events.ics",
+        "label": "History",
+        "institute": true,
+        "unit": "history",
+        "events": 3,
+        "food": 2,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://classics.nd.edu/news-events/events.ics",
+        "label": "Classics",
+        "institute": true,
+        "unit": "classics",
+        "events": 1,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://music.nd.edu/news-events/events.ics",
+        "label": "Music",
+        "institute": true,
+        "unit": "music",
+        "events": 4,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://sacredmusic.nd.edu/news-and-events/events.ics",
+        "label": "Sacred Music at Notre Dame",
+        "institute": true,
+        "unit": "sacredmusic",
+        "events": 6,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://ethics.nd.edu/news-and-events/events.ics",
+        "label": "Notre Dame Institute for Ethics and the Common Good",
+        "institute": true,
+        "unit": "ethics",
+        "events": 2,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "rochester",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://mag.rochester.edu/programs/?ical=1",
+        "label": "Memorial Art Gallery",
+        "institute": true,
+        "unit": "mag",
+        "events": 26,
+        "food": 6,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "purdue",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://education.purdue.edu/wp-json/tribe/events/v1/events",
+        "label": "College of Education",
+        "institute": true,
+        "unit": "education",
+        "events": 8,
+        "food": 2,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://convocations.purdue.edu/wp-json/tribe/events/v1/events",
+        "label": "Purdue Convocations",
+        "institute": true,
+        "unit": "convocations",
+        "events": 4,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "sydney",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://supra.net.au/wp-json/tribe/events/v1/events",
+        "label": "Sydney University Postgraduate Representative Association (SUPRA)",
+        "institute": true,
+        "unit": "supra",
+        "events": 5,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "toronto",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://socialwork.utoronto.ca/wp-json/tribe/events/v1/events",
+        "label": "Factor-Inwentash Faculty of Social Work",
+        "institute": true,
+        "unit": "socialwork",
+        "events": 3,
+        "food": 2,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://vectorinstitute.ai/wp-json/tribe/events/v1/events",
+        "label": "Vector Institute",
+        "institute": true,
+        "unit": "vector",
+        "events": 5,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://www.ece.utoronto.ca/wp-json/tribe/events/v1/events",
+        "label": "Edward S. Rogers Sr. Department of Electrical & Computer Engineering",
+        "institute": true,
+        "unit": "ece",
+        "events": 3,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://www.engineering.utoronto.ca/wp-json/tribe/events/v1/events",
+        "label": "Faculty of Applied Science & Engineering",
+        "institute": true,
+        "unit": "engineering",
+        "events": 21,
+        "food": 10,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "ucla",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://philosophy.ucla.edu/wp-json/tribe/events/v1/events",
+        "label": "Philosophy",
+        "institute": true,
+        "unit": "philosophy",
+        "events": 1,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "uci",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://career.uci.edu/wp-json/tribe/events/v1/events",
+        "label": "Division of Career Pathways",
+        "institute": true,
+        "unit": "career",
+        "events": 2,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "uf",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://www.floridamuseum.ufl.edu/calendar/?ical=1",
+        "label": "Florida Museum of Natural History",
+        "institute": true,
+        "unit": "flmnh",
+        "events": 5,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://arts.ufl.edu/events/?ical=1",
+        "label": "College of the Arts",
+        "institute": true,
+        "unit": "arts",
+        "events": 18,
+        "food": 3,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://harn.ufl.edu/calendar/?ical=1",
+        "label": "Harn Museum of Art",
+        "institute": true,
+        "unit": "harn",
+        "events": 7,
+        "food": 3,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "uga",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://ced.uga.edu/wp-json/tribe/events/v1/events",
+        "label": "College of Environment + Design",
+        "institute": true,
+        "unit": "ced",
+        "events": 4,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://rx.uga.edu/wp-json/tribe/events/v1/events",
+        "label": "College of Pharmacy",
+        "institute": true,
+        "unit": "pharmacy",
+        "events": 1,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://vet.uga.edu/wp-json/tribe/events/v1/events",
+        "label": "College of Veterinary Medicine",
+        "institute": true,
+        "unit": "vet",
+        "events": 3,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://honors.uga.edu/wp-json/tribe/events/v1/events",
+        "label": "Morehead Honors College",
+        "institute": true,
+        "unit": "honors",
+        "events": 6,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "uiuc",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/705.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "College of Veterinary Medicine",
+        "institute": true,
+        "unit": "vetmed",
+        "events": 1,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/935.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "School of Social Work",
+        "institute": true,
+        "unit": "socialwork",
+        "events": 4,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/1102.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "College of Media",
+        "institute": true,
+        "unit": "media",
+        "events": 7,
+        "food": 2,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/8092.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Department of Philosophy",
+        "institute": true,
+        "unit": "philosophy",
+        "events": 2,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/7421.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Department of Mathematics",
+        "institute": true,
+        "unit": "math",
+        "events": 37,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://calendars.illinois.edu/icalGmail/8095.ics?hourOffset=0&timeZone=America%2FChicago",
+        "label": "Department of History",
+        "institute": true,
+        "unit": "history",
+        "events": 2,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "umd",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/cmns-calendar%40umd.edu/public/basic.ics",
+        "label": "College of Computer, Mathematical, and Natural Sciences",
+        "institute": true,
+        "unit": "cmns",
+        "events": 2,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://honors.umd.edu/wp-json/tribe/events/v1/events",
+        "label": "Honors College",
+        "institute": true,
+        "unit": "honors",
+        "events": 3,
+        "food": 2,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "umich",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://taubmancollege.umich.edu/wp-json/tribe/events/v1/events",
+        "label": "Taubman College of Architecture and Urban Planning",
+        "institute": true,
+        "unit": "taubman",
+        "events": 5,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "unc",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.lib.unc.edu/ical_subscribe.php?src=p&cid=2998",
+        "label": "University Libraries",
+        "institute": true,
+        "unit": "library",
+        "events": 10,
+        "food": 2,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://ed.unc.edu/wp-json/tribe/events/v1/events",
+        "label": "School of Education",
+        "institute": true,
+        "unit": "education",
+        "events": 9,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "uva",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/uvasociology%40gmail.com/public/basic.ics",
+        "label": "Sociology",
+        "institute": true,
+        "unit": "sociology",
+        "events": 5,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "uw-madison",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://www.vetmed.wisc.edu/events/?ical=1",
+        "label": "School of Veterinary Medicine",
+        "institute": true,
+        "unit": "vetmed",
+        "events": 1,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://wid.wisc.edu/events/?ical=1",
+        "label": "Wisconsin Institute for Discovery",
+        "institute": true,
+        "unit": "wid",
+        "events": 9,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "utexas",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://socialwork.utexas.edu/wp-json/tribe/events/v1/events",
+        "label": "Steve Hicks School of Social Work",
+        "institute": true,
+        "unit": "socialwork",
+        "events": 2,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "uw",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_law.ics",
+        "label": "School of Law",
+        "institute": true,
+        "unit": "law",
+        "events": 5,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_dental.ics",
+        "label": "School of Dentistry",
+        "institute": true,
+        "unit": "dentistry",
+        "events": 5,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_sop.ics",
+        "label": "School of Pharmacy",
+        "institute": true,
+        "unit": "pharmacy",
+        "events": 2,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_nursing.ics",
+        "label": "School of Nursing",
+        "institute": true,
+        "unit": "nursing",
+        "events": 3,
+        "food": 2,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_be.ics",
+        "label": "College of Built Environments",
+        "institute": true,
+        "unit": "be",
+        "events": 16,
+        "food": 8,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_psych.ics",
+        "label": "Department of Psychology",
+        "institute": true,
+        "unit": "psych",
+        "events": 2,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_pols.ics",
+        "label": "Department of Political Science",
+        "institute": true,
+        "unit": "polisci",
+        "events": 3,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_phil.ics",
+        "label": "Department of Philosophy",
+        "institute": true,
+        "unit": "philosophy",
+        "events": 4,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_soc.ics",
+        "label": "Department of Sociology",
+        "institute": true,
+        "unit": "sociology",
+        "events": 13,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://phys.washington.edu/calendar.ics",
+        "label": "Department of Physics",
+        "institute": true,
+        "unit": "physics",
+        "events": 4,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://math.washington.edu/calendar.ics",
+        "label": "Department of Mathematics",
+        "institute": true,
+        "unit": "math",
+        "events": 10,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://www.trumba.com/calendars/sea_lib.ics",
+        "label": "UW Libraries",
+        "institute": true,
+        "unit": "libraries",
+        "events": 12,
+        "food": 2,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://socialwork.uw.edu/wp-json/tribe/events/v1/events",
+        "label": "School of Social Work",
+        "institute": true,
+        "unit": "socialwork",
+        "events": 3,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "usc",
+    "sources": [
+      {
+        "type": "tribe",
+        "url": "https://gero.usc.edu/wp-json/tribe/events/v1/events",
+        "label": "USC Leonard Davis School of Gerontology",
+        "institute": true,
+        "unit": "gero",
+        "events": 3,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "washu",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://math.washu.edu/calendar.ics",
+        "label": "Mathematics",
+        "institute": true,
+        "unit": "math",
+        "events": 2,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://chemistry.washu.edu/calendar.ics",
+        "label": "Chemistry",
+        "institute": true,
+        "unit": "chemistry",
+        "events": 3,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://physics.washu.edu/calendar.ics",
+        "label": "Physics",
+        "institute": true,
+        "unit": "physics",
+        "events": 11,
+        "food": 3,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://biology.washu.edu/calendar.ics",
+        "label": "Biology",
+        "institute": true,
+        "unit": "biology",
+        "events": 5,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://economics.washu.edu/calendar.ics",
+        "label": "Economics",
+        "institute": true,
+        "unit": "economics",
+        "events": 12,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://psych.washu.edu/calendar.ics",
+        "label": "Psychological & Brain Sciences",
+        "institute": true,
+        "unit": "psych",
+        "events": 11,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://english.washu.edu/calendar.ics",
+        "label": "English",
+        "institute": true,
+        "unit": "english",
+        "events": 3,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://polisci.washu.edu/calendar.ics",
+        "label": "Political Science",
+        "institute": true,
+        "unit": "polisci",
+        "events": 6,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://sociology.washu.edu/calendar.ics",
+        "label": "Sociology",
+        "institute": true,
+        "unit": "sociology",
+        "events": 3,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://philosophy.washu.edu/calendar.ics",
+        "label": "Philosophy",
+        "institute": true,
+        "unit": "philosophy",
+        "events": 2,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://anthropology.washu.edu/calendar.ics",
+        "label": "Anthropology",
+        "institute": true,
+        "unit": "anthropology",
+        "events": 1,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://eeps.washu.edu/calendar.ics",
+        "label": "Earth, Environmental & Planetary Sciences",
+        "institute": true,
+        "unit": "eeps",
+        "events": 5,
+        "food": 0,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://jimes.washu.edu/calendar.ics",
+        "label": "Jewish, Islamic & Middle Eastern Studies",
+        "institute": true,
+        "unit": "jimes",
+        "events": 6,
+        "food": 4,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://wgss.washu.edu/calendar.ics",
+        "label": "Women, Gender & Sexuality Studies",
+        "institute": true,
+        "unit": "wgss",
+        "events": 3,
+        "food": 2,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://amcs.washu.edu/calendar.ics",
+        "label": "African & African-American Studies",
+        "institute": true,
+        "unit": "amcs",
+        "events": 2,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://humanities.washu.edu/calendar.ics",
+        "label": "Center for the Humanities",
+        "institute": true,
+        "unit": "humanities",
+        "events": 14,
+        "food": 4,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "ical",
+        "url": "https://music.washu.edu/calendar.ics",
+        "label": "Music",
+        "institute": true,
+        "unit": "music",
+        "events": 11,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "yale",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://calendar.google.com/calendar/ical/dop.cal%40yale.edu/public/basic.ics",
+        "label": "Psychology",
+        "institute": true,
+        "unit": "psychology",
+        "events": 4,
+        "food": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "hku",
+    "sources": [
+      {
+        "type": "ical",
+        "url": "https://philosophy.hku.hk/events.ics",
+        "label": "Department of Philosophy",
+        "institute": true,
+        "unit": "philosophy",
+        "events": 5,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://www.biosch.hku.hk/wp-json/tribe/events/v1/events",
+        "label": "School of Biological Sciences",
+        "institute": true,
+        "unit": "biosch",
+        "events": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "tribe",
+        "url": "https://datascience.hku.hk/wp-json/tribe/events/v1/events",
+        "label": "HKU Musketeers Foundation Institute of Data Science",
+        "institute": true,
+        "unit": "ids",
+        "events": 1,
+        "note": "found while listing the university's units, 2026-11-09"
+      }
+    ]
+  },
+  {
+    "id": "gatech",
+    "sources": [
+      {
+        "type": "rss",
+        "url": "https://calendar.gatech.edu/taxonomy/term/12/feed",
+        "label": "Georgia Tech calendar: Arts",
+        "events": 17
+      },
+      {
+        "type": "rss",
+        "url": "https://calendar.gatech.edu/taxonomy/term/14/feed",
+        "label": "Georgia Tech calendar: Seminars",
+        "events": 2
+      },
+      {
+        "type": "rss",
+        "url": "https://calendar.gatech.edu/taxonomy/term/15/feed",
+        "label": "Georgia Tech calendar: Miscellaneous",
+        "events": 21
+      }
+    ]
+  }
+]

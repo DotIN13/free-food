@@ -1,0 +1,463 @@
+{
+  "id": "utexas",
+  "name": "The University of Texas at Austin",
+  "wide": [
+    "https://calendar.utexas.edu",
+    "https://utexas.campuslabs.com/engage/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100"
+  ],
+  "units": [
+    {
+      "id": "architecture",
+      "name": "School of Architecture",
+      "kind": "school",
+      "url": "https://soa.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "mccombs",
+      "name": "McCombs School of Business",
+      "kind": "school",
+      "url": "https://www.mccombs.utexas.edu",
+      "status": "blocked",
+      "note": "WordPress REST answers 401 (sources notes)"
+    },
+    {
+      "id": "moody",
+      "name": "Moody College of Communication",
+      "kind": "school",
+      "url": "https://moody.utexas.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "education",
+      "name": "College of Education",
+      "kind": "school",
+      "url": "https://education.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "cockrell",
+      "name": "Cockrell School of Engineering",
+      "kind": "school",
+      "url": "https://cockrell.utexas.edu",
+      "status": "in-wide",
+      "note": "posts to the main Localist (sources notes)"
+    },
+    {
+      "id": "finearts",
+      "name": "College of Fine Arts",
+      "kind": "school",
+      "url": "https://finearts.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "jsg",
+      "name": "Jackson School of Geosciences",
+      "kind": "school",
+      "url": "https://www.jsg.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML; its /feed/ is comments"
+    },
+    {
+      "id": "ischool",
+      "name": "School of Information",
+      "kind": "school",
+      "url": "https://ischool.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "law",
+      "name": "School of Law",
+      "kind": "school",
+      "url": "https://law.utexas.edu",
+      "feeds": [
+        "https://law.utexas.edu/calendar/feed/ical/"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "liberalarts",
+      "name": "College of Liberal Arts",
+      "kind": "school",
+      "url": "https://liberalarts.utexas.edu",
+      "status": "blocked",
+      "note": "liberalarts.utexas.edu/events answers 403"
+    },
+    {
+      "id": "lbj",
+      "name": "LBJ School of Public Affairs",
+      "kind": "school",
+      "url": "https://lbj.utexas.edu",
+      "status": "no-feed",
+      "note": "Drupal utevent pages, no feed (sources notes)"
+    },
+    {
+      "id": "cns",
+      "name": "College of Natural Sciences",
+      "kind": "school",
+      "url": "https://cns.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "nursing",
+      "name": "School of Nursing",
+      "kind": "school",
+      "url": "https://nursing.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "pharmacy",
+      "name": "College of Pharmacy",
+      "kind": "school",
+      "url": "https://pharmacy.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "socialwork",
+      "name": "Steve Hicks School of Social Work",
+      "kind": "school",
+      "url": "https://socialwork.utexas.edu",
+      "status": "feed",
+      "feeds": [
+        "https://socialwork.utexas.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "dellmed",
+      "name": "Dell Medical School",
+      "kind": "school",
+      "url": "https://dellmed.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "grad",
+      "name": "Graduate School",
+      "kind": "school",
+      "url": "https://gradschool.utexas.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ugs",
+      "name": "School of Undergraduate Studies",
+      "kind": "school",
+      "url": "https://ugs.utexas.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "civic",
+      "name": "School of Civic Leadership",
+      "kind": "school",
+      "url": "https://civicleadership.utexas.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "cns",
+      "url": "https://www.cs.utexas.edu",
+      "feeds": [
+        "https://apps.cs.utexas.edu/calendar/events/ical"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "ece",
+      "name": "Chandra Family Department of Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "cockrell",
+      "url": "https://www.ece.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "me",
+      "name": "Walker Department of Mechanical Engineering",
+      "kind": "department",
+      "parent": "cockrell",
+      "url": "https://me.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML; /feed/ is news"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "cockrell",
+      "url": "https://bme.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "che",
+      "name": "McKetta Department of Chemical Engineering",
+      "kind": "department",
+      "parent": "cockrell",
+      "url": "https://che.utexas.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "caee",
+      "name": "Civil, Architectural and Environmental Engineering",
+      "kind": "department",
+      "parent": "cockrell",
+      "url": "https://www.caee.utexas.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ase",
+      "name": "Aerospace Engineering and Engineering Mechanics",
+      "kind": "department",
+      "parent": "cockrell",
+      "url": "https://www.ae.utexas.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "cns",
+      "url": "https://math.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "sds",
+      "name": "Statistics and Data Sciences",
+      "kind": "department",
+      "parent": "cns",
+      "url": "https://stat.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "cns",
+      "url": "https://physics.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "cns",
+      "url": "https://chemistry.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "biosci",
+      "name": "School of Biological Sciences",
+      "kind": "department",
+      "parent": "cns",
+      "url": "https://biosciences.utexas.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "liberalarts",
+      "url": "https://liberalarts.utexas.edu/economics",
+      "status": "unchecked",
+      "note": "site opens; only the college /events answers 403"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "liberalarts",
+      "url": "https://liberalarts.utexas.edu/psychology",
+      "status": "unchecked",
+      "note": "site opens; only the college /events answers 403"
+    },
+    {
+      "id": "government",
+      "name": "Government",
+      "kind": "department",
+      "parent": "liberalarts",
+      "url": "https://liberalarts.utexas.edu/government",
+      "status": "unchecked",
+      "note": "site opens; only the college /events answers 403"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "liberalarts",
+      "url": "https://liberalarts.utexas.edu/history",
+      "status": "unchecked",
+      "note": "site opens; only the college /events answers 403"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "liberalarts",
+      "url": "https://liberalarts.utexas.edu/english",
+      "status": "unchecked",
+      "note": "site opens; only the college /events answers 403"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "liberalarts",
+      "url": "https://liberalarts.utexas.edu/philosophy",
+      "status": "unchecked",
+      "note": "site opens; only the college /events answers 403"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "liberalarts",
+      "url": "https://liberalarts.utexas.edu/sociology",
+      "status": "unchecked",
+      "note": "site opens; only the college /events answers 403"
+    },
+    {
+      "id": "oden",
+      "name": "Oden Institute for Computational Engineering and Sciences",
+      "kind": "institute",
+      "url": "https://oden.utexas.edu",
+      "status": "no-feed",
+      "note": "no feed (sources notes)"
+    },
+    {
+      "id": "ml",
+      "name": "Machine Learning Laboratory / IFML",
+      "kind": "institute",
+      "url": "https://ml.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "energy",
+      "name": "Energy Institute",
+      "kind": "institute",
+      "url": "https://energy.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "strauss",
+      "name": "Robert S. Strauss Center for International Security and Law",
+      "kind": "center",
+      "url": "https://www.strausscenter.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "humanities",
+      "name": "Humanities Institute",
+      "kind": "institute",
+      "parent": "liberalarts",
+      "url": "https://liberalarts.utexas.edu/humanitiesinstitute",
+      "status": "no-feed",
+      "note": "events page is drawn by script, no feed link"
+    },
+    {
+      "id": "llilas",
+      "name": "Teresa Lozano Long Institute of Latin American Studies (LLILAS)",
+      "kind": "institute",
+      "parent": "liberalarts",
+      "url": "https://liberalarts.utexas.edu/llilas",
+      "status": "no-feed",
+      "note": "events page is drawn by script, no feed link"
+    },
+    {
+      "id": "south-asia",
+      "name": "South Asia Institute",
+      "kind": "institute",
+      "parent": "liberalarts",
+      "url": "https://liberalarts.utexas.edu/sai",
+      "status": "unchecked",
+      "note": "site opens; only the college /events answers 403"
+    },
+    {
+      "id": "texas-robotics",
+      "name": "Texas Robotics",
+      "kind": "center",
+      "url": "https://robotics.utexas.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ic2",
+      "name": "IC2 Institute / Texas Innovation Center",
+      "kind": "institute",
+      "url": "https://ic2.utexas.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "population",
+      "name": "Population Research Center",
+      "kind": "center",
+      "url": "https://liberalarts.utexas.edu/prc",
+      "status": "unchecked",
+      "note": "site opens; only the college /events answers 403"
+    },
+    {
+      "id": "sg",
+      "name": "Student Government",
+      "kind": "student",
+      "url": "https://utsg.org",
+      "status": "in-wide",
+      "note": "student org events are on HornsLink (Engage), which we read"
+    },
+    {
+      "id": "gsa",
+      "name": "Graduate Student Assembly",
+      "kind": "student",
+      "url": "https://gsa.utexas.edu",
+      "status": "in-wide",
+      "note": "student org events are on HornsLink (Engage), which we read"
+    },
+    {
+      "id": "library",
+      "name": "UT Libraries",
+      "kind": "library",
+      "url": "https://www.lib.utexas.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar.utexas.edu link"
+    },
+    {
+      "id": "blanton",
+      "name": "Blanton Museum of Art",
+      "kind": "museum",
+      "url": "https://blantonmuseum.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "hrc",
+      "name": "Harry Ransom Center",
+      "kind": "museum",
+      "url": "https://www.hrc.utexas.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "career",
+      "name": "Texas Career Engagement",
+      "kind": "other",
+      "url": "https://careerengagement.utexas.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "texas-performing-arts",
+      "name": "Texas Performing Arts",
+      "kind": "other",
+      "url": "https://texasperformingarts.org",
+      "status": "unchecked"
+    }
+  ]
+}

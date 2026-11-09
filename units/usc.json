@@ -1,0 +1,470 @@
+{
+  "id": "usc",
+  "name": "University of Southern California",
+  "wide": [
+    "https://calendar.usc.edu",
+    "https://engage.usc.edu/rss_events"
+  ],
+  "units": [
+    {
+      "id": "dornsife",
+      "name": "USC Dornsife College of Letters, Arts and Sciences",
+      "kind": "school",
+      "url": "https://dornsife.usc.edu",
+      "status": "in-wide",
+      "note": "events page embeds the calendar.usc.edu widget"
+    },
+    {
+      "id": "viterbi",
+      "name": "USC Viterbi School of Engineering",
+      "kind": "school",
+      "url": "https://viterbi.usc.edu",
+      "feeds": [
+        "https://viterbi.usc.edu/events/admin/feed.php"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "marshall",
+      "name": "USC Marshall School of Business",
+      "kind": "school",
+      "url": "https://www.marshall.usc.edu",
+      "status": "no-feed",
+      "note": "no feed; /events redirects to the home page"
+    },
+    {
+      "id": "annenberg",
+      "name": "USC Annenberg School for Communication and Journalism",
+      "kind": "school",
+      "url": "https://annenberg.usc.edu",
+      "status": "in-wide",
+      "note": "Drupal events page has no feed, but its events also appear on calendar.usc.edu"
+    },
+    {
+      "id": "gould",
+      "name": "USC Gould School of Law",
+      "kind": "school",
+      "url": "https://gould.usc.edu",
+      "status": "unchecked",
+      "found": "https://events.law.usc.edu",
+      "note": "own Localist instance (81 events in 60 days); also http://events.law.usc.edu/calendar/1.ics"
+    },
+    {
+      "id": "keck",
+      "name": "Keck School of Medicine of USC",
+      "kind": "school",
+      "url": "https://keck.usc.edu",
+      "feeds": [
+        "https://keck.usc.edu/calendar"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "price",
+      "name": "USC Price School of Public Policy",
+      "kind": "school",
+      "url": "https://priceschool.usc.edu",
+      "status": "in-wide",
+      "note": "events page embeds the calendar.usc.edu widget (department price)"
+    },
+    {
+      "id": "rossier",
+      "name": "USC Rossier School of Education",
+      "kind": "school",
+      "url": "https://rossier.usc.edu",
+      "status": "in-wide",
+      "note": "many Rossier events on calendar.usc.edu"
+    },
+    {
+      "id": "thornton",
+      "name": "USC Thornton School of Music",
+      "kind": "school",
+      "url": "https://music.usc.edu",
+      "status": "in-wide",
+      "note": "many Thornton events on calendar.usc.edu"
+    },
+    {
+      "id": "roski",
+      "name": "USC Roski School of Art and Design",
+      "kind": "school",
+      "url": "https://roski.usc.edu",
+      "status": "in-wide",
+      "note": "many Roski events on calendar.usc.edu"
+    },
+    {
+      "id": "cinema",
+      "name": "USC School of Cinematic Arts",
+      "kind": "school",
+      "url": "https://cinema.usc.edu",
+      "status": "no-feed",
+      "note": "own HTML events page; only a few events on calendar.usc.edu"
+    },
+    {
+      "id": "dramatic",
+      "name": "USC School of Dramatic Arts",
+      "kind": "school",
+      "url": "https://dramaticarts.usc.edu",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "kaufman",
+      "name": "USC Glorya Kaufman School of Dance",
+      "kind": "school",
+      "url": "https://kaufman.usc.edu",
+      "status": "no-feed",
+      "note": "WordPress events page, no events API"
+    },
+    {
+      "id": "architecture",
+      "name": "USC School of Architecture",
+      "kind": "school",
+      "url": "https://arch.usc.edu",
+      "status": "no-feed",
+      "note": "events page is HTML (one link to calendar.usc.edu)"
+    },
+    {
+      "id": "pharmacy",
+      "name": "USC Alfred E. Mann School of Pharmacy and Pharmaceutical Sciences",
+      "kind": "school",
+      "url": "https://mann.usc.edu",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "dentistry",
+      "name": "Herman Ostrow School of Dentistry",
+      "kind": "school",
+      "url": "https://dentistry.usc.edu",
+      "status": "no-feed",
+      "note": "events/feed is a post RSS; no Tribe route"
+    },
+    {
+      "id": "socialwork",
+      "name": "USC Suzanne Dworak-Peck School of Social Work",
+      "kind": "school",
+      "url": "https://dworakpeck.usc.edu",
+      "status": "no-feed",
+      "note": "Drupal events list, HTML only"
+    },
+    {
+      "id": "gero",
+      "name": "USC Leonard Davis School of Gerontology",
+      "kind": "school",
+      "url": "https://gero.usc.edu",
+      "status": "feed",
+      "feeds": [
+        "https://gero.usc.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "iovine",
+      "name": "USC Iovine and Young Academy",
+      "kind": "school",
+      "url": "https://iovine-young.usc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "bovard",
+      "name": "USC Bovard College",
+      "kind": "school",
+      "url": "https://bovard.usc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cs",
+      "name": "Thomas Lord Department of Computer Science",
+      "kind": "department",
+      "parent": "viterbi",
+      "url": "https://www.cs.usc.edu",
+      "status": "in-wide",
+      "note": "talks go to the Viterbi events feed we read"
+    },
+    {
+      "id": "ece",
+      "name": "Ming Hsieh Department of Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "viterbi",
+      "url": "https://minghsiehece.usc.edu",
+      "status": "in-wide",
+      "note": "seminars go to the Viterbi events feed"
+    },
+    {
+      "id": "ame",
+      "name": "Aerospace and Mechanical Engineering",
+      "kind": "department",
+      "parent": "viterbi",
+      "url": "https://ame.usc.edu",
+      "status": "in-wide",
+      "note": "seminars go to the Viterbi events feed"
+    },
+    {
+      "id": "bme",
+      "name": "Alfred E. Mann Department of Biomedical Engineering",
+      "kind": "department",
+      "parent": "viterbi",
+      "url": "https://bme.usc.edu",
+      "status": "in-wide",
+      "note": "seminars go to the Viterbi events feed"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/mathematics",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics and Astronomy",
+      "kind": "department",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/physics",
+      "status": "in-wide",
+      "note": "Dornsife sites use the calendar.usc.edu widget"
+    },
+    {
+      "id": "chem",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/chemistry",
+      "status": "in-wide",
+      "note": "Dornsife sites use the calendar.usc.edu widget"
+    },
+    {
+      "id": "bio",
+      "name": "Department of Biological Sciences",
+      "kind": "department",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/bisc",
+      "status": "in-wide",
+      "note": "Dornsife sites use the calendar.usc.edu widget"
+    },
+    {
+      "id": "econ",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/econ",
+      "status": "in-wide",
+      "note": "events page embeds the calendar.usc.edu widget"
+    },
+    {
+      "id": "psych",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/psyc",
+      "status": "in-wide",
+      "note": "Dornsife sites use the calendar.usc.edu widget"
+    },
+    {
+      "id": "poir",
+      "name": "Department of Political Science and International Relations",
+      "kind": "department",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/poir",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "history",
+      "name": "Van Hunnick History Department",
+      "kind": "department",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/history",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/engl",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "philosophy",
+      "name": "School of Philosophy",
+      "kind": "department",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/phil",
+      "status": "in-wide",
+      "note": "Dornsife sites use the calendar.usc.edu widget"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/soci",
+      "status": "in-wide",
+      "note": "Dornsife sites use the calendar.usc.edu widget"
+    },
+    {
+      "id": "earth",
+      "name": "Department of Earth Sciences",
+      "kind": "department",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/earth",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "classics",
+      "name": "Department of Classics",
+      "kind": "department",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/classics",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "isi",
+      "name": "Information Sciences Institute",
+      "kind": "institute",
+      "parent": "viterbi",
+      "url": "https://www.isi.edu",
+      "status": "no-feed",
+      "note": "no events feed found on the WordPress site"
+    },
+    {
+      "id": "levan",
+      "name": "Levan Institute for the Humanities",
+      "kind": "institute",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/levan-institute",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "emsi",
+      "name": "USC-Huntington Early Modern Studies Institute",
+      "kind": "institute",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/emsi",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "politicalfuture",
+      "name": "Center for the Political Future",
+      "kind": "center",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/center-for-political-future",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "easc",
+      "name": "East Asian Studies Center",
+      "kind": "center",
+      "parent": "dornsife",
+      "url": "https://dornsife.usc.edu/easc",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "schaeffer",
+      "name": "USC Schaeffer Center for Health Policy & Economics",
+      "kind": "center",
+      "url": "https://healthpolicy.usc.edu",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "cndps",
+      "name": "Center for Non-Profits, Philanthropy and Social Enterprise (Price)",
+      "kind": "center",
+      "parent": "price",
+      "url": "https://priceschool.usc.edu/cndps",
+      "status": "no-feed",
+      "note": "Tribe ?ical=1 holds about 1 event"
+    },
+    {
+      "id": "visionsvoices",
+      "name": "Visions and Voices: The Arts and Humanities Initiative",
+      "kind": "center",
+      "url": "https://visionsandvoices.usc.edu",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "greif",
+      "name": "Lloyd Greif Center for Entrepreneurial Studies",
+      "kind": "center",
+      "parent": "marshall",
+      "url": "https://www.marshall.usc.edu/departments/lloyd-greif-center-entrepreneurial-studies",
+      "status": "unchecked"
+    },
+    {
+      "id": "cais",
+      "name": "Center for AI in Society",
+      "kind": "center",
+      "parent": "viterbi",
+      "url": "https://cais.usc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "usg",
+      "name": "Undergraduate Student Government",
+      "kind": "student",
+      "url": "https://usg.usc.edu",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu and EngageSC"
+    },
+    {
+      "id": "gsg",
+      "name": "Graduate Student Government",
+      "kind": "student",
+      "url": "https://gsg.usc.edu",
+      "status": "in-wide",
+      "note": "posts on EngageSC"
+    },
+    {
+      "id": "libraries",
+      "name": "USC Libraries",
+      "kind": "library",
+      "url": "https://libraries.usc.edu",
+      "status": "in-wide",
+      "note": "a big share of calendar.usc.edu"
+    },
+    {
+      "id": "pam",
+      "name": "USC Pacific Asia Museum",
+      "kind": "museum",
+      "url": "https://pacificasiamuseum.usc.edu",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "fisher",
+      "name": "USC Fisher Museum of Art",
+      "kind": "museum",
+      "url": "https://fisher.usc.edu",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "career",
+      "name": "USC Career Center",
+      "kind": "other",
+      "url": "https://careers.usc.edu",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    },
+    {
+      "id": "religiouslife",
+      "name": "Office of Religious Life",
+      "kind": "other",
+      "url": "https://orl.usc.edu",
+      "status": "in-wide",
+      "note": "events seen on calendar.usc.edu"
+    }
+  ]
+}

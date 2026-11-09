@@ -1,0 +1,423 @@
+{
+  "id": "bu",
+  "name": "Boston University",
+  "wide": [
+    "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=17&days=31"
+  ],
+  "units": [
+    {
+      "id": "cas",
+      "name": "College of Arts & Sciences",
+      "kind": "school",
+      "url": "https://www.bu.edu/cas",
+      "status": "unchecked",
+      "note": "no school-wide events page found"
+    },
+    {
+      "id": "cds",
+      "name": "Faculty of Computing & Data Sciences",
+      "kind": "school",
+      "url": "https://www.bu.edu/cds-faculty",
+      "status": "no-feed",
+      "note": "calendar cid 1044 has no upcoming events; events page behind BU login"
+    },
+    {
+      "id": "com",
+      "name": "College of Communication",
+      "kind": "school",
+      "url": "https://www.bu.edu/com",
+      "status": "unchecked",
+      "note": "/events 404"
+    },
+    {
+      "id": "eng",
+      "name": "College of Engineering",
+      "kind": "school",
+      "url": "https://www.bu.edu/eng",
+      "status": "in-wide",
+      "note": "calendar cid 25 is mostly in University Events"
+    },
+    {
+      "id": "cfa",
+      "name": "College of Fine Arts",
+      "kind": "school",
+      "url": "https://www.bu.edu/cfa",
+      "status": "feed",
+      "feeds": [
+        "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=20&days=31"
+      ]
+    },
+    {
+      "id": "cgs",
+      "name": "College of General Studies",
+      "kind": "school",
+      "url": "https://www.bu.edu/cgs",
+      "status": "unchecked"
+    },
+    {
+      "id": "sargent",
+      "name": "Sargent College of Health & Rehabilitation Sciences",
+      "kind": "school",
+      "url": "https://www.bu.edu/sargent",
+      "status": "unchecked"
+    },
+    {
+      "id": "dental",
+      "name": "Henry M. Goldman School of Dental Medicine",
+      "kind": "school",
+      "url": "https://www.bu.edu/dental",
+      "status": "unchecked",
+      "note": "/events 404"
+    },
+    {
+      "id": "grs",
+      "name": "Graduate School of Arts & Sciences",
+      "kind": "school",
+      "url": "https://www.bu.edu/grs",
+      "status": "unchecked"
+    },
+    {
+      "id": "hospitality",
+      "name": "School of Hospitality Administration",
+      "kind": "school",
+      "url": "https://www.bu.edu/hospitality",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "law",
+      "name": "School of Law",
+      "kind": "school",
+      "url": "https://www.bu.edu/law",
+      "feeds": [
+        "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=44&days=31"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "medicine",
+      "name": "Chobanian & Avedisian School of Medicine (Medical Campus)",
+      "kind": "school",
+      "url": "https://www.bumc.bu.edu",
+      "feeds": [
+        "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=264&days=31"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "met",
+      "name": "Metropolitan College",
+      "kind": "school",
+      "url": "https://www.bu.edu/met",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "pardee",
+      "name": "Frederick S. Pardee School of Global Studies",
+      "kind": "school",
+      "url": "https://www.bu.edu/pardeeschool",
+      "feeds": [
+        "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=1041&days=31"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "questrom",
+      "name": "Questrom School of Business",
+      "kind": "school",
+      "url": "https://www.bu.edu/questrom",
+      "feeds": [
+        "https://questromcommon.bu.edu/rss_events"
+      ],
+      "status": "feed",
+      "note": "also a tribe API at www.bu.edu/questrom/wp-json/tribe/events/v1/events (3 upcoming); cid 22 empty"
+    },
+    {
+      "id": "sph",
+      "name": "School of Public Health",
+      "kind": "school",
+      "url": "https://www.bu.edu/sph",
+      "feeds": [
+        "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=1022&days=31"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "ssw",
+      "name": "School of Social Work",
+      "kind": "school",
+      "url": "https://www.bu.edu/ssw",
+      "status": "no-feed",
+      "note": "events page is admissions HTML"
+    },
+    {
+      "id": "sth",
+      "name": "School of Theology",
+      "kind": "school",
+      "url": "https://www.bu.edu/sth",
+      "status": "unchecked"
+    },
+    {
+      "id": "wheelock",
+      "name": "Wheelock College of Education & Human Development",
+      "kind": "school",
+      "url": "https://www.bu.edu/wheelock",
+      "status": "blocked",
+      "note": "events page redirects to BU login"
+    },
+    {
+      "id": "khc",
+      "name": "Kilachand Honors College",
+      "kind": "school",
+      "url": "https://www.bu.edu/khc",
+      "status": "unchecked",
+      "note": "/events 404"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "cds",
+      "url": "https://www.bu.edu/cs",
+      "status": "no-feed",
+      "note": "calendar cid 353 empty; events page is HTML"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical & Computer Engineering",
+      "kind": "department",
+      "parent": "eng",
+      "url": "https://www.bu.edu/eng/departments/ece",
+      "status": "in-wide",
+      "note": "Engineering events are mostly in University Events"
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "eng",
+      "url": "https://www.bu.edu/eng/departments/me",
+      "status": "in-wide",
+      "note": "Engineering events are mostly in University Events"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "eng",
+      "url": "https://www.bu.edu/eng/departments/bme",
+      "status": "in-wide",
+      "note": "Engineering events are mostly in University Events"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics & Statistics",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://www.bu.edu/math",
+      "status": "unchecked",
+      "note": "/events 404"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://www.bu.edu/physics",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://www.bu.edu/chemistry",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "biology",
+      "name": "Biology",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://www.bu.edu/biology",
+      "feeds": [
+        "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=87&days=31"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://www.bu.edu/econ",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychological & Brain Sciences",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://www.bu.edu/psych",
+      "status": "unchecked",
+      "note": "/events 404"
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://www.bu.edu/polisci",
+      "status": "unchecked"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://www.bu.edu/history",
+      "status": "unchecked",
+      "note": "events page uses the BU calendar plugin; cid unknown"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://www.bu.edu/english",
+      "status": "unchecked"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://www.bu.edu/philo",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://www.bu.edu/sociology",
+      "status": "unchecked"
+    },
+    {
+      "id": "hariri",
+      "name": "Rafik B. Hariri Institute for Computing and Computational Science & Engineering",
+      "kind": "institute",
+      "url": "https://www.bu.edu/hic",
+      "feeds": [
+        "https://www.bu.edu/phpbin/calendar/rpc/events.php?cid=591&days=31"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "igs",
+      "name": "Institute for Global Sustainability",
+      "kind": "institute",
+      "url": "https://www.bu.edu/igs",
+      "status": "no-feed",
+      "note": "events calendar page is HTML"
+    },
+    {
+      "id": "humanities",
+      "name": "Center for the Humanities",
+      "kind": "center",
+      "parent": "cas",
+      "url": "https://www.bu.edu/humanities",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "photonics",
+      "name": "Photonics Center",
+      "kind": "center",
+      "parent": "eng",
+      "url": "https://www.bu.edu/photonics",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "antiracism",
+      "name": "Center for Antiracist Research",
+      "kind": "center",
+      "url": "https://www.bu.edu/antiracism-center",
+      "status": "unchecked"
+    },
+    {
+      "id": "gdp",
+      "name": "Global Development Policy Center",
+      "kind": "center",
+      "parent": "pardee",
+      "url": "https://www.bu.edu/gdp",
+      "status": "unchecked"
+    },
+    {
+      "id": "spark",
+      "name": "BU Spark! / Innovate@BU",
+      "kind": "center",
+      "url": "https://www.bu.edu/innovate",
+      "status": "unchecked"
+    },
+    {
+      "id": "isec",
+      "name": "Center for Information & Systems Engineering",
+      "kind": "center",
+      "parent": "eng",
+      "url": "https://www.bu.edu/cise",
+      "status": "unchecked"
+    },
+    {
+      "id": "sg",
+      "name": "Student Government",
+      "kind": "student",
+      "url": "https://www.bu.edu/sg",
+      "status": "unchecked",
+      "note": "/sg 404; Engage tenant shows 0 events"
+    },
+    {
+      "id": "gso",
+      "name": "Graduate Student Organization",
+      "kind": "student",
+      "url": "https://www.bu.edu/gso",
+      "status": "no-feed",
+      "note": "site has no event feed"
+    },
+    {
+      "id": "library",
+      "name": "BU Libraries",
+      "kind": "library",
+      "url": "https://www.bu.edu/library",
+      "status": "no-feed",
+      "note": "events & exhibitions page is HTML"
+    },
+    {
+      "id": "art-galleries",
+      "name": "BU Art Galleries",
+      "kind": "museum",
+      "url": "https://www.bu.edu/art",
+      "status": "unchecked"
+    },
+    {
+      "id": "careers",
+      "name": "Center for Career Development",
+      "kind": "other",
+      "url": "https://careers.bu.edu",
+      "status": "no-feed",
+      "note": "career events are on Handshake"
+    },
+    {
+      "id": "athletics",
+      "name": "BU Athletics",
+      "kind": "other",
+      "url": "https://goterriers.com",
+      "status": "unchecked"
+    }
+  ]
+}

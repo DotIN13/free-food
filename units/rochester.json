@@ -1,0 +1,315 @@
+{
+  "id": "rochester",
+  "name": "University of Rochester",
+  "wide": [
+    "https://events.rochester.edu",
+    "https://ccc.rochester.edu/rss_events"
+  ],
+  "units": [
+    {
+      "id": "ase",
+      "name": "School of Arts & Sciences",
+      "kind": "school",
+      "url": "https://www.sas.rochester.edu",
+      "status": "in-wide",
+      "note": "College events page embeds events.rochester.edu (Localist)"
+    },
+    {
+      "id": "hajim",
+      "name": "Hajim School of Engineering & Applied Sciences",
+      "kind": "school",
+      "url": "https://www.hajim.rochester.edu",
+      "status": "unchecked",
+      "note": "/events/ is 404"
+    },
+    {
+      "id": "simon",
+      "name": "Simon Business School",
+      "kind": "school",
+      "url": "https://simon.rochester.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "warner",
+      "name": "Warner School of Education and Human Development",
+      "kind": "school",
+      "url": "https://www.warner.rochester.edu",
+      "status": "in-wide",
+      "note": "site links events.rochester.edu"
+    },
+    {
+      "id": "eastman",
+      "name": "Eastman School of Music",
+      "kind": "school",
+      "url": "https://www.esm.rochester.edu",
+      "status": "in-wide",
+      "note": "calendar redirects to events.rochester.edu/group/eastman"
+    },
+    {
+      "id": "smd",
+      "name": "School of Medicine and Dentistry",
+      "kind": "school",
+      "url": "https://www.urmc.rochester.edu/smd",
+      "status": "in-wide",
+      "note": "URMC events page is a Localist template"
+    },
+    {
+      "id": "nursing",
+      "name": "School of Nursing",
+      "kind": "school",
+      "url": "https://son.rochester.edu",
+      "status": "in-wide",
+      "note": "events page uses Localist"
+    },
+    {
+      "id": "cs",
+      "name": "Department of Computer Science",
+      "kind": "department",
+      "parent": "hajim",
+      "url": "https://www.cs.rochester.edu",
+      "status": "in-wide",
+      "note": "site links events.rochester.edu"
+    },
+    {
+      "id": "ece",
+      "name": "Department of Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "hajim",
+      "url": "https://www.hajim.rochester.edu/ece",
+      "status": "unchecked"
+    },
+    {
+      "id": "me",
+      "name": "Department of Mechanical Engineering",
+      "kind": "department",
+      "parent": "hajim",
+      "url": "https://www.hajim.rochester.edu/me",
+      "status": "unchecked"
+    },
+    {
+      "id": "bme",
+      "name": "Department of Biomedical Engineering",
+      "kind": "department",
+      "parent": "hajim",
+      "url": "https://www.hajim.rochester.edu/bme",
+      "status": "unchecked"
+    },
+    {
+      "id": "optics",
+      "name": "The Institute of Optics",
+      "kind": "department",
+      "parent": "hajim",
+      "url": "https://www.hajim.rochester.edu/optics",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "ase",
+      "url": "https://www.sas.rochester.edu/mth",
+      "status": "in-wide",
+      "note": "news-events page embeds events.rochester.edu"
+    },
+    {
+      "id": "stats",
+      "name": "Department of Biostatistics and Computational Biology",
+      "kind": "department",
+      "parent": "smd",
+      "url": "https://www.urmc.rochester.edu/biostat",
+      "status": "unchecked"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics and Astronomy",
+      "kind": "department",
+      "parent": "ase",
+      "url": "https://www.sas.rochester.edu/pas",
+      "status": "in-wide",
+      "note": "news-events page links events.rochester.edu"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "ase",
+      "url": "https://www.sas.rochester.edu/chm",
+      "status": "in-wide",
+      "note": "news-events page embeds events.rochester.edu"
+    },
+    {
+      "id": "biology",
+      "name": "Department of Biology",
+      "kind": "department",
+      "parent": "ase",
+      "url": "https://www.sas.rochester.edu/bio",
+      "status": "in-wide",
+      "note": "news-events page links events.rochester.edu"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "ase",
+      "url": "https://www.sas.rochester.edu/eco",
+      "status": "in-wide",
+      "note": "news-events page links events.rochester.edu"
+    },
+    {
+      "id": "bcs",
+      "name": "Department of Brain and Cognitive Sciences",
+      "kind": "department",
+      "parent": "ase",
+      "url": "https://www.sas.rochester.edu/bcs",
+      "status": "unchecked"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "ase",
+      "url": "https://www.sas.rochester.edu/psy",
+      "status": "unchecked"
+    },
+    {
+      "id": "polisci",
+      "name": "Department of Political Science",
+      "kind": "department",
+      "parent": "ase",
+      "url": "https://www.sas.rochester.edu/psc",
+      "status": "in-wide",
+      "note": "news-events page links events.rochester.edu"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "ase",
+      "url": "https://www.sas.rochester.edu/his",
+      "status": "in-wide",
+      "note": "news-events page links events.rochester.edu"
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "parent": "ase",
+      "url": "https://www.sas.rochester.edu/eng",
+      "status": "in-wide",
+      "note": "news-events page links events.rochester.edu"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "ase",
+      "url": "https://www.sas.rochester.edu/phl",
+      "status": "in-wide",
+      "note": "news-events page links events.rochester.edu"
+    },
+    {
+      "id": "anthropology",
+      "name": "Department of Anthropology",
+      "kind": "department",
+      "parent": "ase",
+      "url": "https://www.sas.rochester.edu/ant",
+      "status": "unchecked"
+    },
+    {
+      "id": "goergen",
+      "name": "Goergen Institute for Data Science and Artificial Intelligence",
+      "kind": "institute",
+      "parent": "hajim",
+      "url": "https://www.hajim.rochester.edu/dsc",
+      "status": "unchecked",
+      "note": "events link redirects to a 404"
+    },
+    {
+      "id": "lle",
+      "name": "Laboratory for Laser Energetics",
+      "kind": "center",
+      "url": "https://www.lle.rochester.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "humanities",
+      "name": "Humanities Center",
+      "kind": "center",
+      "parent": "ase",
+      "url": "https://www.sas.rochester.edu/humanities",
+      "status": "in-wide",
+      "note": "events page embeds events.rochester.edu"
+    },
+    {
+      "id": "wilmot",
+      "name": "Wilmot Cancer Institute",
+      "kind": "institute",
+      "parent": "smd",
+      "url": "https://www.urmc.rochester.edu/cancer-institute",
+      "status": "unchecked"
+    },
+    {
+      "id": "circ",
+      "name": "Center for Integrated Research Computing",
+      "kind": "center",
+      "url": "https://www.circ.rochester.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "entrepreneurship",
+      "name": "Ain Center for Entrepreneurship",
+      "kind": "center",
+      "url": "https://www.rochester.edu/ain-center",
+      "status": "unchecked"
+    },
+    {
+      "id": "sa",
+      "name": "Students' Association Government",
+      "kind": "student",
+      "url": "https://sa.rochester.edu",
+      "status": "in-wide",
+      "note": "student-org events are on CCC (CampusGroups)"
+    },
+    {
+      "id": "gsa",
+      "name": "Graduate Student Association",
+      "kind": "student",
+      "url": "https://gsa.rochester.edu",
+      "status": "unchecked",
+      "note": "did not answer within 15 s"
+    },
+    {
+      "id": "library",
+      "name": "River Campus Libraries",
+      "kind": "library",
+      "url": "https://www.library.rochester.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "mag",
+      "name": "Memorial Art Gallery",
+      "kind": "museum",
+      "url": "https://mag.rochester.edu",
+      "status": "feed",
+      "feeds": [
+        "https://mag.rochester.edu/programs/?ical=1"
+      ]
+    },
+    {
+      "id": "career",
+      "name": "Greene Center for Career Education and Connections",
+      "kind": "other",
+      "url": "https://careereducation.rochester.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "athletics",
+      "name": "Rochester Athletics (Yellowjackets)",
+      "kind": "other",
+      "url": "https://uofrathletics.com",
+      "status": "unchecked"
+    }
+  ]
+}

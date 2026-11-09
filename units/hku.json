@@ -1,0 +1,345 @@
+{
+  "id": "hku",
+  "name": "The University of Hong Kong",
+  "wide": [],
+  "units": [
+    {
+      "id": "arch",
+      "name": "Faculty of Architecture",
+      "kind": "school",
+      "url": "https://www.arch.hku.hk",
+      "status": "unchecked",
+      "note": "events page has Google Calendar links; no calendar id checked"
+    },
+    {
+      "id": "arts",
+      "name": "Faculty of Arts",
+      "kind": "school",
+      "url": "https://arts.hku.hk",
+      "status": "unchecked",
+      "found": "https://arts.hku.hk/wp-json/wp/v2/events?per_page=50",
+      "note": "WordPress 'events' post type in the REST API; event dates likely in custom fields"
+    },
+    {
+      "id": "business",
+      "name": "HKU Business School (Faculty of Business and Economics)",
+      "kind": "school",
+      "url": "https://www.hkubs.hku.hk",
+      "status": "unchecked",
+      "found": "https://www.hkubs.hku.hk/wp-json/wp/v2/event?per_page=50",
+      "note": "WordPress 'event' post type in the REST API, updated daily"
+    },
+    {
+      "id": "dentistry",
+      "name": "Faculty of Dentistry",
+      "kind": "school",
+      "url": "https://facdent.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "education",
+      "name": "Faculty of Education",
+      "kind": "school",
+      "url": "https://web.edu.hku.hk",
+      "status": "no-feed",
+      "note": "upcoming-events page is HTML only"
+    },
+    {
+      "id": "engineering",
+      "name": "Faculty of Engineering",
+      "kind": "school",
+      "url": "https://www.engineering.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "law",
+      "name": "Faculty of Law",
+      "kind": "school",
+      "url": "https://www.law.hku.hk",
+      "status": "no-feed",
+      "note": "events page is HTML with per-event add-to-Google links; no events type in its WP API"
+    },
+    {
+      "id": "medicine",
+      "name": "LKS Faculty of Medicine",
+      "kind": "school",
+      "url": "https://www.med.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "science",
+      "name": "Faculty of Science",
+      "kind": "school",
+      "url": "https://www.scifac.hku.hk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "socsc",
+      "name": "Faculty of Social Sciences",
+      "kind": "school",
+      "url": "https://www.socsc.hku.hk",
+      "status": "unchecked",
+      "note": "events page answered 500"
+    },
+    {
+      "id": "gradsch",
+      "name": "Graduate School",
+      "kind": "school",
+      "url": "https://gradsch.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "space",
+      "name": "HKU SPACE (School of Professional and Continuing Education)",
+      "kind": "school",
+      "url": "https://hkuspace.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "cs",
+      "name": "School of Computing and Data Science / Department of Computer Science",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.cs.hku.hk",
+      "status": "no-feed",
+      "note": "WordPress events page, no events type in its API"
+    },
+    {
+      "id": "ece",
+      "name": "Department of Electrical and Electronic Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://ece.hku.hk",
+      "status": "blocked",
+      "note": "events page answers 403"
+    },
+    {
+      "id": "mech",
+      "name": "Department of Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://mech.hku.hk",
+      "status": "unchecked",
+      "found": "https://mech.hku.hk/wp-json/wp/v2/seminar?per_page=50",
+      "note": "WordPress 'seminar' post type in the REST API"
+    },
+    {
+      "id": "bme",
+      "name": "Department of Biomedical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.bme.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://hkumath.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "statistics",
+      "name": "Department of Statistics and Actuarial Science",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.saasweb.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.physics.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.chemistry.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "biosch",
+      "name": "School of Biological Sciences",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.biosch.hku.hk",
+      "status": "feed",
+      "feeds": [
+        "https://www.biosch.hku.hk/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "economics",
+      "name": "Economics (HKU Business School)",
+      "kind": "department",
+      "parent": "business",
+      "url": "https://www.hkubs.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "socsc",
+      "url": "https://www.psychology.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "politics",
+      "name": "Department of Politics and Public Administration",
+      "kind": "department",
+      "parent": "socsc",
+      "url": "https://www.ppaweb.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "socsc",
+      "url": "https://www.sociodep.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "socialwork",
+      "name": "Department of Social Work and Social Administration",
+      "kind": "department",
+      "parent": "socsc",
+      "url": "https://www.socialwork.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "arts",
+      "url": "https://www.history.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "english",
+      "name": "School of English",
+      "kind": "department",
+      "parent": "arts",
+      "url": "https://www.english.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "arts",
+      "url": "https://philosophy.hku.hk",
+      "status": "feed",
+      "feeds": [
+        "https://philosophy.hku.hk/events.ics"
+      ]
+    },
+    {
+      "id": "sph",
+      "name": "School of Public Health",
+      "kind": "department",
+      "parent": "medicine",
+      "url": "https://sph.hku.hk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "ids",
+      "name": "HKU Musketeers Foundation Institute of Data Science",
+      "kind": "institute",
+      "url": "https://datascience.hku.hk",
+      "status": "feed",
+      "feeds": [
+        "https://datascience.hku.hk/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "hkihss",
+      "name": "Hong Kong Institute for the Humanities and Social Sciences",
+      "kind": "institute",
+      "url": "https://www.hkihss.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "hkuie",
+      "name": "HKU Institute of Entrepreneurship (iDendron)",
+      "kind": "center",
+      "url": "https://www.hkuie.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "climate",
+      "name": "Institute for Climate and Carbon Neutrality",
+      "kind": "institute",
+      "url": "https://iccn.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "csa",
+      "name": "Centre of Asian Studies / Hong Kong Institute of Asia-Pacific Studies",
+      "kind": "center",
+      "url": "https://www.hkihss.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "su",
+      "name": "HKU Students' Union",
+      "kind": "student",
+      "url": "https://www.hkusu.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "pgsa",
+      "name": "Postgraduate Students Association",
+      "kind": "student",
+      "url": "https://www.hkupgsa.com",
+      "status": "unchecked"
+    },
+    {
+      "id": "halls",
+      "name": "Residential halls and colleges",
+      "kind": "student",
+      "url": "https://www.cedars.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "cedars",
+      "name": "CEDARS (Centre of Development and Resources for Students)",
+      "kind": "other",
+      "url": "https://www.cedars.hku.hk",
+      "status": "unchecked"
+    },
+    {
+      "id": "library",
+      "name": "HKU Libraries",
+      "kind": "library",
+      "url": "https://www.lib.hku.hk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "umag",
+      "name": "University Museum and Art Gallery (UMAG)",
+      "kind": "museum",
+      "url": "https://umag.hku.hk",
+      "status": "unchecked",
+      "found": "https://umag.hku.hk/wp-json/wp/v2/event?per_page=50",
+      "note": "WordPress 'event' post type in the REST API"
+    },
+    {
+      "id": "career",
+      "name": "Careers and Placement (CEDARS)",
+      "kind": "other",
+      "url": "https://www.cedars.hku.hk/careers",
+      "status": "unchecked"
+    }
+  ]
+}

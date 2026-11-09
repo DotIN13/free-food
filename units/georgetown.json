@@ -1,0 +1,363 @@
+{
+  "id": "georgetown",
+  "name": "Georgetown University",
+  "wide": [
+    "https://events.georgetown.edu/live/json/events/max/500",
+    "https://static-prod-us-east-1.campusgroups.com/ical/georgetown/ical_georgetown.ics"
+  ],
+  "units": [
+    {
+      "id": "college",
+      "name": "Georgetown College of Arts & Sciences",
+      "kind": "school",
+      "url": "https://college.georgetown.edu",
+      "status": "in-wide",
+      "note": "its events page redirects to events.georgetown.edu"
+    },
+    {
+      "id": "msb",
+      "name": "McDonough School of Business",
+      "kind": "school",
+      "url": "https://msb.georgetown.edu",
+      "status": "no-feed",
+      "note": "events page is HTML; its /feed/ is news stories"
+    },
+    {
+      "id": "sfs",
+      "name": "Walsh School of Foreign Service",
+      "kind": "school",
+      "url": "https://sfs.georgetown.edu",
+      "status": "in-wide",
+      "note": "events page lists events.georgetown.edu events"
+    },
+    {
+      "id": "law",
+      "name": "Georgetown University Law Center",
+      "kind": "school",
+      "url": "https://www.law.georgetown.edu",
+      "status": "in-wide",
+      "note": "its events page redirects to events.georgetown.edu"
+    },
+    {
+      "id": "mccourt",
+      "name": "McCourt School of Public Policy",
+      "kind": "school",
+      "url": "https://mccourt.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "nursing",
+      "name": "School of Nursing",
+      "kind": "school",
+      "url": "https://nursing.georgetown.edu",
+      "status": "in-wide",
+      "note": "events page lists events.georgetown.edu events"
+    },
+    {
+      "id": "health",
+      "name": "School of Health",
+      "kind": "school",
+      "url": "https://health.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "medicine",
+      "name": "School of Medicine",
+      "kind": "school",
+      "url": "https://som.georgetown.edu",
+      "status": "in-wide",
+      "note": "events page lists events.georgetown.edu events"
+    },
+    {
+      "id": "grad",
+      "name": "Graduate School of Arts & Sciences",
+      "kind": "school",
+      "url": "https://grad.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "scs",
+      "name": "School of Continuing Studies",
+      "kind": "school",
+      "url": "https://scs.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "qatar",
+      "name": "Georgetown University in Qatar",
+      "kind": "school",
+      "url": "https://www.qatar.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://cs.georgetown.edu",
+      "status": "in-wide",
+      "note": "events page lists events.georgetown.edu events"
+    },
+    {
+      "id": "mathstat",
+      "name": "Mathematics and Statistics",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://mathstat.georgetown.edu",
+      "status": "in-wide",
+      "note": "events page lists events.georgetown.edu events"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://physics.georgetown.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://chemistry.georgetown.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "biology",
+      "name": "Biology",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://biology.georgetown.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://economics.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://psychology.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "government",
+      "name": "Government",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://government.georgetown.edu",
+      "status": "in-wide",
+      "note": "events page lists events.georgetown.edu events"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://history.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://english.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://philosophy.georgetown.edu",
+      "status": "no-feed",
+      "note": "events are WordPress posts (category feed is lecture-series pages, not dated events)"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://sociology.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "linguistics",
+      "name": "Linguistics",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://linguistics.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cset",
+      "name": "Center for Security and Emerging Technology (CSET)",
+      "kind": "center",
+      "parent": "sfs",
+      "url": "https://cset.georgetown.edu",
+      "status": "no-feed",
+      "note": "events page is HTML; its /feed/ is publications"
+    },
+    {
+      "id": "berkley",
+      "name": "Berkley Center for Religion, Peace & World Affairs",
+      "kind": "center",
+      "url": "https://berkleycenter.georgetown.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "isd",
+      "name": "Institute for the Study of Diplomacy",
+      "kind": "institute",
+      "parent": "sfs",
+      "url": "https://isd.georgetown.edu",
+      "status": "in-wide",
+      "note": "its events page redirects to events.georgetown.edu"
+    },
+    {
+      "id": "giwps",
+      "name": "Georgetown Institute for Women, Peace and Security",
+      "kind": "institute",
+      "parent": "sfs",
+      "url": "https://giwps.georgetown.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "cmes",
+      "name": "Center for Contemporary Arab Studies",
+      "kind": "center",
+      "parent": "sfs",
+      "url": "https://ccas.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "crees",
+      "name": "Center for Eurasian, Russian and East European Studies",
+      "kind": "center",
+      "parent": "sfs",
+      "url": "https://ceres.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "asian",
+      "name": "Asian Studies Program",
+      "kind": "center",
+      "parent": "sfs",
+      "url": "https://asia.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "clas",
+      "name": "Center for Latin American Studies",
+      "kind": "center",
+      "parent": "sfs",
+      "url": "https://clas.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "massive-data",
+      "name": "Massive Data Institute",
+      "kind": "institute",
+      "parent": "mccourt",
+      "url": "https://mccourt.georgetown.edu/research/the-massive-data-institute",
+      "status": "unchecked"
+    },
+    {
+      "id": "ethics-lab",
+      "name": "Ethics Lab / Kennedy Institute of Ethics",
+      "kind": "institute",
+      "url": "https://kennedyinstitute.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "lombardi",
+      "name": "Lombardi Comprehensive Cancer Center",
+      "kind": "center",
+      "parent": "medicine",
+      "url": "https://lombardi.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "oneill",
+      "name": "O'Neill Institute for National and Global Health Law",
+      "kind": "institute",
+      "parent": "law",
+      "url": "https://oneill.law.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "pyle",
+      "name": "Pyle Center for Entrepreneurship / Startup Hoyas",
+      "kind": "center",
+      "parent": "msb",
+      "url": "https://entrepreneurship.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "gu-politics",
+      "name": "Institute of Politics and Public Service",
+      "kind": "institute",
+      "parent": "mccourt",
+      "url": "https://politics.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "gusa",
+      "name": "Georgetown University Student Association (GUSA)",
+      "kind": "student",
+      "url": "https://gusa.georgetown.edu",
+      "status": "in-wide",
+      "note": "student events are on the CampusGroups feed we read"
+    },
+    {
+      "id": "gsg",
+      "name": "Graduate Student Government",
+      "kind": "student",
+      "url": "https://grad.georgetown.edu",
+      "status": "in-wide",
+      "note": "student events are on the CampusGroups feed we read"
+    },
+    {
+      "id": "library",
+      "name": "Georgetown University Library",
+      "kind": "library",
+      "url": "https://library.georgetown.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "career",
+      "name": "Cawley Career Education Center",
+      "kind": "other",
+      "url": "https://careercenter.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "davis",
+      "name": "Davis Performing Arts Center",
+      "kind": "other",
+      "url": "https://performingarts.georgetown.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "athletics",
+      "name": "Georgetown Hoyas Athletics",
+      "kind": "other",
+      "url": "https://guhoyas.com",
+      "status": "unchecked"
+    }
+  ]
+}

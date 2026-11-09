@@ -1,0 +1,437 @@
+{
+  "id": "umich",
+  "name": "University of Michigan",
+  "wide": [
+    "https://umich.campuslabs.com/engage"
+  ],
+  "units": [
+    {
+      "id": "lsa",
+      "name": "College of Literature, Science, and the Arts (LSA)",
+      "kind": "school",
+      "url": "https://lsa.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare); events come from events.umich.edu, also blocked"
+    },
+    {
+      "id": "engineering",
+      "name": "College of Engineering",
+      "kind": "school",
+      "url": "https://cse.engin.umich.edu",
+      "status": "blocked",
+      "note": "engin.umich.edu sites answer 403 (Cloudflare)"
+    },
+    {
+      "id": "medicine",
+      "name": "Medical School",
+      "kind": "school",
+      "url": "https://medschool.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "law",
+      "name": "Law School",
+      "kind": "school",
+      "url": "https://michigan.law.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "ross",
+      "name": "Stephen M. Ross School of Business",
+      "kind": "school",
+      "url": "https://michiganross.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare); its CampusGroups tenant has 0 upcoming events"
+    },
+    {
+      "id": "sph",
+      "name": "School of Public Health",
+      "kind": "school",
+      "url": "https://sph.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "ford",
+      "name": "Gerald R. Ford School of Public Policy",
+      "kind": "school",
+      "url": "https://fordschool.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "umsi",
+      "name": "School of Information",
+      "kind": "school",
+      "url": "https://www.si.umich.edu",
+      "status": "no-feed",
+      "note": "Drupal events list in HTML; rss.xml is news"
+    },
+    {
+      "id": "seas",
+      "name": "School for Environment and Sustainability",
+      "kind": "school",
+      "url": "https://seas.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "smtd",
+      "name": "School of Music, Theatre & Dance",
+      "kind": "school",
+      "url": "https://smtd.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "education",
+      "name": "Marsal Family School of Education",
+      "kind": "school",
+      "url": "https://marsal.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "ssw",
+      "name": "School of Social Work",
+      "kind": "school",
+      "url": "https://ssw.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "nursing",
+      "name": "School of Nursing",
+      "kind": "school",
+      "url": "https://nursing.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "taubman",
+      "name": "Taubman College of Architecture and Urban Planning",
+      "kind": "school",
+      "url": "https://taubmancollege.umich.edu",
+      "status": "feed",
+      "feeds": [
+        "https://taubmancollege.umich.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "stamps",
+      "name": "Penny W. Stamps School of Art & Design",
+      "kind": "school",
+      "url": "https://stamps.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "pharmacy",
+      "name": "College of Pharmacy",
+      "kind": "school",
+      "url": "https://pharmacy.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "dentistry",
+      "name": "School of Dentistry",
+      "kind": "school",
+      "url": "https://dent.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "kinesiology",
+      "name": "School of Kinesiology",
+      "kind": "school",
+      "url": "https://www.kines.umich.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "rackham",
+      "name": "Rackham Graduate School",
+      "kind": "school",
+      "url": "https://rackham.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "cse",
+      "name": "Computer Science and Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cse.engin.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://ece.engin.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://me.engin.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://bme.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/math",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "stats",
+      "name": "Department of Statistics",
+      "kind": "department",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/stats",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/physics",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/chem",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "mcdb",
+      "name": "Molecular, Cellular, and Developmental Biology",
+      "kind": "department",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/mcdb",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "eeb",
+      "name": "Ecology and Evolutionary Biology",
+      "kind": "department",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/eeb",
+      "status": "blocked",
+      "note": "lsa.umich.edu answers 403 (Cloudflare)"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/econ",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/psych",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "polisci",
+      "name": "Department of Political Science",
+      "kind": "department",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/polisci",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/history",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "english",
+      "name": "Department of English Language and Literature",
+      "kind": "department",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/english",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/philosophy",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/soc",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "midas",
+      "name": "Michigan Institute for Data and AI in Society (MIDAS)",
+      "kind": "institute",
+      "url": "https://midas.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "ai-lab",
+      "name": "Michigan AI Lab",
+      "kind": "center",
+      "parent": "engineering",
+      "url": "https://ai.engin.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "isr",
+      "name": "Institute for Social Research",
+      "kind": "institute",
+      "url": "https://isr.umich.edu",
+      "status": "unchecked",
+      "note": "/events/ is 404"
+    },
+    {
+      "id": "ii",
+      "name": "International Institute",
+      "kind": "institute",
+      "parent": "lsa",
+      "url": "https://ii.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "ih",
+      "name": "Institute for the Humanities",
+      "kind": "institute",
+      "parent": "lsa",
+      "url": "https://lsa.umich.edu/ih",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "graham",
+      "name": "Graham Sustainability Institute",
+      "kind": "institute",
+      "url": "https://graham.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "zli",
+      "name": "Zell Lurie Institute for Entrepreneurial Studies",
+      "kind": "institute",
+      "parent": "ross",
+      "url": "https://zli.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "rogel",
+      "name": "Rogel Cancer Center",
+      "kind": "center",
+      "parent": "medicine",
+      "url": "https://www.rogelcancercenter.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "csg",
+      "name": "Central Student Government",
+      "kind": "student",
+      "url": "https://www.csg.umich.edu",
+      "status": "in-wide",
+      "note": "posts events through Maize Pages (Engage)"
+    },
+    {
+      "id": "rsg",
+      "name": "Rackham Student Government",
+      "kind": "student",
+      "url": "https://rackham.umich.edu/rackham-life/rackham-student-government",
+      "status": "in-wide",
+      "note": "student org on Maize Pages (Engage)"
+    },
+    {
+      "id": "library",
+      "name": "University of Michigan Library",
+      "kind": "library",
+      "url": "https://www.lib.umich.edu",
+      "status": "blocked",
+      "note": "events page is drawn from events.umich.edu, which is behind a Cloudflare challenge"
+    },
+    {
+      "id": "umma",
+      "name": "University of Michigan Museum of Art",
+      "kind": "museum",
+      "url": "https://umma.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "ums",
+      "name": "University Musical Society",
+      "kind": "other",
+      "url": "https://ums.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "career",
+      "name": "University Career Center",
+      "kind": "other",
+      "url": "https://careercenter.umich.edu",
+      "status": "blocked",
+      "note": "403 (Cloudflare)"
+    },
+    {
+      "id": "athletics",
+      "name": "Michigan Athletics",
+      "kind": "other",
+      "url": "https://mgoblue.com",
+      "status": "unchecked"
+    }
+  ]
+}

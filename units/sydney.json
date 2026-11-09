@@ -1,0 +1,375 @@
+{
+  "id": "sydney",
+  "name": "University of Sydney",
+  "wide": [
+    "https://clubs.usu.edu.au/ical/usu/ical_usu.ics",
+    "https://clubs.usu.edu.au/rss_events"
+  ],
+  "units": [
+    {
+      "id": "arts",
+      "name": "Faculty of Arts and Social Sciences",
+      "kind": "school",
+      "url": "https://www.sydney.edu.au/arts",
+      "status": "no-feed",
+      "note": "events page links What's On (AppSync GraphQL app, not read)"
+    },
+    {
+      "id": "business",
+      "name": "The University of Sydney Business School",
+      "kind": "school",
+      "url": "https://business.sydney.edu.au",
+      "status": "blocked",
+      "note": "business.sydney.edu.au/events is behind a Cloudflare challenge"
+    },
+    {
+      "id": "engineering",
+      "name": "Faculty of Engineering",
+      "kind": "school",
+      "url": "https://www.sydney.edu.au/engineering",
+      "status": "no-feed",
+      "note": "events page redirects to What's On (AppSync GraphQL, not read)"
+    },
+    {
+      "id": "law",
+      "name": "Sydney Law School",
+      "kind": "school",
+      "url": "https://www.sydney.edu.au/law",
+      "status": "no-feed",
+      "note": "HTML events page, links What's On"
+    },
+    {
+      "id": "medicine-health",
+      "name": "Faculty of Medicine and Health",
+      "kind": "school",
+      "url": "https://www.sydney.edu.au/medicine-health",
+      "status": "no-feed",
+      "note": "HTML events page, links What's On"
+    },
+    {
+      "id": "science",
+      "name": "Faculty of Science",
+      "kind": "school",
+      "url": "https://www.sydney.edu.au/science",
+      "status": "no-feed",
+      "note": "HTML events page, links What's On"
+    },
+    {
+      "id": "conservatorium",
+      "name": "Sydney Conservatorium of Music",
+      "kind": "school",
+      "url": "https://www.sydney.edu.au/music",
+      "status": "unchecked",
+      "note": "events path 404; concerts likely on What's On"
+    },
+    {
+      "id": "architecture",
+      "name": "Sydney School of Architecture, Design and Planning",
+      "kind": "school",
+      "url": "https://www.sydney.edu.au/architecture",
+      "status": "no-feed",
+      "note": "HTML events page, links What's On"
+    },
+    {
+      "id": "dentistry",
+      "name": "Sydney Dental School",
+      "kind": "school",
+      "parent": "medicine-health",
+      "url": "https://www.sydney.edu.au/dentistry",
+      "status": "unchecked"
+    },
+    {
+      "id": "pharmacy",
+      "name": "Sydney Pharmacy School",
+      "kind": "school",
+      "parent": "medicine-health",
+      "url": "https://www.sydney.edu.au/medicine-health/schools/sydney-pharmacy-school.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "nursing",
+      "name": "Susan Wakil School of Nursing and Midwifery",
+      "kind": "school",
+      "parent": "medicine-health",
+      "url": "https://www.sydney.edu.au/medicine-health/schools/sydney-nursing-school.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "public-health",
+      "name": "Sydney School of Public Health",
+      "kind": "school",
+      "parent": "medicine-health",
+      "url": "https://www.sydney.edu.au/medicine-health/schools/sydney-school-of-public-health.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "vet",
+      "name": "Sydney School of Veterinary Science",
+      "kind": "school",
+      "parent": "science",
+      "url": "https://www.sydney.edu.au/science/schools/sydney-school-of-veterinary-science.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "education",
+      "name": "Sydney School of Education and Social Work",
+      "kind": "school",
+      "parent": "arts",
+      "url": "https://www.sydney.edu.au/arts/schools/sydney-school-of-education-and-social-work.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "cs",
+      "name": "School of Computer Science",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html",
+      "status": "unchecked",
+      "note": "news-and-events path 404"
+    },
+    {
+      "id": "eie",
+      "name": "School of Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.sydney.edu.au/engineering/schools/school-of-electrical-and-information-engineering.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "amme",
+      "name": "School of Aerospace, Mechanical and Mechatronic Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.sydney.edu.au/engineering/schools/school-of-aerospace-mechanical-and-mechatronic-engineering.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "bme",
+      "name": "School of Biomedical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.sydney.edu.au/engineering/schools/school-of-biomedical-engineering.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "maths",
+      "name": "School of Mathematics and Statistics",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.maths.usyd.edu.au",
+      "status": "no-feed",
+      "note": "seminar pages are static HTML on maths.usyd.edu.au"
+    },
+    {
+      "id": "physics",
+      "name": "School of Physics",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.sydney.edu.au/science/schools/school-of-physics.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "chemistry",
+      "name": "School of Chemistry",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.sydney.edu.au/science/schools/school-of-chemistry.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "lifeenv",
+      "name": "School of Life and Environmental Sciences",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.sydney.edu.au/science/schools/school-of-life-and-environmental-sciences.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "psychology",
+      "name": "School of Psychology",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.sydney.edu.au/science/schools/school-of-psychology.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "School of Economics",
+      "kind": "department",
+      "parent": "arts",
+      "url": "https://www.sydney.edu.au/arts/schools/school-of-economics.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "sspa",
+      "name": "School of Social and Political Sciences",
+      "kind": "department",
+      "parent": "arts",
+      "url": "https://www.sydney.edu.au/arts/schools/school-of-social-and-political-sciences.html",
+      "status": "no-feed",
+      "note": "events on What's On (AppSync GraphQL, not read)"
+    },
+    {
+      "id": "philhist",
+      "name": "School of Humanities (History, Philosophy)",
+      "kind": "department",
+      "parent": "arts",
+      "url": "https://www.sydney.edu.au/arts/schools/school-of-humanities.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "english",
+      "name": "School of Art, Communication and English",
+      "kind": "department",
+      "parent": "arts",
+      "url": "https://www.sydney.edu.au/arts/schools/school-of-art-communication-and-english.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "nano",
+      "name": "Sydney Nano Institute",
+      "kind": "institute",
+      "url": "https://www.sydney.edu.au/sydney-nano",
+      "status": "unchecked",
+      "note": "events path 404"
+    },
+    {
+      "id": "cpc",
+      "name": "Charles Perkins Centre",
+      "kind": "institute",
+      "url": "https://www.sydney.edu.au/charles-perkins-centre",
+      "status": "no-feed",
+      "note": "HTML events page"
+    },
+    {
+      "id": "sei",
+      "name": "Sydney Environment Institute",
+      "kind": "institute",
+      "url": "https://www.sydney.edu.au/sydney-environment-institute",
+      "status": "unchecked",
+      "note": "events path 404"
+    },
+    {
+      "id": "bmc",
+      "name": "Brain and Mind Centre",
+      "kind": "institute",
+      "url": "https://www.sydney.edu.au/brain-and-mind",
+      "status": "unchecked",
+      "note": "events path 404"
+    },
+    {
+      "id": "ussc",
+      "name": "United States Studies Centre",
+      "kind": "center",
+      "url": "https://www.ussc.edu.au",
+      "status": "unchecked"
+    },
+    {
+      "id": "china",
+      "name": "China Studies Centre",
+      "kind": "center",
+      "url": "https://www.sydney.edu.au/research/our-research/centres/china-studies-centre.html",
+      "status": "no-feed",
+      "note": "events link out to Eventbrite pages"
+    },
+    {
+      "id": "sydney-ai",
+      "name": "Sydney Artificial Intelligence Centre",
+      "kind": "center",
+      "parent": "engineering",
+      "url": "https://www.sydney.edu.au/engineering/our-research/data-science-and-computer-engineering/sydney-artificial-intelligence-centre.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "sydney-policy-lab",
+      "name": "Sydney Policy Lab",
+      "kind": "center",
+      "url": "https://www.sydney.edu.au/sydney-policy-lab",
+      "status": "unchecked"
+    },
+    {
+      "id": "infectious",
+      "name": "Sydney Infectious Diseases Institute",
+      "kind": "institute",
+      "url": "https://www.sydney.edu.au/infectious-diseases-institute",
+      "status": "unchecked"
+    },
+    {
+      "id": "mri",
+      "name": "Sydney Mathematical Research Institute",
+      "kind": "institute",
+      "parent": "science",
+      "url": "https://mathematical-research-institute.sydney.edu.au",
+      "status": "unchecked"
+    },
+    {
+      "id": "incubate",
+      "name": "INCUBATE (Startup programs)",
+      "kind": "center",
+      "url": "https://www.sydney.edu.au/entrepreneurship",
+      "status": "unchecked"
+    },
+    {
+      "id": "usu",
+      "name": "University of Sydney Union (USU)",
+      "kind": "student",
+      "url": "https://usu.edu.au",
+      "status": "in-wide",
+      "note": "runs the clubs CampusGroups platform we read"
+    },
+    {
+      "id": "src",
+      "name": "Students' Representative Council (SRC)",
+      "kind": "student",
+      "url": "https://srcusyd.net.au",
+      "status": "no-feed",
+      "note": "only a news RSS; no events feed"
+    },
+    {
+      "id": "supra",
+      "name": "Sydney University Postgraduate Representative Association (SUPRA)",
+      "kind": "student",
+      "url": "https://supra.net.au",
+      "status": "feed",
+      "feeds": [
+        "https://supra.net.au/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "colleges",
+      "name": "Residential colleges (St Andrew's, St Paul's, Wesley, Women's, St John's, Sancta Sophia)",
+      "kind": "student",
+      "url": "https://www.sydney.edu.au/study/accommodation.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "library",
+      "name": "University of Sydney Library",
+      "kind": "library",
+      "url": "https://www.library.sydney.edu.au",
+      "status": "unchecked"
+    },
+    {
+      "id": "chau-chak",
+      "name": "Chau Chak Wing Museum",
+      "kind": "museum",
+      "url": "https://www.sydney.edu.au/museum",
+      "status": "no-feed",
+      "note": "What's on page is HTML only"
+    },
+    {
+      "id": "careers",
+      "name": "Careers Centre",
+      "kind": "other",
+      "url": "https://www.sydney.edu.au/careers",
+      "status": "unchecked"
+    },
+    {
+      "id": "susf",
+      "name": "Sydney Uni Sport & Fitness",
+      "kind": "other",
+      "url": "https://www.susf.com.au",
+      "status": "unchecked"
+    }
+  ]
+}

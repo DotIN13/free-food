@@ -1,0 +1,326 @@
+{
+  "id": "uva",
+  "name": "University of Virginia",
+  "wide": [
+    "https://www.trumba.com/calendars/university-of-virginia-events.ics",
+    "https://virginia.campuslabs.com/engage/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100"
+  ],
+  "units": [
+    {
+      "id": "as",
+      "name": "College and Graduate School of Arts & Sciences",
+      "kind": "school",
+      "url": "https://as.virginia.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "seas",
+      "name": "School of Engineering and Applied Science",
+      "kind": "school",
+      "url": "https://engineering.virginia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403); Trumba uva-seas is a slice of the main calendar"
+    },
+    {
+      "id": "darden",
+      "name": "Darden School of Business",
+      "kind": "school",
+      "url": "https://www.darden.virginia.edu",
+      "feeds": [
+        "https://www.trumba.com/calendars/uva-darden.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "mcintire",
+      "name": "McIntire School of Commerce",
+      "kind": "school",
+      "url": "https://www.commerce.virginia.edu",
+      "status": "unchecked",
+      "found": "https://events.mcintire.virginia.edu",
+      "note": "own Localist calendar (api/2/events answers; webcal calendar/1.ics)"
+    },
+    {
+      "id": "law",
+      "name": "School of Law",
+      "kind": "school",
+      "url": "https://www.law.virginia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403); Trumba uva-law is a slice of the main calendar"
+    },
+    {
+      "id": "medicine",
+      "name": "School of Medicine",
+      "kind": "school",
+      "url": "https://med.virginia.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "nursing",
+      "name": "School of Nursing",
+      "kind": "school",
+      "url": "https://nursing.virginia.edu",
+      "status": "unchecked",
+      "note": "/events answers 403; events.nursing.virginia.edu calendar returned an error; Trumba uva-nursing is a slice of the main calendar"
+    },
+    {
+      "id": "education",
+      "name": "School of Education and Human Development",
+      "kind": "school",
+      "url": "https://education.virginia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "batten",
+      "name": "Frank Batten School of Leadership and Public Policy",
+      "kind": "school",
+      "url": "https://batten.virginia.edu",
+      "feeds": [
+        "https://www.trumba.com/calendars/batten-school-events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "architecture",
+      "name": "School of Architecture",
+      "kind": "school",
+      "url": "https://www.arch.virginia.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "datascience",
+      "name": "School of Data Science",
+      "kind": "school",
+      "url": "https://datascience.virginia.edu",
+      "status": "no-feed",
+      "note": "Nuxt app with no feed"
+    },
+    {
+      "id": "scps",
+      "name": "School of Continuing and Professional Studies",
+      "kind": "school",
+      "url": "https://www.scps.virginia.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://www.cs.virginia.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://engineering.virginia.edu/department/electrical-and-computer-engineering",
+      "status": "blocked",
+      "note": "engineering.virginia.edu is behind Cloudflare"
+    },
+    {
+      "id": "mae",
+      "name": "Mechanical and Aerospace Engineering",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering",
+      "status": "blocked",
+      "note": "engineering.virginia.edu is behind Cloudflare"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://engineering.virginia.edu/department/biomedical-engineering",
+      "status": "blocked",
+      "note": "engineering.virginia.edu is behind Cloudflare"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://math.virginia.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://statistics.as.virginia.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://www.phys.virginia.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://chemistry.as.virginia.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "biology",
+      "name": "Biology",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://bio.as.virginia.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://economics.virginia.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://psychology.as.virginia.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "politics",
+      "name": "Politics",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://politics.virginia.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://history.virginia.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://english.as.virginia.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://philosophy.as.virginia.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://sociology.as.virginia.edu",
+      "status": "feed",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/uvasociology%40gmail.com/public/basic.ics"
+      ]
+    },
+    {
+      "id": "miller",
+      "name": "Miller Center of Public Affairs",
+      "kind": "center",
+      "url": "https://millercenter.org",
+      "status": "no-feed",
+      "note": "upcoming-events page is HTML only"
+    },
+    {
+      "id": "iah",
+      "name": "Institute of the Humanities & Global Cultures",
+      "kind": "institute",
+      "parent": "as",
+      "url": "https://iah.as.virginia.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "environment",
+      "name": "Environmental Institute",
+      "kind": "institute",
+      "url": "https://environment.virginia.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "democracy",
+      "name": "Karsh Institute of Democracy",
+      "kind": "institute",
+      "url": "https://karshinstitute.virginia.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "studentcouncil",
+      "name": "Student Council",
+      "kind": "student",
+      "url": "https://uvastudentcouncil.com",
+      "status": "in-wide",
+      "note": "CIO events are on Engage (Presence), which we read"
+    },
+    {
+      "id": "gsc",
+      "name": "Graduate Student Council / GSAS Council",
+      "kind": "student",
+      "url": "https://gsas.virginia.edu",
+      "status": "in-wide",
+      "note": "graduate groups post on Engage"
+    },
+    {
+      "id": "library",
+      "name": "UVA Library",
+      "kind": "library",
+      "url": "https://library.virginia.edu",
+      "status": "unchecked",
+      "note": "Trumba uva-library is a slice of the main calendar"
+    },
+    {
+      "id": "fralin",
+      "name": "The Fralin Museum of Art",
+      "kind": "museum",
+      "url": "https://uvafralinmuseum.virginia.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "arts",
+      "name": "UVA Arts",
+      "kind": "other",
+      "url": "https://arts.virginia.edu",
+      "status": "in-wide",
+      "note": "Trumba uva-arts is a slice of the main calendar"
+    },
+    {
+      "id": "career",
+      "name": "Career Center",
+      "kind": "other",
+      "url": "https://career.virginia.edu",
+      "status": "unchecked"
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "id": "notre-dame",
+  "name": "University of Notre Dame",
+  "wide": [
+    "https://events.nd.edu/events.ics",
+    "https://nd.campuslabs.com/engage"
+  ],
+  "units": [
+    {
+      "id": "al",
+      "name": "College of Arts and Letters",
+      "kind": "school",
+      "url": "https://al.nd.edu",
+      "status": "feed",
+      "feeds": [
+        "https://al.nd.edu/events.ics"
+      ]
+    },
+    {
+      "id": "science",
+      "name": "College of Science",
+      "kind": "school",
+      "url": "https://science.nd.edu",
+      "status": "feed",
+      "feeds": [
+        "https://science.nd.edu/events.ics"
+      ]
+    },
+    {
+      "id": "engineering",
+      "name": "College of Engineering",
+      "kind": "school",
+      "url": "https://engineering.nd.edu",
+      "status": "no-feed",
+      "note": "no events ics; event pages link events.nd.edu"
+    },
+    {
+      "id": "mendoza",
+      "name": "Mendoza College of Business",
+      "kind": "school",
+      "url": "https://mendoza.nd.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "law",
+      "name": "Notre Dame Law School",
+      "kind": "school",
+      "url": "https://law.nd.edu",
+      "status": "unchecked",
+      "found": "https://law.nd.edu/news-events/events.ics",
+      "note": "events page offers a webcal ics (6 events)"
+    },
+    {
+      "id": "architecture",
+      "name": "School of Architecture",
+      "kind": "school",
+      "url": "https://architecture.nd.edu",
+      "feeds": [
+        "https://architecture.nd.edu/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "keough",
+      "name": "Keough School of Global Affairs",
+      "kind": "school",
+      "url": "https://keough.nd.edu",
+      "status": "feed",
+      "feeds": [
+        "https://keough.nd.edu/news-and-events/events.ics"
+      ]
+    },
+    {
+      "id": "graduate",
+      "name": "The Graduate School",
+      "kind": "school",
+      "url": "https://graduateschool.nd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cse",
+      "name": "Computer Science and Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cse.nd.edu",
+      "status": "no-feed",
+      "note": "events page has no ics; links events.nd.edu"
+    },
+    {
+      "id": "ee",
+      "name": "Electrical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://ee.nd.edu",
+      "status": "no-feed",
+      "note": "no events ics found"
+    },
+    {
+      "id": "ame",
+      "name": "Aerospace and Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://ame.nd.edu",
+      "status": "no-feed",
+      "note": "no events ics found"
+    },
+    {
+      "id": "cbe",
+      "name": "Chemical and Biomolecular Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cbe.nd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://math.nd.edu",
+      "feeds": [
+        "https://math.nd.edu/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "acms",
+      "name": "Applied and Computational Mathematics and Statistics",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://acms.nd.edu",
+      "status": "feed",
+      "feeds": [
+        "https://acms.nd.edu/events.ics"
+      ]
+    },
+    {
+      "id": "physics",
+      "name": "Physics and Astronomy",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://physics.nd.edu",
+      "feeds": [
+        "https://physics.nd.edu/news-events/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry and Biochemistry",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://chemistry.nd.edu",
+      "feeds": [
+        "https://chemistry.nd.edu/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "biology",
+      "name": "Biological Sciences",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://biology.nd.edu",
+      "status": "no-feed",
+      "note": "no events ics at the usual paths"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "al",
+      "url": "https://economics.nd.edu",
+      "feeds": [
+        "https://economics.nd.edu/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "al",
+      "url": "https://psychology.nd.edu",
+      "feeds": [
+        "https://psychology.nd.edu/news-events/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "al",
+      "url": "https://politicalscience.nd.edu",
+      "status": "feed",
+      "feeds": [
+        "https://politicalscience.nd.edu/news-and-events/events.ics"
+      ]
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "al",
+      "url": "https://history.nd.edu",
+      "status": "feed",
+      "feeds": [
+        "https://history.nd.edu/news-events/events.ics"
+      ]
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "al",
+      "url": "https://english.nd.edu",
+      "feeds": [
+        "https://english.nd.edu/news-events/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "al",
+      "url": "https://philosophy.nd.edu",
+      "status": "no-feed",
+      "note": "no events ics at the usual paths"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "al",
+      "url": "https://sociology.nd.edu",
+      "status": "no-feed",
+      "note": "no events ics at the usual paths"
+    },
+    {
+      "id": "theology",
+      "name": "Theology",
+      "kind": "department",
+      "parent": "al",
+      "url": "https://theology.nd.edu",
+      "feeds": [
+        "https://theology.nd.edu/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "romance",
+      "name": "Romance Languages and Literatures",
+      "kind": "department",
+      "parent": "al",
+      "url": "https://romancelanguages.nd.edu",
+      "feeds": [
+        "https://romancelanguages.nd.edu/news-events/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "classics",
+      "name": "Classics",
+      "kind": "department",
+      "parent": "al",
+      "url": "https://classics.nd.edu",
+      "status": "feed",
+      "feeds": [
+        "https://classics.nd.edu/news-events/events.ics"
+      ]
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "kind": "department",
+      "parent": "al",
+      "url": "https://music.nd.edu",
+      "status": "feed",
+      "feeds": [
+        "https://music.nd.edu/news-events/events.ics"
+      ]
+    },
+    {
+      "id": "sacredmusic",
+      "name": "Sacred Music at Notre Dame",
+      "kind": "center",
+      "parent": "al",
+      "url": "https://sacredmusic.nd.edu",
+      "status": "feed",
+      "feeds": [
+        "https://sacredmusic.nd.edu/news-and-events/events.ics"
+      ]
+    },
+    {
+      "id": "global",
+      "name": "Notre Dame International / Notre Dame Global",
+      "kind": "other",
+      "url": "https://global.nd.edu",
+      "feeds": [
+        "https://global.nd.edu/news-events/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "liu",
+      "name": "Liu Institute for Asia and Asian Studies",
+      "kind": "institute",
+      "parent": "keough",
+      "url": "https://asia.nd.edu",
+      "feeds": [
+        "https://asia.nd.edu/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "nanovic",
+      "name": "Nanovic Institute for European Studies",
+      "kind": "institute",
+      "parent": "keough",
+      "url": "https://nanovic.nd.edu",
+      "feeds": [
+        "https://nanovic.nd.edu/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "kroc",
+      "name": "Kroc Institute for International Peace Studies",
+      "kind": "institute",
+      "parent": "keough",
+      "url": "https://kroc.nd.edu",
+      "feeds": [
+        "https://kroc.nd.edu/news-events/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "kellogg",
+      "name": "Kellogg Institute for International Studies",
+      "kind": "institute",
+      "parent": "keough",
+      "url": "https://kellogg.nd.edu",
+      "status": "no-feed",
+      "note": "no feed"
+    },
+    {
+      "id": "irish",
+      "name": "Keough-Naughton Institute for Irish Studies",
+      "kind": "institute",
+      "parent": "keough",
+      "url": "https://irishstudies.nd.edu",
+      "feeds": [
+        "https://irishstudies.nd.edu/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "latino",
+      "name": "Institute for Latino Studies",
+      "kind": "institute",
+      "url": "https://latinostudies.nd.edu",
+      "feeds": [
+        "https://latinostudies.nd.edu/news-events/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "lucy",
+      "name": "Lucy Family Institute for Data & Society",
+      "kind": "institute",
+      "url": "https://lucyfamilyinstitute.nd.edu",
+      "status": "no-feed",
+      "note": "no feed"
+    },
+    {
+      "id": "ethics",
+      "name": "Notre Dame Institute for Ethics and the Common Good",
+      "kind": "institute",
+      "url": "https://ethics.nd.edu",
+      "status": "feed",
+      "feeds": [
+        "https://ethics.nd.edu/news-and-events/events.ics"
+      ]
+    },
+    {
+      "id": "ndias",
+      "name": "Notre Dame Institute for Advanced Study",
+      "kind": "institute",
+      "url": "https://ndias.nd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "idea",
+      "name": "IDEA Center (innovation and entrepreneurship)",
+      "kind": "center",
+      "url": "https://idea.nd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ndenergy",
+      "name": "Notre Dame Energy",
+      "kind": "center",
+      "url": "https://energy.nd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "eck",
+      "name": "Eck Institute for Global Health",
+      "kind": "institute",
+      "url": "https://globalhealth.nd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "studentgov",
+      "name": "Student Government",
+      "kind": "student",
+      "url": "https://studentgovernment.nd.edu",
+      "status": "in-wide",
+      "note": "links events.nd.edu; student orgs on Engage"
+    },
+    {
+      "id": "gsu",
+      "name": "Graduate Student Government",
+      "kind": "student",
+      "url": "https://gsu.nd.edu",
+      "status": "in-wide",
+      "note": "graduate groups post on Engage (nd.campuslabs.com)"
+    },
+    {
+      "id": "halls",
+      "name": "Residence halls",
+      "kind": "student",
+      "url": "https://reslife.nd.edu",
+      "status": "in-wide",
+      "note": "hall events are on Engage"
+    },
+    {
+      "id": "library",
+      "name": "Hesburgh Libraries",
+      "kind": "library",
+      "url": "https://library.nd.edu",
+      "status": "blocked",
+      "note": "events page answers 403"
+    },
+    {
+      "id": "raclin-murphy",
+      "name": "Raclin Murphy Museum of Art",
+      "kind": "museum",
+      "url": "https://raclinmurphymuseum.nd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "dpac",
+      "name": "DeBartolo Performing Arts Center",
+      "kind": "other",
+      "url": "https://performingarts.nd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "career",
+      "name": "Center for Career Development",
+      "kind": "other",
+      "url": "https://careercenter.nd.edu",
+      "status": "unchecked"
+    }
+  ]
+}

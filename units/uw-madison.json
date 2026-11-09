@@ -1,0 +1,369 @@
+{
+  "id": "uw-madison",
+  "name": "University of Wisconsin-Madison",
+  "wide": [
+    "https://today.wisc.edu/events.ics?per_page=200",
+    "https://win.wisc.edu/rss_events"
+  ],
+  "units": [
+    {
+      "id": "ls",
+      "name": "College of Letters & Science",
+      "kind": "school",
+      "url": "https://ls.wisc.edu",
+      "status": "in-wide",
+      "note": "links today.wisc.edu; main feed holds only ~5 days"
+    },
+    {
+      "id": "engineering",
+      "name": "College of Engineering",
+      "kind": "school",
+      "url": "https://engineering.wisc.edu",
+      "status": "blocked",
+      "note": "answers 403 (challenge) to bots"
+    },
+    {
+      "id": "business",
+      "name": "Wisconsin School of Business",
+      "kind": "school",
+      "url": "https://business.wisc.edu",
+      "status": "blocked",
+      "note": "answers 403 (challenge) to bots"
+    },
+    {
+      "id": "law",
+      "name": "Law School",
+      "kind": "school",
+      "url": "https://law.wisc.edu",
+      "feeds": [
+        "https://www.trumba.com/calendars/uwlaw.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "smph",
+      "name": "School of Medicine and Public Health",
+      "kind": "school",
+      "url": "https://www.med.wisc.edu",
+      "feeds": [
+        "https://today.wisc.edu/events/feed/429.ics?per_page=200"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "education",
+      "name": "School of Education",
+      "kind": "school",
+      "url": "https://education.wisc.edu",
+      "feeds": [
+        "https://today.wisc.edu/events/feed/425.ics?per_page=200"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "pharmacy",
+      "name": "School of Pharmacy",
+      "kind": "school",
+      "url": "https://pharmacy.wisc.edu",
+      "status": "blocked",
+      "note": "events page answers 403"
+    },
+    {
+      "id": "nursing",
+      "name": "School of Nursing",
+      "kind": "school",
+      "url": "https://nursing.wisc.edu",
+      "status": "in-wide",
+      "note": "news & events page lists today.wisc.edu events"
+    },
+    {
+      "id": "vetmed",
+      "name": "School of Veterinary Medicine",
+      "kind": "school",
+      "url": "https://www.vetmed.wisc.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.vetmed.wisc.edu/events/?ical=1"
+      ]
+    },
+    {
+      "id": "cals",
+      "name": "College of Agricultural and Life Sciences",
+      "kind": "school",
+      "url": "https://cals.wisc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sohe",
+      "name": "School of Human Ecology",
+      "kind": "school",
+      "url": "https://humanecology.wisc.edu",
+      "status": "in-wide",
+      "note": "site embeds today.wisc.edu events"
+    },
+    {
+      "id": "nelson",
+      "name": "Nelson Institute for Environmental Studies",
+      "kind": "school",
+      "url": "https://nelson.wisc.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "grad",
+      "name": "Graduate School",
+      "kind": "school",
+      "url": "https://grad.wisc.edu",
+      "status": "unchecked",
+      "note": "events at info.grad.wisc.edu/calendar"
+    },
+    {
+      "id": "lafollette",
+      "name": "La Follette School of Public Affairs",
+      "kind": "school",
+      "parent": "ls",
+      "url": "https://lafollette.wisc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cs",
+      "name": "Department of Computer Sciences",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.cs.wisc.edu",
+      "feeds": [
+        "https://today.wisc.edu/events/feed/387.ics?per_page=200"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical & Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://ece.wisc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://me.wisc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://bme.wisc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.math.wisc.edu",
+      "feeds": [
+        "https://today.wisc.edu/events/feed/462.ics?per_page=200"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "stat",
+      "name": "Department of Statistics",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://stat.wisc.edu",
+      "status": "in-wide",
+      "note": "news & events page lists today.wisc.edu events; a group feed would run further ahead"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.physics.wisc.edu",
+      "status": "unchecked",
+      "note": "WordPress events page; only a site /feed/ seen"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://chem.wisc.edu",
+      "status": "unchecked",
+      "found": "https://chem.wisc.edu/events/feed/",
+      "note": "RSS of event posts, pubDate is the posting date"
+    },
+    {
+      "id": "biology",
+      "name": "Integrative Biology",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://integrativebiology.wisc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://econ.wisc.edu",
+      "status": "no-feed",
+      "note": "events page is HTML with site-local event pages"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://psych.wisc.edu",
+      "status": "unchecked",
+      "found": "https://psych.wisc.edu/wp-json/tribe/events/v1/events",
+      "note": "The Events Calendar REST API answers (1 upcoming now)"
+    },
+    {
+      "id": "polisci",
+      "name": "Department of Political Science",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://polisci.wisc.edu",
+      "status": "no-feed",
+      "note": "events page is HTML with site-local event pages"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://history.wisc.edu",
+      "status": "unchecked",
+      "found": "https://history.wisc.edu/events/feed/",
+      "note": "RSS of event posts, pubDate is the posting date"
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://english.wisc.edu",
+      "status": "no-feed",
+      "note": "events page is HTML with site-local event pages"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://philosophy.wisc.edu",
+      "status": "no-feed",
+      "note": "events page is HTML with site-local event pages"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://sociology.wisc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "dsi",
+      "name": "Data Science Institute / Data Science Hub",
+      "kind": "institute",
+      "url": "https://dsi.wisc.edu",
+      "feeds": [
+        "https://today.wisc.edu/events/feed/404.ics?per_page=200"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "wid",
+      "name": "Wisconsin Institute for Discovery",
+      "kind": "institute",
+      "url": "https://wid.wisc.edu",
+      "status": "feed",
+      "feeds": [
+        "https://wid.wisc.edu/events/?ical=1"
+      ]
+    },
+    {
+      "id": "morgridge",
+      "name": "Morgridge Institute for Research",
+      "kind": "institute",
+      "url": "https://morgridge.org",
+      "status": "blocked",
+      "note": "answers 403 to bots"
+    },
+    {
+      "id": "humanities",
+      "name": "Center for the Humanities",
+      "kind": "center",
+      "url": "https://humanities.wisc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "iris",
+      "name": "International Division (incl. area studies centers)",
+      "kind": "institute",
+      "url": "https://international.wisc.edu",
+      "status": "in-wide",
+      "note": "events page lists today.wisc.edu events"
+    },
+    {
+      "id": "energy",
+      "name": "Wisconsin Energy Institute",
+      "kind": "institute",
+      "url": "https://energy.wisc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "carbone",
+      "name": "Carbone Cancer Center",
+      "kind": "center",
+      "parent": "smph",
+      "url": "https://cancer.wisc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "asm",
+      "name": "Associated Students of Madison (ASM)",
+      "kind": "student",
+      "url": "https://asm.wisc.edu",
+      "status": "in-wide",
+      "note": "student org events are on WIN (CampusGroups), which we read"
+    },
+    {
+      "id": "union",
+      "name": "Wisconsin Union",
+      "kind": "other",
+      "url": "https://union.wisc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "library",
+      "name": "UW-Madison Libraries",
+      "kind": "library",
+      "url": "https://www.library.wisc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "chazen",
+      "name": "Chazen Museum of Art",
+      "kind": "museum",
+      "url": "https://chazen.wisc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "career",
+      "name": "SuccessWorks / career services",
+      "kind": "other",
+      "url": "https://careers.wisc.edu",
+      "status": "unchecked"
+    }
+  ]
+}

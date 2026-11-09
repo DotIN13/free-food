@@ -1,0 +1,404 @@
+{
+  "id": "uiuc",
+  "name": "University of Illinois Urbana-Champaign",
+  "wide": [
+    "https://calendars.illinois.edu/icalGmail/7.ics?hourOffset=0&timeZone=America%2FChicago"
+  ],
+  "units": [
+    {
+      "id": "grainger",
+      "name": "The Grainger College of Engineering",
+      "kind": "school",
+      "url": "https://grainger.illinois.edu",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/2568.ics?hourOffset=0&timeZone=America%2FChicago"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "las",
+      "name": "College of Liberal Arts & Sciences",
+      "kind": "school",
+      "url": "https://las.illinois.edu",
+      "status": "unchecked",
+      "note": "departments run their own Webtools calendars"
+    },
+    {
+      "id": "gies",
+      "name": "Gies College of Business",
+      "kind": "school",
+      "url": "https://giesbusiness.illinois.edu",
+      "status": "no-feed",
+      "note": "events listed as HTML"
+    },
+    {
+      "id": "aces",
+      "name": "College of Agricultural, Consumer and Environmental Sciences (ACES)",
+      "kind": "school",
+      "url": "https://aces.illinois.edu",
+      "status": "no-feed",
+      "note": "events listed as HTML"
+    },
+    {
+      "id": "education",
+      "name": "College of Education",
+      "kind": "school",
+      "url": "https://education.illinois.edu",
+      "status": "no-feed",
+      "note": "events listed as HTML"
+    },
+    {
+      "id": "faa",
+      "name": "College of Fine and Applied Arts",
+      "kind": "school",
+      "url": "https://faa.illinois.edu",
+      "status": "no-feed",
+      "note": "events listed as HTML"
+    },
+    {
+      "id": "media",
+      "name": "College of Media",
+      "kind": "school",
+      "url": "https://media.illinois.edu",
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/1102.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
+    },
+    {
+      "id": "ahs",
+      "name": "College of Applied Health Sciences",
+      "kind": "school",
+      "url": "https://ahs.illinois.edu",
+      "status": "unchecked",
+      "note": "site references Webtools calendars 8303 and 1387"
+    },
+    {
+      "id": "ischool",
+      "name": "School of Information Sciences",
+      "kind": "school",
+      "url": "https://ischool.illinois.edu",
+      "status": "no-feed",
+      "note": "events listed as HTML"
+    },
+    {
+      "id": "law",
+      "name": "College of Law",
+      "kind": "school",
+      "url": "https://law.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "socialwork",
+      "name": "School of Social Work",
+      "kind": "school",
+      "url": "https://socialwork.illinois.edu",
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/935.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
+    },
+    {
+      "id": "carle",
+      "name": "Carle Illinois College of Medicine",
+      "kind": "school",
+      "url": "https://medicine.illinois.edu",
+      "status": "unchecked",
+      "note": "timed out"
+    },
+    {
+      "id": "vetmed",
+      "name": "College of Veterinary Medicine",
+      "kind": "school",
+      "url": "https://vetmed.illinois.edu",
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/705.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
+    },
+    {
+      "id": "grad",
+      "name": "Graduate College",
+      "kind": "school",
+      "url": "https://grad.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "siebel",
+      "name": "Siebel School of Computing and Data Science",
+      "kind": "department",
+      "parent": "grainger",
+      "url": "https://siebelschool.illinois.edu",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/2654.ics?hourOffset=0&timeZone=America%2FChicago"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "ece",
+      "name": "Department of Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "grainger",
+      "url": "https://ece.illinois.edu",
+      "status": "in-wide",
+      "note": "its events are on Grainger All Events, which we read"
+    },
+    {
+      "id": "mechse",
+      "name": "Department of Mechanical Science and Engineering",
+      "kind": "department",
+      "parent": "grainger",
+      "url": "https://mechse.illinois.edu",
+      "status": "in-wide",
+      "note": "its events are on Grainger All Events, which we read"
+    },
+    {
+      "id": "bioe",
+      "name": "Department of Bioengineering",
+      "kind": "department",
+      "parent": "grainger",
+      "url": "https://bioengineering.illinois.edu",
+      "status": "in-wide",
+      "note": "its events are on Grainger All Events, which we read"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "parent": "grainger",
+      "url": "https://physics.illinois.edu",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/1968.ics?hourOffset=0&timeZone=America%2FChicago"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "las",
+      "url": "https://math.illinois.edu",
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/7421.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
+    },
+    {
+      "id": "stat",
+      "name": "Department of Statistics",
+      "kind": "department",
+      "parent": "las",
+      "url": "https://stat.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "las",
+      "url": "https://chemistry.illinois.edu",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/1381.ics?hourOffset=0&timeZone=America%2FChicago"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "mcb",
+      "name": "School of Molecular and Cellular Biology",
+      "kind": "department",
+      "parent": "las",
+      "url": "https://mcb.illinois.edu",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/1233.ics?hourOffset=0&timeZone=America%2FChicago"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "ib",
+      "name": "School of Integrative Biology",
+      "kind": "department",
+      "parent": "las",
+      "url": "https://sib.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "las",
+      "url": "https://economics.illinois.edu",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/4862.ics?hourOffset=0&timeZone=America%2FChicago"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "las",
+      "url": "https://psychology.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "polisci",
+      "name": "Department of Political Science",
+      "kind": "department",
+      "parent": "las",
+      "url": "https://pol.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "las",
+      "url": "https://history.illinois.edu",
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/8095.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "parent": "las",
+      "url": "https://english.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "las",
+      "url": "https://philosophy.illinois.edu",
+      "status": "feed",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/8092.ics?hourOffset=0&timeZone=America%2FChicago"
+      ]
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "las",
+      "url": "https://sociology.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ncsa",
+      "name": "National Center for Supercomputing Applications (NCSA)",
+      "kind": "center",
+      "url": "https://www.ncsa.illinois.edu",
+      "feeds": [
+        "https://calendars.illinois.edu/icalGmail/7097.ics?hourOffset=0&timeZone=America%2FChicago"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "beckman",
+      "name": "Beckman Institute for Advanced Science and Technology",
+      "kind": "institute",
+      "url": "https://beckman.illinois.edu",
+      "status": "no-feed",
+      "note": "events listed as HTML"
+    },
+    {
+      "id": "igb",
+      "name": "Carl R. Woese Institute for Genomic Biology",
+      "kind": "institute",
+      "url": "https://www.igb.illinois.edu",
+      "status": "no-feed",
+      "note": "events listed as HTML"
+    },
+    {
+      "id": "iste",
+      "name": "Institute for Sustainability, Energy, and Environment (iSEE)",
+      "kind": "institute",
+      "url": "https://sustainability.illinois.edu",
+      "status": "unchecked",
+      "note": "timed out"
+    },
+    {
+      "id": "humanities",
+      "name": "Humanities Research Institute",
+      "kind": "institute",
+      "url": "https://hri.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cas",
+      "name": "Center for Advanced Study",
+      "kind": "center",
+      "url": "https://cas.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ciaa",
+      "name": "Illinois Global Institute",
+      "kind": "institute",
+      "url": "https://global.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "research-park",
+      "name": "Research Park / EnterpriseWorks",
+      "kind": "center",
+      "url": "https://researchpark.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "isg",
+      "name": "Illinois Student Government",
+      "kind": "student",
+      "url": "https://illinoisstudentgov.org",
+      "status": "unchecked",
+      "note": "timed out"
+    },
+    {
+      "id": "gsac",
+      "name": "Graduate Student Advisory Committee",
+      "kind": "student",
+      "url": "https://grad.illinois.edu/gsac",
+      "status": "unchecked"
+    },
+    {
+      "id": "library",
+      "name": "University Library",
+      "kind": "library",
+      "url": "https://www.library.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "kam",
+      "name": "Krannert Art Museum",
+      "kind": "museum",
+      "url": "https://kam.illinois.edu",
+      "status": "no-feed",
+      "note": "events listed as HTML"
+    },
+    {
+      "id": "krannert-center",
+      "name": "Krannert Center for the Performing Arts",
+      "kind": "other",
+      "url": "https://krannertcenter.com",
+      "status": "no-feed",
+      "note": "calendar listed as HTML"
+    },
+    {
+      "id": "career",
+      "name": "The Career Center",
+      "kind": "other",
+      "url": "https://www.careercenter.illinois.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "athletics",
+      "name": "Fighting Illini Athletics",
+      "kind": "other",
+      "url": "https://fightingillini.com",
+      "status": "unchecked"
+    }
+  ]
+}

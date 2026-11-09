@@ -1,0 +1,452 @@
+{
+  "id": "epfl",
+  "name": "EPFL",
+  "wide": [
+    "https://memento.epfl.ch/api/v1/events/?format=json&limit=100"
+  ],
+  "units": [
+    {
+      "id": "enac",
+      "name": "School of Architecture, Civil and Environmental Engineering (ENAC)",
+      "kind": "school",
+      "url": "https://www.epfl.ch/schools/enac/",
+      "status": "in-wide",
+      "note": "posts to Memento (enac), 48 upcoming events in the main API"
+    },
+    {
+      "id": "ic",
+      "name": "School of Computer and Communication Sciences (IC)",
+      "kind": "school",
+      "url": "https://www.epfl.ch/schools/ic/",
+      "status": "in-wide",
+      "note": "posts to Memento (ic), 176 upcoming events in the main API"
+    },
+    {
+      "id": "sb",
+      "name": "School of Basic Sciences (SB)",
+      "kind": "school",
+      "url": "https://www.epfl.ch/schools/sb/",
+      "status": "in-wide",
+      "note": "posts to Memento (sb), 77 upcoming events in the main API"
+    },
+    {
+      "id": "sti",
+      "name": "School of Engineering (STI)",
+      "kind": "school",
+      "url": "https://www.epfl.ch/schools/sti/",
+      "status": "in-wide",
+      "note": "posts to Memento (sti), 85 upcoming events in the main API"
+    },
+    {
+      "id": "sv",
+      "name": "School of Life Sciences (SV)",
+      "kind": "school",
+      "url": "https://www.epfl.ch/schools/sv/",
+      "status": "in-wide",
+      "note": "posts to Memento (sv), 72 upcoming events in the main API"
+    },
+    {
+      "id": "cdm",
+      "name": "College of Management of Technology (CDM)",
+      "kind": "school",
+      "url": "https://www.epfl.ch/schools/cdm/",
+      "status": "in-wide",
+      "note": "posts to Memento (cdm), 50 upcoming events in the main API"
+    },
+    {
+      "id": "cdh",
+      "name": "College of Humanities (CDH)",
+      "kind": "school",
+      "url": "https://www.epfl.ch/schools/cdh/",
+      "status": "in-wide",
+      "note": "posts to Memento (cdh), 1 upcoming events in the main API"
+    },
+    {
+      "id": "edoc",
+      "name": "Doctoral School (EDOC)",
+      "kind": "school",
+      "url": "https://www.epfl.ch/education/phd/",
+      "status": "in-wide",
+      "note": "posts to Memento (edoc), 5 upcoming events in the main API"
+    },
+    {
+      "id": "exed",
+      "name": "EPFL Executive Education",
+      "kind": "school",
+      "url": "https://www.epfl.ch/education/continuing-education/",
+      "status": "in-wide",
+      "note": "posts to Memento (exed), 15 upcoming events in the main API"
+    },
+    {
+      "id": "valais",
+      "name": "EPFL Valais Wallis",
+      "kind": "other",
+      "url": "https://www.epfl.ch/about/campus/valais/",
+      "status": "in-wide",
+      "note": "posts to Memento (valais), 2 upcoming events in the main API"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science (IC section)",
+      "kind": "department",
+      "parent": "ic",
+      "url": "https://www.epfl.ch/schools/ic/",
+      "status": "in-wide",
+      "note": "IC talks are on Memento (ic, ic-colloquium)"
+    },
+    {
+      "id": "ipg",
+      "name": "Information Processing Group",
+      "kind": "center",
+      "parent": "ic",
+      "url": "https://www.epfl.ch/labs/ipg/",
+      "status": "in-wide",
+      "note": "has its own Memento (ipg), in the main API; no upcoming events now"
+    },
+    {
+      "id": "iem",
+      "name": "Institute of Electrical and Micro Engineering (IEM)",
+      "kind": "department",
+      "parent": "sti",
+      "url": "https://www.epfl.ch/schools/sti/iem/",
+      "status": "in-wide",
+      "note": "has its own Memento (iem-events), in the main API; no upcoming events now"
+    },
+    {
+      "id": "igm",
+      "name": "Institute of Mechanical Engineering (IGM)",
+      "kind": "department",
+      "parent": "sti",
+      "url": "https://www.epfl.ch/schools/sti/igm/",
+      "status": "in-wide",
+      "note": "posts to Memento (igm, igm-colloquium), 6 upcoming events in the main API"
+    },
+    {
+      "id": "imx",
+      "name": "Institute of Materials (IMX)",
+      "kind": "department",
+      "parent": "sti",
+      "url": "https://www.epfl.ch/schools/sti/imx/",
+      "status": "in-wide",
+      "note": "posts to Memento (imx), 6 upcoming events in the main API"
+    },
+    {
+      "id": "ibi",
+      "name": "Institute of Bioengineering (IBI)",
+      "kind": "department",
+      "parent": "sv",
+      "url": "https://www.epfl.ch/schools/sv/bioengineering/",
+      "status": "in-wide",
+      "note": "posts to Memento (bioengineering, bioe), 10 upcoming events in the main API"
+    },
+    {
+      "id": "math",
+      "name": "Institute of Mathematics",
+      "kind": "department",
+      "parent": "sb",
+      "url": "https://www.epfl.ch/schools/sb/research/math/",
+      "status": "in-wide",
+      "note": "posts to Memento (maths, math-colloquia), 6 upcoming events in the main API"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics (Institute of Mathematics)",
+      "kind": "department",
+      "parent": "sb",
+      "url": "https://www.epfl.ch/schools/sb/research/math/",
+      "status": "in-wide",
+      "note": "posts to Memento (statistics), 4 upcoming events in the main API"
+    },
+    {
+      "id": "iphys",
+      "name": "Institute of Physics",
+      "kind": "department",
+      "parent": "sb",
+      "url": "https://www.epfl.ch/schools/sb/research/iphys/",
+      "status": "in-wide",
+      "note": "posts to Memento (iphys), 5 upcoming events in the main API"
+    },
+    {
+      "id": "isic",
+      "name": "Institute of Chemical Sciences and Engineering (ISIC)",
+      "kind": "department",
+      "parent": "sb",
+      "url": "https://www.epfl.ch/schools/sb/research/isic/",
+      "status": "in-wide",
+      "note": "posts to Memento (isic), 17 upcoming events in the main API"
+    },
+    {
+      "id": "bmi",
+      "name": "Brain Mind Institute",
+      "kind": "department",
+      "parent": "sv",
+      "url": "https://www.epfl.ch/schools/sv/bmi/",
+      "status": "in-wide",
+      "note": "posts to Memento (brain-mind-institute), 10 upcoming events in the main API"
+    },
+    {
+      "id": "isrec",
+      "name": "Swiss Institute for Experimental Cancer Research (ISREC)",
+      "kind": "department",
+      "parent": "sv",
+      "url": "https://www.epfl.ch/schools/sv/isrec/",
+      "status": "in-wide",
+      "note": "posts to Memento (isrec), 20 upcoming events in the main API"
+    },
+    {
+      "id": "ghi",
+      "name": "Global Health Institute",
+      "kind": "department",
+      "parent": "sv",
+      "url": "https://www.epfl.ch/schools/sv/ghi/",
+      "status": "in-wide",
+      "note": "has its own Memento (ghi), in the main API; no upcoming events now"
+    },
+    {
+      "id": "iic",
+      "name": "Civil Engineering Institute",
+      "kind": "department",
+      "parent": "enac",
+      "url": "https://www.epfl.ch/schools/enac/iic/",
+      "status": "in-wide",
+      "note": "has its own Memento (iic), in the main API; no upcoming events now"
+    },
+    {
+      "id": "architecture",
+      "name": "Institute of Architecture and the City",
+      "kind": "department",
+      "parent": "enac",
+      "url": "https://www.epfl.ch/schools/enac/architecture/",
+      "status": "in-wide",
+      "note": "posts to Memento (architecture, epfl-architecture), 31 upcoming events in the main API"
+    },
+    {
+      "id": "env",
+      "name": "Environmental Engineering Institute",
+      "kind": "department",
+      "parent": "enac",
+      "url": "https://www.epfl.ch/schools/enac/iie/",
+      "status": "in-wide",
+      "note": "has its own Memento (environmental-engineering), in the main API; no upcoming events now"
+    },
+    {
+      "id": "mtei",
+      "name": "Management of Technology and Entrepreneurship Institute",
+      "kind": "department",
+      "parent": "cdm",
+      "url": "https://www.epfl.ch/schools/cdm/mtei/",
+      "status": "in-wide",
+      "note": "has its own Memento (mtei), in the main API; no upcoming events now"
+    },
+    {
+      "id": "sfi",
+      "name": "Swiss Finance Institute at EPFL",
+      "kind": "institute",
+      "parent": "cdm",
+      "url": "https://www.epfl.ch/schools/cdm/sfi/",
+      "status": "in-wide",
+      "note": "posts to Memento (sfi-epfl, cdm-sfi-seminars, bbs), 24 upcoming events in the main API"
+    },
+    {
+      "id": "dhi",
+      "name": "Institute for Digital Humanities",
+      "kind": "department",
+      "parent": "cdh",
+      "url": "https://www.epfl.ch/schools/cdh/dhi/",
+      "status": "in-wide",
+      "note": "has its own Memento (dhi), in the main API; no upcoming events now"
+    },
+    {
+      "id": "aicenter",
+      "name": "EPFL AI Center",
+      "kind": "center",
+      "url": "https://ai.epfl.ch",
+      "status": "in-wide",
+      "note": "posts to Memento (aicenter), 18 upcoming events in the main API"
+    },
+    {
+      "id": "imaging",
+      "name": "EPFL Center for Imaging",
+      "kind": "center",
+      "url": "https://imaging.epfl.ch",
+      "status": "in-wide",
+      "note": "posts to Memento (imaging), 6 upcoming events in the main API"
+    },
+    {
+      "id": "energy",
+      "name": "Energy Center",
+      "kind": "center",
+      "url": "https://www.epfl.ch/research/domains/energy-center/",
+      "status": "in-wide",
+      "note": "posts to Memento (energy), 1 upcoming events in the main API"
+    },
+    {
+      "id": "qse",
+      "name": "Center for Quantum Science and Engineering",
+      "kind": "center",
+      "url": "https://qse.epfl.ch",
+      "status": "in-wide",
+      "note": "posts to Memento (qse), 4 upcoming events in the main API"
+    },
+    {
+      "id": "crag",
+      "name": "Center on Risk Analysis and Risk Governance",
+      "kind": "center",
+      "url": "https://www.epfl.ch/research/domains/irgc/",
+      "status": "in-wide",
+      "note": "posts to Memento (crag), 13 upcoming events in the main API"
+    },
+    {
+      "id": "neurox",
+      "name": "Neuro-X Institute",
+      "kind": "institute",
+      "url": "https://www.epfl.ch/research/domains/neuro-x/",
+      "status": "in-wide",
+      "note": "posts to Memento (neuro-x), 2 upcoming events in the main API"
+    },
+    {
+      "id": "robotics",
+      "name": "EPFL Robotics",
+      "kind": "center",
+      "url": "https://www.epfl.ch/research/domains/robotics/",
+      "status": "in-wide",
+      "note": "posts to Memento (robotics), 8 upcoming events in the main API"
+    },
+    {
+      "id": "cib",
+      "name": "Bernoulli Center for Fundamental Studies",
+      "kind": "center",
+      "url": "https://bernoulli.epfl.ch",
+      "status": "in-wide",
+      "note": "has its own Memento (cib), in the main API; no upcoming events now"
+    },
+    {
+      "id": "climact",
+      "name": "Climate Action and Impact Center (UNIL-EPFL)",
+      "kind": "center",
+      "url": "https://climact.ch",
+      "status": "in-wide",
+      "note": "has its own Memento (climact), in the main API; no upcoming events now"
+    },
+    {
+      "id": "espace",
+      "name": "EPFL Space Center",
+      "kind": "center",
+      "url": "https://www.epfl.ch/research/domains/space-center/",
+      "status": "in-wide",
+      "note": "has its own Memento (espace), in the main API; no upcoming events now"
+    },
+    {
+      "id": "sdsc",
+      "name": "Swiss Data Science Center",
+      "kind": "center",
+      "url": "https://sdsc.ch",
+      "status": "no-feed",
+      "note": "WordPress site; its events ?ical=1 export holds 0 events"
+    },
+    {
+      "id": "e4s",
+      "name": "Enterprise for Society Center (E4S)",
+      "kind": "center",
+      "url": "https://e4s.center",
+      "status": "blocked",
+      "note": "answers a Cloudflare challenge"
+    },
+    {
+      "id": "startup",
+      "name": "EPFL Startup Launchpad / Innovation",
+      "kind": "center",
+      "url": "https://www.epfl.ch/innovation/",
+      "status": "in-wide",
+      "note": "posts to Memento (innovation, start-up, vpi-startup-compass), 11 upcoming events in the main API"
+    },
+    {
+      "id": "sustainability",
+      "name": "Sustainability (campus durable)",
+      "kind": "other",
+      "url": "https://www.epfl.ch/about/sustainability/",
+      "status": "in-wide",
+      "note": "posts to Memento (campus-durable), 20 upcoming events in the main API"
+    },
+    {
+      "id": "agepoly",
+      "name": "AGEPoly (student association)",
+      "kind": "student",
+      "url": "https://agepoly.ch",
+      "status": "no-feed",
+      "note": "its Memento (agepoly) is inactive; the site has no event feed"
+    },
+    {
+      "id": "ae",
+      "name": "EPFL Assembly (AE)",
+      "kind": "student",
+      "url": "https://www.epfl.ch/about/overview/assemblee-ecole/",
+      "status": "in-wide",
+      "note": "has its own Memento (ae), in the main API; no upcoming events now"
+    },
+    {
+      "id": "associations",
+      "name": "Student associations",
+      "kind": "student",
+      "url": "https://www.epfl.ch/campus/associations/",
+      "status": "in-wide",
+      "note": "has its own Memento (associations), in the main API; no upcoming events now"
+    },
+    {
+      "id": "library",
+      "name": "EPFL Library",
+      "kind": "library",
+      "url": "https://www.epfl.ch/campus/library/",
+      "status": "in-wide",
+      "note": "posts to Memento (library, library-rdm), 10 upcoming events in the main API"
+    },
+    {
+      "id": "artlab",
+      "name": "EPFL Pavilions",
+      "kind": "museum",
+      "url": "https://www.epfl-pavilions.ch",
+      "status": "in-wide",
+      "note": "has its own Memento (artlab), in the main API; no upcoming events now"
+    },
+    {
+      "id": "archizoom",
+      "name": "Archizoom",
+      "kind": "museum",
+      "parent": "enac",
+      "url": "https://www.epfl.ch/schools/enac/archizoom/",
+      "status": "in-wide",
+      "note": "posts to Memento (archizoom), 7 upcoming events in the main API"
+    },
+    {
+      "id": "career",
+      "name": "Transversal Skills and Career Center",
+      "kind": "other",
+      "url": "https://www.epfl.ch/education/studies/career-center/",
+      "status": "in-wide",
+      "note": "has its own Memento (cc-oncampus), in the main API; no upcoming events now"
+    },
+    {
+      "id": "culture",
+      "name": "Cultural events (Culture at EPFL)",
+      "kind": "other",
+      "url": "https://www.epfl.ch/campus/art-culture/",
+      "status": "in-wide",
+      "note": "posts to Memento (culture), 3 upcoming events in the main API"
+    },
+    {
+      "id": "sps",
+      "name": "Science Outreach Department",
+      "kind": "other",
+      "url": "https://www.epfl.ch/education/educational-initiatives/discovery-learning-program-2/",
+      "status": "in-wide",
+      "note": "posts to Memento (sps), 6 upcoming events in the main API"
+    },
+    {
+      "id": "sport",
+      "name": "University Sports Centre (UNIL-EPFL)",
+      "kind": "other",
+      "url": "https://sport.unil.ch",
+      "status": "unchecked"
+    }
+  ]
+}

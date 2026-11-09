@@ -1,0 +1,450 @@
+{
+  "id": "toronto",
+  "name": "University of Toronto",
+  "wide": [
+    "https://sop.utoronto.ca/wp-json/tribe/events/v1/events?per_page=50&start_date=now"
+  ],
+  "units": [
+    {
+      "id": "artsci",
+      "name": "Faculty of Arts & Science",
+      "kind": "school",
+      "url": "https://www.artsci.utoronto.ca",
+      "status": "blocked",
+      "note": "JavaScript bot challenge"
+    },
+    {
+      "id": "engineering",
+      "name": "Faculty of Applied Science & Engineering",
+      "kind": "school",
+      "url": "https://www.engineering.utoronto.ca",
+      "status": "feed",
+      "feeds": [
+        "https://www.engineering.utoronto.ca/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "daniels",
+      "name": "John H. Daniels Faculty of Architecture, Landscape, and Design",
+      "kind": "school",
+      "url": "https://www.daniels.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "dentistry",
+      "name": "Faculty of Dentistry",
+      "kind": "school",
+      "url": "https://www.dentistry.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "ischool",
+      "name": "Faculty of Information",
+      "kind": "school",
+      "url": "https://ischool.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "kpe",
+      "name": "Faculty of Kinesiology & Physical Education",
+      "kind": "school",
+      "url": "https://kpe.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "law",
+      "name": "Faculty of Law",
+      "kind": "school",
+      "url": "https://jackmanlaw.utoronto.ca",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "medicine",
+      "name": "Temerty Faculty of Medicine",
+      "kind": "school",
+      "url": "https://temertymedicine.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is Drupal HTML"
+    },
+    {
+      "id": "music",
+      "name": "Faculty of Music",
+      "kind": "school",
+      "url": "https://music.utoronto.ca",
+      "status": "unchecked"
+    },
+    {
+      "id": "nursing",
+      "name": "Lawrence Bloomberg Faculty of Nursing",
+      "kind": "school",
+      "url": "https://bloomberg.nursing.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "pharmacy",
+      "name": "Leslie Dan Faculty of Pharmacy",
+      "kind": "school",
+      "url": "https://www.pharmacy.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "dlsph",
+      "name": "Dalla Lana School of Public Health",
+      "kind": "school",
+      "url": "https://www.dlsph.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "socialwork",
+      "name": "Factor-Inwentash Faculty of Social Work",
+      "kind": "school",
+      "url": "https://socialwork.utoronto.ca",
+      "status": "feed",
+      "feeds": [
+        "https://socialwork.utoronto.ca/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "oise",
+      "name": "Ontario Institute for Studies in Education (OISE)",
+      "kind": "school",
+      "url": "https://www.oise.utoronto.ca",
+      "status": "unchecked"
+    },
+    {
+      "id": "rotman",
+      "name": "Rotman School of Management",
+      "kind": "school",
+      "url": "https://www.rotman.utoronto.ca",
+      "status": "no-feed",
+      "note": "public events page is HTML"
+    },
+    {
+      "id": "sgs",
+      "name": "School of Graduate Studies",
+      "kind": "school",
+      "url": "https://www.sgs.utoronto.ca",
+      "status": "unchecked",
+      "note": "/events 404"
+    },
+    {
+      "id": "munk",
+      "name": "Munk School of Global Affairs & Public Policy",
+      "kind": "school",
+      "url": "https://munkschool.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is Drupal HTML"
+    },
+    {
+      "id": "utm",
+      "name": "University of Toronto Mississauga",
+      "kind": "school",
+      "url": "https://www.utm.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is Drupal HTML"
+    },
+    {
+      "id": "utsc",
+      "name": "University of Toronto Scarborough",
+      "kind": "school",
+      "url": "https://utsc.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "cs",
+      "name": "Department of Computer Science",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://web.cs.toronto.edu",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "ece",
+      "name": "Edward S. Rogers Sr. Department of Electrical & Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.ece.utoronto.ca",
+      "status": "feed",
+      "feeds": [
+        "https://www.ece.utoronto.ca/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "mie",
+      "name": "Mechanical & Industrial Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.mie.utoronto.ca",
+      "status": "unchecked"
+    },
+    {
+      "id": "ibbme",
+      "name": "Institute of Biomedical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://bme.utoronto.ca",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://www.math.toronto.edu",
+      "status": "blocked",
+      "note": "JavaScript bot challenge"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistical Sciences",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://www.statistics.utoronto.ca",
+      "status": "blocked",
+      "note": "JavaScript bot challenge"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://www.physics.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://www.chemistry.utoronto.ca",
+      "status": "blocked",
+      "note": "JavaScript bot challenge"
+    },
+    {
+      "id": "eeb",
+      "name": "Ecology & Evolutionary Biology",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://www.eeb.utoronto.ca",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://www.economics.utoronto.ca",
+      "status": "no-feed",
+      "note": "seminars page is HTML"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://www.psych.utoronto.ca",
+      "status": "blocked",
+      "note": "JavaScript bot challenge"
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://politics.utoronto.ca",
+      "status": "unchecked"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://history.utoronto.ca",
+      "status": "blocked",
+      "note": "JavaScript bot challenge"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://www.english.utoronto.ca",
+      "status": "blocked",
+      "note": "JavaScript bot challenge"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://philosophy.utoronto.ca",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://sociology.utoronto.ca",
+      "status": "unchecked"
+    },
+    {
+      "id": "vector",
+      "name": "Vector Institute",
+      "kind": "institute",
+      "url": "https://vectorinstitute.ai",
+      "status": "feed",
+      "feeds": [
+        "https://vectorinstitute.ai/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "srinstitute",
+      "name": "Schwartz Reisman Institute for Technology and Society",
+      "kind": "institute",
+      "url": "https://srinstitute.utoronto.ca",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "jhi",
+      "name": "Jackman Humanities Institute",
+      "kind": "institute",
+      "parent": "artsci",
+      "url": "https://www.humanities.utoronto.ca",
+      "status": "blocked",
+      "note": "JavaScript bot challenge"
+    },
+    {
+      "id": "dsi",
+      "name": "Data Sciences Institute",
+      "kind": "institute",
+      "url": "https://datasciences.utoronto.ca",
+      "status": "unchecked"
+    },
+    {
+      "id": "climate",
+      "name": "School of the Environment",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://www.environment.utoronto.ca",
+      "status": "unchecked"
+    },
+    {
+      "id": "asian",
+      "name": "Asian Institute",
+      "kind": "institute",
+      "parent": "munk",
+      "url": "https://munkschool.utoronto.ca/ai",
+      "status": "no-feed",
+      "note": "Munk events are Drupal HTML"
+    },
+    {
+      "id": "cdl",
+      "name": "Creative Destruction Lab",
+      "kind": "center",
+      "parent": "rotman",
+      "url": "https://creativedestructionlab.com",
+      "status": "unchecked",
+      "note": "/events 404"
+    },
+    {
+      "id": "entrepreneurship",
+      "name": "U of T Entrepreneurship",
+      "kind": "center",
+      "url": "https://entrepreneurs.utoronto.ca",
+      "status": "no-feed",
+      "note": "community events page is HTML"
+    },
+    {
+      "id": "utsu",
+      "name": "University of Toronto Students' Union",
+      "kind": "student",
+      "url": "https://www.utsu.ca",
+      "status": "no-feed",
+      "note": "tribe API answers with 0 events"
+    },
+    {
+      "id": "utgsu",
+      "name": "Graduate Students' Union",
+      "kind": "student",
+      "url": "https://utgsu.ca",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "trinity",
+      "name": "Trinity College",
+      "kind": "student",
+      "url": "https://www.trinity.utoronto.ca",
+      "status": "blocked",
+      "note": "Cloudflare challenge (403)"
+    },
+    {
+      "id": "victoria",
+      "name": "Victoria College",
+      "kind": "student",
+      "url": "https://www.vic.utoronto.ca",
+      "status": "unchecked"
+    },
+    {
+      "id": "studentlife",
+      "name": "Student Life",
+      "kind": "other",
+      "url": "https://www.studentlife.utoronto.ca",
+      "status": "no-feed",
+      "note": "WordPress, no events feed"
+    },
+    {
+      "id": "library",
+      "name": "University of Toronto Libraries",
+      "kind": "library",
+      "url": "https://library.utoronto.ca",
+      "feeds": [
+        "https://libcal.library.utoronto.ca/ical_subscribe.php?src=p&cid=2020"
+      ],
+      "status": "feed",
+      "note": "LibCal cids 8501 (special events) and 8054 not read"
+    },
+    {
+      "id": "hart-house",
+      "name": "Hart House",
+      "kind": "other",
+      "url": "https://harthouse.ca",
+      "status": "unchecked"
+    },
+    {
+      "id": "art-museum",
+      "name": "Art Museum at the University of Toronto",
+      "kind": "museum",
+      "url": "https://artmuseum.utoronto.ca",
+      "status": "unchecked"
+    },
+    {
+      "id": "uoft-events",
+      "name": "U of T Events (www.utoronto.ca/events)",
+      "kind": "other",
+      "url": "https://www.utoronto.ca/events",
+      "status": "no-feed",
+      "note": "Drupal aggregator with no ics/rss/jsonapi"
+    },
+    {
+      "id": "athletics",
+      "name": "Varsity Blues Athletics",
+      "kind": "other",
+      "url": "https://varsityblues.ca",
+      "status": "unchecked"
+    }
+  ]
+}

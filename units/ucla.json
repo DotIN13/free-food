@@ -1,0 +1,468 @@
+{
+  "id": "ucla",
+  "name": "University of California, Los Angeles",
+  "wide": [],
+  "units": [
+    {
+      "id": "college",
+      "name": "UCLA College (Letters and Science)",
+      "kind": "school",
+      "url": "https://college.ucla.edu",
+      "status": "unchecked",
+      "note": "no campus-wide calendar to be in; its divisions are listed below"
+    },
+    {
+      "id": "humanities",
+      "name": "Division of Humanities",
+      "kind": "school",
+      "parent": "college",
+      "url": "https://humanities.ucla.edu",
+      "feeds": [
+        "https://humanities.ucla.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "lifesci",
+      "name": "Division of Life Sciences",
+      "kind": "school",
+      "parent": "college",
+      "url": "https://lifesciences.ucla.edu",
+      "status": "no-feed",
+      "note": "tribe API exists but holds no upcoming events"
+    },
+    {
+      "id": "physci",
+      "name": "Division of Physical Sciences",
+      "kind": "school",
+      "parent": "college",
+      "url": "https://physicalsciences.ucla.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "socsci",
+      "name": "Division of Social Sciences",
+      "kind": "school",
+      "parent": "college",
+      "url": "https://socialsciences.ucla.edu",
+      "status": "no-feed",
+      "note": "home page HTML, no event feed"
+    },
+    {
+      "id": "anderson",
+      "name": "UCLA Anderson School of Management",
+      "kind": "school",
+      "url": "https://www.anderson.ucla.edu",
+      "feeds": [
+        "https://static-prod-us-east-1.campusgroups.com/ical/uclaanderson/ical_uclaanderson.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "samueli",
+      "name": "Samueli School of Engineering",
+      "kind": "school",
+      "url": "https://samueli.ucla.edu",
+      "status": "no-feed",
+      "note": "Events Manager ics nearly empty (sources note)"
+    },
+    {
+      "id": "law",
+      "name": "UCLA School of Law",
+      "kind": "school",
+      "url": "https://law.ucla.edu",
+      "status": "no-feed",
+      "note": "Drupal HTML only (sources note)"
+    },
+    {
+      "id": "luskin",
+      "name": "Luskin School of Public Affairs",
+      "kind": "school",
+      "url": "https://luskin.ucla.edu",
+      "status": "blocked",
+      "note": "403 (tribe API 403s after a few requests)"
+    },
+    {
+      "id": "fielding",
+      "name": "Fielding School of Public Health",
+      "kind": "school",
+      "url": "https://ph.ucla.edu",
+      "status": "no-feed",
+      "note": "Drupal HTML only (sources note)"
+    },
+    {
+      "id": "geffen",
+      "name": "David Geffen School of Medicine",
+      "kind": "school",
+      "url": "https://medschool.ucla.edu",
+      "status": "no-feed",
+      "note": "Drupal events search page, no feed (sources note)"
+    },
+    {
+      "id": "dentistry",
+      "name": "School of Dentistry",
+      "kind": "school",
+      "url": "https://dentistry.ucla.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "nursing",
+      "name": "School of Nursing",
+      "kind": "school",
+      "url": "https://nursing.ucla.edu",
+      "status": "no-feed",
+      "note": "events search page, HTML only"
+    },
+    {
+      "id": "seis",
+      "name": "School of Education & Information Studies",
+      "kind": "school",
+      "url": "https://seis.ucla.edu",
+      "feeds": [
+        "https://seis.ucla.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "tft",
+      "name": "School of Theater, Film and Television",
+      "kind": "school",
+      "url": "https://www.tft.ucla.edu",
+      "status": "no-feed",
+      "note": "events page HTML only"
+    },
+    {
+      "id": "music",
+      "name": "Herb Alpert School of Music",
+      "kind": "school",
+      "url": "https://schoolofmusic.ucla.edu",
+      "status": "no-feed",
+      "note": "tribe API has events but no UTC times (sources note)"
+    },
+    {
+      "id": "arts",
+      "name": "School of the Arts and Architecture",
+      "kind": "school",
+      "url": "https://www.arts.ucla.edu",
+      "status": "unchecked",
+      "note": "site did not answer"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "samueli",
+      "url": "https://www.cs.ucla.edu",
+      "status": "no-feed",
+      "note": "events.ics nearly empty (sources note)"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical & Computer Engineering",
+      "kind": "department",
+      "parent": "samueli",
+      "url": "https://www.ee.ucla.edu",
+      "feeds": [
+        "https://www.ee.ucla.edu/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "mae",
+      "name": "Mechanical & Aerospace Engineering",
+      "kind": "department",
+      "parent": "samueli",
+      "url": "https://www.mae.ucla.edu",
+      "status": "no-feed",
+      "note": "WordPress events page, HTML only"
+    },
+    {
+      "id": "bioeng",
+      "name": "Bioengineering",
+      "kind": "department",
+      "parent": "samueli",
+      "url": "https://www.bioeng.ucla.edu",
+      "status": "no-feed",
+      "note": "WordPress events page, HTML only"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "physci",
+      "url": "https://www.math.ucla.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics and Data Science",
+      "kind": "department",
+      "parent": "physci",
+      "url": "https://statistics.ucla.edu",
+      "status": "no-feed",
+      "note": "no tribe API, HTML only"
+    },
+    {
+      "id": "physics",
+      "name": "Physics & Astronomy",
+      "kind": "department",
+      "parent": "physci",
+      "url": "https://www.pa.ucla.edu",
+      "status": "no-feed",
+      "note": "events page HTML only"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry & Biochemistry",
+      "kind": "department",
+      "parent": "physci",
+      "url": "https://www.chemistry.ucla.edu",
+      "feeds": [
+        "https://www.chemistry.ucla.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "eeb",
+      "name": "Ecology and Evolutionary Biology",
+      "kind": "department",
+      "parent": "lifesci",
+      "url": "https://www.eeb.ucla.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "mcdb",
+      "name": "Molecular, Cell, and Developmental Biology",
+      "kind": "department",
+      "parent": "lifesci",
+      "url": "https://www.mcdb.ucla.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "lifesci",
+      "url": "https://www.psych.ucla.edu",
+      "status": "no-feed",
+      "note": "news-events page HTML only"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "socsci",
+      "url": "https://economics.ucla.edu",
+      "status": "unchecked",
+      "note": "site did not answer"
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "socsci",
+      "url": "https://polisci.ucla.edu",
+      "status": "no-feed",
+      "note": "tribe API exists but holds no upcoming events"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "socsci",
+      "url": "https://soc.ucla.edu",
+      "status": "no-feed",
+      "note": "tribe API exists but holds no upcoming events"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "socsci",
+      "url": "https://www.history.ucla.edu",
+      "feeds": [
+        "https://www.history.ucla.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "communication",
+      "name": "Communication",
+      "kind": "department",
+      "parent": "socsci",
+      "url": "https://comm.ucla.edu",
+      "feeds": [
+        "https://comm.ucla.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "humanities",
+      "url": "https://english.ucla.edu",
+      "feeds": [
+        "https://english.ucla.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "humanities",
+      "url": "https://philosophy.ucla.edu",
+      "status": "feed",
+      "feeds": [
+        "https://philosophy.ucla.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "linguistics",
+      "name": "Linguistics",
+      "kind": "department",
+      "parent": "humanities",
+      "url": "https://linguistics.ucla.edu",
+      "feeds": [
+        "https://linguistics.ucla.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "ccpr",
+      "name": "California Center for Population Research",
+      "kind": "center",
+      "parent": "socsci",
+      "url": "https://ccpr.ucla.edu",
+      "feeds": [
+        "https://ccpr.ucla.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "international",
+      "name": "UCLA International Institute",
+      "kind": "institute",
+      "url": "https://www.international.ucla.edu",
+      "status": "no-feed",
+      "note": "events HTML only"
+    },
+    {
+      "id": "ioes",
+      "name": "Institute of the Environment and Sustainability",
+      "kind": "institute",
+      "url": "https://www.ioes.ucla.edu",
+      "status": "no-feed",
+      "note": "WordPress without tribe API, HTML only"
+    },
+    {
+      "id": "ipam",
+      "name": "Institute for Pure and Applied Mathematics (IPAM)",
+      "kind": "institute",
+      "url": "https://www.ipam.ucla.edu",
+      "status": "no-feed",
+      "note": "program pages HTML only"
+    },
+    {
+      "id": "dataxsci",
+      "name": "DataX / Data Science initiative",
+      "kind": "institute",
+      "url": "https://datax.ucla.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "jonsson",
+      "name": "Jonsson Comprehensive Cancer Center",
+      "kind": "center",
+      "parent": "geffen",
+      "url": "https://cancer.ucla.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "uclahealth",
+      "name": "UCLA Health",
+      "kind": "other",
+      "url": "https://www.uclahealth.org",
+      "status": "blocked",
+      "note": "Cloudflare (sources note)"
+    },
+    {
+      "id": "price",
+      "name": "Price Center for Entrepreneurship & Innovation",
+      "kind": "center",
+      "parent": "anderson",
+      "url": "https://www.anderson.ucla.edu/about/centers/price-center-for-entrepreneurship-and-innovation",
+      "status": "unchecked"
+    },
+    {
+      "id": "cnsi",
+      "name": "California NanoSystems Institute",
+      "kind": "institute",
+      "url": "https://cnsi.ucla.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "usac",
+      "name": "Undergraduate Students Association Council (USAC)",
+      "kind": "student",
+      "url": "https://www.usac.ucla.edu",
+      "status": "no-feed",
+      "note": "site has no event feed; CampusGroups 'ucla' tenant stale"
+    },
+    {
+      "id": "gsa",
+      "name": "Graduate Students Association",
+      "kind": "student",
+      "url": "https://gsa.asucla.ucla.edu",
+      "status": "no-feed",
+      "note": "site has no event feed"
+    },
+    {
+      "id": "grad",
+      "name": "Graduate Division",
+      "kind": "other",
+      "url": "https://grad.ucla.edu",
+      "status": "no-feed",
+      "note": "WordPress without tribe API"
+    },
+    {
+      "id": "library",
+      "name": "UCLA Library",
+      "kind": "library",
+      "url": "https://www.library.ucla.edu",
+      "status": "no-feed",
+      "note": "events & exhibitions page HTML only"
+    },
+    {
+      "id": "hammer",
+      "name": "Hammer Museum",
+      "kind": "museum",
+      "url": "https://hammer.ucla.edu",
+      "status": "no-feed",
+      "note": "Drupal HTML only (sources note)"
+    },
+    {
+      "id": "fowler",
+      "name": "Fowler Museum",
+      "kind": "museum",
+      "url": "https://fowler.ucla.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cap",
+      "name": "Center for the Art of Performance (CAP UCLA)",
+      "kind": "other",
+      "url": "https://cap.ucla.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "career",
+      "name": "Career Center",
+      "kind": "other",
+      "url": "https://career.ucla.edu",
+      "status": "no-feed",
+      "note": "events on Handshake; site HTML only"
+    }
+  ]
+}

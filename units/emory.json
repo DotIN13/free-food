@@ -1,0 +1,308 @@
+{
+  "id": "emory",
+  "name": "Emory University",
+  "wide": [
+    "https://www.trumba.com/calendars/emory-events.ics",
+    "https://static-prod-us-east-1.campusgroups.com/ical/emory/ical_emory.ics"
+  ],
+  "units": [
+    {
+      "id": "college",
+      "name": "Emory College of Arts and Sciences",
+      "kind": "school",
+      "url": "https://college.emory.edu",
+      "status": "in-wide",
+      "note": "uses the emory-events Trumba calendar"
+    },
+    {
+      "id": "oxford",
+      "name": "Oxford College",
+      "kind": "school",
+      "url": "https://oxford.emory.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/oxford-college.ics"
+      ]
+    },
+    {
+      "id": "laney",
+      "name": "Laney Graduate School",
+      "kind": "school",
+      "url": "https://gs.emory.edu",
+      "status": "unchecked",
+      "note": "/events/ is 404"
+    },
+    {
+      "id": "goizueta",
+      "name": "Goizueta Business School",
+      "kind": "school",
+      "url": "https://goizueta.emory.edu",
+      "feeds": [
+        "https://www.trumba.com/calendars/tyling-test-calendar.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "law",
+      "name": "Emory University School of Law",
+      "kind": "school",
+      "url": "https://law.emory.edu",
+      "status": "no-feed",
+      "note": "its Trumba calendar emory-school-of-law-school-of-law-events-general is empty"
+    },
+    {
+      "id": "medicine",
+      "name": "Emory University School of Medicine",
+      "kind": "school",
+      "url": "https://med.emory.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/som-main.ics"
+      ]
+    },
+    {
+      "id": "nursing",
+      "name": "Nell Hodgson Woodruff School of Nursing",
+      "kind": "school",
+      "url": "https://www.nursing.emory.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "rollins",
+      "name": "Rollins School of Public Health",
+      "kind": "school",
+      "url": "https://sph.emory.edu",
+      "status": "no-feed",
+      "note": "Drupal HTML events; rss.xml is faculty profiles"
+    },
+    {
+      "id": "candler",
+      "name": "Candler School of Theology",
+      "kind": "school",
+      "url": "https://candler.emory.edu",
+      "status": "feed",
+      "feeds": [
+        "https://candler.emory.edu/about-candler/events/?ical=1"
+      ]
+    },
+    {
+      "id": "cs",
+      "name": "Department of Computer Science",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://computerscience.emory.edu",
+      "status": "in-wide",
+      "note": "uses the emory-events Trumba calendar"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://mathematics.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "qtm",
+      "name": "Department of Quantitative Theory and Methods",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://quantitative.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://physics.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://chemistry.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "biology",
+      "name": "Department of Biology",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://biology.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://economics.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://psychology.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "polisci",
+      "name": "Department of Political Science",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://polisci.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://history.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://english.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://philosophy.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://sociology.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "bme",
+      "name": "Wallace H. Coulter Department of Biomedical Engineering (with Georgia Tech)",
+      "kind": "department",
+      "parent": "medicine",
+      "url": "https://bme.gatech.edu",
+      "status": "no-feed",
+      "note": "upcoming-events page on Georgia Tech's site is HTML only"
+    },
+    {
+      "id": "biostat",
+      "name": "Department of Biostatistics and Bioinformatics",
+      "kind": "department",
+      "parent": "rollins",
+      "url": "https://sph.emory.edu/departments/bios",
+      "status": "unchecked"
+    },
+    {
+      "id": "cail",
+      "name": "Center for AI Learning",
+      "kind": "center",
+      "url": "https://ailearning.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "fox",
+      "name": "Fox Center for Humanistic Inquiry",
+      "kind": "center",
+      "parent": "college",
+      "url": "https://foxcenter.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "halle",
+      "name": "Halle Institute for Global Research",
+      "kind": "institute",
+      "url": "https://halleinstitute.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "winship",
+      "name": "Winship Cancer Institute",
+      "kind": "institute",
+      "url": "https://winshipcancer.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "eghi",
+      "name": "Emory Global Health Institute",
+      "kind": "institute",
+      "url": "https://globalhealth.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "climate",
+      "name": "Emory Climate Talks / Office of Sustainability Initiatives",
+      "kind": "center",
+      "url": "https://sustainability.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sga",
+      "name": "Student Government Association",
+      "kind": "student",
+      "url": "https://sga.emory.edu",
+      "status": "in-wide",
+      "note": "student-org events are on The Hub (CampusGroups)"
+    },
+    {
+      "id": "gsga",
+      "name": "Graduate Student Government Association",
+      "kind": "student",
+      "url": "https://gsga.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "library",
+      "name": "Emory Libraries",
+      "kind": "library",
+      "url": "https://libraries.emory.edu",
+      "status": "in-wide",
+      "note": "events page embeds emory-events Trumba entries"
+    },
+    {
+      "id": "carlos",
+      "name": "Michael C. Carlos Museum",
+      "kind": "museum",
+      "url": "https://carlos.emory.edu",
+      "status": "blocked",
+      "note": "403 Access Denied"
+    },
+    {
+      "id": "career",
+      "name": "Career and Professional Development",
+      "kind": "other",
+      "url": "https://cpd.emory.edu",
+      "status": "no-feed",
+      "note": "events/ redirects to the home page"
+    },
+    {
+      "id": "schwartz",
+      "name": "Schwartz Center for Performing Arts",
+      "kind": "other",
+      "url": "https://schwartz.emory.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "athletics",
+      "name": "Emory Athletics",
+      "kind": "other",
+      "url": "https://emoryathletics.com",
+      "status": "unchecked"
+    }
+  ]
+}

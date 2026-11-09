@@ -1,0 +1,430 @@
+{
+  "id": "uga",
+  "name": "University of Georgia",
+  "wide": [
+    "https://calendar.uga.edu",
+    "https://uga.campuslabs.com/engage/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100"
+  ],
+  "units": [
+    {
+      "id": "franklin",
+      "name": "Franklin College of Arts and Sciences",
+      "kind": "school",
+      "url": "https://www.franklin.uga.edu",
+      "status": "no-feed",
+      "note": "Drupal site with no event feed"
+    },
+    {
+      "id": "caes",
+      "name": "College of Agricultural and Environmental Sciences",
+      "kind": "school",
+      "url": "https://www.caes.uga.edu",
+      "status": "unchecked",
+      "note": "events page not found"
+    },
+    {
+      "id": "ced",
+      "name": "College of Environment + Design",
+      "kind": "school",
+      "url": "https://ced.uga.edu",
+      "status": "feed",
+      "feeds": [
+        "https://ced.uga.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "ecology",
+      "name": "Odum School of Ecology",
+      "kind": "school",
+      "url": "https://www.ecology.uga.edu",
+      "status": "in-wide",
+      "note": "events page redirects to calendar.uga.edu/ecology"
+    },
+    {
+      "id": "education",
+      "name": "Mary Frances Early College of Education",
+      "kind": "school",
+      "url": "https://coe.uga.edu",
+      "status": "in-wide",
+      "note": "uses calendar.uga.edu"
+    },
+    {
+      "id": "engineering",
+      "name": "College of Engineering",
+      "kind": "school",
+      "url": "https://engineering.uga.edu",
+      "feeds": [
+        "https://engineering.uga.edu/wp-json/tribe/events/v1/events"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "fcs",
+      "name": "College of Family and Consumer Sciences",
+      "kind": "school",
+      "url": "https://www.fcs.uga.edu",
+      "status": "no-feed",
+      "note": "events page is HTML"
+    },
+    {
+      "id": "warnell",
+      "name": "Warnell School of Forestry and Natural Resources",
+      "kind": "school",
+      "url": "https://warnell.uga.edu",
+      "status": "no-feed",
+      "note": "tribe API answers but has no upcoming events"
+    },
+    {
+      "id": "grady",
+      "name": "Grady College of Journalism and Mass Communication",
+      "kind": "school",
+      "url": "https://grady.uga.edu",
+      "feeds": [
+        "https://grady.uga.edu/wp-json/tribe/events/v1/events"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "law",
+      "name": "School of Law",
+      "kind": "school",
+      "url": "https://www.law.uga.edu",
+      "status": "unchecked",
+      "note": "/calendar 404"
+    },
+    {
+      "id": "pharmacy",
+      "name": "College of Pharmacy",
+      "kind": "school",
+      "url": "https://rx.uga.edu",
+      "status": "feed",
+      "feeds": [
+        "https://rx.uga.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "publichealth",
+      "name": "College of Public Health",
+      "kind": "school",
+      "url": "https://publichealth.uga.edu",
+      "feeds": [
+        "https://publichealth.uga.edu/wp-json/tribe/events/v1/events"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "spia",
+      "name": "School of Public and International Affairs",
+      "kind": "school",
+      "url": "https://spia.uga.edu",
+      "status": "no-feed",
+      "note": "tribe feed left out: site time zone UTC+0 makes times 5 h off"
+    },
+    {
+      "id": "ssw",
+      "name": "School of Social Work",
+      "kind": "school",
+      "url": "https://ssw.uga.edu",
+      "status": "unchecked",
+      "note": "/events 404"
+    },
+    {
+      "id": "terry",
+      "name": "Terry College of Business",
+      "kind": "school",
+      "url": "https://www.terry.uga.edu",
+      "status": "blocked",
+      "note": "403 challenge"
+    },
+    {
+      "id": "vet",
+      "name": "College of Veterinary Medicine",
+      "kind": "school",
+      "url": "https://vet.uga.edu",
+      "status": "feed",
+      "feeds": [
+        "https://vet.uga.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "grad",
+      "name": "Graduate School",
+      "kind": "school",
+      "url": "https://grad.uga.edu",
+      "status": "unchecked",
+      "note": "/events 404"
+    },
+    {
+      "id": "honors",
+      "name": "Morehead Honors College",
+      "kind": "school",
+      "url": "https://honors.uga.edu",
+      "status": "feed",
+      "feeds": [
+        "https://honors.uga.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "AU/UGA Medical Partnership",
+      "kind": "school",
+      "url": "https://medicalpartnership.usg.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cs",
+      "name": "School of Computing",
+      "kind": "department",
+      "parent": "franklin",
+      "url": "https://www.cs.uga.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, no feed"
+    },
+    {
+      "id": "ece",
+      "name": "School of Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.uga.edu/schools/electrical-computer",
+      "status": "unchecked"
+    },
+    {
+      "id": "me",
+      "name": "School of Environmental, Civil, Agricultural and Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.uga.edu/schools/ecam",
+      "status": "unchecked"
+    },
+    {
+      "id": "bme",
+      "name": "School of Chemical, Materials, and Biomedical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.uga.edu/schools/cmbe",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "franklin",
+      "url": "https://www.math.uga.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, no feed"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "kind": "department",
+      "parent": "franklin",
+      "url": "https://www.stat.uga.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "physics",
+      "name": "Physics and Astronomy",
+      "kind": "department",
+      "parent": "franklin",
+      "url": "https://www.physast.uga.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, no feed"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "franklin",
+      "url": "https://www.chem.uga.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, no feed"
+    },
+    {
+      "id": "biology",
+      "name": "Genetics / Cellular Biology / Plant Biology",
+      "kind": "department",
+      "parent": "franklin",
+      "url": "https://www.genetics.uga.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "terry",
+      "url": "https://www.terry.uga.edu/departments/economics",
+      "status": "blocked",
+      "note": "Terry sites 403"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "franklin",
+      "url": "https://psychology.uga.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "spia",
+      "url": "https://spia.uga.edu/departments-centers/department-of-political-science",
+      "status": "no-feed",
+      "note": "SPIA tribe feed left out (time zone)"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "franklin",
+      "url": "https://history.uga.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, no feed"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "franklin",
+      "url": "https://www.english.uga.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, no feed"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "franklin",
+      "url": "https://phil.uga.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "franklin",
+      "url": "https://sociology.uga.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "art",
+      "name": "Lamar Dodd School of Art",
+      "kind": "department",
+      "parent": "franklin",
+      "url": "https://art.uga.edu",
+      "status": "no-feed",
+      "note": "events page is HTML (25Live link)"
+    },
+    {
+      "id": "music",
+      "name": "Hugh Hodgson School of Music",
+      "kind": "department",
+      "parent": "franklin",
+      "url": "https://music.uga.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "iai",
+      "name": "Institute for Artificial Intelligence",
+      "kind": "institute",
+      "parent": "franklin",
+      "url": "https://ai.uga.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, no feed"
+    },
+    {
+      "id": "willson",
+      "name": "Willson Center for Humanities and Arts",
+      "kind": "center",
+      "url": "https://willson.uga.edu",
+      "status": "unchecked",
+      "note": "/events 404"
+    },
+    {
+      "id": "ccrc",
+      "name": "Complex Carbohydrate Research Center",
+      "kind": "center",
+      "url": "https://www.ccrc.uga.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ctegd",
+      "name": "Center for Tropical and Emerging Global Diseases",
+      "kind": "center",
+      "url": "https://ctegd.uga.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cviog",
+      "name": "Carl Vinson Institute of Government",
+      "kind": "institute",
+      "url": "https://cviog.uga.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "innovation",
+      "name": "Innovation Gateway / Entrepreneurship Program",
+      "kind": "center",
+      "url": "https://www.terry.uga.edu/entrepreneurship",
+      "status": "blocked",
+      "note": "Terry sites 403"
+    },
+    {
+      "id": "sga",
+      "name": "Student Government Association",
+      "kind": "student",
+      "url": "https://sga.uga.edu",
+      "status": "in-wide",
+      "note": "student-org events are on UGA Engage"
+    },
+    {
+      "id": "gpsa",
+      "name": "Graduate and Professional Student Association",
+      "kind": "student",
+      "url": "https://gpsa.uga.edu",
+      "status": "in-wide",
+      "note": "student-org events are on UGA Engage"
+    },
+    {
+      "id": "union",
+      "name": "University Union",
+      "kind": "student",
+      "url": "https://union.uga.edu",
+      "status": "in-wide",
+      "note": "student-org events are on UGA Engage"
+    },
+    {
+      "id": "library",
+      "name": "UGA Libraries",
+      "kind": "library",
+      "url": "https://www.libs.uga.edu",
+      "status": "unchecked",
+      "note": "events on LibCal"
+    },
+    {
+      "id": "museum",
+      "name": "Georgia Museum of Art",
+      "kind": "museum",
+      "url": "https://georgiamuseum.org",
+      "status": "no-feed",
+      "note": "events page is HTML; tribe route not available"
+    },
+    {
+      "id": "career",
+      "name": "Career Center",
+      "kind": "other",
+      "url": "https://career.uga.edu",
+      "status": "unchecked",
+      "note": "/events 404"
+    },
+    {
+      "id": "athletics",
+      "name": "Georgia Bulldogs Athletics",
+      "kind": "other",
+      "url": "https://georgiadogs.com",
+      "status": "unchecked"
+    }
+  ]
+}

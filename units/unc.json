@@ -1,0 +1,417 @@
+{
+  "id": "unc",
+  "name": "University of North Carolina at Chapel Hill",
+  "wide": [
+    "https://calendar.unc.edu",
+    "https://heellife.unc.edu/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100"
+  ],
+  "units": [
+    {
+      "id": "college",
+      "name": "College of Arts and Sciences",
+      "kind": "school",
+      "url": "https://college.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "dentistry",
+      "name": "Adams School of Dentistry",
+      "kind": "school",
+      "url": "https://dentistry.unc.edu",
+      "status": "unchecked",
+      "found": "https://dentistry.unc.edu/wp-json/tribe/events/v1/events",
+      "note": "tribe API answers, 8 upcoming"
+    },
+    {
+      "id": "datascience",
+      "name": "School of Data Science and Society",
+      "kind": "school",
+      "url": "https://datascience.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "education",
+      "name": "School of Education",
+      "kind": "school",
+      "url": "https://ed.unc.edu",
+      "status": "feed",
+      "feeds": [
+        "https://ed.unc.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "gillings",
+      "name": "Gillings School of Global Public Health",
+      "kind": "school",
+      "url": "https://sph.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "hussman",
+      "name": "Hussman School of Journalism and Media",
+      "kind": "school",
+      "url": "https://hussman.unc.edu",
+      "status": "no-feed",
+      "note": "calendar page is HTML with no feed"
+    },
+    {
+      "id": "kenan-flagler",
+      "name": "Kenan-Flagler Business School",
+      "kind": "school",
+      "url": "https://www.kenan-flagler.unc.edu",
+      "status": "no-feed",
+      "note": "WordPress HTML events, no events API"
+    },
+    {
+      "id": "government",
+      "name": "School of Government",
+      "kind": "school",
+      "url": "https://www.sog.unc.edu",
+      "status": "unchecked",
+      "note": "courses catalogue, /events 404"
+    },
+    {
+      "id": "sils",
+      "name": "School of Information and Library Science",
+      "kind": "school",
+      "url": "https://sils.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "law",
+      "name": "School of Law",
+      "kind": "school",
+      "url": "https://law.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "medicine",
+      "name": "School of Medicine",
+      "kind": "school",
+      "url": "https://www.med.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "nursing",
+      "name": "School of Nursing",
+      "kind": "school",
+      "url": "https://nursing.unc.edu",
+      "status": "unchecked",
+      "note": "/events 404"
+    },
+    {
+      "id": "pharmacy",
+      "name": "Eshelman School of Pharmacy",
+      "kind": "school",
+      "url": "https://pharmacy.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "socialwork",
+      "name": "School of Social Work",
+      "kind": "school",
+      "url": "https://ssw.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "gradschool",
+      "name": "The Graduate School",
+      "kind": "school",
+      "url": "https://gradschool.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "scll",
+      "name": "School of Civic Life and Leadership",
+      "kind": "school",
+      "url": "https://scll.unc.edu",
+      "status": "unchecked",
+      "note": "fetch failed"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://cs.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "stor",
+      "name": "Statistics and Operations Research",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://stor.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "bme",
+      "name": "Joint Department of Biomedical Engineering",
+      "kind": "department",
+      "parent": "medicine",
+      "url": "https://bme.unc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "applied-sciences",
+      "name": "Applied Physical Sciences",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://aps.unc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://math.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "physics",
+      "name": "Physics and Astronomy",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://physics.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://chem.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "biology",
+      "name": "Biology",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://bio.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://econ.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology and Neuroscience",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://psychology.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://politicalscience.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://history.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "english",
+      "name": "English and Comparative Literature",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://englishcomplit.unc.edu",
+      "status": "unchecked",
+      "note": "fetch failed"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://philosophy.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "college",
+      "url": "https://sociology.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "biostat",
+      "name": "Biostatistics",
+      "kind": "department",
+      "parent": "gillings",
+      "url": "https://sph.unc.edu/bios",
+      "status": "blocked",
+      "note": "sph.unc.edu 403 to the bot"
+    },
+    {
+      "id": "iah",
+      "name": "Institute for the Arts and Humanities",
+      "kind": "institute",
+      "parent": "college",
+      "url": "https://iah.unc.edu",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "ie",
+      "name": "Innovate Carolina / Entrepreneurship",
+      "kind": "center",
+      "url": "https://ie.unc.edu",
+      "status": "blocked",
+      "note": "events page 403 to the bot"
+    },
+    {
+      "id": "ie-energy",
+      "name": "Institute for the Environment",
+      "kind": "institute",
+      "url": "https://ie.unc.edu",
+      "status": "blocked",
+      "note": "events page 403 to the bot"
+    },
+    {
+      "id": "lineberger",
+      "name": "Lineberger Comprehensive Cancer Center",
+      "kind": "center",
+      "parent": "medicine",
+      "url": "https://unclineberger.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "cpc",
+      "name": "Carolina Population Center",
+      "kind": "center",
+      "url": "https://www.cpc.unc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "global",
+      "name": "UNC Global Affairs",
+      "kind": "center",
+      "url": "https://global.unc.edu",
+      "status": "unchecked",
+      "note": "fetch failed"
+    },
+    {
+      "id": "renci",
+      "name": "Renaissance Computing Institute (RENCI)",
+      "kind": "institute",
+      "url": "https://renci.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "parr",
+      "name": "Parr Center for Ethics",
+      "kind": "center",
+      "parent": "college",
+      "url": "https://parrcenter.unc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sg",
+      "name": "Undergraduate Student Government",
+      "kind": "student",
+      "url": "https://studentgovernment.unc.edu",
+      "status": "no-feed",
+      "note": "tribe API answers but has no events"
+    },
+    {
+      "id": "gpsg",
+      "name": "Graduate and Professional Student Government",
+      "kind": "student",
+      "url": "https://gpsg.unc.edu",
+      "status": "in-wide",
+      "note": "student-org events are on HeelLife (Engage)"
+    },
+    {
+      "id": "cuab",
+      "name": "Carolina Union Activities Board",
+      "kind": "student",
+      "url": "https://carolinaunion.unc.edu",
+      "status": "in-wide",
+      "note": "student-org events are on HeelLife (Engage)"
+    },
+    {
+      "id": "library",
+      "name": "University Libraries",
+      "kind": "library",
+      "url": "https://library.unc.edu",
+      "status": "feed",
+      "feeds": [
+        "https://calendar.lib.unc.edu/ical_subscribe.php?src=p&cid=2998"
+      ]
+    },
+    {
+      "id": "ackland",
+      "name": "Ackland Art Museum",
+      "kind": "museum",
+      "url": "https://ackland.org",
+      "status": "blocked",
+      "note": "403 to the bot"
+    },
+    {
+      "id": "morehead",
+      "name": "Morehead Planetarium and Science Center",
+      "kind": "museum",
+      "url": "https://moreheadplanetarium.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "cpa",
+      "name": "Carolina Performing Arts",
+      "kind": "other",
+      "url": "https://carolinaperformingarts.org",
+      "status": "no-feed",
+      "note": "season page is HTML"
+    },
+    {
+      "id": "careers",
+      "name": "University Career Services",
+      "kind": "other",
+      "url": "https://careers.unc.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "athletics",
+      "name": "Carolina Athletics",
+      "kind": "other",
+      "url": "https://goheels.com",
+      "status": "unchecked"
+    }
+  ]
+}

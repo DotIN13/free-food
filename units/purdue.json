@@ -1,0 +1,352 @@
+{
+  "id": "purdue",
+  "name": "Purdue University",
+  "wide": [
+    "https://events.purdue.edu",
+    "https://boilerlink.purdue.edu/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100"
+  ],
+  "units": [
+    {
+      "id": "engineering",
+      "name": "College of Engineering",
+      "kind": "school",
+      "url": "https://engineering.purdue.edu",
+      "status": "no-feed",
+      "note": "engineering event pages are HTML only"
+    },
+    {
+      "id": "science",
+      "name": "College of Science",
+      "kind": "school",
+      "url": "https://www.purdue.edu/science",
+      "status": "in-wide",
+      "note": "links events.purdue.edu; department Google calendars mostly empty"
+    },
+    {
+      "id": "cla",
+      "name": "College of Liberal Arts",
+      "kind": "school",
+      "url": "https://www.cla.purdue.edu",
+      "status": "in-wide",
+      "note": "events page embeds events.purdue.edu (Localist)"
+    },
+    {
+      "id": "daniels",
+      "name": "Mitch Daniels School of Business",
+      "kind": "school",
+      "url": "https://business.purdue.edu",
+      "status": "in-wide",
+      "note": "events page embeds events.purdue.edu (Localist)"
+    },
+    {
+      "id": "ag",
+      "name": "College of Agriculture",
+      "kind": "school",
+      "url": "https://ag.purdue.edu",
+      "status": "unchecked",
+      "found": "https://ag.purdue.edu/events/_data/current.ics",
+      "note": "events page uses its own ics (180 events)"
+    },
+    {
+      "id": "hhs",
+      "name": "College of Health and Human Sciences",
+      "kind": "school",
+      "url": "https://hhs.purdue.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "pharmacy",
+      "name": "College of Pharmacy",
+      "kind": "school",
+      "url": "https://pharmacy.purdue.edu",
+      "status": "unchecked",
+      "note": "WordPress; only a site /feed/ seen"
+    },
+    {
+      "id": "vet",
+      "name": "College of Veterinary Medicine",
+      "kind": "school",
+      "url": "https://vet.purdue.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "polytechnic",
+      "name": "Purdue Polytechnic Institute",
+      "kind": "school",
+      "url": "https://polytechnic.purdue.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "education",
+      "name": "College of Education",
+      "kind": "school",
+      "url": "https://education.purdue.edu",
+      "status": "feed",
+      "feeds": [
+        "https://education.purdue.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "honors",
+      "name": "John Martinson Honors College",
+      "kind": "school",
+      "url": "https://honors.purdue.edu",
+      "status": "in-wide",
+      "note": "links events.purdue.edu; honors orgs on BoilerLink"
+    },
+    {
+      "id": "grad",
+      "name": "Graduate School",
+      "kind": "school",
+      "url": "https://www.purdue.edu/academics/ogsps",
+      "status": "unchecked",
+      "note": "page embeds several Google calendars"
+    },
+    {
+      "id": "cs",
+      "name": "Department of Computer Science",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.cs.purdue.edu",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/256h9v68bnbnponkp0upmfq07s%40group.calendar.google.com/public/basic.ics",
+        "https://calendar.google.com/calendar/ical/7sehoe8o6e82k0ni0qee9ofojk%40group.calendar.google.com/public/basic.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "ece",
+      "name": "Elmore Family School of Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.purdue.edu/ECE",
+      "status": "no-feed",
+      "note": "engineering event pages are HTML only"
+    },
+    {
+      "id": "me",
+      "name": "School of Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.purdue.edu/ME",
+      "status": "no-feed",
+      "note": "engineering event pages are HTML only"
+    },
+    {
+      "id": "bme",
+      "name": "Weldon School of Biomedical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.purdue.edu/BME",
+      "status": "no-feed",
+      "note": "engineering event pages are HTML only"
+    },
+    {
+      "id": "aae",
+      "name": "School of Aeronautics and Astronautics",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.purdue.edu/AAE",
+      "status": "no-feed",
+      "note": "engineering event pages are HTML only"
+    },
+    {
+      "id": "che",
+      "name": "Davidson School of Chemical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.purdue.edu/ChE",
+      "status": "no-feed",
+      "note": "engineering event pages are HTML only"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.math.purdue.edu",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/86i1iirjfrsg7j32n0388ekvl4%40group.calendar.google.com/public/basic.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "stat",
+      "name": "Department of Statistics",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.stat.purdue.edu",
+      "status": "unchecked",
+      "note": "College of Science Google calendars mostly empty"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics and Astronomy",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.physics.purdue.edu",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/kqg4qj395hdblj7f4rn5rlne70%40group.calendar.google.com/public/basic.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.chem.purdue.edu",
+      "status": "unchecked",
+      "note": "College of Science Google calendars mostly empty"
+    },
+    {
+      "id": "biology",
+      "name": "Department of Biological Sciences",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://www.bio.purdue.edu",
+      "status": "in-wide",
+      "note": "site embeds events.purdue.edu (Localist)"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "daniels",
+      "url": "https://business.purdue.edu/academics/economics",
+      "status": "unchecked"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychological Sciences",
+      "kind": "department",
+      "parent": "hhs",
+      "url": "https://hhs.purdue.edu/psy",
+      "status": "unchecked"
+    },
+    {
+      "id": "polsci",
+      "name": "Department of Political Science",
+      "kind": "department",
+      "parent": "cla",
+      "url": "https://www.cla.purdue.edu/academic/polsci",
+      "status": "in-wide",
+      "note": "CLA pages draw on events.purdue.edu"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "cla",
+      "url": "https://www.cla.purdue.edu/academic/history",
+      "status": "in-wide",
+      "note": "CLA pages draw on events.purdue.edu"
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "parent": "cla",
+      "url": "https://www.cla.purdue.edu/academic/english",
+      "status": "in-wide",
+      "note": "CLA pages draw on events.purdue.edu"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "cla",
+      "url": "https://www.cla.purdue.edu/academic/philosophy",
+      "status": "in-wide",
+      "note": "CLA pages draw on events.purdue.edu"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "cla",
+      "url": "https://www.cla.purdue.edu/academic/sociology",
+      "status": "in-wide",
+      "note": "CLA pages draw on events.purdue.edu"
+    },
+    {
+      "id": "discovery",
+      "name": "Discovery Park District / research institutes",
+      "kind": "institute",
+      "url": "https://www.purdue.edu/discoverypark",
+      "status": "blocked",
+      "note": "Discovery Park answered 403 (now redirects to research.purdue.edu)"
+    },
+    {
+      "id": "ipai",
+      "name": "Institute for Physical Artificial Intelligence (IPAI)",
+      "kind": "institute",
+      "url": "https://www.purdue.edu/research/ipai",
+      "status": "unchecked"
+    },
+    {
+      "id": "energy",
+      "name": "Purdue Institute for a Sustainable Future",
+      "kind": "institute",
+      "url": "https://www.purdue.edu/research/sustainable-future",
+      "status": "unchecked"
+    },
+    {
+      "id": "pcrc",
+      "name": "Institute for Cancer Research",
+      "kind": "institute",
+      "url": "https://www.purdue.edu/cancer-research",
+      "status": "unchecked"
+    },
+    {
+      "id": "foundry",
+      "name": "Purdue Innovates / Foundry (entrepreneurship)",
+      "kind": "center",
+      "url": "https://purdueinnovates.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "psg",
+      "name": "Purdue Student Government",
+      "kind": "student",
+      "url": "https://www.purdue.edu/psg",
+      "status": "in-wide",
+      "note": "student org events are on BoilerLink (Engage), which we read"
+    },
+    {
+      "id": "pgsg",
+      "name": "Purdue Graduate Student Government",
+      "kind": "student",
+      "url": "https://www.purdue.edu/pgsg",
+      "status": "in-wide",
+      "note": "graduate org events are on BoilerLink"
+    },
+    {
+      "id": "library",
+      "name": "Purdue Libraries",
+      "kind": "library",
+      "url": "https://lib.purdue.edu",
+      "status": "unchecked",
+      "found": "https://calendar.lib.purdue.edu",
+      "note": "events are on LibCal (calendar.lib.purdue.edu), which has RSS/ics exports"
+    },
+    {
+      "id": "convocations",
+      "name": "Purdue Convocations",
+      "kind": "other",
+      "url": "https://convocations.purdue.edu",
+      "status": "feed",
+      "feeds": [
+        "https://convocations.purdue.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "cco",
+      "name": "Center for Career Opportunities",
+      "kind": "other",
+      "url": "https://www.cco.purdue.edu",
+      "status": "unchecked"
+    }
+  ]
+}

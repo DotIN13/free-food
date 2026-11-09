@@ -1,0 +1,448 @@
+{
+  "id": "cambridge",
+  "name": "University of Cambridge",
+  "wide": [
+    "https://talks.cam.ac.uk/show/ics/5607/",
+    "https://www.cambridgesu.co.uk/ents/rss/0/subtree/"
+  ],
+  "units": [
+    {
+      "id": "arts-humanities",
+      "name": "School of Arts and Humanities",
+      "kind": "school",
+      "url": "https://www.cam.ac.uk/schools/arts-and-humanities",
+      "status": "unchecked"
+    },
+    {
+      "id": "hss",
+      "name": "School of the Humanities and Social Sciences",
+      "kind": "school",
+      "url": "https://www.hsps.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "biology-school",
+      "name": "School of the Biological Sciences",
+      "kind": "school",
+      "url": "https://www.bio.cam.ac.uk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "clinical",
+      "name": "School of Clinical Medicine",
+      "kind": "school",
+      "url": "https://www.medschl.cam.ac.uk",
+      "status": "no-feed",
+      "note": "med.cam.ac.uk events page is HTML only"
+    },
+    {
+      "id": "physical",
+      "name": "School of the Physical Sciences",
+      "kind": "school",
+      "url": "https://www.physsci.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "technology",
+      "name": "School of Technology",
+      "kind": "school",
+      "url": "https://www.tech.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "jbs",
+      "name": "Cambridge Judge Business School",
+      "kind": "school",
+      "parent": "technology",
+      "url": "https://www.jbs.cam.ac.uk",
+      "status": "unchecked",
+      "note": "WordPress events RSS (pubDate is the posting date)",
+      "found": "https://www.jbs.cam.ac.uk/events/feed/"
+    },
+    {
+      "id": "cst",
+      "name": "Department of Computer Science and Technology",
+      "kind": "department",
+      "parent": "technology",
+      "url": "https://www.cst.cam.ac.uk",
+      "feeds": [
+        "https://talks.cam.ac.uk/show/ics/6330/"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "engineering",
+      "name": "Department of Engineering",
+      "kind": "department",
+      "parent": "technology",
+      "url": "https://www.eng.cam.ac.uk",
+      "status": "unchecked",
+      "note": "its talks are on talks.cam lists we do not read yet"
+    },
+    {
+      "id": "chemeng",
+      "name": "Department of Chemical Engineering and Biotechnology",
+      "kind": "department",
+      "parent": "technology",
+      "url": "https://www.ceb.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "dpmms",
+      "name": "Department of Pure Mathematics and Mathematical Statistics",
+      "kind": "department",
+      "parent": "physical",
+      "url": "https://www.dpmms.cam.ac.uk",
+      "status": "feed",
+      "feeds": [
+        "https://talks.cam.ac.uk/show/ics/6660/"
+      ]
+    },
+    {
+      "id": "damtp",
+      "name": "Department of Applied Mathematics and Theoretical Physics",
+      "kind": "department",
+      "parent": "physical",
+      "url": "https://www.damtp.cam.ac.uk",
+      "status": "unchecked",
+      "note": "its talks are on talks.cam lists we do not read yet"
+    },
+    {
+      "id": "statslab",
+      "name": "Statistical Laboratory",
+      "kind": "department",
+      "parent": "physical",
+      "url": "https://www.statslab.cam.ac.uk",
+      "status": "unchecked",
+      "note": "seminars page links talks.cam lists (e.g. Probability, show/index/9938)"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics (Cavendish Laboratory)",
+      "kind": "department",
+      "parent": "physical",
+      "url": "https://www.phy.cam.ac.uk",
+      "status": "unchecked",
+      "note": "its talks are on talks.cam lists we do not read yet"
+    },
+    {
+      "id": "chemistry",
+      "name": "Yusuf Hamied Department of Chemistry",
+      "kind": "department",
+      "parent": "physical",
+      "url": "https://www.ch.cam.ac.uk",
+      "feeds": [
+        "https://talks.cam.ac.uk/show/ics/15626/"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "astronomy",
+      "name": "Institute of Astronomy",
+      "kind": "department",
+      "parent": "physical",
+      "url": "https://www.ast.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "earth",
+      "name": "Department of Earth Sciences",
+      "kind": "department",
+      "parent": "physical",
+      "url": "https://www.esc.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "biochem",
+      "name": "Department of Biochemistry",
+      "kind": "department",
+      "parent": "biology-school",
+      "url": "https://www.bioc.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "genetics",
+      "name": "Department of Genetics",
+      "kind": "department",
+      "parent": "biology-school",
+      "url": "https://www.gen.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "biology-school",
+      "url": "https://www.psychol.cam.ac.uk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "pdn",
+      "name": "Department of Physiology, Development and Neuroscience",
+      "kind": "department",
+      "parent": "biology-school",
+      "url": "https://www.pdn.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Faculty of Economics",
+      "kind": "department",
+      "parent": "hss",
+      "url": "https://www.econ.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "polis",
+      "name": "Department of Politics and International Studies (POLIS)",
+      "kind": "department",
+      "parent": "hss",
+      "url": "https://www.polis.cam.ac.uk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "hss",
+      "url": "https://www.sociology.cam.ac.uk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "history",
+      "name": "Faculty of History",
+      "kind": "department",
+      "parent": "hss",
+      "url": "https://www.hist.cam.ac.uk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "law",
+      "name": "Faculty of Law",
+      "kind": "department",
+      "parent": "hss",
+      "url": "https://www.law.cam.ac.uk",
+      "status": "blocked",
+      "note": "events page answers 403"
+    },
+    {
+      "id": "english",
+      "name": "Faculty of English",
+      "kind": "department",
+      "parent": "arts-humanities",
+      "url": "https://www.english.cam.ac.uk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "philosophy",
+      "name": "Faculty of Philosophy",
+      "kind": "department",
+      "parent": "arts-humanities",
+      "url": "https://www.phil.cam.ac.uk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "mmll",
+      "name": "Faculty of Modern and Medieval Languages and Linguistics",
+      "kind": "department",
+      "parent": "arts-humanities",
+      "url": "https://www.mmll.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "medicine",
+      "name": "Department of Medicine",
+      "kind": "department",
+      "parent": "clinical",
+      "url": "https://www.med.cam.ac.uk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "public-health",
+      "name": "MRC Epidemiology Unit / Institute of Public Health",
+      "kind": "center",
+      "parent": "clinical",
+      "url": "https://www.mrc-epid.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "mrc-cbu",
+      "name": "MRC Cognition and Brain Sciences Unit",
+      "kind": "center",
+      "parent": "clinical",
+      "url": "https://www.mrc-cbu.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "crassh",
+      "name": "Centre for Research in the Arts, Social Sciences and Humanities (CRASSH)",
+      "kind": "center",
+      "url": "https://www.crassh.cam.ac.uk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "bennett",
+      "name": "Bennett School of Public Policy",
+      "kind": "institute",
+      "url": "https://www.bennettschool.cam.ac.uk",
+      "status": "unchecked",
+      "note": "WordPress events RSS (pubDate is the posting date)",
+      "found": "https://www.bennettschool.cam.ac.uk/events/feed/"
+    },
+    {
+      "id": "lcfi",
+      "name": "Leverhulme Centre for the Future of Intelligence",
+      "kind": "center",
+      "url": "https://www.lcfi.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "ai-cam",
+      "name": "ai@cam",
+      "kind": "institute",
+      "url": "https://ai.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "energy",
+      "name": "Cambridge Zero / Energy Interdisciplinary Research Centre",
+      "kind": "center",
+      "url": "https://www.energy.cam.ac.uk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "cisl",
+      "name": "Cambridge Institute for Sustainability Leadership",
+      "kind": "institute",
+      "url": "https://www.cisl.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "cses",
+      "name": "Centre of South Asian Studies",
+      "kind": "center",
+      "parent": "hss",
+      "url": "https://www.s-asian.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "entrepreneurship",
+      "name": "Entrepreneurship Centre (Judge)",
+      "kind": "center",
+      "parent": "jbs",
+      "url": "https://www.jbs.cam.ac.uk/entrepreneurship",
+      "status": "unchecked",
+      "note": "likely in the JBS events feed"
+    },
+    {
+      "id": "su",
+      "name": "Cambridge SU",
+      "kind": "student",
+      "url": "https://www.cambridgesu.co.uk",
+      "status": "in-wide",
+      "note": "its MSL events RSS is a wide feed we read"
+    },
+    {
+      "id": "trinity",
+      "name": "Trinity College",
+      "kind": "student",
+      "url": "https://www.trin.cam.ac.uk",
+      "status": "unchecked",
+      "note": "college events (formal halls, talks) on its own site"
+    },
+    {
+      "id": "kings",
+      "name": "King's College",
+      "kind": "student",
+      "url": "https://www.kings.cam.ac.uk",
+      "status": "unchecked",
+      "note": "college events (formal halls, talks) on its own site"
+    },
+    {
+      "id": "stjohns",
+      "name": "St John's College",
+      "kind": "student",
+      "url": "https://www.joh.cam.ac.uk",
+      "status": "unchecked",
+      "note": "college events (formal halls, talks) on its own site"
+    },
+    {
+      "id": "churchill",
+      "name": "Churchill College",
+      "kind": "student",
+      "url": "https://www.chu.cam.ac.uk",
+      "status": "unchecked",
+      "note": "college events (formal halls, talks) on its own site"
+    },
+    {
+      "id": "darwin",
+      "name": "Darwin College",
+      "kind": "student",
+      "url": "https://www.darwin.cam.ac.uk",
+      "status": "unchecked",
+      "note": "college events (formal halls, talks) on its own site"
+    },
+    {
+      "id": "clare-hall",
+      "name": "Clare Hall",
+      "kind": "student",
+      "url": "https://www.clarehall.cam.ac.uk",
+      "status": "unchecked",
+      "note": "college events (formal halls, talks) on its own site"
+    },
+    {
+      "id": "library",
+      "name": "Cambridge University Libraries",
+      "kind": "library",
+      "url": "https://www.lib.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "fitzwilliam",
+      "name": "Fitzwilliam Museum",
+      "kind": "museum",
+      "url": "https://fitzmuseum.cam.ac.uk",
+      "status": "no-feed",
+      "note": "has feeds for exhibitions and news, none for events"
+    },
+    {
+      "id": "kettles-yard",
+      "name": "Kettle's Yard",
+      "kind": "museum",
+      "url": "https://www.kettlesyard.co.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "museums",
+      "name": "University of Cambridge Museums",
+      "kind": "museum",
+      "url": "https://www.museums.cam.ac.uk",
+      "status": "unchecked"
+    },
+    {
+      "id": "careers",
+      "name": "Careers Service",
+      "kind": "other",
+      "url": "https://www.careers.cam.ac.uk",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "festival",
+      "name": "Cambridge Festival",
+      "kind": "other",
+      "url": "https://www.festival.cam.ac.uk",
+      "status": "unchecked"
+    }
+  ]
+}

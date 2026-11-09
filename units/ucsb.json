@@ -1,0 +1,350 @@
+{
+  "id": "ucsb",
+  "name": "University of California, Santa Barbara",
+  "wide": [
+    "https://shoreline.ucsb.edu/rss_events",
+    "https://www.campuscalendar.ucsb.edu"
+  ],
+  "units": [
+    {
+      "id": "ls",
+      "name": "College of Letters and Science",
+      "kind": "school",
+      "url": "https://www.ls.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "engineering",
+      "name": "College of Engineering",
+      "kind": "school",
+      "url": "https://engineering.ucsb.edu",
+      "status": "no-feed",
+      "note": "no event feed (sources notes)"
+    },
+    {
+      "id": "ccs",
+      "name": "College of Creative Studies",
+      "kind": "school",
+      "url": "https://ccs.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "bren",
+      "name": "Bren School of Environmental Science & Management",
+      "kind": "school",
+      "url": "https://bren.ucsb.edu",
+      "status": "no-feed",
+      "note": "bren.ucsb.edu/events answers 500 (sources notes)"
+    },
+    {
+      "id": "education",
+      "name": "Gevirtz Graduate School of Education",
+      "kind": "school",
+      "url": "https://education.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "graddiv",
+      "name": "Graduate Division",
+      "kind": "school",
+      "url": "https://www.graddiv.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.cs.ucsb.edu",
+      "status": "no-feed",
+      "note": "no event feed (sources notes)"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.ece.ucsb.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://me.ucsb.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "che",
+      "name": "Chemical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://chemengr.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "materials",
+      "name": "Materials",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.materials.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.math.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "pstat",
+      "name": "Statistics and Applied Probability",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.pstat.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.physics.ucsb.edu",
+      "status": "no-feed",
+      "note": "Google Calendar with only 3 upcoming (sources notes)"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry and Biochemistry",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.chem.ucsb.edu",
+      "status": "in-wide",
+      "note": "embeds the campuscalendar.ucsb.edu Localist widget"
+    },
+    {
+      "id": "mcdb",
+      "name": "Molecular, Cellular, and Developmental Biology",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.mcdb.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "eemb",
+      "name": "Ecology, Evolution, and Marine Biology",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.eemb.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.econ.ucsb.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "psych",
+      "name": "Psychological and Brain Sciences",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://psych.ucsb.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "polsci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.polsci.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.history.ucsb.edu",
+      "status": "no-feed",
+      "note": "events page is HTML; /feed/ is posts"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.english.ucsb.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.philosophy.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://www.soc.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "geography",
+      "name": "Geography",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://geog.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ihc",
+      "name": "Interdisciplinary Humanities Center",
+      "kind": "center",
+      "url": "https://www.ihc.ucsb.edu",
+      "status": "in-wide",
+      "note": "its tribe feed duplicates the campus Localist (sources notes)"
+    },
+    {
+      "id": "kitp",
+      "name": "Kavli Institute for Theoretical Physics",
+      "kind": "institute",
+      "url": "https://www.kitp.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cnsi",
+      "name": "California NanoSystems Institute",
+      "kind": "institute",
+      "url": "https://www.cnsi.ucsb.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "mrl",
+      "name": "Materials Research Laboratory",
+      "kind": "center",
+      "url": "https://www.mrl.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "isber",
+      "name": "Institute for Social, Behavioral and Economic Research",
+      "kind": "institute",
+      "url": "https://www.isber.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "orfalea",
+      "name": "Orfalea Center for Global and International Studies",
+      "kind": "center",
+      "url": "https://orfaleacenter.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "mlai",
+      "name": "Center for Responsible Machine Learning",
+      "kind": "center",
+      "parent": "engineering",
+      "url": "https://ml.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ieeinst",
+      "name": "Institute for Energy Efficiency",
+      "kind": "institute",
+      "parent": "engineering",
+      "url": "https://iee.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "tmp",
+      "name": "Technology Management Program (entrepreneurship)",
+      "kind": "center",
+      "parent": "engineering",
+      "url": "https://tmp.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "nceas",
+      "name": "National Center for Ecological Analysis and Synthesis",
+      "kind": "center",
+      "url": "https://www.nceas.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "carsey-wolf",
+      "name": "Carsey-Wolf Center",
+      "kind": "center",
+      "url": "https://www.carseywolf.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "as",
+      "name": "Associated Students",
+      "kind": "student",
+      "url": "https://www.as.ucsb.edu",
+      "status": "in-wide",
+      "note": "AS and student orgs post to Shoreline, which we read"
+    },
+    {
+      "id": "gsa",
+      "name": "Graduate Student Association",
+      "kind": "student",
+      "url": "https://gsa.ucsb.edu",
+      "status": "in-wide",
+      "note": "student orgs post to Shoreline, which we read"
+    },
+    {
+      "id": "library",
+      "name": "UCSB Library",
+      "kind": "library",
+      "url": "https://www.library.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "agsm",
+      "name": "Art, Design & Architecture Museum",
+      "kind": "museum",
+      "url": "https://www.museum.ucsb.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "arts-lectures",
+      "name": "UCSB Arts & Lectures",
+      "kind": "other",
+      "url": "https://artsandlectures.ucsb.edu",
+      "status": "blocked",
+      "note": "sends requests to a Queue-it waiting room"
+    },
+    {
+      "id": "career",
+      "name": "Career Services",
+      "kind": "other",
+      "url": "https://career.ucsb.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "athletics",
+      "name": "UCSB Gauchos Athletics",
+      "kind": "other",
+      "url": "https://ucsbgauchos.com",
+      "status": "unchecked"
+    }
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "id": "rice",
+  "name": "Rice University",
+  "wide": [
+    "https://events.rice.edu/live/json/events/max/500",
+    "https://rice.campuslabs.com/engage"
+  ],
+  "units": [
+    {
+      "id": "architecture",
+      "name": "Rice Architecture",
+      "kind": "school",
+      "url": "https://arch.rice.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "jones",
+      "name": "Jones Graduate School of Business",
+      "kind": "school",
+      "url": "https://business.rice.edu",
+      "feeds": [
+        "https://static-prod-us-east-1.campusgroups.com/ical/jones/ical_jones.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "engineering",
+      "name": "George R. Brown School of Engineering and Computing",
+      "kind": "school",
+      "url": "https://engineering.rice.edu",
+      "status": "in-wide",
+      "note": "events page lists events.rice.edu events"
+    },
+    {
+      "id": "humanities",
+      "name": "School of Humanities",
+      "kind": "school",
+      "url": "https://humanities.rice.edu",
+      "status": "in-wide",
+      "note": "redirects to events.rice.edu"
+    },
+    {
+      "id": "music",
+      "name": "Shepherd School of Music",
+      "kind": "school",
+      "url": "https://music.rice.edu",
+      "status": "no-feed",
+      "note": "concert listings are HTML only"
+    },
+    {
+      "id": "natsci",
+      "name": "Wiess School of Natural Sciences",
+      "kind": "school",
+      "url": "https://naturalsciences.rice.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "socsci",
+      "name": "School of Social Sciences",
+      "kind": "school",
+      "url": "https://socialsciences.rice.edu",
+      "status": "in-wide",
+      "note": "redirects to events.rice.edu"
+    },
+    {
+      "id": "gps",
+      "name": "Graduate and Postdoctoral Studies",
+      "kind": "school",
+      "url": "https://graduate.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "glasscock",
+      "name": "Susanne M. Glasscock School of Continuing Studies",
+      "kind": "school",
+      "url": "https://glasscock.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cs.rice.edu",
+      "status": "in-wide",
+      "note": "site links its events to events.rice.edu"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://eceweb.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "mech",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://mech.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "bioe",
+      "name": "Bioengineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://bioengineering.rice.edu",
+      "status": "in-wide",
+      "note": "redirects to events.rice.edu"
+    },
+    {
+      "id": "cmor",
+      "name": "Computational Applied Mathematics and Operations Research",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cmor.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://statistics.rice.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "chbe",
+      "name": "Chemical and Biomolecular Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://chbe.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "msne",
+      "name": "Materials Science and NanoEngineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://msne.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "natsci",
+      "url": "https://math.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "physics",
+      "name": "Physics and Astronomy",
+      "kind": "department",
+      "parent": "natsci",
+      "url": "https://physics.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "natsci",
+      "url": "https://chemistry.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "biosci",
+      "name": "BioSciences",
+      "kind": "department",
+      "parent": "natsci",
+      "url": "https://biosciences.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "socsci",
+      "url": "https://economics.rice.edu",
+      "status": "in-wide",
+      "note": "events page lists events.rice.edu events"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychological Sciences",
+      "kind": "department",
+      "parent": "socsci",
+      "url": "https://psychology.rice.edu",
+      "status": "in-wide",
+      "note": "events page is a filtered events.rice.edu view"
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "socsci",
+      "url": "https://politicalscience.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "socsci",
+      "url": "https://sociology.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "humanities",
+      "url": "https://history.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "humanities",
+      "url": "https://english.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "humanities",
+      "url": "https://philosophy.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "baker",
+      "name": "Baker Institute for Public Policy",
+      "kind": "institute",
+      "url": "https://www.bakerinstitute.org",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "kennedy",
+      "name": "Ken Kennedy Institute (AI and computing)",
+      "kind": "institute",
+      "url": "https://kenkennedy.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "kinder",
+      "name": "Kinder Institute for Urban Research",
+      "kind": "institute",
+      "url": "https://kinder.rice.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "hrc",
+      "name": "Humanities Research Center",
+      "kind": "center",
+      "parent": "humanities",
+      "url": "https://hrc.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "rice-energy",
+      "name": "Rice Sustainability Institute / Energy Transition",
+      "kind": "institute",
+      "url": "https://sustainability.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "rbl",
+      "name": "Rice Business Lab / Liu Idea Lab for Innovation and Entrepreneurship (Lilie)",
+      "kind": "center",
+      "parent": "jones",
+      "url": "https://entrepreneurship.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "bioscience-research",
+      "name": "Rice Biotech Launch Pad",
+      "kind": "center",
+      "url": "https://biotechlaunchpad.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "chao",
+      "name": "Chao Center for Asian Studies",
+      "kind": "center",
+      "parent": "humanities",
+      "url": "https://chaocenter.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sa",
+      "name": "Student Association",
+      "kind": "student",
+      "url": "https://sa.rice.edu",
+      "status": "in-wide",
+      "note": "student events go to OwlNest (Engage), which we read"
+    },
+    {
+      "id": "gsa",
+      "name": "Graduate Student Association",
+      "kind": "student",
+      "url": "https://gsa.rice.edu",
+      "status": "in-wide",
+      "note": "student events go to OwlNest (Engage), which we read"
+    },
+    {
+      "id": "baker-college",
+      "name": "Baker College",
+      "kind": "student",
+      "url": "https://baker.rice.edu",
+      "status": "in-wide",
+      "note": "college events are on OwlNest (Engage), which we read"
+    },
+    {
+      "id": "hanszen",
+      "name": "Hanszen College",
+      "kind": "student",
+      "url": "https://hanszen.rice.edu",
+      "status": "in-wide",
+      "note": "college events are on OwlNest (Engage), which we read"
+    },
+    {
+      "id": "will-rice",
+      "name": "Will Rice College",
+      "kind": "student",
+      "url": "https://willrice.rice.edu",
+      "status": "in-wide",
+      "note": "college events are on OwlNest (Engage), which we read"
+    },
+    {
+      "id": "lovett",
+      "name": "Lovett College",
+      "kind": "student",
+      "url": "https://lovett.rice.edu",
+      "status": "in-wide",
+      "note": "college events are on OwlNest (Engage), which we read"
+    },
+    {
+      "id": "brown",
+      "name": "Brown College",
+      "kind": "student",
+      "url": "https://brown.rice.edu",
+      "status": "in-wide",
+      "note": "college events are on OwlNest (Engage), which we read"
+    },
+    {
+      "id": "jones-college",
+      "name": "Jones College",
+      "kind": "student",
+      "url": "https://jones.rice.edu",
+      "status": "in-wide",
+      "note": "college events are on OwlNest (Engage), which we read"
+    },
+    {
+      "id": "martel",
+      "name": "Martel College",
+      "kind": "student",
+      "url": "https://martel.rice.edu",
+      "status": "in-wide",
+      "note": "college events are on OwlNest (Engage), which we read"
+    },
+    {
+      "id": "mcmurtry",
+      "name": "McMurtry College",
+      "kind": "student",
+      "url": "https://mcmurtry.rice.edu",
+      "status": "in-wide",
+      "note": "college events are on OwlNest (Engage), which we read"
+    },
+    {
+      "id": "duncan",
+      "name": "Duncan College",
+      "kind": "student",
+      "url": "https://duncan.rice.edu",
+      "status": "in-wide",
+      "note": "college events are on OwlNest (Engage), which we read"
+    },
+    {
+      "id": "sid-rich",
+      "name": "Sid Richardson College",
+      "kind": "student",
+      "url": "https://sidrich.rice.edu",
+      "status": "in-wide",
+      "note": "college events are on OwlNest (Engage), which we read"
+    },
+    {
+      "id": "wiess",
+      "name": "Wiess College",
+      "kind": "student",
+      "url": "https://wiess.rice.edu",
+      "status": "in-wide",
+      "note": "college events are on OwlNest (Engage), which we read"
+    },
+    {
+      "id": "library",
+      "name": "Fondren Library",
+      "kind": "library",
+      "url": "https://library.rice.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only (workshops)"
+    },
+    {
+      "id": "moody",
+      "name": "Moody Center for the Arts",
+      "kind": "museum",
+      "url": "https://moody.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ccd",
+      "name": "Center for Career Development",
+      "kind": "other",
+      "url": "https://ccd.rice.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "athletics",
+      "name": "Rice Owls Athletics",
+      "kind": "other",
+      "url": "https://riceowls.com",
+      "status": "unchecked"
+    }
+  ]
+}

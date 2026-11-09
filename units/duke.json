@@ -1,0 +1,389 @@
+{
+  "id": "duke",
+  "name": "Duke University",
+  "wide": [
+    "https://calendar.duke.edu/events/index.ics?future_days=30",
+    "https://static-prod-us-east-1.campusgroups.com/ical/duke/ical_duke.ics"
+  ],
+  "units": [
+    {
+      "id": "trinity",
+      "name": "Trinity College of Arts & Sciences",
+      "kind": "school",
+      "url": "https://trinity.duke.edu",
+      "status": "in-wide",
+      "note": "site links its events to calendar.duke.edu"
+    },
+    {
+      "id": "pratt",
+      "name": "Pratt School of Engineering",
+      "kind": "school",
+      "url": "https://pratt.duke.edu",
+      "status": "in-wide",
+      "note": "Tribe calendar duplicates calendar.duke.edu entirely"
+    },
+    {
+      "id": "fuqua",
+      "name": "Fuqua School of Business",
+      "kind": "school",
+      "url": "https://www.fuqua.duke.edu",
+      "status": "no-feed",
+      "note": "JSON:API node--events holds pages, not events; events page is HTML"
+    },
+    {
+      "id": "law",
+      "name": "Duke University School of Law",
+      "kind": "school",
+      "url": "https://law.duke.edu",
+      "status": "blocked",
+      "note": "law.duke.edu/events redirects to Shibboleth login"
+    },
+    {
+      "id": "divinity",
+      "name": "Duke Divinity School",
+      "kind": "school",
+      "url": "https://divinity.duke.edu",
+      "status": "in-wide",
+      "note": "Drupal events view; Divinity events seen on calendar.duke.edu"
+    },
+    {
+      "id": "medicine",
+      "name": "Duke University School of Medicine",
+      "kind": "school",
+      "url": "https://medschool.duke.edu",
+      "status": "in-wide",
+      "note": "events page draws from calendar.duke.edu"
+    },
+    {
+      "id": "nursing",
+      "name": "Duke University School of Nursing",
+      "kind": "school",
+      "url": "https://nursing.duke.edu",
+      "status": "no-feed",
+      "note": "events listed as HTML only"
+    },
+    {
+      "id": "nicholas",
+      "name": "Nicholas School of the Environment",
+      "kind": "school",
+      "url": "https://nicholas.duke.edu",
+      "status": "in-wide",
+      "note": "events page links calendar.duke.edu entries"
+    },
+    {
+      "id": "sanford",
+      "name": "Sanford School of Public Policy",
+      "kind": "school",
+      "url": "https://sanford.duke.edu",
+      "status": "in-wide",
+      "note": "Gatsby site fed by calendar.duke.edu"
+    },
+    {
+      "id": "gradschool",
+      "name": "The Graduate School",
+      "kind": "school",
+      "url": "https://gradschool.duke.edu",
+      "status": "in-wide",
+      "note": "same Gatsby platform as Sanford, fed by calendar.duke.edu"
+    },
+    {
+      "id": "dku",
+      "name": "Duke Kunshan University",
+      "kind": "school",
+      "url": "https://dukekunshan.edu.cn",
+      "status": "unchecked",
+      "note": "campus in China; out of scope for Durham food"
+    },
+    {
+      "id": "cs",
+      "name": "Department of Computer Science",
+      "kind": "department",
+      "parent": "trinity",
+      "url": "https://cs.duke.edu",
+      "status": "feed",
+      "feeds": [
+        "http://outlook.office365.com/owa/calendar/dept-compsci@win.duke.edu/Calendar/calendar.ics"
+      ]
+    },
+    {
+      "id": "ece",
+      "name": "Electrical & Computer Engineering",
+      "kind": "department",
+      "parent": "pratt",
+      "url": "https://ece.duke.edu",
+      "status": "in-wide",
+      "note": "Pratt-network Tribe site, entries link calendar.duke.edu"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "pratt",
+      "url": "https://bme.duke.edu",
+      "status": "in-wide",
+      "note": "Pratt-network Tribe site, entries link calendar.duke.edu"
+    },
+    {
+      "id": "mems",
+      "name": "Mechanical Engineering & Materials Science",
+      "kind": "department",
+      "parent": "pratt",
+      "url": "https://mems.duke.edu",
+      "status": "in-wide",
+      "note": "Pratt-network Tribe site, entries link calendar.duke.edu"
+    },
+    {
+      "id": "cee",
+      "name": "Civil & Environmental Engineering",
+      "kind": "department",
+      "parent": "pratt",
+      "url": "https://cee.duke.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "trinity",
+      "url": "https://math.duke.edu",
+      "status": "no-feed",
+      "note": "HTML list; its seminars not found on calendar.duke.edu"
+    },
+    {
+      "id": "stat",
+      "name": "Department of Statistical Science",
+      "kind": "department",
+      "parent": "trinity",
+      "url": "https://stat.duke.edu",
+      "status": "in-wide",
+      "note": "some of its events seen on calendar.duke.edu"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "parent": "trinity",
+      "url": "https://physics.duke.edu",
+      "status": "in-wide",
+      "note": "colloquia seen on calendar.duke.edu"
+    },
+    {
+      "id": "chem",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "trinity",
+      "url": "https://chem.duke.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "biology",
+      "name": "Department of Biology",
+      "kind": "department",
+      "parent": "trinity",
+      "url": "https://biology.duke.edu",
+      "status": "in-wide",
+      "note": "faculty seminars seen on calendar.duke.edu"
+    },
+    {
+      "id": "econ",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "trinity",
+      "url": "https://econ.duke.edu",
+      "status": "no-feed",
+      "note": "HTML list; its seminar series not found on calendar.duke.edu"
+    },
+    {
+      "id": "psych",
+      "name": "Psychology & Neuroscience",
+      "kind": "department",
+      "parent": "trinity",
+      "url": "https://psychandneuro.duke.edu",
+      "status": "no-feed",
+      "note": "HTML list; most talks not on calendar.duke.edu"
+    },
+    {
+      "id": "polisci",
+      "name": "Department of Political Science",
+      "kind": "department",
+      "parent": "trinity",
+      "url": "https://polisci.duke.edu",
+      "status": "no-feed",
+      "note": "HTML events list only"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "trinity",
+      "url": "https://history.duke.edu",
+      "status": "no-feed",
+      "note": "HTML list; its events not found on calendar.duke.edu"
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "parent": "trinity",
+      "url": "https://english.duke.edu",
+      "status": "in-wide",
+      "note": "shared events seen on calendar.duke.edu"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "trinity",
+      "url": "https://philosophy.duke.edu",
+      "status": "in-wide",
+      "note": "its events seen on calendar.duke.edu"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "trinity",
+      "url": "https://sociology.duke.edu",
+      "status": "in-wide",
+      "note": "some talks seen on calendar.duke.edu"
+    },
+    {
+      "id": "kenan",
+      "name": "Kenan Institute for Ethics",
+      "kind": "institute",
+      "url": "https://kenan.ethics.duke.edu",
+      "feeds": [
+        "https://kenan.ethics.duke.edu/wp-json/tribe/events/v1/events"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "fhi",
+      "name": "John Hope Franklin Humanities Institute",
+      "kind": "institute",
+      "url": "https://fhi.duke.edu",
+      "status": "in-wide",
+      "note": "Gatsby site fed by calendar.duke.edu"
+    },
+    {
+      "id": "dibs",
+      "name": "Duke Institute for Brain Sciences",
+      "kind": "institute",
+      "url": "https://dibs.duke.edu",
+      "status": "in-wide",
+      "note": "Gatsby site fed by calendar.duke.edu"
+    },
+    {
+      "id": "bass",
+      "name": "Bass Connections",
+      "kind": "center",
+      "url": "https://bassconnections.duke.edu",
+      "status": "in-wide",
+      "note": "Gatsby site fed by calendar.duke.edu"
+    },
+    {
+      "id": "ie",
+      "name": "Duke Innovation & Entrepreneurship",
+      "kind": "center",
+      "url": "https://entrepreneurship.duke.edu",
+      "status": "in-wide",
+      "note": "same Gatsby platform, fed by calendar.duke.edu"
+    },
+    {
+      "id": "nicholas-institute",
+      "name": "Nicholas Institute for Energy, Environment & Sustainability",
+      "kind": "institute",
+      "url": "https://nicholasinstitute.duke.edu",
+      "status": "no-feed",
+      "note": "Drupal events list, HTML only"
+    },
+    {
+      "id": "dghi",
+      "name": "Duke Global Health Institute",
+      "kind": "institute",
+      "url": "https://globalhealth.duke.edu",
+      "status": "no-feed",
+      "note": "small HTML events page"
+    },
+    {
+      "id": "mids",
+      "name": "Master in Interdisciplinary Data Science",
+      "kind": "center",
+      "url": "https://datascience.duke.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "ssri",
+      "name": "Social Science Research Institute",
+      "kind": "institute",
+      "url": "https://ssri.duke.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "dcri",
+      "name": "Duke Clinical Research Institute",
+      "kind": "institute",
+      "url": "https://dcri.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "dsg",
+      "name": "Duke Student Government",
+      "kind": "student",
+      "url": "https://dukestudentgovernment.org",
+      "status": "in-wide",
+      "note": "student bodies post on DukeGroups (CampusGroups)"
+    },
+    {
+      "id": "gpsc",
+      "name": "Graduate & Professional Student Government",
+      "kind": "student",
+      "url": "https://gpsg.duke.edu",
+      "status": "in-wide",
+      "note": "posts on DukeGroups (CampusGroups)"
+    },
+    {
+      "id": "studentaffairs",
+      "name": "Student Affairs",
+      "kind": "other",
+      "url": "https://students.duke.edu",
+      "status": "in-wide",
+      "note": "events.duke.edu redirects here; events go to calendar.duke.edu"
+    },
+    {
+      "id": "nasher",
+      "name": "Nasher Museum of Art",
+      "kind": "museum",
+      "url": "https://nasher.duke.edu",
+      "feeds": [
+        "https://nasher.duke.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "libraries",
+      "name": "Duke University Libraries",
+      "kind": "library",
+      "url": "https://library.duke.edu",
+      "status": "in-wide",
+      "note": "Libraries and Rubenstein events seen on calendar.duke.edu"
+    },
+    {
+      "id": "arts",
+      "name": "Duke Arts",
+      "kind": "other",
+      "url": "https://arts.duke.edu",
+      "status": "in-wide",
+      "note": "Duke Arts events are a large share of calendar.duke.edu"
+    },
+    {
+      "id": "career",
+      "name": "Career Center",
+      "kind": "other",
+      "url": "https://careers.duke.edu",
+      "status": "blocked",
+      "note": "events behind a login form"
+    }
+  ]
+}

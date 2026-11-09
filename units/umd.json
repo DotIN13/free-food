@@ -1,0 +1,380 @@
+{
+  "id": "umd",
+  "name": "University of Maryland, College Park",
+  "wide": [
+    "https://terplink.umd.edu/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100",
+    "https://calendar.umd.edu/category/export/current-students",
+    "https://calendar.umd.edu/category/export/graduate-students"
+  ],
+  "units": [
+    {
+      "id": "agnr",
+      "name": "College of Agriculture and Natural Resources",
+      "kind": "school",
+      "url": "https://agnr.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
+    },
+    {
+      "id": "arch",
+      "name": "School of Architecture, Planning and Preservation",
+      "kind": "school",
+      "url": "https://arch.umd.edu",
+      "status": "unchecked",
+      "note": "/events answers 404"
+    },
+    {
+      "id": "arhu",
+      "name": "College of Arts and Humanities",
+      "kind": "school",
+      "url": "https://arhu.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
+    },
+    {
+      "id": "bsos",
+      "name": "College of Behavioral and Social Sciences",
+      "kind": "school",
+      "url": "https://bsos.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal, rss.xml is news (sources note)"
+    },
+    {
+      "id": "cmns",
+      "name": "College of Computer, Mathematical, and Natural Sciences",
+      "kind": "school",
+      "url": "https://cmns.umd.edu",
+      "status": "feed",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/cmns-calendar%40umd.edu/public/basic.ics"
+      ]
+    },
+    {
+      "id": "education",
+      "name": "College of Education",
+      "kind": "school",
+      "url": "https://education.umd.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "engineering",
+      "name": "A. James Clark School of Engineering",
+      "kind": "school",
+      "url": "https://eng.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
+    },
+    {
+      "id": "ischool",
+      "name": "College of Information (iSchool)",
+      "kind": "school",
+      "url": "https://ischool.umd.edu",
+      "status": "no-feed",
+      "note": "wp/v2/events has YYYYMMDD ACF dates the json reader cannot parse (sources note)"
+    },
+    {
+      "id": "merrill",
+      "name": "Philip Merrill College of Journalism",
+      "kind": "school",
+      "url": "https://merrill.umd.edu",
+      "status": "no-feed",
+      "note": "events page HTML only"
+    },
+    {
+      "id": "sph",
+      "name": "School of Public Health",
+      "kind": "school",
+      "url": "https://sph.umd.edu",
+      "status": "in-wide",
+      "note": "events page pulls from calendar.umd.edu (only partly read, through two categories)"
+    },
+    {
+      "id": "spp",
+      "name": "School of Public Policy",
+      "kind": "school",
+      "url": "https://spp.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal, no event feed (sources note)"
+    },
+    {
+      "id": "smith",
+      "name": "Robert H. Smith School of Business",
+      "kind": "school",
+      "url": "https://www.rhsmith.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal, no event feed (sources note)"
+    },
+    {
+      "id": "honors",
+      "name": "Honors College",
+      "kind": "school",
+      "url": "https://honors.umd.edu",
+      "status": "feed",
+      "feeds": [
+        "https://honors.umd.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "ugst",
+      "name": "Undergraduate Studies",
+      "kind": "school",
+      "url": "https://ugst.umd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "gradschool",
+      "name": "The Graduate School",
+      "kind": "school",
+      "url": "https://gradschool.umd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cs",
+      "name": "Department of Computer Science",
+      "kind": "department",
+      "parent": "cmns",
+      "url": "https://www.cs.umd.edu",
+      "feeds": [
+        "https://www.cs.umd.edu/events/ical/umdcs_calendar.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://ece.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://me.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
+    },
+    {
+      "id": "bioe",
+      "name": "Fischell Department of Bioengineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://bioe.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "cmns",
+      "url": "https://www-math.umd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "stat",
+      "name": "Statistics Program (Mathematics)",
+      "kind": "department",
+      "parent": "cmns",
+      "url": "https://www-math.umd.edu/statistics.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "cmns",
+      "url": "https://physics.umd.edu",
+      "status": "no-feed",
+      "note": "events page HTML only"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry and Biochemistry",
+      "kind": "department",
+      "parent": "cmns",
+      "url": "https://chem.umd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "biology",
+      "name": "Biology",
+      "kind": "department",
+      "parent": "cmns",
+      "url": "https://biology.umd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "bsos",
+      "url": "https://econ.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "bsos",
+      "url": "https://psyc.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
+    },
+    {
+      "id": "gvpt",
+      "name": "Government and Politics",
+      "kind": "department",
+      "parent": "bsos",
+      "url": "https://gvpt.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "bsos",
+      "url": "https://socy.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "arhu",
+      "url": "https://history.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "arhu",
+      "url": "https://english.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "arhu",
+      "url": "https://philosophy.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal events page, HTML only"
+    },
+    {
+      "id": "umiacs",
+      "name": "University of Maryland Institute for Advanced Computer Studies (UMIACS)",
+      "kind": "institute",
+      "url": "https://www.umiacs.umd.edu",
+      "status": "no-feed",
+      "note": "Drupal, no event feed (sources note)"
+    },
+    {
+      "id": "aim",
+      "name": "Artificial Intelligence Interdisciplinary Institute at Maryland (AIM)",
+      "kind": "institute",
+      "url": "https://aim.umd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "mith",
+      "name": "Maryland Institute for Technology in the Humanities (MITH)",
+      "kind": "center",
+      "parent": "arhu",
+      "url": "https://mith.umd.edu",
+      "status": "no-feed",
+      "note": "events page HTML only"
+    },
+    {
+      "id": "ireap",
+      "name": "Institute for Research in Electronics and Applied Physics",
+      "kind": "institute",
+      "url": "https://ireap.umd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "essic",
+      "name": "Earth System Science Interdisciplinary Center",
+      "kind": "center",
+      "url": "https://essic.umd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "start",
+      "name": "START (National Consortium for the Study of Terrorism)",
+      "kind": "center",
+      "url": "https://www.start.umd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "mtech",
+      "name": "Maryland Technology Enterprise Institute (Mtech)",
+      "kind": "center",
+      "url": "https://innovate.umd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "jqi",
+      "name": "Joint Quantum Institute",
+      "kind": "institute",
+      "url": "https://jqi.umd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "brain",
+      "name": "Brain and Behavior Institute",
+      "kind": "institute",
+      "url": "https://bbi.umd.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sga",
+      "name": "Student Government Association",
+      "kind": "student",
+      "url": "https://sga.umd.edu",
+      "status": "unchecked",
+      "note": "site did not answer"
+    },
+    {
+      "id": "gsg",
+      "name": "Graduate Student Government",
+      "kind": "student",
+      "url": "https://www.gsgumd.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "libraries",
+      "name": "University Libraries",
+      "kind": "library",
+      "url": "https://www.lib.umd.edu",
+      "status": "unchecked",
+      "note": "events page answered 400"
+    },
+    {
+      "id": "clarice",
+      "name": "The Clarice Smith Performing Arts Center",
+      "kind": "other",
+      "url": "https://theclarice.umd.edu",
+      "status": "no-feed",
+      "note": "events page HTML only"
+    },
+    {
+      "id": "careers",
+      "name": "University Career Center",
+      "kind": "other",
+      "url": "https://careers.umd.edu",
+      "status": "no-feed",
+      "note": "events page HTML (employer events on Handshake)"
+    }
+  ]
+}

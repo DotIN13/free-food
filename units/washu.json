@@ -1,0 +1,457 @@
+{
+  "id": "washu",
+  "name": "Washington University in St. Louis",
+  "wide": [
+    "https://happenings.washu.edu"
+  ],
+  "units": [
+    {
+      "id": "artsci",
+      "name": "Arts & Sciences",
+      "kind": "school",
+      "url": "https://artsci.washu.edu",
+      "status": "in-wide",
+      "note": "school site shows Happenings (Localist) events (sources note)"
+    },
+    {
+      "id": "olin",
+      "name": "Olin Business School",
+      "kind": "school",
+      "url": "https://olin.wustl.edu",
+      "status": "in-wide",
+      "note": "shows Happenings events, no feed of its own (sources note)"
+    },
+    {
+      "id": "mckelvey",
+      "name": "McKelvey School of Engineering",
+      "kind": "school",
+      "url": "https://engineering.washu.edu",
+      "status": "in-wide",
+      "note": "department sites pull from happenings.washu.edu"
+    },
+    {
+      "id": "law",
+      "name": "School of Law",
+      "kind": "school",
+      "url": "https://law.washu.edu",
+      "feeds": [
+        "https://law.washu.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "medicine",
+      "name": "School of Medicine",
+      "kind": "school",
+      "url": "https://medicine.washu.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "brown",
+      "name": "Brown School",
+      "kind": "school",
+      "url": "https://brownschool.wustl.edu",
+      "status": "in-wide",
+      "note": "site embeds the Localist calendar"
+    },
+    {
+      "id": "samfox",
+      "name": "Sam Fox School of Design & Visual Arts",
+      "kind": "school",
+      "url": "https://samfoxschool.washu.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "publichealth",
+      "name": "School of Public Health",
+      "kind": "school",
+      "url": "https://publichealth.washu.edu",
+      "status": "blocked",
+      "note": "403 challenge"
+    },
+    {
+      "id": "scps",
+      "name": "School of Continuing & Professional Studies",
+      "kind": "school",
+      "url": "https://scps.washu.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "grad",
+      "name": "Office of Graduate Studies / Graduate School",
+      "kind": "school",
+      "url": "https://graduateschool.wustl.edu",
+      "status": "unchecked",
+      "note": "site did not answer"
+    },
+    {
+      "id": "cse",
+      "name": "Computer Science & Engineering",
+      "kind": "department",
+      "parent": "mckelvey",
+      "url": "https://cse.washu.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ese",
+      "name": "Electrical & Systems Engineering",
+      "kind": "department",
+      "parent": "mckelvey",
+      "url": "https://ese.washu.edu",
+      "status": "in-wide",
+      "note": "site links happenings.washu.edu"
+    },
+    {
+      "id": "mems",
+      "name": "Mechanical Engineering & Materials Science",
+      "kind": "department",
+      "parent": "mckelvey",
+      "url": "https://mems.washu.edu",
+      "status": "in-wide",
+      "note": "site links happenings.washu.edu"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "mckelvey",
+      "url": "https://bme.washu.edu",
+      "status": "in-wide",
+      "note": "site links happenings.washu.edu"
+    },
+    {
+      "id": "eece",
+      "name": "Energy, Environmental & Chemical Engineering",
+      "kind": "department",
+      "parent": "mckelvey",
+      "url": "https://eece.washu.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://math.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://math.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics and Data Science",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://statistics.washu.edu",
+      "status": "unchecked",
+      "note": "site did not answer"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://physics.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://physics.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://chemistry.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://chemistry.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "biology",
+      "name": "Biology",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://biology.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://biology.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://economics.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://economics.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "psych",
+      "name": "Psychological & Brain Sciences",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://psych.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://psych.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://polisci.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://polisci.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://history.washu.edu",
+      "status": "unchecked",
+      "found": "https://history.washu.edu/calendar.ics",
+      "note": "Drupal calendar.ics on its events page (a year of past and coming events), separate from Happenings"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://english.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://english.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://philosophy.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://philosophy.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://sociology.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://sociology.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "anthropology",
+      "name": "Anthropology",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://anthropology.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://anthropology.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "eeps",
+      "name": "Earth, Environmental & Planetary Sciences",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://eeps.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://eeps.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://music.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://music.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "jimes",
+      "name": "Jewish, Islamic & Middle Eastern Studies",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://jimes.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://jimes.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "amcs",
+      "name": "African & African-American Studies",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://amcs.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://amcs.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "wgss",
+      "name": "Women, Gender & Sexuality Studies",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://wgss.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://wgss.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "humanities",
+      "name": "Center for the Humanities",
+      "kind": "center",
+      "parent": "artsci",
+      "url": "https://humanities.washu.edu",
+      "status": "feed",
+      "feeds": [
+        "https://humanities.washu.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "ias",
+      "name": "Institute for the Humanities / International & Area Studies",
+      "kind": "institute",
+      "parent": "artsci",
+      "url": "https://ias.wustl.edu",
+      "status": "unchecked",
+      "found": "https://ias.washu.edu/calendar.ics",
+      "note": "Drupal calendar.ics on its events page (a year of past and coming events), separate from Happenings"
+    },
+    {
+      "id": "ctl",
+      "name": "Center for Teaching and Learning",
+      "kind": "center",
+      "url": "https://ctl.wustl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "data",
+      "name": "Data Science initiative (Transdisciplinary Institute in Applied Data Sciences)",
+      "kind": "institute",
+      "url": "https://data.wustl.edu",
+      "status": "no-feed",
+      "note": "WordPress site, events HTML only"
+    },
+    {
+      "id": "imse",
+      "name": "Institute of Materials Science & Engineering",
+      "kind": "institute",
+      "url": "https://imse.washu.edu",
+      "status": "no-feed",
+      "note": "site HTML, no feed"
+    },
+    {
+      "id": "energy",
+      "name": "Center for Energy, Environment & Sustainability (InCEES)",
+      "kind": "center",
+      "url": "https://energy.wustl.edu",
+      "status": "unchecked",
+      "note": "site did not answer"
+    },
+    {
+      "id": "publicpolicy",
+      "name": "Weidenbaum Center on the Economy, Government, and Public Policy",
+      "kind": "center",
+      "url": "https://wc.wustl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "idea",
+      "name": "Skandalaris Center for Interdisciplinary Innovation and Entrepreneurship",
+      "kind": "center",
+      "url": "https://skandalaris.wustl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "siteman",
+      "name": "Siteman Cancer Center",
+      "kind": "center",
+      "parent": "medicine",
+      "url": "https://siteman.washu.edu",
+      "status": "no-feed",
+      "note": "WordPress site, events HTML only"
+    },
+    {
+      "id": "sts",
+      "name": "Science, Technology & Society",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://sts.washu.edu",
+      "status": "no-feed",
+      "note": "WordPress site, no event feed"
+    },
+    {
+      "id": "su",
+      "name": "Student Union",
+      "kind": "student",
+      "url": "https://studentunion.wustl.edu",
+      "status": "blocked",
+      "note": "403 challenge"
+    },
+    {
+      "id": "gpsc",
+      "name": "Graduate Professional Council",
+      "kind": "student",
+      "url": "https://gpsc.wustl.edu",
+      "status": "no-feed",
+      "note": "WordPress site, events HTML only"
+    },
+    {
+      "id": "library",
+      "name": "WashU Libraries",
+      "kind": "library",
+      "url": "https://library.wustl.edu",
+      "status": "blocked",
+      "note": "403 challenge"
+    },
+    {
+      "id": "kemper",
+      "name": "Mildred Lane Kemper Art Museum",
+      "kind": "museum",
+      "url": "https://www.kemperartmuseum.wustl.edu",
+      "status": "blocked",
+      "note": "403 challenge (sources note)"
+    },
+    {
+      "id": "edison",
+      "name": "Edison Theatre (Performing Arts)",
+      "kind": "other",
+      "url": "https://edison.wustl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "career",
+      "name": "Career Engagement",
+      "kind": "other",
+      "url": "https://careers.washu.edu",
+      "status": "no-feed",
+      "note": "events on Handshake; site HTML"
+    }
+  ]
+}

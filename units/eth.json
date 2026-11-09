@@ -1,0 +1,234 @@
+{
+  "id": "eth",
+  "name": "ETH Zurich",
+  "wide": [
+    "https://idapps.ethz.ch/pcm-pub-services/v2/entries?rs-first=0&rs-size=9999&filters%5B0%5D.min-till-end=0&filters%5B0%5D.max-till-start=999&lang=en&client-id=wcms&filters%5B0%5D.cals=1&comp-ext=true"
+  ],
+  "units": [
+    {
+      "id": "arch",
+      "name": "Department of Architecture (D-ARCH)",
+      "kind": "school",
+      "url": "https://arch.ethz.ch",
+      "status": "in-wide",
+      "note": "events page is a view of the ETH PCM calendar (cals=1)"
+    },
+    {
+      "id": "baug",
+      "name": "Department of Civil, Environmental and Geomatic Engineering (D-BAUG)",
+      "kind": "school",
+      "url": "https://baug.ethz.ch",
+      "status": "in-wide",
+      "note": "events page is a view of the ETH PCM calendar (cals=1)"
+    },
+    {
+      "id": "biol",
+      "name": "Department of Biology (D-BIOL)",
+      "kind": "school",
+      "url": "https://biol.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "bsse",
+      "name": "Department of Biosystems Science and Engineering (D-BSSE)",
+      "kind": "school",
+      "url": "https://bsse.ethz.ch",
+      "status": "in-wide",
+      "note": "events page is a view of the ETH PCM calendar (cals=1)"
+    },
+    {
+      "id": "chab",
+      "name": "Department of Chemistry and Applied Biosciences (D-CHAB)",
+      "kind": "school",
+      "url": "https://chab.ethz.ch",
+      "status": "in-wide",
+      "note": "events page is a view of the ETH PCM calendar (cals=1)"
+    },
+    {
+      "id": "eaps",
+      "name": "Department of Earth and Planetary Sciences (D-EAPS)",
+      "kind": "school",
+      "url": "https://eaps.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "gess",
+      "name": "Department of Humanities, Social and Political Sciences (D-GESS)",
+      "kind": "school",
+      "url": "https://gess.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "hest",
+      "name": "Department of Health Sciences and Technology (D-HEST)",
+      "kind": "school",
+      "url": "https://hest.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "infk",
+      "name": "Department of Computer Science (D-INFK)",
+      "kind": "school",
+      "url": "https://inf.ethz.ch",
+      "status": "in-wide",
+      "note": "events page is a view of the ETH PCM calendar (cals=1)"
+    },
+    {
+      "id": "itet",
+      "name": "Department of Information Technology and Electrical Engineering (D-ITET)",
+      "kind": "school",
+      "url": "https://ee.ethz.ch",
+      "status": "in-wide",
+      "note": "events page is a view of the ETH PCM calendar (cals=1)"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics (D-MATH)",
+      "kind": "school",
+      "url": "https://math.ethz.ch",
+      "status": "no-feed",
+      "note": "events are per-seminar HTML pages (math.ethz.ch/s/...), not the PCM calendar"
+    },
+    {
+      "id": "matl",
+      "name": "Department of Materials (D-MATL)",
+      "kind": "school",
+      "url": "https://mat.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "mavt",
+      "name": "Department of Mechanical and Process Engineering (D-MAVT)",
+      "kind": "school",
+      "url": "https://mavt.ethz.ch",
+      "status": "in-wide",
+      "note": "events page is a view of the ETH PCM calendar (cals=1)"
+    },
+    {
+      "id": "mtec",
+      "name": "Department of Management, Technology and Economics (D-MTEC)",
+      "kind": "school",
+      "url": "https://mtec.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "phys",
+      "name": "Department of Physics (D-PHYS)",
+      "kind": "school",
+      "url": "https://phys.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "usys",
+      "name": "Department of Environmental Systems Science (D-USYS)",
+      "kind": "school",
+      "url": "https://usys.ethz.ch",
+      "status": "in-wide",
+      "note": "events page is a view of the ETH PCM calendar (cals=1)"
+    },
+    {
+      "id": "ai-center",
+      "name": "ETH AI Center",
+      "kind": "center",
+      "url": "https://ai.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "esc",
+      "name": "Energy Science Center",
+      "kind": "center",
+      "url": "https://esc.ethz.ch",
+      "status": "in-wide",
+      "note": "site pulls events from the PCM calendar"
+    },
+    {
+      "id": "kof",
+      "name": "KOF Swiss Economic Institute",
+      "kind": "institute",
+      "parent": "mtec",
+      "url": "https://kof.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "istp",
+      "name": "Institute of Science, Technology and Policy (ISTP)",
+      "kind": "institute",
+      "url": "https://istp.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "collegium",
+      "name": "Collegium Helveticum",
+      "kind": "institute",
+      "url": "https://collegium.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "css",
+      "name": "Center for Security Studies (CSS)",
+      "kind": "center",
+      "parent": "gess",
+      "url": "https://css.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "its",
+      "name": "ETH Institute for Theoretical Studies",
+      "kind": "institute",
+      "url": "https://eth-its.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "vseth",
+      "name": "VSETH (student union)",
+      "kind": "student",
+      "url": "https://vseth.ethz.ch",
+      "status": "feed",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/c_24roegaf5ajabucmibbdeijkts%40group.calendar.google.com/public/basic.ics"
+      ]
+    },
+    {
+      "id": "avethz",
+      "name": "AVETH (academic staff association)",
+      "kind": "student",
+      "url": "https://aveth.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "library",
+      "name": "ETH Library",
+      "kind": "library",
+      "url": "https://library.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "gs",
+      "name": "Graphische Sammlung ETH Zurich",
+      "kind": "museum",
+      "url": "https://gs.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "focusterra",
+      "name": "focusTerra",
+      "kind": "museum",
+      "url": "https://focusterra.ethz.ch",
+      "status": "unchecked"
+    },
+    {
+      "id": "career",
+      "name": "ETH Career Center",
+      "kind": "other",
+      "url": "https://ethz.ch/en/the-eth-zurich/education/career-center.html",
+      "status": "unchecked"
+    },
+    {
+      "id": "asvz",
+      "name": "ASVZ (academic sports)",
+      "kind": "other",
+      "url": "https://www.asvz.ch",
+      "status": "unchecked"
+    }
+  ]
+}

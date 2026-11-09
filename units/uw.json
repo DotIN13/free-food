@@ -1,0 +1,442 @@
+{
+  "id": "uw",
+  "name": "University of Washington",
+  "wide": [
+    "https://www.trumba.com/calendars/sea_campus.ics",
+    "https://huskylink.washington.edu/rss_events"
+  ],
+  "units": [
+    {
+      "id": "artsci",
+      "name": "College of Arts & Sciences",
+      "kind": "school",
+      "url": "https://artsci.washington.edu",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_artsci.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "engr",
+      "name": "College of Engineering",
+      "kind": "school",
+      "url": "https://www.engr.washington.edu",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_engr.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "foster",
+      "name": "Michael G. Foster School of Business",
+      "kind": "school",
+      "url": "https://foster.uw.edu",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_foster.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "sph",
+      "name": "School of Public Health",
+      "kind": "school",
+      "url": "https://sph.washington.edu",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_sph.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "evans",
+      "name": "Daniel J. Evans School of Public Policy & Governance",
+      "kind": "school",
+      "url": "https://evans.uw.edu",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_evans-websitecalendar.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "law",
+      "name": "School of Law",
+      "kind": "school",
+      "url": "https://www.law.uw.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_law.ics"
+      ]
+    },
+    {
+      "id": "medicine",
+      "name": "School of Medicine",
+      "kind": "school",
+      "url": "https://www.uwmedicine.org",
+      "status": "blocked",
+      "note": "uwmedicine.org answers 403; no Trumba calendar found"
+    },
+    {
+      "id": "nursing",
+      "name": "School of Nursing",
+      "kind": "school",
+      "url": "https://nursing.uw.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_nursing.ics"
+      ]
+    },
+    {
+      "id": "dentistry",
+      "name": "School of Dentistry",
+      "kind": "school",
+      "url": "https://dental.washington.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_dental.ics"
+      ]
+    },
+    {
+      "id": "pharmacy",
+      "name": "School of Pharmacy",
+      "kind": "school",
+      "url": "https://sop.washington.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_sop.ics"
+      ]
+    },
+    {
+      "id": "socialwork",
+      "name": "School of Social Work",
+      "kind": "school",
+      "url": "https://socialwork.uw.edu",
+      "status": "feed",
+      "feeds": [
+        "https://socialwork.uw.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "ischool",
+      "name": "Information School",
+      "kind": "school",
+      "url": "https://ischool.uw.edu",
+      "status": "no-feed",
+      "note": "no Trumba calendar found; events page is HTML"
+    },
+    {
+      "id": "environment",
+      "name": "College of the Environment",
+      "kind": "school",
+      "url": "https://environment.uw.edu",
+      "status": "no-feed",
+      "note": "embeds only a small Trumba calendar (sea_env-inclusive-excellence, 2 events)"
+    },
+    {
+      "id": "be",
+      "name": "College of Built Environments",
+      "kind": "school",
+      "url": "https://be.uw.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_be.ics"
+      ]
+    },
+    {
+      "id": "education",
+      "name": "College of Education",
+      "kind": "school",
+      "url": "https://education.uw.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "jsis",
+      "name": "Henry M. Jackson School of International Studies",
+      "kind": "school",
+      "parent": "artsci",
+      "url": "https://jsis.washington.edu",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_jsis.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "grad",
+      "name": "Graduate School",
+      "kind": "school",
+      "url": "https://grad.uw.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cse",
+      "name": "Paul G. Allen School of Computer Science & Engineering",
+      "kind": "department",
+      "parent": "engr",
+      "url": "https://www.cs.washington.edu",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_cse.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical & Computer Engineering",
+      "kind": "department",
+      "parent": "engr",
+      "url": "https://www.ece.uw.edu",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_ee.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "engr",
+      "url": "https://www.me.washington.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "bioe",
+      "name": "Bioengineering",
+      "kind": "department",
+      "parent": "engr",
+      "url": "https://bioe.uw.edu",
+      "status": "no-feed",
+      "note": "embeds Trumba sea_coe-bioe with 3 events; likely in sea_engr"
+    },
+    {
+      "id": "hcde",
+      "name": "Human Centered Design & Engineering",
+      "kind": "department",
+      "parent": "engr",
+      "url": "https://www.hcde.washington.edu",
+      "status": "in-wide",
+      "note": "Trumba sea_hcde left out: half of it is in sea_engr"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://math.washington.edu",
+      "status": "feed",
+      "feeds": [
+        "https://math.washington.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "stat",
+      "name": "Department of Statistics",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://stat.uw.edu",
+      "status": "no-feed",
+      "note": "Trumba sea_stat left out: about 4-8 events"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://phys.washington.edu",
+      "status": "feed",
+      "feeds": [
+        "https://phys.washington.edu/calendar.ics"
+      ]
+    },
+    {
+      "id": "chem",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://chem.washington.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "biology",
+      "name": "Department of Biology",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://www.biology.washington.edu",
+      "status": "unchecked",
+      "note": "site did not answer"
+    },
+    {
+      "id": "econ",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://econ.washington.edu",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_econ.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "psych",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://psych.uw.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_psych.ics"
+      ]
+    },
+    {
+      "id": "polisci",
+      "name": "Department of Political Science",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://www.polisci.washington.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_pols.ics"
+      ]
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://history.washington.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://english.washington.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://phil.washington.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_phil.ics"
+      ]
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "artsci",
+      "url": "https://soc.washington.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_soc.ics"
+      ]
+    },
+    {
+      "id": "escience",
+      "name": "eScience Institute",
+      "kind": "institute",
+      "url": "https://escience.washington.edu",
+      "status": "no-feed",
+      "note": "no Trumba calendar; WordPress events page"
+    },
+    {
+      "id": "simpson",
+      "name": "Walter Chapin Simpson Center for the Humanities",
+      "kind": "center",
+      "parent": "artsci",
+      "url": "https://simpsoncenter.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "ihme",
+      "name": "Institute for Health Metrics and Evaluation",
+      "kind": "institute",
+      "url": "https://www.healthdata.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "cleanenergy",
+      "name": "Clean Energy Institute",
+      "kind": "institute",
+      "url": "https://www.cei.washington.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "buerk",
+      "name": "Buerk Center for Entrepreneurship",
+      "kind": "center",
+      "parent": "foster",
+      "url": "https://foster.uw.edu/centers/buerk-ctr-entrepreneurship",
+      "status": "in-wide",
+      "note": "Foster centers post to the Foster Trumba calendar we read"
+    },
+    {
+      "id": "ipd",
+      "name": "Institute for Protein Design",
+      "kind": "institute",
+      "parent": "medicine",
+      "url": "https://www.ipd.uw.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "csde",
+      "name": "Center for Studies in Demography and Ecology",
+      "kind": "center",
+      "url": "https://csde.washington.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "asuw",
+      "name": "Associated Students of the University of Washington (ASUW)",
+      "kind": "student",
+      "url": "https://asuw.org",
+      "status": "in-wide",
+      "note": "Tribe calendar is empty; events go on HuskyLink"
+    },
+    {
+      "id": "gpss",
+      "name": "Graduate and Professional Student Senate",
+      "kind": "student",
+      "url": "https://gpss.uw.edu",
+      "status": "unchecked",
+      "note": "site did not answer"
+    },
+    {
+      "id": "libraries",
+      "name": "UW Libraries",
+      "kind": "library",
+      "url": "https://www.lib.washington.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.trumba.com/calendars/sea_lib.ics"
+      ]
+    },
+    {
+      "id": "burke",
+      "name": "Burke Museum",
+      "kind": "museum",
+      "url": "https://www.burkemuseum.org",
+      "status": "no-feed",
+      "note": "Drupal calendar page, no feed found"
+    },
+    {
+      "id": "henry",
+      "name": "Henry Art Gallery",
+      "kind": "museum",
+      "url": "https://henryart.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "career",
+      "name": "Career & Internship Center",
+      "kind": "other",
+      "url": "https://careers.uw.edu",
+      "status": "unchecked"
+    }
+  ]
+}

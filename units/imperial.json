@@ -1,0 +1,53 @@
+{
+  "id": "imperial",
+  "name": "Imperial College London",
+  "wide": [
+    "https://www.imperial.ac.uk/events/feed/json/?quantity=100&show=future",
+    "https://www.imperial.ac.uk/events/feed/rss/"
+  ],
+  "units": [
+    { "id": "engineering", "name": "Faculty of Engineering", "kind": "school", "url": "https://www.imperial.ac.uk/engineering/", "status": "unchecked", "note": "faculty page shows no events block; its departments use What's On" },
+    { "id": "natsci", "name": "Faculty of Natural Sciences", "kind": "school", "url": "https://www.imperial.ac.uk/natural-sciences/", "status": "in-wide", "note": "events block comes from imperial.ac.uk/events (What's On)" },
+    { "id": "medicine", "name": "Faculty of Medicine", "kind": "school", "url": "https://www.imperial.ac.uk/medicine/", "status": "in-wide", "note": "events block comes from What's On" },
+    { "id": "business", "name": "Imperial Business School", "kind": "school", "url": "https://www.imperial.ac.uk/business-school/", "feeds": ["https://ibconnect.imperial.ac.uk/ical/imperial/ical_imperial.ics"], "status": "feed" },
+
+    { "id": "computing", "name": "Department of Computing", "kind": "department", "parent": "engineering", "url": "https://www.imperial.ac.uk/computing/", "status": "in-wide", "note": "events block comes from What's On" },
+    { "id": "eee", "name": "Department of Electrical and Electronic Engineering", "kind": "department", "parent": "engineering", "url": "https://www.imperial.ac.uk/electrical-engineering/", "status": "in-wide", "note": "events come from What's On (per-event .ics links)" },
+    { "id": "mecheng", "name": "Department of Mechanical Engineering", "kind": "department", "parent": "engineering", "url": "https://www.imperial.ac.uk/mechanical-engineering/", "status": "unchecked", "note": "home page shows no events block" },
+    { "id": "bioeng", "name": "Department of Bioengineering", "kind": "department", "parent": "engineering", "url": "https://www.imperial.ac.uk/bioengineering/", "status": "in-wide", "note": "events block comes from What's On" },
+    { "id": "chemeng", "name": "Department of Chemical Engineering", "kind": "department", "parent": "engineering", "url": "https://www.imperial.ac.uk/chemical-engineering/", "status": "unchecked" },
+    { "id": "civil", "name": "Department of Civil and Environmental Engineering", "kind": "department", "parent": "engineering", "url": "https://www.imperial.ac.uk/civil-engineering/", "status": "unchecked" },
+    { "id": "aero", "name": "Department of Aeronautics", "kind": "department", "parent": "engineering", "url": "https://www.imperial.ac.uk/aeronautics/", "status": "unchecked" },
+    { "id": "materials", "name": "Department of Materials", "kind": "department", "parent": "engineering", "url": "https://www.imperial.ac.uk/materials/", "status": "unchecked" },
+    { "id": "ese", "name": "Department of Earth Science and Engineering", "kind": "department", "parent": "engineering", "url": "https://www.imperial.ac.uk/earth-science/", "status": "unchecked" },
+    { "id": "design", "name": "Dyson School of Design Engineering", "kind": "department", "parent": "engineering", "url": "https://www.imperial.ac.uk/design-engineering/", "status": "unchecked" },
+    { "id": "maths", "name": "Department of Mathematics", "kind": "department", "parent": "natsci", "url": "https://www.imperial.ac.uk/mathematics/", "status": "in-wide", "note": "events block comes from What's On" },
+    { "id": "physics", "name": "Department of Physics", "kind": "department", "parent": "natsci", "url": "https://www.imperial.ac.uk/physics/", "status": "in-wide", "note": "events block comes from What's On" },
+    { "id": "chemistry", "name": "Department of Chemistry", "kind": "department", "parent": "natsci", "url": "https://www.imperial.ac.uk/chemistry/", "status": "in-wide", "note": "events block comes from What's On" },
+    { "id": "lifesci", "name": "Department of Life Sciences", "kind": "department", "parent": "natsci", "url": "https://www.imperial.ac.uk/life-sciences/", "status": "in-wide", "note": "events block comes from What's On" },
+    { "id": "cep", "name": "Centre for Environmental Policy", "kind": "department", "parent": "natsci", "url": "https://www.imperial.ac.uk/environmental-policy/", "status": "unchecked" },
+    { "id": "publichealth", "name": "School of Public Health", "kind": "department", "parent": "medicine", "url": "https://www.imperial.ac.uk/public-health/", "status": "unchecked" },
+    { "id": "nhli", "name": "National Heart and Lung Institute", "kind": "department", "parent": "medicine", "url": "https://www.imperial.ac.uk/nhli/", "status": "unchecked" },
+    { "id": "surgery", "name": "Department of Surgery and Cancer", "kind": "department", "parent": "medicine", "url": "https://www.imperial.ac.uk/surgery-cancer/", "status": "unchecked" },
+    { "id": "brain", "name": "Department of Brain Sciences", "kind": "department", "parent": "medicine", "url": "https://www.imperial.ac.uk/brain-sciences/", "status": "unchecked" },
+    { "id": "infectious", "name": "Department of Infectious Disease", "kind": "department", "parent": "medicine", "url": "https://www.imperial.ac.uk/infectious-disease/", "status": "unchecked" },
+    { "id": "economics", "name": "Economics and Public Policy (Business School)", "kind": "department", "parent": "business", "url": "https://www.imperial.ac.uk/business-school/faculty-research/academic-areas/economics-public-policy/", "status": "unchecked" },
+
+    { "id": "grantham", "name": "Grantham Institute – Climate Change and the Environment", "kind": "institute", "url": "https://www.imperial.ac.uk/grantham/", "status": "in-wide", "note": "events block comes from What's On" },
+    { "id": "ix", "name": "I-X (AI, data and digital)", "kind": "institute", "url": "https://www.imperial.ac.uk/infrastructure/i-x/", "status": "unchecked" },
+    { "id": "dsi", "name": "Data Science Institute", "kind": "institute", "url": "https://www.imperial.ac.uk/data-science/", "status": "no-feed", "note": "home page shows no events or feed" },
+    { "id": "efl", "name": "Energy Futures Lab", "kind": "institute", "url": "https://www.imperial.ac.uk/energy-futures-lab/", "status": "unchecked", "note": "URL answered 404" },
+    { "id": "ighi", "name": "Institute of Global Health Innovation", "kind": "institute", "url": "https://www.imperial.ac.uk/global-health-innovation/", "status": "no-feed", "note": "home page shows no events or feed" },
+    { "id": "mrc-lms", "name": "MRC Laboratory of Medical Sciences", "kind": "institute", "parent": "medicine", "url": "https://lms.mrc.ac.uk", "status": "unchecked" },
+    { "id": "enterprise", "name": "Imperial Enterprise Lab", "kind": "center", "url": "https://www.imperial.ac.uk/enterprise/", "status": "no-feed", "note": "page shows no events feed" },
+    { "id": "clcc", "name": "Centre for Languages, Culture and Communication", "kind": "center", "url": "https://www.imperial.ac.uk/languages-culture-communication/", "status": "unchecked" },
+    { "id": "talks-ee", "name": "EEE talks (talks.ee.ic.ac.uk)", "kind": "center", "parent": "eee", "url": "https://talks.ee.ic.ac.uk", "status": "unchecked", "note": "talks.cam clone, no lists linked; did not answer" },
+
+    { "id": "union", "name": "Imperial College Union", "kind": "student", "url": "https://www.imperialcollegeunion.org", "status": "no-feed", "note": "Next.js site, no feed (sources note)" },
+    { "id": "gsu", "name": "Graduate Students' Union", "kind": "student", "url": "https://www.imperialcollegeunion.org/gsu", "status": "no-feed", "note": "part of the Union site, no feed" },
+    { "id": "halls", "name": "Halls of residence (Wardening)", "kind": "student", "url": "https://www.imperial.ac.uk/students/accommodation/", "status": "unchecked" },
+    { "id": "library", "name": "Imperial College Library", "kind": "library", "url": "https://www.imperial.ac.uk/admin-services/library/", "status": "unchecked", "note": "home page shows no events block" },
+    { "id": "careers", "name": "Imperial Careers Service", "kind": "other", "url": "https://www.imperial.ac.uk/careers/", "status": "no-feed", "note": "events are booked through JobsLive, no feed on the site" },
+    { "id": "lates", "name": "Imperial Lates / public engagement", "kind": "other", "url": "https://www.imperial.ac.uk/be-inspired/public-engagement/", "status": "unchecked" }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "id": "lehigh",
+  "name": "Lehigh University",
+  "wide": [
+    "https://eventscalendar.lehigh.edu",
+    "https://lehigh.campusgroups.com/rss_events"
+  ],
+  "units": [
+    {
+      "id": "cas",
+      "name": "College of Arts and Sciences",
+      "kind": "school",
+      "url": "https://cas.lehigh.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "business",
+      "name": "College of Business",
+      "kind": "school",
+      "url": "https://business.lehigh.edu",
+      "status": "in-wide",
+      "note": "site links its events to eventscalendar.lehigh.edu"
+    },
+    {
+      "id": "education",
+      "name": "College of Education",
+      "kind": "school",
+      "url": "https://ed.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "engineering",
+      "name": "P.C. Rossin College of Engineering and Applied Science",
+      "kind": "school",
+      "url": "https://engineering.lehigh.edu",
+      "status": "in-wide",
+      "note": "site links its events to eventscalendar.lehigh.edu"
+    },
+    {
+      "id": "health",
+      "name": "College of Health",
+      "kind": "school",
+      "url": "https://health.lehigh.edu",
+      "status": "in-wide",
+      "note": "site links its events to eventscalendar.lehigh.edu"
+    },
+    {
+      "id": "creative-inquiry",
+      "name": "Creative Inquiry",
+      "kind": "center",
+      "url": "https://creativeinquiry.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cse",
+      "name": "Computer Science and Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.lehigh.edu/cse",
+      "status": "in-wide",
+      "note": "site links its events to eventscalendar.lehigh.edu"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.lehigh.edu/ece",
+      "status": "in-wide",
+      "note": "Rossin departments link to eventscalendar.lehigh.edu"
+    },
+    {
+      "id": "meche",
+      "name": "Mechanical Engineering and Mechanics",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.lehigh.edu/meche",
+      "status": "in-wide",
+      "note": "site links its events to eventscalendar.lehigh.edu"
+    },
+    {
+      "id": "bioe",
+      "name": "Bioengineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.lehigh.edu/bioe",
+      "status": "in-wide",
+      "note": "site links its events to eventscalendar.lehigh.edu"
+    },
+    {
+      "id": "ise",
+      "name": "Industrial and Systems Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.lehigh.edu/ise",
+      "status": "in-wide",
+      "note": "site links its events to eventscalendar.lehigh.edu"
+    },
+    {
+      "id": "chbe",
+      "name": "Chemical and Biomolecular Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.lehigh.edu/chbe",
+      "status": "unchecked"
+    },
+    {
+      "id": "cee",
+      "name": "Civil and Environmental Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.lehigh.edu/cee",
+      "status": "unchecked"
+    },
+    {
+      "id": "mse",
+      "name": "Materials Science and Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://engineering.lehigh.edu/mse",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://math.cas.lehigh.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://physics.cas.lehigh.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://chemistry.cas.lehigh.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "biology",
+      "name": "Biological Sciences",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://biology.cas.lehigh.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "business",
+      "url": "https://business.lehigh.edu/academics/departments/economics",
+      "status": "unchecked"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://psychology.cas.lehigh.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://polisci.cas.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://history.cas.lehigh.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://english.cas.lehigh.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://philosophy.cas.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology and Anthropology",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://socanth.cas.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ees",
+      "name": "Earth and Environmental Sciences",
+      "kind": "department",
+      "parent": "cas",
+      "url": "https://ees.cas.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "data-x",
+      "name": "Data X / Institute for Data, Intelligent Systems, and Computation (I-DISC)",
+      "kind": "institute",
+      "parent": "engineering",
+      "url": "https://idisc.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "energy",
+      "name": "Institute for Cyber Physical Infrastructure and Energy (I-CPIE)",
+      "kind": "institute",
+      "parent": "engineering",
+      "url": "https://icpie.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "humanities",
+      "name": "Humanities Center",
+      "kind": "center",
+      "parent": "cas",
+      "url": "https://humanitiescenter.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "global",
+      "name": "Office of International Affairs / Global Lehigh",
+      "kind": "center",
+      "url": "https://global.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "baker",
+      "name": "Baker Institute for Entrepreneurship, Creativity and Innovation",
+      "kind": "center",
+      "url": "https://entrepreneurship.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "iacocca",
+      "name": "Iacocca Institute",
+      "kind": "institute",
+      "url": "https://iacocca.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "atlss",
+      "name": "ATLSS Engineering Research Center",
+      "kind": "center",
+      "parent": "engineering",
+      "url": "https://www.atlss.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "nano",
+      "name": "Institute for Functional Materials and Devices",
+      "kind": "institute",
+      "parent": "engineering",
+      "url": "https://ifmd.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sg",
+      "name": "Student Senate",
+      "kind": "student",
+      "url": "https://studentaffairs.lehigh.edu",
+      "status": "in-wide",
+      "note": "student orgs post to CampusGroups, which we read"
+    },
+    {
+      "id": "gsa",
+      "name": "Graduate Student Senate",
+      "kind": "student",
+      "url": "https://grad.lehigh.edu",
+      "status": "in-wide",
+      "note": "student orgs post to CampusGroups, which we read"
+    },
+    {
+      "id": "student-affairs",
+      "name": "Student Affairs",
+      "kind": "other",
+      "url": "https://studentaffairs.lehigh.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "library",
+      "name": "Lehigh Libraries",
+      "kind": "library",
+      "url": "https://library.lehigh.edu",
+      "status": "in-wide",
+      "note": "events page shows Localist events (eventscalendar.lehigh.edu)"
+    },
+    {
+      "id": "luag",
+      "name": "Lehigh University Art Galleries",
+      "kind": "museum",
+      "url": "https://luag.lehigh.edu",
+      "status": "no-feed",
+      "note": "events page is HTML; its RSS is updates, not events"
+    },
+    {
+      "id": "zoellner",
+      "name": "Zoellner Arts Center",
+      "kind": "other",
+      "url": "https://zoellner.cas.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "career",
+      "name": "Center for Career and Professional Development",
+      "kind": "other",
+      "url": "https://careercenter.lehigh.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "athletics",
+      "name": "Lehigh Mountain Hawks Athletics",
+      "kind": "other",
+      "url": "https://lehighsports.com",
+      "status": "unchecked"
+    }
+  ]
+}

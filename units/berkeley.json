@@ -1,0 +1,445 @@
+{
+  "id": "berkeley",
+  "name": "University of California, Berkeley",
+  "wide": [
+    "https://events.berkeley.edu/live/json/events/max/100"
+  ],
+  "units": [
+    {
+      "id": "ls",
+      "name": "College of Letters & Science",
+      "kind": "school",
+      "url": "https://ls.berkeley.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "engineering",
+      "name": "College of Engineering",
+      "kind": "school",
+      "url": "https://engineering.berkeley.edu",
+      "status": "in-wide",
+      "note": "events page embeds events.berkeley.edu (LiveWhale)"
+    },
+    {
+      "id": "chemistry",
+      "name": "College of Chemistry",
+      "kind": "school",
+      "url": "https://chemistry.berkeley.edu",
+      "status": "in-wide",
+      "note": "its group is in the main LiveWhale feed (its site answers 403)"
+    },
+    {
+      "id": "haas",
+      "name": "Haas School of Business",
+      "kind": "school",
+      "url": "https://haas.berkeley.edu",
+      "feeds": [
+        "https://static-prod-us-east-1.campusgroups.com/ical/haas/ical_haas.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "law",
+      "name": "Berkeley Law",
+      "kind": "school",
+      "url": "https://www.law.berkeley.edu",
+      "feeds": [
+        "https://www.law.berkeley.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "rausser",
+      "name": "Rausser College of Natural Resources",
+      "kind": "school",
+      "url": "https://nature.berkeley.edu",
+      "status": "in-wide",
+      "note": "events page links events.berkeley.edu"
+    },
+    {
+      "id": "ced",
+      "name": "College of Environmental Design",
+      "kind": "school",
+      "url": "https://ced.berkeley.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "cdss",
+      "name": "College of Computing, Data Science, and Society",
+      "kind": "school",
+      "url": "https://cdss.berkeley.edu",
+      "status": "no-feed",
+      "note": "Drupal events calendar; rss.xml is news"
+    },
+    {
+      "id": "education",
+      "name": "Berkeley School of Education",
+      "kind": "school",
+      "url": "https://bse.berkeley.edu",
+      "status": "in-wide",
+      "note": "events page links events.berkeley.edu"
+    },
+    {
+      "id": "ischool",
+      "name": "School of Information",
+      "kind": "school",
+      "url": "https://www.ischool.berkeley.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.ischool.berkeley.edu/events/128/calendar.ics"
+      ]
+    },
+    {
+      "id": "journalism",
+      "name": "Graduate School of Journalism",
+      "kind": "school",
+      "url": "https://journalism.berkeley.edu",
+      "status": "no-feed",
+      "note": "WordPress events page, ?ical=1 gives 0 events"
+    },
+    {
+      "id": "publichealth",
+      "name": "School of Public Health",
+      "kind": "school",
+      "url": "https://publichealth.berkeley.edu",
+      "status": "in-wide",
+      "note": "events page lists events.berkeley.edu entries"
+    },
+    {
+      "id": "socialwelfare",
+      "name": "School of Social Welfare",
+      "kind": "school",
+      "url": "https://socialwelfare.berkeley.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "optometry",
+      "name": "Herbert Wertheim School of Optometry & Vision Science",
+      "kind": "school",
+      "url": "https://optometry.berkeley.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "goldman",
+      "name": "Goldman School of Public Policy",
+      "kind": "school",
+      "url": "https://gspp.berkeley.edu",
+      "status": "no-feed",
+      "note": "no feed"
+    },
+    {
+      "id": "grad",
+      "name": "Graduate Division",
+      "kind": "school",
+      "url": "https://grad.berkeley.edu",
+      "status": "feed",
+      "feeds": [
+        "https://grad.berkeley.edu/about/events/?ical=1"
+      ]
+    },
+    {
+      "id": "eecs",
+      "name": "Electrical Engineering and Computer Sciences",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://eecs.berkeley.edu",
+      "status": "in-wide",
+      "note": "its group is in the main LiveWhale feed"
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://me.berkeley.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "bioeng",
+      "name": "Bioengineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://bioeng.berkeley.edu",
+      "status": "in-wide",
+      "note": "events page links events.berkeley.edu"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://math.berkeley.edu",
+      "status": "in-wide",
+      "note": "site links events.berkeley.edu"
+    },
+    {
+      "id": "statistics",
+      "name": "Department of Statistics",
+      "kind": "department",
+      "parent": "cdss",
+      "url": "https://statistics.berkeley.edu",
+      "status": "in-wide",
+      "note": "seminars are events.berkeley.edu groups (Statistics, Neyman, Probability)"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://physics.berkeley.edu",
+      "status": "in-wide",
+      "note": "events page links events.berkeley.edu"
+    },
+    {
+      "id": "mcb",
+      "name": "Department of Molecular and Cell Biology",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://mcb.berkeley.edu",
+      "status": "in-wide",
+      "note": "site links events.berkeley.edu"
+    },
+    {
+      "id": "ib",
+      "name": "Department of Integrative Biology",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://ib.berkeley.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://econ.berkeley.edu",
+      "status": "in-wide",
+      "note": "its group is in the main LiveWhale feed"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://psychology.berkeley.edu",
+      "status": "in-wide",
+      "note": "site links events.berkeley.edu"
+    },
+    {
+      "id": "polisci",
+      "name": "Charles and Louise Travers Department of Political Science",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://polisci.berkeley.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://history.berkeley.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://english.berkeley.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://philosophy.berkeley.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "ls",
+      "url": "https://sociology.berkeley.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "simons",
+      "name": "Simons Institute for the Theory of Computing",
+      "kind": "institute",
+      "url": "https://simons.berkeley.edu",
+      "status": "no-feed",
+      "note": "no feed"
+    },
+    {
+      "id": "bair",
+      "name": "Berkeley Artificial Intelligence Research (BAIR) Lab",
+      "kind": "center",
+      "parent": "eecs",
+      "url": "https://bair.berkeley.edu",
+      "status": "no-feed",
+      "note": "no feed"
+    },
+    {
+      "id": "bids",
+      "name": "Berkeley Institute for Data Science",
+      "kind": "institute",
+      "parent": "cdss",
+      "url": "https://bids.berkeley.edu",
+      "status": "no-feed",
+      "note": "no feed"
+    },
+    {
+      "id": "matrix",
+      "name": "Social Science Matrix",
+      "kind": "center",
+      "parent": "ls",
+      "url": "https://matrix.berkeley.edu",
+      "status": "no-feed",
+      "note": "no feed"
+    },
+    {
+      "id": "townsend",
+      "name": "Townsend Center for the Humanities",
+      "kind": "center",
+      "parent": "ls",
+      "url": "https://townsendcenter.berkeley.edu",
+      "status": "in-wide",
+      "note": "its group is in the main LiveWhale feed"
+    },
+    {
+      "id": "iseees",
+      "name": "Institute of Slavic, East European, and Eurasian Studies",
+      "kind": "institute",
+      "url": "https://iseees.berkeley.edu",
+      "status": "in-wide",
+      "note": "site links events.berkeley.edu"
+    },
+    {
+      "id": "ieas",
+      "name": "Institute of East Asian Studies",
+      "kind": "institute",
+      "url": "https://ieas.berkeley.edu",
+      "status": "in-wide",
+      "note": "site links events.berkeley.edu"
+    },
+    {
+      "id": "igs",
+      "name": "Institute of Governmental Studies",
+      "kind": "institute",
+      "url": "https://igs.berkeley.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "energy",
+      "name": "Berkeley Energy & Climate Institute",
+      "kind": "institute",
+      "url": "https://energy.berkeley.edu",
+      "status": "unchecked",
+      "note": "did not answer within 15 s"
+    },
+    {
+      "id": "citris",
+      "name": "CITRIS and the Banatao Institute",
+      "kind": "institute",
+      "url": "https://citris-uc.org",
+      "status": "no-feed",
+      "note": "The Events Calendar ?ical=1 holds 1 event"
+    },
+    {
+      "id": "skydeck",
+      "name": "Berkeley SkyDeck",
+      "kind": "center",
+      "url": "https://skydeck.berkeley.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "scet",
+      "name": "Sutardja Center for Entrepreneurship & Technology",
+      "kind": "center",
+      "parent": "engineering",
+      "url": "https://scet.berkeley.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "asuc",
+      "name": "Associated Students of the University of California (ASUC)",
+      "kind": "student",
+      "url": "https://asuc.org",
+      "status": "no-feed",
+      "note": "WordPress events page, ?ical=1 gives 0 events; CalLink (Engage) needs login"
+    },
+    {
+      "id": "ga",
+      "name": "Graduate Assembly",
+      "kind": "student",
+      "url": "https://ga.berkeley.edu",
+      "status": "unchecked",
+      "note": "/events is 404"
+    },
+    {
+      "id": "callink",
+      "name": "CalLink student organizations",
+      "kind": "student",
+      "url": "https://callink.berkeley.edu",
+      "status": "blocked",
+      "note": "Engage discovery API redirects to the CampusLabs login"
+    },
+    {
+      "id": "library",
+      "name": "UC Berkeley Library",
+      "kind": "library",
+      "url": "https://www.lib.berkeley.edu",
+      "status": "in-wide",
+      "note": "site links events.berkeley.edu"
+    },
+    {
+      "id": "bampfa",
+      "name": "Berkeley Art Museum and Pacific Film Archive (BAMPFA)",
+      "kind": "museum",
+      "url": "https://bampfa.org",
+      "status": "feed",
+      "feeds": [
+        "https://bampfa.org/events/upcoming.ics"
+      ]
+    },
+    {
+      "id": "hearst",
+      "name": "Phoebe A. Hearst Museum of Anthropology",
+      "kind": "museum",
+      "url": "https://hearstmuseum.berkeley.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "career",
+      "name": "Career Engagement",
+      "kind": "other",
+      "url": "https://career.berkeley.edu",
+      "status": "no-feed",
+      "note": "events page redirects to an HTML page; events are on Handshake"
+    },
+    {
+      "id": "calperformances",
+      "name": "Cal Performances",
+      "kind": "other",
+      "url": "https://calperformances.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "athletics",
+      "name": "Cal Athletics",
+      "kind": "other",
+      "url": "https://calbears.com",
+      "status": "unchecked"
+    }
+  ]
+}

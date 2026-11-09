@@ -1,0 +1,427 @@
+{
+  "id": "cornell",
+  "name": "Cornell University",
+  "wide": [
+    "https://events.cornell.edu",
+    "https://static-prod-us-east-1.campusgroups.com/ical/cornell/ical_cornell.ics"
+  ],
+  "units": [
+    {
+      "id": "aap",
+      "name": "College of Architecture, Art, and Planning",
+      "kind": "school",
+      "url": "https://aap.cornell.edu",
+      "status": "no-feed",
+      "note": "upcoming-events page is HTML only"
+    },
+    {
+      "id": "as",
+      "name": "College of Arts and Sciences",
+      "kind": "school",
+      "url": "https://as.cornell.edu",
+      "status": "in-wide",
+      "note": "embeds events.cornell.edu (sources notes)"
+    },
+    {
+      "id": "cals",
+      "name": "College of Agriculture and Life Sciences",
+      "kind": "school",
+      "url": "https://cals.cornell.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed link"
+    },
+    {
+      "id": "bowers",
+      "name": "Cornell Ann S. Bowers College of Computing and Information Science",
+      "kind": "school",
+      "url": "https://bowers.cornell.edu",
+      "status": "in-wide",
+      "note": "events page lists events.cornell.edu events"
+    },
+    {
+      "id": "engineering",
+      "name": "Cornell Duffield College of Engineering",
+      "kind": "school",
+      "url": "https://www.duffield.cornell.edu",
+      "status": "in-wide",
+      "note": "embeds events.cornell.edu (sources notes)"
+    },
+    {
+      "id": "human-ecology",
+      "name": "College of Human Ecology",
+      "kind": "school",
+      "url": "https://www.human.cornell.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "ilr",
+      "name": "ILR School (Industrial and Labor Relations)",
+      "kind": "school",
+      "url": "https://www.ilr.cornell.edu",
+      "status": "in-wide",
+      "note": "events page lists events.cornell.edu (Localist) events"
+    },
+    {
+      "id": "brooks",
+      "name": "Cornell Jeb E. Brooks School of Public Policy",
+      "kind": "school",
+      "url": "https://publicpolicy.cornell.edu",
+      "status": "in-wide",
+      "note": "events page shows events.cornell.edu Localist events"
+    },
+    {
+      "id": "johnson",
+      "name": "Samuel Curtis Johnson Graduate School of Management",
+      "kind": "school",
+      "url": "https://www.johnson.cornell.edu",
+      "feeds": [
+        "https://static-prod-us-east-1.campusgroups.com/ical/johnson/ical_johnson.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "business",
+      "name": "Cornell SC Johnson College of Business",
+      "kind": "school",
+      "url": "https://business.cornell.edu",
+      "status": "feed",
+      "feeds": [
+        "https://events.business.cornell.edu/live/json/events/"
+      ]
+    },
+    {
+      "id": "law",
+      "name": "Cornell Law School",
+      "kind": "school",
+      "url": "https://www.lawschool.cornell.edu",
+      "status": "no-feed",
+      "note": "/events 404 (sources notes)"
+    },
+    {
+      "id": "vet",
+      "name": "College of Veterinary Medicine",
+      "kind": "school",
+      "url": "https://www.vet.cornell.edu",
+      "status": "blocked",
+      "note": "events page answers 403"
+    },
+    {
+      "id": "grad",
+      "name": "Graduate School",
+      "kind": "school",
+      "url": "https://gradschool.cornell.edu",
+      "status": "blocked",
+      "note": "answers 403 (sources notes)"
+    },
+    {
+      "id": "weill",
+      "name": "Weill Cornell Medicine",
+      "kind": "school",
+      "url": "https://weill.cornell.edu",
+      "feeds": [
+        "https://events.weill.cornell.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "weill-grad",
+      "name": "Weill Cornell Graduate School of Medical Sciences",
+      "kind": "school",
+      "parent": "weill",
+      "url": "https://gradschool.weill.cornell.edu",
+      "status": "in-wide",
+      "note": "on events.weill.cornell.edu, which we read"
+    },
+    {
+      "id": "cornelltech",
+      "name": "Cornell Tech",
+      "kind": "school",
+      "url": "https://tech.cornell.edu",
+      "feeds": [
+        "https://static-prod-us-east-1.campusgroups.com/ical/cornelltech/ical_cornelltech.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "bowers",
+      "url": "https://www.cs.cornell.edu",
+      "status": "in-wide",
+      "note": "embeds events.cornell.edu (sources notes)"
+    },
+    {
+      "id": "infosci",
+      "name": "Information Science",
+      "kind": "department",
+      "parent": "bowers",
+      "url": "https://infosci.cornell.edu",
+      "status": "in-wide",
+      "note": "Bowers college events are on events.cornell.edu"
+    },
+    {
+      "id": "stats",
+      "name": "Statistics and Data Science",
+      "kind": "department",
+      "parent": "bowers",
+      "url": "https://stat.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ece",
+      "name": "Electrical and Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.duffield.cornell.edu/ece",
+      "status": "in-wide",
+      "note": "Duffield events come from events.cornell.edu"
+    },
+    {
+      "id": "mae",
+      "name": "Mechanical and Aerospace Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.duffield.cornell.edu/mae",
+      "status": "in-wide",
+      "note": "Duffield events come from events.cornell.edu"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.bme.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "orie",
+      "name": "Operations Research and Information Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.orie.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cbe",
+      "name": "Chemical and Biomolecular Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.cheme.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "mse",
+      "name": "Materials Science and Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.mse.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://math.cornell.edu",
+      "status": "blocked",
+      "note": "A&S department site answers 403"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://physics.cornell.edu",
+      "status": "blocked",
+      "note": "A&S department site answers 403"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry and Chemical Biology",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://chemistry.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://economics.cornell.edu",
+      "status": "blocked",
+      "note": "A&S department site answers 403"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://psychology.cornell.edu",
+      "status": "blocked",
+      "note": "A&S department site answers 403"
+    },
+    {
+      "id": "government",
+      "name": "Government",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://government.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://history.cornell.edu",
+      "status": "blocked",
+      "note": "A&S department site answers 403"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://english.cornell.edu",
+      "status": "blocked",
+      "note": "A&S department site answers 403"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://philosophy.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "as",
+      "url": "https://sociology.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "mbg",
+      "name": "Molecular Biology and Genetics",
+      "kind": "department",
+      "parent": "cals",
+      "url": "https://mbg.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "nbb",
+      "name": "Neurobiology and Behavior",
+      "kind": "department",
+      "parent": "cals",
+      "url": "https://nbb.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "einaudi",
+      "name": "Mario Einaudi Center for International Studies",
+      "kind": "center",
+      "url": "https://einaudi.cornell.edu",
+      "status": "in-wide",
+      "note": "events page draws on events.cornell.edu"
+    },
+    {
+      "id": "humanities",
+      "name": "Society for the Humanities",
+      "kind": "center",
+      "parent": "as",
+      "url": "https://societyhumanities.as.cornell.edu",
+      "status": "in-wide",
+      "note": "events page draws on events.cornell.edu"
+    },
+    {
+      "id": "atkinson",
+      "name": "Cornell Atkinson Center for Sustainability",
+      "kind": "center",
+      "url": "https://www.atkinson.cornell.edu",
+      "status": "blocked",
+      "note": "Cloudflare challenge"
+    },
+    {
+      "id": "cis-ai",
+      "name": "Cornell AI initiative",
+      "kind": "institute",
+      "url": "https://ai.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "entrepreneurship",
+      "name": "Entrepreneurship at Cornell",
+      "kind": "center",
+      "url": "https://eship.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cpc",
+      "name": "Cornell Population Center",
+      "kind": "center",
+      "url": "https://pop.cornell.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sas",
+      "name": "South Asia Program",
+      "kind": "center",
+      "parent": "einaudi",
+      "url": "https://einaudi.cornell.edu/programs/south-asia-program",
+      "status": "in-wide",
+      "note": "Einaudi programs post to events.cornell.edu"
+    },
+    {
+      "id": "sa",
+      "name": "Student Assembly",
+      "kind": "student",
+      "url": "https://assembly.cornell.edu",
+      "status": "in-wide",
+      "note": "student orgs are on the CampusGroups feed we read"
+    },
+    {
+      "id": "gpsa",
+      "name": "Graduate and Professional Student Assembly",
+      "kind": "student",
+      "url": "https://assembly.cornell.edu",
+      "status": "in-wide",
+      "note": "student orgs are on the CampusGroups feed we read"
+    },
+    {
+      "id": "library",
+      "name": "Cornell University Library",
+      "kind": "library",
+      "url": "https://www.library.cornell.edu",
+      "status": "in-wide",
+      "note": "events page lists events.cornell.edu events"
+    },
+    {
+      "id": "johnson-museum",
+      "name": "Herbert F. Johnson Museum of Art",
+      "kind": "museum",
+      "url": "https://museum.cornell.edu",
+      "status": "no-feed",
+      "note": "upcoming page is HTML only"
+    },
+    {
+      "id": "career",
+      "name": "Cornell Career Services",
+      "kind": "other",
+      "url": "https://career.cornell.edu",
+      "status": "unchecked",
+      "note": "WordPress /feed/ is likely news, not events"
+    },
+    {
+      "id": "athletics",
+      "name": "Cornell Big Red Athletics",
+      "kind": "other",
+      "url": "https://cornellbigred.com",
+      "status": "unchecked"
+    }
+  ]
+}

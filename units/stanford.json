@@ -1,0 +1,472 @@
+{
+  "id": "stanford",
+  "name": "Stanford University",
+  "wide": [
+    "https://events.stanford.edu"
+  ],
+  "units": [
+    {
+      "id": "gsb",
+      "name": "Graduate School of Business",
+      "kind": "school",
+      "url": "https://www.gsb.stanford.edu",
+      "status": "no-feed",
+      "note": "events are a Coveo search page with no feed"
+    },
+    {
+      "id": "sustainability",
+      "name": "Stanford Doerr School of Sustainability",
+      "kind": "school",
+      "url": "https://sustainability.stanford.edu",
+      "status": "in-wide",
+      "note": "its events page lists events.stanford.edu events"
+    },
+    {
+      "id": "gse",
+      "name": "Graduate School of Education",
+      "kind": "school",
+      "url": "https://ed.stanford.edu",
+      "feeds": [
+        "https://ed.stanford.edu/jsonapi/node/event?sort=-created&page%5Blimit%5D=50&fields%5Bnode--event%5D=title,field_start_end_datetimes,field_location_name,body,path"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "engineering",
+      "name": "School of Engineering",
+      "kind": "school",
+      "url": "https://engineering.stanford.edu",
+      "status": "in-wide",
+      "note": "embeds the Localist widget of events.stanford.edu"
+    },
+    {
+      "id": "humsci",
+      "name": "School of Humanities and Sciences",
+      "kind": "school",
+      "url": "https://humsci.stanford.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only; departments run their own Drupal event lists"
+    },
+    {
+      "id": "law",
+      "name": "Stanford Law School",
+      "kind": "school",
+      "url": "https://law.stanford.edu",
+      "feeds": [
+        "https://law.stanford.edu/wp-json/tribe/events/v1/events"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "medicine",
+      "name": "School of Medicine",
+      "kind": "school",
+      "url": "https://med.stanford.edu",
+      "status": "in-wide",
+      "note": "Medicine events come from events.stanford.edu (sources notes)"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cs.stanford.edu",
+      "status": "in-wide",
+      "note": "its events page lists events.stanford.edu events"
+    },
+    {
+      "id": "ee",
+      "name": "Electrical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://ee.stanford.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed or calendar link"
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://me.stanford.edu",
+      "status": "in-wide",
+      "note": "its events page lists events.stanford.edu events"
+    },
+    {
+      "id": "bioe",
+      "name": "Bioengineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://bioengineering.stanford.edu",
+      "status": "in-wide",
+      "note": "embeds the Localist widget of events.stanford.edu"
+    },
+    {
+      "id": "cee",
+      "name": "Civil and Environmental Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cee.stanford.edu",
+      "status": "in-wide",
+      "note": "its defenses and seminars appear on events.stanford.edu"
+    },
+    {
+      "id": "msande",
+      "name": "Management Science and Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://msande.stanford.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "mse",
+      "name": "Materials Science and Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://mse.stanford.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "chemeng",
+      "name": "Chemical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cheme.stanford.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "aa",
+      "name": "Aeronautics and Astronautics",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://aa.stanford.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "humsci",
+      "url": "https://mathematics.stanford.edu",
+      "feeds": [
+        "https://mathematics.stanford.edu/jsonapi/node/hs_event?sort=-field_hs_event_date.value&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "kind": "department",
+      "parent": "humsci",
+      "url": "https://statistics.stanford.edu",
+      "feeds": [
+        "https://statistics.stanford.edu/jsonapi/node/hs_event?sort=-field_hs_event_date.value&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "humsci",
+      "url": "https://physics.stanford.edu",
+      "status": "no-feed",
+      "note": "hs_event feed had 0-2 events or duplicates (sources notes)"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "humsci",
+      "url": "https://chemistry.stanford.edu",
+      "feeds": [
+        "https://chemistry.stanford.edu/jsonapi/node/hs_event?sort=-field_hs_event_date.value&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "biology",
+      "name": "Biology",
+      "kind": "department",
+      "parent": "humsci",
+      "url": "https://biology.stanford.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "humsci",
+      "url": "https://economics.stanford.edu",
+      "feeds": [
+        "https://economics.stanford.edu/jsonapi/node/hs_event?sort=-changed&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "humsci",
+      "url": "https://psychology.stanford.edu",
+      "status": "no-feed",
+      "note": "hs_event feed had 0-2 events or duplicates (sources notes)"
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "humsci",
+      "url": "https://politicalscience.stanford.edu",
+      "status": "no-feed",
+      "note": "hs_event feed had 0-2 events or duplicates (sources notes)"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "humsci",
+      "url": "https://history.stanford.edu",
+      "feeds": [
+        "https://history.stanford.edu/jsonapi/node/hs_event?sort=-field_hs_event_date.value&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "humsci",
+      "url": "https://english.stanford.edu",
+      "feeds": [
+        "https://english.stanford.edu/jsonapi/node/hs_event?sort=-field_hs_event_date.value&page%5Blimit%5D=50&fields%5Bnode--hs_event%5D=title,field_hs_event_date,field_hs_event_location,body,path"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "humsci",
+      "url": "https://philosophy.stanford.edu",
+      "status": "no-feed",
+      "note": "hs_event feed had 0-2 events or duplicates (sources notes)"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "humsci",
+      "url": "https://sociology.stanford.edu",
+      "status": "no-feed",
+      "note": "hs_event feed had 0-2 events or duplicates (sources notes)"
+    },
+    {
+      "id": "linguistics",
+      "name": "Linguistics",
+      "kind": "department",
+      "parent": "humsci",
+      "url": "https://linguistics.stanford.edu",
+      "status": "no-feed",
+      "note": "hs_event feed had 0-2 events or duplicates (sources notes)"
+    },
+    {
+      "id": "earthsys",
+      "name": "Earth System Science",
+      "kind": "department",
+      "parent": "sustainability",
+      "url": "https://sustainability.stanford.edu/academics/departments/earth-system-science",
+      "status": "in-wide",
+      "note": "school events page draws on events.stanford.edu"
+    },
+    {
+      "id": "hai",
+      "name": "Institute for Human-Centered AI (HAI)",
+      "kind": "institute",
+      "url": "https://hai.stanford.edu",
+      "feeds": [
+        "https://hai.stanford.edu/cms/api/collections/events/entries"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "datascience",
+      "name": "Stanford Data Science",
+      "kind": "institute",
+      "url": "https://datascience.stanford.edu",
+      "status": "in-wide",
+      "note": "its /events now redirects to HAI, which we read"
+    },
+    {
+      "id": "fsi",
+      "name": "Freeman Spogli Institute for International Studies (FSI)",
+      "kind": "institute",
+      "url": "https://fsi.stanford.edu",
+      "feeds": [
+        "https://fsi.stanford.edu/jsonapi/node/event?sort=-field_event_periods.value&page%5Blimit%5D=50&fields%5Bnode--event%5D=title,field_event_periods,field_location,path,body"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "hoover",
+      "name": "Hoover Institution",
+      "kind": "institute",
+      "url": "https://www.hoover.org",
+      "feeds": [
+        "https://www.hoover.org/jsonapi/node/event?sort=-field_date&page%5Blimit%5D=50&fields%5Bnode--event%5D=title,field_date,field_end_date,field_location,body,path"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "siepr",
+      "name": "Stanford Institute for Economic Policy Research (SIEPR)",
+      "kind": "institute",
+      "url": "https://siepr.stanford.edu",
+      "status": "in-wide",
+      "note": "embeds the events.stanford.edu Localist widget; own feed had 1 upcoming"
+    },
+    {
+      "id": "shc",
+      "name": "Stanford Humanities Center",
+      "kind": "center",
+      "url": "https://shc.stanford.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "precourt",
+      "name": "Precourt Institute for Energy",
+      "kind": "institute",
+      "parent": "sustainability",
+      "url": "https://energy.stanford.edu",
+      "status": "in-wide",
+      "note": "embeds the events.stanford.edu Localist widget"
+    },
+    {
+      "id": "woods",
+      "name": "Woods Institute for the Environment",
+      "kind": "institute",
+      "parent": "sustainability",
+      "url": "https://woods.stanford.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cddrl",
+      "name": "Center on Democracy, Development and the Rule of Law",
+      "kind": "center",
+      "parent": "fsi",
+      "url": "https://cddrl.fsi.stanford.edu",
+      "status": "unchecked",
+      "note": "FSI centre; probably in the FSI feed"
+    },
+    {
+      "id": "aparc",
+      "name": "Shorenstein Asia-Pacific Research Center",
+      "kind": "center",
+      "parent": "fsi",
+      "url": "https://aparc.fsi.stanford.edu",
+      "status": "unchecked",
+      "note": "FSI centre; probably in the FSI feed"
+    },
+    {
+      "id": "cisac",
+      "name": "Center for International Security and Cooperation",
+      "kind": "center",
+      "parent": "fsi",
+      "url": "https://cisac.fsi.stanford.edu",
+      "status": "unchecked",
+      "note": "FSI centre; probably in the FSI feed"
+    },
+    {
+      "id": "bio-x",
+      "name": "Stanford Bio-X",
+      "kind": "institute",
+      "url": "https://biox.stanford.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "wu-tsai",
+      "name": "Wu Tsai Neurosciences Institute",
+      "kind": "institute",
+      "url": "https://neuroscience.stanford.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "slac",
+      "name": "SLAC National Accelerator Laboratory",
+      "kind": "center",
+      "url": "https://www6.slac.stanford.edu",
+      "status": "in-wide",
+      "note": "SLAC events come from events.stanford.edu (sources notes)"
+    },
+    {
+      "id": "longevity",
+      "name": "Stanford Center on Longevity",
+      "kind": "center",
+      "url": "https://longevity.stanford.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "dschool",
+      "name": "Hasso Plattner Institute of Design (d.school)",
+      "kind": "institute",
+      "parent": "engineering",
+      "url": "https://dschool.stanford.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ces",
+      "name": "Center for Entrepreneurial Studies",
+      "kind": "center",
+      "parent": "gsb",
+      "url": "https://www.gsb.stanford.edu/faculty-research/centers-initiatives/ces",
+      "status": "no-feed",
+      "note": "GSB events are a search page with no feed"
+    },
+    {
+      "id": "assu",
+      "name": "Associated Students of Stanford University (ASSU)",
+      "kind": "student",
+      "url": "https://assu.stanford.edu",
+      "status": "unchecked",
+      "note": "no public student-org platform (sources notes)"
+    },
+    {
+      "id": "gsc",
+      "name": "Graduate Student Council",
+      "kind": "student",
+      "url": "https://assu.stanford.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "library",
+      "name": "Stanford Libraries",
+      "kind": "library",
+      "url": "https://library.stanford.edu",
+      "status": "in-wide",
+      "note": "library talks (e.g. Branner) appear on events.stanford.edu"
+    },
+    {
+      "id": "cantor",
+      "name": "Cantor Arts Center",
+      "kind": "museum",
+      "url": "https://museum.stanford.edu",
+      "status": "blocked",
+      "note": "museum.stanford.edu answers a Cloudflare challenge"
+    },
+    {
+      "id": "career",
+      "name": "Career Education",
+      "kind": "other",
+      "url": "https://careered.stanford.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "live",
+      "name": "Stanford Live (Bing Concert Hall)",
+      "kind": "other",
+      "url": "https://live.stanford.edu",
+      "status": "unchecked"
+    }
+  ]
+}

@@ -1,0 +1,529 @@
+{
+  "id": "harvard",
+  "name": "Harvard University",
+  "wide": [
+    "https://www.trumba.com/calendars/gazette.ics",
+    "https://static-prod-us-east-1.campusgroups.com/ical/harvard/ical_harvard.ics"
+  ],
+  "units": [
+    {
+      "id": "fas",
+      "name": "Faculty of Arts and Sciences",
+      "kind": "school",
+      "url": "https://www.fas.harvard.edu",
+      "status": "blocked",
+      "note": "fas.harvard.edu/events answers Akamai 403 Access Denied"
+    },
+    {
+      "id": "college",
+      "name": "Harvard College",
+      "kind": "school",
+      "parent": "fas",
+      "url": "https://college.harvard.edu",
+      "status": "blocked",
+      "note": "calendar.college.harvard.edu is Localist but login-gated (API 404)"
+    },
+    {
+      "id": "gsas",
+      "name": "Harvard Kenneth C. Griffin Graduate School of Arts and Sciences",
+      "kind": "school",
+      "parent": "fas",
+      "url": "https://gsas.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "seas",
+      "name": "John A. Paulson School of Engineering and Applied Sciences",
+      "kind": "school",
+      "url": "https://seas.harvard.edu",
+      "status": "no-feed",
+      "note": "Drupal HTML events; its events.seas.harvard.edu Localist API answers but holds 1 event"
+    },
+    {
+      "id": "hbs",
+      "name": "Harvard Business School",
+      "kind": "school",
+      "url": "https://www.hbs.edu",
+      "status": "no-feed",
+      "note": "www.hbs.edu/events answers 202 with an empty page"
+    },
+    {
+      "id": "hds",
+      "name": "Harvard Divinity School",
+      "kind": "school",
+      "url": "https://hds.harvard.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "gsd",
+      "name": "Harvard Graduate School of Design",
+      "kind": "school",
+      "url": "https://www.gsd.harvard.edu",
+      "status": "no-feed",
+      "note": "public-programs page is Drupal/HTML only"
+    },
+    {
+      "id": "gse",
+      "name": "Harvard Graduate School of Education",
+      "kind": "school",
+      "url": "https://www.gse.harvard.edu",
+      "status": "no-feed",
+      "note": "Drupal/HTML only"
+    },
+    {
+      "id": "hks",
+      "name": "Harvard Kennedy School",
+      "kind": "school",
+      "url": "https://www.hks.harvard.edu",
+      "status": "no-feed",
+      "note": "Drupal/HTML only; trumba.com/calendars/hks.ics exists but is empty"
+    },
+    {
+      "id": "hls",
+      "name": "Harvard Law School",
+      "kind": "school",
+      "url": "https://hls.harvard.edu",
+      "status": "blocked",
+      "note": "its Tribe events API answers 401"
+    },
+    {
+      "id": "hms",
+      "name": "Harvard Medical School",
+      "kind": "school",
+      "url": "https://hms.harvard.edu",
+      "feeds": [
+        "https://static-prod-us-east-1.campusgroups.com/ical/hms/ical_hms.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "hsdm",
+      "name": "Harvard School of Dental Medicine",
+      "kind": "school",
+      "url": "https://hsdm.harvard.edu",
+      "status": "blocked",
+      "note": "events page answers 403 Access Denied"
+    },
+    {
+      "id": "hsph",
+      "name": "Harvard T.H. Chan School of Public Health",
+      "kind": "school",
+      "url": "https://hsph.harvard.edu",
+      "feeds": [
+        "https://hsph.harvard.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "radcliffe",
+      "name": "Harvard Radcliffe Institute",
+      "kind": "school",
+      "url": "https://www.radcliffe.harvard.edu",
+      "status": "no-feed",
+      "note": "events-and-exhibitions page is HTML only"
+    },
+    {
+      "id": "dce",
+      "name": "Division of Continuing Education (Harvard Extension School)",
+      "kind": "school",
+      "url": "https://dce.harvard.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://seas.harvard.edu/computer-science",
+      "status": "no-feed",
+      "note": "on the SEAS HTML events listing"
+    },
+    {
+      "id": "ee",
+      "name": "Electrical Engineering",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://seas.harvard.edu/electrical-engineering",
+      "status": "unchecked"
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://seas.harvard.edu/mechanical-engineering",
+      "status": "unchecked"
+    },
+    {
+      "id": "bioe",
+      "name": "Bioengineering",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://seas.harvard.edu/bioengineering",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "fas",
+      "url": "https://www.math.harvard.edu",
+      "status": "blocked",
+      "note": "events page answers a Cloudflare challenge"
+    },
+    {
+      "id": "stats",
+      "name": "Department of Statistics",
+      "kind": "department",
+      "parent": "fas",
+      "url": "https://statistics.fas.harvard.edu",
+      "status": "blocked",
+      "note": "403 Access Denied"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "parent": "fas",
+      "url": "https://www.physics.harvard.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry and Chemical Biology",
+      "kind": "department",
+      "parent": "fas",
+      "url": "https://www.chemistry.harvard.edu",
+      "status": "blocked",
+      "note": "403 Access Denied"
+    },
+    {
+      "id": "mcb",
+      "name": "Department of Molecular and Cellular Biology",
+      "kind": "department",
+      "parent": "fas",
+      "url": "https://www.mcb.harvard.edu",
+      "status": "unchecked",
+      "note": "/events/ is 404"
+    },
+    {
+      "id": "oeb",
+      "name": "Department of Organismic and Evolutionary Biology",
+      "kind": "department",
+      "parent": "fas",
+      "url": "https://oeb.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "fas",
+      "url": "https://economics.harvard.edu",
+      "status": "blocked",
+      "note": "403 Access Denied"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "fas",
+      "url": "https://psychology.fas.harvard.edu",
+      "status": "blocked",
+      "note": "403 Access Denied"
+    },
+    {
+      "id": "government",
+      "name": "Department of Government",
+      "kind": "department",
+      "parent": "fas",
+      "url": "https://www.gov.harvard.edu",
+      "status": "unchecked",
+      "note": "/calendar is 404"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "fas",
+      "url": "https://history.fas.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "parent": "fas",
+      "url": "https://english.fas.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "fas",
+      "url": "https://philosophy.fas.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology",
+      "kind": "department",
+      "parent": "fas",
+      "url": "https://sociology.fas.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "kempner",
+      "name": "Kempner Institute for the Study of Natural and Artificial Intelligence",
+      "kind": "institute",
+      "url": "https://kempnerinstitute.harvard.edu",
+      "feeds": [
+        "https://kempnerinstitute.harvard.edu/events-calendar/?ical=1"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "berkman",
+      "name": "Berkman Klein Center for Internet & Society",
+      "kind": "center",
+      "parent": "hls",
+      "url": "https://cyber.harvard.edu",
+      "feeds": [
+        "https://cyber.harvard.edu/events/feed"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "hdsi",
+      "name": "Harvard Data Science Initiative",
+      "kind": "institute",
+      "url": "https://datascience.harvard.edu",
+      "status": "no-feed",
+      "note": "WordPress events page, ?ical=1 gives 0 events"
+    },
+    {
+      "id": "salata",
+      "name": "Salata Institute for Climate and Sustainability",
+      "kind": "institute",
+      "url": "https://salatainstitute.harvard.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "huce",
+      "name": "Harvard University Center for the Environment",
+      "kind": "center",
+      "url": "https://environment.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "belfer",
+      "name": "Belfer Center for Science and International Affairs",
+      "kind": "center",
+      "parent": "hks",
+      "url": "https://www.belfercenter.org",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "ash",
+      "name": "Ash Center for Democratic Governance and Innovation",
+      "kind": "center",
+      "parent": "hks",
+      "url": "https://ash.harvard.edu",
+      "status": "no-feed",
+      "note": "WordPress events, ?ical=1 gives 0 events"
+    },
+    {
+      "id": "iop",
+      "name": "Institute of Politics",
+      "kind": "institute",
+      "parent": "hks",
+      "url": "https://iop.harvard.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "shorenstein",
+      "name": "Shorenstein Center on Media, Politics and Public Policy",
+      "kind": "center",
+      "parent": "hks",
+      "url": "https://shorensteincenter.org",
+      "status": "unchecked"
+    },
+    {
+      "id": "mahindra",
+      "name": "Mahindra Humanities Center",
+      "kind": "center",
+      "parent": "fas",
+      "url": "https://mahindrahumanities.fas.harvard.edu",
+      "status": "unchecked",
+      "note": "did not answer within 15 s"
+    },
+    {
+      "id": "wcfia",
+      "name": "Weatherhead Center for International Affairs",
+      "kind": "center",
+      "parent": "fas",
+      "url": "https://wcfia.harvard.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "fairbank",
+      "name": "Fairbank Center for Chinese Studies",
+      "kind": "center",
+      "parent": "fas",
+      "url": "https://fairbank.fas.harvard.edu",
+      "status": "feed",
+      "feeds": [
+        "https://fairbank.fas.harvard.edu/events/?ical=1"
+      ]
+    },
+    {
+      "id": "davis",
+      "name": "Davis Center for Russian and Eurasian Studies",
+      "kind": "center",
+      "parent": "fas",
+      "url": "https://daviscenter.fas.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "reischauer",
+      "name": "Reischauer Institute of Japanese Studies",
+      "kind": "institute",
+      "parent": "fas",
+      "url": "https://rijs.fas.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "drclas",
+      "name": "David Rockefeller Center for Latin American Studies",
+      "kind": "center",
+      "url": "https://drclas.harvard.edu",
+      "status": "blocked",
+      "note": "403 Access Denied"
+    },
+    {
+      "id": "cmes",
+      "name": "Center for Middle Eastern Studies",
+      "kind": "center",
+      "parent": "fas",
+      "url": "https://cmes.fas.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cmsa",
+      "name": "Center of Mathematical Sciences and Applications",
+      "kind": "center",
+      "url": "https://cmsa.fas.harvard.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "ilab",
+      "name": "Harvard Innovation Labs",
+      "kind": "center",
+      "url": "https://innovationlabs.harvard.edu",
+      "status": "no-feed",
+      "note": "upcoming events page is HTML only"
+    },
+    {
+      "id": "wyss",
+      "name": "Wyss Institute for Biologically Inspired Engineering",
+      "kind": "institute",
+      "url": "https://wyss.harvard.edu",
+      "status": "no-feed",
+      "note": "WordPress events, ?ical=1 gives 0 events"
+    },
+    {
+      "id": "hsci",
+      "name": "Harvard Stem Cell Institute",
+      "kind": "institute",
+      "url": "https://hsci.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "hua",
+      "name": "Harvard Undergraduate Association",
+      "kind": "student",
+      "url": "https://www.harvardua.org",
+      "status": "in-wide",
+      "note": "student-org events are on CampusGroups"
+    },
+    {
+      "id": "hgc",
+      "name": "Harvard Graduate Council",
+      "kind": "student",
+      "url": "https://hgc.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "gsc",
+      "name": "GSAS Student Council",
+      "kind": "student",
+      "parent": "gsas",
+      "url": "https://gsas.harvard.edu/student-life/student-council",
+      "status": "unchecked"
+    },
+    {
+      "id": "houses",
+      "name": "Harvard College Houses",
+      "kind": "student",
+      "parent": "college",
+      "url": "https://college.harvard.edu/campus-life/house-life",
+      "status": "unchecked"
+    },
+    {
+      "id": "library",
+      "name": "Harvard Library",
+      "kind": "library",
+      "url": "https://library.harvard.edu",
+      "status": "feed",
+      "feeds": [
+        "https://libcal.library.harvard.edu/ical_subscribe.php?src=p&cid=15049"
+      ]
+    },
+    {
+      "id": "artmuseums",
+      "name": "Harvard Art Museums",
+      "kind": "museum",
+      "url": "https://harvardartmuseums.org",
+      "status": "no-feed",
+      "note": "calendar page is HTML only"
+    },
+    {
+      "id": "hmsc",
+      "name": "Harvard Museums of Science & Culture",
+      "kind": "museum",
+      "url": "https://hmsc.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ocs",
+      "name": "Mignone Center for Career Success",
+      "kind": "other",
+      "url": "https://careerservices.fas.harvard.edu",
+      "status": "no-feed",
+      "note": "WordPress events, ?ical=1 gives 0 events"
+    },
+    {
+      "id": "arts",
+      "name": "Office for the Arts at Harvard",
+      "kind": "other",
+      "url": "https://ofa.fas.harvard.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "athletics",
+      "name": "Harvard Athletics",
+      "kind": "other",
+      "url": "https://gocrimson.com",
+      "status": "unchecked"
+    }
+  ]
+}

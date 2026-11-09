@@ -1,0 +1,462 @@
+{
+  "id": "mit",
+  "name": "Massachusetts Institute of Technology",
+  "wide": [
+    "https://calendar.mit.edu",
+    "https://static-prod-us-east-1.campusgroups.com/ical/mit/ical_mit.ics"
+  ],
+  "units": [
+    {
+      "id": "sap",
+      "name": "School of Architecture and Planning",
+      "kind": "school",
+      "url": "https://sap.mit.edu",
+      "status": "unchecked",
+      "note": "sap.mit.edu/events answers 404"
+    },
+    {
+      "id": "engineering",
+      "name": "School of Engineering",
+      "kind": "school",
+      "url": "https://engineering.mit.edu",
+      "status": "no-feed",
+      "note": "events page is HTML with no feed or calendar.mit.edu embed"
+    },
+    {
+      "id": "shass",
+      "name": "School of Humanities, Arts, and Social Sciences",
+      "kind": "school",
+      "url": "https://shass.mit.edu",
+      "status": "in-wide",
+      "note": "events page pulls from calendar.mit.edu (Localist)"
+    },
+    {
+      "id": "sloan",
+      "name": "MIT Sloan School of Management",
+      "kind": "school",
+      "url": "https://mitsloan.mit.edu",
+      "feeds": [
+        "https://static-prod-us-east-1.campusgroups.com/ical/mitsloan/ical_mitsloan.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "science",
+      "name": "School of Science",
+      "kind": "school",
+      "url": "https://science.mit.edu",
+      "status": "in-wide",
+      "note": "events page embeds calendar.mit.edu (Localist)"
+    },
+    {
+      "id": "computing",
+      "name": "MIT Schwarzman College of Computing",
+      "kind": "school",
+      "url": "https://computing.mit.edu",
+      "status": "blocked",
+      "note": "403 challenge"
+    },
+    {
+      "id": "eecs",
+      "name": "Electrical Engineering and Computer Science (EECS)",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://www.eecs.mit.edu",
+      "status": "in-wide",
+      "note": "its events come from calendar.mit.edu (sources note)"
+    },
+    {
+      "id": "meche",
+      "name": "Mechanical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://meche.mit.edu",
+      "status": "in-wide",
+      "note": "events calendar embeds calendar.mit.edu"
+    },
+    {
+      "id": "be",
+      "name": "Biological Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://be.mit.edu",
+      "status": "in-wide",
+      "note": "events page embeds calendar.mit.edu"
+    },
+    {
+      "id": "cheme",
+      "name": "Chemical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cheme.mit.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cee",
+      "name": "Civil and Environmental Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cee.mit.edu",
+      "status": "no-feed",
+      "note": "WordPress events page, HTML only"
+    },
+    {
+      "id": "aeroastro",
+      "name": "Aeronautics and Astronautics",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://aeroastro.mit.edu",
+      "status": "feed",
+      "feeds": [
+        "https://aeroastro.mit.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "dmse",
+      "name": "Materials Science and Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://dmse.mit.edu",
+      "status": "no-feed",
+      "note": "WordPress events page, HTML only"
+    },
+    {
+      "id": "nse",
+      "name": "Nuclear Science and Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://web.mit.edu/nse",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://math.mit.edu",
+      "status": "in-wide",
+      "note": "site embeds calendar.mit.edu"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://physics.mit.edu",
+      "status": "blocked",
+      "note": "403 challenge"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://chemistry.mit.edu",
+      "status": "in-wide",
+      "note": "events page embeds calendar.mit.edu"
+    },
+    {
+      "id": "biology",
+      "name": "Biology",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://biology.mit.edu",
+      "status": "in-wide",
+      "note": "events page uses the Localist calendar"
+    },
+    {
+      "id": "bcs",
+      "name": "Brain and Cognitive Sciences",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://bcs.mit.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "eaps",
+      "name": "Earth, Atmospheric and Planetary Sciences",
+      "kind": "department",
+      "parent": "science",
+      "url": "https://eaps.mit.edu",
+      "status": "feed",
+      "feeds": [
+        "https://eaps.mit.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "shass",
+      "url": "https://economics.mit.edu",
+      "status": "in-wide",
+      "note": "events page lists calendar.mit.edu events"
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "shass",
+      "url": "https://polisci.mit.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "shass",
+      "url": "https://history.mit.edu",
+      "status": "no-feed",
+      "note": "WordPress site, events HTML only"
+    },
+    {
+      "id": "literature",
+      "name": "Literature",
+      "kind": "department",
+      "parent": "shass",
+      "url": "https://lit.mit.edu",
+      "status": "unchecked",
+      "note": "site did not answer"
+    },
+    {
+      "id": "philosophy",
+      "name": "Linguistics and Philosophy",
+      "kind": "department",
+      "parent": "shass",
+      "url": "https://philosophy.mit.edu",
+      "status": "no-feed",
+      "note": "events page HTML only"
+    },
+    {
+      "id": "anthropology",
+      "name": "Anthropology",
+      "kind": "department",
+      "parent": "shass",
+      "url": "https://anthropology.mit.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sts",
+      "name": "Program in Science, Technology, and Society",
+      "kind": "department",
+      "parent": "shass",
+      "url": "https://sts-program.mit.edu",
+      "status": "feed",
+      "feeds": [
+        "https://sts-program.mit.edu/wp-json/tribe/events/v1/events"
+      ]
+    },
+    {
+      "id": "architecture",
+      "name": "Department of Architecture",
+      "kind": "department",
+      "parent": "sap",
+      "url": "https://architecture.mit.edu",
+      "status": "no-feed",
+      "note": "events page HTML only"
+    },
+    {
+      "id": "dusp",
+      "name": "Urban Studies and Planning (DUSP)",
+      "kind": "department",
+      "parent": "sap",
+      "url": "https://dusp.mit.edu",
+      "status": "in-wide",
+      "note": "events page links calendar.mit.edu"
+    },
+    {
+      "id": "medialab",
+      "name": "MIT Media Lab",
+      "kind": "center",
+      "parent": "sap",
+      "url": "https://www.media.mit.edu",
+      "status": "no-feed",
+      "note": "robots.txt disallows /api/; events page HTML"
+    },
+    {
+      "id": "csail",
+      "name": "Computer Science and Artificial Intelligence Laboratory (CSAIL)",
+      "kind": "institute",
+      "url": "https://www.csail.mit.edu",
+      "feeds": [
+        "https://www.csail.mit.edu/event_calendar.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "lids",
+      "name": "Laboratory for Information and Decision Systems (LIDS)",
+      "kind": "center",
+      "url": "https://lids.mit.edu",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/db07c1d60d3545a66a2babee49948f58082ce09baa8f0a6eef0d5ea113641e43%40group.calendar.google.com/public/basic.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "idss",
+      "name": "Institute for Data, Systems, and Society (IDSS)",
+      "kind": "institute",
+      "url": "https://idss.mit.edu",
+      "status": "in-wide",
+      "note": "its events come from calendar.mit.edu (sources note)"
+    },
+    {
+      "id": "sdsc",
+      "name": "Statistics and Data Science Center",
+      "kind": "center",
+      "parent": "idss",
+      "url": "https://stat.mit.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "mitei",
+      "name": "MIT Energy Initiative",
+      "kind": "institute",
+      "url": "https://energy.mit.edu",
+      "status": "blocked",
+      "note": "403 (sources note)"
+    },
+    {
+      "id": "climate",
+      "name": "MIT Climate Project",
+      "kind": "institute",
+      "url": "https://climate.mit.edu",
+      "status": "blocked",
+      "note": "403"
+    },
+    {
+      "id": "cis",
+      "name": "Center for International Studies",
+      "kind": "center",
+      "url": "https://cis.mit.edu",
+      "status": "no-feed",
+      "note": "no event feed (sources note)"
+    },
+    {
+      "id": "koch",
+      "name": "Koch Institute for Integrative Cancer Research",
+      "kind": "institute",
+      "url": "https://ki.mit.edu",
+      "status": "no-feed",
+      "note": "no event feed (sources note)"
+    },
+    {
+      "id": "mcgovern",
+      "name": "McGovern Institute for Brain Research",
+      "kind": "institute",
+      "url": "https://mcgovern.mit.edu",
+      "status": "in-wide",
+      "note": "events page embeds calendar.mit.edu"
+    },
+    {
+      "id": "broad",
+      "name": "Broad Institute",
+      "kind": "institute",
+      "url": "https://www.broadinstitute.org",
+      "status": "no-feed",
+      "note": "no event feed (sources note)"
+    },
+    {
+      "id": "whitehead",
+      "name": "Whitehead Institute",
+      "kind": "institute",
+      "url": "https://wi.mit.edu",
+      "status": "no-feed",
+      "note": "no event feed (sources note)"
+    },
+    {
+      "id": "picower",
+      "name": "Picower Institute for Learning and Memory",
+      "kind": "institute",
+      "url": "https://picower.mit.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "trust",
+      "name": "Martin Trust Center for MIT Entrepreneurship",
+      "kind": "center",
+      "parent": "sloan",
+      "url": "https://entrepreneurship.mit.edu",
+      "status": "unchecked",
+      "note": "WordPress events calendar, feed not tested"
+    },
+    {
+      "id": "jameel",
+      "name": "Jameel Clinic (AI and health)",
+      "kind": "center",
+      "url": "https://jclinic.mit.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "mitibm",
+      "name": "MIT-IBM Watson AI Lab",
+      "kind": "center",
+      "url": "https://mitibmwatsonailab.mit.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ceepr",
+      "name": "Center for Energy and Environmental Policy Research",
+      "kind": "center",
+      "url": "https://ceepr.mit.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ua",
+      "name": "Undergraduate Association",
+      "kind": "student",
+      "url": "https://ua.mit.edu",
+      "status": "no-feed",
+      "note": "site has no event feed (student orgs come through CampusGroups)"
+    },
+    {
+      "id": "gsc",
+      "name": "Graduate Student Council",
+      "kind": "student",
+      "url": "https://gsc.mit.edu",
+      "status": "no-feed",
+      "note": "WordPress site, events HTML only"
+    },
+    {
+      "id": "libraries",
+      "name": "MIT Libraries",
+      "kind": "library",
+      "url": "https://libraries.mit.edu",
+      "status": "in-wide",
+      "note": "events page pulls from calendar.mit.edu"
+    },
+    {
+      "id": "museum",
+      "name": "MIT Museum",
+      "kind": "museum",
+      "url": "https://mitmuseum.mit.edu",
+      "status": "unchecked",
+      "note": "answered 429"
+    },
+    {
+      "id": "list",
+      "name": "MIT List Visual Arts Center",
+      "kind": "museum",
+      "url": "https://listart.mit.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "arts",
+      "name": "Arts at MIT",
+      "kind": "other",
+      "url": "https://arts.mit.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "capd",
+      "name": "Career Advising and Professional Development (CAPD)",
+      "kind": "other",
+      "url": "https://capd.mit.edu",
+      "status": "no-feed",
+      "note": "events page HTML only (employer events are on Handshake)"
+    }
+  ]
+}

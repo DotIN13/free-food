@@ -1,0 +1,394 @@
+{
+ "id": "mcgill",
+ "name": "McGill University",
+ "wide": [],
+ "units": [
+  {
+   "id": "macdonald",
+   "name": "Faculty of Agricultural and Environmental Sciences",
+   "kind": "school",
+   "url": "https://www.mcgill.ca/macdonald/",
+   "status": "unchecked"
+  },
+  {
+   "id": "arts",
+   "name": "Faculty of Arts",
+   "kind": "school",
+   "url": "https://www.mcgill.ca/arts/",
+   "status": "blocked",
+   "note": "its /channels/events page answers 403 (Azure WAF); the channels RSS it links is news"
+  },
+  {
+   "id": "dentistry",
+   "name": "Faculty of Dental Medicine and Oral Health Sciences",
+   "kind": "school",
+   "url": "https://www.mcgill.ca/dentistry/",
+   "status": "unchecked"
+  },
+  {
+   "id": "education",
+   "name": "Faculty of Education",
+   "kind": "school",
+   "url": "https://www.mcgill.ca/education/",
+   "status": "unchecked"
+  },
+  {
+   "id": "engineering",
+   "name": "Faculty of Engineering",
+   "kind": "school",
+   "url": "https://www.mcgill.ca/engineering/",
+   "status": "blocked",
+   "note": "its /channels/events page answers 403 (Azure WAF); the channels RSS it links is news"
+  },
+  {
+   "id": "law",
+   "name": "Faculty of Law",
+   "kind": "school",
+   "url": "https://www.mcgill.ca/law/",
+   "status": "blocked",
+   "note": "its /channels/events page answers 403 (Azure WAF); the channels RSS it links is news"
+  },
+  {
+   "id": "desautels",
+   "name": "Desautels Faculty of Management",
+   "kind": "school",
+   "url": "https://www.mcgill.ca/desautels/",
+   "status": "blocked",
+   "note": "its /channels/events page answers 403 (Azure WAF); the channels RSS it links is news"
+  },
+  {
+   "id": "medicine",
+   "name": "Faculty of Medicine and Health Sciences",
+   "kind": "school",
+   "url": "https://www.mcgill.ca/medhealthsci/",
+   "status": "blocked",
+   "note": "its /channels/events page answers 403 (Azure WAF); the channels RSS it links is news"
+  },
+  {
+   "id": "music",
+   "name": "Schulich School of Music",
+   "kind": "school",
+   "url": "https://www.mcgill.ca/music/",
+   "status": "unchecked"
+  },
+  {
+   "id": "science",
+   "name": "Faculty of Science",
+   "kind": "school",
+   "url": "https://www.mcgill.ca/science/",
+   "status": "blocked",
+   "note": "its /channels/events page answers 403 (Azure WAF); the channels RSS it links is news"
+  },
+  {
+   "id": "scs",
+   "name": "School of Continuing Studies",
+   "kind": "school",
+   "url": "https://www.mcgill.ca/continuingstudies/",
+   "status": "unchecked"
+  },
+  {
+   "id": "gps",
+   "name": "Graduate and Postdoctoral Studies",
+   "kind": "school",
+   "url": "https://www.mcgill.ca/gps/",
+   "status": "unchecked"
+  },
+  {
+   "id": "cs",
+   "name": "School of Computer Science",
+   "kind": "department",
+   "parent": "science",
+   "url": "https://www.cs.mcgill.ca",
+   "status": "no-feed",
+   "note": "cs.mcgill.ca events page HTML only"
+  },
+  {
+   "id": "ece",
+   "name": "Electrical and Computer Engineering",
+   "kind": "department",
+   "parent": "engineering",
+   "url": "https://www.mcgill.ca/ece/",
+   "status": "unchecked"
+  },
+  {
+   "id": "meche",
+   "name": "Mechanical Engineering",
+   "kind": "department",
+   "parent": "engineering",
+   "url": "https://www.mcgill.ca/mecheng/",
+   "status": "unchecked"
+  },
+  {
+   "id": "bioeng",
+   "name": "Bioengineering",
+   "kind": "department",
+   "parent": "engineering",
+   "url": "https://www.mcgill.ca/bioengineering/",
+   "status": "unchecked"
+  },
+  {
+   "id": "chemeng",
+   "name": "Chemical Engineering",
+   "kind": "department",
+   "parent": "engineering",
+   "url": "https://www.mcgill.ca/chemeng/",
+   "status": "unchecked"
+  },
+  {
+   "id": "civil",
+   "name": "Civil Engineering",
+   "kind": "department",
+   "parent": "engineering",
+   "url": "https://www.mcgill.ca/civil/",
+   "status": "unchecked"
+  },
+  {
+   "id": "math",
+   "name": "Mathematics and Statistics",
+   "kind": "department",
+   "parent": "science",
+   "url": "https://www.mcgill.ca/mathstat/",
+   "status": "unchecked"
+  },
+  {
+   "id": "physics",
+   "name": "Physics",
+   "kind": "department",
+   "parent": "science",
+   "url": "https://www.physics.mcgill.ca",
+   "status": "unchecked"
+  },
+  {
+   "id": "chemistry",
+   "name": "Chemistry",
+   "kind": "department",
+   "parent": "science",
+   "url": "https://www.mcgill.ca/chemistry/",
+   "status": "unchecked"
+  },
+  {
+   "id": "biology",
+   "name": "Biology",
+   "kind": "department",
+   "parent": "science",
+   "url": "https://www.mcgill.ca/biology/",
+   "status": "unchecked"
+  },
+  {
+   "id": "psychology",
+   "name": "Psychology",
+   "kind": "department",
+   "parent": "science",
+   "url": "https://www.mcgill.ca/psychology/",
+   "status": "unchecked"
+  },
+  {
+   "id": "economics",
+   "name": "Economics",
+   "kind": "department",
+   "parent": "arts",
+   "url": "https://www.mcgill.ca/economics/",
+   "status": "blocked",
+   "note": "its /channels/events page answers 403 (Azure WAF); the channels RSS it links is news"
+  },
+  {
+   "id": "polisci",
+   "name": "Political Science",
+   "kind": "department",
+   "parent": "arts",
+   "url": "https://www.mcgill.ca/politicalscience/",
+   "status": "unchecked"
+  },
+  {
+   "id": "history",
+   "name": "History and Classical Studies",
+   "kind": "department",
+   "parent": "arts",
+   "url": "https://www.mcgill.ca/history/",
+   "status": "unchecked"
+  },
+  {
+   "id": "english",
+   "name": "English",
+   "kind": "department",
+   "parent": "arts",
+   "url": "https://www.mcgill.ca/english/",
+   "status": "unchecked"
+  },
+  {
+   "id": "philosophy",
+   "name": "Philosophy",
+   "kind": "department",
+   "parent": "arts",
+   "url": "https://www.mcgill.ca/philosophy/",
+   "status": "unchecked"
+  },
+  {
+   "id": "sociology",
+   "name": "Sociology",
+   "kind": "department",
+   "parent": "arts",
+   "url": "https://www.mcgill.ca/sociology/",
+   "status": "unchecked"
+  },
+  {
+   "id": "epi",
+   "name": "Epidemiology, Biostatistics and Occupational Health",
+   "kind": "department",
+   "parent": "medicine",
+   "url": "https://www.mcgill.ca/epi-biostat-occh/",
+   "status": "unchecked"
+  },
+  {
+   "id": "mila",
+   "name": "Mila – Quebec AI Institute",
+   "kind": "institute",
+   "url": "https://mila.quebec",
+   "status": "no-feed",
+   "note": "events page offers only per-event data: calendar links, no feed"
+  },
+  {
+   "id": "cdsi",
+   "name": "Computational and Data Systems Initiative",
+   "kind": "institute",
+   "url": "https://www.mcgill.ca/cdsi/",
+   "status": "unchecked"
+  },
+  {
+   "id": "maxbell",
+   "name": "Max Bell School of Public Policy",
+   "kind": "institute",
+   "parent": "arts",
+   "url": "https://www.mcgill.ca/maxbellschool/",
+   "status": "blocked",
+   "note": "its /channels/events page answers 403 (Azure WAF); the channels RSS it links is news"
+  },
+  {
+   "id": "misc",
+   "name": "McGill Institute for the Study of Canada",
+   "kind": "institute",
+   "parent": "arts",
+   "url": "https://www.mcgill.ca/misc/",
+   "status": "unchecked"
+  },
+  {
+   "id": "ihsp",
+   "name": "Institute for Health and Social Policy",
+   "kind": "institute",
+   "url": "https://www.mcgill.ca/ihsp/",
+   "status": "unchecked"
+  },
+  {
+   "id": "bieler",
+   "name": "Bieler School of Environment",
+   "kind": "institute",
+   "url": "https://www.mcgill.ca/bieler/",
+   "status": "unchecked"
+  },
+  {
+   "id": "trottier",
+   "name": "Trottier Institute for Sustainability in Engineering and Design",
+   "kind": "institute",
+   "parent": "engineering",
+   "url": "https://www.mcgill.ca/tised/",
+   "status": "unchecked"
+  },
+  {
+   "id": "neuro",
+   "name": "The Neuro (Montreal Neurological Institute-Hospital)",
+   "kind": "institute",
+   "parent": "medicine",
+   "url": "https://www.mcgill.ca/neuro/",
+   "status": "no-feed",
+   "note": "site lists events as HTML; channels RSS is news"
+  },
+  {
+   "id": "goodman",
+   "name": "Rosalind and Morris Goodman Cancer Institute",
+   "kind": "institute",
+   "parent": "medicine",
+   "url": "https://www.mcgill.ca/gci/",
+   "status": "unchecked"
+  },
+  {
+   "id": "dobson",
+   "name": "Dobson Centre for Entrepreneurship",
+   "kind": "center",
+   "parent": "desautels",
+   "url": "https://www.mcgill.ca/dobson/",
+   "status": "blocked",
+   "note": "its /channels/events page answers 403 (Azure WAF); the channels RSS it links is news"
+  },
+  {
+   "id": "iplai",
+   "name": "Moving Humanities / Institute for the Public Life of Arts and Ideas",
+   "kind": "institute",
+   "parent": "arts",
+   "url": "https://www.mcgill.ca/iplai/",
+   "status": "unchecked"
+  },
+  {
+   "id": "ssmu",
+   "name": "Students' Society of McGill University (SSMU)",
+   "kind": "student",
+   "url": "https://ssmu.ca",
+   "status": "no-feed",
+   "note": "its ics (/events/?ical=1) holds only 2019 events (sources note)"
+  },
+  {
+   "id": "pgss",
+   "name": "Post-Graduate Students' Society (PGSS)",
+   "kind": "student",
+   "url": "https://pgss.mcgill.ca",
+   "status": "no-feed",
+   "note": "site calendar is a FullCalendar page, no feed linked"
+  },
+  {
+   "id": "rez",
+   "name": "Residence Life (Rez)",
+   "kind": "student",
+   "url": "https://www.mcgill.ca/students/housing/",
+   "status": "unchecked"
+  },
+  {
+   "id": "libraries",
+   "name": "McGill University Libraries",
+   "kind": "library",
+   "url": "https://www.mcgill.ca/library/",
+   "feeds": [
+    "https://libraryrooms.mcgill.ca/ical_subscribe.php?src=p&cid=8219"
+   ],
+   "status": "feed"
+  },
+  {
+   "id": "redpath",
+   "name": "Redpath Museum",
+   "kind": "museum",
+   "url": "https://www.mcgill.ca/redpath/",
+   "status": "no-feed",
+   "note": "channels RSS is news; events channel behind the WAF"
+  },
+  {
+   "id": "mccord",
+   "name": "McCord Stewart Museum",
+   "kind": "museum",
+   "url": "https://www.musee-mccord-stewart.ca",
+   "status": "unchecked"
+  },
+  {
+   "id": "caps",
+   "name": "Career Planning Service (CaPS)",
+   "kind": "other",
+   "url": "https://www.mcgill.ca/caps/",
+   "status": "blocked",
+   "note": "events are on myFuture, behind a login"
+  },
+  {
+   "id": "athletics",
+   "name": "McGill Athletics and Recreation",
+   "kind": "other",
+   "url": "https://mcgillathletics.ca",
+   "status": "unchecked"
+  }
+ ]
+}

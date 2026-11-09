@@ -1,0 +1,481 @@
+{
+ "id": "tsinghua",
+ "name": "Tsinghua University",
+ "wide": [],
+ "units": [
+  {
+   "id": "arch",
+   "name": "School of Architecture (建筑学院)",
+   "kind": "school",
+   "url": "https://www.arch.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "civil",
+   "name": "School of Civil Engineering (土木水利学院)",
+   "kind": "school",
+   "url": "https://www.civil.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "env",
+   "name": "School of Environment (环境学院)",
+   "kind": "school",
+   "url": "https://www.env.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "mech",
+   "name": "School of Mechanical Engineering (机械工程学院)",
+   "kind": "school",
+   "url": "https://www.mech.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "aero",
+   "name": "School of Aerospace Engineering (航天航空学院)",
+   "kind": "school",
+   "url": "https://www.hy.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "sist",
+   "name": "School of Information Science and Technology (信息科学技术学院)",
+   "kind": "school",
+   "url": "https://www.sist.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "mse",
+   "name": "School of Materials Science and Engineering (材料学院)",
+   "kind": "school",
+   "url": "https://www.mse.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "science",
+   "name": "School of Science (理学院)",
+   "kind": "school",
+   "url": "https://www.tsinghua.edu.cn/yxsz.htm",
+   "status": "unchecked"
+  },
+  {
+   "id": "life",
+   "name": "School of Life Sciences (生命科学学院)",
+   "kind": "school",
+   "url": "https://life.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "sem",
+   "name": "School of Economics and Management (经济管理学院)",
+   "kind": "school",
+   "url": "https://www.sem.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "sppm",
+   "name": "School of Public Policy and Management (公共管理学院)",
+   "kind": "school",
+   "url": "https://www.sppm.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "humanities",
+   "name": "School of Humanities (人文学院)",
+   "kind": "school",
+   "url": "https://www.rwxy.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "sss",
+   "name": "School of Social Sciences (社会科学学院)",
+   "kind": "school",
+   "url": "https://www.sss.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "marxism",
+   "name": "School of Marxism (马克思主义学院)",
+   "kind": "school",
+   "url": "https://www.smarx.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "law",
+   "name": "School of Law (法学院)",
+   "kind": "school",
+   "url": "https://www.law.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "journalism",
+   "name": "School of Journalism and Communication (新闻与传播学院)",
+   "kind": "school",
+   "url": "https://www.tsjc.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "design",
+   "name": "Academy of Arts & Design (美术学院)",
+   "kind": "school",
+   "url": "https://www.ad.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "medicine",
+   "name": "School of Medicine (医学院)",
+   "kind": "school",
+   "url": "https://www.med.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "pharmacy",
+   "name": "School of Pharmaceutical Sciences (药学院)",
+   "kind": "school",
+   "url": "https://www.sps.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "vanke",
+   "name": "Vanke School of Public Health (万科公共卫生与健康学院)",
+   "kind": "school",
+   "url": "https://www.sph.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "pbcsf",
+   "name": "PBC School of Finance (五道口金融学院)",
+   "kind": "school",
+   "url": "https://www.pbcsf.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "schwarzman",
+   "name": "Schwarzman College (苏世民书院)",
+   "kind": "school",
+   "url": "https://www.sc.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "iiis",
+   "name": "Institute for Interdisciplinary Information Sciences (交叉信息研究院)",
+   "kind": "school",
+   "url": "https://iiis.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "ic",
+   "name": "School of Integrated Circuits (集成电路学院)",
+   "kind": "school",
+   "url": "https://www.sic.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "vehicle",
+   "name": "School of Vehicle and Mobility (车辆与运载学院)",
+   "kind": "school",
+   "url": "https://www.svm.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "sigs",
+   "name": "Tsinghua Shenzhen International Graduate School (深圳国际研究生院)",
+   "kind": "school",
+   "url": "https://www.sigs.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "xinya",
+   "name": "Xinya College (新雅书院)",
+   "kind": "school",
+   "url": "https://www.xyc.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "cs",
+   "name": "Department of Computer Science and Technology (计算机系)",
+   "kind": "department",
+   "parent": "sist",
+   "url": "https://www.cs.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "ee",
+   "name": "Department of Electronic Engineering (电子工程系)",
+   "kind": "department",
+   "parent": "sist",
+   "url": "https://www.ee.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "automation",
+   "name": "Department of Automation (自动化系)",
+   "kind": "department",
+   "parent": "sist",
+   "url": "https://www.au.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "software",
+   "name": "School of Software (软件学院)",
+   "kind": "department",
+   "parent": "sist",
+   "url": "https://www.thss.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "eea",
+   "name": "Department of Electrical Engineering (电机系)",
+   "kind": "department",
+   "url": "https://www.eea.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "me",
+   "name": "Department of Mechanical Engineering (机械工程系)",
+   "kind": "department",
+   "parent": "mech",
+   "url": "https://www.me.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "ep",
+   "name": "Department of Engineering Physics (工程物理系)",
+   "kind": "department",
+   "url": "https://www.ep.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "chemeng",
+   "name": "Department of Chemical Engineering (化学工程系)",
+   "kind": "department",
+   "url": "https://www.chemeng.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "bme",
+   "name": "Department of Biomedical Engineering (生物医学工程系)",
+   "kind": "department",
+   "parent": "medicine",
+   "url": "https://www.bme.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "math",
+   "name": "Department of Mathematical Sciences (数学科学系)",
+   "kind": "department",
+   "parent": "science",
+   "url": "https://www.math.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "stat",
+   "name": "Center for Statistical Science (统计学研究中心)",
+   "kind": "department",
+   "parent": "science",
+   "url": "https://www.stat.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "physics",
+   "name": "Department of Physics (物理系)",
+   "kind": "department",
+   "parent": "science",
+   "url": "https://www.phys.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "chemistry",
+   "name": "Department of Chemistry (化学系)",
+   "kind": "department",
+   "parent": "science",
+   "url": "https://www.chem.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "economics",
+   "name": "Department of Economics (经济系)",
+   "kind": "department",
+   "parent": "sem",
+   "url": "https://www.sem.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "psychology",
+   "name": "Department of Psychology (心理学系)",
+   "kind": "department",
+   "parent": "sss",
+   "url": "https://www.psych.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "polisci",
+   "name": "Department of Political Science (政治学系)",
+   "kind": "department",
+   "parent": "sss",
+   "url": "https://www.sss.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "sociology",
+   "name": "Department of Sociology (社会学系)",
+   "kind": "department",
+   "parent": "sss",
+   "url": "https://www.sss.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "history",
+   "name": "Department of History (历史系)",
+   "kind": "department",
+   "parent": "humanities",
+   "url": "https://www.rwxy.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "chinese",
+   "name": "Department of Chinese Language and Literature (中文系)",
+   "kind": "department",
+   "parent": "humanities",
+   "url": "https://www.rwxy.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "philosophy",
+   "name": "Department of Philosophy (哲学系)",
+   "kind": "department",
+   "parent": "humanities",
+   "url": "https://www.rwxy.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "foreign",
+   "name": "Department of Foreign Languages and Literatures (外文系)",
+   "kind": "department",
+   "parent": "humanities",
+   "url": "https://www.rwxy.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "air",
+   "name": "Institute for AI Industry Research (智能产业研究院, AIR)",
+   "kind": "institute",
+   "url": "https://air.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "thuai",
+   "name": "Institute for Artificial Intelligence (人工智能研究院)",
+   "kind": "institute",
+   "url": "https://ai.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "climate",
+   "name": "Institute of Climate Change and Sustainable Development (气候变化与可持续发展研究院)",
+   "kind": "institute",
+   "url": "https://www.iccsd.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "energy",
+   "name": "Institute of Energy, Environment and Economy (能源环境经济研究所)",
+   "kind": "institute",
+   "url": "https://www.3e.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "ciss",
+   "name": "Center for International Security and Strategy (战略与安全研究中心)",
+   "kind": "center",
+   "url": "https://ciss.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "ias",
+   "name": "Institute for Advanced Study (高等研究院)",
+   "kind": "institute",
+   "url": "https://www.ias.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "ymsc",
+   "name": "Yau Mathematical Sciences Center (丘成桐数学科学中心)",
+   "kind": "institute",
+   "url": "https://ymsc.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "xlab",
+   "name": "Tsinghua x-lab (创意创新创业教育平台)",
+   "kind": "center",
+   "url": "https://www.x-lab.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "su",
+   "name": "Tsinghua University Student Union (学生会)",
+   "kind": "student",
+   "url": "https://www.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "gsu",
+   "name": "Graduate Student Union (研究生会)",
+   "kind": "student",
+   "url": "https://www.tsinghua.edu.cn",
+   "status": "unchecked"
+  },
+  {
+   "id": "library",
+   "name": "Tsinghua University Library (图书馆)",
+   "kind": "library",
+   "url": "https://lib.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "artmuseum",
+   "name": "Tsinghua University Art Museum (艺术博物馆)",
+   "kind": "museum",
+   "url": "https://www.artmuseum.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "career",
+   "name": "Career Development Center (学生职业发展指导中心)",
+   "kind": "other",
+   "url": "https://career.tsinghua.edu.cn",
+   "status": "no-feed",
+   "note": "VSB/博达 CMS static pages, no RSS/ics/JSON"
+  },
+  {
+   "id": "arts",
+   "name": "Tsinghua Arts Education Center / New Tsinghua Xuetang (新清华学堂)",
+   "kind": "other",
+   "url": "https://www.tsinghua.edu.cn",
+   "status": "unchecked"
+  }
+ ]
+}

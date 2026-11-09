@@ -1,0 +1,403 @@
+{
+  "id": "yale",
+  "name": "Yale University",
+  "wide": [
+    "https://events.yale.edu",
+    "https://static-prod-us-east-1.campusgroups.com/ical/yale/ical_yale.ics"
+  ],
+  "units": [
+    {
+      "id": "college",
+      "name": "Yale College",
+      "kind": "school",
+      "url": "https://college.yale.edu",
+      "status": "in-wide",
+      "note": "its events page links calendar.yale.edu (events.yale.edu)"
+    },
+    {
+      "id": "gsas",
+      "name": "Graduate School of Arts and Sciences",
+      "kind": "school",
+      "url": "https://gsas.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "seas",
+      "name": "School of Engineering & Applied Science",
+      "kind": "school",
+      "url": "https://engineering.yale.edu",
+      "status": "no-feed",
+      "note": "events page is HTML with no feed or Localist embed"
+    },
+    {
+      "id": "medicine",
+      "name": "Yale School of Medicine",
+      "kind": "school",
+      "url": "https://medicine.yale.edu",
+      "status": "no-feed",
+      "note": "medicine.yale.edu/calendar has per-event ics downloads only, no list feed"
+    },
+    {
+      "id": "ysph",
+      "name": "Yale School of Public Health",
+      "kind": "school",
+      "url": "https://ysph.yale.edu",
+      "status": "no-feed",
+      "note": "calendar offers per-event ics downloads only"
+    },
+    {
+      "id": "law",
+      "name": "Yale Law School",
+      "kind": "school",
+      "url": "https://law.yale.edu",
+      "feeds": [
+        "https://www.law.yale.edu/ylsevents.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "som",
+      "name": "Yale School of Management",
+      "kind": "school",
+      "url": "https://som.yale.edu",
+      "feeds": [
+        "https://static-prod-us-east-1.campusgroups.com/ical/yalesom/ical_yalesom.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "divinity",
+      "name": "Yale Divinity School",
+      "kind": "school",
+      "url": "https://divinity.yale.edu",
+      "status": "in-wide",
+      "note": "events page embeds events.yale.edu (Localist)"
+    },
+    {
+      "id": "environment",
+      "name": "Yale School of the Environment",
+      "kind": "school",
+      "url": "https://environment.yale.edu",
+      "status": "unchecked",
+      "note": "/events redirects to a 404"
+    },
+    {
+      "id": "nursing",
+      "name": "Yale School of Nursing",
+      "kind": "school",
+      "url": "https://nursing.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "architecture",
+      "name": "Yale School of Architecture",
+      "kind": "school",
+      "url": "https://www.architecture.yale.edu",
+      "status": "no-feed",
+      "note": "calendar page is HTML only"
+    },
+    {
+      "id": "art",
+      "name": "Yale School of Art",
+      "kind": "school",
+      "url": "https://art.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "music",
+      "name": "Yale School of Music",
+      "kind": "school",
+      "url": "https://music.yale.edu",
+      "status": "in-wide",
+      "note": "events page links calendar.yale.edu"
+    },
+    {
+      "id": "drama",
+      "name": "David Geffen School of Drama",
+      "kind": "school",
+      "url": "https://drama.yale.edu",
+      "status": "no-feed",
+      "note": "productions page is HTML only"
+    },
+    {
+      "id": "jackson",
+      "name": "Jackson School of Global Affairs",
+      "kind": "school",
+      "url": "https://jackson.yale.edu",
+      "status": "no-feed",
+      "note": "Drupal without JSON:API or feed"
+    },
+    {
+      "id": "cs",
+      "name": "Computer Science",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://cpsc.yale.edu",
+      "status": "no-feed",
+      "note": "Concrete CMS without a feed (now redirects to engineering.yale.edu)"
+    },
+    {
+      "id": "ee",
+      "name": "Electrical & Computer Engineering",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://seas.yale.edu/departments/electrical-engineering",
+      "status": "unchecked"
+    },
+    {
+      "id": "meche",
+      "name": "Mechanical Engineering & Materials Science",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://seas.yale.edu/departments/mechanical-engineering-and-materials-science",
+      "status": "unchecked"
+    },
+    {
+      "id": "bme",
+      "name": "Biomedical Engineering",
+      "kind": "department",
+      "parent": "seas",
+      "url": "https://seas.yale.edu/departments/biomedical-engineering",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://math.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics & Data Science",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://statistics.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://physics.yale.edu",
+      "status": "in-wide",
+      "note": "site embeds Localist widgets from events.yale.edu"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://chem.yale.edu",
+      "status": "in-wide",
+      "note": "events page embeds events.yale.edu (Localist)"
+    },
+    {
+      "id": "mcdb",
+      "name": "Molecular, Cellular & Developmental Biology",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://mcdb.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "eeb",
+      "name": "Ecology & Evolutionary Biology",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://eeb.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://economics.yale.edu",
+      "feeds": [
+        "https://economics.yale.edu/jsonapi/node/event?sort=-changed&page%5Blimit%5D=50&fields%5Bnode--event%5D=title,field_event_date,field_address_label,field_summary,path"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://psychology.yale.edu",
+      "status": "feed",
+      "feeds": [
+        "https://calendar.google.com/calendar/ical/dop.cal%40yale.edu/public/basic.ics"
+      ]
+    },
+    {
+      "id": "polisci",
+      "name": "Political Science",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://politicalscience.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://history.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://english.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://philosophy.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Sociology",
+      "kind": "department",
+      "parent": "gsas",
+      "url": "https://sociology.yale.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "fds",
+      "name": "Institute for Foundations of Data Science (FDS)",
+      "kind": "institute",
+      "url": "https://fds.yale.edu",
+      "feeds": [
+        "https://fds.yale.edu/events.ics"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "whc",
+      "name": "Whitney Humanities Center",
+      "kind": "center",
+      "url": "https://whc.yale.edu",
+      "status": "in-wide",
+      "note": "embeds events.yale.edu"
+    },
+    {
+      "id": "macmillan",
+      "name": "MacMillan Center for International and Area Studies",
+      "kind": "center",
+      "url": "https://macmillan.yale.edu",
+      "status": "no-feed",
+      "note": "Drupal without JSON:API or feed"
+    },
+    {
+      "id": "wutsai",
+      "name": "Wu Tsai Institute",
+      "kind": "institute",
+      "url": "https://wti.yale.edu",
+      "status": "no-feed",
+      "note": "Drupal without JSON:API or feed"
+    },
+    {
+      "id": "tsai-city",
+      "name": "Tsai Center for Innovative Thinking (Tsai CITY)",
+      "kind": "center",
+      "url": "https://city.yale.edu",
+      "status": "no-feed",
+      "note": "Drupal without JSON:API or feed"
+    },
+    {
+      "id": "planetary",
+      "name": "Yale Planetary Solutions",
+      "kind": "center",
+      "url": "https://planetarysolutions.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "isps",
+      "name": "Institution for Social and Policy Studies",
+      "kind": "institute",
+      "url": "https://isps.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cowles",
+      "name": "Cowles Foundation for Research in Economics",
+      "kind": "center",
+      "parent": "gsas",
+      "url": "https://cowles.yale.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ycc",
+      "name": "Yale College Council",
+      "kind": "student",
+      "url": "https://yalecollegecouncil.org",
+      "status": "in-wide",
+      "note": "student orgs post on Yale Connect (CampusGroups), which we read"
+    },
+    {
+      "id": "gpss",
+      "name": "Graduate & Professional Student Senate",
+      "kind": "student",
+      "url": "https://gpss.yale.edu",
+      "status": "in-wide",
+      "note": "student org events on Yale Connect (CampusGroups)"
+    },
+    {
+      "id": "res-colleges",
+      "name": "Residential colleges (14)",
+      "kind": "student",
+      "url": "https://college.yale.edu/residential-colleges",
+      "status": "unchecked"
+    },
+    {
+      "id": "library",
+      "name": "Yale Library",
+      "kind": "library",
+      "url": "https://library.yale.edu",
+      "status": "in-wide",
+      "note": "events page is a Localist view of events.yale.edu"
+    },
+    {
+      "id": "artgallery",
+      "name": "Yale University Art Gallery",
+      "kind": "museum",
+      "url": "https://artgallery.yale.edu",
+      "status": "blocked",
+      "note": "calendar answers 403 with a Cloudflare challenge"
+    },
+    {
+      "id": "ycba",
+      "name": "Yale Center for British Art",
+      "kind": "museum",
+      "url": "https://britishart.yale.edu",
+      "status": "no-feed",
+      "note": "exhibitions & programs page is HTML only"
+    },
+    {
+      "id": "peabody",
+      "name": "Peabody Museum",
+      "kind": "museum",
+      "url": "https://peabody.yale.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "ocs",
+      "name": "Office of Career Strategy",
+      "kind": "other",
+      "url": "https://ocs.yale.edu",
+      "status": "unchecked"
+    }
+  ]
+}

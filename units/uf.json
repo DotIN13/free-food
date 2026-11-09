@@ -1,0 +1,413 @@
+{
+  "id": "uf",
+  "name": "University of Florida",
+  "wide": [
+    "https://calendar.ufl.edu/live/json/events",
+    "https://gatorconnect.ufl.edu/api/discovery/event/search?status=Approved&orderByField=endsOn&orderByDirection=ascending&take=100"
+  ],
+  "units": [
+    {
+      "id": "cals",
+      "name": "College of Agricultural and Life Sciences",
+      "kind": "school",
+      "url": "https://cals.ufl.edu",
+      "status": "no-feed",
+      "note": "events page is HTML; ?ical=1 gives 0 events"
+    },
+    {
+      "id": "arts",
+      "name": "College of the Arts",
+      "kind": "school",
+      "url": "https://arts.ufl.edu",
+      "status": "feed",
+      "feeds": [
+        "https://arts.ufl.edu/events/?ical=1"
+      ]
+    },
+    {
+      "id": "warrington",
+      "name": "Warrington College of Business",
+      "kind": "school",
+      "url": "https://warrington.ufl.edu",
+      "feeds": [
+        "https://warrington.ufl.edu"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "dentistry",
+      "name": "College of Dentistry",
+      "kind": "school",
+      "url": "https://dental.ufl.edu",
+      "status": "unchecked",
+      "note": "/events/ is 404"
+    },
+    {
+      "id": "dcp",
+      "name": "College of Design, Construction and Planning",
+      "kind": "school",
+      "url": "https://dcp.ufl.edu",
+      "status": "no-feed",
+      "note": "/events/ redirects to the home page"
+    },
+    {
+      "id": "education",
+      "name": "College of Education",
+      "kind": "school",
+      "url": "https://education.ufl.edu",
+      "status": "no-feed",
+      "note": "The Events Calendar ?ical=1 holds 2 events"
+    },
+    {
+      "id": "engineering",
+      "name": "Herbert Wertheim College of Engineering",
+      "kind": "school",
+      "url": "https://www.eng.ufl.edu",
+      "feeds": [
+        "https://www.eng.ufl.edu/events/?ical=1"
+      ],
+      "status": "feed"
+    },
+    {
+      "id": "hhp",
+      "name": "College of Health and Human Performance",
+      "kind": "school",
+      "url": "https://hhp.ufl.edu",
+      "status": "in-wide",
+      "note": "events page embeds its calendar.ufl.edu LiveWhale group"
+    },
+    {
+      "id": "jou",
+      "name": "College of Journalism and Communications",
+      "kind": "school",
+      "url": "https://www.jou.ufl.edu",
+      "status": "in-wide",
+      "note": "events page links calendar.ufl.edu"
+    },
+    {
+      "id": "law",
+      "name": "Levin College of Law",
+      "kind": "school",
+      "url": "https://law.ufl.edu",
+      "status": "no-feed",
+      "note": "no feed"
+    },
+    {
+      "id": "clas",
+      "name": "College of Liberal Arts and Sciences",
+      "kind": "school",
+      "url": "https://clas.ufl.edu",
+      "status": "in-wide",
+      "note": "/events redirects to calendar.ufl.edu/clas"
+    },
+    {
+      "id": "medicine",
+      "name": "College of Medicine",
+      "kind": "school",
+      "url": "https://med.ufl.edu",
+      "status": "no-feed",
+      "note": "UF Health has no feed; /events/ is 404"
+    },
+    {
+      "id": "nursing",
+      "name": "College of Nursing",
+      "kind": "school",
+      "url": "https://nursing.ufl.edu",
+      "status": "unchecked",
+      "note": "/events/ is 404"
+    },
+    {
+      "id": "pharmacy",
+      "name": "College of Pharmacy",
+      "kind": "school",
+      "url": "https://pharmacy.ufl.edu",
+      "status": "no-feed",
+      "note": "events page is alumni events in HTML"
+    },
+    {
+      "id": "phhp",
+      "name": "College of Public Health and Health Professions",
+      "kind": "school",
+      "url": "https://phhp.ufl.edu",
+      "status": "unchecked",
+      "note": "/events/ is 404"
+    },
+    {
+      "id": "vetmed",
+      "name": "College of Veterinary Medicine",
+      "kind": "school",
+      "url": "https://www.vetmed.ufl.edu",
+      "status": "unchecked",
+      "note": "/events/ is 404"
+    },
+    {
+      "id": "graduate",
+      "name": "Graduate School",
+      "kind": "school",
+      "url": "https://graduateschool.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "cise",
+      "name": "Department of Computer & Information Science & Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://cise.ufl.edu",
+      "status": "in-wide",
+      "note": "events page links calendar.ufl.edu; its own ?ical=1 returns 0"
+    },
+    {
+      "id": "ece",
+      "name": "Department of Electrical & Computer Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://ece.ufl.edu",
+      "status": "in-wide",
+      "note": "site links calendar.ufl.edu"
+    },
+    {
+      "id": "mae",
+      "name": "Department of Mechanical & Aerospace Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://mae.ufl.edu",
+      "status": "in-wide",
+      "note": "site links calendar.ufl.edu"
+    },
+    {
+      "id": "bme",
+      "name": "J. Crayton Pruitt Family Department of Biomedical Engineering",
+      "kind": "department",
+      "parent": "engineering",
+      "url": "https://bme.ufl.edu",
+      "status": "in-wide",
+      "note": "site links calendar.ufl.edu"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "clas",
+      "url": "https://math.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "stat",
+      "name": "Department of Statistics",
+      "kind": "department",
+      "parent": "clas",
+      "url": "https://stat.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "parent": "clas",
+      "url": "https://phys.ufl.edu",
+      "status": "in-wide",
+      "note": "site embeds calendar.ufl.edu LiveWhale"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "clas",
+      "url": "https://chem.ufl.edu",
+      "status": "in-wide",
+      "note": "site embeds calendar.ufl.edu LiveWhale"
+    },
+    {
+      "id": "biology",
+      "name": "Department of Biology",
+      "kind": "department",
+      "parent": "clas",
+      "url": "https://biology.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics",
+      "kind": "department",
+      "parent": "warrington",
+      "url": "https://warrington.ufl.edu/economics",
+      "status": "unchecked"
+    },
+    {
+      "id": "psychology",
+      "name": "Department of Psychology",
+      "kind": "department",
+      "parent": "clas",
+      "url": "https://psych.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "polisci",
+      "name": "Department of Political Science",
+      "kind": "department",
+      "parent": "clas",
+      "url": "https://polisci.clas.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "history",
+      "name": "Department of History",
+      "kind": "department",
+      "parent": "clas",
+      "url": "https://history.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "english",
+      "name": "Department of English",
+      "kind": "department",
+      "parent": "clas",
+      "url": "https://english.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "philosophy",
+      "name": "Department of Philosophy",
+      "kind": "department",
+      "parent": "clas",
+      "url": "https://philosophy.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sociology",
+      "name": "Department of Sociology and Criminology & Law",
+      "kind": "department",
+      "parent": "clas",
+      "url": "https://soccrim.clas.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ai",
+      "name": "UF AI Initiative",
+      "kind": "institute",
+      "url": "https://ai.ufl.edu",
+      "status": "in-wide",
+      "note": "uses the main LiveWhale calendar"
+    },
+    {
+      "id": "grahamcenter",
+      "name": "Bob Graham Center for Public Service",
+      "kind": "center",
+      "url": "https://bobgrahamcenter.ufl.edu",
+      "status": "in-wide",
+      "note": "events page embeds calendar.ufl.edu LiveWhale"
+    },
+    {
+      "id": "latam",
+      "name": "Center for Latin American Studies",
+      "kind": "center",
+      "parent": "clas",
+      "url": "https://www.latam.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ces",
+      "name": "Center for European Studies",
+      "kind": "center",
+      "parent": "clas",
+      "url": "https://ces.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "humanities",
+      "name": "Center for the Humanities and the Public Sphere",
+      "kind": "center",
+      "parent": "clas",
+      "url": "https://humanities.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ifas",
+      "name": "UF/IFAS (Institute of Food and Agricultural Sciences)",
+      "kind": "institute",
+      "url": "https://ifas.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "ufhcc",
+      "name": "UF Health Cancer Center",
+      "kind": "center",
+      "parent": "medicine",
+      "url": "https://cancer.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "innovate",
+      "name": "UF Innovate",
+      "kind": "center",
+      "url": "https://innovate.research.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "sg",
+      "name": "Student Government",
+      "kind": "student",
+      "url": "https://sg.ufl.edu",
+      "status": "no-feed",
+      "note": "events page is HTML only"
+    },
+    {
+      "id": "gsc",
+      "name": "Graduate Student Council",
+      "kind": "student",
+      "url": "https://gsc.ufl.edu",
+      "status": "in-wide",
+      "note": "student-org events are on GatorConnect"
+    },
+    {
+      "id": "library",
+      "name": "George A. Smathers Libraries",
+      "kind": "library",
+      "url": "https://uflib.ufl.edu",
+      "status": "unchecked",
+      "note": "/events/ is 404"
+    },
+    {
+      "id": "flmnh",
+      "name": "Florida Museum of Natural History",
+      "kind": "museum",
+      "url": "https://www.floridamuseum.ufl.edu",
+      "status": "feed",
+      "feeds": [
+        "https://www.floridamuseum.ufl.edu/calendar/?ical=1"
+      ]
+    },
+    {
+      "id": "harn",
+      "name": "Harn Museum of Art",
+      "kind": "museum",
+      "url": "https://harn.ufl.edu",
+      "status": "feed",
+      "feeds": [
+        "https://harn.ufl.edu/calendar/?ical=1"
+      ]
+    },
+    {
+      "id": "career",
+      "name": "Career Connections Center",
+      "kind": "other",
+      "url": "https://careerhub.ufl.edu",
+      "status": "no-feed",
+      "note": "events page is HTML; listings are on Handshake"
+    },
+    {
+      "id": "pac",
+      "name": "UF Performing Arts",
+      "kind": "other",
+      "url": "https://performingarts.ufl.edu",
+      "status": "unchecked"
+    },
+    {
+      "id": "athletics",
+      "name": "Florida Gators Athletics",
+      "kind": "other",
+      "url": "https://floridagators.com",
+      "status": "unchecked"
+    }
+  ]
+}

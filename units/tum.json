@@ -1,0 +1,304 @@
+{
+  "id": "tum",
+  "name": "Technical University of Munich",
+  "wide": [
+    "https://www.tum.de/en/news-and-events/events.rss"
+  ],
+  "units": [
+    {
+      "id": "cit",
+      "name": "TUM School of Computation, Information and Technology",
+      "kind": "school",
+      "url": "https://www.cit.tum.de",
+      "status": "no-feed",
+      "note": "news & events page mixes press releases and HTML event teasers, no feed"
+    },
+    {
+      "id": "ed",
+      "name": "TUM School of Engineering and Design",
+      "kind": "school",
+      "url": "https://www.ed.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "nat",
+      "name": "TUM School of Natural Sciences",
+      "kind": "school",
+      "url": "https://www.nat.tum.de",
+      "status": "unchecked",
+      "note": "colloquia iCal from its events page, 29 events",
+      "found": "https://api.srv.nat.tum.de/api/v1/course/events/ical?catalog_tag=colloquia_nat&language=de&show_empty=false&include_description=true&include_html=false&limit=50&offset=0"
+    },
+    {
+      "id": "ls",
+      "name": "TUM School of Life Sciences",
+      "kind": "school",
+      "url": "https://www.ls.tum.de",
+      "status": "in-wide",
+      "note": "its events page shows www.tum.de events (the feed we read)"
+    },
+    {
+      "id": "mh",
+      "name": "TUM School of Medicine and Health",
+      "kind": "school",
+      "url": "https://www.mh.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "mgt",
+      "name": "TUM School of Management",
+      "kind": "school",
+      "url": "https://www.mgt.tum.de",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed"
+    },
+    {
+      "id": "sot",
+      "name": "TUM School of Social Sciences and Technology",
+      "kind": "school",
+      "url": "https://www.sot.tum.de",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed"
+    },
+    {
+      "id": "straubing",
+      "name": "TUM Campus Straubing for Biotechnology and Sustainability",
+      "kind": "school",
+      "url": "https://www.cs.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "heilbronn",
+      "name": "TUM Campus Heilbronn",
+      "kind": "school",
+      "url": "https://www.chn.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "informatics",
+      "name": "Department of Computer Science",
+      "kind": "department",
+      "parent": "cit",
+      "url": "https://www.cs.cit.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "ece",
+      "name": "Department of Electrical Engineering",
+      "kind": "department",
+      "parent": "cit",
+      "url": "https://www.ee.cit.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "math",
+      "name": "Department of Mathematics",
+      "kind": "department",
+      "parent": "cit",
+      "url": "https://www.math.cit.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "me",
+      "name": "Department of Mechanical Engineering",
+      "kind": "department",
+      "parent": "ed",
+      "url": "https://www.mec.ed.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "aerospace",
+      "name": "Department of Aerospace and Geodesy",
+      "kind": "department",
+      "parent": "ed",
+      "url": "https://www.asg.ed.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "architecture",
+      "name": "Department of Architecture",
+      "kind": "department",
+      "parent": "ed",
+      "url": "https://www.arc.ed.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "physics",
+      "name": "Department of Physics",
+      "kind": "department",
+      "parent": "nat",
+      "url": "https://www.ph.nat.tum.de",
+      "status": "unchecked",
+      "note": "likely in the NAT colloquia iCal"
+    },
+    {
+      "id": "chemistry",
+      "name": "Department of Chemistry",
+      "kind": "department",
+      "parent": "nat",
+      "url": "https://www.ch.nat.tum.de",
+      "status": "unchecked",
+      "note": "likely in the NAT colloquia iCal"
+    },
+    {
+      "id": "bioscience",
+      "name": "Department of Bioscience",
+      "kind": "department",
+      "parent": "nat",
+      "url": "https://www.bio.nat.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "economics",
+      "name": "Department of Economics and Policy",
+      "kind": "department",
+      "parent": "mgt",
+      "url": "https://www.mgt.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "governance",
+      "name": "Department of Governance",
+      "kind": "department",
+      "parent": "sot",
+      "url": "https://www.sot.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "stsdept",
+      "name": "Department of Science, Technology and Society",
+      "kind": "department",
+      "parent": "sot",
+      "url": "https://www.sot.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "mdsi",
+      "name": "Munich Data Science Institute (MDSI)",
+      "kind": "institute",
+      "url": "https://www.mdsi.tum.de",
+      "status": "in-wide",
+      "note": "its events page shows www.tum.de events (the feed we read)"
+    },
+    {
+      "id": "mirmi",
+      "name": "Munich Institute of Robotics and Machine Intelligence (MIRMI)",
+      "kind": "institute",
+      "url": "https://www.mirmi.tum.de",
+      "status": "unchecked",
+      "note": "has rss.xml (news, not checked for events)"
+    },
+    {
+      "id": "ias",
+      "name": "TUM Institute for Advanced Study (IAS)",
+      "kind": "institute",
+      "url": "https://www.ias.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "hfp",
+      "name": "Munich School of Politics and Public Policy (HfP)",
+      "kind": "institute",
+      "parent": "sot",
+      "url": "https://www.hfp.tum.de",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed"
+    },
+    {
+      "id": "thinktank",
+      "name": "TUM Think Tank",
+      "kind": "center",
+      "url": "https://tumthinktank.de",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed"
+    },
+    {
+      "id": "mei",
+      "name": "Munich Institute of Integrated Materials, Energy and Processes (MEP)",
+      "kind": "institute",
+      "url": "https://www.mep.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "tumcs",
+      "name": "TUM Center for Sustainability",
+      "kind": "center",
+      "url": "https://www.sustainability.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "mcml",
+      "name": "Munich Center for Machine Learning (MCML)",
+      "kind": "center",
+      "url": "https://mcml.ai",
+      "status": "unchecked"
+    },
+    {
+      "id": "ai-ethics",
+      "name": "Institute for Ethics in Artificial Intelligence (IEAI)",
+      "kind": "institute",
+      "parent": "sot",
+      "url": "https://www.ieai.sot.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "venturelabs",
+      "name": "TUM Venture Labs",
+      "kind": "center",
+      "url": "https://www.tum-venture-labs.de",
+      "status": "no-feed",
+      "note": "events page is HTML only, no feed"
+    },
+    {
+      "id": "unternehmertum",
+      "name": "UnternehmerTUM",
+      "kind": "center",
+      "url": "https://www.unternehmertum.de",
+      "status": "in-wide",
+      "note": "its events page shows www.tum.de events (the feed we read)"
+    },
+    {
+      "id": "sv",
+      "name": "Studentische Vertretung (student representation)",
+      "kind": "student",
+      "url": "https://www.sv.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "fsmpi",
+      "name": "Fachschaft Mathematik/Physik/Informatik",
+      "kind": "student",
+      "url": "https://mpi.fs.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "library",
+      "name": "University Library (Universitätsbibliothek)",
+      "kind": "library",
+      "url": "https://www.ub.tum.de",
+      "status": "unchecked"
+    },
+    {
+      "id": "architekturmuseum",
+      "name": "Architekturmuseum der TUM",
+      "kind": "museum",
+      "url": "https://www.architekturmuseum.de",
+      "status": "no-feed",
+      "note": "its /feed/ is posts, not events"
+    },
+    {
+      "id": "career",
+      "name": "TUM Career Service",
+      "kind": "other",
+      "url": "https://www.community.tum.de/en/career-service/",
+      "status": "unchecked"
+    },
+    {
+      "id": "zhs",
+      "name": "University Sports (ZHS)",
+      "kind": "other",
+      "url": "https://www.zhs-muenchen.de",
+      "status": "unchecked"
+    }
+  ]
+}
