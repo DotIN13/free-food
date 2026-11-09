@@ -61,6 +61,16 @@
         "events": 15,
         "food": 0,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "rss",
+        "url": "https://www.jbs.cam.ac.uk/events/feed/",
+        "label": "Cambridge Judge Business School",
+        "institute": true,
+        "unit": "jbs",
+        "eventPages": true,
+        "events": 5,
+        "note": "dates read from each event's page"
       }
     ]
   },
@@ -686,6 +696,26 @@
         "events": 9,
         "food": 1,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "rss",
+        "url": "https://chem.wisc.edu/events/feed/",
+        "label": "Department of Chemistry",
+        "institute": true,
+        "unit": "chemistry",
+        "eventPages": true,
+        "events": 7,
+        "note": "dates read from each event's page"
+      },
+      {
+        "type": "rss",
+        "url": "https://history.wisc.edu/events/feed/",
+        "label": "Department of History",
+        "institute": true,
+        "unit": "history",
+        "eventPages": true,
+        "events": 2,
+        "note": "dates read from each event's page"
       }
     ]
   },
@@ -1073,6 +1103,33 @@
         "unit": "ids",
         "events": 1,
         "note": "found while listing the university's units, 2026-11-09"
+      },
+      {
+        "type": "wpposts",
+        "url": "https://www.hkubs.hku.hk/wp-json/wp/v2/event",
+        "label": "HKU Business School (Faculty of Business and Economics)",
+        "institute": true,
+        "unit": "business",
+        "events": 14,
+        "note": "dates read from each event's page"
+      },
+      {
+        "type": "wpposts",
+        "url": "https://arts.hku.hk/wp-json/wp/v2/events",
+        "label": "Faculty of Arts",
+        "institute": true,
+        "unit": "arts",
+        "events": 2,
+        "note": "dates read from each event's page"
+      },
+      {
+        "type": "wpposts",
+        "url": "https://umag.hku.hk/wp-json/wp/v2/event",
+        "label": "University Museum and Art Gallery (UMAG)",
+        "institute": true,
+        "unit": "umag",
+        "events": 3,
+        "note": "dates read from each event's page"
       }
     ]
   },
@@ -1096,6 +1153,21 @@
         "url": "https://calendar.gatech.edu/taxonomy/term/15/feed",
         "label": "Georgia Tech calendar: Miscellaneous",
         "events": 21
+      }
+    ]
+  },
+  {
+    "id": "oxford",
+    "sources": [
+      {
+        "type": "rss",
+        "url": "https://www.oii.ox.ac.uk/news-events/events/feed/",
+        "label": "Oxford Internet Institute",
+        "institute": true,
+        "unit": "oii",
+        "eventPages": true,
+        "events": 1,
+        "note": "dates read from each event's page"
       }
     ]
   }
