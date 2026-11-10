@@ -11,8 +11,8 @@ const S = {
 	unis: [], byUni: {}, events: [], counts: {}, at: 0, total: 0, loaded: false, error: null, status: null,
 	scope: store.getItem("scope") || "",
 	when: "soon",
-	// What the list shows: "free" (the text says the food is free), "food" (food is named), "all" (every event).
-	show: ["free", "food", "all"].includes(store.getItem("show")) ? store.getItem("show") : "free",
+	// What the list shows: "free" (events with food) or "all" (every event).
+	show: store.getItem("show") === "all" ? "all" : "free",
 	others: null,
 	cat: null, q: "", sel: null,
 	me: JSON.parse(store.getItem("me") || "null"),
@@ -26,9 +26,12 @@ const shortOf = (id) => S.byUni[id]?.short ?? S.byUni[id]?.name ?? id;
 const srcOf = (e) => S.byUni[e.uni]?.sources.find((x) => x.url === e.srcUrl);
 const distOf = (e) => (S.me && e.lat && !e.online ? km(S.me, e) : null);
 const walkOf = (e) => { const d = distOf(e); return d == null || d > 15 ? null : walkMin(d); };
-const sure = (e) => e.food?.level === "sure";
-const shown = (e, show = S.show) => (show === "all" ? true : show === "food" ? !!e.food : sure(e));
-const SHOWS = [["free", "Free food"], ["food", "Food mentioned"], ["all", "All events"]];
+// An event that names food counts as free food: the two levels the classifier tells apart are shown as one.
+const sure = (e) => !!e.food && e.food.level !== "maybe";
+const shown = (e, show = S.show) => show === "all" || sure(e);
+const SHOWS = [["free", "Free food"], ["all", "All events"]];
+// Its label still says how sure we are: "Free food" when the words say so, "lunch mentioned" when they only name it.
+const confirmed = (e) => e.food?.level === "sure";
 // Every other event, fetched the first time someone picks "All events".
 async function loadOthers() {
 	if (S.others) return;
@@ -190,7 +193,7 @@ function makeMap(el, opts = {}) {
 	return map;
 }
 const pinIcon = (e, big) => L.divIcon({ className: "", iconSize: big ? [56, 56] : [44, 44], iconAnchor: big ? [28, 28] : [22, 22],
-	html: `<div class="pin ${big ? "big" : ""} ${e.where === "campus" ? "approx" : ""}" style="${big ? "" : `border-color:${sure(e) ? "var(--tomato)" : e.food ? "var(--sun)" : "var(--line-strong)"}`}">${catOf(e).em}</div>` });
+	html: `<div class="pin ${big ? "big" : ""} ${e.where === "campus" ? "approx" : ""}" style="${big ? "" : `border-color:${confirmed(e) ? "var(--tomato)" : e.food ? "var(--sun)" : "var(--line-strong)"}`}">${catOf(e).em}</div>` });
 const meIcon = () => L.divIcon({ className: "", html: '<div class="me"></div>', iconSize: [22, 22], iconAnchor: [11, 11] });
 
 // ---------- router
@@ -402,7 +405,7 @@ const homePage = {
 				<span class="when"><b>${tp.t}${tp.ap ? ` ${tp.ap}` : ""}</b>${st.live ? `<span class="tag t-live">● LIVE</span>` : `<span>${st.text}</span>`}${S.scope ? "" : `<span>· ${esc(shortOf(e.uni))}</span>`}</span>
 				<h4>${esc(e.title)}</h4>
 				<span class="place">${e.online ? "💻 Online" : esc(e.location || "On campus")}${e.org ? ` · ${esc(e.org)}` : ""}</span>
-				<span class="tags">${sure(e) ? `<span class="tag t-mint">${icon("check")}${foods.length && foods[0].key !== "snacks" ? `${foods[0].label} provided` : "Free food"}</span>` : e.food ? `<span class="tag t-sky">${foods[0]?.em ?? "🍽️"} ${esc((e.food.words ?? [])[0] ?? "food")} mentioned</span>` : ""}${w ? `<span class="tag t-sky">🚶 ${w} min</span>` : ""}</span>
+				<span class="tags">${confirmed(e) ? `<span class="tag t-mint">${icon("check")}${foods.length && foods[0].key !== "snacks" ? `${foods[0].label} provided` : "Free food"}</span>` : e.food ? `<span class="tag t-sky">${foods[0]?.em ?? "🍽️"} ${esc((e.food.words ?? [])[0] ?? "food")} mentioned</span>` : ""}${w ? `<span class="tag t-sky">🚶 ${w} min</span>` : ""}</span>
 			</span>
 			<span class="heart ${isSaved(e.id) ? "on" : ""}" data-save="${e.id}" role="button" aria-label="Save">${icon("heart")}</span>
 		</button>`;
@@ -420,7 +423,7 @@ const homePage = {
 		if (S.me && S.when === "soon") list.sort((a, b) => (distOf(a) ?? 1e9) - (distOf(b) ?? 1e9));
 		const box = $("#list");
 		if (!list.length) {
-			box.innerHTML = `<div class="empty"><div class="e">🍽️</div><b>No ${S.show === "all" ? "events" : S.show === "food" ? "food" : "free food"} ${S.when === "soon" ? "in the next few hours" : "in this window"}</b>${S.when !== "all" ? `<button class="btn sm" data-widen>Show the next 3 weeks</button>` : "Try another campus."}</div>`;
+			box.innerHTML = `<div class="empty"><div class="e">🍽️</div><b>No ${S.show === "all" ? "events" : "free food"} ${S.when === "soon" ? "in the next few hours" : "in this window"}</b>${S.when !== "all" ? `<button class="btn sm" data-widen>Show the next 3 weeks</button>` : "Try another campus."}</div>`;
 		} else {
 			const limit = this.limit ?? 40;
 			let html = "", day = "";
