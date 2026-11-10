@@ -279,9 +279,11 @@ const homePage = {
 		return this.scoped(S.show).filter((e) => inWindow(e, S.when, tzOf(e)) && (!cat || foodsOf(e).some((f) => f.key === cat.key)));
 	},
 	render(openId) {
-		if (this.map) { try { this.map.remove(); } catch {} this.map = null; }
+		if (this.map) { try { this.map.stop(); this.map.remove(); } catch {} this.map = null; }
 		this.alive = true;
-		onLeave(() => { this.alive = false; this.map = null; });
+		// The page is replaced under the map; stop its pan or fly. It isn't removed: Leaflet's zoom animation would then
+		// finish on panes that are gone.
+		onLeave(() => { this.alive = false; try { this.map?.stop(); } catch {} this.map = null; });
 		if (!S.loaded) {
 			view.innerHTML = `<div class="wrap"><div class="hero"><div><div class="sk" style="height:250px"></div></div><div class="sk" style="height:300px"></div></div><div class="main"><div class="list">${'<div class="sk" style="height:120px"></div>'.repeat(4)}</div><div class="sk" style="height:470px"></div></div></div>`;
 			return;
@@ -440,7 +442,7 @@ const homePage = {
 	},
 	drawMap() {
 		const map = (this.map = makeMap($("#homeMap")));
-		this.cluster = L.markerClusterGroup({ maxClusterRadius: 44, showCoverageOnHover: false });
+		this.cluster = L.markerClusterGroup({ maxClusterRadius: 44, showCoverageOnHover: false, disableClusteringAtZoom: 18 });
 		map.addLayer(this.cluster);
 		map.on("click", (ev) => {
 			if (!this.picking) return;
@@ -501,8 +503,8 @@ const homePage = {
 		} else note.innerHTML = "";
 		refreshIcons();
 		const m = this.markers.get(id);
-		if (m) this.cluster.zoomToShowLayer(m, () => this.map?.panTo([e.lat, e.lng]));
-		else if (e.lat) this.map.flyTo([e.lat, e.lng], 16);
+		// A plain view change, not the cluster's zoomToShowLayer: that leaves a listener behind that fires after the map is gone.
+		if (e.lat && this.map) this.map.setView([e.lat, e.lng], Math.max(this.map.getZoom(), m ? 18 : 16), { animate: false });
 	},
 	board() {
 		const now = Date.now(), c = {};
